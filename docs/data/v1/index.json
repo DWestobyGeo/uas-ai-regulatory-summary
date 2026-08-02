@@ -252,6 +252,14 @@
       "json_url": "data/v1/PA.json"
     },
     {
+      "state": "South Carolina",
+      "state_abbr": "SC",
+      "state_fips": "45",
+      "record_count": 9,
+      "last_updated": "2026-08-02",
+      "json_url": "data/v1/SC.json"
+    },
+    {
       "state": "South Dakota",
       "state_abbr": "SD",
       "state_fips": "46",
@@ -332,5 +340,5 @@
       "json_url": "data/v1/WY.json"
     }
   ],
-  "state_count": 41
+  "state_count": 42
 }
