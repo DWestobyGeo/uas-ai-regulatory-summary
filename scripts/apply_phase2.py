@@ -45,7 +45,7 @@ def agency_process(row: dict[str, str]) -> bool:
     text = combined(row)
     permit = row.get("permit_or_approval_required", "")
     authority = row.get("issuing_authority", "")
-    if has(permit, "landowner consent", "property owner consent", "owner's consent", "owner consent") and has(authority, "legislature", "general assembly"):
+    if has(permit, "landowner consent", "property owner consent", "owner's consent", "owner consent", "property right", "private-property permission") and has(authority, "legislature", "general assembly"):
         return False
     return approval_process(row) or has(
         row.get("requirement_type", ""), "report", "filing", "submission"
@@ -54,36 +54,57 @@ def agency_process(row: dict[str, str]) -> bool:
 
 def aec_opinion(row: dict[str, str]) -> str:
     text = combined(row)
+    focus = " | ".join(row.get(k, "") for k in ("source_title", "uas_topic", "regulated_party", "regulated_activity", "requirement_type"))
     scope = row["geographic_scope"].rstrip(".")
     authority = row["issuing_authority"]
     title = row["source_title"]
-    if has(text, "critical infrastructure", "correction", "prison", "jail", "military", "airport"):
+    if row.get("public_agency_only", "").lower() == "yes" or has(row.get("regulated_party", ""), "law enforcement", "state agency", "public agency"):
+        return (
+            "This record does not directly regulate an ordinary privately controlled AEC flight, but it can govern a mission performed for or integrated into the named public agency's program. "
+            "Define in the scope and flight plan who authorizes the mission, controls the aircraft, receives the data, and is responsible for the cited records or use restrictions."
+        )
+    if str(row.get("aec_relevance", "")).lower().startswith("low") or has(row.get("regulated_party", ""), "sex offender", "registered offender"):
+        return (
+            "This record has no routine effect on an AEC mission or ordinary fleet operation because it applies to a separately regulated person or activity. "
+            "Do not treat it as a general UAS operating rule; address it only if the stated regulated-party condition is actually present."
+        )
+    if has(focus, "critical infrastructure", "correction", "prison", "jail", "military", "airport", "manned aircraft", "crewed aircraft"):
         lead = "Treat written facility coordination as a pre-mobilization gate" if approval_process(row) else "Map the covered facility and conservative stand-off area during desktop planning"
         return (
             f"{lead} for work within {scope}; do not rely only on flight-app geofencing or a client's general site-access instruction. "
             "Include lost-link, return-to-home, emergency landing, sensor-direction, and observer controls that prevent an unintended facility overflight, prohibited capture, loitering, or interference."
         )
-    if has(text, "survey", "photogram", "mapping", "lidar", "accuracy", "ground control", "checkpoint"):
+    if has(focus, "state park", "state forest", "public land", "department land", "department property", "campus", "university property"):
+        if approval_process(row):
+            return (
+                f"Treat property authorization for {scope} as a pre-mobilization gate and obtain conditions that cover launch, landing, route, dates, aircraft, crew, and sensor purpose. "
+                "Confirm whether the approval is site-wide or location-specific and carry the written authorization and field contact with the crew."
+            )
+        return (
+            f"Confirm the controlling land unit and current property-use rule for {scope} before selecting launch and recovery points. "
+            "Record the boundary and any closures or site conditions in the flight packet rather than relying on a general statewide assumption."
+        )
+    if has(focus, "survey", "photogram", "mapping", "lidar", "accuracy", "ground control", "checkpoint"):
         return (
             f"Translate {title} into the project flight plan and QA/QC checklist before mobilization, including the required control, collection, accuracy, retention, and deliverable items that apply to the work. "
             "Resolve any conflict between the agency guidance and the executed scope before collection so a technically successful flight does not produce an unacceptable survey deliverable."
         )
-    if has(text, "wildlife", "hunt", "game", "nest", "habitat", "fish"):
+    if has(focus, "wildlife", "hunt", "game", "nest", "habitat", "fish"):
         return (
             f"Screen the mission for active hunting and wildlife sensitivity within {scope}; plan altitude, stand-off distance, route, observers, and abort criteria to avoid pursuit, harassment, or assistance to a taking. "
             "Document the project's environmental or infrastructure purpose and pause if animals materially react to the aircraft."
         )
-    if has(text, "pesticide", "aerial application", "spray", "dispens"):
+    if has(focus, "pesticide", "aerial application", "spray", "dispens"):
         return (
             f"Treat {title} as a separate mobilization track from ordinary imaging: verify the operator, every pilot, each aircraft, payload, product, and mission approval before scheduling field work. "
             "Build extra lead time for licensing, aircraft configuration, training records, label review, and sensitive-site coordination."
         )
-    if has(text, "privacy", "surveillance", "recording", "photograph", "stalk", "harass", "tracking"):
+    if has(focus, "privacy", "surveillance", "recording", "photograph", "stalk", "harass", "tracking"):
         return (
             f"Use a mission-specific collection plan for {scope} that limits camera angle, dwell time, audio, zoom, thermal capture, and retention to the contracted purpose. "
             "Brief the crew on aborting or redirecting collection when people, residences, or unrelated activity enter the sensor footprint."
         )
-    if has(text, "emergency", "firefight", "disaster", "incident", "search and rescue"):
+    if has(focus, "emergency", "firefight", "disaster", "incident", "search and rescue"):
         return (
             f"Make active emergency operations a dispatch and in-field stop-work check for {scope}. "
             "The remote pilot should have a clear deconfliction contact and an immediate land-or-relocate procedure if responders, temporary restrictions, or crewed aircraft appear."
@@ -93,12 +114,7 @@ def aec_opinion(row: dict[str, str]) -> str:
             f"Treat the {authority} process as a pre-mobilization gate: confirm the current submission route and obtain written authorization that covers the site, dates, aircraft, pilots, payload, and purpose. "
             "Do not lock the field schedule until agency lead time and any insurance, notification, or site-condition requirements are known."
         )
-    if row.get("public_agency_only", "").lower() == "yes" or has(row.get("regulated_party", ""), "law enforcement", "state agency", "public agency"):
-        return (
-            "This record does not directly regulate an ordinary privately controlled AEC flight, but it can govern a mission performed for or integrated into the named public agency's program. "
-            "Define in the scope and flight plan who authorizes the mission, controls the aircraft, receives the data, and is responsible for the cited records or use restrictions."
-        )
-    if has(text, "weapon", "projectile", "contraband", "payload", "drop"):
+    if has(focus, "weapon", "projectile", "contraband", "payload", "drop"):
         return (
             f"Screen aircraft and payload configuration against {title} before deployment, including release devices, tethered tools, sample systems, and experimental attachments. "
             "Use configuration control so a field crew cannot inadvertently deploy a prohibited or ambiguous payload."
@@ -110,11 +126,16 @@ def aec_opinion(row: dict[str, str]) -> str:
 
 
 def agency_opinion(row: dict[str, str]) -> str:
+    if has(combined(row), "sex-offender", "sex offender", "registered offender"):
+        return (
+            "This is a personal reporting process for the specifically regulated population, not an aircraft or operator approval for an AEC mission. "
+            "A covered individual should confirm the current UAS-identification reporting method and deadlines directly with the named registering agency."
+        )
     if not agency_process(row):
         return "N/A — no agency process involved"
     authority = row["issuing_authority"]
     if has(authority, "legislature", "general assembly"):
-        authority = row["jurisdiction_name"] if row["jurisdiction_type"].lower() != "state" else "the named facility or administering agency"
+        authority = row["jurisdiction_name"] if row["jurisdiction_type"].lower() != "state" else "named facility or administering agency"
     permit = row["permit_or_approval_required"].strip()
     text = combined(row)
     details = []
@@ -131,7 +152,7 @@ def agency_opinion(row: dict[str, str]) -> str:
     if has(text, "fee"):
         details.append("the current fee")
     detail_text = ", ".join(dict.fromkeys(details[:4])) or "the mission description, dates, aircraft, pilot, and requested operating area"
-    lead = f"Use {authority}'s current application or request channel and provide {detail_text}."
+    lead = f"Use the current {authority} application or request channel and provide {detail_text}."
     if permit and len(permit) < 180:
         lead += f" The packet identifies the approval as: {permit.rstrip('.')} ."
     return (
@@ -142,33 +163,39 @@ def agency_opinion(row: dict[str, str]) -> str:
 
 def procurement_opinion(row: dict[str, str]) -> str:
     text = combined(row)
+    focus = " | ".join(row.get(k, "") for k in ("source_title", "uas_topic", "regulated_party", "regulated_activity", "requirement_type"))
     title = row["source_title"]
-    if has(text, "manufacturer", "country-of-origin", "country of origin", "covered foreign", "cybersecurity", "procurement", "approved list", "supply chain", "replacement program"):
+    if has(row.get("regulated_party", ""), "sex offender", "registered offender") or str(row.get("aec_relevance", "")).lower().startswith("low"):
+        return "N/A — no procurement or equipment-selection implication identified"
+    if has(focus, "manufacturer", "country-of-origin", "country of origin", "covered foreign", "cybersecurity", "procurement", "approved list", "supply chain", "replacement program"):
         return (
             f"Treat {title} as a time-sensitive eligibility check at solicitation and again before purchase or assignment to a public project. "
             "Maintain manufacturer and component attestations, model and serial inventories, software and data-hosting details, funding-source restrictions, and a replacement path; do not assume a restriction on a public owner automatically binds a consultant unless the contract says so."
         )
-    if has(text, "registration", "registered aircraft", "license fee", "airworthiness", "weight", "55 pound", "55-pound"):
+    aircraft_registration = has(focus, "aircraft registration", "registered aircraft", "airworthiness", "operating weight", "55 pound", "55-pound") or (
+        has(focus, "uas registration") and not has(focus, "park", "forest", "property", "campus", "offender")
+    )
+    if aircraft_registration:
         return (
             "Maintain asset-level records for registration status, weight with each payload, serial number, airworthiness documents when applicable, and renewal dates before assigning an aircraft to this state. "
             "Fleet planning should account for fees, renewal lead time, and whether swapping an aircraft or payload changes the approval or registration basis."
         )
-    if has(text, "survey", "photogram", "mapping", "lidar", "mechanical shutter", "accuracy", "ground control", "checkpoint"):
+    if has(focus, "survey", "photogram", "mapping", "lidar", "mechanical shutter", "accuracy", "ground control", "checkpoint"):
         return (
             "Specify aircraft, positioning, camera, payload, processing software, and storage that can produce the cited accuracy evidence and deliverables without proprietary-format lock-in. "
             "Acceptance testing should verify the complete workflow—control, capture, processing, export, and archive—not only nominal aircraft or sensor specifications."
         )
-    if has(text, "pesticide", "aerial application", "spray", "dispens", "weapon", "projectile", "payload", "contraband", "drop"):
+    if has(focus, "pesticide", "aerial application", "spray", "dispens", "weapon", "projectile", "payload", "contraband", "drop"):
         return (
             "Use configuration-controlled payload interfaces and maintain documentation showing the purpose, operating limits, release safeguards, aircraft weight, and approved mission configuration. "
             "Avoid buying or fielding attachments whose capability could place an otherwise ordinary mapping aircraft within a weapon, projectile, contraband-delivery, or regulated dispensing provision."
         )
-    if has(text, "retention", "deletion", "data security", "records", "public record", "disclosure", "facial recognition", "biometric"):
+    if has(focus, "retention", "deletion", "data security", "records", "public record", "disclosure", "facial recognition", "biometric"):
         return (
             "Select capture and processing systems that support role-based access, exportable audit logs, configurable retention and deletion, defensible redaction, and delivery in the agency's required format. "
             "Confirm cloud hosting, backup replication, account ownership, and vendor deletion behavior before the platform is approved for covered data."
         )
-    if has(text, "geofence", "remote identification", "remote id", "night", "lighting", "noise", "sound"):
+    if has(focus, "geofence", "remote identification", "remote id", "night", "lighting", "noise", "sound"):
         return (
             "Include the cited technical operating condition in acquisition and acceptance criteria, and verify it with the aircraft's actual firmware, payload, and mission software rather than a marketing specification. "
             "Keep configuration and test evidence with the asset record so field teams can show the assigned system supports the planned operation."
