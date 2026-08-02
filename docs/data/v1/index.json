@@ -148,6 +148,14 @@
       "json_url": "data/v1/LA.json"
     },
     {
+      "state": "Maine",
+      "state_abbr": "ME",
+      "state_fips": "23",
+      "record_count": 8,
+      "last_updated": "2026-08-02",
+      "json_url": "data/v1/ME.json"
+    },
+    {
       "state": "Missouri",
       "state_abbr": "MO",
       "state_fips": "29",
@@ -204,5 +212,5 @@
       "json_url": "data/v1/WA.json"
     }
   ],
-  "state_count": 25
+  "state_count": 26
 }

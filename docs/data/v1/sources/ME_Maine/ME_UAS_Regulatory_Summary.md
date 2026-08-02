@@ -1,0 +1,133 @@
+# Maine — Commercial UAS Regulatory Summary
+
+**Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
+**Research date:** August 2, 2026 | **Version:** 1.0 (Phase 1 — objective research; see process note below)
+**Model / checkpoint:** Claude Sonnet 5 (research and drafting)
+**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v4, Amendment 2), this summary covers Maine **state and state-agency** UAS authorities only — municipal ordinances are deferred. **Maine has no UAS-specific state preemption statute:** unlike Louisiana (La. R.S. 2:2), Maine is a strong home-rule state (30-A M.R.S. §3001; Me. Const. Art. VIII, Pt. 2, §1) with no statute reserving UAS regulation exclusively to the state or barring local UAS ordinances. Maine's state UAS statutes therefore operate as a floor, not a ceiling, and individual municipalities retain general home-rule authority to adopt their own UAS-related ordinances unless a specific ordinance would frustrate a state law's purpose. Full citations and metadata are in `ME_UAS_Source_Register.csv`.
+
+> **Process note (Agent Instructions Amendment 2, August 1, 2026):** This state was researched under the three-phase program structure. This document currently reflects **Phase 1 only** — the objective, sourced findings below are complete, but the Practical Interpretation content (AEC Industry Expert, Agency Practitioner, and Legal Counsel perspectives) has not yet been drafted and is marked "Pending Phase 2" throughout.
+
+Each rule below is presented as an **Objective Summary** (binding text/citation, no interpretation). Practical Interpretation — from three labeled perspectives (AEC Industry UAS Expert, Agency Practitioner, and Legal Counsel) — will be added in Phase 2 and is not legal advice.
+
+---
+
+## 1. State UAS Regulatory Overview
+
+Maine regulates UAS through a small number of narrowly targeted statutes rather than a single comprehensive drone act, and — notably — its core UAS statute governs only law enforcement agencies, not private or commercial operators. 25 M.R.S. §4501, enacted in 2015, requires a law enforcement agency to obtain governing-body approval before acquiring a UAV, bars warrantless UAV use for criminal investigations (subject to recognized constitutional exceptions), flatly bans weaponized law-enforcement UAVs, bars UAV surveillance of persons peacefully exercising free-speech/assembly rights, and requires the Maine Criminal Justice Academy to adopt minimum written-policy standards. This statute has a documented legislative history: a 2013 warrant-requirement bill (LD 236) passed the Legislature but was vetoed by Governor LePage, who then issued an executive order directing an interim Commissioner-of-Public-Safety policy, later superseded by the 2015 statute. Separately, Maine's generic, pre-drone-era "aircraft" statute (12 M.R.S. §11216, enacted 2003) bars using an aircraft to aid hunting bear, deer, or moose; Maine's own Department of Inland Fisheries and Wildlife (MDIFW) confirms via its published FAQ that this applies to drones, since Title 12 defines "aircraft" generically as "a machine or device designed for flight." Most significantly for the AEC critical-infrastructure/corrections category, the Legislature enacted a brand-new statute, 17-A M.R.S. §761, in April 2026 (effective July 29, 2026), making it unlawful to fly a drone at or below 400 feet over a correctional facility or jail, land a drone on the premises, or fly one from the premises. At the agency level, the Bureau of Parks and Lands prohibits general and commercial UAS use in Maine State Parks, Historic Sites, and DACF boat launches absent a Special Activity Permit or law-enforcement oversight, and the state's Office of Information Technology maintains an internal Executive Branch UAV operations policy. No UAS-specific Maine court decision, Attorney General opinion, currently operative executive order, or state-agency UAS procurement restriction was located. A related 2019-2020 bill that would have added explicit drone language to Maine's stalking and privacy statutes (LD 2144) died without enactment — a finding worth flagging because at least one secondary source describes that language as if it were current law.
+
+## 2. Statewide UAS Laws and Regulations
+
+### Regulation of Unmanned Aerial Vehicles; Law Enforcement Acquisition, Warrant, and Weaponization Restrictions — 25 M.R.S. §4501
+*Binding law | Current, enacted PL 2015, c. 307, §1; no subsequent amendment*
+
+**Objective Summary:** 25 M.R.S. §4501 governs law enforcement agency acquisition and operation of unmanned aerial vehicles (UAVs), defined as an aircraft operated without a physical human presence that is capable of audio or visual surveillance. Acquisition requires approval of the governing body overseeing the agency (or, for a state agency, the commissioner). Absent a recognized constitutional warrant exception, a law enforcement agency may not use a UAV for criminal investigations without a warrant; UAVs may be used without a warrant for search-and-rescue, training, and non-investigative purposes such as accident, fire, or storm-damage documentation. A weaponized UAV may never be used, or its use facilitated, by state or local law enforcement. UAVs may not be used to surveil persons peacefully exercising free-speech/assembly rights. The Board of Trustees of the Maine Criminal Justice Academy, with the Attorney General, must set minimum written-policy standards (training, prior authorization, data-retention/destruction, altitude/speed limits, statistical reporting), and the Commissioner of Public Safety must report annual UAV-deployment statistics to the Legislature.
+
+**Practical Interpretation**
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **Legal Counsel:** Pending Phase 2 interpretation pass.
+
+### Hunting with Aid of Aircraft — Drone-Assisted Hunting Prohibition — 12 M.R.S. §11216
+*Binding law, applied to drones by official agency interpretation | Current, enacted 2003*
+
+**Objective Summary:** 12 M.R.S. §11216 makes it unlawful for a person, on the ground or airborne, to use an aircraft to aid or assist in hunting bear, deer, or moose. Title 12 §10001(1) defines "aircraft" generically as "a machine or device designed for flight," without reference to human occupancy. MDIFW's official published FAQ states this definition — and the statute's prohibition — applies to drones: "Radio controlled helicopters and airplanes are machines or devices that are designed for flight and, therefore, are aircraft as defined in statute," and that using a drone to scout a ridge for deer, push a bear, or locate a moose (including a wounded animal) for hunting purposes violates §11216. A violation without the taking of game is a civil violation (fine of $100–$500); a violation resulting in the taking of a bear, deer, or moose is a Class E crime with a mandatory minimum $500 fine, and repeat civil violations (3 or more within 5 years) escalate to a Class E crime.
+
+**Practical Interpretation**
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **Legal Counsel:** Pending Phase 2 interpretation pass.
+
+### Unauthorized Use of a Drone on or over the Premises of a Correctional Facility or Jail — 17-A M.R.S. §761
+*Binding law | Current, enacted PL 2026, c. 689, approved April 13, 2026, effective July 29, 2026*
+
+**Objective Summary:** 17-A M.R.S. §761, enacted by PL 2026, c. 689, makes it a civil violation (fine of not less than $500) for a person to intentionally or knowingly fly a drone over the premises of a correctional facility or jail at or below 400 feet above ground, land a drone on the premises, or fly a drone from the premises; a repeat violation (including a substantially similar out-of-state adjudication) is a Class D crime. "Drone" is defined broadly to include an unmanned aircraft system, unmanned aerial vehicle, remotely piloted aircraft system, or micro air vehicle. The section does not apply to a law enforcement officer, corrections officer, or corrections supervisor performing official duty, or to another person acting in the course of employment as approved by the facility's chief administrative officer or the jail administrator. Holding a valid FAA remote pilot certificate or otherwise being permitted to operate under FAA regulations is expressly **not** a defense to prosecution under this section.
+
+**Practical Interpretation**
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **Legal Counsel:** Pending Phase 2 interpretation pass.
+
+### Municipal Home Rule Ordinance Power — No UAS-Specific State Preemption Statute Located — 30-A M.R.S. §3001
+*Binding general framework | Current — research finding on preemption posture*
+
+**Objective Summary:** Maine is a strong home-rule state: 30-A M.R.S. §3001 authorizes a municipality to adopt an ordinance exercising any power the Legislature could confer on it that is not expressly or by clear implication denied, with a rebuttable presumption of validity, liberal construction, and a rule that the Legislature is not held to have implicitly denied a municipal power unless the ordinance would frustrate the purpose of a state law. No Maine statute expressly preempting local UAS/drone ordinances, and no Maine statute expressly reserving UAS regulation exclusively to the state (comparable to Louisiana's La. R.S. 2:2), was located during this research pass. Maine's state UAS statutes (25 M.R.S. §4501; 12 M.R.S. §11216; 17-A M.R.S. §761) therefore operate as a state-level floor, and individual Maine municipalities retain general home-rule authority to adopt their own UAS-related ordinances unless a specific ordinance is found to frustrate a state law's purpose — a fact-specific standard not tested by any UAS-specific Maine court decision located in this pass.
+
+**Practical Interpretation**
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **Legal Counsel:** Pending Phase 2 interpretation pass.
+
+## 3. State Agency and Facility-Specific UAS Requirements
+
+### Maine State Park Policy — Drones, Unmanned Aircraft System (UAS) — Bureau of Parks and Lands
+*Official agency policy | Current; no issue or revision date found within the document*
+
+**Objective Summary:** The Bureau of Parks and Lands' "Drones, Unmanned Aircraft System (UAS)" policy states that, citing public safety, park-user privacy, liability, wildlife protection, and noise, general UAS use is prohibited in Maine State Parks, Historic Sites, and DACF boat launches without direct law-enforcement oversight/guidance or a Special Activity Permit, and separately states "Commercial use of drones (UAS) is prohibited." Maine law enforcement agencies (State Police, Warden Service, Marine Patrol, Forest Service, county sheriffs, municipal police) may provide oversight for search-and-rescue or training UAS missions under stated coordination and notification conditions. State employees or their representatives acting in the official conduct of duties, with prior written Bureau permission, are exempted. Under "certain rare circumstances," a Special Activity Permit may be issued through the Parks regional office, requiring a full activity description and a Certificate of Liability Insurance co-naming the State of Maine, Bureau of Parks and Lands, and the specific park, and is valid only once signed by the Regional Manager.
+
+**Practical Interpretation**
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **Legal Counsel:** Pending Phase 2 interpretation pass.
+
+### Drone (Unmanned Aerial Vehicle) Policy — State of Maine Executive Branch — Office of Information Technology
+*Official agency policy | Issued April 3, 2020; last revised August 21, 2024*
+
+**Objective Summary:** The State of Maine OIT's "Drone (Unmanned Aerial Vehicle) Policy" sets internal standards for Executive Branch personnel (excluding law-enforcement/public-safety UAV use, governed separately) operating a UAV for state business. It requires a current FAA Remote Pilot Certification, compliance with FAA Part 107 and Part 89 (Remote ID), and confirmation of liability-insurance requirements with State of Maine Risk Management for any purchased, contracted, or volunteered UAV used for state business. It sets detailed pre-flight, in-flight, night-operation, operations-over-people, and airspace-compliance directives mirroring FAA Part 107 operational rules, requires agency management to maintain remote-pilot and UAV-inventory records and classify captured data per the state's Data Classification Policy, and cross-references 25 M.R.S. §4501 as an applicable law. Noncompliance may result in disciplinary action up to termination.
+
+**Practical Interpretation**
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **Legal Counsel:** Pending Phase 2 interpretation pass.
+
+### Professional Licensing — Maine Land Surveying Statute (32 M.R.S. §18201(4))
+*Binding general regulation | No UAS-specific board guidance located*
+
+**Objective Summary:** 32 M.R.S. §18201(4) defines "land surveying" as any service or work applying special knowledge of boundary law, mathematics, and applied science to measure and locate lines, angles, elevations, and natural/man-made features "in the air, on the surface of the earth, within underground workings and on the beds of bodies of water," for purposes including area/volume determination, boundary monumenting, and platting/mapping of land and subdivisions, including topography, street alignment, and grades. A person practices land surveying, within the chapter's meaning, if they perform or represent themselves as able to perform such work. No standalone Board of Licensure for Professional Land Surveyors rule, advisory opinion, or FAQ specifically addressing UAS-derived photogrammetric or LiDAR survey products was located during this research pass; the Board's full 2026 rulemaking chapters were not reviewed section-by-section.
+
+**Practical Interpretation**
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **Legal Counsel:** Pending Phase 2 interpretation pass.
+
+### Executive Orders, AG Opinions, Court Decisions, and Procurement — Research Results and Related Findings
+*Categories reviewed — no dispositive UAS-specific state authority located; material findings documented*
+
+**Objective Summary:** No Maine state-court decision, Attorney General opinion, or currently operative gubernatorial executive order directly and dispositively addressing UAS regulation was located. In 2013, the Legislature passed LD 236 (126th Legislature), which would have required a warrant for law-enforcement UAV surveillance; Governor Paul LePage vetoed it, stating Maine did not have a "drone problem," and the veto was not overridden. LePage then issued an executive order (effective August 10, 2013) directing the Commissioner of Public Safety to issue, by February 1, 2014, an interim policy governing state law-enforcement UAV use; that order and any resulting interim policy were superseded when the Legislature enacted the current controlling statute, 25 M.R.S. §4501, in 2015. Separately, LD 2144 (129th Legislature, "An Act to Protect Maine Residents from Stalking and Unauthorized Surveillance by Use of an Unmanned Aerial Vehicle") would have added explicit UAV language to the stalking statute's "course of conduct" definition (17-A §210-A) and created a new UAV-specific violation-of-privacy provision (a 400-foot altitude threshold over a private place, 17-A §511); per the bill's official status page, it was referred to committee, carried over, never reported out, and "Died Upon Conclusion of the 129th Legislature" on November 16, 2020 — it was never enacted. No enacted Maine statute imposing a state-agency UAS procurement or country-of-origin restriction was located.
+
+**Practical Interpretation**
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **Legal Counsel:** Pending Phase 2 interpretation pass.
+
+## 4. Non-Regulatory Context
+
+*The items below are drawn from news and secondary reporting, not primary legal authority. They are provided for situational awareness only and are not part of the verified source register.*
+
+- **Portland, Maine City Council Votes Again on Police Drone Under Maine's Strict UAV Law, DroneXL, March 2, 2026; Portland Police Department Gets Council Approval for Axon-Skydio Drone After Earlier Rejection, DroneXL, March 3, 2026.** After a 4-3 rejection in November 2025, Portland's City Council voted 6-3 on March 2, 2026 to approve the Police Department's roughly $45,000 acquisition of an Axon-Skydio drone (funded via federal asset-forfeiture funds), with an explicit condition barring surveillance of free-speech/assembly activity — illustrating 25 M.R.S. §4501's governing-body acquisition-approval and free-speech-surveillance provisions operating in practice at the municipal level. [Source](https://dronexl.co/2026/03/02/portland-maine-city-council-police-drone/) / [Source](https://dronexl.co/2026/03/03/portland-maine-police-axon-skydio-drone/)
+- **LD 2157 Sponsor Testimony (An Act to Prohibit the Unauthorized Use of Drones on or over the Premises of Correctional Facilities and Jails), Rep. Chad Perkins, February 8, 2026.** Sponsor testimony to the Joint Standing Committee on Criminal Justice and Public Safety states the Maine Department of Corrections had already reported drone activity over the Long Creek Youth Development Center, and that federal-prison drone-contraband incidents rose from 23 (2018) to 479 (2024) nationally — the stated rationale for what became 17-A M.R.S. §761 (ME-003). [Source](https://legislature.maine.gov/legis/bills/getTestimonyDoc.asp?id=197234)
+- **ACLU of Maine Responds to Governor's Executive Order on Drones, ACLU, August 16, 2013.** Reports that Governor Paul LePage vetoed a legislatively passed warrant requirement for law-enforcement drone surveillance and instead issued an executive order directing the Commissioner of Public Safety to develop a policy; useful background on the legislative history that preceded the current controlling statute, 25 M.R.S. §4501 (2015). [Source](https://www.aclu.org/press-releases/aclu-maine-responds-governors-executive-order-drones)
+
+## 5. Unresolved Operational Questions
+
+- **17-A §761 codification lag:** As of this research date, the official legislature.maine.gov codified-statute page for §761 had not yet been populated with a rendered statute page, likely reflecting normal lag following an April 2026 enactment. This record's text is drawn from the chaptered bill document itself (a fully reliable primary source) rather than the revisor's codified-section page; a future pass should re-confirm the codified page directly once available.
+- **17-A §761 effective date:** The July 29, 2026 standard effective date (90 days after the Second Regular Session's April 29, 2026 sine die adjournment) is corroborated by a law-firm legislative-update publication rather than independently confirmed against an official Secretary of State effective-date table. As of this research date (August 2, 2026), the law would already be in force under that date, but firms should independently confirm before relying on an enforcement date for a specific project.
+- **State Park Special Activity Permit vs. commercial-use ban:** The Bureau of Parks and Lands policy states flatly that "Commercial use of drones (UAS) is prohibited," while separately describing a Special Activity Permit process addressed to "individuals wishing to pursue the use of drones in a Maine State Park." Whether a commercial AEC operator can obtain a Special Activity Permit notwithstanding the commercial-use prohibition is not resolved by the document's own text; confirm directly with the Bureau's regional office before relying on the permit route for a commercial engagement.
+- **Preemption / local-ordinance patchwork:** No Maine statute preempts local UAS ordinances (contrast Louisiana's La. R.S. 2:2). Firms operating across multiple Maine municipalities should independently check each municipality's own code; this project did not research local ordinances, which are deferred per current program scope.
+- **Land-surveying licensure and UAS-derived deliverables:** No Board of Licensure for Professional Land Surveyors rule or guidance specifically addressing UAS-derived photogrammetric or LiDAR survey products was located. The Board's 2026 rulemaking chapters (50/60/70/80/90) were not reviewed section-by-section in this pass; confirm directly with the Board before relying on this citation for a specific project's licensure determination.
+- **Stalking/privacy-statute drone language:** Secondary sources describing Maine's stalking statute (17-A §210-A) as containing explicit "unmanned aerial vehicle" language are describing a bill (LD 2144) that died without enactment. The current statute's generic "by any action, method, device or means" language would likely encompass drone-based conduct in practice, but this has not been tested by a Maine court in the UAS context located in this pass.
+
+## 6. Confidence Summary
+
+| Finding | Confidence |
+|---|---|
+| 25 M.R.S. §4501 (law-enforcement UAS acquisition, warrant, weaponization, and free-speech-surveillance restrictions) | High — verified directly against the official Maine Legislature website; 2013 legislative history corroborated by a contemporaneous ACLU press release |
+| 12 M.R.S. §11216 / §10001(1) (hunting-with-aircraft prohibition, applied to drones by MDIFW) | High — statute verified directly; MDIFW's own published FAQ fetched and quoted directly, not via secondary summary |
+| 17-A M.R.S. §761 (unauthorized drone use over correctional facility/jail) | High — chaptered enacted bill text fetched directly from the official Legislature server; effective date corroborated by a secondary legal-industry source only |
+| 30-A M.R.S. §3001 (home rule) / no UAS-specific preemption statute located | Moderate — statute verified directly; negative-search result for a preemption statute reflects this pass's searches, not an exhaustive review |
+| Maine State Park Policy — Drones, UAS (Bureau of Parks and Lands) | Moderate — full document fetched and read directly; no issue/revision date found within the document itself |
+| State of Maine OIT Drone (UAV) Policy | High — full 16-page document fetched and read directly, including document-control footer with issue/revision dates |
+| 32 M.R.S. §18201(4) (land-surveying definition) | Low — general framework verified directly, but no UAS-specific Board guidance located and the Board's full rulemaking chapters not reviewed section-by-section |
+| Executive orders / AG opinions / state-court decisions (negative findings) | Moderate — reflects this research pass only, not a comprehensive negative-search confirmation across every AG opinion volume or unpublished order |
+| LD 2144 (stalking/privacy UAV bill) status correction (died upon conclusion of 129th Legislature, never enacted) | High — verified directly against the official legislature.maine.gov bill-status page and cross-checked against the current codified text of 17-A §210-A and §511 |
+
+*This document is objective legal/regulatory summary; Practical Interpretation content is pending Phase 2 (see process note above) and, once added, is not legal advice. Consult Maine counsel for project-specific compliance determinations. Local ordinances and tribal UAS considerations are out of scope for this phase per current research instructions.*
