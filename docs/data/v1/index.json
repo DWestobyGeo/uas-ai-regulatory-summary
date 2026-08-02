@@ -228,6 +228,14 @@
       "json_url": "data/v1/NE.json"
     },
     {
+      "state": "New Hampshire",
+      "state_abbr": "NH",
+      "state_fips": "33",
+      "record_count": 15,
+      "last_updated": "2026-08-02",
+      "json_url": "data/v1/NH.json"
+    },
+    {
       "state": "New Jersey",
       "state_abbr": "NJ",
       "state_fips": "34",
@@ -388,5 +396,5 @@
       "json_url": "data/v1/WY.json"
     }
   ],
-  "state_count": 48
+  "state_count": 49
 }
