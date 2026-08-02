@@ -1,12 +1,12 @@
 # Connecticut — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 1, 2026 | **Version:** 1.0 (Phase 1 — objective research; see process note below)
-**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v4, Amendment 2), this summary covers Connecticut **state and state-agency** UAS authorities only — local (municipal) ordinances and tribal rules are deferred to a later phase. Connecticut broadly preempts local commercial-UAS ordinances (Conn. Gen. Stat. § 7-149b, below), narrowing the practical significance of that deferral, except for a specific water-company-municipality carve-out. Full citations and metadata are in `CT_UAS_Source_Register.csv`.
+**Research date:** August 1, 2026 | **Version:** 2.0 (Phase 2 — practical interpretation complete; procurement role added August 2, 2026)
+**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v5, Amendment 2), this summary covers Connecticut **state and state-agency** UAS authorities only — local (municipal) ordinances and tribal rules are deferred to a later phase. Connecticut broadly preempts local commercial-UAS ordinances (Conn. Gen. Stat. § 7-149b, below), narrowing the practical significance of that deferral, except for a specific water-company-municipality carve-out. Full citations and metadata are in `CT_UAS_Source_Register.csv`.
 
-> **Process note (Agent Instructions Amendment 2, August 1, 2026):** This state was researched under the three-phase program structure. This document currently reflects **Phase 1 only** — the objective, sourced findings below are complete, but the Practical Interpretation content (AEC Industry Expert, Agency Practitioner, and Legal Counsel perspectives) has not yet been drafted and is marked "Pending Phase 2" throughout.
+> **Process note (Agent Instructions Amendment 4, August 2, 2026):** Phase 2 practical interpretation is complete for the authorities presented below. The four labeled perspectives are operational and risk-management interpretations of the verified research packet; they do not add legal requirements and are not legal advice.
 
-Each rule below is presented as an **Objective Summary** (binding text/citation, no interpretation). Practical Interpretation — from three labeled perspectives (AEC Industry UAS Expert, Agency Practitioner, and Legal Counsel) — will be added in Phase 2 and is not legal advice.
+Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.
 
 ---
 
@@ -22,50 +22,55 @@ Connecticut regulates UAS through several distinct statutes: a general careless/
 **Objective Summary:** Prohibits operating any aircraft or unmanned aircraft carelessly, negligently, or recklessly, or in a manner endangering the property, life, or limb of any person, considering the proximity of other aircraft, weather and field conditions, and territory flown over. P.A. 24-40 (effective July 1, 2024) amended the statute to expressly add unmanned aircraft to a rule that previously applied only to manned aircraft.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Add this authority to the state-specific preflight checklist and confirm its applicability to the project site, mission purpose, and client. Document the operational decision and any source-supported exception before dispatch.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Document the applicability analysis and any exception relied upon in the project file. Align the scope, client representations, and operator procedures with the verified authority, and seek state counsel if material facts fall outside its clear terms.
 ### Public Act 25-1 (2025) — Critical Infrastructure Facility Flight and Surveillance Restriction
 *Binding law | Current, effective October 1, 2025*
 
 **Objective Summary:** Makes it a Class A misdemeanor to operate a UAS less than 250 ft above, or within 100 horizontal ft of, a defined "critical infrastructure facility" (a broad list including electrical generation/substation facilities, fuel storage/processing, chemical/rubber manufacturing, correctional facilities, telecommunications infrastructure, ports/rail yards/truck terminals, gas plants, broadcast transmission facilities, pipelines, high/significant-hazard dams, air navigation facilities, military facilities, water/wastewater infrastructure, defense-contractor facilities, government buildings, hospitals, public-safety buildings, and state/local bridges), or to use a UAS to surveil or gather information about such a facility without the owner/administrator's prior approval. Exempts law enforcement, government employees, military personnel, and authorized contractors.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Build the issuing agency approval into pre-mobilization planning. Confirm the property boundary, current submission materials, operating dates, and issued conditions before dispatch, and leave schedule contingency because the captured source does not guarantee processing time.
+- **Agency Practitioner:** Contact the official or office designated by the cited authority before fixing mobilization dates. Request the current form, documentation checklist, fees, submission route, and processing estimate; retain the issued approval and all site-specific conditions with the flight record.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Make the required approval and compliance with its conditions a documented mobilization gate. Allocate responsibility for applications and schedule impacts in the contract, and obtain counsel if the project's facts do not fit the stated authorization pathway.
 ### Public Act 25-1 (2025) — Covered-Foreign-Entity UAS Procurement and Operation Ban
 *Binding law | Current, phased effective dates 2025–2028*
 
 **Objective Summary:** Bars the Department of Emergency Services and Public Protection from purchasing a covered-foreign-entity UAS after October 1, 2025, and operating one after October 1, 2027; bars every other state agency, municipality, and their contractors from purchasing one after October 1, 2026, and operating one after October 1, 2028.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Add this authority to the state-specific preflight checklist and confirm its applicability to the project site, mission purpose, and client. Document the operational decision and any source-supported exception before dispatch.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Require current vendor documentation for aircraft, critical components, installed software, ownership, origin, and support lifecycle before purchase. Compare the proposed configuration with the controlling authority and preserve the evidence supporting the acquisition decision.
+- **AEC Industry Legal Counsel:** Document the applicability analysis and any exception relied upon in the project file. Align the scope, client representations, and operator procedures with the verified authority, and seek state counsel if material facts fall outside its clear terms.
 ### Public Act 25-1 (2025) — UAS Weaponization Ban
 *Binding law | Current, effective October 1, 2025*
 
 **Objective Summary:** Prohibits equipping a UAS with a deadly weapon, dangerous instrument, firearm, ammunition, explosive, or incendiary device, with exceptions for military personnel on official duty and authorized emergency responders using a UAS-mounted breaching tool.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Add this authority to the state-specific preflight checklist and confirm its applicability to the project site, mission purpose, and client. Document the operational decision and any source-supported exception before dispatch.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Document the applicability analysis and any exception relied upon in the project file. Align the scope, client representations, and operator procedures with the verified authority, and seek state counsel if material facts fall outside its clear terms.
 ### Conn. Gen. Stat. § 7-149b — Municipal Preemption for Commercial UAS
 *Binding law | Current, enacted 2017*
 
 **Objective Summary:** Prohibits a municipality from enacting or enforcing an ordinance regulating the ownership, possession, purchase, sale, use, transportation, or operation of a commercial UAS, except as authorized by state/federal law and not conflicting with Connecticut Airport Authority policy. A municipality that is also a "water company" may regulate or prohibit private and commercial UAS use over its public water-supply land (Class I/II land), provided it does not conflict with federal law or Airport Authority policy.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Use the statewide rule as the regulatory baseline, while separately screening site-control rules and any local authority preserved by the preemption provision. Record that jurisdictional check in the project flight-planning package.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Describe this source as guidance or policy, not a generally binding statute. Check whether the client or property owner incorporates it contractually, preserve the version relied upon, and escalate conflicts with controlling authority.
 ## 3. State Agency and Facility-Specific UAS Requirements
 
 ### DEEP — Prohibition on State Parks, Forests, and DEEP Lands
@@ -74,30 +79,33 @@ Connecticut regulates UAS through several distinct statutes: a general careless/
 **Objective Summary:** Regs. Conn. State Agencies § 23-4-1(o) prohibits operating a remote-controlled aircraft or drone on Connecticut State Parks, State Forests, or other DEEP-controlled land unless specifically authorized by the Commissioner in a Special Use License; noise (§ 23-4-1(x)) and wildlife-disturbance (§ 23-4-1(b)) provisions are separately cited by DEEP as applicable. DEEP's own guidance states this applies to both recreational and commercial operators, and that no public UAS use is currently authorized through its Special Use License application process.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Plan environmental and mapping flights to avoid conduct that could be characterized as locating, pursuing, disturbing, or harassing wildlife. Coordinate mission timing and stand-off distances with the land manager when project work overlaps sensitive habitat or hunting activity.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** This authority governs a public entity rather than private operators directly. Review the solicitation and contract for incorporation or flow-down before treating it as binding on the consultant, and document the basis for that conclusion.
 ### Professional Licensing — State Board of Examiners for Professional Engineers and Land Surveyors
 *Binding general regulation | No UAS-specific board guidance located*
 
 **Objective Summary:** Connecticut's licensing framework (Title 20, Chapter 391) requires PE/surveyor licensees to practice only within their demonstrated competency. No standalone UAS-specific board guidance was located.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Classify the intended UAS-derived deliverable before mobilization and place licensed-professional review where the verified authority requires it. Keep flight acquisition, analysis, and final professional deliverable responsibilities explicit in the project workflow.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Describe this source as guidance or policy, not a generally binding statute. Check whether the client or property owner incorporates it contractually, preserve the version relied upon, and escalate conflicts with controlling authority.
 ### Executive Orders, AG Opinions, and Court Decisions
 *Categories reviewed — none UAS-specific located*
 
 **Objective Summary:** No Connecticut executive order, Attorney General opinion, or appellate court decision specifically addressing UAS regulation was located in this pass.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Treat this record as a research flag, not an operator requirement. Do not change field procedures unless a current controlling source confirms the issue; route any project-specific uncertainty to the identified agency or counsel.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Do not present this negative or unresolved research result as a legal conclusion. Preserve the research limitation, verify current authority for the specific project, and escalate only if the issue could materially affect scope, access, or liability.
 ## 4. Non-Regulatory Context
 
 *The items below are drawn from news and secondary reporting, not primary legal authority. They are provided for situational awareness only and are not part of the verified source register.*

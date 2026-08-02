@@ -1,12 +1,12 @@
 # Arizona — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 1, 2026 | **Version:** 1.0
-**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v4), this summary covers Arizona **state and state-agency** UAS authorities only — local (municipal/county) ordinances and tribal rules are deferred to a later phase and are not included here. Arizona Rev. Stat. § 13-3729(C) broadly preempts local UAS ordinances (covered below), which narrows the practical significance of that deferral more than in states like Colorado or New York. Full citations and metadata are in `AZ_UAS_Source_Register.csv`.
+**Research date:** August 1, 2026 | **Version:** 2.0 (Phase 2 — practical interpretation complete; procurement role added August 2, 2026)
+**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v5), this summary covers Arizona **state and state-agency** UAS authorities only — local (municipal/county) ordinances and tribal rules are deferred to a later phase and are not included here. Arizona Rev. Stat. § 13-3729(C) broadly preempts local UAS ordinances (covered below), which narrows the practical significance of that deferral more than in states like Colorado or New York. Full citations and metadata are in `AZ_UAS_Source_Register.csv`.
 
-Each rule below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from two labeled perspectives: an AEC industry UAS expert (operational read) and AEC industry legal counsel (risk/compliance read). Practical interpretation is not legal advice.
+Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.
 
-> **Process note (added under Agent Instructions Amendment 2, August 1, 2026):** The Practical Interpretation content in this document was produced under the prior single-pass research process and does not yet reflect the Agency Practitioner perspective or the Phase 3 fact-drift QA pass introduced by Amendment 2. It is retained as-is for now and will be regenerated for consistency once Phase 1 (objective research) is complete for all states. Treat the Objective Summary and source citations above as current; treat the Practical Interpretation bullets as provisional pending that later pass.
+> **Process note (Agent Instructions Amendment 4, August 2, 2026):** Phase 2 practical interpretation is complete for the authorities presented below. The four labeled perspectives are operational and risk-management interpretations of the verified research packet; they do not add legal requirements and are not legal advice.
 
 ---
 
@@ -22,36 +22,44 @@ Arizona regulates UAS primarily through a single, comprehensive statute — Ariz
 **Objective Summary:** Makes it unlawful to operate a model aircraft or civil unmanned aircraft if the operation (1) is prohibited by federal law or regulation governing aeronautics, including FAA regulations, or (2) interferes with a law enforcement, firefighter, or emergency services operation. A violation is a class 1 misdemeanor (up to 6 months jail, 3 years probation, fine up to $2,500).
 
 **Practical Interpretation**
-- *AEC Industry UAS Expert Perspective:* This provision effectively makes any FAA Part 107 violation a state-law violation as well — maintain rigorous Part 107 compliance since a federal violation automatically triggers state criminal exposure. Do not fly near active emergency, fire, or law-enforcement operations.
-- *AEC Industry Legal Counsel Perspective:* Document FAA compliance (certifications, authorizations, waivers) for every commercial flight, since this statute ties state criminal liability directly to federal regulatory compliance.
 
+- **AEC Industry UAS Expert:** This provision effectively makes any FAA Part 107 violation a state-law violation as well — maintain rigorous Part 107 compliance since a federal violation automatically triggers state criminal exposure. Do not fly near active emergency, fire, or law-enforcement operations.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Document FAA compliance (certifications, authorizations, waivers) for every commercial flight, since this statute ties state criminal liability directly to federal regulatory compliance.
 ### Ariz. Rev. Stat. § 13-3729(B), (F)(3) — Unlawful Operation Near Critical Facility
 *Binding law | Current, enacted 2016 (SB 1449)*
 
 **Objective Summary:** Makes it unlawful to operate or use a UAS to intentionally photograph or loiter over or near a "critical facility" in furtherance of any criminal offense. "Critical facility" is defined extremely broadly to include petroleum/chemical/rubber facilities, water/wastewater treatment facilities and dams, electric generation facilities and substations, transmission lines of 69,000+ volts, communication towers, natural gas facilities, railroad infrastructure, courts, public safety facilities, jails and prisons, military installations, and hospitals receiving air ambulance service. A first violation is a class 6 felony (up to 1.5 years, fine up to $150,000); a second or subsequent violation is a class 5 felony (up to 2.5 years). Secondary sources report an accompanying 500 ft horizontal / 250 ft vertical buffer and written-consent defense not located verbatim in the statutory text obtained.
 
 **Practical Interpretation**
-- *AEC Industry UAS Expert Perspective:* The critical-facility list is directly relevant to nearly every AEC infrastructure project — obtain the facility owner/operator's written consent before flying within (or reasonably close to) the reported 500 ft/250 ft buffer, and document that consent given the felony-level exposure.
-- *AEC Industry Legal Counsel Perspective:* This is one of the harshest state-level UAS critical-infrastructure statutes reviewed to date (felony from the first offense). Confirm the exact buffer-distance language directly against the codified statute or related agency guidance before citing a specific numeric buffer to a client.
 
+- **AEC Industry UAS Expert:** The critical-facility list is directly relevant to nearly every AEC infrastructure project — obtain the facility owner/operator's written consent before flying within (or reasonably close to) the reported 500 ft/250 ft buffer, and document that consent given the felony-level exposure.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** This is one of the harshest state-level UAS critical-infrastructure statutes reviewed to date (felony from the first offense). Confirm the exact buffer-distance language directly against the codified statute or related agency guidance before citing a specific numeric buffer to a client.
 ### Ariz. Rev. Stat. § 13-3729(C), (D) — State Preemption of Local UAS Regulation
 *Binding law | Current, enacted 2016 (SB 1449)*
 
 **Objective Summary:** Prohibits a city, town, or county from enacting or adopting any ordinance, policy, or rule relating to UAS ownership or operation; any such measure is void, whether enacted before or after August 6, 2016. Narrow exceptions preserve local regulation of a locality's own public UAS and of model-aircraft takeoff/landing in a locally owned park or preserve (under specified conditions), and the section does not override FAA-authorized operations.
 
 **Practical Interpretation**
-- *AEC Industry UAS Expert Perspective:* Arizona's preemption is unusually strong — AEC operators should generally not expect a significant municipal drone-ordinance patchwork comparable to Colorado's, though confirm whether a specific site is a city/town/county-owned park or preserve subject to the narrow takeoff/landing carve-out.
-- *AEC Industry Legal Counsel Perspective:* A local ordinance purporting to independently regulate UAS ownership or operation outside the statutory exceptions is void by operation of state law; monitor pending legislation (HB 2875, Section 5 below) that would further reinforce this preemption.
 
+- **AEC Industry UAS Expert:** Arizona's preemption is unusually strong — AEC operators should generally not expect a significant municipal drone-ordinance patchwork comparable to Colorado's, though confirm whether a specific site is a city/town/county-owned park or preserve subject to the narrow takeoff/landing carve-out.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** A local ordinance purporting to independently regulate UAS ownership or operation outside the statutory exceptions is void by operation of state law; monitor pending legislation (HB 2875, Section 5 below) that would further reinforce this preemption.
 ### Ariz. Rev. Stat. § 28-8280 — Careless or Reckless Aircraft Operation
 *Binding law | Current, enacted 2016*
 
 **Objective Summary:** Prohibits careless or reckless operation of an aircraft — including model aircraft and unmanned aircraft per secondary-source description — in the air, on the ground, or on water, in a manner that endangers the life or property of another. Courts reportedly consider federal safety standards when assessing carelessness or recklessness. Class 1 misdemeanor (up to 6 months jail, fine up to $2,500).
 
 **Practical Interpretation**
-- *AEC Industry UAS Expert Perspective:* Adhere strictly to Part 107 operational limits since a Part 107 violation could independently support a careless/reckless charge under this statute, layered on top of § 13-3729(A).
-- *AEC Industry Legal Counsel Perspective:* Document standard safety practices (pre-flight checklists, weather assessment, site risk assessment) as evidence of non-reckless operation; this section's exact text was not independently re-verified against the primary codification in this pass.
 
+- **AEC Industry UAS Expert:** Adhere strictly to Part 107 operational limits since a Part 107 violation could independently support a careless/reckless charge under this statute, layered on top of § 13-3729(A).
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Document standard safety practices (pre-flight checklists, weather assessment, site risk assessment) as evidence of non-reckless operation; this section's exact text was not independently re-verified against the primary codification in this pass.
 ## 3. State Agency and Land-Management UAS Requirements
 
 ### Parks — Arizona State Parks and Trails (ASPT)
@@ -60,27 +68,33 @@ Arizona regulates UAS primarily through a single, comprehensive statute — Ariz
 **Objective Summary:** ASPT prohibits all recreational drone use in state parks. Commercial UAS use is evaluated case-by-case through a Filming Permit requiring liability insurance and current FAA registration, with the final decision and any fees at park management's discretion. Access beyond a park boundary (National Forest, State Trust Land, Game and Fish land) may require additional agency permits.
 
 **Practical Interpretation**
-- *AEC Industry UAS Expert Perspective:* Apply for an ASPT Filming Permit well in advance of any commercial AEC UAS work planned within a state park boundary, and confirm separately with any adjoining land-management agency if the project extends beyond the park boundary.
-- *AEC Industry Legal Counsel Perspective:* Retain the Filming Permit, insurance proof, and FAA registration documentation in the project file; monitor ASPT's policy for updates given the agency's own statement that the rule is subject to change.
 
+- **AEC Industry UAS Expert:** Apply for an ASPT Filming Permit well in advance of any commercial AEC UAS work planned within a state park boundary, and confirm separately with any adjoining land-management agency if the project extends beyond the park boundary.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Retain the Filming Permit, insurance proof, and FAA registration documentation in the project file; monitor ASPT's policy for updates given the agency's own statement that the rule is subject to change.
 ### Wildlife — Arizona Game and Fish Commission (A.A.C. R12-4-320)
 *Binding administrative regulation | Current*
 
 **Objective Summary:** Prohibits using a drone (or other aircraft, or motorized terrestrial/aquatic vehicle) to harass, molest, chase, rally, concentrate, herd, intercept, torment, or drive wildlife, with exceptions for § 17-239-compliant activity and authorized state/federal employees acting within official duties. Secondary sources describe a 48-hour pre-season big-game scouting restriction and a narrow harvested-game recovery exception.
 
 **Practical Interpretation**
-- *AEC Industry UAS Expert Perspective:* Plan environmental-monitoring or habitat-mapping flights to avoid any activity that could be read as harassing or disturbing wildlife, with a conservative standoff buffer near known wildlife concentrations, particularly during the pre-season scouting window.
-- *AEC Industry Legal Counsel Perspective:* Document the survey/mapping purpose of any UAS flight over wildlife habitat to distinguish it from a prohibited harassment or hunting-assistance use.
 
+- **AEC Industry UAS Expert:** Plan environmental-monitoring or habitat-mapping flights to avoid any activity that could be read as harassing or disturbing wildlife, with a conservative standoff buffer near known wildlife concentrations, particularly during the pre-season scouting window.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Document the survey/mapping purpose of any UAS flight over wildlife habitat to distinguish it from a prohibited harassment or hunting-assistance use.
 ### Professional Licensing — Arizona State Board of Technical Registration (BTR)
 *Binding general regulation | No UAS-specific board guidance located*
 
 **Objective Summary:** BTR licenses and regulates engineers, land surveyors, and related professions under Title 32, Chapter 1. General rules require licensees to practice only within their demonstrated competency. No standalone BTR guidance addressing UAS-derived photogrammetry, LiDAR, or mapping products was located.
 
 **Practical Interpretation**
-- *AEC Industry UAS Expert Perspective:* Route UAS-derived photogrammetry/LiDAR mapping products through an Arizona-licensed PE or PLS for review under the existing general competency framework before delivery on any official deliverable.
-- *AEC Industry Legal Counsel Perspective:* Document licensed-professional review and QA/QC of UAS-derived deliverables given the absence of Arizona-specific UAS guidance.
 
+- **AEC Industry UAS Expert:** Route UAS-derived photogrammetry/LiDAR mapping products through an Arizona-licensed PE or PLS for review under the existing general competency framework before delivery on any official deliverable.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Document licensed-professional review and QA/QC of UAS-derived deliverables given the absence of Arizona-specific UAS guidance.
 ## 4. State Preemption of Local Ordinances
 
 See Section 2 (§ 13-3729(C), (D)) above — Arizona has one of the strongest state UAS-preemption statutes reviewed to date, in contrast to Colorado and New York.
@@ -93,9 +107,11 @@ See Section 2 (§ 13-3729(C), (D)) above — Arizona has one of the strongest st
 **Objective Summary:** Reported by a secondary source to have passed the Arizona House (April 9, 2026) and Senate (April 7, 2026), and to be awaiting Governor action as of that source's last update. Described as further reinforcing existing § 13-3729(C) preemption by limiting local government ability to regulate or restrict UAS operations. Final enactment status was not independently confirmed against the Arizona Legislature's official bill-tracking system in this pass.
 
 **Practical Interpretation**
-- *AEC Industry UAS Expert Perspective:* Do not assume this bill has been enacted for compliance purposes without independent confirmation — Arizona's existing preemption already provides strong protection regardless of this bill's fate.
-- *AEC Industry Legal Counsel Perspective:* Confirm HB 2875's final disposition directly against the Arizona Legislature's official bill-status system before citing it as enacted law to a client.
 
+- **AEC Industry UAS Expert:** Do not assume this bill has been enacted for compliance purposes without independent confirmation — Arizona's existing preemption already provides strong protection regardless of this bill's fate.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Confirm HB 2875's final disposition directly against the Arizona Legislature's official bill-status system before citing it as enacted law to a client.
 ## 6. Unresolved Operational Questions
 
 - **§ 13-3729(B) buffer distance:** The reported 500 ft horizontal / 250 ft vertical buffer around critical facilities is corroborated by multiple secondary sources but was not located verbatim in the statutory subsection text obtained; confirm whether this appears in a related subsection, administrative rule, or is a secondary-source paraphrase before citing a specific numeric buffer to a client.

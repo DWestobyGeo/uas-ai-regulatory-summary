@@ -1,12 +1,12 @@
 # Alabama — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 1, 2026 | **Version:** 1.0
-**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v4), this summary covers Alabama **state and state-agency** UAS authorities only — local (municipal/county) ordinances and tribal rules are deferred to a later phase and are not included here. Alabama has **not** enacted a comprehensive statewide UAS-preemption statute (unlike Georgia or Arizona), so a municipal ordinance patchwork is more likely to be operationally significant here than in states with broad preemption — confirm local rules for any specific project site in a later research phase. Full citations and metadata are in `AL_UAS_Source_Register.csv`.
+**Research date:** August 1, 2026 | **Version:** 2.0 (Phase 2 — practical interpretation complete; procurement role added August 2, 2026)
+**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v5), this summary covers Alabama **state and state-agency** UAS authorities only — local (municipal/county) ordinances and tribal rules are deferred to a later phase and are not included here. Alabama has **not** enacted a comprehensive statewide UAS-preemption statute (unlike Georgia or Arizona), so a municipal ordinance patchwork is more likely to be operationally significant here than in states with broad preemption — confirm local rules for any specific project site in a later research phase. Full citations and metadata are in `AL_UAS_Source_Register.csv`.
 
-Each rule below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from two labeled perspectives: an AEC industry UAS expert (operational read) and AEC industry legal counsel (risk/compliance read). Practical interpretation is not legal advice.
+Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.
 
-> **Process note (added under Agent Instructions Amendment 2, August 1, 2026):** The Practical Interpretation content in this document was produced under the prior single-pass research process and does not yet reflect the Agency Practitioner perspective or the Phase 3 fact-drift QA pass introduced by Amendment 2. It is retained as-is for now and will be regenerated for consistency once Phase 1 (objective research) is complete for all states. Treat the Objective Summary and source citations above as current; treat the Practical Interpretation bullets as provisional pending that later pass.
+> **Process note (Agent Instructions Amendment 4, August 2, 2026):** Phase 2 practical interpretation is complete for the authorities presented below. The four labeled perspectives are operational and risk-management interpretations of the verified research packet; they do not add legal requirements and are not legal advice.
 
 ---
 
@@ -22,27 +22,33 @@ Alabama's UAS-specific statutory framework centers on two criminal statutes prot
 **Objective Summary:** Prohibits operating a UAS within 500 ft horizontal or 200 ft vertical of a Department of Corrections facility (broadly defined, including a 100-yard public-road buffer and facilities under construction), or using a UAS to conduct surveillance of, photograph, or record a facility. The Department, a federally authorized operator flying lawfully, the U.S. Armed Forces, and the Alabama National Guard are exempt without further permission; a DOC contractor, responding law-enforcement/public-safety agency, emergency-management official, or public utility may operate only with the Commissioner's prior written permission. Violation is a Class C felony with a $2,500 minimum fine and a mandatory, non-suspendable 30-day minimum sentence.
 
 **Practical Interpretation**
-- *AEC Industry UAS Expert Perspective:* Treat any project within 500 ft/200 ft of an Alabama correctional facility as requiring the Commissioner's prior written permission — there is no general commercial-operator exemption.
-- *AEC Industry Legal Counsel Perspective:* Document the Commissioner's written permission in the project file before any correctional-facility-adjacent flight, given the mandatory non-suspendable jail sentence; confirm the facility boundary definition, which extends to a 100-yard public-road buffer.
 
+- **AEC Industry UAS Expert:** Treat any project within 500 ft/200 ft of an Alabama correctional facility as requiring the Commissioner's prior written permission — there is no general commercial-operator exemption.
+- **Agency Practitioner:** Contact the official or office designated by the cited authority before fixing mobilization dates. Request the current form, documentation checklist, fees, submission route, and processing estimate; retain the issued approval and all site-specific conditions with the flight record.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Document the Commissioner's written permission in the project file before any correctional-facility-adjacent flight, given the mandatory non-suspendable jail sentence; confirm the facility boundary definition, which extends to a 100-yard public-road buffer.
 ### Ala. Code § 13A-7-4.3 — Critical Infrastructure Facility (UAS-Weapon Enhancement)
 *Binding law | Current, Act 2016-390 as amended through Act 2025-64*
 
 **Objective Summary:** Defines "critical infrastructure facility" broadly (chemical, energy, water, gas, mining, transportation, communications, dams, defense-contractor, and manufacturing facilities, among others). Unauthorized entry of an enclosed/posted facility is a Class A misdemeanor; damaging or interrupting facility operations is a Class C felony. A person who commits unauthorized entry while possessing or operating a UAS with an attached weapon, firearm, explosive, destructive device, or ammunition is guilty of a Class C felony. Lawful assembly/petition activity, including labor disputes, and employment-scope work are excepted.
 
 **Practical Interpretation**
-- *AEC Industry UAS Expert Perspective:* This statute's UAS-specific felony enhancement is narrow — weapon-attached UAS combined with unauthorized physical entry — and does not on its face reach routine aerial inspection or photography from outside an enclosed/posted boundary.
-- *AEC Industry Legal Counsel Perspective:* Confirm facility access authorization before any work requiring physical entry to an enclosed or posted critical infrastructure site; document that authorization in the project file.
 
+- **AEC Industry UAS Expert:** This statute's UAS-specific felony enhancement is narrow — weapon-attached UAS combined with unauthorized physical entry — and does not on its face reach routine aerial inspection or photography from outside an enclosed/posted boundary.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Confirm facility access authorization before any work requiring physical entry to an enclosed or posted critical infrastructure site; document that authorization in the project file.
 ### Ala. Code § 13A-7-94.1 (HB 274, 2026) — DOC Counter-UAS Mitigation Authority
 *Binding law | Effective June 1, 2026*
 
 **Objective Summary:** Authorizes the Alabama Department of Corrections to take reasonable and necessary measures — including signal jamming (to the extent consistent with federal law), hacking, physical capture, or other reasonable mitigation — to neutralize, intercept, disable, or disrupt a UAS operating in violation of § 13A-7-91 near a DOC facility.
 
 **Practical Interpretation**
-- *AEC Industry UAS Expert Perspective:* Creates no new private-operator prohibition beyond § 13A-7-91, but materially raises the practical risk of equipment loss or damage from lawful state countermeasures if a flight strays into a restricted zone without documented permission — budget extra margin around the buffer.
-- *AEC Industry Legal Counsel Perspective:* Relevant context for advising a client on enforcement risk near Alabama correctional facilities; the enrolled bill text was not independently read in this pass — recommend direct verification once fully codified.
 
+- **AEC Industry UAS Expert:** Creates no new private-operator prohibition beyond § 13A-7-91, but materially raises the practical risk of equipment loss or damage from lawful state countermeasures if a flight strays into a restricted zone without documented permission — budget extra margin around the buffer.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** This is not a categorical purchasing ban, but it creates potential equipment-loss exposure near protected locations. Consider loss risk, insurance treatment, geofencing configuration, and replaceability when assigning aircraft to work in the affected environment.
+- **AEC Industry Legal Counsel:** Relevant context for advising a client on enforcement risk near Alabama correctional facilities; the enrolled bill text was not independently read in this pass — recommend direct verification once fully codified.
 ## 3. State Agency and Facility-Specific UAS Requirements
 
 ### Ala. Admin. Code r. 220-4-.15(1)(u) — UAV/Drone Use on State Lands Division Property
@@ -51,44 +57,54 @@ Alabama's UAS-specific statutory framework centers on two criminal statutes prot
 **Objective Summary:** Prohibits an unauthorized person from launching, landing, possessing, or using a UAV/drone on lands under State Lands Division jurisdiction, except with prior written permission from the Division Director.
 
 **Practical Interpretation**
-- *AEC Industry UAS Expert Perspective:* Obtain written Division Director permission before any AEC UAS work on State Lands Division property, and build permit lead time into scheduling given this is a recently amended rule.
-- *AEC Industry Legal Counsel Perspective:* Retain the Division's written authorization in the project file for any launch, landing, possession, or use of a UAV on State Lands Division property.
 
+- **AEC Industry UAS Expert:** Obtain written Division Director permission before any AEC UAS work on State Lands Division property, and build permit lead time into scheduling given this is a recently amended rule.
+- **Agency Practitioner:** Contact the official or office designated by the cited authority before fixing mobilization dates. Request the current form, documentation checklist, fees, submission route, and processing estimate; retain the issued approval and all site-specific conditions with the flight record.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Retain the Division's written authorization in the project file for any launch, landing, possession, or use of a UAV on State Lands Division property.
 ### Ala. Admin. Code r. 220-2-.11(1)(a) — Prohibited Hunting-Aid Devices (Ambiguous UAS Application)
 *Binding administrative regulation | Current, last amended January 14, 2024*
 
 **Objective Summary:** Prohibits hunting, taking, or killing wildlife with the aid of an "aircraft" or other listed mechanized device. The rule's text does not separately name unmanned aircraft, UAS, or drones.
 
 **Practical Interpretation**
-- *AEC Industry UAS Expert Perspective:* Treat this rule as likely — but not conclusively confirmed — to reach drone-assisted hunting activity, and apply a conservative standoff practice near hunting-adjacent land pending agency confirmation.
-- *AEC Industry Legal Counsel Perspective:* This is a genuine interpretive gap, not a confirmed UAS prohibition; a direct inquiry to the Alabama Department of Conservation and Natural Resources is recommended before relying on the rule's silence.
 
+- **AEC Industry UAS Expert:** Treat this rule as likely — but not conclusively confirmed — to reach drone-assisted hunting activity, and apply a conservative standoff practice near hunting-adjacent land pending agency confirmation.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** This is a genuine interpretive gap, not a confirmed UAS prohibition; a direct inquiry to the Alabama Department of Conservation and Natural Resources is recommended before relying on the rule's silence.
 ### Professional Licensing — Alabama State Board of Licensure for Professional Engineers and Land Surveyors
 *Binding general regulation | No UAS-specific board guidance located*
 
 **Objective Summary:** Alabama's licensing framework (Title 34, Chapter 11) generally requires licensees to practice only in fields in which they are competent by education/experience. No standalone UAS-specific board guidance was located.
 
 **Practical Interpretation**
-- *AEC Industry UAS Expert Perspective:* Route UAS-derived photogrammetry/LiDAR products through an Alabama-licensed PE or PLS under the existing general competency framework.
-- *AEC Industry Legal Counsel Perspective:* Document licensed-professional review given the absence of Alabama-specific UAS guidance.
 
+- **AEC Industry UAS Expert:** Route UAS-derived photogrammetry/LiDAR products through an Alabama-licensed PE or PLS under the existing general competency framework.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Document licensed-professional review given the absence of Alabama-specific UAS guidance.
 ### State Preemption of Local Ordinances (Research Result — None Located)
 
 **Objective Summary:** Alabama has not enacted a comprehensive statewide UAS-preemption statute comparable to Georgia's or Arizona's. Secondary sources describe Alabama as recognizing FAA authority over navigable airspace and preempting local no-fly-zone ordinances, but otherwise leaving room for a municipal patchwork — e.g., the City of Oxford's Ordinance 2016-28 (city-property drone ban, reportedly used as a template elsewhere) and an Orange Beach ordinance restricting UAS operation near venues, events, and Gulf beach areas.
 
 **Practical Interpretation**
-- *AEC Industry UAS Expert Perspective:* Do not assume state law displaces local drone ordinances in Alabama; confirm municipal rules for any project site, particularly coastal/tourism municipalities.
-- *AEC Industry Legal Counsel Perspective:* This is a research result based on secondary drone-law compilation sources, not a comprehensive negative-search confirmation; flag for the client that a jurisdiction-specific ordinance check is warranted.
 
+- **AEC Industry UAS Expert:** Do not assume state law displaces local drone ordinances in Alabama; confirm municipal rules for any project site, particularly coastal/tourism municipalities.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** This is a research result based on secondary drone-law compilation sources, not a comprehensive negative-search confirmation; flag for the client that a jurisdiction-specific ordinance check is warranted.
 ### Executive Orders, Court Decisions, and AG Opinions
 *Categories reviewed — none UAS-specific located*
 
 **Objective Summary:** No Alabama executive order, appellate court decision, or Attorney General opinion specifically addressing UAS regulation was located. No published Alabama State Parks-specific UAS policy distinct from the State Lands Division rule was located.
 
 **Practical Interpretation**
-- *AEC Industry UAS Expert Perspective:* No separate requirement to track beyond the statutes and agency policies already covered in this register; confirm directly with Alabama State Parks whether a park-specific policy exists before planning work at a specific park.
-- *AEC Industry Legal Counsel Perspective:* Absence of a located source is not confirmation none exists.
 
+- **AEC Industry UAS Expert:** No separate requirement to track beyond the statutes and agency policies already covered in this register; confirm directly with Alabama State Parks whether a park-specific policy exists before planning work at a specific park.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Absence of a located source is not confirmation none exists.
 ## 4. Non-Regulatory Context
 
 *The items below are drawn from news and secondary reporting, not primary legal authority. They are provided for situational awareness only and are not part of the verified source register.*

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "generated_at": "2026-08-02",
   "disclaimer": "AI-compiled regulatory research. Not legal advice. See /DISCLAIMER for full terms.",
   "states": [
@@ -8,7 +8,7 @@
       "state_abbr": "AK",
       "state_fips": "02",
       "record_count": 8,
-      "last_updated": "2026-08-01",
+      "last_updated": "2026-08-02",
       "json_url": "data/v1/AK.json"
     },
     {
@@ -16,7 +16,7 @@
       "state_abbr": "AL",
       "state_fips": "01",
       "record_count": 8,
-      "last_updated": "2026-08-01",
+      "last_updated": "2026-08-02",
       "json_url": "data/v1/AL.json"
     },
     {
@@ -24,7 +24,7 @@
       "state_abbr": "AR",
       "state_fips": "05",
       "record_count": 8,
-      "last_updated": "2026-08-01",
+      "last_updated": "2026-08-02",
       "json_url": "data/v1/AR.json"
     },
     {
@@ -32,7 +32,7 @@
       "state_abbr": "AZ",
       "state_fips": "04",
       "record_count": 9,
-      "last_updated": "2026-08-01",
+      "last_updated": "2026-08-02",
       "json_url": "data/v1/AZ.json"
     },
     {
@@ -40,7 +40,7 @@
       "state_abbr": "CA",
       "state_fips": "06",
       "record_count": 14,
-      "last_updated": "2026-08-01",
+      "last_updated": "2026-08-02",
       "json_url": "data/v1/CA.json"
     },
     {
@@ -48,7 +48,7 @@
       "state_abbr": "CO",
       "state_fips": "08",
       "record_count": 10,
-      "last_updated": "2026-08-01",
+      "last_updated": "2026-08-02",
       "json_url": "data/v1/CO.json"
     },
     {
@@ -56,7 +56,7 @@
       "state_abbr": "CT",
       "state_fips": "09",
       "record_count": 8,
-      "last_updated": "2026-08-01",
+      "last_updated": "2026-08-02",
       "json_url": "data/v1/CT.json"
     },
     {
@@ -64,7 +64,7 @@
       "state_abbr": "DE",
       "state_fips": "10",
       "record_count": 5,
-      "last_updated": "2026-08-01",
+      "last_updated": "2026-08-02",
       "json_url": "data/v1/DE.json"
     },
     {
@@ -72,7 +72,7 @@
       "state_abbr": "FL",
       "state_fips": "12",
       "record_count": 8,
-      "last_updated": "2026-08-01",
+      "last_updated": "2026-08-02",
       "json_url": "data/v1/FL.json"
     },
     {
@@ -80,7 +80,7 @@
       "state_abbr": "GA",
       "state_fips": "13",
       "record_count": 7,
-      "last_updated": "2026-08-01",
+      "last_updated": "2026-08-02",
       "json_url": "data/v1/GA.json"
     },
     {
@@ -88,7 +88,7 @@
       "state_abbr": "HI",
       "state_fips": "15",
       "record_count": 7,
-      "last_updated": "2026-08-01",
+      "last_updated": "2026-08-02",
       "json_url": "data/v1/HI.json"
     },
     {
@@ -104,7 +104,7 @@
       "state_abbr": "ID",
       "state_fips": "16",
       "record_count": 8,
-      "last_updated": "2026-08-01",
+      "last_updated": "2026-08-02",
       "json_url": "data/v1/ID.json"
     },
     {
@@ -112,7 +112,7 @@
       "state_abbr": "IL",
       "state_fips": "17",
       "record_count": 10,
-      "last_updated": "2026-08-01",
+      "last_updated": "2026-08-02",
       "json_url": "data/v1/IL.json"
     },
     {
@@ -184,7 +184,7 @@
       "state_abbr": "MO",
       "state_fips": "29",
       "record_count": 11,
-      "last_updated": "2026-08-01",
+      "last_updated": "2026-08-02",
       "json_url": "data/v1/MO.json"
     },
     {
@@ -192,7 +192,7 @@
       "state_abbr": "NC",
       "state_fips": "37",
       "record_count": 12,
-      "last_updated": "2026-08-01",
+      "last_updated": "2026-08-02",
       "json_url": "data/v1/NC.json"
     },
     {
@@ -200,7 +200,7 @@
       "state_abbr": "NY",
       "state_fips": "36",
       "record_count": 8,
-      "last_updated": "2026-08-01",
+      "last_updated": "2026-08-02",
       "json_url": "data/v1/NY.json"
     },
     {
@@ -208,7 +208,7 @@
       "state_abbr": "OR",
       "state_fips": "41",
       "record_count": 6,
-      "last_updated": "2026-08-01",
+      "last_updated": "2026-08-02",
       "json_url": "data/v1/OR.json"
     },
     {
@@ -216,7 +216,7 @@
       "state_abbr": "PA",
       "state_fips": "42",
       "record_count": 10,
-      "last_updated": "2026-08-01",
+      "last_updated": "2026-08-02",
       "json_url": "data/v1/PA.json"
     },
     {
@@ -224,7 +224,7 @@
       "state_abbr": "TX",
       "state_fips": "48",
       "record_count": 13,
-      "last_updated": "2026-08-01",
+      "last_updated": "2026-08-02",
       "json_url": "data/v1/TX.json"
     },
     {
@@ -232,7 +232,7 @@
       "state_abbr": "WA",
       "state_fips": "53",
       "record_count": 9,
-      "last_updated": "2026-08-01",
+      "last_updated": "2026-08-02",
       "json_url": "data/v1/WA.json"
     }
   ],

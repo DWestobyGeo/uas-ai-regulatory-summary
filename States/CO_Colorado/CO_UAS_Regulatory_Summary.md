@@ -1,12 +1,12 @@
 # Colorado — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 1, 2026 | **Version:** 1.0
-**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v4), this summary covers Colorado **state and state-agency** UAS authorities only — local (municipal/county) ordinances and tribal rules are deferred to a later phase and are not included here. Colorado has **not** enacted a state preemption statute for local UAS ordinances (see Section 4), and secondary sources document an unusually dense and varied patchwork of municipal and county rules (Denver, Boulder, Colorado Springs, mountain resort communities, and more) — a project-specific municipal check will be necessary before this state-level picture can be treated as complete for any specific Colorado site. Full citations and metadata are in `CO_UAS_Source_Register.csv`.
+**Research date:** August 1, 2026 | **Version:** 2.0 (Phase 2 — practical interpretation complete; procurement role added August 2, 2026)
+**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v5), this summary covers Colorado **state and state-agency** UAS authorities only — local (municipal/county) ordinances and tribal rules are deferred to a later phase and are not included here. Colorado has **not** enacted a state preemption statute for local UAS ordinances (see Section 4), and secondary sources document an unusually dense and varied patchwork of municipal and county rules (Denver, Boulder, Colorado Springs, mountain resort communities, and more) — a project-specific municipal check will be necessary before this state-level picture can be treated as complete for any specific Colorado site. Full citations and metadata are in `CO_UAS_Source_Register.csv`.
 
-Each rule below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from two labeled perspectives: an AEC industry UAS expert (operational read) and AEC industry legal counsel (risk/compliance read). Practical interpretation is not legal advice.
+Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.
 
-> **Process note (added under Agent Instructions Amendment 2, August 1, 2026):** The Practical Interpretation content in this document was produced under the prior single-pass research process and does not yet reflect the Agency Practitioner perspective or the Phase 3 fact-drift QA pass introduced by Amendment 2. It is retained as-is for now and will be regenerated for consistency once Phase 1 (objective research) is complete for all states. Treat the Objective Summary and source citations above as current; treat the Practical Interpretation bullets as provisional pending that later pass.
+> **Process note (Agent Instructions Amendment 4, August 2, 2026):** Phase 2 practical interpretation is complete for the authorities presented below. The four labeled perspectives are operational and risk-management interpretations of the verified research packet; they do not add legal requirements and are not legal advice.
 
 ---
 
@@ -22,27 +22,33 @@ Colorado has not enacted a comprehensive, standalone UAS act. Instead, it regula
 **Objective Summary:** Defines "obstacle" to include an unmanned aircraft system. A person commits the offense (class 2 misdemeanor) by using or threatening to use a UAS as an obstacle to knowingly obstruct, impair, or hinder a peace officer, firefighter, EMS provider, rescue specialist, or volunteer acting under color of official authority. A statutory exception applies if the UAS operator obtains permission from the coordinating entity, continues to communicate with it during the operation, and immediately complies with its instructions.
 
 **Practical Interpretation**
-- *AEC Industry UAS Expert Perspective:* Do not fly at or near an active emergency, accident, or wildfire scene without first obtaining permission from the coordinating law enforcement or incident-command entity and maintaining communication throughout the flight — directly relevant to any post-disaster damage assessment or infrastructure-inspection flight near an active incident.
-- *AEC Industry Legal Counsel Perspective:* Document the specific permission obtained from the coordinating entity (agency name, contact, time granted) before and during any flight near an active emergency response, since the exception is conditioned on ongoing communication and compliance, not merely initial permission.
 
+- **AEC Industry UAS Expert:** Do not fly at or near an active emergency, accident, or wildfire scene without first obtaining permission from the coordinating law enforcement or incident-command entity and maintaining communication throughout the flight — directly relevant to any post-disaster damage assessment or infrastructure-inspection flight near an active incident.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Document the specific permission obtained from the coordinating entity (agency name, contact, time granted) before and during any flight near an active emergency response, since the exception is conditioned on ongoing communication and compliance, not merely initial permission.
 ### Colo. Rev. Stat. § 18-7-801 — Criminal Invasion of Privacy (camera-agnostic)
 *Binding law | Current, amended 2010*
 
 **Objective Summary:** Makes it a class 2 misdemeanor to knowingly observe or photograph another person's intimate parts without consent, where the person has a reasonable expectation of privacy. The definition of "photograph" expressly includes drone-capable capture methods (motion picture, videotape, live feed, digitally reproduced visual material), though the statute does not name drones specifically.
 
 **Practical Interpretation**
-- *AEC Industry UAS Expert Perspective:* Routine aerial mapping, inspection, and construction-progress photography is far outside the conduct this statute targets, but avoid incidental capture of private outdoor spaces (yards, pools, windows) where individuals might have a reasonable expectation of privacy.
-- *AEC Industry Legal Counsel Perspective:* This is an intent-based statute requiring knowing observation of intimate parts specifically — document the professional/survey purpose of a flight near residential property, but this presents low practical risk for standard commercial AEC UAS work.
 
+- **AEC Industry UAS Expert:** Routine aerial mapping, inspection, and construction-progress photography is far outside the conduct this statute targets, but avoid incidental capture of private outdoor spaces (yards, pools, windows) where individuals might have a reasonable expectation of privacy.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** This is an intent-based statute requiring knowing observation of intimate parts specifically — document the professional/survey purpose of a flight near residential property, but this presents low practical risk for standard commercial AEC UAS work.
 ### Colo. Rev. Stat. § 41-1-107 — Landowner Airspace Rights and Civil Trespass
 *Binding law | Current*
 
 **Objective Summary:** Recognizes a surface landowner's interest in the airspace above their land, providing a statutory basis for civil trespass claims arising from intrusive overflights. Federal law controls the navigable airspace itself; this statute addresses civil liability for overflights that unreasonably interfere with a landowner's use and enjoyment of their property.
 
 **Practical Interpretation**
-- *AEC Industry UAS Expert Perspective:* Obtain landowner consent or a documented right of access before flying low-altitude survey or inspection missions over adjacent private parcels outside the project boundary.
-- *AEC Industry Legal Counsel Perspective:* This is a civil-liability statute distinct from FAA compliance and the criminal statutes above; the exact contours of "interference" sufficient to support a claim were not independently verified against Colorado case law in this pass.
 
+- **AEC Industry UAS Expert:** Obtain landowner consent or a documented right of access before flying low-altitude survey or inspection missions over adjacent private parcels outside the project boundary.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** This is a civil-liability statute distinct from FAA compliance and the criminal statutes above; the exact contours of "interference" sufficient to support a claim were not independently verified against Colorado case law in this pass.
 ## 3. State Agency and Land-Management UAS Requirements
 
 ### Parks — Colorado Parks and Wildlife (CPW) Commission (State Park / Outdoor Recreation Land UAS Restriction)
@@ -51,43 +57,53 @@ Colorado has not enacted a comprehensive, standalone UAS act. Instead, it regula
 **Objective Summary:** CPW's own published Chapter P-1 regulation (2 CCR 405-1, Regulation #100.b.15) prohibits landing or taking off with any "aircraft" on Parks and Outdoor Recreation Lands absent specific authorization; the text obtained defines "aircraft" as manned-flight equipment. Multiple current secondary sources separately describe a UAS-specific prohibition (cited as "Regulation #100-c.24," effective January 1, 2018) on launching, landing, or operating drones on all CPW-administered state parks, state wildlife areas, and state trust lands, with exceptions only for designated model-aircraft fields at Cherry Creek and Chatfield State Parks. The UAS-specific subsection was not located in the regulation text independently obtained in this research pass.
 
 **Practical Interpretation**
-- *AEC Industry UAS Expert Perspective:* Treat all CPW-administered state parks, state wildlife areas, and state trust lands as off-limits for UAS launch/landing/operation absent specific CPW authorization, consistent with the well-corroborated secondary-source description, even though the exact current subsection citation could not be independently confirmed.
-- *AEC Industry Legal Counsel Perspective:* Flag this citation discrepancy for the client — confirm the current, complete text of CPW Regulation #100 directly with CPW's Office of the Regulations Manager before relying on this record for a specific project.
 
+- **AEC Industry UAS Expert:** Treat all CPW-administered state parks, state wildlife areas, and state trust lands as off-limits for UAS launch/landing/operation absent specific CPW authorization, consistent with the well-corroborated secondary-source description, even though the exact current subsection citation could not be independently confirmed.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Flag this citation discrepancy for the client — confirm the current, complete text of CPW Regulation #100 directly with CPW's Office of the Regulations Manager before relying on this record for a specific project.
 ### Wildlife — CPW Prohibition on Using UAS to Aid Hunting or Wildlife Scouting
 *Binding administrative regulation | Effective January 1, 2018*
 
 **Objective Summary:** Prohibits using a UAS or other remotely guided device to search for, scout, or detect wildlife as an aid to hunting or the taking of wildlife, applicable to pre-hunt scouting as well as active hunting. Separately prohibits using a drone to harass wildlife. Reported penalties range from $70 (small game) up to $125,000 for trophy species under Colorado's "Samson Law" framework.
 
 **Practical Interpretation**
-- *AEC Industry UAS Expert Perspective:* Plan environmental-monitoring, habitat-mapping, or resource-inventory flights to avoid any activity that could be read as scouting or detecting wildlife for hunting purposes, with a conservative standoff buffer near known wildlife concentrations during hunting seasons.
-- *AEC Industry Legal Counsel Perspective:* Document the survey/mapping purpose of any UAS flight over wildlife habitat; CPW has been reported to actively monitor social media for evidence of violations, so retain flight logs establishing a non-hunting purpose.
 
+- **AEC Industry UAS Expert:** Plan environmental-monitoring, habitat-mapping, or resource-inventory flights to avoid any activity that could be read as scouting or detecting wildlife for hunting purposes, with a conservative standoff buffer near known wildlife concentrations during hunting seasons.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Document the survey/mapping purpose of any UAS flight over wildlife habitat; CPW has been reported to actively monitor social media for evidence of violations, so retain flight logs establishing a non-hunting purpose.
 ### Public Safety — Center of Excellence for Advanced Technology Aerial Firefighting (CDPS)
 *Official agency policy / binding statutory program | Ongoing, established 2017*
 
 **Objective Summary:** HB 17-1070 (2017) directed the Center of Excellence, within the Colorado Department of Public Safety, to study and pilot UAS integration for firefighting, search and rescue, accident reconstruction, crime-scene documentation, and other public-safety functions. SB 19-020 (codified at § 24-33.5-1228, C.R.S.) provided ongoing funding for a system to patrol wildland-fire airspace using drones.
 
 **Practical Interpretation**
-- *AEC Industry UAS Expert Perspective:* This governs state/local government operations rather than private commercial operators directly, but AEC firms performing wildfire-related mapping or damage-assessment work for a Colorado public-safety agency should coordinate directly with the CoE to deconflict airspace, particularly during active TFRs.
-- *AEC Industry Legal Counsel Perspective:* Confirm whether a specific state or local government contract incorporates CoE protocols as binding contract terms.
 
+- **AEC Industry UAS Expert:** This governs state/local government operations rather than private commercial operators directly, but AEC firms performing wildfire-related mapping or damage-assessment work for a Colorado public-safety agency should coordinate directly with the CoE to deconflict airspace, particularly during active TFRs.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Confirm whether a specific state or local government contract incorporates CoE protocols as binding contract terms.
 ### Professional Licensing — DORA State Board of Licensure for Architects, Professional Engineers and Professional Land Surveyors
 *Binding general regulation | No Colorado-specific UAS guidance located*
 
 **Objective Summary:** Colorado's licensing framework (Title 12, Article 120, C.R.S.) requires PE/PLS licensees to practice only in fields in which they are, by education and/or experience, competent and proficient. No standalone Colorado-specific board guidance addressing UAS-derived photogrammetry, LiDAR, or mapping products was located. A frequently-cited secondary source describing a "Rule 415" UAS competency standard was found to actually reference California's licensing framework, not Colorado's.
 
 **Practical Interpretation**
-- *AEC Industry UAS Expert Perspective:* Route UAS-derived photogrammetry/LiDAR mapping products through a Colorado-licensed PE or PLS for review under the existing general competency framework before delivery on any official deliverable.
-- *AEC Industry Legal Counsel Perspective:* Document licensed-professional review and QA/QC of UAS-derived deliverables; do not cite the "Rule 415" language found in some secondary sources as a Colorado authority, since it traces to California law.
 
+- **AEC Industry UAS Expert:** Route UAS-derived photogrammetry/LiDAR mapping products through a Colorado-licensed PE or PLS for review under the existing general competency framework before delivery on any official deliverable.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Document licensed-professional review and QA/QC of UAS-derived deliverables; do not cite the "Rule 415" language found in some secondary sources as a Colorado authority, since it traces to California law.
 ## 4. State Preemption of Local Ordinances
 
 **Objective Summary:** No Colorado statute broadly preempting local UAS regulation was located. A 2026 bill that would have limited local regulatory authority over UAS ownership, operation, design, and similar matters (SB26-024, the "Unmanned Aircraft Systems Rights and Authorities Act") was postponed indefinitely by the Senate Local Government & Housing Committee on February 25, 2026 (Section 5 below). Secondary sources document an extensive municipal/county ordinance patchwork, including Denver, Boulder, Boulder County, Colorado Springs, Village of Cherry Hills, Telluride, Lakewood, Aurora, Fort Collins, Loveland, Windsor, and Vail, plus private ski-resort UAS prohibitions (Aspen Skiing Company, Vail Resorts).
 
 **Practical Interpretation**
-- *AEC Industry UAS Expert Perspective:* Do not assume Colorado state law displaces local drone ordinances — the local-ordinance landscape is unusually dense and varied, spanning major population centers and mountain resort communities with materially different rules. A project-specific municipal/county ordinance check will be necessary in a later research phase.
-- *AEC Industry Legal Counsel Perspective:* Flag for the client that Colorado's local-ordinance landscape is at least as significant as — and likely more consequential than — the state-level rules summarized here; advise local counsel or a jurisdiction-specific ordinance check before relying on this state-level summary alone.
+- **AEC Industry UAS Expert:** Do not assume Colorado state law displaces local drone ordinances — the local-ordinance landscape is unusually dense and varied, spanning major population centers and mountain resort communities with materially different rules. A project-specific municipal/county ordinance check will be necessary in a later research phase.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Flag for the client that Colorado's local-ordinance landscape is at least as significant as — and likely more consequential than — the state-level rules summarized here; advise local counsel or a jurisdiction-specific ordinance check before relying on this state-level summary alone.
 
 ## 5. Non-Enacted Proposals
 
@@ -97,18 +113,22 @@ Colorado has not enacted a comprehensive, standalone UAS act. Instead, it regula
 **Objective Summary:** Unlike Texas or New York, Colorado has not enacted a standalone statute prohibiting UAS operation over or near critical infrastructure, correctional facilities, airports, or sports venues as such. HB 16-1026 (drones near airports and correctional facilities), HB 15-1555 (criminal trespass/harassment by drone), and HB 15-059 (limiting law enforcement drone use) all died in committee.
 
 **Practical Interpretation**
-- *AEC Industry UAS Expert Perspective:* Do not apply a Texas- or New York-style 500-ft-buffer facility-protection framework to Colorado projects — no equivalent statute currently exists, though standard site-access, safety, trespass, and FAA airspace considerations still apply near such facilities.
-- *AEC Industry Legal Counsel Perspective:* Do not represent to a client that Colorado imposes facility-specific UAS criminal exposure comparable to Texas or New York; monitor for future legislative activity given the pattern of repeated bill introductions.
 
+- **AEC Industry UAS Expert:** Do not apply a Texas- or New York-style 500-ft-buffer facility-protection framework to Colorado projects — no equivalent statute currently exists, though standard site-access, safety, trespass, and FAA airspace considerations still apply near such facilities.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Do not represent to a client that Colorado imposes facility-specific UAS criminal exposure comparable to Texas or New York; monitor for future legislative activity given the pattern of repeated bill introductions.
 ### SB26-024 — "Unmanned Aircraft Systems Rights and Authorities Act" (Postponed Indefinitely)
 *Proposed or pending authority | Not enacted — postponed indefinitely Feb. 25, 2026*
 
 **Objective Summary:** Would have authorized statewide recreational and lawful commercial drone operation, prohibited local UAS registration requirements beyond state/federal law, and established/limited state and local regulatory authority — local governments would have retained authority only over their own drones, drones launching/landing on their property, and generally applicable nuisance-type ordinances. The Senate Local Government & Housing Committee adopted twelve amendments before voting 5-2 to postpone the bill indefinitely.
 
 **Practical Interpretation**
-- *AEC Industry UAS Expert Perspective:* Do not rely on SB26-024 for any current compliance purpose — it did not pass, and Colorado's current local-ordinance patchwork (Section 4) remains in full force.
-- *AEC Industry Legal Counsel Perspective:* Monitor for reintroduction in a future session; if a similar bill passes, revisit the local-ordinance research category since the compliance landscape would change materially.
 
+- **AEC Industry UAS Expert:** Do not rely on SB26-024 for any current compliance purpose — it did not pass, and Colorado's current local-ordinance patchwork (Section 4) remains in full force.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Monitor for reintroduction in a future session; if a similar bill passes, revisit the local-ordinance research category since the compliance landscape would change materially.
 ## 6. Unresolved Operational Questions
 
 - **CPW state park UAS regulation citation:** The exact current citation for CPW's UAS-specific state-park prohibition (reported by secondary sources as "Regulation #100-c.24") could not be located in the Chapter P-1 (2 CCR 405-1) text independently obtained in this pass, which defines "aircraft" as manned-flight equipment only. Direct confirmation with CPW's Office of the Regulations Manager is recommended before relying on this record for a specific project.

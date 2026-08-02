@@ -1,13 +1,13 @@
 # Kentucky — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 2, 2026 | **Version:** 1.0 (Phase 1 — objective research; see process note below)
+**Research date:** August 2, 2026 | **Version:** 2.0 (Phase 2 — practical interpretation complete; procurement role added August 2, 2026)
 **Model / checkpoint:** Claude Sonnet 5 (research and drafting)
-**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v4, Amendment 2), this summary covers Kentucky **state and state-agency** UAS authorities only — municipal and county ordinances are deferred. **No statewide statute preempting local UAS ordinances was located for Kentucky.** Secondary sources report that most Kentucky municipalities have not adopted their own drone ordinances, with Bowling Green's city parks department cited as an example of a local government imposing its own drone-related permission requirement, but confirming and cataloguing any such local ordinance is out of scope for this state-level phase. Full citations and metadata are in `KY_UAS_Source_Register.csv`.
+**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v5, Amendment 2), this summary covers Kentucky **state and state-agency** UAS authorities only — municipal and county ordinances are deferred. **No statewide statute preempting local UAS ordinances was located for Kentucky.** Secondary sources report that most Kentucky municipalities have not adopted their own drone ordinances, with Bowling Green's city parks department cited as an example of a local government imposing its own drone-related permission requirement, but confirming and cataloguing any such local ordinance is out of scope for this state-level phase. Full citations and metadata are in `KY_UAS_Source_Register.csv`.
 
-> **Process note (Agent Instructions Amendment 2, August 1, 2026):** This state was researched under the three-phase program structure. This document currently reflects **Phase 1 only** — the objective, sourced findings below are complete, but the Practical Interpretation content (AEC Industry Expert, Agency Practitioner, and Legal Counsel perspectives) has not yet been drafted and is marked "Pending Phase 2" throughout.
+> **Process note (Agent Instructions Amendment 4, August 2, 2026):** Phase 2 practical interpretation is complete for the authorities presented below. The four labeled perspectives are operational and risk-management interpretations of the verified research packet; they do not add legal requirements and are not legal advice.
 
-Each rule below is presented as an **Objective Summary** (binding text/citation, no interpretation). Practical Interpretation — from three labeled perspectives (AEC Industry UAS Expert, Agency Practitioner, and Legal Counsel) — will be added in Phase 2 and is not legal advice.
+Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.
 
 ---
 
@@ -23,50 +23,55 @@ Kentucky regulates UAS through a cluster of purpose-built statutory amendments t
 **Objective Summary:** KRS 500.130 authorizes any business entity to operate a UAS for business purposes in compliance with 14 C.F.R. pt. 107, and, as of the 2025 amendment, expressly names an entity conducting aerial mapping among the listed example business uses (subsection (3)(c)), alongside property appraisers, utilities/communications services, cargo entities, and insurance companies. Recreational use is permitted under 14 C.F.R. pt. 101, and higher-education/school-district UAS use is permitted for educational, research, or testing purposes. UAS may not carry a lethal payload except for specified U.S. military branches. Law enforcement may not use a UAS to conduct a Fourth Amendment search without a warrant specifically authorizing UAS use, and UAS-derived evidence is generally inadmissible in Kentucky proceedings except as enumerated. The 2025 amendment added subsection (12), barring a recreational, business, or educational operator from recording an image of privately owned real property, or a person on it, with intent to surveil or publish an unauthorized image in violation of a reasonable-expectation-of-privacy presumption keyed to ground-level observability, and created a new private civil cause of action (new sections of KRS Chapters 411 and 413) with a seven-year limitations period. The same amendment deleted the statute's former short title, the "Citizens' Freedom from Unwarranted Surveillance Act."
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Design acquisition and data-handling workflows to minimize unnecessary capture of people and private activity. Confirm the source-supported consent or project-purpose basis before flight and carry that limitation through processing, access control, retention, and delivery.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Document the applicability analysis and any exception relied upon in the project file. Align the scope, client representations, and operator procedures with the verified authority, and seek state counsel if material facts fall outside its clear terms.
 ### Restrictions on Operation of Unmanned Aircraft — Exemption — KRS 183.086
 *Binding law | Current, enacted 2017 Ky. Acts ch. 153, sec. 2, unamended since*
 
 **Objective Summary:** KRS 183.086(2) bars a UAS operator (or a Part 107-certificated direct supervisor) from operating a UAS into an area a commercial airport's unmanned aircraft facility map designates as prohibited for UAS operation, takeoff, or landing, absent the airport operator's approval, and separately bars reckless UAS operation creating a risk of serious physical injury or property damage. Subsection (3) expressly exempts a UAS operator engaged in a commercial purpose in compliance with FAA regulations, authorizations, or exemptions from this section's provisions.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Add this authority to the state-specific preflight checklist and confirm its applicability to the project site, mission purpose, and client. Document the operational decision and any source-supported exception before dispatch.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Document the applicability analysis and any exception relied upon in the project file. Align the scope, client representations, and operator procedures with the verified authority, and seek state counsel if material facts fall outside its clear terms.
 ### Trespass Upon Key Infrastructure Assets — KRS 511.100
 *Binding law | Current, most recently amended 2025 Ky. Acts ch. 42, sec. 1, effective March 19, 2025*
 
 **Objective Summary:** KRS 511.100 defines 15 categories of "key infrastructure asset," including electrical-generation nodes, petroleum refineries, chemical manufacturing/storage facilities, natural-gas and petroleum pipeline facilities, railroad yards/tunnels, drinking-water facilities, state prisons/juvenile-justice facilities/jails, military-weapons-system facilities, wireless-communications and telecom facilities, commercial food-manufacturing facilities, animal feeding operations, and electrical highway infrastructure. A person commits trespass upon key infrastructure assets (Class B misdemeanor first offense, Class A misdemeanor thereafter) by knowingly using a UAS to fly above such property with intent to cause harm/damage or conduct surveillance, without the owner's/tenant's/lessee's prior consent, or, for food-manufacturing and animal-feeding-operation assets specifically, by operating a UAS or recording device above the property without consent regardless of intent. Subsection (4) enumerates broad exceptions, including UAS use by the property/asset owner or an authorized party; **UAS use for a commercial purpose in compliance with applicable FAA authorization, regulations, or exemptions**; use by an electric, water, or natural-gas utility company (or its contractor) for legitimate business purposes; use by an insurance company for underwriting/damage investigation; use by law enforcement/emergency-management agencies; and use by the federal government, the Commonwealth, or their contractors.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Design acquisition and data-handling workflows to minimize unnecessary capture of people and private activity. Confirm the source-supported consent or project-purpose basis before flight and carry that limitation through processing, access control, retention, and delivery.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Treat the cited authority as a documented compliance gate where applicable. Preserve the facts supporting any exception or consent theory, allocate client and operator responsibilities clearly, and seek state counsel when project facts approach ambiguous or penal language.
 ### Dangerous Contraband (Drones) in Detention Facilities — KRS 520.010(3) and KRS 520.050
 *Binding law | Current, UAS language added 2019 Ky. Acts ch. 61, sec. 2, effective June 27, 2019*
 
 **Objective Summary:** KRS 520.010(3) defines "dangerous contraband" for Kentucky's escape-and-custody offenses to expressly include "drones, unmanned aircraft, or other remotely controlled vehicles, and any payload carried by those vehicles," alongside dangerous instruments, controlled substances, unauthorized cell phones, and metal-cutting tools. KRS 520.050 makes it Promoting Contraband in the First Degree — a Class D felony (Class B felony if the contraband is fentanyl, carfentanil, or a fentanyl derivative) — to knowingly introduce dangerous contraband into a detention facility or penitentiary, or, as a confined person, to knowingly make, obtain, or possess it. This provision addresses physically introducing/possessing a drone within a facility, distinct from the overflight-based trespass offense at KRS 511.100 above; both trace to the same 2019 legislative vehicle (Senate Bill 157, per secondary bill-tracking sources) but were codified as separate sections addressing separate conduct.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Add this restriction to the state preflight screen, brief the field crew on the prohibited conduct, and identify a stop-work or escalation point. Document any exception relied upon rather than assuming Part 107 authority resolves the state requirement.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Treat the cited authority as a documented compliance gate where applicable. Preserve the facts supporting any exception or consent theory, allocate client and operator responsibilities clearly, and seek state counsel when project facts approach ambiguous or penal language.
 ### Take of Wildlife with Aircraft Prohibited — 301 KAR 3:140
 *Binding regulation | Current, effective October 16, 2025*
 
 **Objective Summary:** 301 KAR 3:140, Section 1, adopted under KRS 150.010(46), 150.025(1), and 150.360(1), directly names "unmanned aircraft system" in its regulatory text: a person shall not use an aircraft or UAS to fish, hunt, or take wildlife, to drive or herd wildlife for those purposes, or to harass wildlife. Aircraft or UAS may be used by Kentucky Department of Fish and Wildlife Resources (KDFWR) employees/agents for human safety, law enforcement, research, or management needs; by authorized landowners for lawful wildlife damage control; and by commercial fishers locating or removing invasive carp.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Plan environmental and mapping flights to avoid conduct that could be characterized as locating, pursuing, disturbing, or harassing wildlife. Coordinate mission timing and stand-off distances with the land manager when project work overlaps sensitive habitat or hunting activity.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Document the applicability analysis and any exception relied upon in the project file. Align the scope, client representations, and operator procedures with the verified authority, and seek state counsel if material facts fall outside its clear terms.
 ## 3. State Agency and Facility-Specific UAS Requirements
 
 ### Photo & Drone Policy — Kentucky Department of Parks
@@ -75,40 +80,44 @@ Kentucky regulates UAS through a cluster of purpose-built statutory amendments t
 **Objective Summary:** The Kentucky Department of Parks requires a signed "Location Contract for Use at State Parks" permit before any UAS may be flown at a Kentucky State Park or Historic Site, for both recreational and commercial use. The applicant must identify the applicable FAA operating rule (recreational or Part 107), disclose UAS weight class/registration, specify flight dates/times and photography scope, and attach a Remote Pilot Certificate or TRUST certificate and proof of liability insurance of no less than $1,000,000. The permit is revocable at the Department's discretion on 24 hours' notice (or without notice if injury/damage is threatened), requires FAA-rule compliance, a no-fly-over-people-without-consent condition, pre-flight use of the B4UFLY app, separate USACE/TVA approval where a park sits on federally owned land or water, and an indemnification clause. Submission alone does not authorize flight; the form must be executed by the Park Manager and Commissioner of Parks (or designee).
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Design acquisition and data-handling workflows to minimize unnecessary capture of people and private activity. Confirm the source-supported consent or project-purpose basis before flight and carry that limitation through processing, access control, retention, and delivery.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Describe this source as guidance or policy, not a generally binding statute. Check whether the client or property owner incorporates it contractually, preserve the version relied upon, and escalate conflicts with controlling authority.
 ### UAS Information Clearinghouse and Foreign-Drone Procurement Restriction — Kentucky Transportation Cabinet (KYTC), Department of Aviation
 *Official agency policy / advisory guidance, with a binding federal-funds-conditioned restriction | Current, restriction effective December 22, 2025*
 
 **Objective Summary:** KYTC's Department of Aviation serves as the Executive Branch's UAS information clearinghouse, primarily directing operators to FAA registration, Part 107 certification, TRUST testing, LAANC, Remote ID, and B4UFLY resources. Separately, a December 19, 2025 KYTC Design & Construction Memorandum (CM 25-09 & DM 06-25) — implementing the American Security Drone Act of 2023 and OMB Memorandum M-26-02 — notifies KYTC offices and "active consultants and highway contractors" that, effective December 22, 2025, federal funds may not be used to procure, operate, or maintain a UAS (aircraft, flight controller, camera, or ground control station) manufactured by or subject to control of a foreign-adversary country, specifically the People's Republic of China. "Industry partners" are defined to include any company performing federally funded Cabinet work, expressly including planning, design, surveying and imagery, construction engineering, and inspection. The memorandum directs recipients to halt pending procurements of covered equipment, cease operating/maintaining/processing data from existing covered UAS on FHWA-funded work, and physically segregate such equipment.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Add this authority to the state-specific preflight checklist and confirm its applicability to the project site, mission purpose, and client. Document the operational decision and any source-supported exception before dispatch.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Require current vendor documentation for aircraft, critical components, installed software, ownership, origin, and support lifecycle before purchase. Compare the proposed configuration with the controlling authority and preserve the evidence supporting the acquisition decision.
+- **AEC Industry Legal Counsel:** Describe this source as guidance or policy, not a generally binding statute. Check whether the client or property owner incorporates it contractually, preserve the version relied upon, and escalate conflicts with controlling authority.
 ### Professional Licensing — Kentucky Land Surveying Statute (KRS 322.010)
 *Binding general regulation | No UAS-specific board guidance located*
 
 **Objective Summary:** KRS 322.010(10)(a)(1)(b) defines "land surveying" to include, among other listed activities, "establishment of photogrammetric and geodetic control that is published and used for the determination, monumentation, or description of property boundaries." The definition is method-neutral apart from this express reference to photogrammetric control; it does not name UAS, drones, or LiDAR. No standalone rule, advisory opinion, or FAQ from the Kentucky State Board of Licensure for Professional Engineers and Land Surveyors specifically addressing UAS-derived photogrammetric or LiDAR survey products was located.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Classify the intended UAS-derived deliverable before mobilization and place licensed-professional review where the verified authority requires it. Keep flight acquisition, analysis, and final professional deliverable responsibilities explicit in the project workflow.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Describe this source as guidance or policy, not a generally binding statute. Check whether the client or property owner incorporates it contractually, preserve the version relied upon, and escalate conflicts with controlling authority.
 ### Executive Orders, AG Opinions, Court Decisions, Procurement, and Preemption — Research Results and Related Findings
 *Categories reviewed — no dispositive UAS-specific state authority located; material findings documented*
 
 **Objective Summary:** No Kentucky Governor executive order, Kentucky Attorney General opinion, or Kentucky state-court decision directly and dispositively addressing UAS regulation was located. The one federal case arising from a Kentucky UAS dispute, *Boggs v. Merideth*, No. 3:16-CV-00006 (W.D. Ky. 2017) — the "drone slayer" case, following William Merideth's 2015 shootdown of a neighbor's drone — was dismissed for lack of federal subject-matter jurisdiction; the court expressly declined to resolve whether a low-altitude drone flight over private property is in "navigable airspace" versus trespassing on the property below. No Kentucky statute imposing a state/local-government UAS procurement restriction tied to a "country of concern" or "foreign principal" was located; the closest analogue is the federal American Security Drone Act/OMB M-26-02 framework KYTC has begun implementing for its own federally funded work (see Section 3 above). No statewide statute expressly preempting local UAS ordinances was located; secondary sources report most Kentucky municipalities have not adopted their own drone ordinances, with Bowling Green cited as an exception at the city-parks level.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Treat this record as a research flag, not an operator requirement. Do not change field procedures unless a current controlling source confirms the issue; route any project-specific uncertainty to the identified agency or counsel.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** No current state equipment restriction is established by this research result. Do not treat that absence as permanent; check current solicitation terms, client policies, and independently applicable federal restrictions before committing a fleet to the work.
+- **AEC Industry Legal Counsel:** Do not present this negative or unresolved research result as a legal conclusion. Preserve the research limitation, verify current authority for the specific project, and escalate only if the issue could materially affect scope, access, or liability.
 ## 4. Non-Regulatory Context
 
 *The items below are drawn from news and secondary reporting, not primary legal authority. They are provided for situational awareness only and are not part of the verified source register.*

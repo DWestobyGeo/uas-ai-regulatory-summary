@@ -1,13 +1,13 @@
 # Louisiana — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 2, 2026 | **Version:** 1.0 (Phase 1 — objective research; see process note below)
+**Research date:** August 2, 2026 | **Version:** 2.0 (Phase 2 — practical interpretation complete; procurement role added August 2, 2026)
 **Model / checkpoint:** Claude Sonnet 5 (research and drafting)
-**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v4, Amendment 2), this summary covers Louisiana **state and state-agency** UAS authorities only — municipal and parish ordinances are deferred. **Louisiana affirmatively preempts local UAS regulation by statute (La. R.S. 2:2):** the state has exclusive jurisdiction to regulate UAS, and state law supersedes any political-subdivision rule, regulation, code, or ordinance regulating UAS, subject to federal airspace sovereignty. This is a materially different posture than states with no preemption statute (e.g., Kentucky), though a local government may still set generally applicable rules of conduct for its own publicly owned property. Full citations and metadata are in `LA_UAS_Source_Register.csv`.
+**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v5, Amendment 2), this summary covers Louisiana **state and state-agency** UAS authorities only — municipal and parish ordinances are deferred. **Louisiana affirmatively preempts local UAS regulation by statute (La. R.S. 2:2):** the state has exclusive jurisdiction to regulate UAS, and state law supersedes any political-subdivision rule, regulation, code, or ordinance regulating UAS, subject to federal airspace sovereignty. This is a materially different posture than states with no preemption statute (e.g., Kentucky), though a local government may still set generally applicable rules of conduct for its own publicly owned property. Full citations and metadata are in `LA_UAS_Source_Register.csv`.
 
-> **Process note (Agent Instructions Amendment 2, August 1, 2026):** This state was researched under the three-phase program structure. This document currently reflects **Phase 1 only** — the objective, sourced findings below are complete, but the Practical Interpretation content (AEC Industry Expert, Agency Practitioner, and Legal Counsel perspectives) has not yet been drafted and is marked "Pending Phase 2" throughout.
+> **Process note (Agent Instructions Amendment 4, August 2, 2026):** Phase 2 practical interpretation is complete for the authorities presented below. The four labeled perspectives are operational and risk-management interpretations of the verified research packet; they do not add legal requirements and are not legal advice.
 
-Each rule below is presented as an **Objective Summary** (binding text/citation, no interpretation). Practical Interpretation — from three labeled perspectives (AEC Industry UAS Expert, Agency Practitioner, and Legal Counsel) — will be added in Phase 2 and is not legal advice.
+Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.
 
 ---
 
@@ -23,40 +23,44 @@ Louisiana regulates UAS chiefly through a single, frequently amended criminal st
 **Objective Summary:** La. R.S. 14:337(A) makes it unlawful to intentionally use a UAS to conduct surveillance of, gather evidence or information about, or photographically/electronically record a "targeted facility" without the owner's prior written consent (escalating misdemeanor/felony-range penalties and mandatory forfeiture on repeat or aggravated violations under Subsection E); to fly a UAS over the governor's mansion or a state/local correctional facility without the facility head's written consent; or to surveil, interfere with, or record a federal or state military installation without the commander's written consent (up to 5 years at hard labor and a $2,000-5,000 fine). "Targeted facility" (Subsection B(6)) means petroleum/alumina refineries, chemical/rubber manufacturing facilities, nuclear power generation facilities, schools (R.S. 14:40.6(B)), grain elevators/storage, and "critical infrastructure" as defined in R.S. 14:61(B) — a cross-referenced definition covering chemical/manufacturing/refinery, electrical generation/transmission, water intake/treatment, natural-gas/LNG/pipeline, port/rail/trucking transportation, water-control, and communications/data facilities, and which expressly extends to "any site where the construction or improvement of any facility or structure referenced in this Section is occurring." Subsection C exempts a property owner (and retained third persons) on the owner's own property or property held under a lease/servitude/right-of-way/permit/license. Subsection D exempts FAA-compliant UAS operators, agricultural commercial operations (R.S. 3:41), and university-sanctioned research/teaching use. Subsection F exempts authorized film/TV production. A 2025 amendment added Subsection G, authorizing law enforcement to take "reasonable and necessary mitigation measures" — detection, tracking, identification, and interception/disabling via jamming, hacking, or physical capture — against a UAS operating in Louisiana in a "nefarious manner," where there is reasonable suspicion of criminal activity, an imminent public-safety threat, or another law violation.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Screen the project map for protected facilities and active emergency operations before dispatch. Establish conservative stand-off and escalation points, brief the crew on the applicable restriction, and document any source-supported authorization before entering the affected area.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Treat the cited authority as a documented compliance gate where applicable. Preserve the facts supporting any exception or consent theory, allocate client and operator responsibilities clearly, and seek state counsel when project facts approach ambiguous or penal language.
 ### Regulation of Unmanned Aerial Systems and Unmanned Aircraft Systems; Preemption — La. R.S. 2:2
 *Binding law | Current, created 2017 La. Acts No. 238, amended 2021 La. Acts No. 328*
 
 **Objective Summary:** La. R.S. 2:2(A) provides that, subject to Subsection C and except as otherwise provided by law, the state has exclusive jurisdiction to regulate all unmanned aircraft systems and unmanned aerial systems, and that state law supersedes and preempts any rule, regulation, code, or ordinance of any political subdivision or other unit of local government. The section expressly disclaims any effect on the federal government's exclusive sovereignty over U.S. airspace under 49 U.S.C. 40103, and states that any interpretation contradicting federal UAS regulatory authority is null. Subsection B's UAS definitions exclude satellites and UAS used by federal/state government contractors, local law-enforcement/fire agencies, and utility/cable/telecom/rail entities regulated by the Public Service Commission, a local franchising authority, the FCC, or the Federal Railroad Administration while performing facility operation/repair/maintenance work. Subsection C nullifies any provision preempted by federal law.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Use the statewide rule as the regulatory baseline, while separately screening site-control rules and any local authority preserved by the preemption provision. Record that jurisdictional check in the project flight-planning package.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Document the applicability analysis and any exception relied upon in the project file. Align the scope, client representations, and operator procedures with the verified authority, and seek state counsel if material facts fall outside its clear terms.
 ### Prohibited Activities — Drones on LDWF-Administered Lands — LAC 76:III.113
 *Binding regulation | Current through Louisiana Register Vol. 51, No. 06, June 20, 2025*
 
 **Objective Summary:** LAC 76:III.113(A) provides that "operation of drones or unmanned aerial vehicles (UAV) is prohibited on department-administered lands including wildlife refuges and wildlife management and habitat conservation areas." Subsection B separately prohibits airboats, aircraft, personal watercraft, "mud crawling vessels," and hovercraft on the same lands. The rule is promulgated under the LDWF Secretary's general property-management authority (R.S. 56:5) and the Wildlife and Fisheries Commission's rulemaking authority (R.S. 56:109), and contains no stated exception, permit process, or research/law-enforcement carve-out within this specific section.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Plan environmental and mapping flights to avoid conduct that could be characterized as locating, pursuing, disturbing, or harassing wildlife. Coordinate mission timing and stand-off distances with the land manager when project work overlaps sensitive habitat or hunting activity.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Document the applicability analysis and any exception relied upon in the project file. Align the scope, client representations, and operator procedures with the verified authority, and seek state counsel if material facts fall outside its clear terms.
 ### Aircraft/Drone-Assisted Taking and Wounded-Game Recovery — LAC 76:XIX.111(D)(5) and (D)(14)
 *Binding regulation | Current, with a material pending amendment (see Section 5)*
 
 **Objective Summary:** LAC 76:XIX.111(D)(14) currently states: "Use of Drones for the Recovery of Wounded Deer or Bear. The use of Unmanned Aerial Vehicles (UAV) (commonly referred to as a drone) to aid in the recovery of a wounded deer or bear is prohibited." D.5 separately prohibits taking game quadrupeds or birds from aircraft, or participating in the taking of deer with the aid of aircraft, mirroring the federal Airborne Hunting Act of 1956. On February 5, 2026, the Louisiana Wildlife and Fisheries Commission passed a Notice of Intent (NOI) amendment to D.14 that would permit FAA-certified operators to use a drone to locate (but not take) a mortally wounded deer or bear outside official hunting hours, using lights/infrared, with no weapon-mounting and a duty to leave immediately if a live, healthy animal is found. As of this research date, LDWF's own February 12, 2026 release confirmed the amendment remained at the NOI/public-comment stage (comment period through March 6, 2026), not yet confirmed as finally adopted and published in the Louisiana Register.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Plan environmental and mapping flights to avoid conduct that could be characterized as locating, pursuing, disturbing, or harassing wildlife. Coordinate mission timing and stand-off distances with the land manager when project work overlaps sensitive habitat or hunting activity.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Document the applicability analysis and any exception relied upon in the project file. Align the scope, client representations, and operator procedures with the verified authority, and seek state counsel if material facts fall outside its clear terms.
 ## 3. State Agency and Facility-Specific UAS Requirements
 
 ### Drone/UAV Policy — Louisiana Office of State Parks
@@ -65,40 +69,44 @@ Louisiana regulates UAS chiefly through a single, frequently amended criminal st
 **Objective Summary:** The Louisiana Office of State Parks' Field Memo 2018-001 ("Drone Use Guidelines") states that UAS operation on Office of State Parks property is regulated by the FAA and relevant state and local laws, and that drone users shall adhere to the policy and comply with FAA regulations, state and federal law, and other applicable local laws/policies. The memo assigns department heads and supervisors responsibility for implementation, compliance with the applicable FAA Certificate of Authorization, and communicating the policy to employees. Secondary sources report Louisiana has no blanket, statewide administrative ban on recreational drone flights at state parks, with individual parks potentially applying additional site-specific rules not independently verified in this pass. The full PDF could not be retrieved and parsed directly in this research pass (see confidence note below); this summary relies on search-engine-indexed excerpts of the official document.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Add this authority to the state-specific preflight checklist and confirm its applicability to the project site, mission purpose, and client. Document the operational decision and any source-supported exception before dispatch.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Describe this source as guidance or policy, not a generally binding statute. Check whether the client or property owner incorporates it contractually, preserve the version relied upon, and escalate conflicts with controlling authority.
 ### UAS Information Page and Louisiana Advanced Aviation and Drone Advisory Committee — DOTD / La. R.S. 2:2.1
 *Official agency policy / advisory guidance, with a binding statutory advisory-committee structure | Current*
 
 **Objective Summary:** DOTD's Office of Multimodal Commerce, Aviation Division states its UAS-related goal is to ensure drones operate safely in Louisiana airspace; its public webpage primarily links to FAA drone registration, "Know Before You Fly," and FAA UAS resources rather than stating independent state operating rules. La. R.S. 2:2.1 creates the Louisiana Advanced Aviation and Drone Advisory Committee within DOTD, a fifteen-member body with designated seats including the Louisiana Farm Bureau Federation, DRONERESPONDERS Public Safety Alliance, the **Louisiana Society of Professional Surveyors**, the Louisiana Mid-Continent Oil and Gas Association, the Pelican Chapter of AUVSI, two academic institutions, and the Houma-Terrebonne Airport Commission. The committee meets at least quarterly, issues an annual pre-session report on Louisiana's UAS industry (legal barriers, operator counts, commercial users, economic value, state ranking, and FAA actions), and appoints an FAA liaison. DOTD separately promotes a Houma-Terrebonne "UAS Gulf of Mexico Center of Excellence" for large-UAS operations and a 2026 federally selected "LIFTOff Louisiana" Advanced Air Mobility project tied to federal Executive Order 14307.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Classify the intended UAS-derived deliverable before mobilization and place licensed-professional review where the verified authority requires it. Keep flight acquisition, analysis, and final professional deliverable responsibilities explicit in the project workflow.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Describe this source as guidance or policy, not a generally binding statute. Check whether the client or property owner incorporates it contractually, preserve the version relied upon, and escalate conflicts with controlling authority.
 ### Professional Licensing — Louisiana Land Surveying Statute (La. R.S. 37:682)
 *Binding general regulation | No UAS-specific board guidance located*
 
 **Objective Summary:** La. R.S. 37:682 defines "practice of land surveying" to include measuring areas, land surfaces, streams, and bodies of water for boundary determination and description; establishing/reestablishing/describing land boundaries, corners, divisions, distances, and directions; plotting and monumenting land divisions; and "mapping and topographical work." Unlike Kentucky's analogous statute, this definition contains no express reference to "photogrammetric" control or any other sensor/method-specific term. No standalone LAPELS rule, advisory opinion, or FAQ specifically addressing UAS-derived photogrammetric or LiDAR survey products was located during this research pass; LAPELS's full posted Board Rules (Title 46, Chapter 27) were not reviewed section-by-section.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Classify the intended UAS-derived deliverable before mobilization and place licensed-professional review where the verified authority requires it. Keep flight acquisition, analysis, and final professional deliverable responsibilities explicit in the project workflow.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Describe this source as guidance or policy, not a generally binding statute. Check whether the client or property owner incorporates it contractually, preserve the version relied upon, and escalate conflicts with controlling authority.
 ### Executive Orders, AG Opinions, Court Decisions, and Procurement — Research Results and Related Findings
 *Categories reviewed — no dispositive UAS-specific state authority located; material findings documented*
 
 **Objective Summary:** No Louisiana Governor executive order, Attorney General opinion, or state-court decision directly and dispositively addressing UAS regulation was located. Governor Jeff Landry has issued an executive order restricting state-agency use of Chinese-developed generative-AI platforms, but no located executive order specifically addresses UAS procurement or operation. On state-agency UAS procurement: 2024 Regular Session House Bill 915 (Rep. John Wyble) would have prohibited using public funds to procure "prohibited" Chinese-manufactured UAS (defined by reference to the federal American Security Drone Act of 2023) and required the Governor's Office of Homeland Security and Emergency Preparedness to maintain a "cleared" UAS vendor list; per its official legis.la.gov history, the bill was referred to and considered by the House Judiciary Committee on May 1, 2024, with no further recorded action — it died in committee and was never enacted. No enacted Louisiana state-agency UAS procurement/country-of-origin restriction was located; the only currently applicable UAS procurement framework is the federal American Security Drone Act of 2023, to the extent it independently binds federal-funds recipients.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Treat this record as a research flag, not an operator requirement. Do not change field procedures unless a current controlling source confirms the issue; route any project-specific uncertainty to the identified agency or counsel.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** No current state equipment restriction is established by this research result. Do not treat that absence as permanent; check current solicitation terms, client policies, and independently applicable federal restrictions before committing a fleet to the work.
+- **AEC Industry Legal Counsel:** Do not present this negative or unresolved research result as a legal conclusion. Preserve the research limitation, verify current authority for the specific project, and escalate only if the issue could materially affect scope, access, or liability.
 ## 4. Non-Regulatory Context
 
 *The items below are drawn from news and secondary reporting, not primary legal authority. They are provided for situational awareness only and are not part of the verified source register.*

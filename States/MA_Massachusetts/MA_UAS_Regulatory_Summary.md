@@ -1,13 +1,13 @@
 # Massachusetts — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 2, 2026 | **Version:** 1.0 (Phase 1 — objective research; see process note below)
+**Research date:** August 2, 2026 | **Version:** 2.0 (Phase 2 — practical interpretation complete; procurement role added August 2, 2026)
 **Model / checkpoint:** Claude Sonnet 5 (research and drafting)
-**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v4, Amendment 2), this summary covers Massachusetts **state and state-agency** UAS authorities only — municipal ordinances are deferred. **Massachusetts has not enacted a comprehensive statewide UAS statute and has no state preemption statute** addressing whether municipalities may regulate UAS — a materially different posture from states such as Maryland that have an express statutory preemption provision. Massachusetts's UAS-relevant footprint instead consists of a handful of narrower authorities (a state-park permit rule, a state-agency internal drone policy, a generic hunting-from-aircraft prohibition, and a significant federal court decision on municipal-ordinance preemption), layered on the FAA framework, plus substantial pending state legislation that has not yet been enacted. Full citations and metadata are in `MA_UAS_Source_Register.csv`.
+**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v5, Amendment 2), this summary covers Massachusetts **state and state-agency** UAS authorities only — municipal ordinances are deferred. **Massachusetts has not enacted a comprehensive statewide UAS statute and has no state preemption statute** addressing whether municipalities may regulate UAS — a materially different posture from states such as Maryland that have an express statutory preemption provision. Massachusetts's UAS-relevant footprint instead consists of a handful of narrower authorities (a state-park permit rule, a state-agency internal drone policy, a generic hunting-from-aircraft prohibition, and a significant federal court decision on municipal-ordinance preemption), layered on the FAA framework, plus substantial pending state legislation that has not yet been enacted. Full citations and metadata are in `MA_UAS_Source_Register.csv`.
 
-> **Process note (Agent Instructions Amendment 2, August 1, 2026):** This state was researched under the three-phase program structure. This document currently reflects **Phase 1 only** — the objective, sourced findings below are complete, but the Practical Interpretation content (AEC Industry Expert, Agency Practitioner, and Legal Counsel perspectives) has not yet been drafted and is marked "Pending Phase 2" throughout.
+> **Process note (Agent Instructions Amendment 4, August 2, 2026):** Phase 2 practical interpretation is complete for the authorities presented below. The four labeled perspectives are operational and risk-management interpretations of the verified research packet; they do not add legal requirements and are not legal advice.
 
-Each rule below is presented as an **Objective Summary** (binding text/citation, no interpretation). Practical Interpretation — from three labeled perspectives (AEC Industry UAS Expert, Agency Practitioner, and Legal Counsel) — will be added in Phase 2 and is not legal advice.
+Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.
 
 ---
 
@@ -23,22 +23,22 @@ Massachusetts is notable for **not** having enacted a comprehensive statewide UA
 **Objective Summary:** M.G.L. c. 131, § 65 makes it unlawful, except as otherwise provided by law, to "hunt any bird or mammal by the aid or use of any motor vehicle, including a snowmobile, helicopter or other aircraft." The statute does not define "aircraft" or separately address unmanned aircraft. Multiple secondary drone-law compilations describe MassWildlife as applying this prohibition to drones — barring use of a UAS to locate, drive, or take game — but this research pass could not independently open and verify a specific 321 CMR provision or MassWildlife-published guide page stating a UAS-specific rule.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Plan environmental and mapping flights to avoid conduct that could be characterized as locating, pursuing, disturbing, or harassing wildlife. Coordinate mission timing and stand-off distances with the land manager when project work overlaps sensitive habitat or hunting activity.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Treat the cited authority as a documented compliance gate where applicable. Preserve the facts supporting any exception or consent theory, allocate client and operator responsibilities clearly, and seek state counsel when project facts approach ambiguous or penal language.
 ### Singer v. City of Newton — Municipal UAS Ordinance Preemption
 *Court decision (federal, D. Mass.) | Current; not appealed per sources reviewed*
 
 **Objective Summary:** In *Singer v. City of Newton*, No. 1:17-cv-10071-WGY (D. Mass. Sept. 21, 2017), an FAA-certificated recreational drone pilot challenged four provisions of a December 2016 City of Newton ordinance: a local UAS-registration requirement and three flight-operation restrictions (a below-400-foot altitude ceiling over private property absent consent, a ban on flight over public property without permission, and a beyond-visual-line-of-sight restriction). Judge William G. Young held these four provisions were conflict-preempted because, in combination, they obstructed federal objectives and directly conflicted with FAA regulation of low-altitude navigable airspace; the court rejected a field-preemption theory but found conflict preemption as to all four challenged provisions. Unchallenged parts of the ordinance were left standing.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
-> **Preemption-posture note:** Unlike Maryland (which has an express statutory preemption provision, Md. Code Ann., Econ. Dev. § 14-301), Massachusetts has enacted no state statute addressing whether counties or municipalities may regulate UAS. *Singer* rests entirely on federal conflict-preemption doctrine rather than any state preemption statute — meaning a Massachusetts municipality's drone ordinance is vulnerable to a federal challenge on a provision-by-provision basis, but nothing in Massachusetts law itself forecloses a municipality from enacting one. AEC firms should still expect to encounter, and should independently check for, local drone ordinances in each Massachusetts municipality where they plan to operate (local ordinances are deferred from this research phase).
-
+- **AEC Industry UAS Expert:** Use the statewide rule as the regulatory baseline, while separately screening site-control rules and any local authority preserved by the preemption provision. Record that jurisdictional check in the project flight-planning package.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Document the applicability analysis and any exception relied upon in the project file. Align the scope, client representations, and operator procedures with the verified authority, and seek state counsel if material facts fall outside its clear terms.
 ## 3. State Agency and Facility-Specific UAS Requirements
 
 ### Rules of Conduct on DCR Properties — Special Use Permit for Aircraft (including UAS) Takeoff and Landing — 302 CMR 12.04(28)(g)
@@ -47,44 +47,44 @@ Massachusetts is notable for **not** having enacted a comprehensive statewide UA
 **Objective Summary:** 302 CMR 12.04(28) provides that, unless authorized by a Special Use Permit issued under 302 CMR 12.17(2), no person may, except in an emergency, "bring, take off, land or cause to descend on DCR property any airplane, helicopter, sea plane, so-called ultra-light aircraft, or any other apparatus." The rule does not separately define or use the words "unmanned aircraft," "UAS," or "drone." DCR's practice, reflected in third-party compilations, applies this general aircraft-landing provision to UAS takeoff and landing on the roughly 450,000 acres of state forests, beaches, reservations, parkways, and waterways it manages. DCR's Office of General Counsel listed 302 CMR 12 among regulations "Under Review," with a draft revision and a 2026 public-hearing notice posted as of this research date.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
-> **Citation note:** As with several other states' park-agency drone rules reviewed in this project, DCR's own regulatory text does not use the words "drone" or "UAS" — the Special Use Permit requirement rests on a general aircraft/apparatus takeoff-and-landing provision that DCR applies to UAS as a matter of practice. Confirm current interpretation and any park-specific conditions directly with DCR, particularly given the agency's active 2026 rulemaking on this chapter.
-
+- **AEC Industry UAS Expert:** Add this authority to the state-specific preflight checklist and confirm its applicability to the project site, mission purpose, and client. Document the operational decision and any source-supported exception before dispatch.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Document the applicability analysis and any exception relied upon in the project file. Align the scope, client representations, and operator procedures with the verified authority, and seek state counsel if material facts fall outside its clear terms.
 ### Interim (Internal) Policy for the Use of Unmanned Aircraft Systems (UAS) — MassDOT Aeronautics Division
 *Official agency policy | Current (issued September 6, 2017; still labeled "Interim")*
 
 **Objective Summary:** MassDOT's Interim Policy for the Use of UAS centralizes UAS authority under the Aeronautics Division ("MassDOT Aeronautics") for all MassDOT and MBTA divisions. No employee, contractor, or agent may use a UAS for a MassDOT or MBTA purpose without prior notification to, and compliance confirmation by, MassDOT Aeronautics. The policy prohibits employee-owned UAS for MassDOT purposes, requires FAA-compliant licensing and waivers, restricts collection of "personally identified UAS data," requires flight logging, and requires advance MassDOT Aeronautics approval of any UAS procurement contract or subcontract. This is an internal state-agency policy, not a requirement imposed on private commercial UAS operators generally.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Add this authority to the state-specific preflight checklist and confirm its applicability to the project site, mission purpose, and client. Document the operational decision and any source-supported exception before dispatch.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Require current vendor documentation for aircraft, critical components, installed software, ownership, origin, and support lifecycle before purchase. Compare the proposed configuration with the controlling authority and preserve the evidence supporting the acquisition decision.
+- **AEC Industry Legal Counsel:** Describe this source as guidance or policy, not a generally binding statute. Check whether the client or property owner incorporates it contractually, preserve the version relied upon, and escalate conflicts with controlling authority.
 ### Professional Licensing — Massachusetts Land Surveying Statute (M.G.L. c. 112, § 81D)
 *Binding general regulation | No UAS-specific Board guidance located*
 
 **Objective Summary:** M.G.L. c. 112, § 81D defines "practice of land surveying" to include measuring and locating lines, angles, elevations, and natural or manmade features "in the air, on the surface of the earth, within underground workings, and on the beds of bodies of water," for purposes including determining boundaries, areas, and volumes, and preparing maps and property descriptions. Unlike Maryland's analogous statute, Massachusetts's definition does not separately name "aerial photogrammetry" or any other aerial-imaging or remote-sensing method. No standalone Board of Registration of Professional Engineers and Land Surveyors rule, advisory ruling, or FAQ specifically addressing UAS-derived photogrammetric or LiDAR survey deliverables was located during this research pass.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Classify the intended UAS-derived deliverable before mobilization and place licensed-professional review where the verified authority requires it. Keep flight acquisition, analysis, and final professional deliverable responsibilities explicit in the project workflow.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Describe this source as guidance or policy, not a generally binding statute. Check whether the client or property owner incorporates it contractually, preserve the version relied upon, and escalate conflicts with controlling authority.
 ### Executive Orders, AG Opinions, Court Decisions, and Procurement — Research Results and Pending Legislation
 *Categories reviewed — no dispositive enacted UAS-specific state authority located beyond items above; substantial pending legislation documented*
 
 **Objective Summary:** No Massachusetts state-court decision beyond *Singer v. City of Newton*, Attorney General opinion, or currently operative gubernatorial executive order directly and dispositively addressing UAS regulation was located. No enacted Massachusetts statute imposing a state-agency UAS procurement, approved-manufacturer, or country-of-origin restriction was located. The most advanced pending measure is H.5444 ("Responsible Robotics Act"), which passed the House 155-1 on May 20, 2026 and would ban manufacturing, selling, possessing, or operating a weapon-mounted robot/UAS and impose a warrant requirement for law-enforcement use of a weaponized robotic device on private property or for surveillance/location tracking; it remained pending in the Senate Committee on Ways and Means as of the official bill-status page fetched for this research pass. Five additional bills remained pending before the Joint Committee on Transportation following a July 22, 2025 hearing: S.2454 (critical-facility no-fly zones), H.3618 (school-overflight restrictions), H.3663 (broad take-off/landing and night-flight restrictions), H.3749/S.2438 (UAS definitions, weaponization, and surveillance restrictions), and H.3800 (a ban on sale of Chinese-manufactured drones).
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
-> **Material citation-accuracy finding:** Numerous secondary drone-law aggregator sites (including dronelaunchacademy.com, uavcoach.com, propelrc.com, pilotinstitute.com, drone-laws.com, and jabdrone.com, all retrieved during this research pass) describe "Massachusetts General Law (MGL) Chapter 190B" as a currently enacted statute banning the weaponization of drones. **This is a phantom/incorrect citation: M.G.L. c. 190B is the Massachusetts Uniform Probate Code and has no connection to UAS or weapons.** The actual, currently pending (not yet enacted) measure addressing drone/robot weaponization is H.5444, which as of this research date has passed the House but has not passed the Senate or been signed by the Governor. Do not rely on any secondary source describing an enacted Massachusetts weaponized-drone statute under a "Chapter 190B" or similar citation — no such enacted provision currently exists.
-
+- **AEC Industry UAS Expert:** Treat this record as a research flag, not an operator requirement. Do not change field procedures unless a current controlling source confirms the issue; route any project-specific uncertainty to the identified agency or counsel.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** No current state equipment restriction is established by this research result. Do not treat that absence as permanent; check current solicitation terms, client policies, and independently applicable federal restrictions before committing a fleet to the work.
+- **AEC Industry Legal Counsel:** Do not present this negative or unresolved research result as a legal conclusion. Preserve the research limitation, verify current authority for the specific project, and escalate only if the issue could materially affect scope, access, or liability.
 ## 4. Non-Regulatory Context
 
 *The items below are drawn from news and secondary reporting, not primary legal authority. They are provided for situational awareness only and are not part of the verified source register.*

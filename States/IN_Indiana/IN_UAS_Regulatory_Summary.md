@@ -1,13 +1,13 @@
 # Indiana — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 1, 2026 | **Version:** 1.0 (Phase 1 — objective research; see process note below)
+**Research date:** August 1, 2026 | **Version:** 2.0 (Phase 2 — practical interpretation complete; procurement role added August 2, 2026)
 **Model / checkpoint:** Claude Sonnet 5 (research and drafting)
-**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v4, Amendment 2), this summary covers Indiana **state and state-agency** UAS authorities only — municipal and county ordinances are deferred. Unlike some states in this program (e.g., Illinois), **no statewide statute preempting local UAS ordinances was located for Indiana**; at least two Indiana cities (Fort Wayne and Carmel) maintain their own drone ordinances, which is inconsistent with a preemption regime being in force. Full citations and metadata are in `IN_UAS_Source_Register.csv`.
+**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v5, Amendment 2), this summary covers Indiana **state and state-agency** UAS authorities only — municipal and county ordinances are deferred. Unlike some states in this program (e.g., Illinois), **no statewide statute preempting local UAS ordinances was located for Indiana**; at least two Indiana cities (Fort Wayne and Carmel) maintain their own drone ordinances, which is inconsistent with a preemption regime being in force. Full citations and metadata are in `IN_UAS_Source_Register.csv`.
 
-> **Process note (Agent Instructions Amendment 2, August 1, 2026):** This state was researched under the three-phase program structure. This document currently reflects **Phase 1 only** — the objective, sourced findings below are complete, but the Practical Interpretation content (AEC Industry Expert, Agency Practitioner, and Legal Counsel perspectives) has not yet been drafted and is marked "Pending Phase 2" throughout.
+> **Process note (Agent Instructions Amendment 4, August 2, 2026):** Phase 2 practical interpretation is complete for the authorities presented below. The four labeled perspectives are operational and risk-management interpretations of the verified research packet; they do not add legal requirements and are not legal advice.
 
-Each rule below is presented as an **Objective Summary** (binding text/citation, no interpretation). Practical Interpretation — from three labeled perspectives (AEC Industry UAS Expert, Agency Practitioner, and Legal Counsel) — will be added in Phase 2 and is not legal advice.
+Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.
 
 ---
 
@@ -23,60 +23,66 @@ Indiana regulates UAS through a cluster of targeted criminal statutes rather tha
 **Objective Summary:** Requires a law enforcement officer to obtain a search warrant to use a UAV (1) on or over private property, or (2) to search, surveil, photograph, or video private property or persons/items/structures on private property, without the affected owner's consent. A warrant is not required if one would not be required for the same search conducted without a UAV. This statute governs law-enforcement conduct only; it does not directly regulate private/commercial UAS operators.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Design acquisition and data-handling workflows to minimize unnecessary capture of people and private activity. Confirm the source-supported consent or project-purpose basis before flight and carry that limitation through processing, access control, retention, and delivery.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Document the applicability analysis and any exception relied upon in the project file. Align the scope, client representations, and operator procedures with the verified authority, and seek state counsel if material facts fall outside its clear terms.
 ### Remote Aerial Voyeurism — IC 35-45-4-5(g)-(h)
 *Binding law | Current, remote-aerial-voyeurism subsections added by P.L.107-2017*
 
 **Objective Summary:** Makes it a Class A misdemeanor (Level 6 felony for a repeat offense, or if the material is published, posted online, or transmitted to another person) for a person, with intent to peep, to operate a UAV so that it enters the airspace above or surrounding another person's occupied dwelling to capture images, photographs, video, or audio of that person while inside the dwelling or on adjoining land not visible from a public area, without consent. This is a subsection of Indiana's broader voyeurism statute and is distinct from the separate remote aerial harassment offense below.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Keep flights within the documented project purpose and avoid lingering over neighboring property, people, livestock, or agricultural operations. Brief crews on intent-based harassment risk and retain the mission plan and client scope supporting the legitimate AEC purpose.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Treat the cited authority as a documented compliance gate where applicable. Preserve the facts supporting any exception or consent theory, allocate client and operator responsibilities clearly, and seek state counsel when project facts approach ambiguous or penal language.
 ### Remote Aerial Harassment — IC 35-45-10-6
 *Binding law | Current, originally P.L.107-2017; substantively amended by H.E.A. 1249 (P.L.158-2026), eff. July 1, 2026*
 
 **Objective Summary:** As currently codified in the primary-source mirrors reviewed, this statute makes it remote aerial harassment, a Class A misdemeanor (Level 6 felony on repeat offense), to operate a UAV in a manner intended to subject another person to harassment. Multiple independent news outlets report that House Enrolled Act 1249 (P.L.158-2026), effective July 1, 2026, expanded the offense so that operating a drone over another's property with intent to harass or disturb livestock, damage crops, or interfere with agricultural operations is also a Class A misdemeanor. **Citation currency flag:** as of this research date, the Justia and FindLaw codification mirrors still display only the pre-amendment single-sentence version, despite the amendment's effective date having passed; the amended text itself was not independently verified against a primary codified source.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Keep flights within the documented project purpose and avoid lingering over neighboring property, people, livestock, or agricultural operations. Brief crews on intent-based harassment risk and retain the mission plan and client scope supporting the legitimate AEC purpose.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Treat the cited authority as a documented compliance gate where applicable. Preserve the facts supporting any exception or consent theory, allocate client and operator responsibilities clearly, and seek state counsel when project facts approach ambiguous or penal language.
 ### Trafficking With an Inmate / Trafficking With an Inmate Outside a Facility (UAV-delivered contraband) — IC 35-44.1-3-5, IC 35-44.1-3-6
 *Binding law | Current, amended 2024 by P.L.22-2024 (Senate Enrolled Act 182, signed March 11, 2024)*
 
 **Objective Summary:** Makes it trafficking with an inmate, a Class A misdemeanor (Level 5 felony for certain contraband), to deliver, carry, or receive an article to or from an inmate or juvenile-facility resident without the facility head's prior authorization, expressly including delivery, carrying, or receipt "through the use of an unmanned aerial vehicle" (Sec. 5). A parallel offense (Sec. 6) covers delivering or placing contraband by UAV for an inmate being transported outside a facility. Both sections were amended in 2024 after the Indiana Department of Correction reported more than 30 drone sightings and over a dozen confirmed drone-delivered contraband drops at state correctional facilities in 2023.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Build the issuing agency approval into pre-mobilization planning. Confirm the property boundary, current submission materials, operating dates, and issued conditions before dispatch, and leave schedule contingency because the captured source does not guarantee processing time.
+- **Agency Practitioner:** Contact the official or office designated by the cited authority before fixing mobilization dates. Request the current form, documentation checklist, fees, submission route, and processing estimate; retain the issued approval and all site-specific conditions with the flight record.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Make the required approval and compliance with its conditions a documented mobilization gate. Allocate responsibility for applications and schedule impacts in the contract, and obtain counsel if the project's facts do not fit the stated authorization pathway.
 ### Public Safety Remote Aerial Interference — IC 35-44.1-4-10
 *Binding law | Current, originally P.L.107-2017, amended by P.L.22-2024*
 
 **Objective Summary:** Makes it a Class A misdemeanor (Level 6 felony on repeat offense) to operate a UAV in a manner intended to obstruct or interfere with a law enforcement officer (including a correctional officer), a firefighter, an emergency medical person, or a member of a search-and-rescue team or mission, while that individual is performing official duties. The 2024 amendment added correctional officers to the list of covered officials. This is a private-operator-facing offense already in force in Indiana, distinct from and broader than the law-enforcement-only search-warrant statute above.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Screen the project map for protected facilities and active emergency operations before dispatch. Establish conservative stand-off and escalation points, brief the crew on the applicable restriction, and document any source-supported authorization before entering the affected area.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Treat the cited authority as a documented compliance gate where applicable. Preserve the facts supporting any exception or consent theory, allocate client and operator responsibilities clearly, and seek state counsel when project facts approach ambiguous or penal language.
 ### Use of Unmanned Aerial Vehicles to Aid Hunting — IC 14-22-6-16
 *Binding law | Current, originally P.L.111-2016, most recently amended by P.L.25-2024*
 
 **Objective Summary:** Prohibits knowingly using a UAV to search for, scout, locate, or detect a wild animal covered by a hunting season, as an aid to taking it, during a window beginning 14 days before that season and ending at the close of legal hunting hours on the season's last day. UAV use with infrared capability to locate and recover an already-legally-taken animal is expressly permitted, but does not authorize entering another's property without permission. Exceptions cover DNR and its designees, government agents performing official duties, educational/research institution personnel for bona fide purposes, veterinary care of a specific wild animal, and monitoring of agricultural production or nuisance wild animals.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Plan environmental and mapping flights to avoid conduct that could be characterized as locating, pursuing, disturbing, or harassing wildlife. Coordinate mission timing and stand-off distances with the land manager when project work overlaps sensitive habitat or hunting activity.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Document the applicability analysis and any exception relied upon in the project file. Align the scope, client representations, and operator procedures with the verified authority, and seek state counsel if material facts fall outside its clear terms.
 ## 3. State Agency and Facility-Specific UAS Requirements
 
 ### Indiana Department of Natural Resources — Airborne-Device Prohibition on DNR Property (312 IAC 8-2-8(i))
@@ -85,40 +91,44 @@ Indiana regulates UAS through a cluster of targeted criminal statutes rather tha
 **Objective Summary:** Prohibits a person from landing, taxiing, taking off, parking, or mooring an unmanned motor-driven airborne device (or an airborne human transportation device) on DNR-owned, -leased, or -managed property — including state parks, state forests, state recreation areas, nature preserves, fish and wildlife areas, and reservoir properties — except at a site the Department has designated for that purpose. The rule's own text contains no enumerated exceptions. DNR's own webpage separately states that "licenses to launch and film may occasionally be granted by DNR or by specific DNR divisions," that an FAA license and proof of insurance may be required, and directs inquiries to the relevant property manager.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Plan environmental and mapping flights to avoid conduct that could be characterized as locating, pursuing, disturbing, or harassing wildlife. Coordinate mission timing and stand-off distances with the land manager when project work overlaps sensitive habitat or hunting activity.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Treat the cited authority as a documented compliance gate where applicable. Preserve the facts supporting any exception or consent theory, allocate client and operator responsibilities clearly, and seek state counsel when project facts approach ambiguous or penal language.
 ### Indiana State Police — Counter-Unmanned Aircraft System Authority (IC 10-22)
 *Binding law | Current (effective July 1, 2026); substantive operational authority remains contingent*
 
 **Objective Summary:** New IC Article 10-22, added by Senate Bill 227 (2026 Reg. Sess.), designates the Indiana State Police as the statewide coordinating agency for counter-UAS activities authorized under federal law. It authorizes the state police to seek federal authorization to acquire, deploy, and operate counter-UAS systems; to designate local law-enforcement "participating agencies"; to designate Indianapolis as a pilot-project location; and to designate "high-risk sites" including critical infrastructure, correctional facilities, airports, and large public/special-event-rated events. Counter-UAS systems must appear on the federal C-UAS Technology List. By its own terms, the article's substantive detection/mitigation authority applies only once a qualifying federal law is enacted and the Governor has published notice in the Indiana Register — a trigger not independently confirmed as satisfied as of this research date.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Screen the project map for protected facilities and active emergency operations before dispatch. Establish conservative stand-off and escalation points, brief the crew on the applicable restriction, and document any source-supported authorization before entering the affected area.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** This is not a categorical purchasing ban, but it creates potential equipment-loss exposure near protected locations. Consider loss risk, insurance treatment, geofencing configuration, and replaceability when assigning aircraft to work in the affected environment.
+- **AEC Industry Legal Counsel:** Document the applicability analysis and any exception relied upon in the project file. Align the scope, client representations, and operator procedures with the verified authority, and seek state counsel if material facts fall outside its clear terms.
 ### Professional Licensing — Indiana Land Surveyors Statute (IC 25-21.5-1-7)
 *Binding general regulation | No UAS-specific board guidance located*
 
 **Objective Summary:** Defines the "practice of surveying" to include the creation of maps and geo-referenced databases representing authoritative boundary, fixed-works, or topographic locations — whether by terrestrial methods, photogrammetric methods, or GNSS — which must be accomplished under the responsible charge of a professional surveyor unless a specific exemption under subsection (d) applies. No standalone Indiana Professional Licensing Agency or State Board of Registration for Professional Surveyors rule, advisory opinion, or FAQ specifically addressing UAS-derived photogrammetry, LiDAR, or orthomosaic mapping products was located.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Classify the intended UAS-derived deliverable before mobilization and place licensed-professional review where the verified authority requires it. Keep flight acquisition, analysis, and final professional deliverable responsibilities explicit in the project workflow.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Describe this source as guidance or policy, not a generally binding statute. Check whether the client or property owner incorporates it contractually, preserve the version relied upon, and escalate conflicts with controlling authority.
 ### Executive Orders, AG Opinions, Court Decisions, and Procurement
 *Categories reviewed — one executive order located; others not dispositive*
 
 **Objective Summary:** Governor Mike Braun signed Executive Order 25-73 (on or about October 29-30, 2025), establishing the "Indiana Initiative for Drone Dominance Task Force," a multi-agency, university, and industry body directed to develop a strategic plan supporting federal "American drone dominance" policy, drawing on assets such as NSWC Crane, Camp Atterbury, and Muscatatuck Urban Training Center; the task force owed its strategic plan and recommendations to the Governor by July 31, 2026. The order does not itself impose an operator-facing requirement. No Indiana Attorney General opinion construing a UAS-specific statute was located. No Indiana appellate or Supreme Court decision directly construing an Indiana UAS-specific statute was located. No general statewide state-agency UAS procurement or approved-manufacturer restriction equivalent to Illinois' IDOT foreign-manufacturer policy was located beyond the counter-UAS-system procurement provision already captured above; INDOT's Division of Aeronautics/Land and Aerial Survey Office maintains an active internal UAS program (public webtool, FAQ page) but its public-facing material imposes no located operator-facing permit or manufacturer restriction. No statewide statute preempting local UAS ordinances was located.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Treat this record as a research flag, not an operator requirement. Do not change field procedures unless a current controlling source confirms the issue; route any project-specific uncertainty to the identified agency or counsel.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** No current state equipment restriction is established by this research result. Do not treat that absence as permanent; check current solicitation terms, client policies, and independently applicable federal restrictions before committing a fleet to the work.
+- **AEC Industry Legal Counsel:** Do not present this negative or unresolved research result as a legal conclusion. Preserve the research limitation, verify current authority for the specific project, and escalate only if the issue could materially affect scope, access, or liability.
 ## 4. Non-Regulatory Context
 
 *The items below are drawn from news and secondary reporting, not primary legal authority. They are provided for situational awareness only and are not part of the verified source register.*

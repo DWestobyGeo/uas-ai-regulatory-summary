@@ -220,6 +220,8 @@
       '<div class="reg-block"><h4>Objective Summary</h4><p>' + escapeHtml(rec.summary || "") + "</p></div>" +
       '<div class="reg-block"><h4>Practical Interpretation</h4>' +
         '<p><strong>AEC Industry UAS Expert:</strong> ' + escapeHtml(rec.practical_interpretation_aec_expert || "") + "</p>" +
+        '<p><strong>Agency Practitioner:</strong> ' + escapeHtml(rec.practical_interpretation_agency_practitioner || "") + "</p>" +
+        '<p><strong>UAS Procurement Expert:</strong> ' + escapeHtml(rec.practical_interpretation_uas_procurement_expert || "") + "</p>" +
         '<p><strong>AEC Industry Legal Counsel:</strong> ' + escapeHtml(rec.practical_interpretation_legal_counsel || "") + "</p>" +
       "</div>" +
       (rec.notes ? '<div class="reg-block"><h4>Notes</h4><p>' + escapeHtml(rec.notes) + "</p></div>" : "") +
@@ -255,7 +257,8 @@
       var haystack = [
         rec.source_title, rec.citation, rec.uas_topic, rec.summary,
         rec.issuing_authority, rec.regulated_party, rec.regulated_activity,
-        rec.practical_interpretation_aec_expert, rec.practical_interpretation_legal_counsel,
+        rec.practical_interpretation_aec_expert, rec.practical_interpretation_agency_practitioner,
+        rec.practical_interpretation_uas_procurement_expert, rec.practical_interpretation_legal_counsel,
         rec.record_id, rec.notes
       ].join(" ").toLowerCase();
       if (haystack.indexOf(query.toLowerCase()) === -1) return false;

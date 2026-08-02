@@ -12,7 +12,7 @@ os.makedirs(SOURCES_DIR, exist_ok=True)
 state_dirs = sorted([d for d in glob.glob(os.path.join(SRC_ROOT, "*")) if os.path.isdir(d)])
 
 index = {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "generated_at": datetime.date.today().isoformat(),
     "disclaimer": "AI-compiled regulatory research. Not legal advice. See /DISCLAIMER for full terms.",
     "states": []
@@ -47,7 +47,7 @@ for sd in state_dirs:
     last_updated = datetime.date.fromtimestamp(mtime).isoformat()
 
     state_obj = {
-        "schema_version": "1.0",
+        "schema_version": "1.1",
         "state": name,
         "state_abbr": abbr,
         "state_fips": fips,

@@ -14,7 +14,7 @@ The site lets you pick a state from a dropdown, read its regulatory summary, bro
 
 Each completed state has two data products, generated from the same research pass:
 
-- **Regulatory Summary** (Markdown → rendered on the site) — a ~2-page narrative covering statewide statutes/regulations and state-agency requirements, each with an objective summary plus labeled "AEC expert" and "legal counsel" practical interpretation.
+- **Regulatory Summary** (Markdown → rendered on the site) — a concise narrative covering statewide statutes/regulations and state-agency requirements, each with an objective summary plus labeled practical interpretation from an AEC industry expert, agency practitioner, UAS procurement expert, and legal counsel.
 - **Source Register** (CSV → also exposed as JSON via the API) — one row per authority, with citation, status, binding level, confidence level, and a link to the official source.
 
 Coverage is currently **state and state-agency level only** — municipal, county, and tribal regulation is deferred to a later research phase and is explicitly noted as out of scope in each state's summary.

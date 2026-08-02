@@ -1,13 +1,13 @@
 # Kansas — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 2, 2026 | **Version:** 1.0 (Phase 1 — objective research; see process note below)
+**Research date:** August 2, 2026 | **Version:** 2.0 (Phase 2 — practical interpretation complete; procurement role added August 2, 2026)
 **Model / checkpoint:** Claude Sonnet 5 (research and drafting)
-**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v4, Amendment 2), this summary covers Kansas **state and state-agency** UAS authorities only — municipal and county ordinances are deferred. **No statewide statute preempting local UAS ordinances was located for Kansas.** Secondary sources report that some Kansas municipalities (e.g., Wichita, Prairie Village) have adopted their own drone ordinances, but confirming and cataloguing those ordinances is out of scope for this state-level phase. Full citations and metadata are in `KS_UAS_Source_Register.csv`.
+**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v5, Amendment 2), this summary covers Kansas **state and state-agency** UAS authorities only — municipal and county ordinances are deferred. **No statewide statute preempting local UAS ordinances was located for Kansas.** Secondary sources report that some Kansas municipalities (e.g., Wichita, Prairie Village) have adopted their own drone ordinances, but confirming and cataloguing those ordinances is out of scope for this state-level phase. Full citations and metadata are in `KS_UAS_Source_Register.csv`.
 
-> **Process note (Agent Instructions Amendment 2, August 1, 2026):** This state was researched under the three-phase program structure. This document currently reflects **Phase 1 only** — the objective, sourced findings below are complete, but the Practical Interpretation content (AEC Industry Expert, Agency Practitioner, and Legal Counsel perspectives) has not yet been drafted and is marked "Pending Phase 2" throughout.
+> **Process note (Agent Instructions Amendment 4, August 2, 2026):** Phase 2 practical interpretation is complete for the authorities presented below. The four labeled perspectives are operational and risk-management interpretations of the verified research packet; they do not add legal requirements and are not legal advice.
 
-Each rule below is presented as an **Objective Summary** (binding text/citation, no interpretation). Practical Interpretation — from three labeled perspectives (AEC Industry UAS Expert, Agency Practitioner, and Legal Counsel) — will be added in Phase 2 and is not legal advice.
+Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.
 
 ---
 
@@ -23,20 +23,22 @@ Kansas has no single comprehensive drone statute. Instead, it regulates UAS thro
 **Objective Summary:** Defines "harassment" (an element of civil stalking relief under the Act) to expressly include "any course of conduct carried out through the use of an unmanned aerial system over or near any dwelling, occupied vehicle or other place where one may reasonably expect to be safe from uninvited intrusion or surveillance" (subsection (d)(1)). The section separately defines "unmanned aerial system" (subsection (e)) using FAA-derived criteria: a powered aerial vehicle with no onboard human operator, using aerodynamic lift, that may fly autonomously or be piloted remotely, may be expendable or recoverable, and may carry a lethal or nonlethal payload. "Harassment" requires a "course of conduct" — two or more acts evidencing continuity of purpose (subsection (d)(2)) — so a single isolated overflight does not by itself satisfy the definition.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Plan environmental and mapping flights to avoid conduct that could be characterized as locating, pursuing, disturbing, or harassing wildlife. Coordinate mission timing and stand-off distances with the land manager when project work overlaps sensitive habitat or hunting activity.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Document the applicability analysis and any exception relied upon in the project file. Align the scope, client representations, and operator procedures with the verified authority, and seek state counsel if material facts fall outside its clear terms.
 ### Acquisition of Certain Drones by Governmental Agencies Prohibited — K.S.A. 75-3740h and 75-3740i
 *Binding law | Current, 2025 Session Laws ch. 68 (House Substitute for Senate Bill 9), §§12-13, effective July 1, 2025*
 
 **Objective Summary:** Bars a "governmental agency" (the state or any political or taxing subdivision, or any office, agency, or instrumentality thereof) from purchasing or acquiring any drone, or related services, maintenance agreements, or equipment, whose critical components (including installed software) were produced in a "country of concern" — the People's Republic of China (including Hong Kong), Cuba, Iran, North Korea, Russia, or Venezuela (Taiwan is expressly excluded) — or produced or owned by a "foreign principal." Equipment acquired before July 1, 2025 may continue in use, and replacement components acquired before that date may still be used, but no new noncompliant replacement may be acquired. A narrow exception permits an otherwise-prohibited acquisition where no other reasonable means exists, the secretary of administration approves after consulting the adjutant general, and the security risk of forgoing the acquisition would exceed the risk of proceeding. This restriction governs public-agency purchasing; it does not directly regulate a private commercial operator's own equipment.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Add this authority to the state-specific preflight checklist and confirm its applicability to the project site, mission purpose, and client. Document the operational decision and any source-supported exception before dispatch.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Require current vendor documentation for aircraft, critical components, installed software, ownership, origin, and support lifecycle before purchase. Compare the proposed configuration with the controlling authority and preserve the evidence supporting the acquisition decision.
+- **AEC Industry Legal Counsel:** Document the applicability analysis and any exception relied upon in the project file. Align the scope, client representations, and operator procedures with the verified authority, and seek state counsel if material facts fall outside its clear terms.
 ## 3. State Agency and Facility-Specific UAS Requirements
 
 ### Motorized Vehicles and Aircraft; Authorized Operation — KDWP Lands and Waters — K.A.R. 115-8-13
@@ -45,50 +47,55 @@ Kansas has no single comprehensive drone statute. Instead, it regulates UAS thro
 **Objective Summary:** The regulation's own text provides only that "motorized aircraft landings and takeoffs shall be allowed in designated areas only or as authorized by the secretary" (subsection (d)); it does not mention drones, UAS, or unmanned aircraft. The Kansas Department of Wildlife and Parks' current official public FAQ page states directly that "drone (UAS/UAV) use is not permitted at any Kansas State Park, Wildlife Area, or other property owned or managed by KDWP (KAR 115-8-13)," and that unlawful use is a class C misdemeanor. The same FAQ states that a list of parks with designated drone operating areas is "in development," implying none are currently designated.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Plan environmental and mapping flights to avoid conduct that could be characterized as locating, pursuing, disturbing, or harassing wildlife. Coordinate mission timing and stand-off distances with the land manager when project work overlaps sensitive habitat or hunting activity.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Treat the cited authority as a documented compliance gate where applicable. Preserve the facts supporting any exception or consent theory, allocate client and operator responsibilities clearly, and seek state counsel when project facts approach ambiguous or penal language.
 ### Unlawful Methods of Taking Wildlife (Aircraft) — KDWP Construction Applying the Statute to Drones — K.S.A. 32-1003
 *Binding law (statute), supplemented by official agency guidance | Current, statute most recently amended 2005; KDWP guidance current for the 2025-2026 season*
 
 **Objective Summary:** K.S.A. 32-1003(a)(1) makes it unlawful to take a game or furbearing animal "from a motorboat, airplane, motor vehicle or other water, air or land vehicle" absent a handicapped-hunting permit; (a)(2) separately bars providing or receiving an animal's location "by radio or other mechanical device for purposes of taking" it. Neither provision names "drone" or "UAS." KDWP's official FAQ states that "the use of drones (UASs/UAVs) for hunting or scouting is prohibited in Kansas," citing this section and the federal Airborne Hunting Act, and separately states a drone may not be used to locate wounded or harvested game (citing the "take" definition at K.S.A. 32-701) or to film a hunt on KDWP-owned/managed land.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Plan environmental and mapping flights to avoid conduct that could be characterized as locating, pursuing, disturbing, or harassing wildlife. Coordinate mission timing and stand-off distances with the land manager when project work overlaps sensitive habitat or hunting activity.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Describe this source as guidance or policy, not a generally binding statute. Check whether the client or property owner incorporates it contractually, preserve the version relied upon, and escalate conflicts with controlling authority.
 ### Unmanned Aircraft Systems (UAS) Beyond Program and UAS Privacy Policy — Kansas Department of Transportation
 *Official agency policy / advisory guidance | Current program; not a codified regulation*
 
 **Objective Summary:** KDOT's Division of Aviation operates an ongoing "UAS Beyond" research program using drones for highway, railroad, and energy-distribution-line inspection; KDOT was one of ten agencies nationwide selected for the FAA's UAS Integration Pilot Program in 2017 (concluded 2020), and Kansas is reported as the first state with a statewide unmanned traffic management (UTM) system for flight-plan filing and airspace deconfliction. A separate KDOT UAS Privacy Policy requires that any UAS use supporting KDOT programs balance program requirements against protection of personally identifiable information (PII) and compliance with privacy laws. Neither document imposes a permit or approval requirement on private commercial operators; both bind KDOT's own program.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Design acquisition and data-handling workflows to minimize unnecessary capture of people and private activity. Confirm the source-supported consent or project-purpose basis before flight and carry that limitation through processing, access control, retention, and delivery.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Describe this source as guidance or policy, not a generally binding statute. Check whether the client or property owner incorporates it contractually, preserve the version relied upon, and escalate conflicts with controlling authority.
 ### Professional Licensing — Kansas Professional Surveying Statute (K.S.A. 74-7003(t))
 *Binding general regulation | No UAS-specific board guidance located*
 
 **Objective Summary:** Defines "professional surveying" to include, among other things, use of "mathematics, geodesy and photogrammetry" and the making of geometric measurements to determine boundaries, positions, and configurations of the earth's surface, plus "creating, preparing or modifying electronic, computerized or other data" relative to those activities. The definition is method-neutral apart from its express reference to photogrammetry; it does not reference UAS, drones, or LiDAR by name. No standalone rule, advisory opinion, or FAQ from the Kansas State Board of Technical Professions specifically addressing UAS-derived photogrammetric or LiDAR survey products was located.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Classify the intended UAS-derived deliverable before mobilization and place licensed-professional review where the verified authority requires it. Keep flight acquisition, analysis, and final professional deliverable responsibilities explicit in the project workflow.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Describe this source as guidance or policy, not a generally binding statute. Check whether the client or property owner incorporates it contractually, preserve the version relied upon, and escalate conflicts with controlling authority.
 ### Executive Orders, AG Opinions, Court Decisions, Correctional Facilities, Preemption, and Related Negative/Discrepancy Findings
 *Categories reviewed — no dispositive UAS-specific authority located; a material legislative-history/citation finding is documented*
 
 **Objective Summary:** No Kansas Governor executive order, Kansas Attorney General opinion, or Kansas appellate/Supreme Court decision directly addressing UAS was located. No Kansas statute makes it a specific crime to fly a UAS over a correctional facility or jail; drone-delivered contraband would instead fall under Kansas's general, non-UAS-specific "traffic in contraband in a correctional institution" felony (K.S.A. 21-5914), which does not mention UAS. No statewide statute preempting local UAS ordinances was located. **Legislative-history finding:** Kansas's government drone-procurement restriction (K.S.A. 75-3740h/75-3740i, see Section 2 above) did not originate from House Bill 2293 (2025), which is shown "Died" on the Legislature's official tracker; its language was instead folded into House Substitute for Senate Bill 9, which passed and was signed April 7, 2025. A substantively similar 2024 predecessor, House Substitute for Senate Bill 271, passed the Legislature but was **vetoed by Governor Kelly on April 24, 2024**, and the Senate's April 29, 2024 override motion failed 21-16 (short of the two-thirds required), sustaining the veto — SB 271 (2024) never became law. Separately, House Bill 2423 (2026), the "Kansas Wounded Deer Recovery Act" (see Section 3, K.S.A. 32-1003), is also shown "Died" on the Legislature's official tracker following a January 27, 2026 committee hearing.
 
 **Practical Interpretation**
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **Legal Counsel:** Pending Phase 2 interpretation pass.
 
+- **AEC Industry UAS Expert:** Treat this record as a research flag, not an operator requirement. Do not change field procedures unless a current controlling source confirms the issue; route any project-specific uncertainty to the identified agency or counsel.
+- **Agency Practitioner:** Not applicable — no agency process.
+- **UAS Procurement Expert:** No current state equipment restriction is established by this research result. Do not treat that absence as permanent; check current solicitation terms, client policies, and independently applicable federal restrictions before committing a fleet to the work.
+- **AEC Industry Legal Counsel:** Do not present this negative or unresolved research result as a legal conclusion. Preserve the research limitation, verify current authority for the specific project, and escalate only if the issue could materially affect scope, access, or liability.
 ## 4. Non-Regulatory Context
 
 *The items below are drawn from news and secondary reporting, not primary legal authority. They are provided for situational awareness only and are not part of the verified source register.*

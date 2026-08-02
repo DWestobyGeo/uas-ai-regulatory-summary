@@ -4,13 +4,15 @@
 
 **Status:** Do not begin or resume research until explicitly assigned.
 
-**Version:** 4 — August 1, 2026. Consolidates and supersedes all earlier instructions and amendments.
+**Version:** 5 — August 2, 2026. Consolidates and supersedes all earlier instructions and amendments.
 
 **Amendment 1 — August 1, 2026:** Added Section 9 ("Non-Regulatory Context: News, Enforcement, and Incidents") and renumbered subsequent sections accordingly.
 
 **Amendment 2 — August 1, 2026:** Introduces five specialized research/drafting roles (Section 1.1); restructures the multi-state program into three phases — Phase 1 (objective research, all states), Phase 2 (batched practical-interpretation pass, all states), Phase 3 (QA and fact-drift review, all states, including a retrofit of interpretation content produced before this amendment) — with token-optimization rules (Section 5.1–5.2); adds a third practical-interpretation field, `practical_interpretation_agency_practitioner` (Section 7); and flags 14 pre-Amendment-2 states (Section 5.3) whose interpretation content is provisional pending Phase 3.
 
 **Amendment 3 — August 1, 2026:** Adds a required `Model / checkpoint` line to the printable summary's metadata block (Section 8), identifying the AI model (and version/checkpoint, if available) used to produce the document's research and drafting. Applies to all states researched from this point forward; earlier states are not retrofitted solely for this purpose.
+
+**Amendment 4 — August 2, 2026:** Adds the UAS Procurement Expert role and `practical_interpretation_uas_procurement_expert` field; expands Phase 2 to four interpretation passes; standardizes all completed states on a 33-field schema; and authorizes the current Phase 2/legacy-retrofit assignment for states whose objective research is already complete.
 
 ---
 
@@ -31,13 +33,14 @@ Federal FAA rules are the nationwide baseline. Do not restate routine Part 107 r
 
 ## 1.1 Research and Drafting Roles
 
-Work proceeds through five specialized roles, applied per state as batched passes covering every record in that state in one pass per role — not as a separate call per record — unless a specific record is flagged for isolated review (see Section 5.2).
+Work proceeds through six specialized roles, applied per state as batched passes covering every record in that state in one pass per role — not as a separate call per record — unless a specific record is flagged for isolated review (see Section 5.2).
 
 - **Research Expert.** Owns Sections 3–7: builds the coverage checklist, discovers and verifies primary sources, and drafts the objective `summary` field and full metadata for every source-register record. Also tracks industry/news sources for the Non-Regulatory Context section (Section 9) and is responsible for flagging when a previously logged record needs a currency recheck (superseding amendment, repeal, litigation, agency policy change). Personality: precise, citation-first, skeptical of secondary sources, and writes nothing that isn't directly supported by verified primary text.
 - **AEC Industry Expert.** Drafts `practical_interpretation_aec_expert` — the operational read a UAS program manager at an AEC (architecture/engineering/construction) consulting firm would give: flight planning, field execution, scheduling, equipment, and program-management implications.
 - **Agency Practitioner.** Drafts `practical_interpretation_agency_practitioner` — the perspective of someone experienced working the cited authority from inside the issuing agency: how to apply, typical wait times, required documentation, where to submit, and known practical friction points. Populate only when the record involves an application, permit, waiver, or agency-administered process; otherwise record `N/A — no agency process involved`.
+- **UAS Procurement Expert.** Drafts `practical_interpretation_uas_procurement_expert` — the equipment-acquisition and fleet-management read for the person purchasing UAS aircraft, payloads, software, components, services, and support for an AEC firm pursuing work in the state. Address verified manufacturer or country-of-origin restrictions, cybersecurity and component rules, public-client contract flow-down risk, grandfathering, documentation, interoperability, lifecycle support, and replacement planning. Distinguish restrictions binding public agencies from requirements expressly applicable to consultants. Do not recommend a named brand or declare a product compliant without current, authoritative support. When the record has no meaningful equipment-selection or procurement implication, record `N/A — no procurement or equipment-selection implication identified`.
 - **Legal Counsel.** Drafts `practical_interpretation_legal_counsel` — the risk/compliance read: documentation, contracts, liability, and escalation triggers.
-- **Editorial/QA Reviewer** (review only, not a drafting role). Confirms the objective `summary` matches the cited primary text with no drift or added inference — the exact failure mode caught and avoided for Alabama's misreported § 9-11-270 in this program — checks tone, format, and consistency across the three interpretation fields, confirms the record set still validates against the current schema (column count, controlled values, no malformed rows), and confirms Section 12's QC gate. Where practical, run this as an independent pass that has not seen the drafting reasoning, since independence is what makes the fact-check meaningful.
+- **Editorial/QA Reviewer** (review only, not a drafting role). Confirms the objective `summary` matches the cited primary text with no drift or added inference — the exact failure mode caught and avoided for Alabama's misreported § 9-11-270 in this program — checks tone, format, and consistency across the four interpretation fields, confirms the record set still validates against the current schema (column count, controlled values, no malformed rows), and confirms Section 12's QC gate. Where practical, run this as an independent pass that has not seen the drafting reasoning, since independence is what makes the fact-check meaningful.
 
 ## 2. Current Scope
 
@@ -135,8 +138,8 @@ Do not create a long narrative research log. Use the checklist and concise sourc
 
 The overall multi-state program (as distinct from the workflow for a single state, above) proceeds in three phases:
 
-- **Phase 1 — Objective Research (all states).** The Research Expert produces, per state, the complete source register — every field except the three practical-interpretation fields — and the Non-Regulatory Context item list. Populate the three practical-interpretation fields with the literal placeholder `PENDING — Phase 2` rather than leaving them blank, so the schema stays uniform and complete. Push each state on completion; do not hold a state back waiting on another.
-- **Phase 2 — Practical Interpretation (all states, batched).** Once Phase 1 is complete for every state, the AEC Industry Expert, Agency Practitioner, and Legal Counsel roles each run one batched pass per state — covering every record in that state in a single pass per role — replacing the `PENDING — Phase 2` placeholders. No new primary-source research occurs in this phase except to resolve a specific gap the Research Expert's packet left open.
+- **Phase 1 — Objective Research (all states).** The Research Expert produces, per state, the complete source register — every field except the four practical-interpretation fields — and the Non-Regulatory Context item list. Populate the four practical-interpretation fields with the literal placeholder `PENDING — Phase 2` rather than leaving them blank, so the schema stays uniform and complete. Push each state on completion; do not hold a state back waiting on another.
+- **Phase 2 — Practical Interpretation (all states, batched).** Once Phase 1 is complete for a state and the interpretation pass is assigned, the AEC Industry Expert, Agency Practitioner, UAS Procurement Expert, and Legal Counsel roles each run one batched pass per state — covering every record in that state in a single pass per role — replacing the `PENDING — Phase 2` placeholders. No new primary-source research occurs in this phase except to resolve a specific gap the Research Expert's packet left open.
 - **Phase 3 — QA and Retrofit (all states).** The Editorial/QA Reviewer runs a fact-drift and consistency pass across every state, including the pre-Amendment-2 states identified in Section 5.3, whose interpretation content was produced under the prior process and is regenerated in this phase for consistency.
 
 ### 5.2 Token-Optimization Rules
@@ -149,7 +152,7 @@ The overall multi-state program (as distinct from the workflow for a single stat
 
 The following states were completed before this amendment, under a single-pass process that produced practical-interpretation content without a separate Agency Practitioner lens and without the three-phase structure above: Texas, California, Florida, Oregon, Washington, Idaho, Missouri, Pennsylvania, New York, Colorado, Arizona, North Carolina, Georgia, Alabama.
 
-Their objective summaries and source citations are treated as current. Their practical-interpretation content is retained as-is for now, flagged in each state's printable summary as provisional, and is regenerated during Phase 3 for consistency with the role structure in Section 1.1 — after Phase 1 is complete for all remaining states. Do not regenerate these states' interpretation content ahead of that Phase 3 pass unless separately instructed.
+Their objective summaries and source citations are treated as current. Their practical-interpretation content is regenerated when a Phase 2/legacy-retrofit assignment is expressly given. The August 2, 2026 assignment authorizes that work for every state whose objective research is complete, including these legacy states.
 
 ## 6. Authority Classification
 
@@ -174,14 +177,14 @@ Create one record per distinct authority or materially separate agency policy. D
 
 Use these fields consistently:
 
-`record_id, state, state_abbr, state_fips, jurisdiction_name, jurisdiction_type, geographic_scope, issuing_authority, source_title, citation, source_type, effective_date, revision_date, status, binding_level, uas_topic, regulated_party, regulated_activity, requirement_type, permit_or_approval_required, public_agency_only, commercial_operator_relevance, aec_relevance, summary, practical_interpretation_aec_expert, practical_interpretation_agency_practitioner, practical_interpretation_legal_counsel, source_url, date_accessed, confidence_level, verification_status, notes`
+`record_id, state, state_abbr, state_fips, jurisdiction_name, jurisdiction_type, geographic_scope, issuing_authority, source_title, citation, source_type, effective_date, revision_date, status, binding_level, uas_topic, regulated_party, regulated_activity, requirement_type, permit_or_approval_required, public_agency_only, commercial_operator_relevance, aec_relevance, summary, practical_interpretation_aec_expert, practical_interpretation_agency_practitioner, practical_interpretation_uas_procurement_expert, practical_interpretation_legal_counsel, source_url, date_accessed, confidence_level, verification_status, notes`
 
-`practical_interpretation_agency_practitioner` was added by Amendment 2. States completed before Amendment 2 (Section 5.3) do not yet have this column; do not retrofit their CSVs ahead of Phase 3. New states (Phase 1, Amendment 2 onward) use the full 32-field schema, with all three practical-interpretation fields populated as `PENDING — Phase 2` until the Phase 2 batched pass runs.
+`practical_interpretation_agency_practitioner` was added by Amendment 2 and `practical_interpretation_uas_procurement_expert` by Amendment 4. All source registers use the full 33-field schema. During Phase 1, all four interpretation fields contain `PENDING — Phase 2`; an assigned Phase 2 or legacy-retrofit pass replaces every placeholder.
 
 Field rules:
 
 - `summary`: objective only; normally 50–120 words.
-- Each practical-interpretation field: normally 20–45 words; `practical_interpretation_agency_practitioner` may instead read `N/A — no agency process involved` when the record has no application, permit, waiver, or agency-administered process.
+- Each practical-interpretation field: normally 20–45 words. `practical_interpretation_agency_practitioner` may instead read `N/A — no agency process involved`; `practical_interpretation_uas_procurement_expert` may instead read `N/A — no procurement or equipment-selection implication identified`.
 - Paraphrase by default. Use a short quotation only when the exact wording is materially important.
 - Use controlled values consistently; do not alternate synonyms for the same category.
 - Use `Unknown` or `Unresolved`, not guesses.
@@ -230,9 +233,10 @@ For each material authority included in Sections 2 or 3, use:
 
 - **AEC Industry UAS Expert:** One concise operational bullet addressing flight planning, field execution, equipment, scheduling, or program management.
 - **Agency Practitioner:** One concise bullet on the practical process — how to apply, typical wait time, required documentation, where to submit — when the record involves an agency-administered process; state `Not applicable — no agency process` when it does not.
+- **UAS Procurement Expert:** One concise equipment-acquisition or fleet-management bullet addressing only supported purchasing implications; state `Not applicable — no procurement or equipment-selection implication identified` when none exists.
 - **AEC Industry Legal Counsel:** One concise risk/compliance bullet addressing documentation, contracts, liability, or escalation to counsel.
 
-During Phase 1 (Section 5.1), before the batched interpretation pass has run, show all three bullets as `Pending Phase 2 interpretation pass` rather than omitting them.
+During Phase 1 (Section 5.1), before the batched interpretation pass has run, show all four bullets as `Pending Phase 2 interpretation pass` rather than omitting them.
 
 Include only sources that are verified and materially relevant to commercial AEC UAS work. Omit duplicative pointer pages and routine agency webpages that add no substantive requirement.
 
@@ -313,7 +317,7 @@ Before completing a state, confirm:
 - duplicate and non-substantive sources were removed;
 - the report remains approximately two printable pages, plus a bounded Non-Regulatory Context section per Section 9;
 - the Non-Regulatory Context section (if present) contains only dated, sourced, non-authoritative items and is clearly disclaimed;
-- the record set matches the current schema for its phase (Section 7) — 32 fields with `PENDING — Phase 2` placeholders for a Phase 1 state, or fully populated interpretation fields for a Phase 2/3 state — with no row short or long on columns; and
+- the record set matches the current schema for its phase (Section 7) — 33 fields with `PENDING — Phase 2` placeholders for a Phase 1 state, or fully populated interpretation fields for a Phase 2/3 state — with no row short or long on columns; and
 - the source register remains consistent and ready for national aggregation.
 
 If a material issue cannot be verified, say exactly what is unresolved and do not guess.
@@ -329,5 +333,8 @@ Practical interpretation must be useful but conservative. It is not legal advice
 - Distinguish requirements imposed directly on private commercial operators from those imposed only on state agencies or public employees.
 - Do not assume a public-agency procurement restriction applies to consultants. State that contract documents must be checked unless an official source expressly extends the restriction.
 - Name excluded or approved manufacturers only when verified against the current official list.
+- Treat approved-manufacturer lists, country-of-origin determinations, component restrictions, and cybersecurity approvals as time-sensitive. Recommend current-list verification at solicitation and purchase rather than treating a captured list as permanent.
+- Do not infer a product's manufacturer, component origin, ownership, security posture, or eligibility from a brand name, reseller statement, or general market reputation.
+- Procurement interpretation may identify due diligence, documentation, lifecycle, interoperability, or replacement-planning needs supported by the record; it may not invent a contractual flow-down, declare a product compliant, or recommend a named product without current authoritative support.
 - Do not convert a low-confidence or unverified source into a strong operational recommendation.
 - When wording is ambiguous, explain the ambiguity and identify the agency or counsel that could resolve it.
