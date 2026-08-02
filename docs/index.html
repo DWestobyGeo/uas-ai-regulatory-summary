@@ -52,14 +52,34 @@
     <div class="summary-panel" id="summary-panel"></div>
 
     <div class="register-section">
-      <h2>Source Register</h2>
-      <p class="register-hint">Every material authority behind the summary above, with citation, status, confidence level, and links back to the original source. Scroll horizontally to see all fields.</p>
-      <div class="register-table-wrap">
-        <table class="register-table" id="register-table">
-          <thead></thead>
-          <tbody></tbody>
-        </table>
+      <div class="register-heading-row">
+        <div>
+          <h2>Source Register</h2>
+          <p class="register-hint">Every material authority behind the summary above. Click a row to see the full objective summary and practical interpretation. Search or filter to narrow the list.</p>
+        </div>
       </div>
+
+      <div class="register-controls no-print">
+        <input type="search" id="register-search" placeholder="Search title, citation, topic, summary…" aria-label="Search source register" />
+        <select id="register-filter-confidence" aria-label="Filter by confidence">
+          <option value="">All confidence levels</option>
+          <option value="high">High confidence</option>
+          <option value="moderate">Moderate confidence</option>
+          <option value="low">Low confidence</option>
+        </select>
+        <select id="register-filter-relevance" aria-label="Filter by AEC relevance">
+          <option value="">All AEC relevance</option>
+          <option value="high">High relevance</option>
+          <option value="moderate">Moderate relevance</option>
+          <option value="low">Low relevance</option>
+        </select>
+        <button class="btn secondary small" id="expand-all-btn" type="button">Expand all</button>
+        <button class="btn secondary small" id="collapse-all-btn" type="button">Collapse all</button>
+        <span class="register-count" id="register-count"></span>
+      </div>
+
+      <div id="register-list" class="register-list"></div>
+      <p id="register-no-results" class="register-hint" style="display:none;">No sources match that search/filter.</p>
     </div>
 
     <div class="print-disclaimer">

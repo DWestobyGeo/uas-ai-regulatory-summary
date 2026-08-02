@@ -8,41 +8,40 @@
   var titleEl = document.getElementById("state-title");
   var subEl = document.getElementById("state-sub");
   var summaryPanel = document.getElementById("summary-panel");
-  var registerTable = document.getElementById("register-table");
+  var registerList = document.getElementById("register-list");
+  var registerNoResults = document.getElementById("register-no-results");
+  var registerSearch = document.getElementById("register-search");
+  var registerFilterConfidence = document.getElementById("register-filter-confidence");
+  var registerFilterRelevance = document.getElementById("register-filter-relevance");
+  var registerCount = document.getElementById("register-count");
+  var expandAllBtn = document.getElementById("expand-all-btn");
+  var collapseAllBtn = document.getElementById("collapse-all-btn");
   var countLabel = document.getElementById("state-count-label");
   var printBtn = document.getElementById("print-btn");
   var downloadJsonBtn = document.getElementById("download-json-btn");
   var downloadCsvBtn = document.getElementById("download-csv-btn");
 
   var currentStateData = null;
+  var currentRecords = [];
 
-  // Columns shown in the register table, in order, with friendly headers.
-  var COLUMNS = [
-    ["record_id", "ID"],
-    ["source_title", "Source"],
-    ["citation", "Citation"],
-    ["source_type", "Type"],
-    ["status", "Status"],
-    ["binding_level", "Binding Level"],
-    ["uas_topic", "Topic"],
-    ["aec_relevance", "AEC Relevance"],
-    ["confidence_level", "Confidence"],
-    ["summary", "Objective Summary"],
-    ["practical_interpretation_aec_expert", "AEC Expert Interpretation"],
-    ["practical_interpretation_legal_counsel", "Legal Counsel Interpretation"],
-    ["source_url", "Source URL"],
-    ["date_accessed", "Accessed"],
-    ["notes", "Notes"]
-  ];
-
-  function badgeFor(value) {
+  function levelClass(value) {
     if (!value) return "";
     var v = value.toLowerCase();
-    var cls = "badge";
-    if (v.indexOf("high") === 0) cls += " high";
-    else if (v.indexOf("moderate") === 0) cls += " moderate";
-    else if (v.indexOf("low") === 0) cls += " low";
+    if (v.indexOf("high") === 0) return "high";
+    if (v.indexOf("moderate") === 0) return "moderate";
+    if (v.indexOf("low") === 0) return "low";
+    return "";
+  }
+
+  function badgeFor(value, extraClass) {
+    if (!value) return "";
+    var cls = "badge " + levelClass(value) + (extraClass ? " " + extraClass : "");
     return '<span class="' + cls + '">' + escapeHtml(value) + "</span>";
+  }
+
+  function plainBadge(value) {
+    if (!value) return "";
+    return '<span class="badge plain">' + escapeHtml(value) + "</span>";
   }
 
   function escapeHtml(s) {
@@ -140,46 +139,135 @@
       summaryPanel.appendChild(pre);
     }
 
-    renderRegisterTable(data.records || []);
+    currentRecords = data.records || [];
+    registerSearch.value = "";
+    registerFilterConfidence.value = "";
+    registerFilterRelevance.value = "";
+    renderRegisterList();
   }
 
-  function renderRegisterTable(records) {
-    var thead = registerTable.querySelector("thead");
-    var tbody = registerTable.querySelector("tbody");
-    thead.innerHTML = "";
-    tbody.innerHTML = "";
+  // Builds one accordion card for a source-register record.
+  function buildCard(rec, index) {
+    var card = document.createElement("div");
+    card.className = "reg-card";
+    card.dataset.index = index;
 
-    var headRow = document.createElement("tr");
-    COLUMNS.forEach(function (col) {
-      var th = document.createElement("th");
-      th.textContent = col[1];
-      headRow.appendChild(th);
-    });
-    thead.appendChild(headRow);
+    var header = document.createElement("button");
+    header.type = "button";
+    header.className = "reg-card-header";
+    header.setAttribute("aria-expanded", "false");
 
-    records.forEach(function (rec) {
-      var tr = document.createElement("tr");
-      COLUMNS.forEach(function (col) {
-        var td = document.createElement("td");
-        var key = col[0];
-        var val = rec[key];
-        if (key === "confidence_level" || key === "aec_relevance") {
-          td.innerHTML = badgeFor(val);
-        } else if (key === "source_url" && val) {
-          var a = document.createElement("a");
-          a.href = val;
-          a.target = "_blank";
-          a.rel = "noopener noreferrer";
-          a.textContent = "source ↗";
-          td.appendChild(a);
-        } else {
-          td.textContent = val || "";
-        }
-        tr.appendChild(td);
-      });
-      tbody.appendChild(tr);
+    var idSpan = '<span class="reg-id">' + escapeHtml(rec.record_id || "") + "</span>";
+    var titleBlock =
+      '<span class="reg-title-block">' +
+        '<span class="reg-title">' + escapeHtml(rec.source_title || "(untitled source)") + "</span>" +
+        '<span class="reg-citation">' + escapeHtml(rec.citation || "") + "</span>" +
+      "</span>";
+    var badges =
+      '<span class="reg-badges">' +
+        plainBadge(rec.source_type) +
+        plainBadge(rec.status) +
+        badgeFor(rec.aec_relevance, "aec") +
+        badgeFor(rec.confidence_level, "conf") +
+      "</span>";
+    var chevron = '<span class="reg-chevron">▸</span>';
+
+    header.innerHTML = idSpan + titleBlock + badges + chevron;
+
+    var body = document.createElement("div");
+    body.className = "reg-card-body";
+    body.hidden = true;
+
+    body.innerHTML =
+      metaRow("Jurisdiction", [rec.jurisdiction_name, rec.jurisdiction_type, rec.geographic_scope].filter(Boolean).join(" · ")) +
+      metaRow("Issuing authority", rec.issuing_authority) +
+      metaRow("Topic", rec.uas_topic) +
+      metaRow("Regulated party / activity", [rec.regulated_party, rec.regulated_activity].filter(Boolean).join(" — ")) +
+      metaRow("Requirement", [rec.requirement_type, rec.permit_or_approval_required ? "Permit/approval: " + rec.permit_or_approval_required : ""].filter(Boolean).join(" · ")) +
+      '<div class="reg-block"><h4>Objective Summary</h4><p>' + escapeHtml(rec.summary || "") + "</p></div>" +
+      '<div class="reg-block"><h4>Practical Interpretation</h4>' +
+        '<p><strong>AEC Industry UAS Expert:</strong> ' + escapeHtml(rec.practical_interpretation_aec_expert || "") + "</p>" +
+        '<p><strong>AEC Industry Legal Counsel:</strong> ' + escapeHtml(rec.practical_interpretation_legal_counsel || "") + "</p>" +
+      "</div>" +
+      (rec.notes ? '<div class="reg-block"><h4>Notes</h4><p>' + escapeHtml(rec.notes) + "</p></div>" : "") +
+      '<div class="reg-footer">' +
+        (rec.source_url ? '<a href="' + escapeHtml(rec.source_url) + '" target="_blank" rel="noopener noreferrer">Open original source ↗</a>' : "<span></span>") +
+        '<span class="reg-footer-meta">' +
+          (rec.date_accessed ? "Accessed " + escapeHtml(rec.date_accessed) + " · " : "") +
+          "Verification: " + escapeHtml(rec.verification_status || "—") +
+        "</span>" +
+      "</div>";
+
+    header.addEventListener("click", function () {
+      var isOpen = !body.hidden;
+      body.hidden = isOpen;
+      card.classList.toggle("open", !isOpen);
+      header.setAttribute("aria-expanded", String(!isOpen));
     });
+
+    card.appendChild(header);
+    card.appendChild(body);
+    return card;
   }
+
+  function metaRow(label, value) {
+    if (!value) return "";
+    return '<div class="reg-meta-row"><span class="reg-meta-label">' + escapeHtml(label) + '</span><span class="reg-meta-value">' + escapeHtml(value) + "</span></div>";
+  }
+
+  function matchesFilters(rec, query, confidence, relevance) {
+    if (confidence && levelClass(rec.confidence_level) !== confidence) return false;
+    if (relevance && levelClass(rec.aec_relevance) !== relevance) return false;
+    if (query) {
+      var haystack = [
+        rec.source_title, rec.citation, rec.uas_topic, rec.summary,
+        rec.issuing_authority, rec.regulated_party, rec.regulated_activity,
+        rec.practical_interpretation_aec_expert, rec.practical_interpretation_legal_counsel,
+        rec.record_id, rec.notes
+      ].join(" ").toLowerCase();
+      if (haystack.indexOf(query.toLowerCase()) === -1) return false;
+    }
+    return true;
+  }
+
+  function renderRegisterList() {
+    var query = registerSearch.value.trim();
+    var confidence = registerFilterConfidence.value;
+    var relevance = registerFilterRelevance.value;
+
+    registerList.innerHTML = "";
+    var shown = 0;
+    currentRecords.forEach(function (rec, i) {
+      if (!matchesFilters(rec, query, confidence, relevance)) return;
+      registerList.appendChild(buildCard(rec, i));
+      shown++;
+    });
+
+    registerNoResults.style.display = shown === 0 ? "" : "none";
+    registerCount.textContent = shown === currentRecords.length
+      ? shown + " source" + (shown === 1 ? "" : "s")
+      : shown + " of " + currentRecords.length + " sources";
+  }
+
+  registerSearch.addEventListener("input", renderRegisterList);
+  registerFilterConfidence.addEventListener("change", renderRegisterList);
+  registerFilterRelevance.addEventListener("change", renderRegisterList);
+
+  expandAllBtn.addEventListener("click", function () {
+    registerList.querySelectorAll(".reg-card").forEach(function (card) {
+      card.classList.add("open");
+      card.querySelector(".reg-card-body").hidden = false;
+      card.querySelector(".reg-card-header").setAttribute("aria-expanded", "true");
+    });
+  });
+
+  collapseAllBtn.addEventListener("click", function () {
+    registerList.querySelectorAll(".reg-card").forEach(function (card) {
+      card.classList.remove("open");
+      card.querySelector(".reg-card-body").hidden = true;
+      card.querySelector(".reg-card-header").setAttribute("aria-expanded", "false");
+    });
+  });
 
   select.addEventListener("change", function () {
     loadState(this.value);

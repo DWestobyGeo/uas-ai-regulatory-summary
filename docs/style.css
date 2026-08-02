@@ -150,7 +150,7 @@ main {
 .summary-panel th, .summary-panel td { border: 1px solid var(--line); padding: 6px 10px; text-align: left; }
 .summary-panel code { background: var(--panel); padding: 1px 5px; border-radius: 3px; font-family: var(--mono); font-size: 0.85em; }
 
-.register-section h2 {
+.register-heading-row h2 {
   font-size: 1.15rem;
   margin-bottom: 4px;
 }
@@ -158,39 +158,181 @@ main {
   font-size: 0.82rem;
   color: var(--muted);
   margin-bottom: 14px;
+  max-width: 68ch;
 }
 
-.register-table-wrap {
-  overflow-x: auto;
+/* Register controls (search + filters) */
+.register-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding: 12px;
+  background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 8px;
 }
-
-table.register-table {
-  border-collapse: collapse;
-  width: 100%;
+.register-controls input[type="search"] {
+  flex: 1 1 240px;
+  min-width: 180px;
+  padding: 7px 10px;
+  font-size: 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: white;
+}
+.register-controls select {
+  padding: 7px 8px;
   font-size: 0.82rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: white;
 }
-table.register-table th {
-  background: var(--panel);
-  text-align: left;
-  padding: 8px 10px;
-  border-bottom: 2px solid var(--line);
+.btn.small {
+  padding: 6px 10px;
+  font-size: 0.78rem;
+}
+.register-count {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-left: auto;
   white-space: nowrap;
-  position: sticky;
-  top: 0;
 }
-table.register-table td {
-  padding: 8px 10px;
-  border-bottom: 1px solid var(--line);
-  vertical-align: top;
-  max-width: 360px;
+
+/* Register accordion cards */
+.register-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
-table.register-table tr:hover td { background: #fbfcfe; }
+
+.reg-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+}
+.reg-card.open { border-color: #b9c8e3; }
+
+.reg-card-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+}
+.reg-card-header:hover { background: var(--panel); }
+
+.reg-id {
+  flex: 0 0 auto;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 2px 6px;
+  white-space: nowrap;
+}
+
+.reg-title-block {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.reg-title {
+  font-weight: 600;
+  font-size: 0.92rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.reg-citation {
+  font-size: 0.78rem;
+  color: var(--muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.reg-badges {
+  flex: 0 0 auto;
+  display: none;
+  gap: 6px;
+}
+@media (min-width: 820px) {
+  .reg-badges { display: flex; }
+}
+
+.reg-chevron {
+  flex: 0 0 auto;
+  color: var(--muted);
+  transition: transform 0.15s ease;
+  font-size: 0.8rem;
+}
+.reg-card.open .reg-chevron { transform: rotate(90deg); }
+
+.reg-card-body {
+  padding: 4px 18px 18px 18px;
+  border-top: 1px solid var(--line);
+}
+
+.reg-meta-row {
+  display: flex;
+  gap: 8px;
+  font-size: 0.82rem;
+  padding: 6px 0;
+  border-bottom: 1px dashed var(--line);
+}
+.reg-meta-row:last-of-type { border-bottom: none; }
+.reg-meta-label {
+  flex: 0 0 190px;
+  color: var(--muted);
+  font-weight: 600;
+}
+.reg-meta-value { flex: 1 1 auto; }
+
+.reg-block {
+  margin-top: 14px;
+}
+.reg-block h4 {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+  margin: 0 0 4px 0;
+}
+.reg-block p {
+  font-size: 0.88rem;
+  margin: 0 0 8px 0;
+}
+
+.reg-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+}
+.reg-footer a { color: var(--accent); }
+.reg-footer-meta { color: var(--muted); }
 
 .badge {
   display: inline-block;
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   padding: 2px 8px;
   border-radius: 999px;
   background: var(--panel);
@@ -198,6 +340,7 @@ table.register-table tr:hover td { background: #fbfcfe; }
   color: var(--muted);
   white-space: nowrap;
 }
+.badge.plain { background: white; }
 .badge.high { background: #e8f4ea; border-color: #b7ddbd; color: #256a34; }
 .badge.moderate { background: #fff3d9; border-color: #edcf85; color: #7a5a05; }
 .badge.low { background: #fde9e9; border-color: #eeb6b6; color: #9a2b2b; }
@@ -219,9 +362,17 @@ footer.site-footer a { color: var(--muted); }
   }
   body { font-size: 11pt; }
   main { max-width: 100%; padding: 0; }
-  .summary-panel, .register-table-wrap { border: none; padding: 0; }
-  table.register-table th { position: static; }
+  .summary-panel { border: none; padding: 0; }
   a[href]:after { content: ""; }
+
+  /* Force every register card open and fully visible in print, regardless of on-screen state */
+  .reg-card-body[hidden] { display: block !important; }
+  .reg-card { border: none; border-top: 1px solid #999; border-radius: 0; page-break-inside: avoid; }
+  .reg-chevron { display: none; }
+  .reg-card-header { cursor: default; padding: 10px 0; }
+  .reg-card-header:hover { background: none; }
+  .reg-badges { display: flex !important; }
+  .register-count { display: none; }
   .print-disclaimer {
     display: block !important;
     border-top: 2px solid #000;
