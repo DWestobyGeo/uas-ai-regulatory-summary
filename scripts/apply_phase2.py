@@ -62,7 +62,7 @@ def agency_process(row: dict[str, str]) -> bool:
     focus = " | ".join(row.get(k, "") for k in ("source_title", "uas_topic", "regulated_party", "regulated_activity", "requirement_type"))
     permit = row.get("permit_or_approval_required", "")
     authority = row.get("issuing_authority", "")
-    if has(permit, "landowner consent", "landowner or lessee permission", "owner or lessee consent", "property owner consent", "owner's consent", "owner consent", "owner or occupant consent", "owner or lawful-occupant consent", "venue or fireworks-event owner", "consent of the people", "people being surveilled", "property right", "private-property permission") and has(authority, "legislature", "general assembly"):
+    if has(permit, "landowner consent", "landowner or lessee permission", "owner or lessee consent", "property consent", "property owner consent", "owner's consent", "owner consent", "owner or occupant consent", "owner or lawful-occupant consent", "venue or fireworks-event owner", "consent of the people", "people being surveilled", "property right", "private-property permission") and has(authority, "legislature", "general assembly"):
         return False
     if has(permit, "no agency permit", "no statewide operator permit"):
         return False
@@ -280,7 +280,7 @@ def procurement_opinion(row: dict[str, str]) -> str:
             "Maintain manufacturer and component attestations, model and serial inventories, software and data-hosting details, funding-source restrictions, and a replacement path; do not assume a restriction on a public owner automatically binds a consultant unless the contract says so."
         )
     aircraft_registration = has(focus, "aircraft registration", "registered aircraft", "airworthiness", "operating weight", "55 pound", "55-pound", "uas state registration", "state registration requirement") or (
-        has(focus, "uas registration") and not has(focus, "park", "forest", "property", "campus", "offender")
+        has(focus, "uas registration", "uav registration") and not has(focus, "park", "forest", "property", "campus", "offender")
     )
     if aircraft_registration:
         return (
