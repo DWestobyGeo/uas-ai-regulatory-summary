@@ -2,11 +2,11 @@
 
 **Prepared for:** Commercial AEC consultants conducting UAS-supported work in South Dakota  
 **Research date:** 2026-08-02  
-**Version:** 1.0 (Phase 1 — objective research; see process note below)  
-**Model / checkpoint:** OpenAI GPT-5 family (exact checkpoint unavailable)  
+**Version:** 2.0 (Phase 2 — practical interpretation complete)
+**Model / checkpoint:** Objective research model retained from Phase 1; Phase 2 interpretations drafted with OpenAI GPT-5 (Codex; exact checkpoint unavailable)
 **Scope note:** South Dakota state and state-agency requirements layered on the FAA Part 107 baseline. Municipal, county, tribal, federal, property-specific non-state, site-specific, and live-airspace requirements are outside this pass. South Dakota limits local regulation of several UAS subjects but preserves certain consistent operating rules.
 
-> **Process note:** This is an AI-compiled research summary, not legal advice. Objective source content is separated from later expert interpretation. All four practical-interpretation fields remain pending in this Phase 1 deliverable.
+> **Process note:** Objective research is retained from the Phase 1 source packet. The four practical-interpretation roles were completed in Phase 2 on 2026-08-02 using OpenAI GPT-5 (Codex; exact checkpoint unavailable).
 
 ## 1. State UAS Regulatory Overview
 
@@ -21,10 +21,10 @@ South Dakota expressly permits federally compliant commercial UAS operations and
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** Use the state rule to identify what a political subdivision may regulate, then check only the controlling property's published operating terms before launch. Record the applicable boundary, property owner, designated-use area, notice, and permission status in the flight packet without assuming that state preemption eliminates property-use conditions.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Preserve the mission screening and factual basis for compliance with SDCL §§ 50-15-2, 50-15-7, 50-15-10, 50-15-13, including the operating area, purpose, approvals, and any relied-upon exception. Escalate ambiguous scope, conflicting client direction, or facts that could change the regulated party or activity before flight.
 
 ### SD-002 — Airspace overflight liability and preservation of privacy and trespass torts
 *Binding statute or regulation | Current / in force*
@@ -33,10 +33,10 @@ South Dakota expressly permits federally compliant commercial UAS operations and
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** Use a mission-specific collection plan for Statewide that limits camera angle, dwell time, audio, zoom, thermal capture, and retention to the contracted purpose. Brief the crew on aborting or redirecting collection when people, residences, or unrelated activity enter the sensor footprint.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Treat Airspace overflight liability and preservation of privacy and trespass torts as a documented stop-work or redesign trigger because the packet identifies criminal, civil, evidentiary, or damage exposure. The contract and flight record should preserve the site screening, authority or exception relied upon, crew briefing, and incident/escalation path; obtain counsel where the facts sit near an undefined boundary or intent element.
 
 ### SD-003 — Intentional UAS observation in a private place and business-purpose exception
 *Binding statute or regulation | Current / in force*
@@ -45,10 +45,10 @@ South Dakota expressly permits federally compliant commercial UAS operations and
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** Use a mission-specific collection plan for Statewide that limits camera angle, dwell time, audio, zoom, thermal capture, and retention to the contracted purpose. Brief the crew on aborting or redirecting collection when people, residences, or unrelated activity enter the sensor footprint.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Treat Intentional UAS observation in a private place and business-purpose exception as a documented stop-work or redesign trigger because the packet identifies criminal, civil, evidentiary, or damage exposure. The contract and flight record should preserve the site screening, authority or exception relied upon, crew briefing, and incident/escalation path; obtain counsel where the facts sit near an undefined boundary or intent element.
 
 ### SD-004 — Careless operation, endangerment, voyeurism, and harassment
 *Binding statute or regulation | Current / in force*
@@ -57,10 +57,10 @@ South Dakota expressly permits federally compliant commercial UAS operations and
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** Use a mission-specific collection plan for Statewide that limits camera angle, dwell time, audio, zoom, thermal capture, and retention to the contracted purpose. Brief the crew on aborting or redirecting collection when people, residences, or unrelated activity enter the sensor footprint.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Treat Careless operation, endangerment, voyeurism, and harassment as a documented stop-work or redesign trigger because the packet identifies criminal, civil, evidentiary, or damage exposure. The contract and flight record should preserve the site screening, authority or exception relied upon, crew briefing, and incident/escalation path; obtain counsel where the facts sit near an undefined boundary or intent element.
 
 ### SD-005 — Landing on another owner's property or water without consent
 *Binding statute or regulation | Current / in force*
@@ -69,10 +69,10 @@ South Dakota expressly permits federally compliant commercial UAS operations and
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** Make active emergency operations a dispatch and in-field stop-work check for Statewide. The remote pilot should have a clear deconfliction contact and an immediate land-or-relocate procedure if responders, temporary restrictions, or crewed aircraft appear.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Retain the current application, all attachments, written approval, conditions, amendments, and closeout records under SDCL §§ 50-15-6, 50-15-12; a client's verbal direction should not substitute for the named authority's authorization. Escalate if the approving official, property boundary, operating dates, data rights, insurance terms, or ability to use a contractor is unclear.
 
 ### SD-006 — Drone operations over correctional, detention, and military facilities; countermeasure authority
 *Binding statute or regulation | Current / in force*
@@ -81,10 +81,10 @@ South Dakota expressly permits federally compliant commercial UAS operations and
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** Treat written facility coordination as a pre-mobilization gate for work within Statewide; do not rely only on flight-app geofencing or a client's general site-access instruction. Include lost-link, return-to-home, emergency landing, sensor-direction, and observer controls that prevent an unintended facility overflight, prohibited capture, loitering, or interference.
+- **Agency Practitioner:** Use the current named facility or administering agency application or request channel and provide the mission description, dates, aircraft, pilot, and requested operating area. The packet identifies the approval as: Yes — express authorization from the facility administrator. Because the verified source does not establish a dependable review time for every case, confirm completeness, reviewer, lead time, approval duration, and field-contact expectations directly with the agency.
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Retain the current application, all attachments, written approval, conditions, amendments, and closeout records under SDCL §§ 50-15-3, 50-15-3.1; 2026 S.D. Sess. Laws ch. 192; a client's verbal direction should not substitute for the named authority's authorization. Escalate if the approving official, property boundary, operating dates, data rights, insurance terms, or ability to use a contractor is unclear.
 
 ### SD-007 — Drone delivery of contraband to correctional facilities
 *Binding statute or regulation | Current / in force*
@@ -93,10 +93,10 @@ South Dakota expressly permits federally compliant commercial UAS operations and
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** This record has no routine effect on an AEC mission or ordinary fleet operation because it applies to a separately regulated person or activity. Do not treat it as a general UAS operating rule; address it only if the stated regulated-party condition is actually present.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** Use configuration-controlled payload interfaces and maintain documentation showing the purpose, operating limits, release safeguards, aircraft weight, and approved mission configuration. Avoid buying or fielding attachments whose capability could place an otherwise ordinary mapping aircraft within a weapon, projectile, contraband-delivery, or regulated dispensing provision.
+- **AEC Industry Legal Counsel:** Treat Drone delivery of contraband to correctional facilities as a documented stop-work or redesign trigger because the packet identifies criminal, civil, evidentiary, or damage exposure. The contract and flight record should preserve the site screening, authority or exception relied upon, crew briefing, and incident/escalation path; obtain counsel where the facts sit near an undefined boundary or intent element.
 
 ### SD-008 — Takeoff and landing in highway rights-of-way and controlled-access facilities
 *Binding statute or regulation | Current / in force*
@@ -105,10 +105,10 @@ South Dakota expressly permits federally compliant commercial UAS operations and
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** Add Takeoff and landing in highway rights-of-way and controlled-access facilities to the mission-specific legal and site screening for Statewide. Brief the crew on the triggering conduct and document the operational boundary or exception relied upon before launch.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Treat Takeoff and landing in highway rights-of-way and controlled-access facilities as a documented stop-work or redesign trigger because the packet identifies criminal, civil, evidentiary, or damage exposure. The contract and flight record should preserve the site screening, authority or exception relied upon, crew briefing, and incident/escalation path; obtain counsel where the facts sit near an undefined boundary or intent element.
 
 ### SD-009 — State aircraft registration exemption for small unmanned aircraft systems
 *Binding statute or regulation | Current / in force*
@@ -117,10 +117,10 @@ South Dakota expressly permits federally compliant commercial UAS operations and
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** Do not add a Virginia aircraft-registration task for the unmanned aircraft covered by this express exemption. Keep the exemption citation with the fleet compliance record while continuing to screen for mission-specific property, facility, wildlife, and client requirements.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** Do not create a state-registration purchasing gate where this record expressly exempts unmanned aircraft. Keep federal registration and asset records current, and separately check whether a mission-specific permit, property rule, weight threshold, or public-client specification still affects the selected system.
+- **AEC Industry Legal Counsel:** Preserve the mission screening and factual basis for compliance with SDCL §§ 50-1-1, 50-11-9, 50-11-12, 50-11-29, including the operating area, purpose, approvals, and any relied-upon exception. Escalate ambiguous scope, conflicting client direction, or facts that could change the regulated party or activity before flight.
 
 ### SD-010 — Use of aircraft and drones to hunt, locate, or spot wildlife
 *Binding statute or regulation | Current / in force*
@@ -129,10 +129,10 @@ South Dakota expressly permits federally compliant commercial UAS operations and
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** Screen the mission for active hunting and wildlife sensitivity within Statewide; plan altitude, stand-off distance, route, observers, and abort criteria to avoid pursuit, harassment, surveillance of participants, or assistance to a taking. Document the project's environmental or infrastructure purpose and pause if animals materially react or the flight would disrupt lawful hunting or fishing.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Retain the current application, all attachments, written approval, conditions, amendments, and closeout records under SDCL § 41-8-39; a client's verbal direction should not substitute for the named authority's authorization. Escalate if the approving official, property boundary, operating dates, data rights, insurance terms, or ability to use a contractor is unclear.
 
 ## 3. State Agency UAS Requirements
 
@@ -143,10 +143,10 @@ South Dakota expressly permits federally compliant commercial UAS operations and
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** Treat property authorization for South Dakota state park lands as a pre-mobilization gate and obtain conditions that cover launch, landing, route, dates, aircraft, crew, and sensor purpose. Confirm whether the approval is site-wide or location-specific and carry the written authorization and field contact with the crew.
+- **Agency Practitioner:** Use the current South Dakota Game, Fish and Parks application or request channel and provide a location map. The packet identifies the approval as: Yes — contact the local park manager and complete the Filming/Photography Permit process. Because the verified source does not establish a dependable review time for every case, confirm completeness, reviewer, lead time, approval duration, and field-contact expectations directly with the agency.
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Retain the current application, all attachments, written approval, conditions, amendments, and closeout records under SD GFP Drone Use On or Above South Dakota State Park Lands; ARSD 41:03:01:01; a client's verbal direction should not substitute for the named authority's authorization. Escalate if the approving official, property boundary, operating dates, data rights, insurance terms, or ability to use a contractor is unclear.
 
 ### SD-012 — Capitol Complex UAS prohibition and use permit
 *Permit or property-use requirement | Current / in force*
@@ -155,10 +155,10 @@ South Dakota expressly permits federally compliant commercial UAS operations and
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** Treat the South Dakota Bureau of Human Resources and Administration process as a pre-mobilization gate: confirm the current submission route and obtain written authorization that covers the site, dates, aircraft, pilots, payload, and purpose. Do not lock the field schedule until agency lead time and any insurance, notification, or site-condition requirements are known.
+- **Agency Practitioner:** Use the current South Dakota Bureau of Human Resources and Administration application or request channel and provide insurance evidence, a location map, aircraft details. The packet identifies the approval as: Yes — prior written Bureau approval through the UAS Use Application and Permit unless an exception applies. Because the verified source does not establish a dependable review time for every case, confirm completeness, reviewer, lead time, approval duration, and field-contact expectations directly with the agency.
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Retain the current application, all attachments, written approval, conditions, amendments, and closeout records under Bureau of Administration UAS Policy EC-11; UAS Use Application and Permit; a client's verbal direction should not substitute for the named authority's authorization. Escalate if the approving official, property boundary, operating dates, data rights, insurance terms, or ability to use a contractor is unclear.
 
 ### SD-013 — SDDOT UAS policy for department work and service providers
 *Official agency policy | Current agency manual*
@@ -167,10 +167,10 @@ South Dakota expressly permits federally compliant commercial UAS operations and
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** This record does not directly regulate an ordinary privately controlled AEC flight, but it can govern a mission performed for or integrated into the named public agency's program. Define in the scope and flight plan who authorizes the mission, controls the aircraft, receives the data, and is responsible for the cited records or use restrictions.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** Maintain documentation showing which legal entity owns or controls each aircraft and payload assigned to the contract, including any lease, affiliate, or subcontractor arrangement. If the agency policy expects company-owned equipment, obtain a written project exception before mobilizing a rented, employee-owned, affiliated-company, or subcontractor system.
+- **AEC Industry Legal Counsel:** Identify whether the cited material is incorporated into the contract, permit, property-use approval, or agency standard before describing it as mandatory. Where it is not binding, record any deliberate deviation and the equivalent risk control or technical basis accepted by the client.
 
 ## 4. Unresolved Operational Questions
 

@@ -48,7 +48,7 @@ def agency_process(row: dict[str, str]) -> bool:
     focus = " | ".join(row.get(k, "") for k in ("source_title", "uas_topic", "regulated_party", "regulated_activity", "requirement_type"))
     permit = row.get("permit_or_approval_required", "")
     authority = row.get("issuing_authority", "")
-    if has(permit, "landowner consent", "property owner consent", "owner's consent", "owner consent", "owner or occupant consent", "owner or lawful-occupant consent", "venue or fireworks-event owner", "consent of the people", "people being surveilled", "property right", "private-property permission") and has(authority, "legislature", "general assembly"):
+    if has(permit, "landowner consent", "landowner or lessee permission", "property owner consent", "owner's consent", "owner consent", "owner or occupant consent", "owner or lawful-occupant consent", "venue or fireworks-event owner", "consent of the people", "people being surveilled", "property right", "private-property permission") and has(authority, "legislature", "general assembly"):
         return False
     if has(permit, "no agency permit", "no statewide operator permit"):
         return False
@@ -234,6 +234,11 @@ def procurement_opinion(row: dict[str, str]) -> str:
         return (
             "Retain the required point-of-sale notice with the purchase record and include it in receiving and asset-onboarding checks. "
             "The notice is not proof that the aircraft is registered or mission-eligible, so procurement should separately verify the model, serial number, applicable registrations, software account, and operating documentation."
+        )
+    if has(focus, "company-owned", "company owned", "equipment ownership", "contractor equipment"):
+        return (
+            "Maintain documentation showing which legal entity owns or controls each aircraft and payload assigned to the contract, including any lease, affiliate, or subcontractor arrangement. "
+            "If the agency policy expects company-owned equipment, obtain a written project exception before mobilizing a rented, employee-owned, affiliated-company, or subcontractor system."
         )
     if has(row.get("requirement_type", ""), "exemption from state aircraft registration") or (
         row.get("permit_or_approval_required", "").lower().startswith("no") and has(focus, "aircraft registration")
