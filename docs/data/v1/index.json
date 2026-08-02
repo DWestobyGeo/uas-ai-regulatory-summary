@@ -180,6 +180,14 @@
       "json_url": "data/v1/MI.json"
     },
     {
+      "state": "Minnesota",
+      "state_abbr": "MN",
+      "state_fips": "27",
+      "record_count": 10,
+      "last_updated": "2026-08-02",
+      "json_url": "data/v1/MN.json"
+    },
+    {
       "state": "Missouri",
       "state_abbr": "MO",
       "state_fips": "29",
@@ -236,5 +244,5 @@
       "json_url": "data/v1/WA.json"
     }
   ],
-  "state_count": 29
+  "state_count": 30
 }
