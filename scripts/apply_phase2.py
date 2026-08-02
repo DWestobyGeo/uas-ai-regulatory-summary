@@ -416,6 +416,14 @@ def update_summary(path: Path, rows: list[dict[str, str]]) -> tuple[int, list[st
         model_match = re.search(r"(?m)^\*\*Model / checkpoint:\*\*.*$", text)
         if model_match:
             text = text[:model_match.end()] + "\n**Interpretation scope:** Agent Instructions v6 (August 2, 2026)" + text[model_match.end():]
+    if "**Role scopes:**" not in text and "**Interpretation scope:**" in text:
+        scope_match = re.search(r"(?m)^\*\*Interpretation scope:\*\*.*$", text)
+        if scope_match:
+            role_scopes = (
+                "\n**Role scopes:** aec-industry-uas-expert v1.0.0; agency-practitioner v1.0.0; "
+                "uas-procurement-expert v1.0.0; aec-industry-legal-counsel v1.0.0"
+            )
+            text = text[:scope_match.end()] + role_scopes + text[scope_match.end():]
     text = re.sub(
         r"(?ms)^> \*\*(?:Process note|AI research notice)[^\n]*\*\*.*?(?=\n\n)",
         "> **Process note:** Objective research is retained from the Phase 1 source packet. The four practical-interpretation roles were completed in Phase 2 on 2026-08-02 using OpenAI GPT-5 (Codex; exact checkpoint unavailable).",

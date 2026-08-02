@@ -15,13 +15,15 @@ The site lets you pick a state, navigate a linked table of contents, read its re
 Each completed state has two data products, generated from the same research pass:
 
 - **Regulatory Summary** (Markdown → rendered on the site) — a concise narrative covering statewide statutes/regulations and state-agency requirements, each with an objective summary plus labeled practical interpretation from an AEC industry expert, agency practitioner, UAS procurement expert, and legal counsel.
-- **Source Register** (CSV → also exposed as JSON via the API) — one row per authority, with citation, status, binding level, confidence level, and a link to the official source.
+- **Source Register** (CSV → also exposed as JSON via the API) — one row per authority, with citation, status, binding level, confidence level, and a link to the cited source.
 
 Coverage is currently **state and state-agency level only** — municipal, county, and tribal regulation is deferred to a later research phase and is explicitly noted as out of scope in each state's summary.
 
-The research and drafting roles are governed by [`Agent_Instructions.v6.md`](Agent_Instructions.v6.md). Each subjective practical-interpretation opinion is normally one to three sentences, but may be longer when a material ambiguity, multi-step process, phased requirement, or other genuinely relevant complexity needs additional explanation.
+[`Agent_Instructions.v6.md`](Agent_Instructions.v6.md) is the high-level governance document: it defines product scope, phase gates, evidence standards, structured-data ownership, provenance, revision control, and quality gates.
 
-The website layout, HTML/CSS/JavaScript editing, accessibility, and responsive-design role is governed separately by [`agents/roles/web-ux-ui-editor.md`](agents/roles/web-ux-ui-editor.md). That agent may improve presentation and navigation but may not alter regulatory research or add human-review/approval workflows.
+Each agent role has separate versioned operating instructions under [`agents/roles/`](agents/roles/). The role directory identifies the fields and document sections each role governs, what it may change, and how it must document record changes. Each subjective practical-interpretation opinion is normally one to three sentences, but may be longer when a material ambiguity, multi-step process, phased requirement, or other genuinely relevant complexity needs additional explanation.
+
+The website role may improve presentation, internal document navigation, restrained links to already-cited sources, accessibility, and responsive behavior, but may not alter regulatory research or add human-review/approval workflows.
 
 ## Shared website design system
 
@@ -34,9 +36,18 @@ The component standards, design tokens, responsive behavior, accessibility rules
 ```
 agents/
   roles/
-    web-ux-ui-editor.md   ← website layout, accessibility, and editorial UI agent
+    README.md                       ← role directory, ownership table, and metadata template
+    ROLE_TEMPLATE.md                ← template for future role documents
+    research-expert.md              ← objective evidence and source-register owner
+    aec-industry-uas-expert.md      ← AEC operational interpretation
+    agency-practitioner.md          ← agency-process interpretation
+    uas-procurement-expert.md       ← acquisition and fleet interpretation
+    aec-industry-legal-counsel.md   ← AI legal-risk interpretation
+    editorial-qa-reviewer.md        ← independent AI quality review
+    web-ux-ui-editor.md             ← presentation, links, accessibility, and print
+Agent_Instructions.v6.md            ← high-level repository governance
 .github/workflows/
-  site-quality.yml        ← validates the shared UI and state-data contract
+  site-quality.yml                  ← validates roles, shared UI, and state-data contract
 docs/                     ← published by GitHub Pages (this is the whole website)
   index.html              ← main state-picker / viewer / print view
   DESIGN_SYSTEM.md        ← design tokens, components, and inheritance process
@@ -52,6 +63,7 @@ docs/                     ← published by GitHub Pages (this is the whole websi
     sources/                ← original Markdown + CSV files per state, for download/transparency
 build_data.py               ← regenerates docs/data/v1/*.json from the source /States folders (run this after adding/updating a state)
 scripts/validate_site.py    ← shared-style and state-data quality gate
+scripts/validate_roles.py   ← role metadata, ownership, and governance-link quality gate
 ```
 
 ## Adding a new state

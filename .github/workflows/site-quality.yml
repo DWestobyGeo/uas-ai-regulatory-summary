@@ -6,7 +6,8 @@ on:
       - "docs/**"
       - "States/**"
       - "agents/**"
-      - "scripts/validate_site.py"
+      - "Agent_Instructions.v6.md"
+      - "scripts/**"
       - "build_data.py"
       - "README.md"
       - ".github/workflows/site-quality.yml"
@@ -15,7 +16,8 @@ on:
       - "docs/**"
       - "States/**"
       - "agents/**"
-      - "scripts/validate_site.py"
+      - "Agent_Instructions.v6.md"
+      - "scripts/**"
       - "build_data.py"
       - "README.md"
       - ".github/workflows/site-quality.yml"
@@ -34,6 +36,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
+      - name: Validate agent-role governance
+        run: python scripts/validate_roles.py
 
       - name: Validate shared design and state data
         run: python scripts/validate_site.py

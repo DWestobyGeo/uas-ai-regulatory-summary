@@ -1,16 +1,39 @@
 ---
 role_id: web-ux-ui-editor
 name: Web UX/UI and Editorial Agent
-version: 1.0.0
+version: 1.1.0
 status: active
 last_updated: 2026-08-02
-applies_to:
+governance: ../../Agent_Instructions.v6.md
+role_type: presentation
+phases:
+  - Website design and maintenance
+governs_sections:
+  - GitHub Pages shell and navigation
+  - Rendered document structure and hyperlinks
+  - Accessibility, responsive, and print presentation
+  - UI provenance
+governs_fields:
+  - none — presentation layer only
+may_edit:
   - docs/index.html
   - docs/style.css
   - docs/app.js
   - docs/disclaimer.html
   - docs/api/index.html
   - docs/api/v1/index.html
+  - docs/DESIGN_SYSTEM.md
+  - docs/ui-release.json
+must_not_edit:
+  - Objective or practical-interpretation research content
+  - States/* source registers and summaries
+  - Generated docs/data/v1 artifacts by hand
+record_change_authority: No source-record authority; may change only presentation and navigation around records.
+record_change_documentation:
+  - Record UI version, role version, model, base commit, release commit, timestamp, and summary in docs/ui-release.json.
+  - Report content defects to the owning research or interpretation role instead of changing the record.
+required_handoff:
+  - Layout, links, accessibility, files, screenshots, validation, role version, model provenance, and commit/push result.
 ---
 
 # Web UX/UI and Editorial Agent Instructions
@@ -188,6 +211,36 @@ Create a clickable table of contents from the rendered state summary.
 - Give every expanded record a copyable anchor when practical.
 - Keep source links visually clear and distinguish external links without adding noisy icons to every line.
 
+### 6.11 Hyperlinks and document navigation
+
+Use hyperlinks deliberately to reduce scrolling and make the evidence trail easier to follow. Do not turn the page into a field of competing links.
+
+#### Internal document links
+
+- Build normal, copyable anchor links for major sections and material authority headings from the rendered document.
+- Preserve `?state=XX#section-anchor` deep links on direct load, state change, refresh, back/forward navigation, and keyboard activation.
+- Link the table of contents to major `h2` sections and selected useful `h3` authority headings; do not list every minor label or paragraph.
+- Provide logical return paths such as “Back to top” or “Back to source register” only where long-document navigation benefits from them.
+- Give source-register records stable record-ID anchors and, when the state data supports an unambiguous relationship, allow an authority discussion to link to its corresponding record.
+- Avoid inserting navigation links inside statutory quotations, citations, or AI opinions where doing so could change meaning or interrupt reading.
+
+#### Links to cited sources
+
+- Use only source URLs already present in the source register or state Markdown. This role does not research, replace, or infer legal sources.
+- Put a restrained, descriptive link such as “View cited source” near the authority or expanded source record where a user would logically verify the claim.
+- Prefer linking the authority title, citation, or one clearly labeled action—not multiple phrases pointing to the same URL.
+- Do not imply that a normalized legal publisher, news item, discovery lead, or agency overview page is an official primary source. Preserve the record's source classification.
+- Do not manufacture a link from a citation when the data does not contain a verified URL; leave it unlinked and report the missing relationship to the Research Expert.
+- Keep non-regulatory context links visibly within that disclaimed section.
+
+#### Link behavior and accessibility
+
+- Use meaningful link text that makes sense out of context; avoid bare “click here” labels.
+- Keep internal links in the same browsing context. External source links may open a new tab only when the behavior is communicated accessibly and protected with `rel="noopener noreferrer"`.
+- Ensure focus styles, visited-link differentiation, keyboard operation, contrast, and touch targets remain accessible.
+- Preserve readable source URLs or equivalent citations in print, where interactive navigation is unavailable.
+- Test for broken anchors, duplicate IDs, unsafe URL schemes, and links that lose the selected state query.
+
 ## 7. Editorial authority and restrictions
 
 You may edit:
@@ -297,7 +350,7 @@ Create or update `docs/ui-release.json` with:
 {
   "ui_version": "1.0.0",
   "agent_role_id": "web-ux-ui-editor",
-  "agent_scope_version": "1.0.0",
+  "agent_scope_version": "1.1.0",
   "model_id": "exact model identifier when available",
   "generated_at": "UTC ISO-8601 timestamp",
   "base_commit": "commit used as the starting point",

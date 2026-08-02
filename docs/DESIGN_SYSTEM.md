@@ -2,7 +2,7 @@
 
 **UI version:** 1.0.0
 
-**Agent scope:** `web-ux-ui-editor` v1.0.0
+**Agent scope:** `web-ux-ui-editor` v1.1.0
 
 **Applies to:** the public GitHub Pages site under `docs/`
 
@@ -141,6 +141,20 @@ These colors distinguish roles only. The surrounding UI must continue to identif
 ### Source register
 
 Each record is a keyboard-operable accordion. The collapsed view emphasizes record ID, title, citation, source/status class, relevance, and confidence. The expanded view contains metadata, objective summary, four AI perspectives, research notes, cited source, access date, and verification text.
+
+### Linking model
+
+Links support orientation and evidence verification without overwhelming the research text.
+
+- Internal table-of-contents links target deterministic `h2` and selected useful `h3` anchors.
+- State deep links preserve both the selected-state query and section hash.
+- Source-register records use stable record-ID anchors when practical.
+- A restrained authority-to-record link may be shown only when the renderer can establish the relationship without guessing.
+- External evidence links use URLs already present in the state data and descriptive labels such as “View cited source.”
+- Do not link every repeated citation or mention; one logical verification link is normally enough.
+- Preserve source classification. A link to a normalized publisher, news item, or discovery lead must not be styled or described as official primary authority.
+- Missing URLs remain unlinked and are reported to the research role; the presentation layer does not research replacements.
+- Link text, focus, visited state, contrast, keyboard behavior, target behavior, and print output must remain accessible.
 
 ## Typography
 

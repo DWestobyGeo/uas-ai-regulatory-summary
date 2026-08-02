@@ -20,7 +20,7 @@ def state_name_from_title(text: str, fallback: str) -> str:
     return match.group(1).strip() if match else fallback
 
 
-def sync(path: Path, model: str | None, scope: str) -> bool:
+def sync(path: Path, model: str | None, scope: str, role_scopes: str | None) -> bool:
     original = path.read_text(encoding="utf-8-sig")
     text = original
     lines = text.splitlines()
@@ -52,6 +52,15 @@ def sync(path: Path, model: str | None, scope: str) -> bool:
             if not model_match:
                 raise ValueError(f"Could not place interpretation scope in {path}")
             text = text[: model_match.end()] + f"\n**Interpretation scope:** {scope}" + text[model_match.end() :]
+    if role_scopes:
+        role_line = f"**Role scopes:** {role_scopes}"
+        if "**Role scopes:**" in text:
+            text = re.sub(r"(?m)^\*\*Role scopes:\*\*.*$", role_line, text)
+        else:
+            scope_match = re.search(r"(?m)^\*\*Interpretation scope:\*\*.*$", text)
+            if not scope_match:
+                raise ValueError(f"Could not place role scopes in {path}")
+            text = text[: scope_match.end()] + "\n" + role_line + text[scope_match.end() :]
 
     text = re.sub(
         r"\*This document is objective legal/regulatory summary; Practical Interpretation content is pending Phase 2 \(see process note above\) and, once added, is not legal advice\.",
@@ -72,6 +81,7 @@ def main() -> None:
     target.add_argument("--all", action="store_true", help="all state summaries")
     parser.add_argument("--model", help="model/checkpoint provenance for missing metadata")
     parser.add_argument("--scope", default=DEFAULT_SCOPE)
+    parser.add_argument("--role-scopes", help="semicolon-separated role IDs and versions actually used")
     args = parser.parse_args()
 
     if args.all:
@@ -82,7 +92,7 @@ def main() -> None:
     if not paths:
         raise SystemExit("No matching summary files")
 
-    changed = sum(sync(path, args.model, args.scope) for path in paths)
+    changed = sum(sync(path, args.model, args.scope, args.role_scopes) for path in paths)
     print(f"Checked {len(paths)} summaries; updated {changed}.")
 
 

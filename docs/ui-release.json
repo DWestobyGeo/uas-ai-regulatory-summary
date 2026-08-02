@@ -1,12 +1,12 @@
 {
   "ui_version": "1.0.0",
   "agent_role_id": "web-ux-ui-editor",
-  "agent_scope_version": "1.0.0",
+  "agent_scope_version": "1.1.0",
   "model_id": null,
   "model_note": "The exact runtime model identifier was not exposed to the agent.",
   "generated_at": "2026-08-02T18:00:46Z",
   "base_commit": "b5f2fed",
   "release_commit": null,
   "release_commit_note": "The release commit is recorded by Git history; embedding the containing commit would create a self-referential hash.",
-  "summary": "Shared state-research design system with responsive navigation, generated table of contents, accessible source accordions, and print styling."
+  "summary": "Shared state-research design system with responsive navigation, generated table of contents, accessible source accordions, restrained evidence-link guidance, and print styling."
 }
