@@ -84,6 +84,14 @@
       "json_url": "data/v1/GA.json"
     },
     {
+      "state": "Hawaii",
+      "state_abbr": "HI",
+      "state_fips": "15",
+      "record_count": 7,
+      "last_updated": "2026-08-01",
+      "json_url": "data/v1/HI.json"
+    },
+    {
       "state": "Idaho",
       "state_abbr": "ID",
       "state_fips": "16",
@@ -148,5 +156,5 @@
       "json_url": "data/v1/WA.json"
     }
   ],
-  "state_count": 18
+  "state_count": 19
 }
