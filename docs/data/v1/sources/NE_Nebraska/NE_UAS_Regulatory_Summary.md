@@ -2,13 +2,13 @@
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
 **Research date:** August 2, 2026
-**Version:** 1.0 (Phase 1 — objective research; see process note below)
-**Model / checkpoint:** Claude Sonnet 5 (research and drafting)
+**Version:** 2.0 (Phase 2 — practical interpretation complete)
+**Model / checkpoint:** Objective research model retained from Phase 1; Phase 2 interpretations drafted with OpenAI GPT-5 (Codex; exact checkpoint unavailable)
 **Scope note:** This summary covers Nebraska state and state-agency-level UAS authority only. FAA Part 107 is the nationwide operating baseline and is not restated except where a Nebraska source expressly relies on or modifies it. Local (municipal/county) UAS ordinances and tribal UAS considerations are deferred under the current research program and are not researched here, although Nebraska's state/local preemption posture is addressed because it is itself a state-level finding: **no Nebraska statute broadly (or even narrowly) preempts local UAS ordinances was located.** Nebraska's only state-level actions touching the state/local UAS boundary are two state-agency-focused procurement statutes (the Secure Drone Purchasing Act and the Foreign Adversary Contracting Prohibition Act), neither of which preempts local ordinance authority. A municipal drone restriction (reportedly including an Omaha city-park rule) is understood to remain a matter of local ordinance and is outside the current research phase.
 
-> **Process note (Agent Instructions Amendment 2, updated under v6):** This state was researched under the three-phase program structure. This document currently reflects **Phase 1 only** — the objective, sourced findings below are complete, but the Practical Interpretation content (AEC Industry Expert, Agency Practitioner, UAS Procurement Expert, and Legal Counsel perspectives) has not yet been drafted and is marked "Pending Phase 2" throughout.
+> **Process note:** Objective research is retained from the Phase 1 source packet. The four practical-interpretation roles were completed in Phase 2 on 2026-08-02 using OpenAI GPT-5 (Codex; exact checkpoint unavailable).
 
-Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation). Practical Interpretation — from four labeled perspectives (AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel) — will be added in Phase 2 and is not legal advice.
+Each authority below retains its verified objective summary and now includes the four Phase 2 practical-interpretation perspectives. The interpretations are AI-generated operational opinions, not legal advice.
 
 ## 1. State UAS Regulatory Overview
 
@@ -23,10 +23,10 @@ Nebraska regulates UAS through a small set of discrete criminal-privacy statutes
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+- **AEC Industry UAS Expert:** Use a mission-specific collection plan for Statewide that limits camera angle, dwell time, audio, zoom, thermal capture, and retention to the contracted purpose. Brief the crew on aborting or redirecting collection when people, residences, or unrelated activity enter the sensor footprint.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Treat Criminal Trespass, Second Degree — Unmanned Aircraft Provision as a documented stop-work or redesign trigger because the packet identifies criminal, civil, evidentiary, or damage exposure. The contract and flight record should preserve the site screening, authority or exception relied upon, crew briefing, and incident/escalation path; obtain counsel where the facts sit near an undefined boundary or intent element.
 
 ### Unlawful Intrusion; Photograph, Film, or Record Image or Video of Intimate Area — Unmanned Aircraft Provision (Neb. Rev. Stat. § 28-311.08)
 `Binding statute (criminal) | Current / in force`
@@ -35,10 +35,10 @@ Nebraska regulates UAS through a small set of discrete criminal-privacy statutes
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+- **AEC Industry UAS Expert:** Use a mission-specific collection plan for Statewide that limits camera angle, dwell time, audio, zoom, thermal capture, and retention to the contracted purpose. Brief the crew on aborting or redirecting collection when people, residences, or unrelated activity enter the sensor footprint.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Treat Unlawful Intrusion; Photograph, Film, or Record Image or Video of Intimate Area — Unmanned Aircraft Provision as a documented stop-work or redesign trigger because the packet identifies criminal, civil, evidentiary, or damage exposure. The contract and flight record should preserve the site screening, authority or exception relied upon, crew briefing, and incident/escalation path; obtain counsel where the facts sit near an undefined boundary or intent element.
 
 ### Secure Drone Purchasing Act (Neb. Rev. Stat. §§ 73-1001 to 73-1005)
 `Binding statute (state-agency procurement) | Current / in force (phased effective dates)`
@@ -47,10 +47,10 @@ Nebraska regulates UAS through a small set of discrete criminal-privacy statutes
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+- **AEC Industry UAS Expert:** For public-owner work, confirm before bidding whether the contract extends the List-cleared aircraft and cybersecurity requirements to consultant-furnished systems, and recheck the live list before assigning an aircraft. The statute does not directly regulate an ordinary privately controlled AEC flight merely because the deliverable will be used by a public client.
+- **Agency Practitioner:** NDOT Aeronautics and its statutory partners should keep the authorized-drone list current and preserve the basis for each listing. Agency purchasing staff should retain the list version and security evidence used on the acquisition date and document any political-subdivision practicability determination or statutory exemption.
+- **UAS Procurement Expert:** Make list eligibility a dated gate at solicitation, award, purchase, and fleet assignment for covered public work beginning January 1, 2027. Retain manufacturer, model, component, data-hosting, encryption, audit, firmware, and funding-source evidence, plus a replacement path if a system is removed from the live list.
+- **AEC Industry Legal Counsel:** A covered state-agency contract for a non-cleared drone can be void and unenforceable, so identify the purchaser, funding source, acquisition date, and incorporated specification before award. State expressly whether the requirement flows down to a consultant-owned aircraft rather than assuming that a restriction on the public purchaser automatically governs a privately controlled flight.
 
 ### Foreign Adversary Contracting Prohibition Act — Unmanned Aerial System Definitional Carve-Out (Neb. Rev. Stat. §§ 73-901 to 73-908, as amended by 2025 LB644)
 `Binding statute (public-entity procurement/contracting) | Current / in force`
@@ -59,10 +59,10 @@ Nebraska regulates UAS through a small set of discrete criminal-privacy statutes
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+- **AEC Industry UAS Expert:** Do not treat this Act as a Nebraska ban on using a foreign-manufactured UAS: the enacted definition expressly excludes unmanned aerial systems from this Act's restricted technology category. On public work, separately check the Secure Drone Purchasing Act and analyze bundled LiDAR, communications, software, or services that may fall outside the UAS carve-out.
+- **Agency Practitioner:** Classify the proposed contract components before applying the scrutinized-company review, separating the UAS itself from independently procured LiDAR, communications, information-system, or surveillance products and services. Preserve the classification and any Department of Administrative Services preapproval used for the Act's no-reasonable-alternative exception.
+- **UAS Procurement Expert:** Do not use this Act's scrutinized-company restriction as the aircraft eligibility test because UAS are expressly carved out; use the Secure Drone Purchasing Act's live list for covered drone acquisitions. Review separately priced payloads, communications, software, hosting, and other technology services on their own facts rather than assuming the aircraft carve-out covers the entire solution.
+- **AEC Industry Legal Counsel:** Quote and retain the enacted UAS carve-out when correcting specifications or secondary guidance that describes this Act as a drone ban. For bundled procurements, allocate each product and service to the statutory definitions and document any exception before concluding that the entire contract is excluded.
 
 ### Hunting from Aircraft; Unlawful; Exception (Neb. Rev. Stat. § 37-509)
 `Binding statute (criminal) | Current / in force`
@@ -71,10 +71,10 @@ Nebraska regulates UAS through a small set of discrete criminal-privacy statutes
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+- **AEC Industry UAS Expert:** Screen the mission for active hunting and wildlife sensitivity within Statewide (wherever wildlife is present/hunted); plan altitude, stand-off distance, route, observers, and abort criteria to avoid pursuit, harassment, surveillance of participants, or assistance to a taking. Document the project's environmental or infrastructure purpose and pause if animals materially react or the flight would disrupt lawful hunting or fishing.
+- **Agency Practitioner:** The ordinary wildlife-harassment prohibition has no application process; the narrow aerial predator-control exception requires a current permit issued under § 37-458, administered by the Nebraska Game and Parks Commission. Confirm the permit, landowner or tenant permission, species, location, dates, participants, and operating conditions before relying on that exception.
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Retain the current application, all attachments, written approval, conditions, amendments, and closeout records under Neb. Rev. Stat. § 37-509 (2025); a client's verbal direction should not substitute for the named authority's authorization. Escalate if the approving official, property boundary, operating dates, data rights, insurance terms, or ability to use a contractor is unclear.
 
 ## 3. State Agency and Facility-Specific UAS Requirements
 
@@ -85,10 +85,10 @@ Nebraska regulates UAS through a small set of discrete criminal-privacy statutes
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+- **AEC Industry UAS Expert:** Treat property authorization for Statewide (NGPC-administered park and WMA lands) as a pre-mobilization gate and obtain conditions that cover launch, landing, route, dates, aircraft, crew, and sensor purpose. Confirm whether the approval is site-wide or location-specific and carry the written authorization and field contact with the crew.
+- **Agency Practitioner:** Direct the applicant to the nearest Nebraska Game and Parks Commission district office for the Special Occasion Permit at least 30 days before the operation, and require the production amendment for commercial photography or videography when applicable. The written approval should identify the property, operating area, dates, aircraft, purpose, conditions, and field contact.
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Retain the current application, all attachments, written approval, conditions, amendments, and closeout records under NGPC public guidance (press release and Special Occasion Permits webpage); cf. Neb. Admin. Code tit. 163, ch. 5, § 001.02 ("Aircraft and Powerless Flight") and tit. 163, ch. 4, § 018 (general Wildlife Management Area property-use rules); a client's verbal direction should not substitute for the named authority's authorization. Escalate if the approving official, property boundary, operating dates, data rights, insurance terms, or ability to use a contractor is unclear.
 
 ### NDOT Aeronautics Division — Drone Guidance and Secure-Purchasing Administration (dot.nebraska.gov/aeronautics/drones)
 `Official agency policy / guidance | Current`
@@ -97,22 +97,10 @@ Nebraska regulates UAS through a small set of discrete criminal-privacy statutes
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
-
-### Professional Licensing — No UAS-Specific Guidance Located (Board of Engineers and Architects; Board of Examiners for Land Surveyors)
-`Research result (negative finding, Low confidence) | Reviewed`
-
-**Objective Summary:** Nebraska's Board of Engineers and Architects (Engineers and Architects Regulation Act, Neb. Rev. Stat. §§ 81-3401 to 81-3455, Title 110 NAC) and Board of Examiners for Land Surveyors (Land Surveyors Regulation Act, §§ 81-8,108 to 81-8,127, Title 234 NAC) were reviewed for UAS-specific guidance, FAQs, board opinions, or policy statements addressing drone-derived surveying or engineering work product. No such guidance was located. Title 234, Chapter 12 ("Minimum Standards for Land Surveys in Nebraska," adopted effective September 28, 2022) references "photogrammetry" once, as an example application of a "Control Survey," but contains no rule, definition, or guidance naming UAS, drones, or unmanned aircraft; it otherwise sets general monumentation, positional-accuracy, and certification standards applicable regardless of data-collection method.
-
-**Practical Interpretation**
-
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+- **AEC Industry UAS Expert:** Use the NDOT page as a current navigation aid for Nebraska-specific preflight screening, then verify each applicable restriction or permission against the linked statute, live secure-drone list, or Game and Parks process. For an NDOT assignment, reconcile aircraft eligibility, data handling, inspection or mapping deliverables, and emergency deconfliction requirements with the executed scope before mobilization.
+- **Agency Practitioner:** NDOT Aeronautics should keep the consolidated guidance and authorized-drone list synchronized with statutory changes and clearly distinguish federal reminders, binding Nebraska rules, and agency practice. Project staff should direct contractors to the controlling specification or approval rather than treating the overview page itself as a project authorization.
+- **UAS Procurement Expert:** Use the live NDOT authorized-drone list—not a saved vendor claim—as the starting eligibility check for a covered public acquisition, then verify the specific model, components, data path, encryption, audit evidence, firmware, and mission software. Record the list date and acceptance-test configuration so later list or software changes can trigger reassessment.
+- **AEC Industry Legal Counsel:** Treat the NDOT webpage as consolidated guidance rather than an independent source of new prohibitions, and cite the underlying statute, list, permit, or contract term for each mandatory condition. Resolve the page's imprecise description of the Foreign Adversary Contracting Prohibition Act by relying on the enacted UAS carve-out and the separate Secure Drone Purchasing Act.
 
 ## 4. Non-Regulatory Context
 
@@ -142,7 +130,5 @@ Nebraska regulates UAS through a small set of discrete criminal-privacy statutes
 | NE-005 | Hunting from aircraft (§ 37-509) | Moderate | Statute text High confidence; its application to UAS rests on agency guidance rather than express statutory "aircraft" definition |
 | NE-006 | NGPC state park/WMA drone permit requirement | Moderate | Agency guidance verified directly; codified administrative rule does not itself name UAS |
 | NE-007 | NDOT Aeronautics drone guidance page | Moderate | Live official page verified directly; contains one imprecise statement about NE-004 corrected in that record's notes |
-| NE-008 | Professional licensing (Engineers/Architects; Land Surveyors) | Low | Negative finding; boards' rules reviewed but not exhaustively (minutes/declaratory rulings not searched) |
-| NE-009 | Executive orders / AG opinions / court decisions / state preemption / pending legislation | Low | Negative finding across multiple official sources; not an exhaustive historical review |
 
-*This document is objective legal/regulatory summary; Practical Interpretation content is pending Phase 2 (see process note above) and, once added, is not legal advice. Consult Nebraska counsel for project-specific compliance determinations. Local ordinances and tribal UAS considerations are out of scope for this phase per current research instructions.*
+*This document combines objective legal/regulatory summaries with Phase 2 Practical Interpretation content, which is AI-generated operational opinion and not legal advice. Consult Nebraska counsel for project-specific compliance determinations. Local ordinances and tribal UAS considerations are out of scope for this phase per current research instructions.*
