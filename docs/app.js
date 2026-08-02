@@ -24,6 +24,18 @@
   var currentStateData = null;
   var currentRecords = [];
 
+  // Prominent, non-suppressible (shows in both live view and print) AI-generated-content
+  // disclaimer, injected directly above each state's "1. State UAS Regulatory Overview"
+  // section. Full legal disclaimer lives at disclaimer.html.
+  var DISCLAIMER_BANNER_HTML =
+    '<div class="ai-disclaimer-banner">' +
+      '<strong>\u26A0 AI-GENERATED CONTENT \u2014 NOT LEGAL ADVICE.</strong> ' +
+      'Everything below, including the source register, was produced by an artificial intelligence research process and has <strong>not</strong> been reviewed or approved by a licensed attorney in any jurisdiction. ' +
+      'It may be incomplete, outdated, or wrong. It is provided for general informational purposes only and is not a substitute for professional legal advice. ' +
+      'Before making any compliance, permitting, or flight-operation decision, independently verify every citation against the official cited source and consult counsel licensed in the relevant jurisdiction. ' +
+      '<a href="disclaimer.html">Read the full disclaimer</a>.' +
+    '</div>';
+
   function levelClass(value) {
     if (!value) return "";
     var v = value.toLowerCase();
@@ -129,13 +141,19 @@
       "Last updated " + data.last_updated + " · " + data.record_count + " source record" +
       (data.record_count === 1 ? "" : "s") + " · schema v" + data.schema_version;
 
-    // Render markdown summary
+    // Render markdown summary, with a prominent AI-disclaimer banner injected
+    // immediately above the first section heading ("1. State UAS Regulatory Overview")
+    // so it appears identically in the live view and the printed/PDF view.
     if (window.marked) {
-      summaryPanel.innerHTML = marked.parse(data.summary_markdown || "");
+      var parsedHtml = marked.parse(data.summary_markdown || "");
+      var h2Index = parsedHtml.indexOf("<h2");
+      summaryPanel.innerHTML = h2Index === -1
+        ? DISCLAIMER_BANNER_HTML + parsedHtml
+        : parsedHtml.slice(0, h2Index) + DISCLAIMER_BANNER_HTML + parsedHtml.slice(h2Index);
     } else {
       var pre = document.createElement("pre");
       pre.textContent = data.summary_markdown || "";
-      summaryPanel.innerHTML = "";
+      summaryPanel.innerHTML = DISCLAIMER_BANNER_HTML;
       summaryPanel.appendChild(pre);
     }
 

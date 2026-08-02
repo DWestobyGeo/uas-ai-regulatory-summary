@@ -61,6 +61,25 @@ nav.site-nav a:hover { text-decoration: underline; }
 }
 .disclaimer-banner a { color: #6b5300; }
 
+/* Prominent in-content AI disclaimer, shown directly above "1. State UAS Regulatory
+   Overview" in every state summary. Deliberately NOT tagged .no-print: it must appear
+   in both the live page and the printed/PDF view. */
+.ai-disclaimer-banner {
+  background: #b91c1c;
+  color: #ffffff;
+  border: 2px solid #7f1d1d;
+  border-radius: 6px;
+  padding: 14px 18px;
+  margin: 8px 0 28px;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+.ai-disclaimer-banner strong { color: #ffffff; }
+.ai-disclaimer-banner a { color: #ffe4e4; font-weight: 600; text-decoration: underline; }
+.ai-disclaimer-banner a:hover { color: #ffffff; }
+
 main {
   max-width: 980px;
   margin: 0 auto;
@@ -359,6 +378,14 @@ footer.site-footer a { color: var(--muted); }
 @media print {
   header.site-header, .disclaimer-banner, .controls, nav.site-nav, footer.site-footer, .no-print {
     display: none !important;
+  }
+  .ai-disclaimer-banner {
+    display: block !important;
+    background: #b91c1c !important;
+    color: #ffffff !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    page-break-inside: avoid;
   }
   body { font-size: 11pt; }
   main { max-width: 100%; padding: 0; }
