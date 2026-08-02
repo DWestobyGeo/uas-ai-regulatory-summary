@@ -21,9 +21,14 @@ Coverage is currently **state and state-agency level only** — municipal, count
 
 The research and drafting roles are governed by [`Agent_Instructions.v6.md`](Agent_Instructions.v6.md). Each subjective practical-interpretation opinion is normally one to three sentences, but may be longer when a material ambiguity, multi-step process, phased requirement, or other genuinely relevant complexity needs additional explanation.
 
+The website layout, HTML/CSS/JavaScript editing, accessibility, and responsive-design role is governed separately by [`agents/roles/web-ux-ui-editor.md`](agents/roles/web-ux-ui-editor.md). That agent may improve presentation and navigation but may not alter regulatory research or add human-review/approval workflows.
+
 ## Repository structure
 
 ```
+agents/
+  roles/
+    web-ux-ui-editor.md   ← website layout, accessibility, and editorial UI agent
 docs/                     ← published by GitHub Pages (this is the whole website)
   index.html              ← main state-picker / viewer / print view
   disclaimer.html          ← full legal disclaimer
