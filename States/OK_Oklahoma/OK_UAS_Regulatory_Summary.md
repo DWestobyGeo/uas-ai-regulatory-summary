@@ -2,11 +2,11 @@
 
 **Prepared for:** Commercial AEC consultants conducting UAS-supported work in Oklahoma  
 **Research date:** 2026-08-02  
-**Version:** 1.0 (Phase 1 — objective research; see process note below)  
-**Model / checkpoint:** OpenAI GPT-5 family (exact checkpoint unavailable)  
+**Version:** 2.0 (Phase 2 — practical interpretation complete)
+**Model / checkpoint:** Objective research model retained from Phase 1; Phase 2 interpretations drafted with OpenAI GPT-5 (Codex; exact checkpoint unavailable)
 **Scope note:** Oklahoma state and state-agency requirements layered on the FAA Part 107 baseline. Municipal, county, tribal, federal, property-specific non-state, site-specific, and live-airspace requirements are outside this pass. No express statewide UAS preemption provision was located, but local research remains deferred.
 
-> **Process note:** This is an AI-compiled research summary, not legal advice. Objective source content is separated from later expert interpretation. All four practical-interpretation fields remain pending in this Phase 1 deliverable.
+> **Process note:** Objective research is retained from the Phase 1 source packet. The four practical-interpretation roles were completed in Phase 2 on 2026-08-02 using OpenAI GPT-5 (Codex; exact checkpoint unavailable).
 
 ## 1. State UAS Regulatory Overview
 
@@ -21,10 +21,10 @@ Oklahoma focuses its operator-facing UAS rules on critical infrastructure, inten
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** Treat written facility coordination as a pre-mobilization gate for work within Statewide at qualifying critical infrastructure facilities; do not rely only on flight-app geofencing or a client's general site-access instruction. Include lost-link, return-to-home, emergency landing, sensor-direction, and observer controls that prevent an unintended facility overflight, prohibited capture, loitering, or interference.
+- **Agency Practitioner:** Use the current named facility or administering agency application or request channel and provide aircraft details, the current fee. The packet identifies the approval as: Prior written facility or property consent, qualifying contractual authority, or applicable FAA commercial authorization can satisfy an exception. Because the verified source does not establish a dependable review time for every case, confirm completeness, reviewer, lead time, approval duration, and field-contact expectations directly with the agency.
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Retain the current application, all attachments, written approval, conditions, amendments, and closeout records under Okla. Stat. tit. 3, § 322; 2026 Okla. S.B. 1441; a client's verbal direction should not substitute for the named authority's authorization. Escalate if the approving official, property boundary, operating dates, data rights, insurance terms, or ability to use a contractor is unclear.
 
 ### OK-002 — Unlawful use of drones for surveillance, recording, or unauthorized landing
 *Binding statute or regulation | Current / in force*
@@ -33,10 +33,10 @@ Oklahoma focuses its operator-facing UAS rules on critical infrastructure, inten
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** Use a mission-specific collection plan for Statewide private property and places with a reasonable expectation of privacy that limits camera angle, dwell time, audio, zoom, thermal capture, and retention to the contracted purpose. Brief the crew on aborting or redirecting collection when people, residences, or unrelated activity enter the sensor footprint.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Retain the current application, all attachments, written approval, conditions, amendments, and closeout records under Okla. Stat. tit. 21, § 1743; a client's verbal direction should not substitute for the named authority's authorization. Escalate if the approving official, property boundary, operating dates, data rights, insurance terms, or ability to use a contractor is unclear.
 
 ## 3. State Agency UAS Requirements
 
@@ -47,10 +47,10 @@ Oklahoma focuses its operator-facing UAS rules on critical infrastructure, inten
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** Treat property authorization for Oklahoma state parks as a pre-mobilization gate and obtain conditions that cover launch, landing, route, dates, aircraft, crew, and sensor purpose. Confirm whether the approval is site-wide or location-specific and carry the written authorization and field contact with the crew.
+- **Agency Practitioner:** Use the current Oklahoma Tourism and Recreation Department, Division of State Parks application or request channel and provide a location map, aircraft details, the current fee. The packet identifies the approval as: Yes — drone takeoff or landing requires a permit; other aircraft use is limited to designated locations or permit terms. Because the verified source does not establish a dependable review time for every case, confirm completeness, reviewer, lead time, approval duration, and field-contact expectations directly with the agency.
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Retain the current application, all attachments, written approval, conditions, amendments, and closeout records under Okla. Admin. Code §§ 725:30-4-11, 725:30-16-1, 725:30-16-3; a client's verbal direction should not substitute for the named authority's authorization. Escalate if the approving official, property boundary, operating dates, data rights, insurance terms, or ability to use a contractor is unclear.
 
 ## 4. Unresolved Operational Questions
 

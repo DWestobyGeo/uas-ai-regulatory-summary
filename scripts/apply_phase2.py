@@ -25,6 +25,12 @@ def has_survey_technical(text: str) -> bool:
     )
 
 
+def has_payload_restriction(text: str) -> bool:
+    return has(text, "weapon", "projectile", "contraband", "payload") or bool(
+        re.search(r"\b(?:drop|drops|dropped|dropping)\b", text, re.I)
+    )
+
+
 def combined(row: dict[str, str]) -> str:
     return " | ".join(
         row.get(k, "")
@@ -56,7 +62,7 @@ def agency_process(row: dict[str, str]) -> bool:
     focus = " | ".join(row.get(k, "") for k in ("source_title", "uas_topic", "regulated_party", "regulated_activity", "requirement_type"))
     permit = row.get("permit_or_approval_required", "")
     authority = row.get("issuing_authority", "")
-    if has(permit, "landowner consent", "landowner or lessee permission", "property owner consent", "owner's consent", "owner consent", "owner or occupant consent", "owner or lawful-occupant consent", "venue or fireworks-event owner", "consent of the people", "people being surveilled", "property right", "private-property permission") and has(authority, "legislature", "general assembly"):
+    if has(permit, "landowner consent", "landowner or lessee permission", "owner or lessee consent", "property owner consent", "owner's consent", "owner consent", "owner or occupant consent", "owner or lawful-occupant consent", "venue or fireworks-event owner", "consent of the people", "people being surveilled", "property right", "private-property permission") and has(authority, "legislature", "general assembly"):
         return False
     if has(permit, "no agency permit", "no statewide operator permit"):
         return False
@@ -93,7 +99,7 @@ def aec_opinion(row: dict[str, str]) -> str:
             f"Map the event or fireworks perimeter and active time window for {scope}, obtain any consent expressly available under the rule, and keep launch, route, return-to-home, and contingency areas outside the covered zone unless authorized. "
             "Recheck the event schedule immediately before flight because setup, rehearsal, or ignition activity can change the applicable operating boundary."
         )
-    if has(focus, "weapon", "projectile", "contraband", "payload", "drop"):
+    if has_payload_restriction(focus):
         return (
             f"Screen aircraft and payload configuration against {title} before deployment, including release devices, tethered tools, sample systems, and experimental attachments. "
             "Use configuration control so a field crew cannot inadvertently deploy a prohibited or ambiguous payload."
@@ -281,7 +287,7 @@ def procurement_opinion(row: dict[str, str]) -> str:
             "Maintain asset-level records for registration status, weight with each payload, serial number, airworthiness documents when applicable, and renewal dates before assigning an aircraft to this state. "
             "Fleet planning should account for fees, renewal lead time, and whether swapping an aircraft or payload changes the approval or registration basis."
         )
-    if has(focus, "pesticide", "aerial application", "spray", "dispens", "weapon", "projectile", "payload", "contraband", "drop"):
+    if has(focus, "pesticide", "aerial application", "spray", "dispens") or has_payload_restriction(focus):
         return (
             "Use configuration-controlled payload interfaces and maintain documentation showing the purpose, operating limits, release safeguards, aircraft weight, and approved mission configuration. "
             "Avoid buying or fielding attachments whose capability could place an otherwise ordinary mapping aircraft within a weapon, projectile, contraband-delivery, or regulated dispensing provision."
