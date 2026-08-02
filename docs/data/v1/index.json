@@ -252,6 +252,14 @@
       "json_url": "data/v1/TX.json"
     },
     {
+      "state": "Virginia",
+      "state_abbr": "VA",
+      "state_fips": "51",
+      "record_count": 14,
+      "last_updated": "2026-08-02",
+      "json_url": "data/v1/VA.json"
+    },
+    {
       "state": "Washington",
       "state_abbr": "WA",
       "state_fips": "53",
@@ -284,5 +292,5 @@
       "json_url": "data/v1/WY.json"
     }
   ],
-  "state_count": 35
+  "state_count": 36
 }
