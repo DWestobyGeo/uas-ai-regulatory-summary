@@ -1,11 +1,11 @@
 # Indiana — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 1, 2026 | **Version:** 2.0 (Phase 2 — practical interpretation complete; procurement role added August 2, 2026)
+**Research date:** August 1, 2026 | **Version:** 2.1 (Phase 2 — subjective-scope audit complete August 2, 2026)
 **Model / checkpoint:** Claude Sonnet 5 (research and drafting)
-**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v5, Amendment 2), this summary covers Indiana **state and state-agency** UAS authorities only — municipal and county ordinances are deferred. Unlike some states in this program (e.g., Illinois), **no statewide statute preempting local UAS ordinances was located for Indiana**; at least two Indiana cities (Fort Wayne and Carmel) maintain their own drone ordinances, which is inconsistent with a preemption regime being in force. Full citations and metadata are in `IN_UAS_Source_Register.csv`.
+**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v6, Amendment 2), this summary covers Indiana **state and state-agency** UAS authorities only — municipal and county ordinances are deferred. Unlike some states in this program (e.g., Illinois), **no statewide statute preempting local UAS ordinances was located for Indiana**; at least two Indiana cities (Fort Wayne and Carmel) maintain their own drone ordinances, which is inconsistent with a preemption regime being in force. Full citations and metadata are in `IN_UAS_Source_Register.csv`.
 
-> **Process note (Agent Instructions Amendment 4, August 2, 2026):** Phase 2 practical interpretation is complete for the authorities presented below. The four labeled perspectives are operational and risk-management interpretations of the verified research packet; they do not add legal requirements and are not legal advice.
+> **Process note (Agent Instructions Amendment 5, August 2, 2026):** Phase 2 practical interpretation and the completed-state subjective-scope audit are complete for the authorities presented below. The four labeled perspectives normally use one to three sentences, but may run longer when relevant and needed; they are operational and risk-management interpretations of the verified research packet, do not add legal requirements, and are not legal advice.
 
 Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.
 
@@ -58,7 +58,7 @@ Indiana regulates UAS through a cluster of targeted criminal statutes rather tha
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Build the issuing agency approval into pre-mobilization planning. Confirm the property boundary, current submission materials, operating dates, and issued conditions before dispatch, and leave schedule contingency because the captured source does not guarantee processing time.
-- **Agency Practitioner:** Contact the official or office designated by the cited authority before fixing mobilization dates. Request the current form, documentation checklist, fees, submission route, and processing estimate; retain the issued approval and all site-specific conditions with the flight record.
+- **Agency Practitioner:** Contact the protected facility's owner, operator, administrator, commander, or other official identified by the authority before mobilization and ask whether the proposed AEC mission qualifies for written approval or an employment/contractor exception. Provide the site, purpose, dates, flight area, crew and aircraft details the facility requests, and retain the signed authorization and security conditions; do not assume ordinary site access or a client work order is sufficient.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Make the required approval and compliance with its conditions a documented mobilization gate. Allocate responsibility for applications and schedule impacts in the contract, and obtain counsel if the project's facts do not fit the stated authorization pathway.
 ### Public Safety Remote Aerial Interference — IC 35-44.1-4-10
@@ -93,7 +93,7 @@ Indiana regulates UAS through a cluster of targeted criminal statutes rather tha
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Plan environmental and mapping flights to avoid conduct that could be characterized as locating, pursuing, disturbing, or harassing wildlife. Coordinate mission timing and stand-off distances with the land manager when project work overlaps sensitive habitat or hunting activity.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Start with the site manager or permitting office for Indiana Natural Resources Commission / Indiana Department of Natural Resources before scheduling fieldwork, because property-specific conditions may control the route and timing. Request the current form, lead time, fee, insurance and FAA-document checklist, and site restrictions, then keep the signed approval and conditions in the mission file.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Treat the cited authority as a documented compliance gate where applicable. Preserve the facts supporting any exception or consent theory, allocate client and operator responsibilities clearly, and seek state counsel when project facts approach ambiguous or penal language.
 ### Indiana State Police — Counter-Unmanned Aircraft System Authority (IC 10-22)
@@ -115,7 +115,7 @@ Indiana regulates UAS through a cluster of targeted criminal statutes rather tha
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Classify the intended UAS-derived deliverable before mobilization and place licensed-professional review where the verified authority requires it. Keep flight acquisition, analysis, and final professional deliverable responsibilities explicit in the project workflow.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Before relying on an unlicensed or exempt delivery path, give Indiana Professional Licensing Agency / Indiana State Board of Registration for Professional Surveyors a written description of the proposed UAS-derived product, its stated accuracy, and whether it will establish or certify boundaries, elevations, or authoritative locations. Ask the board to confirm the applicable license, responsible-charge, certification, or exemption path and retain the response with the project quality plan; the research packet does not establish a UAS-specific turnaround time.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Describe this source as guidance or policy, not a generally binding statute. Check whether the client or property owner incorporates it contractually, preserve the version relied upon, and escalate conflicts with controlling authority.
 ### Executive Orders, AG Opinions, Court Decisions, and Procurement

@@ -1,10 +1,10 @@
 # Delaware — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 1, 2026 | **Version:** 2.0 (Phase 2 — practical interpretation complete; procurement role added August 2, 2026)
-**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v5, Amendment 2), this summary covers Delaware **state and state-agency** UAS authorities only — local ordinances are largely foreclosed here, since Delaware's core UAS statute (11 Del. C. § 1334(e)) expressly preempts county/municipal regulation of UAS testing or operation. Full citations and metadata are in `DE_UAS_Source_Register.csv`.
+**Research date:** August 1, 2026 | **Version:** 2.1 (Phase 2 — subjective-scope audit complete August 2, 2026)
+**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v6, Amendment 2), this summary covers Delaware **state and state-agency** UAS authorities only — local ordinances are largely foreclosed here, since Delaware's core UAS statute (11 Del. C. § 1334(e)) expressly preempts county/municipal regulation of UAS testing or operation. Full citations and metadata are in `DE_UAS_Source_Register.csv`.
 
-> **Process note (Agent Instructions Amendment 4, August 2, 2026):** Phase 2 practical interpretation is complete for the authorities presented below. The four labeled perspectives are operational and risk-management interpretations of the verified research packet; they do not add legal requirements and are not legal advice.
+> **Process note (Agent Instructions Amendment 5, August 2, 2026):** Phase 2 practical interpretation and the completed-state subjective-scope audit are complete for the authorities presented below. The four labeled perspectives normally use one to three sentences, but may run longer when relevant and needed; they are operational and risk-management interpretations of the verified research packet, do not add legal requirements, and are not legal advice.
 
 Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.
 
@@ -48,7 +48,7 @@ Delaware consolidates most of its UAS-specific law into a single, comprehensive 
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Build the issuing agency approval into pre-mobilization planning. Confirm the property boundary, current submission materials, operating dates, and issued conditions before dispatch, and leave schedule contingency because the captured source does not guarantee processing time.
-- **Agency Practitioner:** Contact the official or office designated by the cited authority before fixing mobilization dates. Request the current form, documentation checklist, fees, submission route, and processing estimate; retain the issued approval and all site-specific conditions with the flight record.
+- **Agency Practitioner:** Start with the site manager or permitting office for Delaware Department of Natural Resources and Environmental Control (DNREC), Division of Parks and Recreation before scheduling fieldwork, because property-specific conditions may control the route and timing. Request the current form, lead time, fee, insurance and FAA-document checklist, and site restrictions, then keep the signed approval and conditions in the mission file.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Make the required approval and compliance with its conditions a documented mobilization gate. Allocate responsibility for applications and schedule impacts in the contract, and obtain counsel if the project's facts do not fit the stated authorization pathway.
 ### Professional Licensing — Delaware Boards for Engineers and Land Surveyors

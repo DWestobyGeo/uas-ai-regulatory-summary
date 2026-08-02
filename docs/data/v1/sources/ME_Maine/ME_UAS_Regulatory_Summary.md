@@ -1,11 +1,11 @@
 # Maine — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 2, 2026 | **Version:** 2.0 (Phase 2 — practical interpretation complete; procurement role added August 2, 2026)
+**Research date:** August 2, 2026 | **Version:** 2.1 (Phase 2 — subjective-scope audit complete August 2, 2026)
 **Model / checkpoint:** Claude Sonnet 5 (research and drafting)
-**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v5, Amendment 2), this summary covers Maine **state and state-agency** UAS authorities only — municipal ordinances are deferred. **Maine has no UAS-specific state preemption statute:** unlike Louisiana (La. R.S. 2:2), Maine is a strong home-rule state (30-A M.R.S. §3001; Me. Const. Art. VIII, Pt. 2, §1) with no statute reserving UAS regulation exclusively to the state or barring local UAS ordinances. Maine's state UAS statutes therefore operate as a floor, not a ceiling, and individual municipalities retain general home-rule authority to adopt their own UAS-related ordinances unless a specific ordinance would frustrate a state law's purpose. Full citations and metadata are in `ME_UAS_Source_Register.csv`.
+**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v6, Amendment 2), this summary covers Maine **state and state-agency** UAS authorities only — municipal ordinances are deferred. **Maine has no UAS-specific state preemption statute:** unlike Louisiana (La. R.S. 2:2), Maine is a strong home-rule state (30-A M.R.S. §3001; Me. Const. Art. VIII, Pt. 2, §1) with no statute reserving UAS regulation exclusively to the state or barring local UAS ordinances. Maine's state UAS statutes therefore operate as a floor, not a ceiling, and individual municipalities retain general home-rule authority to adopt their own UAS-related ordinances unless a specific ordinance would frustrate a state law's purpose. Full citations and metadata are in `ME_UAS_Source_Register.csv`.
 
-> **Process note (Agent Instructions Amendment 4, August 2, 2026):** Phase 2 practical interpretation is complete for the authorities presented below. The four labeled perspectives are operational and risk-management interpretations of the verified research packet; they do not add legal requirements and are not legal advice.
+> **Process note (Agent Instructions Amendment 5, August 2, 2026):** Phase 2 practical interpretation and the completed-state subjective-scope audit are complete for the authorities presented below. The four labeled perspectives normally use one to three sentences, but may run longer when relevant and needed; they are operational and risk-management interpretations of the verified research packet, do not add legal requirements, and are not legal advice.
 
 Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.
 
@@ -47,7 +47,7 @@ Maine regulates UAS through a small number of narrowly targeted statutes rather 
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Screen the project map for protected facilities and active emergency operations before dispatch. Establish conservative stand-off and escalation points, brief the crew on the applicable restriction, and document any source-supported authorization before entering the affected area.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Contact the protected facility's owner, operator, administrator, commander, or other official identified by the authority before mobilization and ask whether the proposed AEC mission qualifies for written approval or an employment/contractor exception. Provide the site, purpose, dates, flight area, crew and aircraft details the facility requests, and retain the signed authorization and security conditions; do not assume ordinary site access or a client work order is sufficient.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Document the applicability analysis and any exception relied upon in the project file. Align the scope, client representations, and operator procedures with the verified authority, and seek state counsel if material facts fall outside its clear terms.
 ### Municipal Home Rule Ordinance Power — No UAS-Specific State Preemption Statute Located — 30-A M.R.S. §3001
@@ -71,7 +71,7 @@ Maine regulates UAS through a small number of narrowly targeted statutes rather 
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Plan environmental and mapping flights to avoid conduct that could be characterized as locating, pursuing, disturbing, or harassing wildlife. Coordinate mission timing and stand-off distances with the land manager when project work overlaps sensitive habitat or hunting activity.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Start with the site manager or permitting office for Bureau of Parks and Lands, Maine Department of Agriculture, Conservation and Forestry (DACF) before scheduling fieldwork, because property-specific conditions may control the route and timing. Request the current form, lead time, fee, insurance and FAA-document checklist, and site restrictions, then keep the signed approval and conditions in the mission file.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** This authority governs a public entity rather than private operators directly. Review the solicitation and contract for incorporation or flow-down before treating it as binding on the consultant, and document the basis for that conclusion.
 ### Drone (Unmanned Aerial Vehicle) Policy — State of Maine Executive Branch — Office of Information Technology
@@ -93,7 +93,7 @@ Maine regulates UAS through a small number of narrowly targeted statutes rather 
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Classify the intended UAS-derived deliverable before mobilization and place licensed-professional review where the verified authority requires it. Keep flight acquisition, analysis, and final professional deliverable responsibilities explicit in the project workflow.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Before relying on an unlicensed or exempt delivery path, give Maine Legislature; Board of Licensure for Professional Land Surveyors (Office of Professional and Occupational Regulation, Dept. of Professional and Financial Regulation) a written description of the proposed UAS-derived product, its stated accuracy, and whether it will establish or certify boundaries, elevations, or authoritative locations. Ask the board to confirm the applicable license, responsible-charge, certification, or exemption path and retain the response with the project quality plan; the research packet does not establish a UAS-specific turnaround time.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Describe this source as guidance or policy, not a generally binding statute. Check whether the client or property owner incorporates it contractually, preserve the version relied upon, and escalate conflicts with controlling authority.
 ### Executive Orders, AG Opinions, Court Decisions, and Procurement — Research Results and Related Findings

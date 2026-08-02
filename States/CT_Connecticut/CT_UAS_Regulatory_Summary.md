@@ -1,10 +1,10 @@
 # Connecticut — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 1, 2026 | **Version:** 2.0 (Phase 2 — practical interpretation complete; procurement role added August 2, 2026)
-**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v5, Amendment 2), this summary covers Connecticut **state and state-agency** UAS authorities only — local (municipal) ordinances and tribal rules are deferred to a later phase. Connecticut broadly preempts local commercial-UAS ordinances (Conn. Gen. Stat. § 7-149b, below), narrowing the practical significance of that deferral, except for a specific water-company-municipality carve-out. Full citations and metadata are in `CT_UAS_Source_Register.csv`.
+**Research date:** August 1, 2026 | **Version:** 2.1 (Phase 2 — subjective-scope audit complete August 2, 2026)
+**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v6, Amendment 2), this summary covers Connecticut **state and state-agency** UAS authorities only — local (municipal) ordinances and tribal rules are deferred to a later phase. Connecticut broadly preempts local commercial-UAS ordinances (Conn. Gen. Stat. § 7-149b, below), narrowing the practical significance of that deferral, except for a specific water-company-municipality carve-out. Full citations and metadata are in `CT_UAS_Source_Register.csv`.
 
-> **Process note (Agent Instructions Amendment 4, August 2, 2026):** Phase 2 practical interpretation is complete for the authorities presented below. The four labeled perspectives are operational and risk-management interpretations of the verified research packet; they do not add legal requirements and are not legal advice.
+> **Process note (Agent Instructions Amendment 5, August 2, 2026):** Phase 2 practical interpretation and the completed-state subjective-scope audit are complete for the authorities presented below. The four labeled perspectives normally use one to three sentences, but may run longer when relevant and needed; they are operational and risk-management interpretations of the verified research packet, do not add legal requirements, and are not legal advice.
 
 Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.
 
@@ -81,7 +81,7 @@ Connecticut regulates UAS through several distinct statutes: a general careless/
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Plan environmental and mapping flights to avoid conduct that could be characterized as locating, pursuing, disturbing, or harassing wildlife. Coordinate mission timing and stand-off distances with the land manager when project work overlaps sensitive habitat or hunting activity.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Start with the site manager or permitting office for Connecticut Department of Energy and Environmental Protection (DEEP) before scheduling fieldwork, because property-specific conditions may control the route and timing. Request the current form, lead time, fee, insurance and FAA-document checklist, and site restrictions, then keep the signed approval and conditions in the mission file.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** This authority governs a public entity rather than private operators directly. Review the solicitation and contract for incorporation or flow-down before treating it as binding on the consultant, and document the basis for that conclusion.
 ### Professional Licensing — State Board of Examiners for Professional Engineers and Land Surveyors

@@ -1,12 +1,12 @@
 # Oregon — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 1, 2026 | **Version:** 2.0 (Phase 2 — practical interpretation complete; procurement role added August 2, 2026)
+**Research date:** August 1, 2026 | **Version:** 2.1 (Phase 2 — subjective-scope audit complete August 2, 2026)
 **Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent_Instructions.md v3), this summary covers Oregon **state and state-agency** UAS authorities only — local (municipal/county) ordinances and tribal rules are deferred to a later phase and are not included here. Full citations and metadata are in `OR_UAS_Source_Register.csv`.
 
 Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.
 
-> **Process note (Agent Instructions Amendment 4, August 2, 2026):** Phase 2 practical interpretation is complete for the authorities presented below. The four labeled perspectives are operational and risk-management interpretations of the verified research packet; they do not add legal requirements and are not legal advice.
+> **Process note (Agent Instructions Amendment 5, August 2, 2026):** Phase 2 practical interpretation and the completed-state subjective-scope audit are complete for the authorities presented below. The four labeled perspectives normally use one to three sentences, but may run longer when relevant and needed; they are operational and risk-management interpretations of the verified research packet, do not add legal requirements, and are not legal advice.
 
 ---
 
@@ -48,7 +48,7 @@ Oregon consolidates its UAS law in a single statutory chapter (ORS 837.300–837
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** No action needed for a private fleet; only relevant if the firm operates equipment issued or registered under a public agency's own UAS program.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Use Oregon Department of Aviation (ODA)'s current registration or exemption channel before the aircraft is placed on a covered mission. Confirm which aircraft and operator details, fees, renewal dates, and exemption evidence apply to this operation, and retain the registration or written exemption determination with the fleet record.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Confirm registration status in writing if flying agency-owned equipment under a public contract — noncompliance would be the agency's exposure, but could still affect project continuity.
 ### Parks and Public Lands — Oregon Parks and Recreation Department (OPRD)
@@ -59,7 +59,7 @@ Oregon consolidates its UAS law in a single statutory chapter (ORS 837.300–837
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Check the current OPRD UAS Operation Areas list before scoping any coastal, dune/erosion, or beach-access project, and build permit-application lead time into the schedule if the site falls outside a designated area — site plans made before mid-2026 need re-checking against this rule.
-- **Agency Practitioner:** Contact the official or office designated by the cited authority before fixing mobilization dates. Request the current form, documentation checklist, fees, submission route, and processing estimate; retain the issued approval and all site-specific conditions with the flight record.
+- **Agency Practitioner:** Start with the site manager or permitting office for Oregon Parks and Recreation Department (OPRD) before scheduling fieldwork, because property-specific conditions may control the route and timing. Request the current form, lead time, fee, insurance and FAA-document checklist, and site restrictions, then keep the signed approval and conditions in the mission file.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Retain the permit approval (or documentation that the site is within a designated Operation Area) in the project file before mobilizing a crew; treat overnight-use facility sites as an absolute exclusion with no permit workaround.
 ### Professional Licensing — Oregon State Board of Examiners for Engineering and Land Surveying (OSBEELS)
@@ -70,7 +70,7 @@ Oregon consolidates its UAS law in a single statutory chapter (ORS 837.300–837
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Pull the current OSBEELS brochure directly and use it to set the internal QA/QC workflow for which drone-derived deliverables require registered-professional sign-off.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Before relying on an unlicensed or exempt delivery path, give Oregon State Board of Examiners for Engineering and Land Surveying (OSBEELS) a written description of the proposed UAS-derived product, its stated accuracy, and whether it will establish or certify boundaries, elevations, or authoritative locations. Ask the board to confirm the applicable license, responsible-charge, certification, or exemption path and retain the response with the project quality plan; the research packet does not establish a UAS-specific turnaround time.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Board-issued practice guidance is a strong indicator of how OSBEELS would evaluate a complaint, even though nonbinding — cite it in internal compliance documentation, but confirm current content directly with the Board before relying on specific thresholds in a client contract.
 ### Procurement / Equipment Restrictions

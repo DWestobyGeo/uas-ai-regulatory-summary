@@ -1,12 +1,12 @@
 # New York — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 1, 2026 | **Version:** 2.0 (Phase 2 — practical interpretation complete; procurement role added August 2, 2026)
-**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v5), this summary covers New York **state and state-agency** UAS authorities only — local (municipal/county) ordinances and tribal rules are deferred to a later phase and are not included here. Unlike Texas or Florida, New York has **not** enacted a state preemption statute for local UAS ordinances (see Section 4), and New York City in particular maintains an extensive independent permit regime — a project-specific municipal check will be necessary before this state-level picture can be treated as complete for any specific New York site. Full citations and metadata are in `NY_UAS_Source_Register.csv`.
+**Research date:** August 1, 2026 | **Version:** 2.1 (Phase 2 — subjective-scope audit complete August 2, 2026)
+**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v6), this summary covers New York **state and state-agency** UAS authorities only — local (municipal/county) ordinances and tribal rules are deferred to a later phase and are not included here. Unlike Texas or Florida, New York has **not** enacted a state preemption statute for local UAS ordinances (see Section 4), and New York City in particular maintains an extensive independent permit regime — a project-specific municipal check will be necessary before this state-level picture can be treated as complete for any specific New York site. Full citations and metadata are in `NY_UAS_Source_Register.csv`.
 
 Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.
 
-> **Process note (Agent Instructions Amendment 4, August 2, 2026):** Phase 2 practical interpretation is complete for the authorities presented below. The four labeled perspectives are operational and risk-management interpretations of the verified research packet; they do not add legal requirements and are not legal advice.
+> **Process note (Agent Instructions Amendment 5, August 2, 2026):** Phase 2 practical interpretation and the completed-state subjective-scope audit are complete for the authorities presented below. The four labeled perspectives normally use one to three sentences, but may run longer when relevant and needed; they are operational and risk-management interpretations of the verified research packet, do not add legal requirements, and are not legal advice.
 
 ---
 
@@ -48,7 +48,7 @@ New York's UAS regulatory landscape changed materially on May 28, 2026, with the
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Apply for the applicable commercial-activity/UAS permit before staging any AEC UAS work (inspection, environmental documentation, corridor mapping) on state park, historic site, or parkway property, and build permit lead time into scheduling.
-- **Agency Practitioner:** Contact the official or office designated by the cited authority before fixing mobilization dates. Request the current form, documentation checklist, fees, submission route, and processing estimate; retain the issued approval and all site-specific conditions with the flight record.
+- **Agency Practitioner:** Start with the site manager or permitting office for NYS Office of Parks, Recreation and Historic Preservation (OPRHP) before scheduling fieldwork, because property-specific conditions may control the route and timing. Request the current form, lead time, fee, insurance and FAA-document checklist, and site restrictions, then keep the signed approval and conditions in the mission file.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Retain the OPRHP permit in the project file for any launch, landing, or operation on OPRHP land; confirm current procedure directly with the relevant OPRHP region, since region-specific rules (e.g., Palisades) may vary from the statewide rule.
 ### Land Management — NYS Department of Environmental Conservation (DEC) UAS Policy
@@ -59,7 +59,7 @@ New York's UAS regulatory landscape changed materially on May 28, 2026, with the
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Check the land classification of any DEC parcel near a project site before planning a launch — Wilderness/Primitive/Canoe classifications are a hard no-fly for launch/landing, while other DEC lands require advance regional-director permission.
-- **Agency Practitioner:** Contact the official or office designated by the cited authority before fixing mobilization dates. Request the current form, documentation checklist, fees, submission route, and processing estimate; retain the issued approval and all site-specific conditions with the flight record.
+- **Agency Practitioner:** Start with the site manager or permitting office for NYS Department of Environmental Conservation (DEC) before scheduling fieldwork, because property-specific conditions may control the route and timing. Request the current form, lead time, fee, insurance and FAA-document checklist, and site restrictions, then keep the signed approval and conditions in the mission file.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Retain written regional-director permission in the project file for any DEC-land launch/land/operate activity outside a classified no-fly area; confirm current classification and procedure directly with the relevant DEC region.
 ### Wildlife — DEC Prohibition on Aircraft Use to Hunt, Locate, Drive, or Take Wildlife

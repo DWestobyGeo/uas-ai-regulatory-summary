@@ -19,6 +19,8 @@ Each completed state has two data products, generated from the same research pas
 
 Coverage is currently **state and state-agency level only** — municipal, county, and tribal regulation is deferred to a later research phase and is explicitly noted as out of scope in each state's summary.
 
+The research and drafting roles are governed by [`Agent_Instructions.v6.md`](Agent_Instructions.v6.md). Each subjective practical-interpretation opinion is normally one to three sentences, but may be longer when a material ambiguity, multi-step process, phased requirement, or other genuinely relevant complexity needs additional explanation.
+
 ## Repository structure
 
 ```

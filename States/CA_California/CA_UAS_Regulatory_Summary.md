@@ -1,12 +1,12 @@
 # California — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 1, 2026 | **Version:** 2.0 (Phase 2 — practical interpretation complete; procurement role added August 2, 2026)
-**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v5), this summary covers California **state and state-agency** UAS authorities only — local (municipal/county) ordinances and tribal rules are deferred to a later phase and are not included here. **Unlike Texas, California has not enacted a statute preempting local UAS ordinances** (see Section 4), so the local-ordinance layer deferred here is likely to matter more in California than in preemption states — factor that into any project-specific reliance on this document. Full citations and metadata are in `CA_UAS_Source_Register.csv`.
+**Research date:** August 1, 2026 | **Version:** 2.1 (Phase 2 — subjective-scope audit complete August 2, 2026)
+**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v6), this summary covers California **state and state-agency** UAS authorities only — local (municipal/county) ordinances and tribal rules are deferred to a later phase and are not included here. **Unlike Texas, California has not enacted a statute preempting local UAS ordinances** (see Section 4), so the local-ordinance layer deferred here is likely to matter more in California than in preemption states — factor that into any project-specific reliance on this document. Full citations and metadata are in `CA_UAS_Source_Register.csv`.
 
 Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.
 
-> **Process note (Agent Instructions Amendment 4, August 2, 2026):** Phase 2 practical interpretation is complete for the authorities presented below. The four labeled perspectives are operational and risk-management interpretations of the verified research packet; they do not add legal requirements and are not legal advice.
+> **Process note (Agent Instructions Amendment 5, August 2, 2026):** Phase 2 practical interpretation and the completed-state subjective-scope audit are complete for the authorities presented below. The four labeled perspectives normally use one to three sentences, but may run longer when relevant and needed; they are operational and risk-management interpretations of the verified research packet, do not add legal requirements, and are not legal advice.
 
 ---
 
@@ -57,7 +57,7 @@ California regulates UAS through a set of targeted statutes rather than one comp
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Identify any state prison, county jail, or juvenile detention facility near a project site during pre-flight planning; obtain prior written permission from the appropriate agency before flying on or above facility grounds.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Contact the protected facility's owner, operator, administrator, commander, or other official identified by the authority before mobilization and ask whether the proposed AEC mission qualifies for written approval or an employment/contractor exception. Provide the site, purpose, dates, flight area, crew and aircraft details the facility requests, and retain the signed authorization and security conditions; do not assume ordinary site access or a client work order is sufficient.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** This is a low-level infraction, but document the prior-permission exemption relied upon for any flight over or above a covered facility's grounds given the facility-security sensitivity involved.
 ### 14 CCR §§ 251, 251.1 — Prohibition on Using Aircraft (Including Drones) to Pursue or Harass Wildlife
@@ -92,7 +92,7 @@ California regulates UAS through a set of targeted statutes rather than one comp
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** For any highway/bridge corridor survey, mapping, or inspection project, submit the Standard Encroachment Permit Application (TR-0100) to the local District Encroachment Permits Office well before mobilization, and separately coordinate with the Division of Aeronautics on Caltrans-scoped task orders.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Contact California Department of Transportation (Caltrans) before fixing the mobilization date and ask for the current application or approval route, supporting-document checklist, fees, and processing estimate. Describe the proposed site, dates, purpose, aircraft, operator, and requested exception clearly, and retain the issued approval and all conditions; the captured requirement is: Yes — Caltrans encroachment permit.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Confirm the encroachment permit is in hand — not merely applied for — before authorizing any right-of-way launch, landing, or entry, and confirm the underlying activity fits a category Caltrans will actually permit.
 ### Parks and Recreation — California State Parks (UAS Guidance)
@@ -103,7 +103,7 @@ California regulates UAS through a set of targeted statutes rather than one comp
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Before any state-park AEC UAS work, check for unit-specific posted orders with the local District and route the FAA authorization plus the applicable permit (Special Event, Right of Entry, DPR 65, or Film Commission) through the District Superintendent well in advance.
-- **Agency Practitioner:** Contact the official or office designated by the cited authority before fixing mobilization dates. Request the current form, documentation checklist, fees, submission route, and processing estimate; retain the issued approval and all site-specific conditions with the flight record.
+- **Agency Practitioner:** Start with the site manager or permitting office for California Department of Parks and Recreation before scheduling fieldwork, because property-specific conditions may control the route and timing. Request the current form, lead time, fee, insurance and FAA-document checklist, and site restrictions, then keep the signed approval and conditions in the mission file.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Retain the FAA authorization submission and the specific park-issued permit in the project file; confirm which permit track applies since required documentation differs by category (commercial vs. research vs. public-agency).
 ### Fish and Wildlife — CDFW-Administered Lands (Special Use Permit)
@@ -114,7 +114,7 @@ California regulates UAS through a set of targeted statutes rather than one comp
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Treat any CDFW wildlife area or ecological reserve the same as a state park for launch/land/operate purposes — apply for a Special Use Permit before staging environmental-monitoring or habitat-mapping work, and build permit lead time into scheduling.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Start with the site manager or permitting office for California Department of Fish and Wildlife before scheduling fieldwork, because property-specific conditions may control the route and timing. Request the current form, lead time, fee, insurance and FAA-document checklist, and site restrictions, then keep the signed approval and conditions in the mission file.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Retain the CDFW Special Use Permit in the project file; confirm current requirements directly with CDFW given the secondary-source citation noted in the confidence summary below.
 ### Procurement — No Enacted UAS Manufacturer/Country-of-Origin Restriction

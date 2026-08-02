@@ -1,11 +1,11 @@
 # Kansas — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 2, 2026 | **Version:** 2.0 (Phase 2 — practical interpretation complete; procurement role added August 2, 2026)
+**Research date:** August 2, 2026 | **Version:** 2.1 (Phase 2 — subjective-scope audit complete August 2, 2026)
 **Model / checkpoint:** Claude Sonnet 5 (research and drafting)
-**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v5, Amendment 2), this summary covers Kansas **state and state-agency** UAS authorities only — municipal and county ordinances are deferred. **No statewide statute preempting local UAS ordinances was located for Kansas.** Secondary sources report that some Kansas municipalities (e.g., Wichita, Prairie Village) have adopted their own drone ordinances, but confirming and cataloguing those ordinances is out of scope for this state-level phase. Full citations and metadata are in `KS_UAS_Source_Register.csv`.
+**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v6, Amendment 2), this summary covers Kansas **state and state-agency** UAS authorities only — municipal and county ordinances are deferred. **No statewide statute preempting local UAS ordinances was located for Kansas.** Secondary sources report that some Kansas municipalities (e.g., Wichita, Prairie Village) have adopted their own drone ordinances, but confirming and cataloguing those ordinances is out of scope for this state-level phase. Full citations and metadata are in `KS_UAS_Source_Register.csv`.
 
-> **Process note (Agent Instructions Amendment 4, August 2, 2026):** Phase 2 practical interpretation is complete for the authorities presented below. The four labeled perspectives are operational and risk-management interpretations of the verified research packet; they do not add legal requirements and are not legal advice.
+> **Process note (Agent Instructions Amendment 5, August 2, 2026):** Phase 2 practical interpretation and the completed-state subjective-scope audit are complete for the authorities presented below. The four labeled perspectives normally use one to three sentences, but may run longer when relevant and needed; they are operational and risk-management interpretations of the verified research packet, do not add legal requirements, and are not legal advice.
 
 Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.
 
@@ -36,7 +36,7 @@ Kansas has no single comprehensive drone statute. Instead, it regulates UAS thro
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Add this authority to the state-specific preflight checklist and confirm its applicability to the project site, mission purpose, and client. Document the operational decision and any source-supported exception before dispatch.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Before proposing equipment or mobilizing, ask Kansas Legislature which current list, funding determination, exception request, or project-level confirmation controls. Provide the aircraft, payload, controller, software, manufacturer/origin, and contract information the agency requests and retain its written determination with the procurement and flight records.
 - **UAS Procurement Expert:** Require current vendor documentation for aircraft, critical components, installed software, ownership, origin, and support lifecycle before purchase. Compare the proposed configuration with the controlling authority and preserve the evidence supporting the acquisition decision.
 - **AEC Industry Legal Counsel:** Document the applicability analysis and any exception relied upon in the project file. Align the scope, client representations, and operator procedures with the verified authority, and seek state counsel if material facts fall outside its clear terms.
 ## 3. State Agency and Facility-Specific UAS Requirements
@@ -49,7 +49,7 @@ Kansas has no single comprehensive drone statute. Instead, it regulates UAS thro
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Plan environmental and mapping flights to avoid conduct that could be characterized as locating, pursuing, disturbing, or harassing wildlife. Coordinate mission timing and stand-off distances with the land manager when project work overlaps sensitive habitat or hunting activity.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Start with the site manager or permitting office for Kansas Department of Wildlife and Parks (KDWP) / Kansas Wildlife and Parks Commission before scheduling fieldwork, because property-specific conditions may control the route and timing. Request the current form, lead time, fee, insurance and FAA-document checklist, and site restrictions, then keep the signed approval and conditions in the mission file.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Treat the cited authority as a documented compliance gate where applicable. Preserve the facts supporting any exception or consent theory, allocate client and operator responsibilities clearly, and seek state counsel when project facts approach ambiguous or penal language.
 ### Unlawful Methods of Taking Wildlife (Aircraft) — KDWP Construction Applying the Statute to Drones — K.S.A. 32-1003
@@ -82,7 +82,7 @@ Kansas has no single comprehensive drone statute. Instead, it regulates UAS thro
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Classify the intended UAS-derived deliverable before mobilization and place licensed-professional review where the verified authority requires it. Keep flight acquisition, analysis, and final professional deliverable responsibilities explicit in the project workflow.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Before relying on an unlicensed or exempt delivery path, give Kansas State Board of Technical Professions a written description of the proposed UAS-derived product, its stated accuracy, and whether it will establish or certify boundaries, elevations, or authoritative locations. Ask the board to confirm the applicable license, responsible-charge, certification, or exemption path and retain the response with the project quality plan; the research packet does not establish a UAS-specific turnaround time.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Describe this source as guidance or policy, not a generally binding statute. Check whether the client or property owner incorporates it contractually, preserve the version relied upon, and escalate conflicts with controlling authority.
 ### Executive Orders, AG Opinions, Court Decisions, Correctional Facilities, Preemption, and Related Negative/Discrepancy Findings

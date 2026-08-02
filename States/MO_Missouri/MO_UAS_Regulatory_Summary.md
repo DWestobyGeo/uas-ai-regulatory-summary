@@ -1,12 +1,12 @@
 # Missouri — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 1, 2026 | **Version:** 2.0 (Phase 2 — practical interpretation complete; procurement role added August 2, 2026)
+**Research date:** August 1, 2026 | **Version:** 2.1 (Phase 2 — subjective-scope audit complete August 2, 2026)
 **Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent_Instructions.md v3), this summary covers Missouri **state and state-agency** UAS authorities only — local (municipal/county) ordinances and tribal rules are deferred to a later phase and are not included here. Full citations and metadata are in `MO_UAS_Source_Register.csv`.
 
 Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.
 
-> **Process note (Agent Instructions Amendment 4, August 2, 2026):** Phase 2 practical interpretation is complete for the authorities presented below. The four labeled perspectives are operational and risk-management interpretations of the verified research packet; they do not add legal requirements and are not legal advice.
+> **Process note (Agent Instructions Amendment 5, August 2, 2026):** Phase 2 practical interpretation and the completed-state subjective-scope audit are complete for the authorities presented below. The four labeled perspectives normally use one to three sentences, but may run longer when relevant and needed; they are operational and risk-management interpretations of the verified research packet, do not add legal requirements, and are not legal advice.
 
 ---
 
@@ -24,7 +24,7 @@ Missouri regulates UAS through two enacted criminal statutes targeting specific 
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Treat any event venue with 500+ capacity and any water/wastewater/power facility as inside the 400 ft AGL restricted zone by default for Missouri work scheduled from mid-2026 forward — the lowered threshold sweeps in far more venues than the pre-2026 rule, so re-check any standing Missouri site list built before the amendment. For utility inspection work, give the facility advance notice as required by the utility exemption rather than assuming the exemption is self-executing.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Contact the protected facility's owner, operator, administrator, commander, or other official identified by the authority before mobilization and ask whether the proposed AEC mission qualifies for written approval or an employment/contractor exception. Provide the site, purpose, dates, flight area, crew and aircraft details the facility requests, and retain the signed authorization and security conditions; do not assume ordinary site access or a client work order is sufficient.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** The codified text pulled directly from the Revisor of Statutes site during this research still shows the pre-amendment (5,000-person, no critical-infrastructure) version, which may reflect a lag in the site's update following the June 2026 emergency-clause enactment — confirm the current codified text directly before citing a specific threshold or definition in a client-facing document. Document the specific exemption relied upon for any flight near a covered venue or facility given the felony-level exposure for prohibited deliveries.
 ### RSMo 217.850 — Correctional center, unlawful use of unmanned aircraft over
@@ -35,7 +35,7 @@ Missouri regulates UAS through two enacted criminal statutes targeting specific 
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Identify any state, private, county, or municipal correctional/jail facility near a project site during pre-flight planning and maintain the 400 ft vertical standoff by default unless the project specifically requires facility work, in which case get the chief administrative officer's written consent first.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Contact the protected facility's owner, operator, administrator, commander, or other official identified by the authority before mobilization and ask whether the proposed AEC mission qualifies for written approval or an employment/contractor exception. Provide the site, purpose, dates, flight area, crew and aircraft details the facility requests, and retain the signed authorization and security conditions; do not assume ordinary site access or a client work order is sufficient.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Retain written consent documentation for any flight authorized near a correctional facility; the broad definition of "correctional center" — reaching county and municipal jails, not just state prisons — means this statute applies more often than a quick check for "state prison" alone would suggest.
 ### "Preserving Freedom from Unwarranted Surveillance Act" — not current law
@@ -71,7 +71,7 @@ Missouri regulates UAS through two enacted criminal statutes targeting specific 
 
 - **AEC Industry UAS Expert:** For any consultant contract involving MoDOT-adjacent UAS work (bridge/structure inspection, corridor mapping, incident documentation), request MoDOT's current UAV operations manual and align field procedures with it.
 - **Agency Practitioner:** Not applicable — no agency process.
-- **UAS Procurement Expert:** Require current vendor documentation for aircraft, critical components, installed software, ownership, origin, and support lifecycle before purchase. Compare the proposed configuration with the controlling authority and preserve the evidence supporting the acquisition decision.
+- **UAS Procurement Expert:** Treat MoDOT's centralized standards as an early contract-discovery item, not as proof that a particular firm-owned platform is approved. Before pricing equipment or support, request the current operating manual and project requirements, then compare required aircraft, payload, data, safety, training, insurance, and lifecycle-support capabilities with the proposed fleet.
 - **AEC Industry Legal Counsel:** Confirm in the scope of work whether MoDOT's internal UAV standards (equipment, data handling, pilot qualifications) are being incorporated as contract requirements, and get any such incorporation in writing.
 ### Department of Transportation — Federal Foreign-Drone Procurement Restriction (MoDOT notice)
 *Official agency policy — state notice of a federal requirement*
@@ -92,7 +92,7 @@ Missouri regulates UAS through two enacted criminal statutes targeting specific 
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Start the Division of State Parks commercial-use approval process as early as possible for any project involving a Missouri state park — don't assume day-use-area recreational tolerance extends to commercial operations.
-- **Agency Practitioner:** Contact the official or office designated by the cited authority before fixing mobilization dates. Request the current form, documentation checklist, fees, submission route, and processing estimate; retain the issued approval and all site-specific conditions with the flight record.
+- **Agency Practitioner:** Start with the site manager or permitting office for Missouri Department of Natural Resources, Division of State Parks before scheduling fieldwork, because property-specific conditions may control the route and timing. Request the current form, lead time, fee, insurance and FAA-document checklist, and site restrictions, then keep the signed approval and conditions in the mission file.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Get the Division of State Parks' commercial-use approval in writing and keep it in the project file; confirm current approval requirements directly with DNR.
 ### Fish and Wildlife / Natural Resources — Missouri Department of Conservation (MDC)
@@ -103,7 +103,7 @@ Missouri regulates UAS through two enacted criminal statutes targeting specific 
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Treat any MDC conservation area the same as a state park for launch/landing purposes — apply for the special use permit before staging a crew there for environmental monitoring, habitat mapping, or resource-inventory work, and build the permit lead time into project scheduling.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Start with the site manager or permitting office for Missouri Department of Conservation (MDC) before scheduling fieldwork, because property-specific conditions may control the route and timing. Request the current form, lead time, fee, insurance and FAA-document checklist, and site restrictions, then keep the signed approval and conditions in the mission file.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Retain the MDC special use permit in the project file for any conservation-area launch/land activity; document flight altitude and purpose for work near wildlife concentrations given the judgment-based harassment standard.
 ### Professional Licensing — Missouri Board for Architects, Professional Engineers, Professional Land Surveyors and Professional Landscape Architects (APELSLA)
@@ -114,7 +114,7 @@ Missouri regulates UAS through two enacted criminal statutes targeting specific 
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Route drone-derived photogrammetry/LiDAR mapping products through a Missouri-licensed PE or PLS for review under the existing Mapping Survey Standards before delivery on any official survey/engineering deliverable.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Before relying on an unlicensed or exempt delivery path, give Missouri Board for Architects, Professional Engineers, Professional Land Surveyors and Professional Landscape Architects (APELSLA) a written description of the proposed UAS-derived product, its stated accuracy, and whether it will establish or certify boundaries, elevations, or authoritative locations. Ask the board to confirm the applicable license, responsible-charge, certification, or exemption path and retain the response with the project quality plan; the research packet does not establish a UAS-specific turnaround time.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Absent UAS-specific board guidance, rely on the general 20 CSR 2030-20 framework and document licensed-professional review in the QA/QC record; consider a direct inquiry to APELSLA for novel UAS-derived-product certification questions.
 ### Executive Orders, Court Decisions, and Attorney General Opinions

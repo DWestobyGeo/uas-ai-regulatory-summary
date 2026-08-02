@@ -1,12 +1,12 @@
 # Washington — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 1, 2026 | **Version:** 2.0 (Phase 2 — practical interpretation complete; procurement role added August 2, 2026)
+**Research date:** August 1, 2026 | **Version:** 2.1 (Phase 2 — subjective-scope audit complete August 2, 2026)
 **Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent_Instructions.md v3), this summary covers Washington **state and state-agency** UAS authorities only — local (municipal/county) ordinances and tribal rules are deferred to a later phase and are not included here. Full citations and metadata are in `WA_UAS_Source_Register.csv`.
 
 Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.
 
-> **Process note (Agent Instructions Amendment 4, August 2, 2026):** Phase 2 practical interpretation is complete for the authorities presented below. The four labeled perspectives are operational and risk-management interpretations of the verified research packet; they do not add legal requirements and are not legal advice.
+> **Process note (Agent Instructions Amendment 5, August 2, 2026):** Phase 2 practical interpretation and the completed-state subjective-scope audit are complete for the authorities presented below. The four labeled perspectives normally use one to three sentences, but may run longer when relevant and needed; they are operational and risk-management interpretations of the verified research packet, do not add legal requirements, and are not legal advice.
 
 ---
 
@@ -24,7 +24,7 @@ Washington requires mandatory, fee-based state UAS registration (RCW 47.68.250) 
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Add WSDOT registration and its January renewal to the standard equipment-onboarding and annual-compliance checklist for every drone that will fly in Washington — it's easy to miss because it sits outside the FAA registration workflow most crews already know.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Use Washington State Legislature's current registration or exemption channel before the aircraft is placed on a covered mission. Confirm which aircraft and operator details, fees, renewal dates, and exemption evidence apply to this operation, and retain the registration or written exemption determination with the fleet record.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Registration lapses are a straightforward compliance gap to catch in an internal audit; require proof of current WSDOT registration before dispatching any airframe on a Washington job, the same way you'd confirm current insurance and FAA Part 107 currency.
 ### RCW 9A.44.115 — Voyeurism
@@ -59,7 +59,7 @@ Washington requires mandatory, fee-based state UAS registration (RCW 47.68.250) 
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Confirm none of the exemptions apply before assuming a project drone is exempt — most standard commercial fleet equipment based or operated in Washington will need registration, so build the WSDOT process into new-equipment intake rather than treating it as an edge case.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Use Washington State Department of Transportation, Aviation Division's current registration or exemption channel before the aircraft is placed on a covered mission. Confirm which aircraft and operator details, fees, renewal dates, and exemption evidence apply to this operation, and retain the registration or written exemption determination with the fleet record.
 - **UAS Procurement Expert:** Require current vendor documentation for aircraft, critical components, installed software, ownership, origin, and support lifecycle before purchase. Compare the proposed configuration with the controlling authority and preserve the evidence supporting the acquisition decision.
 - **AEC Industry Legal Counsel:** If claiming a nonresident/short-term exemption for an out-of-state crew flying briefly in Washington, track the 90-day clock carefully and file the exemption request form in advance rather than relying on the exemption applying automatically.
 ### Parks and Public Lands — Washington State Parks and Recreation Commission
@@ -70,7 +70,7 @@ Washington requires mandatory, fee-based state UAS registration (RCW 47.68.250) 
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Build a 60-day lead time into project scheduling for any job requiring flight on or launched from Washington State Parks land — identify park-sited work early in the proposal stage.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Start with the site manager or permitting office for Washington State Parks and Recreation Commission before scheduling fieldwork, because property-specific conditions may control the route and timing. Request the current form, lead time, fee, insurance and FAA-document checklist, and site restrictions, then keep the signed approval and conditions in the mission file.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Submit the permit application with enough buffer to absorb SEPA review delays, and retain the approved permit in the project file; do not rely on the extenuating-circumstances waiver as a planning assumption.
 ### Fish and Wildlife — Washington Fish and Wildlife Commission
@@ -81,7 +81,7 @@ Washington requires mandatory, fee-based state UAS registration (RCW 47.68.250) 
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Avoid low-altitude pursuit-like maneuvers near wildlife concentrations on environmental-monitoring and corridor-mapping flights — steady, predictable flight paths at planned survey altitude are unlikely to implicate this rule, but circling or diving near animals could.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** If the work is actually part of an agency-directed wildlife-conflict response, contact the Washington Department of Fish and Wildlife before mobilization and ask for the applicable authorization and operating conditions. Ordinary environmental monitoring or mapping does not become authorized wildlife pursuit or harassment merely because it serves a professional purpose, so retain the agency direction and mission limits.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Document flight altitude and purpose for survey work near known wildlife concentrations; the hunting-day restriction is not directly relevant to commercial survey operations but is worth a one-line mention in field-crew orientation.
 ### Corrections — 2016 Senate Bill 6437 (status uncertain)
@@ -103,7 +103,7 @@ Washington requires mandatory, fee-based state UAS registration (RCW 47.68.250) 
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Route drone-derived photogrammetry/LiDAR products through a WA-licensed PLS or certified photogrammetrist for sign-off before delivery, the same as any other official survey product — treat the absence of a UAS-specific brochure as a gap to ask the Board about directly, not as evidence the requirement doesn't apply.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Before relying on an unlicensed or exempt delivery path, give Washington State Board of Registration for Professional Engineers and Land Surveyors a written description of the proposed UAS-derived product, its stated accuracy, and whether it will establish or certify boundaries, elevations, or authoritative locations. Ask the board to confirm the applicable license, responsible-charge, certification, or exemption path and retain the response with the project quality plan; the research packet does not establish a UAS-specific turnaround time.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Absent published UAS-specific guidance, apply the general Ch. 18.43 RCW licensure requirement and document PLS/photogrammetrist review in the deliverable QA/QC record; consider requesting a written interpretation from the Board for novel certification questions.
 ### Procurement / Equipment Restrictions

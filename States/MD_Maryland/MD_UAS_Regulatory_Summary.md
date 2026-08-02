@@ -1,11 +1,11 @@
 # Maryland — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 2, 2026 | **Version:** 2.0 (Phase 2 — practical interpretation complete; procurement role added August 2, 2026)
+**Research date:** August 2, 2026 | **Version:** 2.1 (Phase 2 — subjective-scope audit complete August 2, 2026)
 **Model / checkpoint:** Claude Sonnet 5 (research and drafting)
-**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v5, Amendment 2), this summary covers Maryland **state and state-agency** UAS authorities only — municipal ordinances are deferred. **Maryland enacted a strong statewide preemption statute in 2015** (Md. Code Ann., Econ. Dev. §14-301) that remains in force in its current codified text: only the State may regulate UAS testing or operation, and this expressly preempts and supersedes any conflicting county or municipal ordinance. Notwithstanding that preemption, multiple Maryland counties reportedly maintain their own drone permitting/ordinance regimes, and the state's own Attorney General's office has publicly declined to resolve the resulting conflict — an unresolved practical issue discussed below. Full citations and metadata are in `MD_UAS_Source_Register.csv`.
+**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v6, Amendment 2), this summary covers Maryland **state and state-agency** UAS authorities only — municipal ordinances are deferred. **Maryland enacted a strong statewide preemption statute in 2015** (Md. Code Ann., Econ. Dev. §14-301) that remains in force in its current codified text: only the State may regulate UAS testing or operation, and this expressly preempts and supersedes any conflicting county or municipal ordinance. Notwithstanding that preemption, multiple Maryland counties reportedly maintain their own drone permitting/ordinance regimes, and the state's own Attorney General's office has publicly declined to resolve the resulting conflict — an unresolved practical issue discussed below. Full citations and metadata are in `MD_UAS_Source_Register.csv`.
 
-> **Process note (Agent Instructions Amendment 4, August 2, 2026):** Phase 2 practical interpretation is complete for the authorities presented below. The four labeled perspectives are operational and risk-management interpretations of the verified research packet; they do not add legal requirements and are not legal advice.
+> **Process note (Agent Instructions Amendment 5, August 2, 2026):** Phase 2 practical interpretation and the completed-state subjective-scope audit are complete for the authorities presented below. The four labeled perspectives normally use one to three sentences, but may run longer when relevant and needed; they are operational and risk-management interpretations of the verified research packet, do not add legal requirements, and are not legal advice.
 
 Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.
 
@@ -60,7 +60,7 @@ Maryland's core statewide UAS authority is a 2015 preemption statute rather than
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Add this authority to the state-specific preflight checklist and confirm its applicability to the project site, mission purpose, and client. Document the operational decision and any source-supported exception before dispatch.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Start with the site manager or permitting office for Maryland Park Service, Department of Natural Resources (DNR) before scheduling fieldwork, because property-specific conditions may control the route and timing. Request the current form, lead time, fee, insurance and FAA-document checklist, and site restrictions, then keep the signed approval and conditions in the mission file.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Describe this source as guidance or policy, not a generally binding statute. Check whether the client or property owner incorporates it contractually, preserve the version relied upon, and escalate conflicts with controlling authority.
 ### Drones – Uncrewed Aircraft Systems (UAS) — MDOT MAA Community Relations Guidance
@@ -82,7 +82,7 @@ Maryland's core statewide UAS authority is a 2015 preemption statute rather than
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Classify the intended UAS-derived deliverable before mobilization and place licensed-professional review where the verified authority requires it. Keep flight acquisition, analysis, and final professional deliverable responsibilities explicit in the project workflow.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Before relying on an unlicensed or exempt delivery path, give Maryland General Assembly; State Board for Professional Land Surveyors (Division of Occupational and Professional Licensing, Dept. of Labor) a written description of the proposed UAS-derived product, its stated accuracy, and whether it will establish or certify boundaries, elevations, or authoritative locations. Ask the board to confirm the applicable license, responsible-charge, certification, or exemption path and retain the response with the project quality plan; the research packet does not establish a UAS-specific turnaround time.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Describe this source as guidance or policy, not a generally binding statute. Check whether the client or property owner incorporates it contractually, preserve the version relied upon, and escalate conflicts with controlling authority.
 ### Executive Orders, AG Opinions, Court Decisions, and Procurement — Research Results and Related Findings

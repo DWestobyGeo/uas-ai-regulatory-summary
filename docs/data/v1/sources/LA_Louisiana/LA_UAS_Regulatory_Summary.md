@@ -1,11 +1,11 @@
 # Louisiana — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 2, 2026 | **Version:** 2.0 (Phase 2 — practical interpretation complete; procurement role added August 2, 2026)
+**Research date:** August 2, 2026 | **Version:** 2.1 (Phase 2 — subjective-scope audit complete August 2, 2026)
 **Model / checkpoint:** Claude Sonnet 5 (research and drafting)
-**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v5, Amendment 2), this summary covers Louisiana **state and state-agency** UAS authorities only — municipal and parish ordinances are deferred. **Louisiana affirmatively preempts local UAS regulation by statute (La. R.S. 2:2):** the state has exclusive jurisdiction to regulate UAS, and state law supersedes any political-subdivision rule, regulation, code, or ordinance regulating UAS, subject to federal airspace sovereignty. This is a materially different posture than states with no preemption statute (e.g., Kentucky), though a local government may still set generally applicable rules of conduct for its own publicly owned property. Full citations and metadata are in `LA_UAS_Source_Register.csv`.
+**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v6, Amendment 2), this summary covers Louisiana **state and state-agency** UAS authorities only — municipal and parish ordinances are deferred. **Louisiana affirmatively preempts local UAS regulation by statute (La. R.S. 2:2):** the state has exclusive jurisdiction to regulate UAS, and state law supersedes any political-subdivision rule, regulation, code, or ordinance regulating UAS, subject to federal airspace sovereignty. This is a materially different posture than states with no preemption statute (e.g., Kentucky), though a local government may still set generally applicable rules of conduct for its own publicly owned property. Full citations and metadata are in `LA_UAS_Source_Register.csv`.
 
-> **Process note (Agent Instructions Amendment 4, August 2, 2026):** Phase 2 practical interpretation is complete for the authorities presented below. The four labeled perspectives are operational and risk-management interpretations of the verified research packet; they do not add legal requirements and are not legal advice.
+> **Process note (Agent Instructions Amendment 5, August 2, 2026):** Phase 2 practical interpretation and the completed-state subjective-scope audit are complete for the authorities presented below. The four labeled perspectives normally use one to three sentences, but may run longer when relevant and needed; they are operational and risk-management interpretations of the verified research packet, do not add legal requirements, and are not legal advice.
 
 Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.
 
@@ -25,7 +25,7 @@ Louisiana regulates UAS chiefly through a single, frequently amended criminal st
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Screen the project map for protected facilities and active emergency operations before dispatch. Establish conservative stand-off and escalation points, brief the crew on the applicable restriction, and document any source-supported authorization before entering the affected area.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Contact the protected facility's owner, operator, administrator, commander, or other official identified by the authority before mobilization and ask whether the proposed AEC mission qualifies for written approval or an employment/contractor exception. Provide the site, purpose, dates, flight area, crew and aircraft details the facility requests, and retain the signed authorization and security conditions; do not assume ordinary site access or a client work order is sufficient.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Treat the cited authority as a documented compliance gate where applicable. Preserve the facts supporting any exception or consent theory, allocate client and operator responsibilities clearly, and seek state counsel when project facts approach ambiguous or penal language.
 ### Regulation of Unmanned Aerial Systems and Unmanned Aircraft Systems; Preemption — La. R.S. 2:2
@@ -93,7 +93,7 @@ Louisiana regulates UAS chiefly through a single, frequently amended criminal st
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Classify the intended UAS-derived deliverable before mobilization and place licensed-professional review where the verified authority requires it. Keep flight acquisition, analysis, and final professional deliverable responsibilities explicit in the project workflow.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Before relying on an unlicensed or exempt delivery path, give Louisiana Legislature; Louisiana Professional Engineering and Land Surveying Board (LAPELS) a written description of the proposed UAS-derived product, its stated accuracy, and whether it will establish or certify boundaries, elevations, or authoritative locations. Ask the board to confirm the applicable license, responsible-charge, certification, or exemption path and retain the response with the project quality plan; the research packet does not establish a UAS-specific turnaround time.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Describe this source as guidance or policy, not a generally binding statute. Check whether the client or property owner incorporates it contractually, preserve the version relied upon, and escalate conflicts with controlling authority.
 ### Executive Orders, AG Opinions, Court Decisions, and Procurement — Research Results and Related Findings

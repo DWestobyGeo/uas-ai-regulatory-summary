@@ -1,12 +1,12 @@
 # Idaho — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 1, 2026 | **Version:** 2.0 (Phase 2 — practical interpretation complete; procurement role added August 2, 2026)
+**Research date:** August 1, 2026 | **Version:** 2.1 (Phase 2 — subjective-scope audit complete August 2, 2026)
 **Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent_Instructions.md v3), this summary covers Idaho **state and state-agency** UAS authorities only — local (municipal/county) ordinances and tribal rules are deferred to a later phase and are not included here. Full citations and metadata are in `ID_UAS_Source_Register.csv`.
 
 Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.
 
-> **Process note (Agent Instructions Amendment 4, August 2, 2026):** Phase 2 practical interpretation is complete for the authorities presented below. The four labeled perspectives are operational and risk-management interpretations of the verified research packet; they do not add legal requirements and are not legal advice.
+> **Process note (Agent Instructions Amendment 5, August 2, 2026):** Phase 2 practical interpretation and the completed-state subjective-scope audit are complete for the authorities presented below. The four labeled perspectives normally use one to three sentences, but may run longer when relevant and needed; they are operational and risk-management interpretations of the verified research packet, do not add legal requirements, and are not legal advice.
 
 ---
 
@@ -59,7 +59,7 @@ Idaho's UAS regulatory framework centers on a single privacy statute (§21-213) 
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Contact the specific park manager early in project scheduling — this is a discretionary, per-park approval, so lead time can vary widely by park.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Start with the site manager or permitting office for Idaho Department of Parks and Recreation before scheduling fieldwork, because property-specific conditions may control the route and timing. Request the current form, lead time, fee, insurance and FAA-document checklist, and site restrictions, then keep the signed approval and conditions in the mission file.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Get the park manager's authorization in writing (email is sufficient) and keep it in the project file; a verbal go-ahead is not a reliable compliance record.
 ### Fish and Wildlife — Idaho Fish and Game Commission
@@ -70,7 +70,7 @@ Idaho's UAS regulatory framework centers on a single privacy statute (§21-213) 
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Treat any Wildlife Management Area or IDFG access site the same as a state park for launch/landing purposes — get prior authorization before staging a crew there for environmental monitoring or habitat-mapping work. Flying over WMA land from an off-site launch point avoids this specific rule but should still respect wildlife-harassment concerns.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Contact Idaho Fish and Game Commission before fixing the mobilization date and ask for the current application or approval route, supporting-document checklist, fees, and processing estimate. Describe the proposed site, dates, purpose, aircraft, operator, and requested exception clearly, and retain the issued approval and all conditions; the captured requirement is: Yes - Commission, Director, Regional Supervisor, or designee authorization.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Because "aircraft" is expressly defined to include UAS, do not treat this as a gray area — obtain and retain written IDFG authorization before any launch/landing on Department land, the same way as a state park permit. The hunting-related restriction carries low legal exposure for standard survey work but is worth flagging to field crews during hunting season.
 ### Professional Licensing — Idaho Division of Occupational and Professional Licenses (DOPL)
@@ -81,7 +81,7 @@ Idaho's UAS regulatory framework centers on a single privacy statute (§21-213) 
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Get a readable copy of this letter before finalizing an Idaho staffing model — it directly determines whether a PLS or Certificate of Authorization needs to be on record for drone survey work, which affects hiring and subcontracting decisions.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Before relying on an unlicensed or exempt delivery path, give Idaho Division of Occupational and Professional Licenses / Board of Licensure of Professional Engineers and Professional Land Surveyors a written description of the proposed UAS-derived product, its stated accuracy, and whether it will establish or certify boundaries, elevations, or authoritative locations. Ask the board to confirm the applicable license, responsible-charge, certification, or exemption path and retain the response with the project quality plan; the research packet does not establish a UAS-specific turnaround time.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Treat the letter as agency guidance interpreting the binding licensure statute (Idaho Code Title 54, Ch. 12), not a substitute for it; request written confirmation directly from DOPL if the letter's scanned content can't be verified, since relying on an unread guidance document is not a defensible compliance position.
 ### Procurement / Equipment Restrictions

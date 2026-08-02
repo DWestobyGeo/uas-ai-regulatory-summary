@@ -1,12 +1,12 @@
 # Texas — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 1, 2026 | **Version:** 2.0 (Phase 2 — practical interpretation complete; procurement role added August 2, 2026)
-**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v5), this summary covers Texas **state and state-agency** UAS authorities only — local (municipal/county) ordinances and tribal rules are deferred to a later phase and are not included here. Texas Government Code § 423.009 (covered below) broadly preempts local UAS ordinances, which narrows the practical significance of that deferral. Full citations and metadata are in `TX_UAS_Source_Register.csv`.
+**Research date:** August 1, 2026 | **Version:** 2.1 (Phase 2 — subjective-scope audit complete August 2, 2026)
+**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v6), this summary covers Texas **state and state-agency** UAS authorities only — local (municipal/county) ordinances and tribal rules are deferred to a later phase and are not included here. Texas Government Code § 423.009 (covered below) broadly preempts local UAS ordinances, which narrows the practical significance of that deferral. Full citations and metadata are in `TX_UAS_Source_Register.csv`.
 
 Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.
 
-> **Process note (Agent Instructions Amendment 4, August 2, 2026):** Phase 2 practical interpretation is complete for the authorities presented below. The four labeled perspectives are operational and risk-management interpretations of the verified research packet; they do not add legal requirements and are not legal advice.
+> **Process note (Agent Instructions Amendment 5, August 2, 2026):** Phase 2 practical interpretation and the completed-state subjective-scope audit are complete for the authorities presented below. The four labeled perspectives normally use one to three sentences, but may run longer when relevant and needed; they are operational and risk-management interpretations of the verified research packet, do not add legal requirements, and are not legal advice.
 
 ---
 
@@ -79,7 +79,7 @@ Texas regulates UAS primarily through the "Texas Privacy Act" (Government Code C
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Identify any correctional or immigration-detention facility near a project site during pre-flight planning; because there is no standalone commercial exemption here, obtain the facility owner/operator's prior written consent before flying at or below 400 ft over or near such a facility.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Contact the protected facility's owner, operator, administrator, commander, or other official identified by the authority before mobilization and ask whether the proposed AEC mission qualifies for written approval or an employment/contractor exception. Provide the site, purpose, dates, flight area, crew and aircraft details the facility requests, and retain the signed authorization and security conditions; do not assume ordinary site access or a client work order is sufficient.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Retain written consent documentation given the absence of a general commercial exemption and the state-jail-felony exposure if contraband introduction is alleged; confirm facility classification before relying on any exemption.
 ### Tex. Penal Code § 42.15 — Operation of Unmanned Aircraft over Airport, Military Installation, or Spaceport
@@ -90,7 +90,7 @@ Texas regulates UAS primarily through the "Texas Privacy Act" (Government Code C
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Directly relevant to any AEC project near a Texas airport — the FAA-authorization defense means a standard Part 107 airspace authorization for controlled airspace near an airport can double as a state-law defense, but confirm the authorization is documented before relying on it.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Contact the protected facility's owner, operator, administrator, commander, or other official identified by the authority before mobilization and ask whether the proposed AEC mission qualifies for written approval or an employment/contractor exception. Provide the site, purpose, dates, flight area, crew and aircraft details the facility requests, and retain the signed authorization and security conditions; do not assume ordinary site access or a client work order is sufficient.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** The 2025 spaceport amendment was confirmed only via secondary legislative-tracking sources, not independently re-pulled from the amended codified text — re-verify current statutory language before citing it for a spaceport-adjacent project (e.g., Boca Chica/Starbase area work).
 ### *National Press Photographers Ass'n v. McCraw*, 90 F.4th 770 (5th Cir. 2023)
@@ -114,7 +114,7 @@ Texas regulates UAS primarily through the "Texas Privacy Act" (Government Code C
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Plan environmental-monitoring or habitat-mapping flights to avoid counting, identifying, or photographing wildlife within the rule's meaning; obtain an AMP and LOA first if a project specifically requires wildlife documentation.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Contact Texas Parks and Wildlife Department before fixing the mobilization date and ask for the current application or approval route, supporting-document checklist, fees, and processing estimate. Describe the proposed site, dates, purpose, aircraft, operator, and requested exception clearly, and retain the issued approval and all conditions; the captured requirement is: Yes — Aerial Management Permit (AMP) plus an approved Land Owner Authorization (LOA).
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Document the AMP/LOA permit chain for any UAS work with a wildlife-survey purpose; the rule's breadth warrants a conservative read for any project scope including wildlife documentation.
 ### Parks and Wildlife — Texas Parks and Wildlife Department (State Park launch/land/operate authorization)
@@ -125,7 +125,7 @@ Texas regulates UAS primarily through the "Texas Privacy Act" (Government Code C
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Build superintendent-authorization lead time into scheduling for any state-park-adjacent work; FAA Part 107 authority alone does not permit launch or landing within park boundaries.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Start with the site manager or permitting office for Texas Parks and Wildlife Department before scheduling fieldwork, because property-specific conditions may control the route and timing. Request the current form, lead time, fee, insurance and FAA-document checklist, and site restrictions, then keep the signed approval and conditions in the mission file.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Retain written TPWD/superintendent authorization in the project file; confirm current rules directly with TPWD given the low-confidence citation noted below.
 ### Transportation — Texas Department of Transportation (UAS Flight Operations and User's Manual)
@@ -136,7 +136,7 @@ Texas regulates UAS primarily through the "Texas Privacy Act" (Government Code C
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Obtain and follow the current Manual and relevant Traffic Control Plan before mobilizing on any TxDOT-scoped task order, and confirm whether PRA and UAS Coordinator pre-approval are required.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** For work subject to this policy, contact the agency project manager and Texas Department of Transportation before fixing the mobilization date. Submit the proposed aircraft and payload configuration, operator credentials, flight purpose and location, insurance evidence, and any federal authorization the agency requests; retain the agency's confirmation and project-specific conditions.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Confirm in the scope of work whether the Manual's standards are incorporated as binding contract requirements, and retain the completed PRA and insurance documentation in the project file.
 ### Procurement / Cybersecurity — Prohibited Technologies List (Office of the Governor / Texas Cyber Command)

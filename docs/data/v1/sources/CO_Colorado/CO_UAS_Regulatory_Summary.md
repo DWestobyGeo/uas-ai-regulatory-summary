@@ -1,12 +1,12 @@
 # Colorado — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 1, 2026 | **Version:** 2.0 (Phase 2 — practical interpretation complete; procurement role added August 2, 2026)
-**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v5), this summary covers Colorado **state and state-agency** UAS authorities only — local (municipal/county) ordinances and tribal rules are deferred to a later phase and are not included here. Colorado has **not** enacted a state preemption statute for local UAS ordinances (see Section 4), and secondary sources document an unusually dense and varied patchwork of municipal and county rules (Denver, Boulder, Colorado Springs, mountain resort communities, and more) — a project-specific municipal check will be necessary before this state-level picture can be treated as complete for any specific Colorado site. Full citations and metadata are in `CO_UAS_Source_Register.csv`.
+**Research date:** August 1, 2026 | **Version:** 2.1 (Phase 2 — subjective-scope audit complete August 2, 2026)
+**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v6), this summary covers Colorado **state and state-agency** UAS authorities only — local (municipal/county) ordinances and tribal rules are deferred to a later phase and are not included here. Colorado has **not** enacted a state preemption statute for local UAS ordinances (see Section 4), and secondary sources document an unusually dense and varied patchwork of municipal and county rules (Denver, Boulder, Colorado Springs, mountain resort communities, and more) — a project-specific municipal check will be necessary before this state-level picture can be treated as complete for any specific Colorado site. Full citations and metadata are in `CO_UAS_Source_Register.csv`.
 
 Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.
 
-> **Process note (Agent Instructions Amendment 4, August 2, 2026):** Phase 2 practical interpretation is complete for the authorities presented below. The four labeled perspectives are operational and risk-management interpretations of the verified research packet; they do not add legal requirements and are not legal advice.
+> **Process note (Agent Instructions Amendment 5, August 2, 2026):** Phase 2 practical interpretation and the completed-state subjective-scope audit are complete for the authorities presented below. The four labeled perspectives normally use one to three sentences, but may run longer when relevant and needed; they are operational and risk-management interpretations of the verified research packet, do not add legal requirements, and are not legal advice.
 
 ---
 
@@ -24,7 +24,7 @@ Colorado has not enacted a comprehensive, standalone UAS act. Instead, it regula
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Do not fly at or near an active emergency, accident, or wildfire scene without first obtaining permission from the coordinating law enforcement or incident-command entity and maintaining communication throughout the flight — directly relevant to any post-disaster damage assessment or infrastructure-inspection flight near an active incident.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Before any planned UAS work near an active emergency response, establish contact with the law-enforcement, fire, EMS, or incident-command entity coordinating the scene and ask how it grants operating permission and maintains in-flight communications. Retain the permission and communication plan, brief the pilot on immediate-compliance expectations, and do not assume a client request substitutes for response-agency coordination.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Document the specific permission obtained from the coordinating entity (agency name, contact, time granted) before and during any flight near an active emergency response, since the exception is conditioned on ongoing communication and compliance, not merely initial permission.
 ### Colo. Rev. Stat. § 18-7-801 — Criminal Invasion of Privacy (camera-agnostic)

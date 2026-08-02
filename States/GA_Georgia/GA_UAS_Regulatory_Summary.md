@@ -1,12 +1,12 @@
 # Georgia — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 1, 2026 | **Version:** 2.0 (Phase 2 — practical interpretation complete; procurement role added August 2, 2026)
-**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v5), this summary covers Georgia **state and state-agency** UAS authorities only — local (municipal/county) ordinances and tribal rules are deferred to a later phase and are not included here. Georgia broadly preempts local UAS ordinances (O.C.G.A. § 6-1-4(b), covered below), which narrows the practical significance of that deferral, though a 2025 amendment carved out a new, narrow local-ordinance authority specific to mass public gatherings. Full citations and metadata are in `GA_UAS_Source_Register.csv`.
+**Research date:** August 1, 2026 | **Version:** 2.1 (Phase 2 — subjective-scope audit complete August 2, 2026)
+**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v6), this summary covers Georgia **state and state-agency** UAS authorities only — local (municipal/county) ordinances and tribal rules are deferred to a later phase and are not included here. Georgia broadly preempts local UAS ordinances (O.C.G.A. § 6-1-4(b), covered below), which narrows the practical significance of that deferral, though a 2025 amendment carved out a new, narrow local-ordinance authority specific to mass public gatherings. Full citations and metadata are in `GA_UAS_Source_Register.csv`.
 
 Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.
 
-> **Process note (Agent Instructions Amendment 4, August 2, 2026):** Phase 2 practical interpretation is complete for the authorities presented below. The four labeled perspectives are operational and risk-management interpretations of the verified research packet; they do not add legal requirements and are not legal advice.
+> **Process note (Agent Instructions Amendment 5, August 2, 2026):** Phase 2 practical interpretation and the completed-state subjective-scope audit are complete for the authorities presented below. The four labeled perspectives normally use one to three sentences, but may run longer when relevant and needed; they are operational and risk-management interpretations of the verified research packet, do not add legal requirements, and are not legal advice.
 
 ---
 
@@ -48,7 +48,7 @@ Georgia has regulated UAS at the state level since 2017 through O.C.G.A. § 6-1-
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Obtain prior written authorization from the warden or superintendent before any inspection, mapping, or documentation flight at or near a Georgia correctional facility, jail, or detention center, even though not strictly mandatory for lawful commercial work.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Contact the protected facility's owner, operator, administrator, commander, or other official identified by the authority before mobilization and ask whether the proposed AEC mission qualifies for written approval or an employment/contractor exception. Provide the site, purpose, dates, flight area, crew and aircraft details the facility requests, and retain the signed authorization and security conditions; do not assume ordinary site access or a client work order is sufficient.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Document the specific facility authorization obtained given the felony exposure; confirm the target facility qualifies as a "place of incarceration" under the broad statutory definition.
 ### O.C.G.A. §§ 27-3-12(a), 27-3-13 — Hunting-Related Restrictions Applied to UAS
@@ -70,7 +70,7 @@ Georgia has regulated UAS at the state level since 2017 through O.C.G.A. § 6-1-
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Submit a complete waiver application well in advance of any state-park or historic-site UAS work, and avoid flight paths over populated areas.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Start with the site manager or permitting office for Georgia Department of Natural Resources, Parks, Recreation and Historic Sites Division before scheduling fieldwork, because property-specific conditions may control the route and timing. Request the current form, lead time, fee, insurance and FAA-document checklist, and site restrictions, then keep the signed approval and conditions in the mission file.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Retain the Division Director's approval in the project file; each project requires its own application since standing approvals are unavailable.
 ### Professional Licensing — Georgia State Board of Registration for Professional Engineers and Land Surveyors

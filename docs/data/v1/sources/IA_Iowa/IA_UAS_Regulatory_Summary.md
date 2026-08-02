@@ -1,11 +1,11 @@
 # Iowa — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 2, 2026 | **Version:** 2.0 (Phase 2 — practical interpretation complete; procurement role added August 2, 2026)
+**Research date:** August 2, 2026 | **Version:** 2.1 (Phase 2 — subjective-scope audit complete August 2, 2026)
 **Model / checkpoint:** Claude Sonnet 5 (research and drafting)
-**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v5, Amendment 2), this summary covers Iowa **state and state-agency** UAS authorities only — municipal and county ordinances are deferred. **No statewide statute preempting local UAS ordinances was located for Iowa.** In practice, Iowa cities appear to have declined to adopt standalone drone ordinances, and the Iowa League of Cities (a non-authoritative municipal advisory association) advises member cities to consult the FAA before doing so — but this is custom and advisory guidance, not a preemption statute. Full citations and metadata are in `IA_UAS_Source_Register.csv`.
+**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v6, Amendment 2), this summary covers Iowa **state and state-agency** UAS authorities only — municipal and county ordinances are deferred. **No statewide statute preempting local UAS ordinances was located for Iowa.** In practice, Iowa cities appear to have declined to adopt standalone drone ordinances, and the Iowa League of Cities (a non-authoritative municipal advisory association) advises member cities to consult the FAA before doing so — but this is custom and advisory guidance, not a preemption statute. Full citations and metadata are in `IA_UAS_Source_Register.csv`.
 
-> **Process note (Agent Instructions Amendment 4, August 2, 2026):** Phase 2 practical interpretation is complete for the authorities presented below. The four labeled perspectives are operational and risk-management interpretations of the verified research packet; they do not add legal requirements and are not legal advice.
+> **Process note (Agent Instructions Amendment 5, August 2, 2026):** Phase 2 practical interpretation and the completed-state subjective-scope audit are complete for the authorities presented below. The four labeled perspectives normally use one to three sentences, but may run longer when relevant and needed; they are operational and risk-management interpretations of the verified research packet, do not add legal requirements, and are not legal advice.
 
 Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.
 
@@ -60,7 +60,7 @@ Iowa's actual enacted UAS-specific statutory scheme is materially narrower than 
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Screen the project map for protected facilities and active emergency operations before dispatch. Establish conservative stand-off and escalation points, brief the crew on the applicable restriction, and document any source-supported authorization before entering the affected area.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Contact the facility authority identified by Iowa General Assembly before mobilization; do not treat client access or a general work order as the required UAS approval. Ask for the current written-authorization route, security review, notice period, required crew and aircraft information, and on-site coordination conditions, and retain the issued authorization.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Treat the cited authority as a documented compliance gate where applicable. Preserve the facts supporting any exception or consent theory, allocate client and operator responsibilities clearly, and seek state counsel when project facts approach ambiguous or penal language.
 ### Hunting from Aircraft Prohibited — DNR Construction Applying the Statute to Drones — Iowa Code §481A.120
@@ -82,7 +82,7 @@ Iowa's actual enacted UAS-specific statutory scheme is materially narrower than 
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Classify the intended UAS-derived deliverable before mobilization and place licensed-professional review where the verified authority requires it. Keep flight acquisition, analysis, and final professional deliverable responsibilities explicit in the project workflow.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Before relying on an unlicensed or exempt delivery path, give Iowa Engineering and Land Surveying Examining Board / Iowa Department of Inspections, Appeals, and Licensing a written description of the proposed UAS-derived product, its stated accuracy, and whether it will establish or certify boundaries, elevations, or authoritative locations. Ask the board to confirm the applicable license, responsible-charge, certification, or exemption path and retain the response with the project quality plan; the research packet does not establish a UAS-specific turnaround time.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Describe this source as guidance or policy, not a generally binding statute. Check whether the client or property owner incorporates it contractually, preserve the version relied upon, and escalate conflicts with controlling authority.
 ### Executive Orders, AG Opinions, Court Decisions, Procurement, Preemption, and Related Negative/Discrepancy Findings

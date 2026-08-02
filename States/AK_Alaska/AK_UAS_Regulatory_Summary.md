@@ -1,10 +1,10 @@
 # Alaska — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 1, 2026 | **Version:** 2.0 (Phase 2 — practical interpretation complete; procurement role added August 2, 2026)
-**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v5, Amendment 2), this summary covers Alaska **state and state-agency** UAS authorities only — local (municipal/borough) ordinances and tribal rules are deferred to a later phase and are not included here. Alaska has not enacted a comprehensive statewide UAS-preemption statute, so a municipal ordinance patchwork (e.g., the Municipality of Anchorage's park rules) may be operationally significant — confirm local rules for any specific project site in a later research phase. Full citations and metadata are in `AK_UAS_Source_Register.csv`.
+**Research date:** August 1, 2026 | **Version:** 2.1 (Phase 2 — subjective-scope audit complete August 2, 2026)
+**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v6, Amendment 2), this summary covers Alaska **state and state-agency** UAS authorities only — local (municipal/borough) ordinances and tribal rules are deferred to a later phase and are not included here. Alaska has not enacted a comprehensive statewide UAS-preemption statute, so a municipal ordinance patchwork (e.g., the Municipality of Anchorage's park rules) may be operationally significant — confirm local rules for any specific project site in a later research phase. Full citations and metadata are in `AK_UAS_Source_Register.csv`.
 
-> **Process note (Agent Instructions Amendment 4, August 2, 2026):** Phase 2 practical interpretation is complete for the authorities presented below. The four labeled perspectives are operational and risk-management interpretations of the verified research packet; they do not add legal requirements and are not legal advice.
+> **Process note (Agent Instructions Amendment 5, August 2, 2026):** Phase 2 practical interpretation and the completed-state subjective-scope audit are complete for the authorities presented below. The four labeled perspectives normally use one to three sentences, but may run longer when relevant and needed; they are operational and risk-management interpretations of the verified research packet, do not add legal requirements, and are not legal advice.
 
 Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.
 
@@ -48,7 +48,7 @@ Alaska's UAS-specific statutory framework is narrower than most states researche
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Plan environmental and mapping flights to avoid conduct that could be characterized as locating, pursuing, disturbing, or harassing wildlife. Coordinate mission timing and stand-off distances with the land manager when project work overlaps sensitive habitat or hunting activity.
-- **Agency Practitioner:** Not applicable — no agency process.
+- **Agency Practitioner:** Start with the site manager or permitting office for Alaska Department of Natural Resources, Division of Parks and Outdoor Recreation before scheduling fieldwork, because property-specific conditions may control the route and timing. Request the current form, lead time, fee, insurance and FAA-document checklist, and site restrictions, then keep the signed approval and conditions in the mission file.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Document the applicability analysis and any exception relied upon in the project file. Align the scope, client representations, and operator procedures with the verified authority, and seek state counsel if material facts fall outside its clear terms.
 ### 11 AAC 20.020 — Aircraft Restricted to Bold Airstrip in Chugach State Park (Ambiguous UAS Application)

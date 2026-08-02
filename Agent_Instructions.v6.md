@@ -4,7 +4,7 @@
 
 **Status:** Do not begin or resume research until explicitly assigned.
 
-**Version:** 5 — August 2, 2026. Consolidates and supersedes all earlier instructions and amendments.
+**Version:** 6 — August 2, 2026. Consolidates and supersedes all earlier instructions and amendments.
 
 **Amendment 1 — August 1, 2026:** Added Section 9 ("Non-Regulatory Context: News, Enforcement, and Incidents") and renumbered subsequent sections accordingly.
 
@@ -13,6 +13,8 @@
 **Amendment 3 — August 1, 2026:** Adds a required `Model / checkpoint` line to the printable summary's metadata block (Section 8), identifying the AI model (and version/checkpoint, if available) used to produce the document's research and drafting. Applies to all states researched from this point forward; earlier states are not retrofitted solely for this purpose.
 
 **Amendment 4 — August 2, 2026:** Adds the UAS Procurement Expert role and `practical_interpretation_uas_procurement_expert` field; expands Phase 2 to four interpretation passes; standardizes all completed states on a 33-field schema; and authorizes the current Phase 2/legacy-retrofit assignment for states whose objective research is already complete.
+
+**Amendment 5 — August 2, 2026:** Clarifies that each subjective practical-interpretation opinion is normally one to three sentences, while permitting a longer opinion when needed to explain a material ambiguity, multi-step process, phased requirement, competing operational considerations, or other issue that cannot be responsibly conveyed within three sentences. It also requires the QA pass to test substantive role applicability rather than treating a nonempty field or an `N/A` marker as sufficient by itself.
 
 ---
 
@@ -35,12 +37,14 @@ Federal FAA rules are the nationwide baseline. Do not restate routine Part 107 r
 
 Work proceeds through six specialized roles, applied per state as batched passes covering every record in that state in one pass per role — not as a separate call per record — unless a specific record is flagged for isolated review (see Section 5.2).
 
+For each of the four subjective drafting roles below, **one to three sentences is the normal length for each record**. This is a default, not a hard cap: the drafter may provide a longer opinion when additional explanation is relevant and genuinely needed to make the interpretation accurate, useful, or responsibly qualified. Longer opinions should remain focused on that role's scope, avoid repeating the objective summary, and use only the length needed to address the material issue.
+
 - **Research Expert.** Owns Sections 3–7: builds the coverage checklist, discovers and verifies primary sources, and drafts the objective `summary` field and full metadata for every source-register record. Also tracks industry/news sources for the Non-Regulatory Context section (Section 9) and is responsible for flagging when a previously logged record needs a currency recheck (superseding amendment, repeal, litigation, agency policy change). Personality: precise, citation-first, skeptical of secondary sources, and writes nothing that isn't directly supported by verified primary text.
 - **AEC Industry Expert.** Drafts `practical_interpretation_aec_expert` — the operational read a UAS program manager at an AEC (architecture/engineering/construction) consulting firm would give: flight planning, field execution, scheduling, equipment, and program-management implications.
-- **Agency Practitioner.** Drafts `practical_interpretation_agency_practitioner` — the perspective of someone experienced working the cited authority from inside the issuing agency: how to apply, typical wait times, required documentation, where to submit, and known practical friction points. Populate only when the record involves an application, permit, waiver, or agency-administered process; otherwise record `N/A — no agency process involved`.
+- **Agency Practitioner.** Drafts `practical_interpretation_agency_practitioner` — the perspective of someone experienced working the cited authority from inside the issuing agency: how to apply, typical wait times, required documentation, where to submit, and known practical friction points. Populate when the record involves an agency-administered application, permit, waiver, registration, notification, approval, professional license, or comparable process; otherwise record `N/A — no agency process involved`. Do not invent process details absent from the verified packet: identify what the applicant should confirm with the named agency when the source does not specify a form, route, fee, documentation requirement, or processing time.
 - **UAS Procurement Expert.** Drafts `practical_interpretation_uas_procurement_expert` — the equipment-acquisition and fleet-management read for the person purchasing UAS aircraft, payloads, software, components, services, and support for an AEC firm pursuing work in the state. Address verified manufacturer or country-of-origin restrictions, cybersecurity and component rules, public-client contract flow-down risk, grandfathering, documentation, interoperability, lifecycle support, and replacement planning. Distinguish restrictions binding public agencies from requirements expressly applicable to consultants. Do not recommend a named brand or declare a product compliant without current, authoritative support. When the record has no meaningful equipment-selection or procurement implication, record `N/A — no procurement or equipment-selection implication identified`.
 - **Legal Counsel.** Drafts `practical_interpretation_legal_counsel` — the risk/compliance read: documentation, contracts, liability, and escalation triggers.
-- **Editorial/QA Reviewer** (review only, not a drafting role). Confirms the objective `summary` matches the cited primary text with no drift or added inference — the exact failure mode caught and avoided for Alabama's misreported § 9-11-270 in this program — checks tone, format, and consistency across the four interpretation fields, confirms the record set still validates against the current schema (column count, controlled values, no malformed rows), and confirms Section 12's QC gate. Where practical, run this as an independent pass that has not seen the drafting reasoning, since independence is what makes the fact-check meaningful.
+- **Editorial/QA Reviewer** (review only, not a drafting role). Confirms the objective `summary` matches the cited primary text with no drift or added inference — the exact failure mode caught and avoided for Alabama's misreported § 9-11-270 in this program — checks tone, format, and consistency across the four interpretation fields, tests whether every role's opinion or `N/A` disposition is substantively appropriate, confirms the record set still validates against the current schema (column count, controlled values, no malformed rows), and confirms Section 12's QC gate. Where practical, run this as an independent pass that has not seen the drafting reasoning, since independence is what makes the fact-check meaningful.
 
 ## 2. Current Scope
 
@@ -184,7 +188,7 @@ Use these fields consistently:
 Field rules:
 
 - `summary`: objective only; normally 50–120 words.
-- Each practical-interpretation field: normally 20–45 words. `practical_interpretation_agency_practitioner` may instead read `N/A — no agency process involved`; `practical_interpretation_uas_procurement_expert` may instead read `N/A — no procurement or equipment-selection implication identified`.
+- Each practical-interpretation field: normally one to three sentences, with longer treatment allowed when relevant and needed under Section 1.1. `practical_interpretation_agency_practitioner` may instead read `N/A — no agency process involved`; `practical_interpretation_uas_procurement_expert` may instead read `N/A — no procurement or equipment-selection implication identified`.
 - Paraphrase by default. Use a short quotation only when the exact wording is materially important.
 - Use controlled values consistently; do not alternate synonyms for the same category.
 - Use `Unknown` or `Unresolved`, not guesses.
@@ -231,10 +235,12 @@ For each material authority included in Sections 2 or 3, use:
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** One concise operational bullet addressing flight planning, field execution, equipment, scheduling, or program management.
-- **Agency Practitioner:** One concise bullet on the practical process — how to apply, typical wait time, required documentation, where to submit — when the record involves an agency-administered process; state `Not applicable — no agency process` when it does not.
-- **UAS Procurement Expert:** One concise equipment-acquisition or fleet-management bullet addressing only supported purchasing implications; state `Not applicable — no procurement or equipment-selection implication identified` when none exists.
-- **AEC Industry Legal Counsel:** One concise risk/compliance bullet addressing documentation, contracts, liability, or escalation to counsel.
+- **AEC Industry UAS Expert:** Normally one to three sentences addressing flight planning, field execution, equipment, scheduling, or program management.
+- **Agency Practitioner:** Normally one to three sentences on the practical process — how to apply, typical wait time, required documentation, where to submit, or how to resolve a process ambiguity — when the record involves an agency-administered application, permit, waiver, registration, notification, approval, or professional-licensing process; state `Not applicable — no agency process` when it does not.
+- **UAS Procurement Expert:** Normally one to three sentences addressing only supported equipment-acquisition or fleet-management implications; state `Not applicable — no procurement or equipment-selection implication identified` when none exists.
+- **AEC Industry Legal Counsel:** Normally one to three sentences addressing documentation, contracts, liability, or escalation to counsel.
+
+Any of these opinions may exceed three sentences when the record presents a material ambiguity, several distinct compliance paths, phased dates, interacting contract and operator obligations, or another issue that needs additional explanation. Do not lengthen an opinion merely to restate the objective summary.
 
 During Phase 1 (Section 5.1), before the batched interpretation pass has run, show all four bullets as `Pending Phase 2 interpretation pass` rather than omitting them.
 
@@ -313,6 +319,8 @@ Before completing a state, confirm:
 - state-agency-only rules are not presented as private-operator requirements;
 - objective summaries contain no advice or unsupported inference;
 - practical interpretations comply with Section 13 (Interpretation Guardrails);
+- each of the four subjective fields has been reviewed for substantive applicability; a populated field, repeated fallback, or `N/A` marker is not accepted without confirming that the role's scoped opinion is either actually provided or genuinely inapplicable;
+- subjective opinions are normally one to three sentences, with any longer treatment justified by the record's complexity and kept within the assigned role's scope;
 - general non-UAS laws and deferred local/tribal material were excluded;
 - duplicate and non-substantive sources were removed;
 - the report remains approximately two printable pages, plus a bounded Non-Regulatory Context section per Section 9;
