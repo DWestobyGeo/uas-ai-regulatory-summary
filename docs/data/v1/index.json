@@ -268,6 +268,14 @@
       "json_url": "data/v1/WI.json"
     },
     {
+      "state": "West Virginia",
+      "state_abbr": "WV",
+      "state_fips": "54",
+      "record_count": 9,
+      "last_updated": "2026-08-02",
+      "json_url": "data/v1/WV.json"
+    },
+    {
       "state": "Wyoming",
       "state_abbr": "WY",
       "state_fips": "56",
@@ -276,5 +284,5 @@
       "json_url": "data/v1/WY.json"
     }
   ],
-  "state_count": 34
+  "state_count": 35
 }
