@@ -43,8 +43,8 @@ def validate_shared_shell(errors: list[str]) -> None:
     release = load_json(DOCS / "ui-release.json", errors)
 
     required_html = {
-        'href="style.css"': "shared stylesheet reference",
-        'src="app.js"': "shared JavaScript reference",
+        'href="style.css?v=': "versioned shared stylesheet reference",
+        'src="app.js?v=': "versioned shared JavaScript reference",
         'id="main-content"': "main-content landmark",
         'id="state-select"': "state selector",
         'id="state-content"': "state content container",
@@ -87,11 +87,15 @@ def validate_shared_shell(errors: list[str]) -> None:
         fail(errors, "docs/DESIGN_SYSTEM.md does not document state style inheritance.")
 
     html_match = re.search(r'data-ui-version="([^"]+)"', html)
+    css_asset_match = re.search(r'href="style\.css\?v=([^"]+)"', html)
+    js_asset_match = re.search(r'src="app\.js\?v=([^"]+)"', html)
     js_match = re.search(r'var UI_VERSION = "([^"]+)"', js)
     css_match = re.search(r'UI version:\s*([^\s*]+)', css)
     release_version = release.get("ui_version") if isinstance(release, dict) else None
     versions = {
         "HTML": html_match.group(1) if html_match else None,
+        "CSS asset URL": css_asset_match.group(1) if css_asset_match else None,
+        "JavaScript asset URL": js_asset_match.group(1) if js_asset_match else None,
         "JavaScript": js_match.group(1) if js_match else None,
         "CSS": css_match.group(1) if css_match else None,
         "release manifest": release_version,

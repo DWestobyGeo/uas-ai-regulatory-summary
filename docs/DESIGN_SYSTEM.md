@@ -210,7 +210,7 @@ Breakpoints support content; do not add device-specific overrides without testin
 1. Change shared tokens or components in `docs/style.css`.
 2. Change shared structure in `docs/index.html` only when necessary.
 3. Change shared rendering behavior in `docs/app.js`.
-4. Increment `ui_version` in `docs/ui-release.json`, the `<html data-ui-version>` attribute, the `UI_VERSION` constant, and the CSS header comment.
+4. Increment `ui_version` in `docs/ui-release.json`, the `<html data-ui-version>` attribute, the `style.css?v=` and `app.js?v=` asset URLs, the `UI_VERSION` constant, and the CSS header comment. The asset query versions prevent a newly deployed shell from using stale cached CSS or JavaScript.
 5. Update this document when a token, component contract, breakpoint, or content rule changes.
 6. Run `python scripts/validate_site.py`.
 7. Test at least one short, one medium, and one long state at desktop and mobile widths, plus print.
