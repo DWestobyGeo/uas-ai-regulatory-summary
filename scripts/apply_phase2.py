@@ -32,6 +32,8 @@ def combined(row: dict[str, str]) -> str:
 def approval_process(row: dict[str, str]) -> bool:
     text = combined(row)
     permit = row.get("permit_or_approval_required", "")
+    if permit.strip().lower().startswith("no"):
+        return False
     return (
         not permit.lower().startswith("no")
         and has(permit, "yes", "required", "approval", "permit", "license", "register", "consent", "notice", "authorization")
@@ -43,9 +45,14 @@ def approval_process(row: dict[str, str]) -> bool:
 
 def agency_process(row: dict[str, str]) -> bool:
     text = combined(row)
+    focus = " | ".join(row.get(k, "") for k in ("source_title", "uas_topic", "regulated_party", "regulated_activity", "requirement_type"))
     permit = row.get("permit_or_approval_required", "")
     authority = row.get("issuing_authority", "")
     if has(permit, "landowner consent", "property owner consent", "owner's consent", "owner consent", "owner or occupant consent", "property right", "private-property permission") and has(authority, "legislature", "general assembly"):
+        return False
+    if has(permit, "no agency permit", "no statewide operator permit"):
+        return False
+    if has(permit, "no general state permit") and not has(focus, "facility", "correction", "school", "critical infrastructure"):
         return False
     return approval_process(row) or has(
         row.get("requirement_type", ""), "report", "filing", "submission"
@@ -63,7 +70,7 @@ def aec_opinion(row: dict[str, str]) -> str:
             "This record does not directly regulate an ordinary privately controlled AEC flight, but it can govern a mission performed for or integrated into the named public agency's program. "
             "Define in the scope and flight plan who authorizes the mission, controls the aircraft, receives the data, and is responsible for the cited records or use restrictions."
         )
-    if str(row.get("aec_relevance", "")).lower().startswith("low") or has(row.get("regulated_party", ""), "sex offender", "registered offender"):
+    if str(row.get("aec_relevance", "")).lower().startswith("low") or has(combined(row), "sex-offender", "sex offender", "registered offender", "protective order"):
         return (
             "This record has no routine effect on an AEC mission or ordinary fleet operation because it applies to a separately regulated person or activity. "
             "Do not treat it as a general UAS operating rule; address it only if the stated regulated-party condition is actually present."
@@ -104,12 +111,27 @@ def aec_opinion(row: dict[str, str]) -> str:
             f"Use a mission-specific collection plan for {scope} that limits camera angle, dwell time, audio, zoom, thermal capture, and retention to the contracted purpose. "
             "Brief the crew on aborting or redirecting collection when people, residences, or unrelated activity enter the sensor footprint."
         )
+    if has(focus, "local regulation", "political subdivision", "municipal", "county", "preemption"):
+        return (
+            "Use the state rule to identify what a political subdivision may regulate, then check only the controlling property's published operating terms before launch. "
+            "Record the applicable boundary, property owner, designated-use area, notice, and permission status in the flight packet without assuming that state preemption eliminates property-use conditions."
+        )
+    if has(row.get("requirement_type", ""), "exemption from state aircraft registration"):
+        return (
+            "Do not add a Virginia aircraft-registration task for the unmanned aircraft covered by this express exemption. "
+            "Keep the exemption citation with the fleet compliance record while continuing to screen for mission-specific property, facility, wildlife, and client requirements."
+        )
     if has(focus, "emergency", "firefight", "disaster", "incident", "search and rescue"):
         return (
             f"Make active emergency operations a dispatch and in-field stop-work check for {scope}. "
             "The remote pilot should have a clear deconfliction contact and an immediate land-or-relocate procedure if responders, temporary restrictions, or crewed aircraft appear."
         )
     if approval_process(row):
+        if has(authority, "legislature", "general assembly"):
+            return (
+                f"Treat the applicable written consent or authorization under {row['citation']} as a pre-mobilization gate and ensure it covers the site, dates, aircraft, crew, payload, and purpose. "
+                "Do not lock the field schedule until the approving person and any notice, boundary, insurance, or operating conditions are documented."
+            )
         return (
             f"Treat the {authority} process as a pre-mobilization gate: confirm the current submission route and obtain written authorization that covers the site, dates, aircraft, pilots, payload, and purpose. "
             "Do not lock the field schedule until agency lead time and any insurance, notification, or site-condition requirements are known."
@@ -139,7 +161,10 @@ def agency_opinion(row: dict[str, str]) -> str:
             "Confirm the current form, reporting period, responsible agency contact, amendment method, and whether contractor-held flight or data records must be supplied to the reporting entity."
         )
     authority = row["issuing_authority"]
-    if has(authority, "legislature", "general assembly"):
+    focus = " | ".join(row.get(k, "") for k in ("source_title", "uas_topic", "regulated_party", "regulated_activity", "requirement_type"))
+    if has(focus, "political subdivision", "local property", "local regulation"):
+        authority = "controlling political subdivision or property manager"
+    elif has(authority, "legislature", "general assembly"):
         authority = row["jurisdiction_name"] if row["jurisdiction_type"].lower() != "state" else "named facility or administering agency"
     permit = row["permit_or_approval_required"].strip()
     text = combined(row)
@@ -170,14 +195,21 @@ def procurement_opinion(row: dict[str, str]) -> str:
     text = combined(row)
     focus = " | ".join(row.get(k, "") for k in ("source_title", "uas_topic", "regulated_party", "regulated_activity", "requirement_type"))
     title = row["source_title"]
-    if has(row.get("regulated_party", ""), "sex offender", "registered offender") or str(row.get("aec_relevance", "")).lower().startswith("low"):
+    if has(combined(row), "sex-offender", "sex offender", "registered offender", "protective order"):
         return "N/A — no procurement or equipment-selection implication identified"
     if has(focus, "seller notice", "seller disclosure", "dealer notice", "sale of a drone", "selling a drone"):
         return (
             "Retain the required point-of-sale notice with the purchase record and include it in receiving and asset-onboarding checks. "
             "The notice is not proof that the aircraft is registered or mission-eligible, so procurement should separately verify the model, serial number, applicable registrations, software account, and operating documentation."
         )
-    if has(focus, "manufacturer", "country-of-origin", "country of origin", "covered foreign", "cybersecurity", "procurement", "approved list", "supply chain", "replacement program"):
+    if has(row.get("requirement_type", ""), "exemption from state aircraft registration") or (
+        row.get("permit_or_approval_required", "").lower().startswith("no") and has(focus, "aircraft registration")
+    ):
+        return (
+            "Do not create a state-registration purchasing gate where this record expressly exempts unmanned aircraft. "
+            "Keep federal registration and asset records current, and separately check whether a mission-specific permit, property rule, weight threshold, or public-client specification still affects the selected system."
+        )
+    if has(focus, "manufacturer", "country-of-origin", "country of origin", "covered foreign", "cybersecurity", "approved list", "supply chain", "replacement program"):
         return (
             f"Treat {title} as a time-sensitive eligibility check at solicitation and again before purchase or assignment to a public project. "
             "Maintain manufacturer and component attestations, model and serial inventories, software and data-hosting details, funding-source restrictions, and a replacement path; do not assume a restriction on a public owner automatically binds a consultant unless the contract says so."
