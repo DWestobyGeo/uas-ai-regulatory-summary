@@ -2,6 +2,8 @@
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
 **Research date:** August 1, 2026 | **Version:** 2.1 (Phase 2 — subjective-scope audit complete August 2, 2026)
+**Model / checkpoint:** Objective research and Phase 2 model/checkpoint were not recorded in this legacy state packet.
+**Interpretation scope:** Agent Instructions v6 (August 2, 2026)
 **Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v6), this summary covers Colorado **state and state-agency** UAS authorities only — local (municipal/county) ordinances and tribal rules are deferred to a later phase and are not included here. Colorado has **not** enacted a state preemption statute for local UAS ordinances (see Section 4), and secondary sources document an unusually dense and varied patchwork of municipal and county rules (Denver, Boulder, Colorado Springs, mountain resort communities, and more) — a project-specific municipal check will be necessary before this state-level picture can be treated as complete for any specific Colorado site. Full citations and metadata are in `CO_UAS_Source_Register.csv`.
 
 Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.

@@ -4,6 +4,7 @@
 **Research date:** August 2, 2026
 **Version:** 2.0 (Phase 2 — practical interpretation complete)
 **Model / checkpoint:** Objective research model retained from Phase 1; Phase 2 interpretations drafted with OpenAI GPT-5 (Codex; exact checkpoint unavailable)
+**Interpretation scope:** Agent Instructions v6 (August 2, 2026)
 **Scope note:** This summary covers Montana state and state-agency-level UAS authority only. FAA Part 107 is the nationwide operating baseline and is not restated except where a Montana source expressly relies on or modifies it. Local (municipal/county) UAS ordinances and tribal UAS considerations are deferred under the current research program and are not researched here, although Montana's state/local preemption posture is addressed because it is itself a state-level finding: Montana has **not** broadly preempted local UAS ordinances. The only located preemption is narrow and single-subject — Mont. Code Ann. § 7-1-111(20) bars a local self-governing unit from enacting an ordinance governing the private use of a UAV *in relation to a wildfire*. Local ordinances on other UAS subjects (e.g., a municipal park drone restriction) are not addressed by this narrow provision and are outside the current research phase.
 
 > **Process note:** Objective research is retained from the Phase 1 source packet. The four practical-interpretation roles were completed in Phase 2 on 2026-08-02 using OpenAI GPT-5 (Codex; exact checkpoint unavailable).

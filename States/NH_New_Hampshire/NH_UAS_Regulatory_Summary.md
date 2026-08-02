@@ -1,5 +1,13 @@
 # New Hampshire UAS Regulatory Summary
 
+**Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
+**Research date:** August 2, 2026
+**Version:** 2.0 (Phase 2 — practical interpretation complete)
+**Model / checkpoint:** Objective research model retained from Phase 1; Phase 2 interpretations drafted with OpenAI GPT-5 (Codex; exact checkpoint unavailable).
+**Interpretation scope:** Agent Instructions v6 (August 2, 2026)
+**Scope note:** This summary covers New Hampshire state and state-agency-level UAS authority only. FAA Part 107 remains the nationwide operating baseline; local, tribal, and live-airspace layers are deferred under the current research scope.
+
+> **Process note:** Objective research is retained from the Phase 1 source packet. The four practical-interpretation roles were completed in Phase 2 on 2026-08-02; model provenance is recorded above.
 ## 1. State UAS Regulatory Overview
 
 New Hampshire now has a substantial UAS-specific framework. RSA 644:23 converts specified Part 107 violations into state offenses and separately prohibits privacy violations, emergency-response interference, interference with crewed aircraft or airports, certain correctional-facility operations, and weaponized or projectile-capable small UAS. Fish and Game rules regulate wildlife-taking, surveillance of hunters, and operations on Department lands; DNCR requires a permit or contract to launch or land on its reservations. Aerial pesticide work, UNH property, and government procurement add mission- or client-specific controls. The general aircraft-registration statute also appears by its definitions to reach federally registered UAS, but NHDOT publishes no UAS-specific implementation guidance, so that point requires direct agency confirmation.

@@ -407,6 +407,15 @@ def update_summary(path: Path, rows: list[dict[str, str]]) -> tuple[int, list[st
         "**Model / checkpoint:** Objective research model retained from Phase 1; Phase 2 interpretations drafted with OpenAI GPT-5 (Codex; exact checkpoint unavailable)",
         text,
     )
+    if "**Model / checkpoint:**" not in text:
+        model_line = "**Model / checkpoint:** Objective research model retained from Phase 1; Phase 2 interpretations drafted with OpenAI GPT-5 (Codex; exact checkpoint unavailable)\n"
+        scope_match = re.search(r"(?m)^\*\*Scope note:\*\*", text)
+        if scope_match:
+            text = text[:scope_match.start()] + model_line + text[scope_match.start():]
+    if "**Interpretation scope:**" not in text and "**Model / checkpoint:**" in text:
+        model_match = re.search(r"(?m)^\*\*Model / checkpoint:\*\*.*$", text)
+        if model_match:
+            text = text[:model_match.end()] + "\n**Interpretation scope:** Agent Instructions v6 (August 2, 2026)" + text[model_match.end():]
     text = re.sub(
         r"(?ms)^> \*\*(?:Process note|AI research notice)[^\n]*\*\*.*?(?=\n\n)",
         "> **Process note:** Objective research is retained from the Phase 1 source packet. The four practical-interpretation roles were completed in Phase 2 on 2026-08-02 using OpenAI GPT-5 (Codex; exact checkpoint unavailable).",

@@ -1,5 +1,13 @@
 # North Dakota UAS Regulatory Summary
 
+**Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
+**Research date:** August 2, 2026
+**Version:** 2.0 (Phase 2 — practical interpretation complete)
+**Model / checkpoint:** Objective research model retained from Phase 1; Phase 2 interpretations drafted with OpenAI GPT-5 (Codex; exact checkpoint unavailable).
+**Interpretation scope:** Agent Instructions v6 (August 2, 2026)
+**Scope note:** This summary covers North Dakota state and state-agency-level UAS authority only. FAA Part 107 remains the nationwide operating baseline; local, tribal, and live-airspace layers are deferred under the current research scope.
+
+> **Process note:** Objective research is retained from the Phase 1 source packet. The four practical-interpretation roles were completed in Phase 2 on 2026-08-02; model provenance is recorded above.
 ## 1. State UAS Regulatory Overview
 
 North Dakota combines generally applicable aircraft rules with several targeted UAS provisions. Broad aircraft definitions support application of low-flight, unsafe-operation, impairment, landing-consent, liability, and wildlife protections to drones. The UAS surveillance chapter primarily controls law enforcement and court-authorized surveillance rather than routine private mapping. Commercial project teams also face drone-inclusive harassment and stalking laws, Parks and Recreation authorization, hunter-interference limits, a detailed unmanned aerial-applicator licensing system, NDDOT survey standards, and institutional controls on public-university property. Ordinary UAS do not require separate state registration unless used for aerial application, according to the Aeronautics Commission.

@@ -4,6 +4,7 @@
 **Research date:** August 2, 2026
 **Version:** 2.0 (Phase 2 — practical interpretation complete)
 **Model / checkpoint:** Objective research model retained from Phase 1; Phase 2 interpretations drafted with OpenAI GPT-5 (Codex; exact checkpoint unavailable)
+**Interpretation scope:** Agent Instructions v6 (August 2, 2026)
 **Scope note:** This summary covers Nebraska state and state-agency-level UAS authority only. FAA Part 107 is the nationwide operating baseline and is not restated except where a Nebraska source expressly relies on or modifies it. Local (municipal/county) UAS ordinances and tribal UAS considerations are deferred under the current research program and are not researched here, although Nebraska's state/local preemption posture is addressed because it is itself a state-level finding: **no Nebraska statute broadly (or even narrowly) preempts local UAS ordinances was located.** Nebraska's only state-level actions touching the state/local UAS boundary are two state-agency-focused procurement statutes (the Secure Drone Purchasing Act and the Foreign Adversary Contracting Prohibition Act), neither of which preempts local ordinance authority. A municipal drone restriction (reportedly including an Omaha city-park rule) is understood to remain a matter of local ordinance and is outside the current research phase.
 
 > **Process note:** Objective research is retained from the Phase 1 source packet. The four practical-interpretation roles were completed in Phase 2 on 2026-08-02 using OpenAI GPT-5 (Codex; exact checkpoint unavailable).

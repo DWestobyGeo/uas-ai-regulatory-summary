@@ -2,6 +2,8 @@
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
 **Research date:** August 1, 2026 | **Version:** 2.1 (Phase 2 — subjective-scope audit complete August 2, 2026)
+**Model / checkpoint:** Objective research and Phase 2 model/checkpoint were not recorded in this legacy state packet.
+**Interpretation scope:** Agent Instructions v6 (August 2, 2026)
 **Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v6), this summary covers New York **state and state-agency** UAS authorities only — local (municipal/county) ordinances and tribal rules are deferred to a later phase and are not included here. Unlike Texas or Florida, New York has **not** enacted a state preemption statute for local UAS ordinances (see Section 4), and New York City in particular maintains an extensive independent permit regime — a project-specific municipal check will be necessary before this state-level picture can be treated as complete for any specific New York site. Full citations and metadata are in `NY_UAS_Source_Register.csv`.
 
 Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.

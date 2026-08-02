@@ -1,5 +1,13 @@
 # New Jersey UAS Regulatory Summary
 
+**Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
+**Research date:** August 2, 2026
+**Version:** 2.0 (Phase 2 — practical interpretation complete)
+**Model / checkpoint:** Objective research model retained from Phase 1; Phase 2 interpretations drafted with OpenAI GPT-5 (Codex; exact checkpoint unavailable).
+**Interpretation scope:** Agent Instructions v6 (August 2, 2026)
+**Scope note:** This summary covers New Jersey state and state-agency-level UAS authority only. FAA Part 107 remains the nationwide operating baseline; local, tribal, and live-airspace layers are deferred under the current research scope.
+
+> **Process note:** Objective research is retained from the Phase 1 source packet. The four practical-interpretation roles were completed in Phase 2 on 2026-08-02; model provenance is recorded above.
 ## 1. State UAS Regulatory Overview
 
 New Jersey expressly permits federally authorized UAS operation for any purpose subject to federal law and the State's specific prohibitions. P.L. 2017, c.315 criminalizes dangerous or intoxicated operation, correctional-facility activity, first-responder interference, and specified wildlife use, while preempting only county or municipal private-use rules that are inconsistent with the act. The law does not create a separate state UAS registration or general commercial permit, and its critical-infrastructure provision supplies an application pathway rather than an automatic state buffer. State Parks, NJDEP contracts, federally funded NJDOT work, aerial pesticide application, and Rowan University add mission-, funding-, or property-specific controls.

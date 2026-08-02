@@ -1,5 +1,13 @@
 # New Mexico UAS Regulatory Summary
 
+**Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
+**Research date:** August 2, 2026
+**Version:** 2.0 (Phase 2 — practical interpretation complete)
+**Model / checkpoint:** Objective research model retained from Phase 1; Phase 2 interpretations drafted with OpenAI GPT-5 (Codex; exact checkpoint unavailable).
+**Interpretation scope:** Agent Instructions v6 (August 2, 2026)
+**Scope note:** This summary covers New Mexico state and state-agency-level UAS authority only. FAA Part 107 remains the nationwide operating baseline; local, tribal, and live-airspace layers are deferred under the current research scope.
+
+> **Process note:** Objective research is retained from the Phase 1 source packet. The four practical-interpretation roles were completed in Phase 2 on 2026-08-02; model provenance is recorded above.
 ## 1. State UAS Regulatory Overview
 
 New Mexico does not currently have an enacted general state UAS statute establishing a commercial-flight permit, broad surveillance offense, critical-infrastructure buffer, or statewide equipment-manufacturer restriction. Its operative state-level controls are narrower and mission dependent. Wildlife rules prohibit drone-assisted hunting and wildlife harassment; professional-surveying rules expressly reach digital geospatial data from UAV/UAS sensors; State Parks can impose park-specific posted restrictions; and New Mexico State University and the University of New Mexico require advance approval for covered campus operations. Federal aviation requirements and ordinary property, privacy, contract, and professional-practice law remain independently relevant, but are not converted here into UAS-specific state records without a direct state UAS hook.

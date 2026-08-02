@@ -3,6 +3,7 @@
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
 **Research date:** August 1, 2026 | **Version:** 2.1 (Phase 2 — subjective-scope audit complete August 2, 2026)
 **Model / checkpoint:** Claude Sonnet 5 (research and drafting)
+**Interpretation scope:** Agent Instructions v6 (August 2, 2026)
 **Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v6, Amendment 2), this summary covers Indiana **state and state-agency** UAS authorities only — municipal and county ordinances are deferred. Unlike some states in this program (e.g., Illinois), **no statewide statute preempting local UAS ordinances was located for Indiana**; at least two Indiana cities (Fort Wayne and Carmel) maintain their own drone ordinances, which is inconsistent with a preemption regime being in force. Full citations and metadata are in `IN_UAS_Source_Register.csv`.
 
 > **Process note (Agent Instructions Amendment 5, August 2, 2026):** Phase 2 practical interpretation and the completed-state subjective-scope audit are complete for the authorities presented below. The four labeled perspectives normally use one to three sentences, but may run longer when relevant and needed; they are operational and risk-management interpretations of the verified research packet, do not add legal requirements, and are not legal advice.
@@ -162,4 +163,4 @@ Indiana regulates UAS through a cluster of targeted criminal statutes rather tha
 | IC 25-21.5-1-7 (professional land surveying framework) | Low — general framework citation via secondary aggregator, no UAS-specific guidance located |
 | Executive Order 25-73 / AG opinions / court decisions / general procurement / local preemption | Moderate (EO 25-73, corroborated by two independent secondary sources after the primary PDF proved non-machine-readable) to Low (negative research findings, not a comprehensive search) |
 
-*This document is objective legal/regulatory summary; Practical Interpretation content is pending Phase 2 (see process note above) and, once added, is not legal advice. Consult Indiana counsel for project-specific compliance determinations. Local ordinances and tribal UAS considerations are out of scope for this phase per current research instructions.*
+*This document combines objective legal/regulatory summaries with Phase 2 Practical Interpretation content, which is AI-generated operational opinion and not legal advice. Consult Indiana counsel for project-specific compliance determinations. Local ordinances and tribal UAS considerations are out of scope for this phase per current research instructions.*

@@ -4,6 +4,7 @@
 **Research date:** 2026-08-02  
 **Version:** 2.0 (Phase 2 — practical interpretation complete)
 **Model / checkpoint:** Objective research model retained from Phase 1; Phase 2 interpretations drafted with OpenAI GPT-5 (Codex; exact checkpoint unavailable)
+**Interpretation scope:** Agent Instructions v6 (August 2, 2026)
 **Scope note:** South Carolina state and state-agency requirements layered on the FAA Part 107 baseline. Municipal, county, tribal, federal, property-specific non-state, site-specific, and live-airspace requirements are outside this pass. Act 150 creates conflict preemption and preserves certain local public-property rules beginning January 1, 2027.
 
 > **Process note:** Objective research is retained from the Phase 1 source packet. The four practical-interpretation roles were completed in Phase 2 on 2026-08-02 using OpenAI GPT-5 (Codex; exact checkpoint unavailable).

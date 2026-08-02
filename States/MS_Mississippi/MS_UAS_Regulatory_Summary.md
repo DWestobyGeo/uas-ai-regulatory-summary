@@ -4,6 +4,7 @@
 **Research date:** August 2, 2026
 **Version:** 2.0 (Phase 2 — practical interpretation complete)
 **Model / checkpoint:** Objective research model retained from Phase 1; Phase 2 interpretations drafted with OpenAI GPT-5 (Codex; exact checkpoint unavailable)
+**Interpretation scope:** Agent Instructions v6 (August 2, 2026)
 **Scope note:** This summary covers Mississippi state and state-agency-level UAS authority only. FAA Part 107 is the nationwide operating baseline and is not restated except where a Mississippi source expressly relies on or modifies it. Local (municipal/county) UAS ordinances and tribal UAS considerations are deferred under the current research program and are not researched here, although Mississippi's state/local preemption posture is addressed because it is itself a state-level finding: Mississippi enacted a statewide UAS preemption statute in 2023 (Miss. Code Ann. § 61-21-9), which is a materially different posture than states that have not preempted local UAS ordinances.
 
 > **Process note:** Objective research is retained from the Phase 1 source packet. The four practical-interpretation roles were completed in Phase 2 on 2026-08-02 using OpenAI GPT-5 (Codex; exact checkpoint unavailable).

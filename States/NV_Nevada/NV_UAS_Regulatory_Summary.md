@@ -1,5 +1,13 @@
 # Nevada UAS Regulatory Summary
 
+**Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
+**Research date:** August 2, 2026
+**Version:** 2.0 (Phase 2 — practical interpretation complete)
+**Model / checkpoint:** Objective research model retained from Phase 1; Phase 2 interpretations drafted with OpenAI GPT-5 (Codex; exact checkpoint unavailable).
+**Interpretation scope:** Agent Instructions v6 (August 2, 2026)
+**Scope note:** This summary covers Nevada state and state-agency-level UAS authority only. FAA Part 107 remains the nationwide operating baseline; local, tribal, and live-airspace layers are deferred under the current research scope.
+
+> **Process note:** Objective research is retained from the Phase 1 source packet. The four practical-interpretation roles were completed in Phase 2 on 2026-08-02; model provenance is recorded above.
 ## 1. State UAS Regulatory Overview
 
 Nevada has a detailed state UAS framework layered on federal aviation law. It regulates low-altitude interference and landings, creates a repeat-overflight trespass action with a conditional exception for Nevada-registered businesses and land surveyors, imposes fixed buffers around critical facilities, and retains a five-mile airport consent-or-FAA-authorization rule. Separate statutes govern public- and law-enforcement-agency operations, registration, surveillance, evidence, and equipment procurement. State Parks, pesticide-applicator rules, wildlife rules, and the University of Nevada, Reno add mission-specific or property-specific controls. No separate general Nevada commercial-UAS operating permit was located.

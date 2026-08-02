@@ -3,6 +3,7 @@
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
 **Research date:** August 1, 2026 | **Version:** 2.1 (Phase 2 — subjective-scope audit complete August 2, 2026)
 **Model / checkpoint:** Claude Sonnet 5 (research and drafting)
+**Interpretation scope:** Agent Instructions v6 (August 2, 2026)
 **Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v6, Amendment 2), this summary covers Illinois **state and state-agency** UAS authorities only — local ordinances are largely, but not entirely, foreclosed: 620 ILCS 5/42.1 makes UAS regulation an exclusive state power and bars local ordinances, but (i) it carves out any municipality of more than 1,000,000 inhabitants (currently only Chicago, which has its own drone ordinance, not researched here), and (ii) a separate subsection preserves any local government's right to adopt "reasonable rules" governing UAS use of airspace above its own parks/recreation/conservation land. Full citations and metadata are in `IL_UAS_Source_Register.csv`.
 
 > **Process note (Agent Instructions Amendment 5, August 2, 2026):** Phase 2 practical interpretation and the completed-state subjective-scope audit are complete for the authorities presented below. The four labeled perspectives normally use one to three sentences, but may run longer when relevant and needed; they are operational and risk-management interpretations of the verified research packet, do not add legal requirements, and are not legal advice.
@@ -162,4 +163,4 @@ Illinois regulates UAS primarily through a small set of targeted statutes rather
 | 225 ILCS 330/5 (professional land surveyor licensing framework) | Low — general framework citation, no UAS-specific guidance located |
 | Executive orders / AG opinions / court decisions / general procurement statute | Low — negative research finding, not a comprehensive search |
 
-*This document is objective legal/regulatory summary; Practical Interpretation content is pending Phase 2 (see process note above) and, once added, is not legal advice. Consult Illinois counsel for project-specific compliance determinations. Local ordinances and tribal UAS considerations are out of scope for this phase per current research instructions.*
+*This document combines objective legal/regulatory summaries with Phase 2 Practical Interpretation content, which is AI-generated operational opinion and not legal advice. Consult Illinois counsel for project-specific compliance determinations. Local ordinances and tribal UAS considerations are out of scope for this phase per current research instructions.*

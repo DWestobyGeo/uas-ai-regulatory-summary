@@ -4,6 +4,7 @@
 **Research date:** 2026-08-02  
 **Version:** 2.0 (Phase 2 — practical interpretation complete)
 **Model / checkpoint:** Objective research model retained from Phase 1; Phase 2 interpretations drafted with OpenAI GPT-5 (Codex; exact checkpoint unavailable)
+**Interpretation scope:** Agent Instructions v6 (August 2, 2026)
 **Scope note:** Oklahoma state and state-agency requirements layered on the FAA Part 107 baseline. Municipal, county, tribal, federal, property-specific non-state, site-specific, and live-airspace requirements are outside this pass. No express statewide UAS preemption provision was located, but local research remains deferred.
 
 > **Process note:** Objective research is retained from the Phase 1 source packet. The four practical-interpretation roles were completed in Phase 2 on 2026-08-02 using OpenAI GPT-5 (Codex; exact checkpoint unavailable).
