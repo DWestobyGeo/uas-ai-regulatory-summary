@@ -260,6 +260,14 @@
       "json_url": "data/v1/VA.json"
     },
     {
+      "state": "Vermont",
+      "state_abbr": "VT",
+      "state_fips": "50",
+      "record_count": 9,
+      "last_updated": "2026-08-02",
+      "json_url": "data/v1/VT.json"
+    },
+    {
       "state": "Washington",
       "state_abbr": "WA",
       "state_fips": "53",
@@ -292,5 +300,5 @@
       "json_url": "data/v1/WY.json"
     }
   ],
-  "state_count": 36
+  "state_count": 37
 }
