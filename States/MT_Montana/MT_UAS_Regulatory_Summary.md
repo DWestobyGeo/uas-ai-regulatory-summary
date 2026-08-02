@@ -2,13 +2,13 @@
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
 **Research date:** August 2, 2026
-**Version:** 1.0 (Phase 1 — objective research; see process note below)
-**Model / checkpoint:** Claude Sonnet 5 (research and drafting)
+**Version:** 2.0 (Phase 2 — practical interpretation complete)
+**Model / checkpoint:** Objective research model retained from Phase 1; Phase 2 interpretations drafted with OpenAI GPT-5 (Codex; exact checkpoint unavailable)
 **Scope note:** This summary covers Montana state and state-agency-level UAS authority only. FAA Part 107 is the nationwide operating baseline and is not restated except where a Montana source expressly relies on or modifies it. Local (municipal/county) UAS ordinances and tribal UAS considerations are deferred under the current research program and are not researched here, although Montana's state/local preemption posture is addressed because it is itself a state-level finding: Montana has **not** broadly preempted local UAS ordinances. The only located preemption is narrow and single-subject — Mont. Code Ann. § 7-1-111(20) bars a local self-governing unit from enacting an ordinance governing the private use of a UAV *in relation to a wildfire*. Local ordinances on other UAS subjects (e.g., a municipal park drone restriction) are not addressed by this narrow provision and are outside the current research phase.
 
-> **Process note (Agent Instructions Amendment 2, updated under v6):** This state was researched under the three-phase program structure. This document currently reflects **Phase 1 only** — the objective, sourced findings below are complete, but the Practical Interpretation content (AEC Industry Expert, Agency Practitioner, UAS Procurement Expert, and Legal Counsel perspectives) has not yet been drafted and is marked "Pending Phase 2" throughout.
+> **Process note:** Objective research is retained from the Phase 1 source packet. The four practical-interpretation roles were completed in Phase 2 on 2026-08-02 using OpenAI GPT-5 (Codex; exact checkpoint unavailable).
 
-Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation). Practical Interpretation — from four labeled perspectives (AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel) — will be added in Phase 2 and is not legal advice.
+Each authority below retains its verified objective summary and now includes the four Phase 2 practical-interpretation perspectives. The interpretations are AI-generated operational opinions, not legal advice.
 
 ## 1. State UAS Regulatory Overview
 
@@ -23,10 +23,10 @@ Montana regulates UAS primarily through a series of discrete criminal and eviden
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+- **AEC Industry UAS Expert:** An ordinary privately directed AEC collection is not automatically law-enforcement surveillance, but later evidentiary use can create chain-of-custody and admissibility questions. If law enforcement directs or requests the collection, obtain written direction identifying the warrant or recognized exception, mission limits, authorized uses, and data custodian before flight.
+- **Agency Practitioner:** Route the warrant or exception determination through the responsible law-enforcement and judicial process before collection; a consultant cannot supply that authority. Preserve the warrant, probable-cause basis, mission direction, acquisition metadata, and chain of custody if UAS information may be offered in a Montana proceeding.
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Define whether the consultant is performing ordinary project documentation or collecting at law-enforcement direction, and prohibit secondary evidentiary use beyond the agreed purpose without review. For covered use, retain the warrant or exception, collection limits, provenance, disclosures, and chain-of-custody record.
 
 ### Criminal Trespass by Unmanned Aerial Vehicle — Exceptions (Mont. Code Ann. § 45-6-210)
 `Binding statute (criminal) | Current / in force`
@@ -35,10 +35,10 @@ Montana regulates UAS primarily through a series of discrete criminal and eviden
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+- **AEC Industry UAS Expert:** Map private-property and residence boundaries and treat flight at or below 200 feet without owner or resident authorization as a no-fly condition unless a verified statutory exception applies. Document the business-purpose and FAA-licensing facts for any relied-upon exception, and avoid expanding collection beyond the authorized parcel or purpose.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Retain written owner or resident authorization or a record-specific analysis of the exact statutory exception, including operator status, business purpose, easement or utility authority, altitude, and route. Escalate boundary disputes, mixed ownership, residential overflight, or facts that do not fit the exception text before launch.
 
 ### Obstruction of Aerial Wildfire Suppression Activities; Related Local-Ordinance Preemption (Mont. Code Ann. § 76-13-214; § 7-1-111(20))
 `Binding statute (criminal); binding limitation on local ordinance power | Current / in force`
@@ -47,10 +47,10 @@ Montana regulates UAS primarily through a series of discrete criminal and eviden
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+- **AEC Industry UAS Expert:** Make active wildfire and aerial-suppression screening a dispatch and in-field stop-work gate; land immediately or relocate if the flight could interfere with suppression aircraft or crews. The narrow state preemption of local wildfire-UAS ordinances does not remove incident-command restrictions, property-use conditions, or other applicable local rules outside that subject.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Treat any proximity to lawful aerial wildfire suppression as an immediate escalation event and preserve dispatch checks, crew briefings, incident communications, and landing actions. Do not describe § 7-1-111(20) as broad statewide UAS preemption; it limits only specified local ordinance authority related to wildfire.
 
 ### Unlawful Use of Aircraft — Hunting-Related Drone/UAV Restrictions (Mont. Code Ann. § 87-6-208; definition at § 87-6-101(3))
 `Binding statute (criminal) | Current / in force`
@@ -59,10 +59,10 @@ Montana regulates UAS primarily through a series of discrete criminal and eviden
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+- **AEC Industry UAS Expert:** Screen project timing and route for active hunting and wildlife activity, and avoid using imagery to locate or communicate game locations to hunters during the statutory 24-hour window. Document the infrastructure, survey, or environmental purpose and use stand-off, route, observer, and abort controls that prevent pursuit, rallying, harassment, or intentional hunt interference.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Preserve mission purpose, wildlife and hunting screening, route, timing, communications, private-land permission, and any land-use travel-plan compliance. Escalate any request to scout, locate, relay, pursue, drive, or disturb wildlife because intent, communication, and the 24-hour period can change an otherwise ordinary flight's legal character.
 
 ### Limitations on Excess Property Provided to Local Law Enforcement — Armored/Weaponized Drones (Mont. Code Ann. § 7-32-401)
 `Binding statute | Current / in force`
@@ -71,10 +71,10 @@ Montana regulates UAS primarily through a series of discrete criminal and eviden
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+- **AEC Industry UAS Expert:** This restriction applies to local law-enforcement receipt of specified federal surplus equipment, not to an ordinary privately owned AEC aircraft or mapping payload. If supporting a law-enforcement program, define asset ownership and acquisition source so the consultant's system is not mischaracterized as prohibited surplus equipment.
+- **Agency Practitioner:** Local law-enforcement property and procurement staff should screen federal surplus transfers and reject armored or weaponized drones covered by the statute. Preserve the transfer source, equipment description, configuration, acceptance decision, and disposition record.
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Do not extend the federal-surplus receipt prohibition to private commercial procurement without separate authority. For a consultant-supported law-enforcement mission, document ownership, acquisition source, configuration, and contract role so the statute's limited public-recipient scope remains clear.
 
 ## 3. State Agency and Facility-Specific UAS Requirements
 
@@ -85,10 +85,10 @@ Montana regulates UAS primarily through a series of discrete criminal and eviden
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+- **AEC Industry UAS Expert:** Do not rely on the repealed rule as proof that a permit is either required or unavailable. Before state-park work, obtain a current written determination from park management addressing launch, landing, operating area, dates, aircraft, commercial purpose, and any applicable general public-use or special-use conditions.
+- **Agency Practitioner:** Because ARM 12.8.816 was repealed and no UAS-specific successor was located, park staff should identify the current legal or policy basis for any approval, restriction, designated area, or permit condition in writing. Direct the operator to the current FWP or park-manager process and avoid presenting the former rule as still effective.
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Keep the repeal evidence separate from any current park-specific written direction, and cite only the current authority or property condition as binding. Escalate if a proposed restriction relies solely on former ARM 12.8.816 or if management cannot identify the current approval path before mobilization.
 
 ### Executive Order Creating the Montana Unmanned Aerial Systems Council (Executive Order No. 11-2019)
 `Executive order | Expired`
@@ -97,22 +97,11 @@ Montana regulates UAS primarily through a series of discrete criminal and eviden
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+- **AEC Industry UAS Expert:** The 2019 order created a temporary state planning council and did not regulate ordinary private flights. On state-agency work, check the current solicitation and agency policy for any surviving procurement, training, privacy, or data requirements rather than relying on the expired council mandate.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** Treat any procurement procedure attributed to the former council as historical until the purchasing agency identifies a current adopted policy or solicitation term. Base an AEC fleet decision on current project requirements and authoritative eligibility lists, not the sunsetted executive order alone.
+- **AEC Industry Legal Counsel:** Do not cite Executive Order 11-2019 as a current private-operator restriction or assume that its draft work products became binding policy. If a state contract incorporates a later plan or procedure, retain that current document and incorporation clause as the operative source.
 
-### Professional Licensing — No UAS-Specific Guidance Located (Board of Professional Engineers and Professional Land Surveyors)
-`Research result (negative finding, Low confidence) | Reviewed`
-
-**Objective Summary:** Montana's Board of Professional Engineers and Professional Land Surveyors (Department of Labor and Industry) administers engineering and land-surveying licensure under Title 37, chapter 67, MCA, and ARM Title 24, chapter 183. The Board's public website and administrative rules were reviewed for UAS-specific guidance, FAQs, board opinions, or policy statements addressing drone-derived surveying or engineering work product. No Montana Board-issued, UAS-specific statement, opinion, or guidance document was located in this pass; the rules reviewed contain general professional-competency and standard-of-care provisions but no rule or guidance expressly naming UAS, drones, or unmanned aircraft.
-
-**Practical Interpretation**
-
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
 
 ## 4. Non-Regulatory Context
 
@@ -142,7 +131,5 @@ Montana regulates UAS primarily through a series of discrete criminal and eviden
 | MT-005 | State park UAS rule — repealed, no successor located | Moderate | Repeal verified via Justia's official ARM mirror; Secretary of State's JS-rendered rules.mt.gov gateway could not be independently fetched to corroborate the repeal notice/rationale |
 | MT-006 | Local law-enforcement armored/weaponized drone procurement bar (§ 7-32-401) | High | Fetched and read in full directly from mca.legmt.gov |
 | MT-007 | Executive Order 11-2019 (UAS Council) | Moderate | Order fetched and read in full directly; expired status rests on the order's own sunset clause plus a negative search for a renewal order |
-| MT-008 | Professional licensing (PE/Land Surveyor Board) | Low | Negative finding; Board website/rules reviewed but not exhaustively (minutes/declaratory rulings not searched) |
-| MT-009 | Executive orders / AG opinions / court decisions / MDT Aeronautics / critical infrastructure / state procurement | Low | Negative finding across multiple official sources; not an exhaustive historical review |
 
-*This document is objective legal/regulatory summary; Practical Interpretation content is pending Phase 2 (see process note above) and, once added, is not legal advice. Consult Montana counsel for project-specific compliance determinations. Local ordinances and tribal UAS considerations are out of scope for this phase per current research instructions.*
+*This document combines objective legal/regulatory summaries with Phase 2 Practical Interpretation content, which is AI-generated operational opinion and not legal advice. Consult Montana counsel for project-specific compliance determinations. Local ordinances and tribal UAS considerations are out of scope for this phase per current research instructions.*
