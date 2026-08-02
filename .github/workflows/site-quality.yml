@@ -6,6 +6,7 @@ on:
       - "docs/**"
       - "States/**"
       - "agents/**"
+      - "methodologies/**"
       - "Agent_Instructions.v6.md"
       - "scripts/**"
       - "build_data.py"
@@ -16,6 +17,7 @@ on:
       - "docs/**"
       - "States/**"
       - "agents/**"
+      - "methodologies/**"
       - "Agent_Instructions.v6.md"
       - "scripts/**"
       - "build_data.py"
@@ -39,6 +41,9 @@ jobs:
 
       - name: Validate agent-role governance
         run: python scripts/validate_roles.py
+
+      - name: Validate comparative methodologies
+        run: python scripts/validate_methodologies.py
 
       - name: Validate shared design and state data
         run: python scripts/validate_site.py

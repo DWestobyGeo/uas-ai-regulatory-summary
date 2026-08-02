@@ -1,8 +1,8 @@
 ---
 methodology_id: state-uas-compliance-burden-index
 name: State-Level UAS Compliance Burden Index
-version: 0.1.0
-status: provisional
+version: 1.0.0
+status: active
 last_updated: 2026-08-02
 governance: ../Agent_Instructions.v6.md
 intended_owner_role: state-uas-regulatory-burden-analyst
@@ -47,38 +47,50 @@ The primary unit is a **state-by-reference-mission assessment**, not an individu
 
 Each state is evaluated under three reference missions:
 
-1. **Routine commercial AEC mission** — privately controlled site; ordinary mapping, survey support, inspection, documentation, or environmental data collection; no state-agency client or specially regulated facility.
-2. **Public-agency project** — the same technically ordinary work performed for, contracted by, incorporated into, or conducted on property controlled by a state or public agency.
-3. **Infrastructure or sensitive-site mission** — corridor, utility, transportation, critical-infrastructure, emergency-facility, correctional, or similarly regulated-site work for which the operator has an otherwise legitimate project purpose.
+1. **Routine commercial AEC mission** — privately controlled, non-sensitive site; ordinary mapping, inspection, documentation, or environmental data collection; no state-agency client and no regulated professional deliverable assumption.
+2. **Public-agency project** — technically ordinary work performed for or on ordinary property controlled by a state or public agency; no critical-infrastructure or other sensitive-site condition.
+3. **Infrastructure or sensitive-site mission** — privately operated or owner-authorized corridor, utility, transportation, critical-infrastructure, emergency-facility, correctional, or similarly regulated-site work; no public-agency procurement condition unless the authority expressly reaches the commercial contractor.
 
-The scenarios hold federal compliance and ordinary competent program practices constant so the score isolates state-level differences.
+The scenarios hold federal compliance, ordinary competent program practices, client authorization, and necessary property access constant so the score isolates state-level differences. A state-specific form, proof, notice, lead time, or approval path beyond ordinary authorization remains scoreable.
+
+The three profiles are comparison constructs, not claims about the actual distribution of commercial work. Their fixed weights define a **reference portfolio** for the headline index.
 
 ## 4. Scoring dimensions and weights
 
-Each reference mission receives a 0–5 rating on seven dimensions. The weights sum to 100.
+Each reference mission receives a 0–5 rating on six burden dimensions. The weights sum to 100.
 
 | Dimension | Weight | Measurement question |
 |---|---:|---|
-| Operator prerequisites | 15 | Does the state add registration, licensing, fees, training, certification, or recurring operator filings? |
-| Mission authorization and coordination | 15 | Does a mission require state permission, notice, consent, special-use authorization, or material advance coordination? |
-| Operational restrictions | 20 | How broadly do state rules constrain otherwise legitimate flight, launch/landing, imaging, payload, location, timing, or use? |
+| Operator prerequisites | 20 | Does the state add registration, licensing, fees, training, certification, or recurring operator filings? |
+| Mission authorization and coordination | 20 | Does a mission require state permission, notice, consent, special-use authorization, or material advance coordination? |
+| Operational restrictions | 25 | How broadly do state rules constrain otherwise legitimate flight, launch/landing, imaging, payload, location, timing, or use? |
 | Privacy, data, and documentation | 15 | What additional collection, purpose, retention, disclosure, documentation, or evidentiary controls affect the mission? |
 | Public-project and acquisition conditions | 10 | Do agency policy, contracting, cybersecurity, sourcing, procurement, or equipment conditions add project burden? |
-| Regulatory complexity | 15 | How fragmented, conditional, ambiguous, exception-dependent, or difficult to administer is the applicable state framework? |
-| Consequence exposure | 10 | For requirements materially applicable to the scenario, how significant are the state enforcement, civil, contractual, or operational consequences of error? |
+| Regulatory complexity | 10 | How fragmented, conditional, exception-dependent, or difficult to administer is the applicable state framework? |
 
-### Common 0–5 anchor scale
+### Dimension-specific anchors
 
-| Rating | Anchor |
-|---:|---|
-| 0 | No material incremental state driver identified for the scenario. |
-| 1 | Narrow, uncommon, or low-effort consideration with little effect on the ordinary workflow. |
-| 2 | Limited recurring check or modest one-time action; manageable without material schedule or operating change. |
-| 3 | Material planning, documentation, coordination, or constraint affecting a meaningful share of missions in the scenario. |
-| 4 | Multiple common-mission controls, recurring administration, meaningful lead time, or substantial operating constraint. |
-| 5 | Broad or pervasive state controls that create a recurring approval barrier, major workflow change, or severe restriction for the reference mission. |
+| Dimension | 0 | 1 | 3 | 5 |
+|---|---|---|---|---|
+| Operator prerequisites | No incremental state prerequisite. | Narrow, one-time, or rarely applicable administrative check. | One material recurring statewide prerequisite, or multiple conditional prerequisites, affecting the scenario. | Multiple recurring statewide prerequisites, renewals, or fees that materially gate ordinary scenario operations. |
+| Mission authorization and coordination | No incremental state mission authorization. | Rare or narrowly site-specific contact with negligible lead time. | Approval, notice, or coordination applies to a meaningful mission class and can affect mobilization. | Broad recurring approval or multi-party coordination materially gates most missions in the scenario. |
+| Operational restrictions | No material incremental restriction. | Narrow intent-based misconduct or uncommon-location restriction with little legitimate-project effect. | A restriction affects common sites, activities, sensors, or methods and requires meaningful replanning. | Broad restrictions prevent or fundamentally reconfigure most otherwise legitimate missions in the scenario. |
+| Privacy, data, and documentation | No UAS-specific incremental control identified. | Narrow intent-based or uncommon-use control satisfied by ordinary legitimate-purpose practice. | Purpose, consent, collection, retention, disclosure, or documentation controls affect a meaningful share of scenario missions. | Broad recurring controls materially change collection design, data handling, documentation, or deliverables for most scenario missions. |
+| Public-project and acquisition conditions | No applicable state condition. | Internal agency condition not normally reaching a commercial contractor, or a narrow product concern. | Contractor, equipment, cybersecurity, sourcing, or project conditions materially affect a meaningful share of scenario work. | Broad vendor or fleet eligibility, equipment replacement, or contract-flow-down requirements materially gate most scenario work. |
+| Regulatory complexity | Applicable state framework is explicit, concentrated, and has no material state-created branching. | Few clear authorities or exceptions; applicability is readily resolved. | Multiple agencies, conditional exceptions, site regimes, or state-created decision branches require material analysis. | Pervasive fragmentation or interdependent state processes make ordinary applicability and sequencing difficult even with complete evidence. |
 
-The analyst must apply the anchor to the scenario and cite the requirement clusters supporting the rating. Record count is not a scoring input. One broad statewide requirement may outweigh numerous narrow prohibitions.
+Ratings 2 and 4 are used only when the evidence falls demonstrably between the adjacent anchors; the rationale must state why neither neighboring anchor fits. The analyst must apply the anchor to the scenario and cite the requirement clusters supporting the rating. Record count is not a scoring input. One broad statewide requirement may outweigh numerous narrow prohibitions.
+
+### Companion consequence indicator
+
+Each scenario also receives a 0–5 **consequence exposure** indicator. It is published beside the burden score but is not included in the 0–100 index:
+
+- **0:** no material state-specific consequence identified for plausible scenario conduct;
+- **1:** narrow or low-level administrative, contractual, or civil consequence;
+- **3:** meaningful civil, misdemeanor, contract, or operational consequence for a plausible compliance error; and
+- **5:** severe criminal, civil, disqualification, or operational consequence for a plausible mission-relevant error.
+
+Use 2 or 4 only with an explanation between adjacent anchors. Severe consequences for rare intentional misconduct do not increase level-of-effort ratings unless they create an actual preventive action, documentation step, or operating constraint for the legitimate reference mission.
 
 ## 5. Calculation
 
@@ -88,7 +100,7 @@ For each reference mission:
 scenario_score = sum(dimension_rating / 5 * dimension_weight)
 ```
 
-The headline composite uses fixed mission weights:
+The headline **reference-portfolio composite** uses fixed mission weights:
 
 ```text
 composite_score =
@@ -97,7 +109,7 @@ composite_score =
   + 0.20 * infrastructure_sensitive_score
 ```
 
-Scores are calculated by script from recorded integer ratings and published to one decimal place. The AI analyst supplies ratings, citations, and rationale; it does not manually calculate totals, percentiles, or rank.
+These normative weights are part of the index definition, not an estimate of any user's actual project mix. Scores are calculated by script from recorded integer ratings and published to one decimal place. The AI analyst supplies ratings, citations, and rationale; it does not manually calculate totals, percentiles, or rank.
 
 ### Fixed descriptive bands
 
@@ -130,10 +142,15 @@ Rules for clustering and applicability:
 
 - Consolidate duplicate, overlapping, and implementation records that express one practical obligation.
 - Preserve separate clusters when obligations create independently required actions.
+- Do not sum mutually exclusive property or institution policies as though one mission must satisfy all of them. Rate the breadth and representative applicable burden of the scenario, and identify exceptional sites separately.
 - Do not count an exception as a separate burden; apply it to narrow the relevant cluster.
 - Do not score public-agency-only controls against the routine private-site mission.
 - Do not score voluntary guidance as a mandatory action. It may support a complexity observation only when its relationship to binding authority is accurately described.
 - Do not score proposed or inactive authorities as current burden. Identify a material pending change separately.
+- Do not score acquisition-method-neutral professional licensing, competency, or deliverable obligations unless state evidence creates an incremental UAS-specific action or restriction.
+- When a state authority incorporates a federal requirement, score only the incremental state action or state consequence; do not count the common federal step again.
+- Hold ordinary client authorization and property access constant. Score additional state-specified proof, form, notice, timing, decision maker, or restriction.
+- Affirmative state preemption may reduce state-created complexity when supported by current authority. Absence of preemption, or failure to locate it, does not prove and must not proxy for unresearched local burden.
 - Do not assume property permission, client authorization, or FAA approval cures a state prohibition unless the source says so.
 
 ## 7. Evidence readiness and confidence
@@ -176,33 +193,31 @@ An unexpected result is not grounds for changing a rating. Evidence and the fixe
 
 ## 9. Published result and data contract
 
-The comparative source of truth will be `comparisons/state-compliance-burden.csv`. Generated JSON and website views are derivatives.
-
-Each state result must preserve at least:
+The scoring source of truth will be the long-form `comparisons/scbi-assessments.csv`, with one row per state, reference mission, and dimension. It must retain:
 
 ```text
-state, state_abbr, research_cutoff_date, assessed_date,
-methodology_version, role_id, role_version, model_checkpoint,
+state, state_abbr, scenario_id, dimension_id, included_in_score,
+rating, rationale, primary_record_ids, requirement_cluster_ids,
 evidence_confidence, evidence_limitations,
-routine_commercial_score, public_agency_score,
-infrastructure_sensitive_score, composite_score, burden_band,
-national_rank, national_percentile,
-operator_prerequisites_rating, mission_authorization_rating,
-operational_restrictions_rating, privacy_data_rating,
-public_project_acquisition_rating, regulatory_complexity_rating,
-consequence_exposure_rating,
-summary, primary_record_ids, calibration_notes
+research_cutoff_date, assessed_date,
+methodology_version, role_id, role_version, model_checkpoint,
+calibration_status, prior_rating, calibration_notes
 ```
 
-The detailed assessment packet must also retain scenario-specific dimension ratings and requirement clusters, even if the public view presents a compact subset.
+The six burden dimensions use `included_in_score=true`. The companion consequence indicator uses `included_in_score=false`.
+
+`comparisons/state-compliance-burden.csv`, generated JSON, website views, ranks, percentiles, and bands are calculated derivatives. The generated state result must include all three scenario scores, the reference-portfolio composite, band, rank, percentile, confidence, concise summary, and provenance.
+
+The detailed state assessment packet additionally retains the requirement clusters and any future-change note. A compact public view may omit internal clustering detail but may not omit the three scenario scores, evidence confidence, scope qualification, or provenance.
 
 ## 10. Presentation standard
 
 Every published state result shows:
 
-- composite score and descriptive band;
+- reference-portfolio composite score and descriptive band;
 - all three reference-mission scores;
 - component ratings;
+- the separate consequence-exposure indicator;
 - national percentile or rank only when nationally comparable;
 - evidence confidence and material limitation;
 - a concise explanation of the principal burden drivers and counterweights;
@@ -221,16 +236,13 @@ Do not label a score as the difficulty of flying in the state without the qualif
 - States compared in one published ranking must use the same methodology version. If a methodology change can affect results, rescore every state before publishing the new national comparison.
 - Never rewrite historical provenance to imply that a newer method or role produced an older result.
 
-## 12. Initial preflight requirement
+## 12. Initial preflight disposition
 
-This provisional methodology must not be used for the national assessment until the designated analyst role:
+The designated analyst tested provisional v0.1.0 against eight deliberately varied state packets. The [preflight report](preflight/scbi-v0.1-preflight.md) documents ambiguous anchors, double-counting risks, scenario distortions, data-contract corrections, and the changes adopted here.
 
-1. tests it against a deliberately varied sample of state records;
-2. identifies ambiguous anchors, double-counting risks, missing fields, and scenario distortions;
-3. documents proposed changes in a preflight report;
-4. revises this document; and
-5. freezes a version 1.0.0 methodology before nationwide scoring begins.
+Version 1.0.0 is frozen for the initial national assessment. Freezing the method does not authorize scoring or publication until the evidence-readiness and common-research-cutoff gates are verified.
 
 ## 13. Revision history
 
+- **1.0.0 — August 2, 2026:** Completed the required analyst preflight; added dimension-specific anchors; separated consequence exposure from compliance effort; clarified mutually exclusive reference missions and the reference-portfolio composite; added authorization, alternative-site, professional-practice, federal-incorporation, preemption, and inactive-authority rules; and corrected the data contract to preserve scenario-specific ratings. Frozen for the initial national assessment, subject to its readiness gates.
 - **0.1.0 — August 2, 2026:** Initial provisional specification defining scope, scenarios, dimensions, calculation, evidence gates, calibration, output, and change control. Requires analyst preflight before use.

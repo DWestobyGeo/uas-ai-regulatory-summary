@@ -48,7 +48,10 @@ agents/
     web-ux-ui-editor.md             ← presentation, links, accessibility, and print
 Agent_Instructions.v6.md            ← high-level repository governance
 methodologies/
+  README.md                       ← methodology ownership and change rules
   state-uas-compliance-burden-index.md ← versioned comparative measurement rules
+  preflight/
+    scbi-v0.1-preflight.md        ← documented test and revision of the provisional method
 .github/workflows/
   site-quality.yml                  ← validates roles, shared UI, and state-data contract
 docs/                     ← published by GitHub Pages (this is the whole website)
@@ -67,6 +70,7 @@ docs/                     ← published by GitHub Pages (this is the whole websi
 build_data.py               ← regenerates docs/data/v1/*.json from the source /States folders (run this after adding/updating a state)
 scripts/validate_site.py    ← shared-style and state-data quality gate
 scripts/validate_roles.py   ← role metadata, ownership, and governance-link quality gate
+scripts/validate_methodologies.py ← methodology ownership, weights, version, and preflight quality gate
 ```
 
 ## Adding a new state

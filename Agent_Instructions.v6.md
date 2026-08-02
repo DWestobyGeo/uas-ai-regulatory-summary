@@ -111,6 +111,8 @@ Sources/                         # optional, only when useful and permitted
 
 The source register is the structured research source of truth. The printable summary must agree with it.
 
+Versioned comparative measurement rules live under [`methodologies/`](methodologies/), separately from role instructions. Comparative rating sources and calculated national outputs will live under `comparisons/`; they do not replace or modify the state source registers.
+
 `build_data.py` creates JSON and downloadable mirrors under `docs/data/v1/`. Generated JSON and mirrors are never edited by hand.
 
 The public site uses one shared presentation layer under `docs/`; states provide data, not state-specific HTML or CSS.
