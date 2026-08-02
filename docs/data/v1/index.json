@@ -228,6 +228,14 @@
       "json_url": "data/v1/NE.json"
     },
     {
+      "state": "New Mexico",
+      "state_abbr": "NM",
+      "state_fips": "35",
+      "record_count": 5,
+      "last_updated": "2026-08-02",
+      "json_url": "data/v1/NM.json"
+    },
+    {
       "state": "Nevada",
       "state_abbr": "NV",
       "state_fips": "32",
@@ -372,5 +380,5 @@
       "json_url": "data/v1/WY.json"
     }
   ],
-  "state_count": 46
+  "state_count": 47
 }
