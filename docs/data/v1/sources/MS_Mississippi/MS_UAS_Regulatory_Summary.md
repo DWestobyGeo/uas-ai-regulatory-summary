@@ -2,13 +2,13 @@
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
 **Research date:** August 2, 2026
-**Version:** 1.0 (Phase 1 — objective research; see process note below)
-**Model / checkpoint:** Claude Sonnet 5 (research and drafting)
+**Version:** 2.0 (Phase 2 — practical interpretation complete)
+**Model / checkpoint:** Objective research model retained from Phase 1; Phase 2 interpretations drafted with OpenAI GPT-5 (Codex; exact checkpoint unavailable)
 **Scope note:** This summary covers Mississippi state and state-agency-level UAS authority only. FAA Part 107 is the nationwide operating baseline and is not restated except where a Mississippi source expressly relies on or modifies it. Local (municipal/county) UAS ordinances and tribal UAS considerations are deferred under the current research program and are not researched here, although Mississippi's state/local preemption posture is addressed because it is itself a state-level finding: Mississippi enacted a statewide UAS preemption statute in 2023 (Miss. Code Ann. § 61-21-9), which is a materially different posture than states that have not preempted local UAS ordinances.
 
-> **Process note (Agent Instructions Amendment 2, updated under v6):** This state was researched under the three-phase program structure. This document currently reflects **Phase 1 only** — the objective, sourced findings below are complete, but the Practical Interpretation content (AEC Industry Expert, Agency Practitioner, UAS Procurement Expert, and Legal Counsel perspectives) has not yet been drafted and is marked "Pending Phase 2" throughout.
+> **Process note:** Objective research is retained from the Phase 1 source packet. The four practical-interpretation roles were completed in Phase 2 on 2026-08-02 using OpenAI GPT-5 (Codex; exact checkpoint unavailable).
 
-Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation). Practical Interpretation — from four labeled perspectives (AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel) — will be added in Phase 2 and is not legal advice.
+Each authority below retains its verified objective summary and now includes the four Phase 2 practical-interpretation perspectives. The interpretations are AI-generated operational opinions, not legal advice.
 
 ## 1. State UAS Regulatory Overview
 
@@ -23,10 +23,10 @@ Mississippi regulates UAS through a criminal statute targeting critical-infrastr
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+- **AEC Industry UAS Expert:** Map the statute's specifically defined critical-infrastructure and correctional-facility boundaries before planning the sensor footprint, and obtain prior written owner or designee consent for covered collection. Keep delivery devices and loose payloads out of correctional-facility missions, with lost-link and emergency procedures designed to prevent entry or delivery onto the facility or adjacent property.
+- **Agency Practitioner:** The facility owner or designee should provide a written consent route that identifies the covered site, operator, aircraft, pilots, dates, collection purpose, sensor limits, data recipients, and field contact. Public agencies and contractors should also preserve FAA-compliance evidence and the facility owner's consent rather than treating a project assignment as implicit authorization.
+- **UAS Procurement Expert:** For correctional-facility work, use configuration control for payload mounts, release mechanisms, return-to-home, and lost-link behavior so the aircraft cannot inadvertently deliver an object onto covered or adjacent property. Procurement should also support geospatial mission boundaries and auditable sensor settings, but those controls do not replace written owner consent.
+- **AEC Industry Legal Counsel:** Retain the signed facility-owner or designee consent, proof of the signer's authority, boundary map, mission and sensor limits, FAA status, and all amendments. Escalate whether a site meets the statute's narrow definitions, whether adjacent property is implicated, or whether a proposed payload could be characterized as contraband delivery before flight.
 
 ### Uncrewed Aircraft Systems' Rights and Authorities Act (Miss. Code Ann. §§ 61-21-1 to 61-21-11)
 `Binding statute | Current / in force`
@@ -35,10 +35,10 @@ Mississippi regulates UAS through a criminal statute targeting critical-infrastr
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+- **AEC Industry UAS Expert:** Use the state preemption rule to screen UAS-specific local restrictions, but still check generally applicable nuisance, voyeurism, harassment, trespass, and property-damage rules and the public owner's launch, landing, and pilot-location conditions. Record the route, launch and landing rights, emergency or maintenance basis if used, and any non-UAS-specific site restrictions in the flight packet.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Do not describe Mississippi preemption as eliminating all local or property controls; the Act preserves enumerated ordinances and public-property authority and leaves ordinary liability intact. Escalate novel local UAS restrictions, privacy-intensive collection, or reliance on an emergency, malfunction, infrastructure-maintenance, or public-safety landing protection.
 
 ### State-Purchased Small UAS — Domestic Manufacturer, Collision-Avoidance, and Country-of-Origin Requirements (Miss. Code Ann. § 31-7-67)
 `Binding statute | Current / in force`
@@ -47,10 +47,10 @@ Mississippi regulates UAS through a criminal statute targeting critical-infrastr
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+- **AEC Industry UAS Expert:** For state-contracted infrastructure inspection, confirm at proposal and aircraft-assignment stages that the consultant-furnished sUAS meets the domestic-manufacturer requirement expressly applied to that service. Keep the public client's purchase and operation rules distinct from an ordinary private project, while treating any incorporated aircraft, collision-avoidance, service, or origin term as a mobilization gate.
+- **Agency Practitioner:** Purchasing staff should document domestic-manufacturer status, collision-avoidance capability, required Mississippi bid solicitation and preference, maintenance-provider eligibility, country-of-origin review, and any research or grandfather basis. For infrastructure-inspection contracts, state the aircraft-eligibility requirement expressly and verify the proposed model and configuration before notice to proceed.
+- **UAS Procurement Expert:** Obtain traceable evidence of U.S. incorporation, headquarters, ownership, manufacturing, component and software origin, collision-avoidance capability, and domestic maintenance support before offering a system for covered work. Recheck eligibility at solicitation, award, and deployment, and maintain a replacement plan because a generic 'assembled in the USA' claim does not establish the statute's PRC-content or domestic-manufacturer tests.
+- **AEC Industry Legal Counsel:** Define whether the transaction is a public purchase, public operation, covered state infrastructure-inspection service, grandfathered aircraft, or research-institution use, because the obligations differ. Retain manufacturer and origin attestations, bid records, aircraft configuration, service-provider qualifications, and the contract clause that creates any consultant flow-down.
 
 ### Hunter/Angler Harassment Statute — No UAS-Specific Provision Currently Enacted (Miss. Code Ann. § 49-7-147)
 `Binding statute | Current / in force (as to its existing, non-UAS text)`
@@ -59,10 +59,10 @@ Mississippi regulates UAS through a criminal statute targeting critical-infrastr
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+- **AEC Industry UAS Expert:** Screen the mission for active hunting and wildlife sensitivity within Statewide (wherever wild animals are taken or pursued); plan altitude, stand-off distance, route, observers, and abort criteria to avoid pursuit, harassment, surveillance of participants, or assistance to a taking. Document the project's environmental or infrastructure purpose and pause if animals materially react or the flight would disrupt lawful hunting or fishing.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Preserve the legitimate project purpose, active-hunting and fishing screening, route, timing, wildlife response, communications, and any complaint or stop-work action. The current statute is not UAS-specific, so focus the analysis on intentional interference, disturbance, or harassment rather than implying that ordinary project imagery is categorically prohibited.
 
 ## 3. State Agency and Facility-Specific UAS Requirements
 
@@ -73,10 +73,10 @@ Mississippi regulates UAS through a criminal statute targeting critical-infrastr
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+- **AEC Industry UAS Expert:** Plan launch and recovery outside MDWFP-owned WMA land and map the property boundary, alternate landing sites, return-to-home point, and lost-link behavior accordingly. The rule addresses launch and landing rather than overflight, but site access and wildlife or hunting conditions still require separate screening.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Preserve the ownership boundary, launch and landing coordinates, site-access rights, route, return-to-home and emergency-landing plan, and incident log. Do not recast the rule as a general WMA overflight ban, and escalate a mission that lacks a lawful off-property recovery option.
 
 ### Alligator Hunting Season Regulations — Drone/UAV Prohibition (40 Miss. Code R. 2-5.2, 2-5.3, 2-5.4)
 `Binding administrative rule | Current / in force (see Section 5 on successor-version currency)`
@@ -85,10 +85,10 @@ Mississippi regulates UAS through a criminal statute targeting critical-infrastr
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+- **AEC Industry UAS Expert:** Screen the mission for active hunting and wildlife sensitivity within Statewide (public waters, private lands, and Pelahatchie Bay alligator-hunting zones); plan altitude, stand-off distance, route, observers, and abort criteria to avoid pursuit, harassment, surveillance of participants, or assistance to a taking. Document the project's environmental or infrastructure purpose and pause if animals materially react or the flight would disrupt lawful hunting or fishing.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Document the legitimate project purpose, alligator-hunting-season and zone screening, route, communications, and any coordination with hunters or land managers. Stop and escalate any request to use imagery or live location data to locate, pursue, or take alligators, even if the requester holds an Alligator Possession Permit.
 
 ### General Rules and Regulations for State Parks — Aircraft Operation Restriction (40 Miss. Code R. 6-1.2(W)(18))
 `Binding administrative rule | Current / in force`
@@ -97,22 +97,11 @@ Mississippi regulates UAS through a criminal statute targeting critical-infrastr
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+- **AEC Industry UAS Expert:** Treat property authorization for State park lands managed by MDWFP statewide as a pre-mobilization gate and obtain conditions that cover launch, landing, route, dates, aircraft, crew, and sensor purpose. Confirm whether the approval is site-wide or location-specific and carry the written authorization and field contact with the crew.
+- **Agency Practitioner:** Route the request to MDWFP for written Executive Director permission and identify the state park, operating and recovery areas, dates, aircraft, pilots, purpose, payload, insurance, emergency plan, and field contact. Because the rule supplies no form, fee, or dependable review time, confirm the current submission method and lead time directly rather than inventing a standard process.
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Retain the request, written Executive Director permission, proof of scope and conditions, property map, insurance, amendments, and park communications. Confirm in writing that the approval covers the UAS operation and any air delivery or payload activity rather than relying on a client's general access direction.
 
-### Professional Licensing — No UAS-Specific Surveying/Engineering Board Guidance Located
-`Research result (negative finding, Low confidence) | Reviewed`
-
-**Objective Summary:** The Mississippi Board of Licensure for Professional Engineers and Surveyors administers Mississippi's engineering and land-surveying licensure. No UAS-specific board guidance, FAQ, opinion, or policy statement addressing drone-derived surveying or engineering work product was located on the Board's public website or in its administrative rules (Mississippi Administrative Code Title 30, Part 901) in this pass. A statutory surveyor land-entry immunity provision (Miss. Code Ann. § 73-13-103) has been the subject of repeated, failed 2024/2025 legislative proposals to expressly extend it to UAS-based survey entry; that amendment has not been enacted, and the current statute contains no UAS-specific language.
-
-**Practical Interpretation**
-
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
 
 ## 4. Non-Regulatory Context
 
@@ -142,7 +131,5 @@ Mississippi regulates UAS through a criminal statute targeting critical-infrastr
 | MS-005 | Alligator hunting drone prohibition | Moderate | Rule read directly, but publisher flags a successor version not independently re-verified |
 | MS-006 | State park aircraft-operation restriction | Moderate | Rule read directly, but text addresses "aircraft" generally rather than naming UAS specifically |
 | MS-007 | Hunter/angler harassment statute (no UAS text) | Moderate | Current text verified via a secondary law-research library rather than a direct primary-source fetch |
-| MS-008 | Professional licensing (PE/Surveyor Board) | Low | Negative finding; Board website/rules reviewed but not exhaustively (minutes/opinions not searched) |
-| MS-009 | Executive orders / AG opinions / court decisions / MDOT Aeronautics | Low | Negative finding across multiple official sources; not an exhaustive historical review |
 
-*This document is objective legal/regulatory summary; Practical Interpretation content is pending Phase 2 (see process note above) and, once added, is not legal advice. Consult Mississippi counsel for project-specific compliance determinations. Local ordinances and tribal UAS considerations are out of scope for this phase per current research instructions.*
+*This document combines objective legal/regulatory summaries with Phase 2 Practical Interpretation content, which is AI-generated operational opinion and not legal advice. Consult Mississippi counsel for project-specific compliance determinations. Local ordinances and tribal UAS considerations are out of scope for this phase per current research instructions.*
