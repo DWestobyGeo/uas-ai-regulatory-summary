@@ -236,6 +236,14 @@
       "json_url": "data/v1/NY.json"
     },
     {
+      "state": "Ohio",
+      "state_abbr": "OH",
+      "state_fips": "39",
+      "record_count": 17,
+      "last_updated": "2026-08-02",
+      "json_url": "data/v1/OH.json"
+    },
+    {
       "state": "Oklahoma",
       "state_abbr": "OK",
       "state_fips": "40",
@@ -356,5 +364,5 @@
       "json_url": "data/v1/WY.json"
     }
   ],
-  "state_count": 44
+  "state_count": 45
 }
