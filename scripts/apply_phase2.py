@@ -119,6 +119,11 @@ def aec_opinion(row: dict[str, str]) -> str:
             f"Confirm the controlling land unit and current property-use rule for {scope} before selecting launch and recovery points. "
             "Record the boundary and any closures or site conditions in the flight packet rather than relying on a general statewide assumption."
         )
+    if has(focus, "agency contract", "contracted pilot", "contract signing", "contractor approval") and approval_process(row):
+        return (
+            f"Complete the named agency's UAS coordination before contract execution or flight scheduling, and make the approved operating, privacy, cybersecurity, data, and documentation conditions part of the project plan. "
+            "Confirm whether subcontractors and previously collected outside data require separate review rather than assuming the prime contractor's approval covers them."
+        )
     if has(focus, "wildlife", "hunt", "game", "nest", "habitat", "fish"):
         return (
             f"Screen the mission for active hunting and wildlife sensitivity within {scope}; plan altitude, stand-off distance, route, observers, and abort criteria to avoid pursuit, harassment, surveillance of participants, or assistance to a taking. "
@@ -263,7 +268,7 @@ def procurement_opinion(row: dict[str, str]) -> str:
     title = row["source_title"]
     if has(combined(row), "sex-offender", "sex offender", "registered offender", "protective order"):
         return "N/A — no procurement or equipment-selection implication identified"
-    if has(focus, "privacy", "trespass") and not has(focus, "retention", "deletion", "biometric", "data security"):
+    if has(focus, "privacy", "trespass") and not has(focus, "retention", "deletion", "biometric", "data security", "cybersecurity"):
         return "N/A — no procurement or equipment-selection implication identified"
     if has(focus, "seller notice", "seller disclosure", "dealer notice", "sale of a drone", "selling a drone"):
         return (
