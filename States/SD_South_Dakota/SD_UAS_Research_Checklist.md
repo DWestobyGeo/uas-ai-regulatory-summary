@@ -1,0 +1,29 @@
+# South Dakota UAS Research Checklist
+
+- **State:** South Dakota (SD)
+- **Research date:** 2026-08-02
+- **Phase:** Phase 1 — Objective Research
+- **Scope:** Statewide and state-agency UAS authorities only. Municipal, county, tribal, federal, and site-specific local layers are outside this pass.
+
+| # | Coverage category | Status | Research note |
+|---|---|---|---|
+| 1 | State statutes and amendments | Applicable source found | Current Title 50 and the enacted 2026 session were reviewed. Chapter 50-15 addresses federal compliance, commercial operation, preemption, liability, privacy, facility overflight, landing, highway rights-of-way, and penalties. The small-UAS registration exemption and wildlife provisions are also included. |
+| 2 | Administrative rules and regulations | Applicable source found | ARSD 41:03:01:01 supports state-park land-use controls. Current administrative rules were also searched for Department of Public Safety rules under new § 50-15-3.1; no final countermeasure rule was located as of the research date. |
+| 3 | Executive orders | Reviewed — no applicable UAS-specific source located | Current executive-order and state-government policy materials were searched. No current statewide operator-facing UAS executive order was located. General information-technology restrictions were excluded because the official sources did not expressly apply them to UAS. |
+| 4 | Court decisions and attorney-general materials | Reviewed — no applicable UAS-specific controlling source located | South Dakota Supreme Court and Attorney General materials were searched. No reported controlling decision or formal opinion specifically applying current South Dakota UAS law to ordinary commercial AEC work was located. |
+| 5 | Aviation and transportation agencies | Applicable source found | SDDOT''s UAS policy for department business and consultants is included. Chapter 50-15 permits federally compliant commercial use; § 50-11-29 exempts small UAS from the state aircraft-registration chapter. No separate general state commercial-UAS operator permit was located. |
+| 6 | Parks, public lands, forestry, fish, wildlife, and natural resources | Applicable source found | Game, Fish and Parks'' state-park drone page and commercial filming/photography permit process are included, along with the statutory prohibition on using aircraft to hunt, locate, or spot wildlife and its narrow predator-or-varmint exception. No separate UAS-specific forestry rule was located. |
+| 7 | Corrections, public safety, emergency management, and critical infrastructure | Applicable source found | Sections 50-15-3, 3.1, 4, 11, and 12 cover correctional and military facilities, contraband, countermeasure rulemaking, emergency and public-safety exceptions, critical-infrastructure maintenance support, and highway rights-of-way. The 2026 felony amendment is reflected. |
+| 8 | Privacy, surveillance, harassment, trespass, and interference | Applicable source found | Sections 50-15-5 through 9 address intentional observation in private places, the incidental bona fide business exception, careless endangerment, voyeurism, harassment, unauthorized landing, overflight liability, and preservation of privacy and trespass torts. |
+| 9 | Procurement, equipment, cybersecurity, and manufacturer restrictions | Reviewed — no applicable UAS-specific source located | State procurement materials and current legislation were searched. No current South Dakota UAS-specific manufacturer, country-of-origin, component, or cybersecurity restriction applicable to AEC procurement was located. SDDOT''s company-owned-aircraft condition is included as a project-performance rule. |
+| 10 | Professional licensing-board materials | Reviewed — no applicable UAS-specific board source located | The South Dakota Board of Technical Professions and current professional-practice materials were searched. No UAS-specific engineering, surveying, photogrammetry, or architecture board rule, opinion, FAQ, or disciplinary authority was located. General licensing rules were excluded by the project scope gate. |
+| 11 | State preemption | Applicable source found | Sections 50-15-7, 10, and 13 limit state and political-subdivision regulation of UAS equipment, registration, airspace, flight paths, and pilot qualifications while preserving consistent local operating rules and government control over its own UAS. Local ordinance research remains deferred. |
+
+## Open verification items
+
+1. Before any work over a prison, correctional facility, jail, juvenile detention facility, or military facility, identify the facility boundary and obtain express administrator authorization; recheck whether the Department of Public Safety has finalized countermeasure rules under § 50-15-3.1.
+2. For state-park work, obtain the current filming/photography or commercial-use permit from the local park manager and confirm lead time, fees, insurance, launch and recovery locations, visitor-management conditions, and any resource-specific approval.
+3. For Capitol Complex work, obtain the current UAS Use Application and Permit, submit it at least ten days ahead, and confirm any insurance, separation, security, scheduling, or indemnity conditions applied to the proposed mission.
+4. For SDDOT work, confirm that the aircraft is company-owned or that the contract contains the required written alternative, then review the current Consultant Service Manual and project-specific UAS deliverable, data, insurance, and safety terms.
+5. For aircraft above the 55-pound small-UAS threshold, confirm state registration, tax, and fee treatment with the South Dakota Office of Aeronautics before acquisition or operation.
+6. Confirm property consent and planned takeoff and landing points for highway, critical-infrastructure, and private-property work; the statutory exceptions are purpose-specific and do not themselves supply general site access.
