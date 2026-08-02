@@ -260,6 +260,14 @@
       "json_url": "data/v1/TX.json"
     },
     {
+      "state": "Utah",
+      "state_abbr": "UT",
+      "state_fips": "49",
+      "record_count": 15,
+      "last_updated": "2026-08-02",
+      "json_url": "data/v1/UT.json"
+    },
+    {
       "state": "Virginia",
       "state_abbr": "VA",
       "state_fips": "51",
@@ -308,5 +316,5 @@
       "json_url": "data/v1/WY.json"
     }
   ],
-  "state_count": 38
+  "state_count": 39
 }
