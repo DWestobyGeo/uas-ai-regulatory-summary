@@ -68,7 +68,7 @@ def aec_opinion(row: dict[str, str]) -> str:
             "This record has no routine effect on an AEC mission or ordinary fleet operation because it applies to a separately regulated person or activity. "
             "Do not treat it as a general UAS operating rule; address it only if the stated regulated-party condition is actually present."
         )
-    if has(focus, "critical infrastructure", "correction", "prison", "jail", "military", "airport", "manned aircraft", "crewed aircraft"):
+    if has(focus, "critical infrastructure", "correction", "prison", "jail", "military", "airport", "crewed aircraft", "school property", "school grounds"):
         lead = "Treat written facility coordination as a pre-mobilization gate" if approval_process(row) else "Map the covered facility and conservative stand-off area during desktop planning"
         return (
             f"{lead} for work within {scope}; do not rely only on flight-app geofencing or a client's general site-access instruction. "
