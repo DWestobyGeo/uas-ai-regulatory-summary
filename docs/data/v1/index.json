@@ -252,6 +252,14 @@
       "json_url": "data/v1/WA.json"
     },
     {
+      "state": "Wisconsin",
+      "state_abbr": "WI",
+      "state_fips": "55",
+      "record_count": 14,
+      "last_updated": "2026-08-02",
+      "json_url": "data/v1/WI.json"
+    },
+    {
       "state": "Wyoming",
       "state_abbr": "WY",
       "state_fips": "56",
@@ -260,5 +268,5 @@
       "json_url": "data/v1/WY.json"
     }
   ],
-  "state_count": 32
+  "state_count": 33
 }
