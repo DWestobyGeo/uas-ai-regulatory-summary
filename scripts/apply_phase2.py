@@ -109,7 +109,7 @@ def aec_opinion(row: dict[str, str]) -> str:
             f"Plan the route and stand-off distance for {scope} so the aircraft does not chase, bunch, separate, distress, or injure livestock. "
             "Coordinate with the owner or handler, brief an immediate retreat or landing trigger, and document any owner-directed husbandry purpose before flight."
         )
-    if has(focus, "state park", "state forest", "public land", "public reservation", "department land", "department property", "campus", "university property"):
+    if has(focus, "state park", "state forest", "public land", "public reservation", "nature preserve", "natural area", "department land", "department property", "campus", "university property"):
         if approval_process(row):
             return (
                 f"Treat property authorization for {scope} as a pre-mobilization gate and obtain conditions that cover launch, landing, route, dates, aircraft, crew, and sensor purpose. "
@@ -124,13 +124,13 @@ def aec_opinion(row: dict[str, str]) -> str:
             f"Screen the mission for active hunting and wildlife sensitivity within {scope}; plan altitude, stand-off distance, route, observers, and abort criteria to avoid pursuit, harassment, surveillance of participants, or assistance to a taking. "
             "Document the project's environmental or infrastructure purpose and pause if animals materially react or the flight would disrupt lawful hunting or fishing."
         )
-    if has(focus, "critical infrastructure", "correction", "prison", "jail", "military", "airport", "crewed aircraft", "school property", "school grounds"):
+    if has(focus, "critical infrastructure", "critical facility", "correction", "prison", "jail", "military", "airport", "crewed aircraft", "school property", "school grounds"):
         lead = "Treat written facility coordination as a pre-mobilization gate" if approval_process(row) else "Map the covered facility and conservative stand-off area during desktop planning"
         return (
             f"{lead} for work within {scope}; do not rely only on flight-app geofencing or a client's general site-access instruction. "
             "Include lost-link, return-to-home, emergency landing, sensor-direction, and observer controls that prevent an unintended facility overflight, prohibited capture, loitering, or interference."
         )
-    if has(focus, "state park", "state forest", "public land", "department land", "department property", "campus", "university property"):
+    if has(focus, "state park", "state forest", "public land", "nature preserve", "natural area", "department land", "department property", "campus", "university property"):
         if approval_process(row):
             return (
                 f"Treat property authorization for {scope} as a pre-mobilization gate and obtain conditions that cover launch, landing, route, dates, aircraft, crew, and sensor purpose. "
@@ -274,7 +274,7 @@ def procurement_opinion(row: dict[str, str]) -> str:
             "Do not create a state-registration purchasing gate where this record expressly exempts unmanned aircraft. "
             "Keep federal registration and asset records current, and separately check whether a mission-specific permit, property rule, weight threshold, or public-client specification still affects the selected system."
         )
-    if has(focus, "manufacturer", "country-of-origin", "country of origin", "covered foreign", "cybersecurity", "approved list", "supply chain", "replacement program"):
+    if has(focus, "manufacturer", "country-of-origin", "country of origin", "covered foreign", "foreign-adversary", "foreign adversary", "cybersecurity", "approved list", "supply chain", "replacement program"):
         return (
             f"Treat {title} as a time-sensitive eligibility check at solicitation and again before purchase or assignment to a public project. "
             "Maintain manufacturer and component attestations, model and serial inventories, software and data-hosting details, funding-source restrictions, and a replacement path; do not assume a restriction on a public owner automatically binds a consultant unless the contract says so."
