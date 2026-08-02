@@ -4,6 +4,14 @@
   "disclaimer": "AI-compiled regulatory research. Not legal advice. See /DISCLAIMER for full terms.",
   "states": [
     {
+      "state": "Alaska",
+      "state_abbr": "AK",
+      "state_fips": "02",
+      "record_count": 8,
+      "last_updated": "2026-08-01",
+      "json_url": "data/v1/AK.json"
+    },
+    {
       "state": "Alabama",
       "state_abbr": "AL",
       "state_fips": "01",
@@ -116,5 +124,5 @@
       "json_url": "data/v1/WA.json"
     }
   ],
-  "state_count": 14
+  "state_count": 15
 }
