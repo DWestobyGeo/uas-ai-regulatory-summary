@@ -6,13 +6,9 @@ A state-by-state reference on **commercial UAS (drone) regulation** relevant to 
 
 ## Live site
 
-Once GitHub Pages is enabled for this repo (Settings → Pages → Branch: `main`, Folder: `/docs`), the site is published at:
+**https://dwestobygeo.github.io/uas-ai-regulatory-summary/**
 
-```
-https://<your-github-username>.github.io/<repo-name>/
-```
-
-The site lets you pick a state from a dropdown, read its regulatory summary, browse the full source register (every statute, regulation, court decision, and agency policy behind that summary, with citations), and switch to a printable view. You can also link directly to a state, e.g. `?state=TX`.
+The site lets you pick a state from a dropdown, read its regulatory summary, browse the full source register (every statute, regulation, court decision, and agency policy behind that summary, with citations), and switch to a printable view. You can also link directly to a state, e.g. [`?state=TX`](https://dwestobygeo.github.io/uas-ai-regulatory-summary/?state=TX).
 
 ## What's covered per state
 

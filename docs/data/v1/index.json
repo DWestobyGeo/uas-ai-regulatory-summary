@@ -4,6 +4,14 @@
   "disclaimer": "AI-compiled regulatory research. Not legal advice. See /DISCLAIMER for full terms.",
   "states": [
     {
+      "state": "Arizona",
+      "state_abbr": "AZ",
+      "state_fips": "04",
+      "record_count": 9,
+      "last_updated": "2026-08-01",
+      "json_url": "data/v1/AZ.json"
+    },
+    {
       "state": "California",
       "state_abbr": "CA",
       "state_fips": "06",
@@ -84,5 +92,5 @@
       "json_url": "data/v1/WA.json"
     }
   ],
-  "state_count": 10
+  "state_count": 11
 }
