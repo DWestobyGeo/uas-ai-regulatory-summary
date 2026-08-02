@@ -148,6 +148,14 @@
       "json_url": "data/v1/LA.json"
     },
     {
+      "state": "Maryland",
+      "state_abbr": "MD",
+      "state_fips": "24",
+      "record_count": 7,
+      "last_updated": "2026-08-02",
+      "json_url": "data/v1/MD.json"
+    },
+    {
       "state": "Maine",
       "state_abbr": "ME",
       "state_fips": "23",
@@ -212,5 +220,5 @@
       "json_url": "data/v1/WA.json"
     }
   ],
-  "state_count": 26
+  "state_count": 27
 }
