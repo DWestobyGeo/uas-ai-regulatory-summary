@@ -2,11 +2,11 @@
 
 **Prepared for:** Commercial AEC consultants conducting UAS-supported work in South Carolina  
 **Research date:** 2026-08-02  
-**Version:** 1.0 (Phase 1 — objective research; see process note below)  
-**Model / checkpoint:** OpenAI GPT-5 family (exact checkpoint unavailable)  
+**Version:** 2.0 (Phase 2 — practical interpretation complete)
+**Model / checkpoint:** Objective research model retained from Phase 1; Phase 2 interpretations drafted with OpenAI GPT-5 (Codex; exact checkpoint unavailable)
 **Scope note:** South Carolina state and state-agency requirements layered on the FAA Part 107 baseline. Municipal, county, tribal, federal, property-specific non-state, site-specific, and live-airspace requirements are outside this pass. Act 150 creates conflict preemption and preserves certain local public-property rules beginning January 1, 2027.
 
-> **Process note:** This is an AI-compiled research summary, not legal advice. Objective source content is separated from later expert interpretation. All four practical-interpretation fields remain pending in this Phase 1 deliverable.
+> **Process note:** Objective research is retained from the Phase 1 source packet. The four practical-interpretation roles were completed in Phase 2 on 2026-08-02 using OpenAI GPT-5 (Codex; exact checkpoint unavailable).
 
 ## 1. State UAS Regulatory Overview
 
@@ -21,10 +21,10 @@ South Carolina is in a statutory transition. Through December 31, 2026, operatio
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** Treat written facility coordination as a pre-mobilization gate for work within Statewide; do not rely only on flight-app geofencing or a client's general site-access instruction. Include lost-link, return-to-home, emergency landing, sensor-direction, and observer controls that prevent an unintended facility overflight, prohibited capture, loitering, or interference.
+- **Agency Practitioner:** Use the current named facility or administering agency application or request channel and provide aircraft details, the current fee. The packet identifies the approval as: Written consent, or qualifying notification no more than five days and no less than two hours before each operation. Because the verified source does not establish a dependable review time for every case, confirm completeness, reviewer, lead time, approval duration, and field-contact expectations directly with the agency.
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Retain the current application, all attachments, written approval, conditions, amendments, and closeout records under S.C. Code §§ 24-1-300, 24-5-175; a client's verbal direction should not substitute for the named authority's authorization. Escalate if the approving official, property boundary, operating dates, data rights, insurance terms, or ability to use a contractor is unclear.
 
 ### SC-002 — Correctional facility boundary and FAA fixed-site publication duties
 *Binding statute or regulation | Current / in force*
@@ -33,10 +33,10 @@ South Carolina is in a statutory transition. Through December 31, 2026, operatio
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** This record does not directly regulate an ordinary privately controlled AEC flight, but it can govern a mission performed for or integrated into the named public agency's program. Define in the scope and flight plan who authorizes the mission, controls the aircraft, receives the data, and is responsible for the cited records or use restrictions.
+- **Agency Practitioner:** Use the current reporting instructions of South Carolina General Assembly and South Carolina Aeronautics Commission and calendar the stated event-driven or periodic deadline; retain the submitted data, transmittal, and acceptance receipt. Confirm the current form, reporting period, responsible agency contact, amendment method, and whether contractor-held flight or data records must be supplied to the reporting entity.
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** State in the contract whether the public agency or the consultant is the operator and data custodian, and allocate authorization, disclosure, retention, and records-request duties accordingly. Do not represent an agency-only power or exception as authority for a privately controlled flight unless the verified source and written mission authorization support that relationship.
 
 ### SC-003 — Act 150 federal compliance, registration, and controlled-airspace offenses
 *Binding statute or regulation | Enacted / not yet effective*
@@ -45,10 +45,10 @@ South Carolina is in a statutory transition. Through December 31, 2026, operatio
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** Treat the applicable written consent or authorization under 2026 Act No. 150; S.C. Code §§ 55-1-200 to 55-1-220(A)(1), (B), (D), (G) (effective Jan. 1, 2027) as a pre-mobilization gate and ensure it covers the site, dates, aircraft, crew, payload, and purpose. Do not lock the field schedule until the approving person and any notice, boundary, insurance, or operating conditions are documented.
+- **Agency Practitioner:** Use the current named facility or administering agency application or request channel and provide aircraft details. The packet identifies the approval as: FAA authorization is required when applicable; no separate general state commercial permit is created. Because the verified source does not establish a dependable review time for every case, confirm completeness, reviewer, lead time, approval duration, and field-contact expectations directly with the agency.
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Retain the current application, all attachments, written approval, conditions, amendments, and closeout records under 2026 Act No. 150; S.C. Code §§ 55-1-200 to 55-1-220(A)(1), (B), (D), (G) (effective Jan. 1, 2027); a client's verbal direction should not substitute for the named authority's authorization. Escalate if the approving official, property boundary, operating dates, data rights, insurance terms, or ability to use a contractor is unclear.
 
 ### SC-004 — Act 150 correctional, detention, and military facility 1,500-foot restrictions
 *Binding statute or regulation | Enacted / not yet effective*
@@ -57,10 +57,10 @@ South Carolina is in a statutory transition. Through December 31, 2026, operatio
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** Treat written facility coordination as a pre-mobilization gate for work within Statewide; do not rely only on flight-app geofencing or a client's general site-access instruction. Include lost-link, return-to-home, emergency landing, sensor-direction, and observer controls that prevent an unintended facility overflight, prohibited capture, loitering, or interference.
+- **Agency Practitioner:** Use the current named facility or administering agency application or request channel and provide a mission or flight plan, a location map, the current fee. The packet identifies the approval as: Yes — express written facility authorization or consent; official-duty facility personnel are excepted. Because the verified source does not establish a dependable review time for every case, confirm completeness, reviewer, lead time, approval duration, and field-contact expectations directly with the agency.
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Retain the current application, all attachments, written approval, conditions, amendments, and closeout records under 2026 Act No. 150; S.C. Code §§ 55-1-220(A)(2)–(3), 55-1-230(B) (effective Jan. 1, 2027); a client's verbal direction should not substitute for the named authority's authorization. Escalate if the approving official, property boundary, operating dates, data rights, insurance terms, or ability to use a contractor is unclear.
 
 ### SC-005 — Act 150 contraband, malicious facility surveillance, weaponization, and seizure provisions
 *Binding statute or regulation | Enacted / not yet effective*
@@ -69,10 +69,10 @@ South Carolina is in a statutory transition. Through December 31, 2026, operatio
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** Screen aircraft and payload configuration against Act 150 contraband, malicious facility surveillance, weaponization, and seizure provisions before deployment, including release devices, tethered tools, sample systems, and experimental attachments. Use configuration control so a field crew cannot inadvertently deploy a prohibited or ambiguous payload.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** Use configuration-controlled payload interfaces and maintain documentation showing the purpose, operating limits, release safeguards, aircraft weight, and approved mission configuration. Avoid buying or fielding attachments whose capability could place an otherwise ordinary mapping aircraft within a weapon, projectile, contraband-delivery, or regulated dispensing provision.
+- **AEC Industry Legal Counsel:** Treat Act 150 contraband, malicious facility surveillance, weaponization, and seizure provisions as a documented stop-work or redesign trigger because the packet identifies criminal, civil, evidentiary, or damage exposure. The contract and flight record should preserve the site screening, authority or exception relied upon, crew briefing, and incident/escalation path; obtain counsel where the facts sit near an undefined boundary or intent element.
 
 ### SC-006 — Act 150 state-local regulatory boundary for public-property operations
 *Binding statute or regulation | Enacted / not yet effective*
@@ -81,10 +81,10 @@ South Carolina is in a statutory transition. Through December 31, 2026, operatio
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** Use the state rule to identify what a political subdivision may regulate, then check only the controlling property's published operating terms before launch. Record the applicable boundary, property owner, designated-use area, notice, and permission status in the flight packet without assuming that state preemption eliminates property-use conditions.
+- **Agency Practitioner:** Use the current controlling political subdivision or property manager application or request channel and provide a location map. The packet identifies the approval as: Local permission may be required for public-property use under a consistent local rule. Because the verified source does not establish a dependable review time for every case, confirm completeness, reviewer, lead time, approval duration, and field-contact expectations directly with the agency.
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Retain the current application, all attachments, written approval, conditions, amendments, and closeout records under 2026 Act No. 150; S.C. Code § 55-1-230(A) (effective Jan. 1, 2027); a client's verbal direction should not substitute for the named authority's authorization. Escalate if the approving official, property boundary, operating dates, data rights, insurance terms, or ability to use a contractor is unclear.
 
 ## 3. State Agency UAS Requirements
 
@@ -95,10 +95,10 @@ South Carolina is in a statutory transition. Through December 31, 2026, operatio
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** Translate Professional board policy on UAV scanning, LiDAR, and photogrammetric surveying into the project flight plan and QA/QC checklist before mobilization, including the required control, collection, accuracy, retention, and deliverable items that apply to the work. Resolve any conflict between the agency guidance and the executed scope before collection so a technically successful flight does not produce an unacceptable survey deliverable.
+- **Agency Practitioner:** Use the current South Carolina Board of Registration for Professional Engineers and Surveyors application or request channel and provide a location map, aircraft details. The packet identifies the approval as: Professional licensure is required when the work constitutes regulated surveying or photogrammetry; the drone itself is not licensed by the Board. Because the verified source does not establish a dependable review time for every case, confirm completeness, reviewer, lead time, approval duration, and field-contact expectations directly with the agency.
+- **UAS Procurement Expert:** Specify aircraft, positioning, camera, payload, processing software, and storage that can produce the cited accuracy evidence and deliverables without proprietary-format lock-in. Acceptance testing should verify the complete workflow—control, capture, processing, export, and archive—not only nominal aircraft or sensor specifications.
+- **AEC Industry Legal Counsel:** Retain the current application, all attachments, written approval, conditions, amendments, and closeout records under S.C. Board of Registration for Professional Engineers and Surveyors, UAV Policy (2017); Board Minutes (Jan. 15, 2019); a client's verbal direction should not substitute for the named authority's authorization. Escalate if the approving official, property boundary, operating dates, data rights, insurance terms, or ability to use a contractor is unclear.
 
 ### SC-008 — State park drone coordination and commercial filming permit requirements
 *Permit or property-use requirement | Current agency process*
@@ -107,10 +107,10 @@ South Carolina is in a statutory transition. Through December 31, 2026, operatio
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** Treat property authorization for South Carolina state-owned parks as a pre-mobilization gate and obtain conditions that cover launch, landing, route, dates, aircraft, crew, and sensor purpose. Confirm whether the approval is site-wide or location-specific and carry the written authorization and field contact with the crew.
+- **Agency Practitioner:** Use the current South Carolina Department of Parks, Recreation and Tourism and South Carolina Film Commission application or request channel and provide insurance evidence, a location map, pilot credentials. The packet identifies the approval as: Yes for commercial filming; contact the specific park and the state park operations contact. Because the verified source does not establish a dependable review time for every case, confirm completeness, reviewer, lead time, approval duration, and field-contact expectations directly with the agency.
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Retain the current application, all attachments, written approval, conditions, amendments, and closeout records under South Carolina State Parks FAQ; South Carolina Film Commission Permits guidance; a client's verbal direction should not substitute for the named authority's authorization. Escalate if the approving official, property boundary, operating dates, data rights, insurance terms, or ability to use a contractor is unclear.
 
 ### SC-009 — SCDOT federally funded project restriction on covered foreign UAS
 *Official agency policy | Current contract requirement*
@@ -119,10 +119,10 @@ South Carolina is in a statutory transition. Through December 31, 2026, operatio
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** This record does not directly regulate an ordinary privately controlled AEC flight, but it can govern a mission performed for or integrated into the named public agency's program. Define in the scope and flight plan who authorizes the mission, controls the aircraft, receives the data, and is responsible for the cited records or use restrictions.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** Treat SCDOT federally funded project restriction on covered foreign UAS as a time-sensitive eligibility check at solicitation and again before purchase or assignment to a public project. Maintain manufacturer and component attestations, model and serial inventories, software and data-hosting details, funding-source restrictions, and a replacement path; do not assume a restriction on a public owner automatically binds a consultant unless the contract says so.
+- **AEC Industry Legal Counsel:** Identify whether the cited material is incorporated into the contract, permit, property-use approval, or agency standard before describing it as mandatory. Where it is not binding, record any deliberate deviation and the equivalent risk control or technical basis accepted by the client.
 
 ## 4. Unresolved Operational Questions
 

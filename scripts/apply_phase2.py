@@ -19,6 +19,12 @@ def has(text: str, *terms: str) -> bool:
     return any(term.lower() in low for term in terms)
 
 
+def has_survey_technical(text: str) -> bool:
+    return bool(re.search(r"\bsurvey(?:s|ed|ing|or|ors)?\b", text, re.I)) or has(
+        text, "photogram", "lidar", "mechanical shutter", "accuracy", "ground control", "checkpoint"
+    )
+
+
 def combined(row: dict[str, str]) -> str:
     return " | ".join(
         row.get(k, "")
@@ -116,12 +122,15 @@ def aec_opinion(row: dict[str, str]) -> str:
             f"Confirm the controlling land unit and current property-use rule for {scope} before selecting launch and recovery points. "
             "Record the boundary and any closures or site conditions in the flight packet rather than relying on a general statewide assumption."
         )
-    if has(focus, "privacy", "surveillance", "recording", "photograph", "stalk", "harass", "tracking"):
+    privacy_focus = has(focus, "privacy", "surveillance", "stalk", "harass", "tracking", "voyeur") or (
+        has(focus, "recording", "photograph") and has(focus, "person", "private", "dwelling", "occupant")
+    )
+    if privacy_focus:
         return (
             f"Use a mission-specific collection plan for {scope} that limits camera angle, dwell time, audio, zoom, thermal capture, and retention to the contracted purpose. "
             "Brief the crew on aborting or redirecting collection when people, residences, or unrelated activity enter the sensor footprint."
         )
-    if has(focus, "survey", "photogram", "mapping", "lidar", "accuracy", "ground control", "checkpoint"):
+    if has_survey_technical(focus):
         return (
             f"Translate {title} into the project flight plan and QA/QC checklist before mobilization, including the required control, collection, accuracy, retention, and deliverable items that apply to the work. "
             "Resolve any conflict between the agency guidance and the executed scope before collection so a technically successful flight does not produce an unacceptable survey deliverable."
@@ -260,15 +269,17 @@ def procurement_opinion(row: dict[str, str]) -> str:
             "Maintain asset-level records for registration status, weight with each payload, serial number, airworthiness documents when applicable, and renewal dates before assigning an aircraft to this state. "
             "Fleet planning should account for fees, renewal lead time, and whether swapping an aircraft or payload changes the approval or registration basis."
         )
-    if has(focus, "survey", "photogram", "mapping", "lidar", "mechanical shutter", "accuracy", "ground control", "checkpoint"):
-        return (
-            "Specify aircraft, positioning, camera, payload, processing software, and storage that can produce the cited accuracy evidence and deliverables without proprietary-format lock-in. "
-            "Acceptance testing should verify the complete workflow—control, capture, processing, export, and archive—not only nominal aircraft or sensor specifications."
-        )
     if has(focus, "pesticide", "aerial application", "spray", "dispens", "weapon", "projectile", "payload", "contraband", "drop"):
         return (
             "Use configuration-controlled payload interfaces and maintain documentation showing the purpose, operating limits, release safeguards, aircraft weight, and approved mission configuration. "
             "Avoid buying or fielding attachments whose capability could place an otherwise ordinary mapping aircraft within a weapon, projectile, contraband-delivery, or regulated dispensing provision."
+        )
+    if row.get("public_agency_only", "").lower().startswith("yes") and has(focus, "facility boundary", "publication", "fixed-site"):
+        return "N/A — no procurement or equipment-selection implication identified"
+    if has_survey_technical(focus):
+        return (
+            "Specify aircraft, positioning, camera, payload, processing software, and storage that can produce the cited accuracy evidence and deliverables without proprietary-format lock-in. "
+            "Acceptance testing should verify the complete workflow—control, capture, processing, export, and archive—not only nominal aircraft or sensor specifications."
         )
     if has(focus, "retention", "deletion", "data security", "records", "public record", "disclosure", "facial recognition", "biometric"):
         return (
