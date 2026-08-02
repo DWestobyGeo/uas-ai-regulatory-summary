@@ -1,0 +1,145 @@
+# Kentucky — Commercial UAS Regulatory Summary
+
+**Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
+**Research date:** August 2, 2026 | **Version:** 1.0 (Phase 1 — objective research; see process note below)
+**Model / checkpoint:** Claude Sonnet 5 (research and drafting)
+**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v4, Amendment 2), this summary covers Kentucky **state and state-agency** UAS authorities only — municipal and county ordinances are deferred. **No statewide statute preempting local UAS ordinances was located for Kentucky.** Secondary sources report that most Kentucky municipalities have not adopted their own drone ordinances, with Bowling Green's city parks department cited as an example of a local government imposing its own drone-related permission requirement, but confirming and cataloguing any such local ordinance is out of scope for this state-level phase. Full citations and metadata are in `KY_UAS_Source_Register.csv`.
+
+> **Process note (Agent Instructions Amendment 2, August 1, 2026):** This state was researched under the three-phase program structure. This document currently reflects **Phase 1 only** — the objective, sourced findings below are complete, but the Practical Interpretation content (AEC Industry Expert, Agency Practitioner, and Legal Counsel perspectives) has not yet been drafted and is marked "Pending Phase 2" throughout.
+
+Each rule below is presented as an **Objective Summary** (binding text/citation, no interpretation). Practical Interpretation — from three labeled perspectives (AEC Industry UAS Expert, Agency Practitioner, and Legal Counsel) — will be added in Phase 2 and is not legal advice.
+
+---
+
+## 1. State UAS Regulatory Overview
+
+Kentucky regulates UAS through a cluster of purpose-built statutory amendments to its criminal and wildlife codes, rather than a single comprehensive drone act, supplemented by two state-agency permit/policy programs. The core privacy statute, KRS 500.130, was created in 2018 and substantially amended in 2025 (HB 19, 2025 Ky. Acts ch. 19): it authorizes business, recreational, educational, and governmental UAS use (naming aerial mapping as an example business use as of 2025), bars a lethal payload except for specified military branches, requires a UAS-specific warrant for a law-enforcement Fourth Amendment search, and — new in 2025 — bars any operator from recording privately owned property with intent to surveil or to publish an unauthorized image, backed by a new private civil cause of action. The 2025 amendment also deleted the statute's former short title, the "Citizens' Freedom from Unwarranted Surveillance Act," a finding of note because several secondary sources still cite the statute by that now-defunct name. Kentucky's most AEC-relevant statute is KRS 511.100 (Trespass Upon Key Infrastructure Assets), which criminalizes UAS overflight with harmful/surveillance intent over 15 categories of critical infrastructure — including energy, water, chemical, telecom, rail, food/agricultural facilities, and correctional facilities — while expressly exempting commercial UAS operation conducted in FAA compliance and utility-company operations. A separate, narrower provision, KRS 520.010/520.050, makes physically introducing a drone into (rather than merely overflying) a detention facility a felony contraband offense. A 2025 wildlife regulation, 301 KAR 3:140, is Kentucky's first UAS-named rule barring drone-aided hunting, fishing, or wildlife harassment — this project's research also caught a secondary-source citation error attributing this restriction to the unrelated KRS 150.363 (which actually addresses internet/computer-assisted remote hunting). KRS 183.086 restricts UAS operation near commercial airports and reckless flight, with a broad commercial-compliance exemption. At the agency level, the Kentucky Department of Parks requires a permit, FAA credential, and $1,000,000 liability insurance for any UAS flight at a state park or historic site, and KYTC's Department of Aviation — beyond its general FAA-information clearinghouse role — began implementing a federal foreign-drone procurement restriction (American Security Drone Act/OMB M-26-02) for its own federally funded highway work, effective December 22, 2025, that flows down to AEC consultants and contractors on FHWA-funded projects. No Kentucky executive order, Attorney General opinion, or state-court UAS decision was located; the one notable federal case arising from Kentucky facts, the "drone slayer" case (Boggs v. Merideth), was dismissed on jurisdictional grounds without resolving the underlying airspace-property-rights question.
+
+## 2. Statewide UAS Laws and Regulations
+
+### Operation of Unmanned Aircraft System — Definitions — Restrictions — KRS 500.130
+*Binding law | Current, as amended by 2025 Ky. Acts ch. 19 (HB 19), effective June 27, 2025*
+
+**Objective Summary:** KRS 500.130 authorizes any business entity to operate a UAS for business purposes in compliance with 14 C.F.R. pt. 107, and, as of the 2025 amendment, expressly names an entity conducting aerial mapping among the listed example business uses (subsection (3)(c)), alongside property appraisers, utilities/communications services, cargo entities, and insurance companies. Recreational use is permitted under 14 C.F.R. pt. 101, and higher-education/school-district UAS use is permitted for educational, research, or testing purposes. UAS may not carry a lethal payload except for specified U.S. military branches. Law enforcement may not use a UAS to conduct a Fourth Amendment search without a warrant specifically authorizing UAS use, and UAS-derived evidence is generally inadmissible in Kentucky proceedings except as enumerated. The 2025 amendment added subsection (12), barring a recreational, business, or educational operator from recording an image of privately owned real property, or a person on it, with intent to surveil or publish an unauthorized image in violation of a reasonable-expectation-of-privacy presumption keyed to ground-level observability, and created a new private civil cause of action (new sections of KRS Chapters 411 and 413) with a seven-year limitations period. The same amendment deleted the statute's former short title, the "Citizens' Freedom from Unwarranted Surveillance Act."
+
+**Practical Interpretation**
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **Legal Counsel:** Pending Phase 2 interpretation pass.
+
+### Restrictions on Operation of Unmanned Aircraft — Exemption — KRS 183.086
+*Binding law | Current, enacted 2017 Ky. Acts ch. 153, sec. 2, unamended since*
+
+**Objective Summary:** KRS 183.086(2) bars a UAS operator (or a Part 107-certificated direct supervisor) from operating a UAS into an area a commercial airport's unmanned aircraft facility map designates as prohibited for UAS operation, takeoff, or landing, absent the airport operator's approval, and separately bars reckless UAS operation creating a risk of serious physical injury or property damage. Subsection (3) expressly exempts a UAS operator engaged in a commercial purpose in compliance with FAA regulations, authorizations, or exemptions from this section's provisions.
+
+**Practical Interpretation**
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **Legal Counsel:** Pending Phase 2 interpretation pass.
+
+### Trespass Upon Key Infrastructure Assets — KRS 511.100
+*Binding law | Current, most recently amended 2025 Ky. Acts ch. 42, sec. 1, effective March 19, 2025*
+
+**Objective Summary:** KRS 511.100 defines 15 categories of "key infrastructure asset," including electrical-generation nodes, petroleum refineries, chemical manufacturing/storage facilities, natural-gas and petroleum pipeline facilities, railroad yards/tunnels, drinking-water facilities, state prisons/juvenile-justice facilities/jails, military-weapons-system facilities, wireless-communications and telecom facilities, commercial food-manufacturing facilities, animal feeding operations, and electrical highway infrastructure. A person commits trespass upon key infrastructure assets (Class B misdemeanor first offense, Class A misdemeanor thereafter) by knowingly using a UAS to fly above such property with intent to cause harm/damage or conduct surveillance, without the owner's/tenant's/lessee's prior consent, or, for food-manufacturing and animal-feeding-operation assets specifically, by operating a UAS or recording device above the property without consent regardless of intent. Subsection (4) enumerates broad exceptions, including UAS use by the property/asset owner or an authorized party; **UAS use for a commercial purpose in compliance with applicable FAA authorization, regulations, or exemptions**; use by an electric, water, or natural-gas utility company (or its contractor) for legitimate business purposes; use by an insurance company for underwriting/damage investigation; use by law enforcement/emergency-management agencies; and use by the federal government, the Commonwealth, or their contractors.
+
+**Practical Interpretation**
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **Legal Counsel:** Pending Phase 2 interpretation pass.
+
+### Dangerous Contraband (Drones) in Detention Facilities — KRS 520.010(3) and KRS 520.050
+*Binding law | Current, UAS language added 2019 Ky. Acts ch. 61, sec. 2, effective June 27, 2019*
+
+**Objective Summary:** KRS 520.010(3) defines "dangerous contraband" for Kentucky's escape-and-custody offenses to expressly include "drones, unmanned aircraft, or other remotely controlled vehicles, and any payload carried by those vehicles," alongside dangerous instruments, controlled substances, unauthorized cell phones, and metal-cutting tools. KRS 520.050 makes it Promoting Contraband in the First Degree — a Class D felony (Class B felony if the contraband is fentanyl, carfentanil, or a fentanyl derivative) — to knowingly introduce dangerous contraband into a detention facility or penitentiary, or, as a confined person, to knowingly make, obtain, or possess it. This provision addresses physically introducing/possessing a drone within a facility, distinct from the overflight-based trespass offense at KRS 511.100 above; both trace to the same 2019 legislative vehicle (Senate Bill 157, per secondary bill-tracking sources) but were codified as separate sections addressing separate conduct.
+
+**Practical Interpretation**
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **Legal Counsel:** Pending Phase 2 interpretation pass.
+
+### Take of Wildlife with Aircraft Prohibited — 301 KAR 3:140
+*Binding regulation | Current, effective October 16, 2025*
+
+**Objective Summary:** 301 KAR 3:140, Section 1, adopted under KRS 150.010(46), 150.025(1), and 150.360(1), directly names "unmanned aircraft system" in its regulatory text: a person shall not use an aircraft or UAS to fish, hunt, or take wildlife, to drive or herd wildlife for those purposes, or to harass wildlife. Aircraft or UAS may be used by Kentucky Department of Fish and Wildlife Resources (KDFWR) employees/agents for human safety, law enforcement, research, or management needs; by authorized landowners for lawful wildlife damage control; and by commercial fishers locating or removing invasive carp.
+
+**Practical Interpretation**
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **Legal Counsel:** Pending Phase 2 interpretation pass.
+
+## 3. State Agency and Facility-Specific UAS Requirements
+
+### Photo & Drone Policy — Kentucky Department of Parks
+*Permit or property-use requirement | Current permit form dated January 27, 2026*
+
+**Objective Summary:** The Kentucky Department of Parks requires a signed "Location Contract for Use at State Parks" permit before any UAS may be flown at a Kentucky State Park or Historic Site, for both recreational and commercial use. The applicant must identify the applicable FAA operating rule (recreational or Part 107), disclose UAS weight class/registration, specify flight dates/times and photography scope, and attach a Remote Pilot Certificate or TRUST certificate and proof of liability insurance of no less than $1,000,000. The permit is revocable at the Department's discretion on 24 hours' notice (or without notice if injury/damage is threatened), requires FAA-rule compliance, a no-fly-over-people-without-consent condition, pre-flight use of the B4UFLY app, separate USACE/TVA approval where a park sits on federally owned land or water, and an indemnification clause. Submission alone does not authorize flight; the form must be executed by the Park Manager and Commissioner of Parks (or designee).
+
+**Practical Interpretation**
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **Legal Counsel:** Pending Phase 2 interpretation pass.
+
+### UAS Information Clearinghouse and Foreign-Drone Procurement Restriction — Kentucky Transportation Cabinet (KYTC), Department of Aviation
+*Official agency policy / advisory guidance, with a binding federal-funds-conditioned restriction | Current, restriction effective December 22, 2025*
+
+**Objective Summary:** KYTC's Department of Aviation serves as the Executive Branch's UAS information clearinghouse, primarily directing operators to FAA registration, Part 107 certification, TRUST testing, LAANC, Remote ID, and B4UFLY resources. Separately, a December 19, 2025 KYTC Design & Construction Memorandum (CM 25-09 & DM 06-25) — implementing the American Security Drone Act of 2023 and OMB Memorandum M-26-02 — notifies KYTC offices and "active consultants and highway contractors" that, effective December 22, 2025, federal funds may not be used to procure, operate, or maintain a UAS (aircraft, flight controller, camera, or ground control station) manufactured by or subject to control of a foreign-adversary country, specifically the People's Republic of China. "Industry partners" are defined to include any company performing federally funded Cabinet work, expressly including planning, design, surveying and imagery, construction engineering, and inspection. The memorandum directs recipients to halt pending procurements of covered equipment, cease operating/maintaining/processing data from existing covered UAS on FHWA-funded work, and physically segregate such equipment.
+
+**Practical Interpretation**
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **Legal Counsel:** Pending Phase 2 interpretation pass.
+
+### Professional Licensing — Kentucky Land Surveying Statute (KRS 322.010)
+*Binding general regulation | No UAS-specific board guidance located*
+
+**Objective Summary:** KRS 322.010(10)(a)(1)(b) defines "land surveying" to include, among other listed activities, "establishment of photogrammetric and geodetic control that is published and used for the determination, monumentation, or description of property boundaries." The definition is method-neutral apart from this express reference to photogrammetric control; it does not name UAS, drones, or LiDAR. No standalone rule, advisory opinion, or FAQ from the Kentucky State Board of Licensure for Professional Engineers and Land Surveyors specifically addressing UAS-derived photogrammetric or LiDAR survey products was located.
+
+**Practical Interpretation**
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **Legal Counsel:** Pending Phase 2 interpretation pass.
+
+### Executive Orders, AG Opinions, Court Decisions, Procurement, and Preemption — Research Results and Related Findings
+*Categories reviewed — no dispositive UAS-specific state authority located; material findings documented*
+
+**Objective Summary:** No Kentucky Governor executive order, Kentucky Attorney General opinion, or Kentucky state-court decision directly and dispositively addressing UAS regulation was located. The one federal case arising from a Kentucky UAS dispute, *Boggs v. Merideth*, No. 3:16-CV-00006 (W.D. Ky. 2017) — the "drone slayer" case, following William Merideth's 2015 shootdown of a neighbor's drone — was dismissed for lack of federal subject-matter jurisdiction; the court expressly declined to resolve whether a low-altitude drone flight over private property is in "navigable airspace" versus trespassing on the property below. No Kentucky statute imposing a state/local-government UAS procurement restriction tied to a "country of concern" or "foreign principal" was located; the closest analogue is the federal American Security Drone Act/OMB M-26-02 framework KYTC has begun implementing for its own federally funded work (see Section 3 above). No statewide statute expressly preempting local UAS ordinances was located; secondary sources report most Kentucky municipalities have not adopted their own drone ordinances, with Bowling Green cited as an exception at the city-parks level.
+
+**Practical Interpretation**
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **Legal Counsel:** Pending Phase 2 interpretation pass.
+
+## 4. Non-Regulatory Context
+
+*The items below are drawn from news and secondary reporting, not primary legal authority. They are provided for situational awareness only and are not part of the verified source register.*
+
+- **New law takes effect restricting drone use when hunting and fishing, Kentucky Department of Fish & Wildlife, October 28, 2025.** KDFWR's own press release announcing 301 KAR 3:140's October 16, 2025 effective date, quoting the regulation's operative language and a law-enforcement division major's statement that the rule "will provide a framework for our wardens to work within when investigating and enforcing potential violations." Useful confirmation that the wildlife-drone rule is newly in force and actively being communicated to hunters/anglers. [Source](https://fw.ky.gov/News/Pages/New-law-takes-effect-restricting-drone-use-when-hunting-and-fishing.aspx)
+- **Justice Department announces arrests in "sophisticated" drone network used to deliver meth, phones and weapons to prisons, CNN/KVIA, June 24, 2026.** Reports a federal indictment of twelve defendants for a multi-state drone-smuggling scheme at ten federal prisons across several states including Kentucky, tracked by law enforcement from 2023-2026 using drone-detection systems. Relevant situational context for AEC firms conducting any UAS work near Kentucky correctional facilities, given the heightened detection/enforcement posture described (see KRS 520.010/520.050 and KRS 511.100 above for the underlying state-law contraband and trespass offenses). [Source](https://kvia.com/politics/cnn-us-politics/2026/06/24/justice-department-announces-arrests-in-sophisticated-drone-network-used-to-deliver-meth-phones-and-weapons-to-prisons/)
+- **Four Army drone systems stolen from Kentucky base, Army Times, March 12, 2026.** Reports that four Skydio X10D drone systems were stolen from the 326th Division Engineer Battalion at Fort Campbell, Kentucky between November 21-24, 2025, prompting a $5,000 Army CID reward for information. Relevant background for any AEC firm operating UAS near Fort Campbell or other Kentucky military installations, given the heightened security posture such incidents may prompt. [Source](https://www.armytimes.com/news/your-military/2026/03/12/four-army-drone-systems-stolen-from-kentucky-base/)
+- **A Federal Court in Kentucky Shoots Down Drone Airspace Case, Butler Weihmuller Katz Craig LLP, April 5, 2017.** Law-firm analysis of the Western District of Kentucky's dismissal of *Boggs v. Merideth* for lack of subject-matter jurisdiction, explaining that the court did not reach the merits of the airspace-versus-trespass question central to the "drone slayer" dispute. Useful for correcting the common misimpression that this case "settled" Kentucky low-altitude drone property rights — it did not. [Source](https://www.butler.legal/a-federal-court-in-kentucky-shoots-down-drone-airspace-case/)
+
+## 5. Unresolved Operational Questions
+
+- **KRS 500.130 short-title deletion and secondary-source drift:** The 2025 amendment deleted the "Citizens' Freedom from Unwarranted Surveillance Act" short title. AEC firms and counsel relying on older internal memos, vendor guides, or secondary drone-law compilations that still cite the statute by that name should confirm they are working from the current (post-June 27, 2025) text, since the substantive subsection numbering was also reorganized.
+- **KRS 511.100 commercial exemption scope:** Subsection (4)(d)'s FAA-compliance exemption and subsection (4)(h)'s utility-company exemption are the two most operationally significant carve-outs for AEC infrastructure-inspection work, but the statute does not further define how a non-utility private consultant (e.g., retained directly by a facility owner rather than a utility) fits within the exemption structure beyond the owner-consent exceptions in subsection (4)(a)-(b). Confirm the applicable exception basis (owner consent vs. FAA-compliance commercial exemption vs. utility-contractor status) before any infrastructure-adjacent flight.
+- **301 KAR 3:140 history-note anomaly:** The regulation's own official Legislative Research Commission page displays a HISTORY line citation ("301 KAR 003:150") that does not match the regulation's actual number (301 KAR 3:140) used throughout the rest of the document. This appears to be a drafting artifact rather than a substantive discrepancy but should be rechecked at the next currency review in case it reflects an unresolved renumbering.
+- **KYTC foreign-drone procurement restriction — scope for non-federally-funded work:** The December 2025 KYTC memorandum implementing the American Security Drone Act/OMB M-26-02 restriction applies to federally funded (FHWA) Cabinet work. It is unresolved on the record reviewed whether Kentucky has, or intends to adopt, a parallel restriction reaching state-funded-only or purely private-sector Kentucky UAS work; AEC firms should confirm the funding source of any KYTC-adjacent project before assuming the restriction does or does not apply.
+- **State preemption of local ordinances:** No statewide preemption statute was located, and secondary sources report inconsistently on whether any meaningful local drone-ordinance layer exists in Kentucky beyond isolated examples (e.g., Bowling Green's city-parks permission requirement). Confirming the presence or absence of a local ordinance for any specific Kentucky project site is deferred to a later phase of this research program.
+- **Boggs v. Merideth's unresolved merits question:** Because the case was dismissed on jurisdictional grounds, Kentucky law currently has no binding judicial answer to whether a drone operating at low altitude over private property is trespassing on that property or operating in federally regulated airspace. This remains an open legal question relevant to any AEC UAS flight conducted without landowner consent near residential or otherwise sensitive private property.
+
+## 6. Confidence Summary
+
+| Finding | Confidence |
+|---|---|
+| KRS 500.130 (UAS privacy/surveillance statute, as amended 2025) | High — verified directly against the official Kentucky Legislative Research Commission website and the enrolled 2025 HB 19/Acts Chapter 19 redline |
+| KRS 183.086 (airport/reckless-operation restriction) | High — verified directly against the official Kentucky Legislative Research Commission website |
+| KRS 511.100 (trespass upon key infrastructure assets) | High — verified directly against the official Kentucky Legislative Research Commission website, including full amendment history |
+| KRS 520.010(3) / 520.050 (drone as dangerous contraband in detention facilities) | High — KRS 520.010 verified directly against the official LRC website; KRS 520.050's felony classification cross-checked via Justia |
+| 301 KAR 3:140 (wildlife/hunting drone restriction) | High — verified directly against the official LRC KAR database and corroborated by KDFWR's own press release |
+| Kentucky Department of Parks Photo & Drone Policy / permit | Moderate — policy and 2024 permit-form text verified directly; current January 2026 form not independently re-opened field-by-field |
+| KYTC UAS clearinghouse and foreign-drone procurement memorandum | High — both the clearinghouse webpage and the full December 2025 memorandum/OMB M-26-02 text were fetched directly in full |
+| KRS 322.010 (land-surveying definition, incl. photogrammetric control) | Low — general framework verified directly, but no UAS-specific Board guidance located |
+| Executive orders / AG opinions / state-court decisions / procurement / preemption (negative findings); *Boggs v. Merideth* | Moderate — case disposition verified against a law-firm secondary source, not the underlying court opinion; negative findings reflect this research pass only, not a comprehensive negative-search confirmation |
+| Citation-currency/discrepancy findings (KRS 500.130 deleted short title; KRS 150.363 misattribution) | High — both independently confirmed against official primary-source text |
+
+*This document is objective legal/regulatory summary; Practical Interpretation content is pending Phase 2 (see process note above) and, once added, is not legal advice. Consult Kentucky counsel for project-specific compliance determinations. Local ordinances and tribal UAS considerations are out of scope for this phase per current research instructions.*
