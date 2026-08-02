@@ -409,3 +409,51 @@ footer.site-footer a { color: var(--muted); }
   }
 }
 .print-disclaimer { display: none; }
+
+/* Coverage progress bar — near the state-count label. Self-updating: the
+   fill width and count text are computed from data/v1/index.json's state
+   count in app.js, so this never needs manual edits after a push. */
+.coverage-progress {
+  margin: 6px 0 14px;
+  padding: 10px 12px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.coverage-progress-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.coverage-progress-label {
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.coverage-progress-count {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent-dark);
+  white-space: nowrap;
+}
+
+.progress-bar-track {
+  width: 100%;
+  height: 8px;
+  background: var(--line);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--accent);
+  border-radius: 999px;
+  transition: width 0.4s ease;
+}

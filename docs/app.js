@@ -98,6 +98,8 @@
       });
   }
 
+  var TOTAL_US_STATES = 50;
+
   function populateSelect(states) {
     select.innerHTML = '<option value="">— Select a state —</option>';
     states.forEach(function (s) {
@@ -107,6 +109,19 @@
       select.appendChild(opt);
     });
     countLabel.textContent = states.length + " state" + (states.length === 1 ? "" : "s") + " available";
+    updateCoverageProgress(states.length);
+  }
+
+  // Reflects current coverage against all 50 states. Driven entirely by the
+  // length of data/v1/index.json's states array, so this updates itself on
+  // every push/rebuild with no manual editing required.
+  function updateCoverageProgress(count) {
+    var fill = document.getElementById("progress-bar-fill");
+    var countEl = document.getElementById("coverage-progress-count");
+    if (!fill || !countEl) return;
+    var pct = Math.max(0, Math.min(100, Math.round((count / TOTAL_US_STATES) * 100)));
+    fill.style.width = pct + "%";
+    countEl.textContent = count + " of " + TOTAL_US_STATES + " states (" + pct + "%)";
   }
 
   function loadState(abbr) {
