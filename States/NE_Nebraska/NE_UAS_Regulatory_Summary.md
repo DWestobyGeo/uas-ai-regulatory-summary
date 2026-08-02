@@ -1,0 +1,148 @@
+# Nebraska — Commercial UAS Regulatory Summary
+
+**Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
+**Research date:** August 2, 2026
+**Version:** 1.0 (Phase 1 — objective research; see process note below)
+**Model / checkpoint:** Claude Sonnet 5 (research and drafting)
+**Scope note:** This summary covers Nebraska state and state-agency-level UAS authority only. FAA Part 107 is the nationwide operating baseline and is not restated except where a Nebraska source expressly relies on or modifies it. Local (municipal/county) UAS ordinances and tribal UAS considerations are deferred under the current research program and are not researched here, although Nebraska's state/local preemption posture is addressed because it is itself a state-level finding: **no Nebraska statute broadly (or even narrowly) preempts local UAS ordinances was located.** Nebraska's only state-level actions touching the state/local UAS boundary are two state-agency-focused procurement statutes (the Secure Drone Purchasing Act and the Foreign Adversary Contracting Prohibition Act), neither of which preempts local ordinance authority. A municipal drone restriction (reportedly including an Omaha city-park rule) is understood to remain a matter of local ordinance and is outside the current research phase.
+
+> **Process note (Agent Instructions Amendment 2, updated under v6):** This state was researched under the three-phase program structure. This document currently reflects **Phase 1 only** — the objective, sourced findings below are complete, but the Practical Interpretation content (AEC Industry Expert, Agency Practitioner, UAS Procurement Expert, and Legal Counsel perspectives) has not yet been drafted and is marked "Pending Phase 2" throughout.
+
+Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation). Practical Interpretation — from four labeled perspectives (AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel) — will be added in Phase 2 and is not legal advice.
+
+## 1. State UAS Regulatory Overview
+
+Nebraska regulates UAS through a small set of discrete criminal-privacy statutes, two 2025-enacted state-agency procurement statutes, and Nebraska Game and Parks Commission (NGPC) guidance, rather than a single consolidated UAS act. Two long-standing Chapter 28 privacy/trespass statutes carry unmanned-aircraft-specific language: Neb. Rev. Stat. § 28-521 makes it second degree criminal trespass to intentionally cause a UAV to enter a property to observe a person in a place of solitude or seclusion without consent, and § 28-311.08 (recently amended, operative July 18, 2026) makes it unlawful to view or record a person in a state of undress "including, but not limited to, by unmanned aircraft." A 1972 hunting statute, § 37-509, bars using an aircraft to shoot at or harass wildlife; the text itself does not define "aircraft" to expressly include UAS, but NGPC's own current public guidance applies it to drones. The 2025 Legislature enacted two procurement-security statutes in the same session: the **Secure Drone Purchasing Act** (§§ 73-1001 to 73-1005, LB660), which will require state agencies (and, to the extent practicable, political subdivisions) to purchase only List-cleared, cybersecurity-compliant drones starting January 1, 2027; and the **Foreign Adversary Contracting Prohibition Act** (§§ 73-901 to 73-908, as amended by LB644, operative October 1, 2025), which — contrary to some secondary reporting — expressly **excludes** unmanned aerial systems from the "technology-related product or service" category that triggers its general foreign-adversary contracting ban. NGPC's current public guidance (a periodically-restated press release and its Special Occasion Permits webpage) states that drones require a Special Occasion Permit in state parks, historical parks, recreation areas, and wildlife management areas, although the codified Nebraska Administrative Code rule governing these properties does not itself name UAS. NDOT's Aeronautics Division maintains a consolidated, official drone-guidance webpage and administers the Secure Drone Purchasing Act's List of Secure Drones. No Nebraska statute restricts UAS use near critical infrastructure or correctional facilities (press coverage referenced a proposed prison-related drone bill that could not be verified as currently pending or enacted), no Nebraska gubernatorial executive order addressing UAS was located, no Nebraska Attorney General opinion or state appellate decision addressing UAS was located, no Nebraska professional-licensing board (engineers/architects or land surveyors) has adopted UAS-specific guidance, and Nebraska has not preempted local UAS ordinances.
+
+## 2. Statewide UAS Laws and Regulations
+
+### Criminal Trespass, Second Degree — Unmanned Aircraft Provision (Neb. Rev. Stat. § 28-521)
+`Binding statute (criminal) | Current / in force`
+
+**Objective Summary:** Nebraska's second degree criminal trespass statute is generally a Class III misdemeanor (Class II if the offender defies a personally communicated order to leave). Subsection (2), added in 2009 (Laws 2009, LB238, § 2) and amended in 2022 (Laws 2022, LB922, § 6), separately makes it second degree criminal trespass to intentionally cause an "electronic device, such as an unmanned aircraft" to enter into, upon, or above the property of another — including property the actor owns but has leased or rented to another — with the intent to observe another person without consent in a place of solitude or seclusion. Subsection (3) defines "unmanned aircraft" as an aircraft, including a drone, operated without the possibility of direct human intervention from within or on the aircraft. No Nebraska appellate decision applying subsection (2) to a UAS-specific fact pattern was located.
+
+**Practical Interpretation**
+
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
+- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+
+### Unlawful Intrusion; Photograph, Film, or Record Image or Video of Intimate Area — Unmanned Aircraft Provision (Neb. Rev. Stat. § 28-311.08)
+`Binding statute (criminal) | Current / in force`
+
+**Objective Summary:** Section 28-311.08 makes it unlawful to knowingly intrude upon another person without consent in a place of solitude or seclusion (Class I misdemeanor; Class IV felony for a second or subsequent violation), and separately criminalizes knowingly and intentionally photographing, filming, or recording another person's intimate area without knowledge/consent (Class IV felony), and distributing or threatening to distribute such images (felony/misdemeanor tiers depending on subsection and repeat-violation status). Subsection (8)(b) defines "intrude" to expressly include viewing or recording a person in a state of undress "directly or through electronic or other remote means, including, but not limited to, by unmanned aircraft," and subsection (8)(d) defines "unmanned aircraft" as an aircraft, including a drone, operated without the possibility of direct human intervention from within or on the aircraft. The section was most recently amended by 2026 Laws, LB935, § 19, operative July 18, 2026.
+
+**Practical Interpretation**
+
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
+- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+
+### Secure Drone Purchasing Act (Neb. Rev. Stat. §§ 73-1001 to 73-1005)
+`Binding statute (state-agency procurement) | Current / in force (phased effective dates)`
+
+**Objective Summary:** Enacted in 2025 (LB660, §§ 20-24), the Secure Drone Purchasing Act directs NDOT's Division of Aeronautics — in consultation with the Department of Administrative Services, the Committee on Pacific Conflict, the Nebraska State Patrol, and the Law Enforcement Drone Association or a comparable organization — to create and maintain, by January 1, 2026, a List of Secure Drones Authorized for Purchase (§ 73-1005). Listed drones must be cleared under the U.S. DoD Blue UAS Program, determined NDAA FY2024-compliant, independently determined incapable under normal conditions of transmitting data to unauthorized persons, or otherwise found to present no security threat under detailed statutory cybersecurity/data-protection criteria (U.S.-based data storage, AES-256 end-to-end encryption, segmented/MFA-controlled networks, tamper-proof hardware, real-time intrusion monitoring, and annual third-party security audits/certifications). Effective January 1, 2027, no state agency may purchase or acquire a drone other than a List-cleared one, and no state funds may be used to acquire a non-cleared drone; a violating contract is void and unenforceable (§ 73-1004). Political subdivisions must comply "to the extent practicable." Electric suppliers in compliance with NERC critical-infrastructure-protection requirements are exempt. The Act's legislative findings (§ 73-1002) expressly cite espionage, surveillance, and intellectual-property-theft concerns tied to the People's Republic of China.
+
+**Practical Interpretation**
+
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
+- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+
+### Foreign Adversary Contracting Prohibition Act — Unmanned Aerial System Definitional Carve-Out (Neb. Rev. Stat. §§ 73-901 to 73-908, as amended by 2025 LB644)
+`Binding statute (public-entity procurement/contracting) | Current / in force`
+
+**Objective Summary:** The Foreign Adversary Contracting Prohibition Act bars a "scrutinized company" (one organized in, based in, or controlled by a foreign adversary, or selling a foreign-adversary-originated technology product without incorporating it into another product) from contracting with a Nebraska public entity for a "technology-related product or service," defined as a product or service used for information systems, surveillance, LiDAR, or communications (§§ 73-904, 73-906). As amended by 2025 LB644 (approved by the Governor June 4, 2025, operative October 1, 2025), § 73-903(6)-(7) retains a definition of "unmanned aerial system" but expressly states that the "technology-related product or service" category triggering this Act's contracting ban "does not include unmanned aerial systems." Violating contracts are void; scrutinized companies face civil penalties (the greater of $250,000, twice the contract value, or the public entity's losses) and a five-year contracting ban, enforced by the Attorney General, with a 30% whistleblower reward (§ 73-907). A narrow exception (§ 73-908) permits contracting with a scrutinized company for goods generally where no reasonable alternative exists and the Department of Administrative Services preapproves.
+
+**Practical Interpretation**
+
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
+- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+
+### Hunting from Aircraft; Unlawful; Exception (Neb. Rev. Stat. § 37-509)
+`Binding statute (criminal) | Current / in force`
+
+**Objective Summary:** Section 37-509 makes it a Class II misdemeanor to (a) shoot or attempt to shoot at a bird, fish, or other animal while airborne in any aircraft, (b) use an aircraft to harass any bird, fish, or other animal, (c) knowingly participate in such use without a currently valid § 37-458 permit, or (d) shoot/attempt to shoot a coyote from an aircraft under a § 37-458 permit without first obtaining landowner/tenant permission. The statutory text itself does not define "aircraft" to expressly include unmanned aircraft (unlike some other states' hunting statutes). Nebraska Game and Parks Commission's own public guidance (a press release most recently republished December 16, 2024, and NDOT's Aeronautics drone-guidance webpage) states that this prohibition on aircraft-based wildlife harassment applies to drones, and separately cautions against drone use near sandhill/whooping cranes, geese, eagles, and state/federally listed species.
+
+**Practical Interpretation**
+
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
+- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+
+## 3. State Agency and Facility-Specific UAS Requirements
+
+### Drone Use on Game and Parks Commission Property — Special Occasion Permit Requirement (NGPC official guidance; cf. Neb. Admin. Code tit. 163, ch. 5, § 001.02 and tit. 163, ch. 4, § 018)
+`Official agency policy | Current`
+
+**Objective Summary:** Nebraska Game and Parks Commission's current public guidance states that the Commission does not permit drones to be flown in state parks, state historical parks, state recreation areas, or wildlife management areas unless a Special Occasion Permit has been approved (application submitted at least 30 days before the planned event, through the nearest Commission district office); commercial photography/videography additionally requires a Special Occasion Production Amendment. The codified Nebraska Administrative Code provisions governing these properties — Title 163, Chapter 5, § 001.02 ("Aircraft and Powerless Flight," prohibiting aircraft operation/landing outside designated areas and air-delivery of persons/objects without prior written Commission permission) and Title 163, Chapter 4, § 018 (general Wildlife Management Area property-use rules) — were reviewed in full and contain no reference to "drone," "unmanned," or "UAS" by name; their general "aircraft" language predates UAS-specific terminology.
+
+**Practical Interpretation**
+
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
+- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+
+### NDOT Aeronautics Division — Drone Guidance and Secure-Purchasing Administration (dot.nebraska.gov/aeronautics/drones)
+`Official agency policy / guidance | Current`
+
+**Objective Summary:** NDOT's Aeronautics Division maintains a public webpage consolidating Nebraska UAS rules: it summarizes the Secure Drone Purchasing Act and links the current List of Secure Drones Authorized for Purchase (statutorily updated at least every six months); references the criminal trespass statute (§ 28-521) and Game and Parks Commission park/WMA drone restrictions; and reiterates FAA baseline requirements (Part 107 or TRUST certification, registration, Remote ID, LAANC/DroneZone authorization, TFR/B4UFLY checks). The page also describes NDOT's own UAS program — bridge and culvert inspection, project documentation and aerial mapping, post-incident roadway assessment, and environmental/right-of-way monitoring — stating that NDOT's UAS use follows applicable federal rules, Nebraska law, and the state's secure-purchasing requirements.
+
+**Practical Interpretation**
+
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
+- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+
+### Professional Licensing — No UAS-Specific Guidance Located (Board of Engineers and Architects; Board of Examiners for Land Surveyors)
+`Research result (negative finding, Low confidence) | Reviewed`
+
+**Objective Summary:** Nebraska's Board of Engineers and Architects (Engineers and Architects Regulation Act, Neb. Rev. Stat. §§ 81-3401 to 81-3455, Title 110 NAC) and Board of Examiners for Land Surveyors (Land Surveyors Regulation Act, §§ 81-8,108 to 81-8,127, Title 234 NAC) were reviewed for UAS-specific guidance, FAQs, board opinions, or policy statements addressing drone-derived surveying or engineering work product. No such guidance was located. Title 234, Chapter 12 ("Minimum Standards for Land Surveys in Nebraska," adopted effective September 28, 2022) references "photogrammetry" once, as an example application of a "Control Survey," but contains no rule, definition, or guidance naming UAS, drones, or unmanned aircraft; it otherwise sets general monumentation, positional-accuracy, and certification standards applicable regardless of data-collection method.
+
+**Practical Interpretation**
+
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
+- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+
+## 4. Non-Regulatory Context
+
+*The items below are drawn from news and secondary reporting, not primary legal authority. They are provided for situational awareness only and are not part of the verified source register.*
+
+- **"Gov. Pillen Signs Executive Order Banning More CCP Tech," Office of Governor Jim Pillen, March 5, 2026 press release re: March 5, 2025 Executive Order No. 25-04.** The order bans use or download of applications, software, and platforms created or owned by Chinese Communist Party affiliates on state networks/devices, expanding a March 2023 order targeting CCP-controlled communications equipment on the FCC's Covered List. It does not name UAS/drones specifically, but is relevant background for AEC firms tracking Nebraska's broader foreign-adversary technology posture alongside the Secure Drone Purchasing Act (see Section 2). [Governor's press release](https://governor.nebraska.gov/gov-pillen-signs-executive-order-banning-more-ccp-tech)
+- **Reported 2025 bill on drone use over prisons and livestock harassment — unverified.** Trade-press and news coverage from September-October 2025 described a proposed Nebraska bill that would criminalize drone-based delivery of prison contraband, drone harassment of livestock, and expand UAS privacy rules, reportedly associated with a named state senator. This could not be verified against the Nebraska Legislature's own bill-search tool or the Government, Military and Veterans Affairs Committee's official 2025 session-review summary of bills the committee actually advanced, and the senator identified in secondary coverage is on record as having left the Legislature in January 2025 (term-limited). AEC firms should not treat this reported bill as pending or enacted law absent direct confirmation on nebraskalegislature.gov. [Airsight coverage](https://www.airsight.com/en/news/nebraska-bill-seeks-to-stop-drone-use-over-prisons)
+- **Stale secondary reporting on § 28-311.08's citation.** Multiple drone-law aggregator sites cite "Nebraska Revised Statute 28-3115" as the source of Nebraska's UAS privacy/voyeurism prohibition. No such statute exists in the current Nebraska Revised Statutes; the correct, verified citation is § 28-311.08 (see Section 2 and the source register notes for NE-002). AEC firms relying on secondary drone-law lists should independently confirm citations against nebraskalegislature.gov.
+
+## 5. Unresolved Operational Questions
+
+- **State-park/WMA drone permit requirement's precise legal basis.** Nebraska Game and Parks Commission's current, repeatedly restated public guidance (press release and Special Occasion Permits webpage) states unambiguously that drones require a Special Occasion Permit in state parks, historical parks, recreation areas, and wildlife management areas, but the codified Nebraska Administrative Code rule for these properties (Title 163, Chapter 5, § 001.02; Title 163, Chapter 4, § 018) does not itself name UAS, drones, or unmanned aircraft. It is unresolved whether the Commission relies on its general "aircraft" rule language, its "written Commission permission" mechanism for air delivery of objects, or an unwritten practice to support the permit requirement. AEC firms should confirm current requirements directly with the relevant Commission district office before flying on NGPC-administered land.
+- **Foreign Adversary Contracting Prohibition Act's actual (limited) UAS effect.** Secondary sources — including NDOT's own guidance webpage — describe 2025 LB644 as imposing a UAS-specific contracting restriction with transition dates of July 1, 2026, and July 1, 2028. The enacted LB644 text was fetched and reviewed in full and contains no such dates or UAS-specific ban; its only UAS-related change is a definitional carve-out excluding UAS from the Act's general "technology-related product or service" restriction. AEC firms and public-entity clients should rely on the Secure Drone Purchasing Act, not this Act, for Nebraska's actual UAS procurement-security requirements, and should independently verify this reading with the Department of Administrative Services or counsel given how widely the inaccurate secondary description has circulated.
+- **List of Secure Drones Authorized for Purchase — currency.** The List is statutorily required to be updated at least every six months and was still being populated as of the access date (initial versions dated 2026). AEC firms and public-agency clients should check the live list at dot.nebraska.gov/aeronautics/drones immediately before a purchase or specification decision rather than rely on a captured snapshot.
+- **Section 37-509's application to UAS.** The hunting-from-aircraft statute does not itself define "aircraft" to expressly include unmanned aircraft; its application to drones rests on Nebraska Game and Parks Commission's own public guidance rather than express statutory text. This is very likely enforceable as stated but has not been tested in a reported Nebraska court decision.
+- **University of Nebraska system UAS policy.** The University of Nebraska system maintains its own internal UAS use policy (Executive Memorandum No. 31) for university-operated drones and campus airspace, including around stadiums on game days. This is an institutional policy rather than a generally applicable state restriction on private commercial operators and was not independently verified or logged as a source-register record in this pass; AEC firms working on university construction, inspection, or mapping projects should confirm current campus-specific UAS requirements directly with the institution.
+- **Executive orders, AG opinions, and court decisions.** No Nebraska gubernatorial executive order, Attorney General opinion, or state appellate/supreme court decision addressing UAS was located; this negative finding rests on targeted rather than exhaustive historical searches and should be rechecked in a future currency pass.
+
+## 6. Confidence Summary
+
+| Record | Topic | Confidence | Basis |
+|---|---|---|---|
+| NE-001 | Criminal trespass by UAV (§ 28-521) | High | Fetched and read in full directly from nebraskalegislature.gov |
+| NE-002 | Unlawful intrusion/voyeurism via UAV (§ 28-311.08) | High | Fetched and read in full directly from nebraskalegislature.gov; corrects a phantom "28-3115" secondary citation |
+| NE-003 | Secure Drone Purchasing Act (§§ 73-1001 to 73-1005) | High | All five sections fetched and read in full directly from nebraskalegislature.gov; cross-checked against NDOT's live guidance page |
+| NE-004 | Foreign Adversary Contracting Prohibition Act UAS carve-out (§§ 73-901 to 73-908) | High | Sections fetched and read in full; enacted LB644 slip-law PDF searched in full to correct a major secondary-source date/substance discrepancy |
+| NE-005 | Hunting from aircraft (§ 37-509) | Moderate | Statute text High confidence; its application to UAS rests on agency guidance rather than express statutory "aircraft" definition |
+| NE-006 | NGPC state park/WMA drone permit requirement | Moderate | Agency guidance verified directly; codified administrative rule does not itself name UAS |
+| NE-007 | NDOT Aeronautics drone guidance page | Moderate | Live official page verified directly; contains one imprecise statement about NE-004 corrected in that record's notes |
+| NE-008 | Professional licensing (Engineers/Architects; Land Surveyors) | Low | Negative finding; boards' rules reviewed but not exhaustively (minutes/declaratory rulings not searched) |
+| NE-009 | Executive orders / AG opinions / court decisions / state preemption / pending legislation | Low | Negative finding across multiple official sources; not an exhaustive historical review |
+
+*This document is objective legal/regulatory summary; Practical Interpretation content is pending Phase 2 (see process note above) and, once added, is not legal advice. Consult Nebraska counsel for project-specific compliance determinations. Local ordinances and tribal UAS considerations are out of scope for this phase per current research instructions.*
