@@ -2,11 +2,11 @@
 
 **Prepared for:** Commercial AEC consultants conducting UAS-supported work in Tennessee  
 **Research date:** 2026-08-02  
-**Version:** 1.0 (Phase 1 — objective research; see process note below)  
-**Model / checkpoint:** OpenAI GPT-5 family (exact checkpoint unavailable)  
+**Version:** 2.0 (Phase 2 — practical interpretation complete)
+**Model / checkpoint:** Objective research model retained from Phase 1; Phase 2 interpretations drafted with OpenAI GPT-5 (Codex; exact checkpoint unavailable)
 **Scope note:** Tennessee state and state-agency requirements layered on the FAA Part 107 baseline. Municipal, county, tribal, federal, property-specific non-state, site-specific, and live-airspace requirements are outside this pass. Tennessee has no express broad UAS-specific state preemption provision identified in this research.
 
-> **Process note:** This is an AI-compiled research summary, not legal advice. Objective source content is separated from later expert interpretation. All four practical-interpretation fields remain pending in this Phase 1 deliverable.
+> **Process note:** Objective research is retained from the Phase 1 source packet. The four practical-interpretation roles were completed in Phase 2 on 2026-08-02 using OpenAI GPT-5 (Codex; exact checkpoint unavailable).
 
 ## 1. State UAS Regulatory Overview
 
@@ -20,10 +20,11 @@ Tennessee affirmatively recognizes many common commercial AEC imaging activities
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** Use a mission-specific collection plan for Statewide that limits camera angle, dwell time, audio, zoom, thermal capture, and retention to the contracted purpose. Brief the crew on aborting or redirecting collection when people, residences, or unrelated activity enter the sensor footprint.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Preserve the mission purpose, property or participant permissions, sensor settings, collection boundary, retention rule, access log, and deletion record relevant to Tenn. Code Ann. § 39-13-902(a), (b). Escalate before using zoom, audio, thermal, recognition, persistent tracking, or secondary data uses that materially expand the agreed collection.
+
 ### TN-002 — Unlawful surveillance imagery; possession, distribution, and evidentiary treatment
 *Binding statute or regulation | Current / in force*
 
@@ -31,10 +32,11 @@ Tennessee affirmatively recognizes many common commercial AEC imaging activities
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** Use a mission-specific collection plan for Statewide that limits camera angle, dwell time, audio, zoom, thermal capture, and retention to the contracted purpose. Brief the crew on aborting or redirecting collection when people, residences, or unrelated activity enter the sensor footprint.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Retain the current application, all attachments, written approval, conditions, amendments, and closeout records under Tenn. Code Ann. §§ 39-13-903(a)(1)–(2), 39-13-904, 39-13-905; a client's verbal direction should not substitute for the named authority's authorization. Escalate if the approving official, property boundary, operating dates, data rights, insurance terms, or ability to use a contractor is unclear.
+
 ### TN-003 — Open-air ticketed events and fireworks sites
 *Binding statute or regulation | Current / in force*
 
@@ -42,10 +44,11 @@ Tennessee affirmatively recognizes many common commercial AEC imaging activities
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** Map the event or fireworks perimeter and active time window for Statewide, obtain any consent expressly available under the rule, and keep launch, route, return-to-home, and contingency areas outside the covered zone unless authorized. Recheck the event schedule immediately before flight because setup, rehearsal, or ignition activity can change the applicable operating boundary.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** Use configuration-controlled payload interfaces and maintain documentation showing the purpose, operating limits, release safeguards, aircraft weight, and approved mission configuration. Avoid buying or fielding attachments whose capability could place an otherwise ordinary mapping aircraft within a weapon, projectile, contraband-delivery, or regulated dispensing provision.
+- **AEC Industry Legal Counsel:** Retain the current application, all attachments, written approval, conditions, amendments, and closeout records under Tenn. Code Ann. § 39-13-903(a)(3)–(4), (b); a client's verbal direction should not substitute for the named authority's authorization. Escalate if the approving official, property boundary, operating dates, data rights, insurance terms, or ability to use a contractor is unclear.
+
 ### TN-004 — Unmanned aircraft over correctional-facility grounds
 *Binding statute or regulation | Current / in force*
 
@@ -53,10 +56,11 @@ Tennessee affirmatively recognizes many common commercial AEC imaging activities
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** Map the covered facility and conservative stand-off area during desktop planning for work within Statewide; do not rely only on flight-app geofencing or a client's general site-access instruction. Include lost-link, return-to-home, emergency landing, sensor-direction, and observer controls that prevent an unintended facility overflight, prohibited capture, loitering, or interference.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Treat Unmanned aircraft over correctional-facility grounds as a documented stop-work or redesign trigger because the packet identifies criminal, civil, evidentiary, or damage exposure. The contract and flight record should preserve the site screening, authority or exception relied upon, crew briefing, and incident/escalation path; obtain counsel where the facts sit near an undefined boundary or intent element.
+
 ### TN-005 — Critical-infrastructure surveillance and data collection
 *Binding statute or regulation | Current / in force*
 
@@ -64,10 +68,11 @@ Tennessee affirmatively recognizes many common commercial AEC imaging activities
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** Treat written facility coordination as a pre-mobilization gate for work within Statewide; do not rely only on flight-app geofencing or a client's general site-access instruction. Include lost-link, return-to-home, emergency landing, sensor-direction, and observer controls that prevent an unintended facility overflight, prohibited capture, loitering, or interference.
+- **Agency Practitioner:** Use the current named facility or administering agency application or request channel and provide the current fee. The packet identifies the approval as: Business operator’s written consent, unless the stated FAA-authorized commercial-purpose exception applies. Because the verified source does not establish a dependable review time for every case, confirm completeness, reviewer, lead time, approval duration, and field-contact expectations directly with the agency.
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Retain the current application, all attachments, written approval, conditions, amendments, and closeout records under Tenn. Code Ann. § 39-13-903(a)(7), (b)(2), as renumbered by 2026 Tenn. Pub. Acts ch. 868; a client's verbal direction should not substitute for the named authority's authorization. Escalate if the approving official, property boundary, operating dates, data rights, insurance terms, or ability to use a contractor is unclear.
+
 ### TN-006 — Freedom from Unwarranted Surveillance Act — law-enforcement drone use and data
 *Binding statute or regulation | Current / in force*
 
@@ -75,10 +80,11 @@ Tennessee affirmatively recognizes many common commercial AEC imaging activities
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** This record does not directly regulate an ordinary privately controlled AEC flight, but it can govern a mission performed for or integrated into the named public agency's program. Define in the scope and flight plan who authorizes the mission, controls the aircraft, receives the data, and is responsible for the cited records or use restrictions.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** Select capture and processing systems that support role-based access, exportable audit logs, configurable retention and deletion, defensible redaction, and delivery in the agency's required format. Confirm cloud hosting, backup replication, account ownership, and vendor deletion behavior before the platform is approved for covered data.
+- **AEC Industry Legal Counsel:** Treat Freedom from Unwarranted Surveillance Act — law-enforcement drone use and data as a documented stop-work or redesign trigger because the packet identifies criminal, civil, evidentiary, or damage exposure. The contract and flight record should preserve the site screening, authority or exception relied upon, crew briefing, and incident/escalation path; obtain counsel where the facts sit near an undefined boundary or intent element.
+
 ### TN-007 — Emergency-management and state-authority image capture and retention
 *Binding statute or regulation | Current / in force*
 
@@ -86,10 +92,11 @@ Tennessee affirmatively recognizes many common commercial AEC imaging activities
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** This record does not directly regulate an ordinary privately controlled AEC flight, but it can govern a mission performed for or integrated into the named public agency's program. Define in the scope and flight plan who authorizes the mission, controls the aircraft, receives the data, and is responsible for the cited records or use restrictions.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** Select capture and processing systems that support role-based access, exportable audit logs, configurable retention and deletion, defensible redaction, and delivery in the agency's required format. Confirm cloud hosting, backup replication, account ownership, and vendor deletion behavior before the platform is approved for covered data.
+- **AEC Industry Legal Counsel:** State in the contract whether the public agency or the consultant is the operator and data custodian, and allocate authorization, disclosure, retention, and records-request duties accordingly. Do not represent an agency-only power or exception as authority for a privately controlled flight unless the verified source and written mission authorization support that relationship.
+
 ### TN-008 — Unmanned aircraft surveillance over public K–12 school grounds
 *Binding statute or regulation | Current / in force*
 
@@ -97,10 +104,11 @@ Tennessee affirmatively recognizes many common commercial AEC imaging activities
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** Map the covered facility and conservative stand-off area during desktop planning for work within Statewide; do not rely only on flight-app geofencing or a client's general site-access instruction. Include lost-link, return-to-home, emergency landing, sensor-direction, and observer controls that prevent an unintended facility overflight, prohibited capture, loitering, or interference.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Treat Unmanned aircraft surveillance over public K–12 school grounds as a documented stop-work or redesign trigger because the packet identifies criminal, civil, evidentiary, or damage exposure. The contract and flight record should preserve the site screening, authority or exception relied upon, crew briefing, and incident/escalation path; obtain counsel where the facts sit near an undefined boundary or intent element.
+
 ### TN-009 — Public-agency drone procurement restrictions
 *Binding statute or regulation | Current / in force*
 
@@ -108,10 +116,11 @@ Tennessee affirmatively recognizes many common commercial AEC imaging activities
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** This record does not directly regulate an ordinary privately controlled AEC flight, but it can govern a mission performed for or integrated into the named public agency's program. Define in the scope and flight plan who authorizes the mission, controls the aircraft, receives the data, and is responsible for the cited records or use restrictions.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** Treat Public-agency drone procurement restrictions as a time-sensitive eligibility check at solicitation and again before purchase or assignment to a public project. Maintain manufacturer and component attestations, model and serial inventories, software and data-hosting details, funding-source restrictions, and a replacement path; do not assume a restriction on a public owner automatically binds a consultant unless the contract says so.
+- **AEC Industry Legal Counsel:** State in the contract whether the public agency or the consultant is the operator and data custodian, and allocate authorization, disclosure, retention, and records-request duties accordingly. Do not represent an agency-only power or exception as authority for a privately controlled flight unless the verified source and written mission authorization support that relationship.
+
 ### TN-012 — Hunter Protection Act — drone surveillance of hunters and anglers
 *Binding statute or regulation | Current / in force*
 
@@ -119,10 +128,11 @@ Tennessee affirmatively recognizes many common commercial AEC imaging activities
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** Screen the mission for active hunting and wildlife sensitivity within Statewide; plan altitude, stand-off distance, route, observers, and abort criteria to avoid pursuit, harassment, surveillance of participants, or assistance to a taking. Document the project's environmental or infrastructure purpose and pause if animals materially react or the flight would disrupt lawful hunting or fishing.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Retain the current application, all attachments, written approval, conditions, amendments, and closeout records under Tenn. Code Ann. §§ 70-4-301 to 70-4-303; a client's verbal direction should not substitute for the named authority's authorization. Escalate if the approving official, property boundary, operating dates, data rights, insurance terms, or ability to use a contractor is unclear.
+
 ## 3. State Agency UAS Requirements
 
 ### TN-010 — Unmanned Aircraft Systems in park areas and natural areas
@@ -132,10 +142,11 @@ Tennessee affirmatively recognizes many common commercial AEC imaging activities
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** Treat property authorization for All park areas and natural areas administered by the Tennessee Department of Environment and Conservation as a pre-mobilization gate and obtain conditions that cover launch, landing, route, dates, aircraft, crew, and sensor purpose. Confirm whether the approval is site-wide or location-specific and carry the written authorization and field contact with the crew.
+- **Agency Practitioner:** Use the current Tennessee Department of Environment and Conservation application or request channel and provide insurance evidence, a location map, pilot credentials, aircraft details. The packet identifies the approval as: Yes outside an Authorized Flight Zone; no permit or fee inside an Authorized Flight Zone. Because the verified source does not establish a dependable review time for every case, confirm completeness, reviewer, lead time, approval duration, and field-contact expectations directly with the agency.
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Retain the current application, all attachments, written approval, conditions, amendments, and closeout records under Tenn. Comp. R. & Regs. 0400-02-02-.33; a client's verbal direction should not substitute for the named authority's authorization. Escalate if the approving official, property boundary, operating dates, data rights, insurance terms, or ability to use a contractor is unclear.
+
 ### TN-011 — Use of Unmanned Aircraft on University property
 *Binding statute or regulation | Current / in force*
 
@@ -143,10 +154,11 @@ Tennessee affirmatively recognizes many common commercial AEC imaging activities
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** Treat property authorization for Property owned, controlled, or operated by the University of Tennessee system as a pre-mobilization gate and obtain conditions that cover launch, landing, route, dates, aircraft, crew, and sensor purpose. Confirm whether the approval is site-wide or location-specific and carry the written authorization and field contact with the crew.
+- **Agency Practitioner:** Use the current University of Tennessee Board of Trustees application or request channel and provide aircraft details. The packet identifies the approval as: University property-use authorization is required; a University contract can place the operator outside this rule’s specific restrictions. Because the verified source does not establish a dependable review time for every case, confirm completeness, reviewer, lead time, approval duration, and field-contact expectations directly with the agency.
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Retain the current application, all attachments, written approval, conditions, amendments, and closeout records under Tenn. Comp. R. & Regs. 1720-01-02-.06; a client's verbal direction should not substitute for the named authority's authorization. Escalate if the approving official, property boundary, operating dates, data rights, insurance terms, or ability to use a contractor is unclear.
+
 ### TN-013 — Big Game Drone Recovery — current operator requirements
 *Official agency policy, permit, or guidance with operative requirements | Current / in force*
 
@@ -154,10 +166,11 @@ Tennessee affirmatively recognizes many common commercial AEC imaging activities
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass
-- **Agency Practitioner:** Pending Phase 2 interpretation pass
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass
+- **AEC Industry UAS Expert:** This record has no routine effect on an AEC mission or ordinary fleet operation because it applies to a separately regulated person or activity. Do not treat it as a general UAS operating rule; address it only if the stated regulated-party condition is actually present.
+- **Agency Practitioner:** Use the current reporting instructions of Tennessee Fish and Wildlife Commission; Tennessee Wildlife Resources Agency and calendar the stated event-driven or periodic deadline; retain the submitted data, transmittal, and acceptance receipt. Confirm the current form, reporting period, responsible agency contact, amendment method, and whether contractor-held flight or data records must be supplied to the reporting entity.
+- **UAS Procurement Expert:** Use configuration-controlled payload interfaces and maintain documentation showing the purpose, operating limits, release safeguards, aircraft weight, and approved mission configuration. Avoid buying or fielding attachments whose capability could place an otherwise ordinary mapping aircraft within a weapon, projectile, contraband-delivery, or regulated dispensing provision.
+- **AEC Industry Legal Counsel:** Retain the current application, all attachments, written approval, conditions, amendments, and closeout records under TWRA Hunting in Tennessee — Big Game Drone Recovery; authority granted by 2025 Tenn. Pub. Acts ch. 478; a client's verbal direction should not substitute for the named authority's authorization. Escalate if the approving official, property boundary, operating dates, data rights, insurance terms, or ability to use a contractor is unclear.
+
 ## Non-Regulatory Context
 
 *The items below are drawn from news and secondary reporting, not primary legal authority. They are provided for situational awareness only and are not part of the verified source register.*
