@@ -140,6 +140,14 @@
       "json_url": "data/v1/KY.json"
     },
     {
+      "state": "Louisiana",
+      "state_abbr": "LA",
+      "state_fips": "22",
+      "record_count": 8,
+      "last_updated": "2026-08-02",
+      "json_url": "data/v1/LA.json"
+    },
+    {
       "state": "Missouri",
       "state_abbr": "MO",
       "state_fips": "29",
@@ -196,5 +204,5 @@
       "json_url": "data/v1/WA.json"
     }
   ],
-  "state_count": 24
+  "state_count": 25
 }
