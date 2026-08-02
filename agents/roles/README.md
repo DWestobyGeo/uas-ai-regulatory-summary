@@ -11,6 +11,7 @@ This directory is the authoritative home for individual agent operating instruct
 | [Agency Practitioner](agency-practitioner.md) | Agency application, permit, registration, and approval-process interpretation | `practical_interpretation_agency_practitioner` |
 | [UAS Procurement Expert](uas-procurement-expert.md) | Aircraft, payload, software, cybersecurity, sourcing, and fleet interpretation | `practical_interpretation_uas_procurement_expert` |
 | [AEC Industry Legal Counsel](aec-industry-legal-counsel.md) | Legal-risk, contract, documentation, liability, and escalation interpretation | `practical_interpretation_legal_counsel` |
+| [State UAS Regulatory Burden Analyst](state-uas-regulatory-burden-analyst.md) | Cross-state, scenario-based compliance-burden measurement and calibration | Comparative assessment artifacts; no source-register field |
 | [Editorial and QA Reviewer](editorial-qa-reviewer.md) | Independent consistency, fact-drift, schema, and publication-artifact QA | Review only; corrections must be attributed to the owning role |
 | [Web UX/UI and Editorial Agent](web-ux-ui-editor.md) | Static-site presentation, navigation, accessibility, links, and print behavior | `docs/` presentation layer and UI provenance |
 
@@ -26,7 +27,7 @@ version: semantic role-instruction version
 status: active | draft | retired
 last_updated: YYYY-MM-DD
 governance: ../../Agent_Instructions.v6.md
-role_type: research | interpretation | quality | presentation
+role_type: research | interpretation | assessment | quality | presentation
 phases:
   - phase name
 governs_sections:

@@ -4,7 +4,7 @@
 
 **Status:** Active. Research or revision begins only when assigned.
 
-**Governance version:** 6.1.0 — August 2, 2026
+**Governance version:** 6.2.0 — August 2, 2026
 
 **Compatibility note:** The filename remains `Agent_Instructions.v6.md` so existing state provenance, links, and automation continue to work. Role-specific operating instructions now live in [`agents/roles/`](agents/roles/).
 
@@ -88,6 +88,7 @@ Every active role has a versioned operating document with common ownership and c
 | Agency Practitioner | Agency process interpretation or governed N/A disposition | [`agents/roles/agency-practitioner.md`](agents/roles/agency-practitioner.md) |
 | UAS Procurement Expert | Equipment, software, service, security, acquisition, and fleet interpretation or governed N/A disposition | [`agents/roles/uas-procurement-expert.md`](agents/roles/uas-procurement-expert.md) |
 | AEC Industry Legal Counsel | AI-generated legal-risk, contract, documentation, liability, and escalation interpretation | [`agents/roles/aec-industry-legal-counsel.md`](agents/roles/aec-industry-legal-counsel.md) |
+| State UAS Regulatory Burden Analyst | Cross-state, scenario-based compliance-burden assessment and calibration | [`agents/roles/state-uas-regulatory-burden-analyst.md`](agents/roles/state-uas-regulatory-burden-analyst.md) |
 | Editorial and QA Reviewer | Independent review, issue ownership, schema and publication consistency | [`agents/roles/editorial-qa-reviewer.md`](agents/roles/editorial-qa-reviewer.md) |
 | Web UX/UI and Editorial Agent | Static-site presentation, navigation, hyperlinks, accessibility, and print behavior | [`agents/roles/web-ux-ui-editor.md`](agents/roles/web-ux-ui-editor.md) |
 
@@ -159,6 +160,12 @@ The AEC and legal roles provide a substantive disposition for every retained rec
 The Editorial and QA Reviewer checks evidence-to-summary fidelity, role applicability, field ownership, schema, provenance, generated artifacts, and publication consistency. A nonempty field or N/A marker is not sufficient proof of quality.
 
 QA identifies the owning role for substantive corrections. If an objective change affects an interpretation, all dependent role fields must be reconsidered.
+
+### Phase 4 — Comparative Assessment
+
+After the objective and interpretation work reaches a common national research cutoff, the State UAS Regulatory Burden Analyst may apply the active [State-Level UAS Compliance Burden Index methodology](methodologies/state-uas-compliance-burden-index.md). This is a state-level downstream assessment, not a fifth per-record interpretation, and it does not change the 33-field source-register schema.
+
+A national comparison may be published only when every included state passes the methodology evidence gate and uses the same methodology version. Provisional method testing and incomplete comparisons must remain clearly labeled and must not be presented as national rankings.
 
 ## 7. Evidence governance
 
@@ -273,5 +280,6 @@ Before completing assigned work, run the applicable checks and confirm:
 
 ## 13. Revision history
 
+- **6.2.0 — August 2, 2026:** Added the State UAS Regulatory Burden Analyst and a gated Phase 4 for comparative state-level assessment under a separate versioned methodology; preserved the 33-field authority schema and prohibited partial provisional work from being presented as a national ranking.
 - **6.1.0 — August 2, 2026:** Converted the former mixed governance/role document into high-level governance; established individual versioned role documents and common role metadata; formalized field ownership, role-version provenance, and record-change documentation; retained the state/state-agency scope and AI-only product boundary; and clarified acceptable use of normalized legal publishers.
 - **6.0 — August 2, 2026:** Added the procurement role, 33-field schema, Phase 2 authorization, one-to-three-sentence norm with justified exceptions, model provenance, and substantive QA applicability checks; consolidated prior amendments.

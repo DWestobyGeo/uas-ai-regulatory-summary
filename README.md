@@ -43,9 +43,12 @@ agents/
     agency-practitioner.md          ← agency-process interpretation
     uas-procurement-expert.md       ← acquisition and fleet interpretation
     aec-industry-legal-counsel.md   ← AI legal-risk interpretation
+    state-uas-regulatory-burden-analyst.md ← state comparison and burden-index assessment
     editorial-qa-reviewer.md        ← independent AI quality review
     web-ux-ui-editor.md             ← presentation, links, accessibility, and print
 Agent_Instructions.v6.md            ← high-level repository governance
+methodologies/
+  state-uas-compliance-burden-index.md ← versioned comparative measurement rules
 .github/workflows/
   site-quality.yml                  ← validates roles, shared UI, and state-data contract
 docs/                     ← published by GitHub Pages (this is the whole website)

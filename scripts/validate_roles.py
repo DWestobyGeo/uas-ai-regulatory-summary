@@ -18,6 +18,7 @@ ACTIVE_ROLE_FILES = {
     "agency-practitioner.md",
     "uas-procurement-expert.md",
     "aec-industry-legal-counsel.md",
+    "state-uas-regulatory-burden-analyst.md",
     "editorial-qa-reviewer.md",
     "web-ux-ui-editor.md",
 }

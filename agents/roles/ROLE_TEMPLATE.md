@@ -5,7 +5,7 @@ version: 1.0.0
 status: draft
 last_updated: 2026-08-02
 governance: ../../Agent_Instructions.v6.md
-role_type: interpretation
+role_type: research | interpretation | assessment | quality | presentation
 phases:
   - Phase 2
 governs_sections:
