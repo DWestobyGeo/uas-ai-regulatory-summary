@@ -195,9 +195,14 @@ def agency_opinion(row: dict[str, str]) -> str:
             "This is a personal reporting process for the specifically regulated population, not an aircraft or operator approval for an AEC mission. "
             "A covered individual should confirm the current UAS-identification reporting method and deadlines directly with the named registering agency."
         )
+    focus = " | ".join(row.get(k, "") for k in ("source_title", "uas_topic", "regulated_activity", "requirement_type", "permit_or_approval_required"))
+    if has(focus, "professional licensure", "professional-practice", "licensure boundary", "licensed surveyor", "professional surveying"):
+        return (
+            "The professional board does not approve an ordinary drone flight merely because a UAS is used; its process attaches when the resulting service is regulated professional practice. "
+            "Confirm the responsible licensee, firm authorization, scope classification, required supervision, certification, recordation, and current board guidance before offering or sealing the deliverable."
+        )
     if not agency_process(row):
         return "N/A — no agency process involved"
-    focus = " | ".join(row.get(k, "") for k in ("source_title", "uas_topic", "regulated_activity", "requirement_type", "permit_or_approval_required"))
     if has(focus, "wildfire", "wildland fire", "incident commander"):
         return (
             "Coordinate through the current incident-command structure and obtain express mission permission plus every imposed operating restriction before entering the covered fire scene or restriction. "
@@ -213,7 +218,10 @@ def agency_opinion(row: dict[str, str]) -> str:
             "Use the specific federal or contracting authority named in the exception and retain its written approval or authorizing contract with the mission file. "
             "The state source does not create a general state waiver, so confirm that the exact aircraft, payload, location, operator, and activity fall within the relied-upon authorization."
         )
-    if has(row.get("requirement_type", ""), "report", "filing", "submission") or has(row.get("regulated_activity", ""), "annual report", "submit report", "reporting"):
+    periodic_reporting = has(row.get("regulated_activity", ""), "annual report", "periodic report", "submit report") or has(
+        row.get("source_title", ""), "reporting"
+    )
+    if periodic_reporting and not approval_process(row):
         return (
             f"Use the current reporting instructions of {row['issuing_authority']} and calendar the stated event-driven or periodic deadline; retain the submitted data, transmittal, and acceptance receipt. "
             "Confirm the current form, reporting period, responsible agency contact, amendment method, and whether contractor-held flight or data records must be supplied to the reporting entity."
