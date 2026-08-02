@@ -204,6 +204,14 @@
       "json_url": "data/v1/MS.json"
     },
     {
+      "state": "Montana",
+      "state_abbr": "MT",
+      "state_fips": "30",
+      "record_count": 9,
+      "last_updated": "2026-08-02",
+      "json_url": "data/v1/MT.json"
+    },
+    {
       "state": "North Carolina",
       "state_abbr": "NC",
       "state_fips": "37",
@@ -268,5 +276,5 @@
       "json_url": "data/v1/WY.json"
     }
   ],
-  "state_count": 33
+  "state_count": 34
 }
