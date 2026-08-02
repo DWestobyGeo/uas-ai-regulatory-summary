@@ -6,6 +6,8 @@
 
 Each rule below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from two labeled perspectives: an AEC industry UAS expert (operational read) and AEC industry legal counsel (risk/compliance read). Practical interpretation is not legal advice.
 
+> **Process note (added under Agent Instructions Amendment 2, August 1, 2026):** The Practical Interpretation content in this document was produced under the prior single-pass research process and does not yet reflect the Agency Practitioner perspective or the Phase 3 fact-drift QA pass introduced by Amendment 2. It is retained as-is for now and will be regenerated for consistency once Phase 1 (objective research) is complete for all states. Treat the Objective Summary and source citations above as current; treat the Practical Interpretation bullets as provisional pending that later pass.
+
 ---
 
 ## 1. State UAS Regulatory Overview
