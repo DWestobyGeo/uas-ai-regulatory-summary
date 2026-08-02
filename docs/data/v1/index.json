@@ -12,6 +12,14 @@
       "json_url": "data/v1/CA.json"
     },
     {
+      "state": "Colorado",
+      "state_abbr": "CO",
+      "state_fips": "08",
+      "record_count": 10,
+      "last_updated": "2026-08-01",
+      "json_url": "data/v1/CO.json"
+    },
+    {
       "state": "Florida",
       "state_abbr": "FL",
       "state_fips": "12",
@@ -76,5 +84,5 @@
       "json_url": "data/v1/WA.json"
     }
   ],
-  "state_count": 9
+  "state_count": 10
 }
