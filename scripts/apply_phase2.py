@@ -48,6 +48,8 @@ def approval_process(row: dict[str, str]) -> bool:
         return False
     if permit.strip().lower().startswith("only the federal"):
         return False
+    if has(permit, "no separate approval", "no separate state permit", "no general flight permit"):
+        return False
     return (
         not permit.lower().startswith("no")
         and has(permit, "yes", "required", "approval", "permit", "license", "register", "consent", "notice", "authorization")
@@ -62,7 +64,7 @@ def agency_process(row: dict[str, str]) -> bool:
     focus = " | ".join(row.get(k, "") for k in ("source_title", "uas_topic", "regulated_party", "regulated_activity", "requirement_type"))
     permit = row.get("permit_or_approval_required", "")
     authority = row.get("issuing_authority", "")
-    if has(permit, "landowner consent", "landowner or lessee permission", "owner or lessee consent", "property consent", "property owner consent", "owner's consent", "owner consent", "owner or occupant consent", "owner or lawful-occupant consent", "venue or fireworks-event owner", "consent of the people", "people being surveilled", "property right", "private-property permission") and has(authority, "legislature", "general assembly"):
+    if has(permit, "landowner consent", "landowner or lessee permission", "owner or lessee consent", "property consent", "property owner consent", "owner's consent", "owner consent", "owner or occupant consent", "owner or lawful-occupant consent", "venue or fireworks-event owner", "consent of the people", "people being surveilled", "consent from each surveilled", "surveilled hunter", "property right", "private-property permission") and has(authority, "legislature", "general assembly"):
         return False
     if has(permit, "no agency permit", "no statewide operator permit"):
         return False
@@ -99,6 +101,12 @@ def aec_opinion(row: dict[str, str]) -> str:
             f"Map the event or fireworks perimeter and active time window for {scope}, obtain any consent expressly available under the rule, and keep launch, route, return-to-home, and contingency areas outside the covered zone unless authorized. "
             "Recheck the event schedule immediately before flight because setup, rehearsal, or ignition activity can change the applicable operating boundary."
         )
+    if has(focus, "correction", "prison", "jail", "detention"):
+        lead = "Treat written facility coordination as a pre-mobilization gate" if approval_process(row) else "Map the covered facility and conservative stand-off area during desktop planning"
+        return (
+            f"{lead} for work within {scope}; do not rely only on flight-app geofencing or a client's general site-access instruction. "
+            "Include lost-link, return-to-home, emergency landing, sensor-direction, payload, and observer controls that prevent an unintended facility overflight, prohibited capture, delivery, or interference."
+        )
     if has_payload_restriction(focus):
         return (
             f"Screen aircraft and payload configuration against {title} before deployment, including release devices, tethered tools, sample systems, and experimental attachments. "
@@ -109,7 +117,7 @@ def aec_opinion(row: dict[str, str]) -> str:
             f"Plan the route and stand-off distance for {scope} so the aircraft does not chase, bunch, separate, distress, or injure livestock. "
             "Coordinate with the owner or handler, brief an immediate retreat or landing trigger, and document any owner-directed husbandry purpose before flight."
         )
-    if has(focus, "state park", "state forest", "public land", "public reservation", "nature preserve", "natural area", "department land", "department property", "campus", "university property"):
+    if has(focus, "state park", "state forest", "public land", "public reservation", "nature preserve", "natural area", "department land", "department property", "department-controlled land", "boat access", "campus", "university property"):
         if approval_process(row):
             return (
                 f"Treat property authorization for {scope} as a pre-mobilization gate and obtain conditions that cover launch, landing, route, dates, aircraft, crew, and sensor purpose. "
@@ -135,7 +143,7 @@ def aec_opinion(row: dict[str, str]) -> str:
             f"{lead} for work within {scope}; do not rely only on flight-app geofencing or a client's general site-access instruction. "
             "Include lost-link, return-to-home, emergency landing, sensor-direction, and observer controls that prevent an unintended facility overflight, prohibited capture, loitering, or interference."
         )
-    if has(focus, "state park", "state forest", "public land", "nature preserve", "natural area", "department land", "department property", "campus", "university property"):
+    if has(focus, "state park", "state forest", "public land", "nature preserve", "natural area", "department land", "department property", "department-controlled land", "boat access", "campus", "university property"):
         if approval_process(row):
             return (
                 f"Treat property authorization for {scope} as a pre-mobilization gate and obtain conditions that cover launch, landing, route, dates, aircraft, crew, and sensor purpose. "
