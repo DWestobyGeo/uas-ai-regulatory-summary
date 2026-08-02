@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>State UAS Regulatory Summaries — AEC Reference</title>
+<meta name="description" content="AI-compiled, state-by-state reference on commercial UAS (drone) regulation for architecture, engineering, and construction (AEC) work. Not legal advice." />
+<link rel="stylesheet" href="style.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+</head>
+<body>
+
+<div class="disclaimer-banner no-print">
+  ⚠️ <strong>This entire site is compiled by an AI research agent and has not been reviewed by an attorney.</strong>
+  It is not legal advice and may contain errors or outdated information. Verify every citation against the official source before relying on it.
+  <a href="disclaimer.html">Read the full disclaimer</a>.
+</div>
+
+<header class="site-header no-print">
+  <h1>State UAS Regulatory Summaries
+    <small>Commercial drone regulation reference for AEC (architecture / engineering / construction) work</small>
+  </h1>
+  <nav class="site-nav">
+    <a href="disclaimer.html">Disclaimer</a>
+    <a href="api/index.html">API</a>
+    <a href="https://github.com/" id="repo-link">GitHub</a>
+  </nav>
+</header>
+
+<main>
+
+  <div class="controls no-print">
+    <label for="state-select">Jurisdiction:</label>
+    <select id="state-select">
+      <option value="">Loading states…</option>
+    </select>
+    <button class="btn secondary" id="print-btn">🖶 Printable view</button>
+    <button class="btn secondary" id="download-json-btn">Download JSON</button>
+    <button class="btn secondary" id="download-csv-btn">Download source register (CSV)</button>
+    <span class="meta-row" id="state-count-label"></span>
+  </div>
+
+  <div id="empty-state">
+    <p>Select a state above to view its commercial UAS regulatory summary and full source register.</p>
+    <p style="font-size:0.85rem;">You can also link directly to a state with a URL like<br><code>index.html?state=TX</code></p>
+  </div>
+
+  <div id="state-content">
+    <h2 class="state-title" id="state-title"></h2>
+    <div class="state-sub" id="state-sub"></div>
+
+    <div class="summary-panel" id="summary-panel"></div>
+
+    <div class="register-section">
+      <h2>Source Register</h2>
+      <p class="register-hint">Every material authority behind the summary above, with citation, status, confidence level, and links back to the original source. Scroll horizontally to see all fields.</p>
+      <div class="register-table-wrap">
+        <table class="register-table" id="register-table">
+          <thead></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="print-disclaimer">
+      This document was compiled by an AI research agent and has not been reviewed by a licensed attorney. It is provided for general informational purposes only and does not constitute legal advice.
+      Regulations change frequently — confirm current status and exact text with the cited official source, or consult qualified counsel, before relying on this document for a specific project or compliance decision.
+      Full disclaimer: see disclaimer.html in this repository.
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer no-print">
+  <p>Compiled with AI-assisted research. Not legal advice — see <a href="disclaimer.html">full disclaimer</a>. Data and machine-readable access via the <a href="api/index.html">API</a>.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

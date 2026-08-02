@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-08-01",
+  "disclaimer": "AI-compiled regulatory research. Not legal advice. See /DISCLAIMER for full terms.",
+  "states": [
+    {
+      "state": "California",
+      "state_abbr": "CA",
+      "state_fips": "06",
+      "record_count": 14,
+      "last_updated": "2026-08-01",
+      "json_url": "data/v1/CA.json"
+    },
+    {
+      "state": "Florida",
+      "state_abbr": "FL",
+      "state_fips": "12",
+      "record_count": 8,
+      "last_updated": "2026-08-01",
+      "json_url": "data/v1/FL.json"
+    },
+    {
+      "state": "Idaho",
+      "state_abbr": "ID",
+      "state_fips": "16",
+      "record_count": 8,
+      "last_updated": "2026-08-01",
+      "json_url": "data/v1/ID.json"
+    },
+    {
+      "state": "Missouri",
+      "state_abbr": "MO",
+      "state_fips": "29",
+      "record_count": 11,
+      "last_updated": "2026-08-01",
+      "json_url": "data/v1/MO.json"
+    },
+    {
+      "state": "Oregon",
+      "state_abbr": "OR",
+      "state_fips": "41",
+      "record_count": 6,
+      "last_updated": "2026-08-01",
+      "json_url": "data/v1/OR.json"
+    },
+    {
+      "state": "Pennsylvania",
+      "state_abbr": "PA",
+      "state_fips": "42",
+      "record_count": 10,
+      "last_updated": "2026-08-01",
+      "json_url": "data/v1/PA.json"
+    },
+    {
+      "state": "Texas",
+      "state_abbr": "TX",
+      "state_fips": "48",
+      "record_count": 13,
+      "last_updated": "2026-08-01",
+      "json_url": "data/v1/TX.json"
+    },
+    {
+      "state": "Washington",
+      "state_abbr": "WA",
+      "state_fips": "53",
+      "record_count": 9,
+      "last_updated": "2026-08-01",
+      "json_url": "data/v1/WA.json"
+    }
+  ],
+  "state_count": 8
+}

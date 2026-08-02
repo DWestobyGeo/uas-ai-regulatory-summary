@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>API — State UAS Regulatory Summaries</title>
+<link rel="stylesheet" href="../style.css" />
+<style>
+  body.json-mode main { max-width: 100%; padding: 0; }
+  #json-output {
+    margin: 0;
+    padding: 24px;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.82rem;
+    white-space: pre-wrap;
+    word-break: break-word;
+    background: #0d1117;
+    color: #c9d1d9;
+    min-height: 100vh;
+  }
+  .endpoint { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 10px 14px; font-family: monospace; font-size: 0.88rem; margin: 8px 0 18px 0; }
+  .params-table, .fields-table { border-collapse: collapse; width: 100%; font-size: 0.85rem; margin: 12px 0 24px 0; }
+  .params-table th, .params-table td, .fields-table th, .fields-table td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+  .params-table th, .fields-table th { background: var(--panel); }
+  .status-tag { display:inline-block; font-size:0.72rem; padding:2px 8px; border-radius:999px; background:#e8f4ea; border:1px solid #b7ddbd; color:#256a34; margin-left:6px; }
+  .status-tag.planned { background:#fff3d9; border-color:#edcf85; color:#7a5a05; }
+</style>
+</head>
+<body>
+
+<div class="disclaimer-banner no-print">
+  ⚠️ AI-compiled data. Not legal advice. <a href="../disclaimer.html">Full disclaimer</a>.
+</div>
+
+<header class="site-header no-print">
+  <h1>API <small>Query-parameter access to state UAS regulatory data</small></h1>
+  <nav class="site-nav">
+    <a href="../index.html">← Browse the site</a>
+  </nav>
+</header>
+
+<main id="docs-view">
+
+<div class="summary-panel">
+
+<h2>Current API (v1) <span class="status-tag">available now</span></h2>
+<p>This is a <strong>static, read-only API</strong> served directly from files in this repository via GitHub Pages — there is no server, so there are no rate limits, no auth, and no uptime beyond GitHub Pages itself. There are two equivalent ways to get the same data:</p>
+
+<h3>1. Query-parameter endpoint (this page)</h3>
+<p>Fetch this page with a <code>state</code> parameter and it returns that state's full JSON record instead of these docs:</p>
+<div class="endpoint">GET /api/index.html?state=TX</div>
+<p>Try it: <a href="index.html?state=TX">?state=TX</a> · <a href="index.html?state=CA">?state=CA</a></p>
+
+<h3>2. Direct static JSON file (recommended for scripts/integrations)</h3>
+<p>The query-parameter endpoint above is just a thin JavaScript wrapper around this same file — fetching it directly is faster and doesn't require running JavaScript:</p>
+<div class="endpoint">GET /data/v1/{STATE_ABBR}.json</div>
+<p>Example: <a href="../data/v1/TX.json">/data/v1/TX.json</a></p>
+
+<h3>Parameters</h3>
+<table class="params-table">
+<tr><th>Param</th><th>Type</th><th>Required</th><th>Description</th></tr>
+<tr><td><code>state</code></td><td>string</td><td>Yes</td><td>Two-letter USPS state abbreviation, case-insensitive (e.g. <code>TX</code>, <code>ca</code>). Must match an entry in <a href="../data/v1/index.json">/data/v1/index.json</a>.</td></tr>
+</table>
+
+<h3>Discovery endpoint</h3>
+<p>To see which states are currently available (this project covers all 50 states over time, not just the ones live today), fetch the index:</p>
+<div class="endpoint">GET /data/v1/index.json</div>
+
+<h3>Response shape — state endpoint</h3>
+<p>Both access methods return the same JSON object:</p>
+<table class="fields-table">
+<tr><th>Field</th><th>Type</th><th>Description</th></tr>
+<tr><td><code>schema_version</code></td><td>string</td><td>Version of this JSON shape. Breaking changes bump this and the URL prefix (see Versioning below).</td></tr>
+<tr><td><code>state</code></td><td>string</td><td>Full state name.</td></tr>
+<tr><td><code>state_abbr</code></td><td>string</td><td>USPS two-letter abbreviation.</td></tr>
+<tr><td><code>state_fips</code></td><td>string</td><td>Two-digit FIPS state code — useful for joining to other geographic/boundary datasets.</td></tr>
+<tr><td><code>last_updated</code></td><td>string (ISO date)</td><td>Date this state's data file was last generated.</td></tr>
+<tr><td><code>record_count</code></td><td>integer</td><td>Number of entries in <code>records</code>.</td></tr>
+<tr><td><code>summary_markdown</code></td><td>string</td><td>The full human-readable regulatory summary, as Markdown text. The website renders this client-side; API consumers can render it with any Markdown library or use it as plain text.</td></tr>
+<tr><td><code>records</code></td><td>array of objects</td><td>The full source register — one object per authority (statute, regulation, court decision, agency policy, etc.). See field list below.</td></tr>
+<tr><td><code>source_files</code></td><td>object</td><td>Relative paths (from the site root) to the original Markdown summary and CSV source register files, for download.</td></tr>
+<tr><td><code>disclaimer</code></td><td>string</td><td>Short disclaimer string. See the full <a href="../disclaimer.html">disclaimer page</a> for complete terms — always displayed on every page and included in every response.</td></tr>
+</table>
+
+<h3>Record object fields (inside <code>records[]</code>)</h3>
+<table class="fields-table">
+<tr><th>Field</th><th>Description</th></tr>
+<tr><td><code>record_id</code></td><td>Stable ID within the state (e.g. <code>TX-001</code>). Not stable across schema versions.</td></tr>
+<tr><td><code>jurisdiction_name</code>, <code>jurisdiction_type</code>, <code>geographic_scope</code></td><td>What level of government issued this authority and where it applies.</td></tr>
+<tr><td><code>issuing_authority</code>, <code>source_title</code>, <code>citation</code>, <code>source_type</code></td><td>Who issued it, what it's called, its legal citation, and its authority classification (binding statute, court decision, agency policy, proposed bill, etc.).</td></tr>
+<tr><td><code>effective_date</code>, <code>revision_date</code>, <code>status</code></td><td>Timing and current legal status (current, pending, repealed, superseded).</td></tr>
+<tr><td><code>binding_level</code>, <code>uas_topic</code>, <code>regulated_party</code>, <code>regulated_activity</code>, <code>requirement_type</code></td><td>What kind of authority it is, who it applies to, and what it regulates.</td></tr>
+<tr><td><code>permit_or_approval_required</code>, <code>public_agency_only</code></td><td>Whether a permit is required, and whether the rule applies only to government agencies rather than private operators.</td></tr>
+<tr><td><code>commercial_operator_relevance</code>, <code>aec_relevance</code></td><td>How relevant this authority is to commercial operators generally, and to AEC work specifically.</td></tr>
+<tr><td><code>summary</code></td><td>Objective, neutral summary of what the source says — no advice or inference.</td></tr>
+<tr><td><code>practical_interpretation_aec_expert</code></td><td>Operational guidance from an AEC-industry-UAS-expert perspective. Not legal advice.</td></tr>
+<tr><td><code>practical_interpretation_legal_counsel</code></td><td>Risk/compliance framing from an AEC-industry-legal-counsel perspective. Not legal advice.</td></tr>
+<tr><td><code>source_url</code>, <code>date_accessed</code></td><td>Link to the original official source and the date it was checked.</td></tr>
+<tr><td><code>confidence_level</code></td><td><code>High</code>, <code>Moderate</code>, or <code>Low</code> — the compiling AI's own self-assessed confidence, not a guarantee.</td></tr>
+<tr><td><code>verification_status</code>, <code>notes</code></td><td>What was and wasn't independently verified, and any flags for follow-up.</td></tr>
+</table>
+
+<h3>Example</h3>
+<div class="endpoint">fetch("https://&lt;your-username&gt;.github.io/uas-ai-regulatory-summary/data/v1/TX.json")<br>&nbsp;&nbsp;.then(r =&gt; r.json())<br>&nbsp;&nbsp;.then(data =&gt; console.log(data.record_count, "sources for", data.state));</div>
+
+<h2>Versioning</h2>
+<p>The current API is <strong>v1</strong> (see the <code>/data/v1/</code> and <code>/api/v1/</code> paths — this page is aliased at both <code>/api/</code> and <code>/api/v1/</code>). Once published, v1's URL shape and field names will not change in a breaking way; new fields may be added. A breaking change will ship as <code>/data/v2/</code> / <code>/api/v2/</code> alongside the old version, not as a silent replacement.</p>
+
+<h2>Roadmap <span class="status-tag planned">planned, not yet available</span></h2>
+<p>This is a static file-based API today. Planned future capabilities, most of which will require a real backend rather than static files, include:</p>
+<ul>
+<li><strong>Point query</strong> — e.g. <code>?lat=30.27&amp;lon=-97.74</code> — return the state (and eventually county/local) authorities applicable at a coordinate.</li>
+<li><strong>Extent / bounding-box query</strong> — e.g. <code>?bbox=west,south,east,north</code> — return all jurisdictions intersecting an area, for project sites that span a state line.</li>
+<li><strong>GeoJSON / feature-service export</strong> — join the <code>state_fips</code> field (already included in every record for this purpose) to authoritative state and local boundary data.</li>
+<li><strong>Local (municipal/county) and tribal records</strong> — currently out of scope; see each state's summary for the current scope note.</li>
+</ul>
+<p>The <code>state_fips</code> field is included in every record specifically so today's data can be joined to boundary datasets later without a schema change.</p>
+
+</div>
+</main>
+
+<footer class="site-footer no-print">
+  <p><a href="../index.html">← Back to summaries</a> · <a href="../disclaimer.html">Disclaimer</a></p>
+</footer>
+
+<script>
+(function () {
+  function getParam(name) {
+    return new URLSearchParams(window.location.search).get(name);
+  }
+  var state = getParam("state");
+  if (state) {
+    document.body.classList.add("json-mode");
+    document.getElementById("docs-view").style.display = "none";
+    document.querySelectorAll(".no-print, header, footer").forEach(function (el) { el.style.display = "none"; });
+    var pre = document.createElement("pre");
+    pre.id = "json-output";
+    pre.textContent = "Loading…";
+    document.body.appendChild(pre);
+    fetch("../data/v1/" + state.toUpperCase() + ".json")
+      .then(function (r) {
+        if (!r.ok) throw new Error("No data for state '" + state + "'. See /data/v1/index.json for available states.");
+        return r.json();
+      })
+      .then(function (data) { pre.textContent = JSON.stringify(data, null, 2); })
+      .catch(function (err) {
+        pre.textContent = JSON.stringify({ error: err.message }, null, 2);
+      });
+  }
+})();
+</script>
+
+</body>
+</html>
