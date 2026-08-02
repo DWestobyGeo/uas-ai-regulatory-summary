@@ -45,7 +45,7 @@ def agency_process(row: dict[str, str]) -> bool:
     text = combined(row)
     permit = row.get("permit_or_approval_required", "")
     authority = row.get("issuing_authority", "")
-    if has(permit, "landowner consent", "property owner consent", "owner's consent", "owner consent", "property right", "private-property permission") and has(authority, "legislature", "general assembly"):
+    if has(permit, "landowner consent", "property owner consent", "owner's consent", "owner consent", "owner or occupant consent", "property right", "private-property permission") and has(authority, "legislature", "general assembly"):
         return False
     return approval_process(row) or has(
         row.get("requirement_type", ""), "report", "filing", "submission"
@@ -133,6 +133,11 @@ def agency_opinion(row: dict[str, str]) -> str:
         )
     if not agency_process(row):
         return "N/A — no agency process involved"
+    if has(row.get("requirement_type", ""), "report", "filing", "submission") or has(row.get("regulated_activity", ""), "annual report", "submit report", "reporting"):
+        return (
+            f"Use the current reporting instructions of {row['issuing_authority']} and calendar the stated event-driven or periodic deadline; retain the submitted data, transmittal, and acceptance receipt. "
+            "Confirm the current form, reporting period, responsible agency contact, amendment method, and whether contractor-held flight or data records must be supplied to the reporting entity."
+        )
     authority = row["issuing_authority"]
     if has(authority, "legislature", "general assembly"):
         authority = row["jurisdiction_name"] if row["jurisdiction_type"].lower() != "state" else "named facility or administering agency"
@@ -167,6 +172,11 @@ def procurement_opinion(row: dict[str, str]) -> str:
     title = row["source_title"]
     if has(row.get("regulated_party", ""), "sex offender", "registered offender") or str(row.get("aec_relevance", "")).lower().startswith("low"):
         return "N/A — no procurement or equipment-selection implication identified"
+    if has(focus, "seller notice", "seller disclosure", "dealer notice", "sale of a drone", "selling a drone"):
+        return (
+            "Retain the required point-of-sale notice with the purchase record and include it in receiving and asset-onboarding checks. "
+            "The notice is not proof that the aircraft is registered or mission-eligible, so procurement should separately verify the model, serial number, applicable registrations, software account, and operating documentation."
+        )
     if has(focus, "manufacturer", "country-of-origin", "country of origin", "covered foreign", "cybersecurity", "procurement", "approved list", "supply chain", "replacement program"):
         return (
             f"Treat {title} as a time-sensitive eligibility check at solicitation and again before purchase or assignment to a public project. "
