@@ -60,6 +60,14 @@
       "json_url": "data/v1/CT.json"
     },
     {
+      "state": "Delaware",
+      "state_abbr": "DE",
+      "state_fips": "10",
+      "record_count": 5,
+      "last_updated": "2026-08-01",
+      "json_url": "data/v1/DE.json"
+    },
+    {
       "state": "Florida",
       "state_abbr": "FL",
       "state_fips": "12",
@@ -140,5 +148,5 @@
       "json_url": "data/v1/WA.json"
     }
   ],
-  "state_count": 17
+  "state_count": 18
 }
