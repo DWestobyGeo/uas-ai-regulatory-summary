@@ -40,6 +40,8 @@ def approval_process(row: dict[str, str]) -> bool:
     permit = row.get("permit_or_approval_required", "")
     if permit.strip().lower().startswith("no"):
         return False
+    if permit.strip().lower().startswith("only the federal"):
+        return False
     return (
         not permit.lower().startswith("no")
         and has(permit, "yes", "required", "approval", "permit", "license", "register", "consent", "notice", "authorization")
@@ -100,6 +102,16 @@ def aec_opinion(row: dict[str, str]) -> str:
         return (
             f"Plan the route and stand-off distance for {scope} so the aircraft does not chase, bunch, separate, distress, or injure livestock. "
             "Coordinate with the owner or handler, brief an immediate retreat or landing trigger, and document any owner-directed husbandry purpose before flight."
+        )
+    if has(focus, "state park", "state forest", "public land", "public reservation", "department land", "department property", "campus", "university property"):
+        if approval_process(row):
+            return (
+                f"Treat property authorization for {scope} as a pre-mobilization gate and obtain conditions that cover launch, landing, route, dates, aircraft, crew, and sensor purpose. "
+                "Confirm whether the approval is site-wide or location-specific and carry the written authorization and field contact with the crew."
+            )
+        return (
+            f"Confirm the controlling land unit and current property-use rule for {scope} before selecting launch and recovery points. "
+            "Record the boundary and any closures or site conditions in the flight packet rather than relying on a general statewide assumption."
         )
     if has(focus, "wildlife", "hunt", "game", "nest", "habitat", "fish"):
         return (
