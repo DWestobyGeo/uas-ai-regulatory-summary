@@ -8,7 +8,7 @@ A state-by-state reference on **commercial UAS (drone) regulation** relevant to 
 
 **https://dwestobygeo.github.io/uas-ai-regulatory-summary/**
 
-The site lets you pick a state from a dropdown, read its regulatory summary, browse the full source register (every statute, regulation, court decision, and agency policy behind that summary, with citations), and switch to a printable view. You can also link directly to a state, e.g. [`?state=TX`](https://dwestobygeo.github.io/uas-ai-regulatory-summary/?state=TX).
+The site lets you pick a state, navigate a linked table of contents, read its regulatory summary, compare four labeled AI interpretation perspectives, browse and filter the source register, download the underlying data, and switch to a printable view. You can also link directly to a state and section, e.g. [`?state=TX`](https://dwestobygeo.github.io/uas-ai-regulatory-summary/?state=TX).
 
 ## What's covered per state
 
@@ -23,14 +23,24 @@ The research and drafting roles are governed by [`Agent_Instructions.v6.md`](Age
 
 The website layout, HTML/CSS/JavaScript editing, accessibility, and responsive-design role is governed separately by [`agents/roles/web-ux-ui-editor.md`](agents/roles/web-ux-ui-editor.md). That agent may improve presentation and navigation but may not alter regulatory research or add human-review/approval workflows.
 
+## Shared website design system
+
+All states use one shared page shell, renderer, and stylesheet: [`docs/index.html`](docs/index.html), [`docs/app.js`](docs/app.js), and [`docs/style.css`](docs/style.css). State folders supply data, not separate webpages, so improvements to the shared design automatically apply to every existing and future state.
+
+The component standards, design tokens, responsive behavior, accessibility rules, print behavior, and new-state process are documented in [`docs/DESIGN_SYSTEM.md`](docs/DESIGN_SYSTEM.md). Run `python scripts/validate_site.py` after site or state-data changes; the same validation runs automatically in GitHub Actions.
+
 ## Repository structure
 
 ```
 agents/
   roles/
     web-ux-ui-editor.md   ← website layout, accessibility, and editorial UI agent
+.github/workflows/
+  site-quality.yml        ← validates the shared UI and state-data contract
 docs/                     ← published by GitHub Pages (this is the whole website)
   index.html              ← main state-picker / viewer / print view
+  DESIGN_SYSTEM.md        ← design tokens, components, and inheritance process
+  ui-release.json         ← UI version and agent provenance
   disclaimer.html          ← full legal disclaimer
   app.js, style.css
   api/
@@ -41,13 +51,15 @@ docs/                     ← published by GitHub Pages (this is the whole websi
     {STATE}.json            ← full data for one state (summary + source register), used by both the site and the API
     sources/                ← original Markdown + CSV files per state, for download/transparency
 build_data.py               ← regenerates docs/data/v1/*.json from the source /States folders (run this after adding/updating a state)
+scripts/validate_site.py    ← shared-style and state-data quality gate
 ```
 
 ## Adding a new state
 
 1. Drop the new state's `XX_UAS_Regulatory_Summary.md` and `XX_UAS_Source_Register.csv` into a `States/XX_StateName/` folder (same format as the existing states — see any existing state for the CSV column schema).
 2. Run `python3 build_data.py` to regenerate the JSON data and index.
-3. Commit and push — the live site picks up the new state automatically (no HTML/JS changes needed).
+3. Run `python scripts/validate_site.py` and inspect the new state locally at `?state=XX` on desktop, mobile, and print.
+4. Commit and push — the live site picks up the new state and applies the shared design automatically (no state-specific HTML/CSS changes needed).
 
 ## API
 

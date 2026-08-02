@@ -1,0 +1,39 @@
+name: Site quality
+
+on:
+  push:
+    paths:
+      - "docs/**"
+      - "States/**"
+      - "agents/**"
+      - "scripts/validate_site.py"
+      - "build_data.py"
+      - "README.md"
+      - ".github/workflows/site-quality.yml"
+  pull_request:
+    paths:
+      - "docs/**"
+      - "States/**"
+      - "agents/**"
+      - "scripts/validate_site.py"
+      - "build_data.py"
+      - "README.md"
+      - ".github/workflows/site-quality.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-shared-site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate shared design and state data
+        run: python scripts/validate_site.py

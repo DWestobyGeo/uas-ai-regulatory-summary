@@ -1,108 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-ui-version="1.0.0">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>State UAS Regulatory Summaries — AEC Reference</title>
-<meta name="description" content="AI-compiled, state-by-state reference on commercial UAS (drone) regulation for architecture, engineering, and construction (AEC) work. Not legal advice." />
+<meta name="description" content="AI-compiled, state-by-state reference on commercial UAS regulation for architecture, engineering, environmental, surveying, construction, and infrastructure work. Not legal advice." />
 <link rel="stylesheet" href="style.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
 </head>
-<body>
+<body id="page-top">
 
-<div class="disclaimer-banner no-print">
-  ⚠️ <strong>This entire site is compiled by an AI research agent and has not been reviewed by an attorney.</strong>
-  It is not legal advice and may contain errors or outdated information. Verify every citation against the official source before relying on it.
-  <a href="disclaimer.html">Read the full disclaimer</a>.
+<a class="skip-link" href="#main-content">Skip to state research</a>
+
+<div class="research-notice no-print" role="note" aria-label="AI research notice">
+  <div class="research-notice-inner">
+    <span class="notice-mark" aria-hidden="true">AI</span>
+    <p><strong>AI-generated research — not legal advice.</strong> Content may be incomplete or outdated. Verify cited material before relying on it.</p>
+    <a href="disclaimer.html">Full disclaimer</a>
+  </div>
 </div>
 
 <header class="site-header no-print">
-  <h1>State UAS Regulatory Summaries
-    <small>Commercial drone regulation reference for AEC (architecture / engineering / construction) work</small>
-  </h1>
-  <nav class="site-nav">
-    <a href="disclaimer.html">Disclaimer</a>
-    <a href="api/index.html">API</a>
-    <a href="https://github.com/" id="repo-link">GitHub</a>
-  </nav>
+  <div class="site-header-inner">
+    <a class="site-brand" href="./" aria-label="State UAS Regulatory Summaries home">
+      <span class="site-brand-title">State UAS Regulatory Summaries</span>
+      <span class="site-brand-subtitle">Commercial UAS research for AEC work</span>
+    </a>
+    <nav class="site-nav" aria-label="Site navigation">
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="api/index.html">API</a>
+      <a href="https://github.com/DWestobyGeo/uas-ai-regulatory-summary" id="repo-link">Repository</a>
+    </nav>
+  </div>
 </header>
 
-<main>
+<main id="main-content" tabindex="-1">
 
-  <div class="controls no-print">
-    <label for="state-select">Jurisdiction:</label>
-    <select id="state-select">
-      <option value="">Loading states…</option>
-    </select>
-    <button class="btn secondary" id="print-btn">🖶 Printable view</button>
-    <button class="btn secondary" id="download-json-btn">Download JSON</button>
-    <button class="btn secondary" id="download-csv-btn">Download source register (CSV)</button>
-    <span class="meta-row" id="state-count-label"></span>
-  </div>
-
-  <div class="coverage-progress no-print" id="coverage-progress">
-    <div class="coverage-progress-row">
-      <span class="coverage-progress-label">Full 50-state coverage is actively being populated — new states are researched and pushed individually as they're completed, with practical-interpretation analysis following in a later pass. Check back for updates.</span>
-      <span class="coverage-progress-count" id="coverage-progress-count"></span>
+  <section class="control-bar no-print" aria-label="State and download controls">
+    <div class="state-picker">
+      <label for="state-select">State research</label>
+      <select id="state-select">
+        <option value="">Loading states…</option>
+      </select>
+      <span class="state-count" id="state-count-label"></span>
     </div>
-    <div class="progress-bar-track">
-      <div class="progress-bar-fill" id="progress-bar-fill"></div>
+    <div class="action-group" aria-label="Document actions">
+      <button class="btn secondary" id="print-btn" type="button">Print view</button>
+      <button class="btn secondary" id="download-json-btn" type="button">Download JSON</button>
+      <button class="btn secondary" id="download-csv-btn" type="button">Download CSV</button>
     </div>
-  </div>
+  </section>
 
-  <div id="empty-state">
-    <p>Select a state above to view its commercial UAS regulatory summary and full source register.</p>
-    <p style="font-size:0.85rem;">You can also link directly to a state with a URL like<br><code>index.html?state=TX</code></p>
-  </div>
+  <section class="scope-status no-print" id="coverage-progress" aria-label="Current research scope">
+    <span class="scope-status-label">Current focus: source quality, revision tracking, and reliable updates for the included state set.</span>
+    <strong class="scope-status-count" id="coverage-progress-count"></strong>
+  </section>
 
-  <div id="state-content">
-    <h2 class="state-title" id="state-title"></h2>
-    <div class="state-sub" id="state-sub"></div>
+  <section id="empty-state" class="empty-state" aria-labelledby="empty-title">
+    <span class="empty-kicker">State-level research library</span>
+    <h1 id="empty-title">Choose a state to begin</h1>
+    <p>Read the regulatory summary, compare four AI interpretation lenses, and inspect every source-register record.</p>
+    <p class="empty-link-hint">Direct links are supported, for example <code>?state=TX</code>.</p>
+  </section>
 
-    <div class="summary-panel" id="summary-panel"></div>
+  <div id="state-content" aria-live="off">
+    <header class="state-overview" id="state-overview">
+      <p class="eyebrow">State research brief</p>
+      <h1 class="state-title" id="state-title"></h1>
+      <dl class="state-metadata" id="state-sub">
+        <div><dt>Updated</dt><dd id="state-updated">—</dd></div>
+        <div><dt>Sources</dt><dd id="state-record-count">—</dd></div>
+        <div><dt>Schema</dt><dd id="state-schema">—</dd></div>
+        <div><dt>Status</dt><dd>AI research</dd></div>
+      </dl>
+    </header>
 
-    <div class="register-section">
-      <div class="register-heading-row">
-        <div>
-          <h2>Source Register</h2>
-          <p class="register-hint">Every material authority behind the summary above. Click a row to see the full objective summary and practical interpretation. Search or filter to narrow the list.</p>
+    <div class="reading-layout">
+      <aside class="page-toc no-print" aria-label="Page navigation">
+        <details id="toc-disclosure">
+          <summary>On this page</summary>
+          <nav id="toc-nav" aria-label="On this page"></nav>
+        </details>
+      </aside>
+
+      <article class="state-reader" aria-label="Selected state regulatory research">
+        <div class="summary-panel" id="summary-panel"></div>
+
+        <section class="register-section" id="source-register" aria-labelledby="source-register-heading">
+          <div class="register-heading-row">
+            <div>
+              <p class="section-kicker">Evidence library</p>
+              <h2 id="source-register-heading">Source Register</h2>
+              <p class="register-hint">Inspect the authorities behind the summary. Expand a record for objective research, AI interpretation, source metadata, and verification notes.</p>
+            </div>
+          </div>
+
+          <div class="register-controls no-print" aria-label="Source register filters">
+            <label class="search-field" for="register-search">
+              <span>Search sources</span>
+              <input type="search" id="register-search" placeholder="Title, citation, topic, or summary" />
+            </label>
+            <label for="register-filter-confidence" class="compact-field">
+              <span>Confidence</span>
+              <select id="register-filter-confidence">
+                <option value="">All levels</option>
+                <option value="high">High</option>
+                <option value="moderate">Moderate</option>
+                <option value="low">Low</option>
+              </select>
+            </label>
+            <label for="register-filter-relevance" class="compact-field">
+              <span>AEC relevance</span>
+              <select id="register-filter-relevance">
+                <option value="">All levels</option>
+                <option value="high">High</option>
+                <option value="moderate">Moderate</option>
+                <option value="low">Low</option>
+              </select>
+            </label>
+            <div class="register-actions" aria-label="Source display controls">
+              <button class="btn quiet small" id="expand-all-btn" type="button">Expand all</button>
+              <button class="btn quiet small" id="collapse-all-btn" type="button">Collapse all</button>
+            </div>
+            <span class="register-count" id="register-count" role="status" aria-live="polite"></span>
+          </div>
+
+          <div id="register-list" class="register-list"></div>
+          <p id="register-no-results" class="register-empty" hidden>No sources match the current search and filters.</p>
+        </section>
+
+        <a class="back-to-top no-print" href="#state-overview">Back to state overview</a>
+
+        <div class="print-disclaimer">
+          This document was compiled by an AI research process and has not been reviewed by a licensed attorney. It is general informational research, not legal advice. Confirm current status and exact text with cited sources before relying on it. Full disclaimer: disclaimer.html.
         </div>
-      </div>
-
-      <div class="register-controls no-print">
-        <input type="search" id="register-search" placeholder="Search title, citation, topic, summary…" aria-label="Search source register" />
-        <select id="register-filter-confidence" aria-label="Filter by confidence">
-          <option value="">All confidence levels</option>
-          <option value="high">High confidence</option>
-          <option value="moderate">Moderate confidence</option>
-          <option value="low">Low confidence</option>
-        </select>
-        <select id="register-filter-relevance" aria-label="Filter by AEC relevance">
-          <option value="">All AEC relevance</option>
-          <option value="high">High relevance</option>
-          <option value="moderate">Moderate relevance</option>
-          <option value="low">Low relevance</option>
-        </select>
-        <button class="btn secondary small" id="expand-all-btn" type="button">Expand all</button>
-        <button class="btn secondary small" id="collapse-all-btn" type="button">Collapse all</button>
-        <span class="register-count" id="register-count"></span>
-      </div>
-
-      <div id="register-list" class="register-list"></div>
-      <p id="register-no-results" class="register-hint" style="display:none;">No sources match that search/filter.</p>
-    </div>
-
-    <div class="print-disclaimer">
-      This document was compiled by an AI research agent and has not been reviewed by a licensed attorney. It is provided for general informational purposes only and does not constitute legal advice.
-      Regulations change frequently — confirm current status and exact text with the cited official source, or consult qualified counsel, before relying on this document for a specific project or compliance decision.
-      Full disclaimer: see disclaimer.html in this repository.
+      </article>
     </div>
   </div>
 
+  <p class="visually-hidden" id="page-status" role="status" aria-live="polite"></p>
 </main>
 
 <footer class="site-footer no-print">
-  <p>Compiled with AI-assisted research. Not legal advice — see <a href="disclaimer.html">full disclaimer</a>. Data and machine-readable access via the <a href="api/index.html">API</a>.</p>
+  <p><strong>AI-assisted state research.</strong> Not legal advice. <a href="disclaimer.html">Read the disclaimer</a> or use the <a href="api/index.html">versioned data API</a>.</p>
 </footer>
 
 <script src="app.js"></script>
