@@ -52,6 +52,14 @@
       "json_url": "data/v1/CO.json"
     },
     {
+      "state": "Connecticut",
+      "state_abbr": "CT",
+      "state_fips": "09",
+      "record_count": 8,
+      "last_updated": "2026-08-01",
+      "json_url": "data/v1/CT.json"
+    },
+    {
       "state": "Florida",
       "state_abbr": "FL",
       "state_fips": "12",
@@ -132,5 +140,5 @@
       "json_url": "data/v1/WA.json"
     }
   ],
-  "state_count": 16
+  "state_count": 17
 }
