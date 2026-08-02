@@ -124,6 +124,14 @@
       "json_url": "data/v1/IN.json"
     },
     {
+      "state": "Kansas",
+      "state_abbr": "KS",
+      "state_fips": "20",
+      "record_count": 7,
+      "last_updated": "2026-08-02",
+      "json_url": "data/v1/KS.json"
+    },
+    {
       "state": "Missouri",
       "state_abbr": "MO",
       "state_fips": "29",
@@ -180,5 +188,5 @@
       "json_url": "data/v1/WA.json"
     }
   ],
-  "state_count": 22
+  "state_count": 23
 }

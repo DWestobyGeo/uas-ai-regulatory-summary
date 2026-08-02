@@ -1,0 +1,122 @@
+# Kansas — Commercial UAS Regulatory Summary
+
+**Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
+**Research date:** August 2, 2026 | **Version:** 1.0 (Phase 1 — objective research; see process note below)
+**Model / checkpoint:** Claude Sonnet 5 (research and drafting)
+**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v4, Amendment 2), this summary covers Kansas **state and state-agency** UAS authorities only — municipal and county ordinances are deferred. **No statewide statute preempting local UAS ordinances was located for Kansas.** Secondary sources report that some Kansas municipalities (e.g., Wichita, Prairie Village) have adopted their own drone ordinances, but confirming and cataloguing those ordinances is out of scope for this state-level phase. Full citations and metadata are in `KS_UAS_Source_Register.csv`.
+
+> **Process note (Agent Instructions Amendment 2, August 1, 2026):** This state was researched under the three-phase program structure. This document currently reflects **Phase 1 only** — the objective, sourced findings below are complete, but the Practical Interpretation content (AEC Industry Expert, Agency Practitioner, and Legal Counsel perspectives) has not yet been drafted and is marked "Pending Phase 2" throughout.
+
+Each rule below is presented as an **Objective Summary** (binding text/citation, no interpretation). Practical Interpretation — from three labeled perspectives (AEC Industry UAS Expert, Agency Practitioner, and Legal Counsel) — will be added in Phase 2 and is not legal advice.
+
+---
+
+## 1. State UAS Regulatory Overview
+
+Kansas has no single comprehensive drone statute. Instead, it regulates UAS through a small number of targeted statutory amendments layered onto older general-purpose laws, supplemented by agency guidance that construes those general laws to reach drones. The state's oldest UAS-specific text is a 2016 amendment folding "any course of conduct carried out through the use of an unmanned aerial system" into the definition of harassment under the Protection from Stalking, Sexual Assault or Human Trafficking Act (K.S.A. 60-31a02). The Kansas Department of Wildlife and Parks (KDWP) separately construes two older, UAS-silent statutes — the general "aircraft" landing rule for department lands (K.A.R. 115-8-13) and the "unlawful methods of taking wildlife" statute (K.S.A. 32-1003) — to bar drone operation on state parks/wildlife areas/state fishing lakes and to bar drone-aided hunting, scouting, and game recovery, respectively; in both cases the operative "no drone" rule lives in KDWP's current public guidance, not in UAS-specific statutory or regulatory text. Kansas's most substantively significant *current* UAS enactment is its government drone-procurement restriction, now codified at K.S.A. 75-3740h and 75-3740i, barring state and local agencies from acquiring drones (or components) from a "country of concern" or "foreign principal." This program's most material finding is that this restriction has a convoluted, frequently mis-cited legislative history: a near-identical 2024 bill (House Substitute for Senate Bill 271) passed the Legislature but was **vetoed by Governor Kelly, and the veto was sustained** when a Senate override vote failed — meaning SB 271 never became law, contrary to how some secondary sources describe it. The restriction was successfully re-enacted in 2025, not through House Bill 2293 (which itself died in committee), but by folding HB 2293's language into an unrelated bill, Senate Bill 9, which passed as House Substitute for Senate Bill 9 and was signed April 7, 2025. No Kansas executive order, Attorney General opinion, or court decision directly addressing UAS was located, nor was any UAS-specific correctional-facility or critical-infrastructure statute (drone contraband at a correctional facility would fall under Kansas's general, non-UAS-specific contraband felony). No UAS-specific guidance from the Kansas State Board of Technical Professions was located, though Kansas's surveying-practice definition is unusually specific in naming "photogrammetry" as a covered surveying science.
+
+## 2. Statewide UAS Laws and Regulations
+
+### Protection from Stalking, Sexual Assault or Human Trafficking Act — Definitions (UAS Harassment) — K.S.A. 60-31a02
+*Binding law | Current, UAS language added by L. 2016, ch. 58, §3*
+
+**Objective Summary:** Defines "harassment" (an element of civil stalking relief under the Act) to expressly include "any course of conduct carried out through the use of an unmanned aerial system over or near any dwelling, occupied vehicle or other place where one may reasonably expect to be safe from uninvited intrusion or surveillance" (subsection (d)(1)). The section separately defines "unmanned aerial system" (subsection (e)) using FAA-derived criteria: a powered aerial vehicle with no onboard human operator, using aerodynamic lift, that may fly autonomously or be piloted remotely, may be expendable or recoverable, and may carry a lethal or nonlethal payload. "Harassment" requires a "course of conduct" — two or more acts evidencing continuity of purpose (subsection (d)(2)) — so a single isolated overflight does not by itself satisfy the definition.
+
+**Practical Interpretation**
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **Legal Counsel:** Pending Phase 2 interpretation pass.
+
+### Acquisition of Certain Drones by Governmental Agencies Prohibited — K.S.A. 75-3740h and 75-3740i
+*Binding law | Current, 2025 Session Laws ch. 68 (House Substitute for Senate Bill 9), §§12-13, effective July 1, 2025*
+
+**Objective Summary:** Bars a "governmental agency" (the state or any political or taxing subdivision, or any office, agency, or instrumentality thereof) from purchasing or acquiring any drone, or related services, maintenance agreements, or equipment, whose critical components (including installed software) were produced in a "country of concern" — the People's Republic of China (including Hong Kong), Cuba, Iran, North Korea, Russia, or Venezuela (Taiwan is expressly excluded) — or produced or owned by a "foreign principal." Equipment acquired before July 1, 2025 may continue in use, and replacement components acquired before that date may still be used, but no new noncompliant replacement may be acquired. A narrow exception permits an otherwise-prohibited acquisition where no other reasonable means exists, the secretary of administration approves after consulting the adjutant general, and the security risk of forgoing the acquisition would exceed the risk of proceeding. This restriction governs public-agency purchasing; it does not directly regulate a private commercial operator's own equipment.
+
+**Practical Interpretation**
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **Legal Counsel:** Pending Phase 2 interpretation pass.
+
+## 3. State Agency and Facility-Specific UAS Requirements
+
+### Motorized Vehicles and Aircraft; Authorized Operation — KDWP Lands and Waters — K.A.R. 115-8-13
+*Binding regulation, supplemented by official agency guidance | Current, most recently amended 2016*
+
+**Objective Summary:** The regulation's own text provides only that "motorized aircraft landings and takeoffs shall be allowed in designated areas only or as authorized by the secretary" (subsection (d)); it does not mention drones, UAS, or unmanned aircraft. The Kansas Department of Wildlife and Parks' current official public FAQ page states directly that "drone (UAS/UAV) use is not permitted at any Kansas State Park, Wildlife Area, or other property owned or managed by KDWP (KAR 115-8-13)," and that unlawful use is a class C misdemeanor. The same FAQ states that a list of parks with designated drone operating areas is "in development," implying none are currently designated.
+
+**Practical Interpretation**
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **Legal Counsel:** Pending Phase 2 interpretation pass.
+
+### Unlawful Methods of Taking Wildlife (Aircraft) — KDWP Construction Applying the Statute to Drones — K.S.A. 32-1003
+*Binding law (statute), supplemented by official agency guidance | Current, statute most recently amended 2005; KDWP guidance current for the 2025-2026 season*
+
+**Objective Summary:** K.S.A. 32-1003(a)(1) makes it unlawful to take a game or furbearing animal "from a motorboat, airplane, motor vehicle or other water, air or land vehicle" absent a handicapped-hunting permit; (a)(2) separately bars providing or receiving an animal's location "by radio or other mechanical device for purposes of taking" it. Neither provision names "drone" or "UAS." KDWP's official FAQ states that "the use of drones (UASs/UAVs) for hunting or scouting is prohibited in Kansas," citing this section and the federal Airborne Hunting Act, and separately states a drone may not be used to locate wounded or harvested game (citing the "take" definition at K.S.A. 32-701) or to film a hunt on KDWP-owned/managed land.
+
+**Practical Interpretation**
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **Legal Counsel:** Pending Phase 2 interpretation pass.
+
+### Unmanned Aircraft Systems (UAS) Beyond Program and UAS Privacy Policy — Kansas Department of Transportation
+*Official agency policy / advisory guidance | Current program; not a codified regulation*
+
+**Objective Summary:** KDOT's Division of Aviation operates an ongoing "UAS Beyond" research program using drones for highway, railroad, and energy-distribution-line inspection; KDOT was one of ten agencies nationwide selected for the FAA's UAS Integration Pilot Program in 2017 (concluded 2020), and Kansas is reported as the first state with a statewide unmanned traffic management (UTM) system for flight-plan filing and airspace deconfliction. A separate KDOT UAS Privacy Policy requires that any UAS use supporting KDOT programs balance program requirements against protection of personally identifiable information (PII) and compliance with privacy laws. Neither document imposes a permit or approval requirement on private commercial operators; both bind KDOT's own program.
+
+**Practical Interpretation**
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **Legal Counsel:** Pending Phase 2 interpretation pass.
+
+### Professional Licensing — Kansas Professional Surveying Statute (K.S.A. 74-7003(t))
+*Binding general regulation | No UAS-specific board guidance located*
+
+**Objective Summary:** Defines "professional surveying" to include, among other things, use of "mathematics, geodesy and photogrammetry" and the making of geometric measurements to determine boundaries, positions, and configurations of the earth's surface, plus "creating, preparing or modifying electronic, computerized or other data" relative to those activities. The definition is method-neutral apart from its express reference to photogrammetry; it does not reference UAS, drones, or LiDAR by name. No standalone rule, advisory opinion, or FAQ from the Kansas State Board of Technical Professions specifically addressing UAS-derived photogrammetric or LiDAR survey products was located.
+
+**Practical Interpretation**
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **Legal Counsel:** Pending Phase 2 interpretation pass.
+
+### Executive Orders, AG Opinions, Court Decisions, Correctional Facilities, Preemption, and Related Negative/Discrepancy Findings
+*Categories reviewed — no dispositive UAS-specific authority located; a material legislative-history/citation finding is documented*
+
+**Objective Summary:** No Kansas Governor executive order, Kansas Attorney General opinion, or Kansas appellate/Supreme Court decision directly addressing UAS was located. No Kansas statute makes it a specific crime to fly a UAS over a correctional facility or jail; drone-delivered contraband would instead fall under Kansas's general, non-UAS-specific "traffic in contraband in a correctional institution" felony (K.S.A. 21-5914), which does not mention UAS. No statewide statute preempting local UAS ordinances was located. **Legislative-history finding:** Kansas's government drone-procurement restriction (K.S.A. 75-3740h/75-3740i, see Section 2 above) did not originate from House Bill 2293 (2025), which is shown "Died" on the Legislature's official tracker; its language was instead folded into House Substitute for Senate Bill 9, which passed and was signed April 7, 2025. A substantively similar 2024 predecessor, House Substitute for Senate Bill 271, passed the Legislature but was **vetoed by Governor Kelly on April 24, 2024**, and the Senate's April 29, 2024 override motion failed 21-16 (short of the two-thirds required), sustaining the veto — SB 271 (2024) never became law. Separately, House Bill 2423 (2026), the "Kansas Wounded Deer Recovery Act" (see Section 3, K.S.A. 32-1003), is also shown "Died" on the Legislature's official tracker following a January 27, 2026 committee hearing.
+
+**Practical Interpretation**
+- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
+- **Agency Practitioner:** Pending Phase 2 interpretation pass.
+- **Legal Counsel:** Pending Phase 2 interpretation pass.
+
+## 4. Non-Regulatory Context
+
+*The items below are drawn from news and secondary reporting, not primary legal authority. They are provided for situational awareness only and are not part of the verified source register.*
+
+- **Kansas House bills target foreign adversary drones, investments and property ownership, Kansas Reflector, March 27, 2024.** Reports the Kansas House's 83-40 passage of House Substitute for Senate Bill 271, restricting government purchase of drone technology and "critical components" — including replacement parts — from countries of concern, with Rep. Bill Sutton urging support. Useful for understanding the origin and initial legislative momentum behind the drone-procurement restriction eventually re-enacted in 2025 as K.S.A. 75-3740h/75-3740i (see KS-004, KS-007). [Source](https://kansasreflector.com/2024/03/27/kansas-house-bills-target-foreign-adversary-drones-investments-and-property-ownership/)
+- **Legislature adopts potentially unconstitutional ban on 'foreign adversary' property ownership, Kansas Reflector, May 2, 2024.** Reports on the broader 2024 foreign-ownership legislative package (of which the 2024 drone-procurement bill, SB 271, was a companion measure) and surrounding constitutional concerns; useful background on the political and legal environment in which SB 271 was vetoed and Sub. for SB 9 was later drafted more narrowly in 2025. [Source](https://kansasreflector.com/2024/05/02/legislature-adopts-potentially-unconstitutional-ban-on-foreign-adversary-property-ownership/)
+- **Some Kansas hunters may get to use drones when hunting deer under proposed new law, KSNT, January 2026.** Reports on Rep. Kevin Schwertfeger's introduction of House Bill 2423, the "Kansas Wounded Deer Recovery Act," which would allow FAA-licensed drone operators to use drones to locate wounded or dead deer with landowner permission, while continuing to bar drones for harassing or pursuing live wildlife. Directly relevant to any AEC or agricultural-services UAS program tracking Kansas's hunting-related drone restrictions (see KS-003), since it explains the current legislative push to narrow K.S.A. 32-1003 and confirms the bill had not passed as of this research date. [Source](https://www.ksnt.com/capitol-bureau/some-kansas-hunters-may-get-to-use-drones-when-hunting-deer-under-proposed-new-law/)
+- **Kansas buys drones to support 'cutting-edge precision' agricultural research, StateScoop.** Reports Governor Kelly's announcement of $3 million in state funding for agricultural drone research supporting Kansas drone maker Kelly Hills Unmanned Systems, aimed at beyond-visual-line-of-sight capability for precision agriculture. Relevant situational context for AEC/agricultural UAS program managers tracking the state's broader posture toward drone investment, distinct from the regulatory restrictions catalogued elsewhere in this summary. [Source](https://statescoop.com/kansas-drones-agriculture/)
+
+## 5. Unresolved Operational Questions
+
+- **K.A.R. 115-8-13 — regulatory text vs. agency construction:** The KDWP's "no drone on department land" rule rests entirely on the agency's current public FAQ construing a general "motorized aircraft landings and takeoffs" rule; the regulation's own text does not mention drones. Unlike some other states' analogous agency guidance, KDWP's FAQ does not disclaim its own authority, but it remains guidance rather than UAS-specific rule text, and its legal weight if directly contested has not been tested. AEC firms planning UAS work on any KDWP-owned or managed property should confirm current practice directly with KDWP before flying, including for survey, inspection, or environmental-monitoring purposes.
+- **K.S.A. 32-1003 — pending narrowing:** House Bill 2423 (2026) would allow FAA-licensed drone operators, with landowner consent, to use a drone solely to locate wounded or recently deceased deer — an activity KDWP's current guidance treats as prohibited "take"-adjacent conduct. As of this research date the bill is shown "Died" on the Legislature's official tracker; the current, broader prohibition remains in effect. Track this bill in a subsequent research pass given its direct bearing on drone-based wildlife/agricultural monitoring work conducted near or during hunting seasons.
+- **K.S.A. 75-3740h/75-3740i — contractor flow-down:** The statute restricts governmental-agency procurement; it does not on its face restrict a private AEC firm's own equipment. However, firms contracting with Kansas state or local agencies for drone-based inspection or mapping services should confirm whether the agency's contract documents impose an equivalent country-of-concern/foreign-principal restriction on contractor-owned or contractor-operated equipment, since no official source reviewed in this pass expressly extends the statute to consultants.
+- **Correctional-facility and critical-infrastructure UAS restrictions:** No Kansas statute specific to flying a UAS over a correctional facility, prison, or critical-infrastructure site was located; only the general, UAS-silent contraband felony (K.S.A. 21-5914) applies. AEC firms conducting inspection work near a Kansas correctional facility or designated critical-infrastructure site should still coordinate directly with the facility in advance, since the absence of a UAS-specific statute does not eliminate the practical risk of a contraband-adjacent or trespass-related enforcement response.
+- **State preemption of local ordinances:** No statewide preemption statute was located, and secondary sources report that some Kansas municipalities (e.g., Wichita, Prairie Village) have adopted their own drone ordinances. Confirming and cataloguing any such local ordinance for a specific Kansas project site is deferred to a later phase of this research program; AEC firms should independently confirm the absence (or terms) of a local ordinance for any specific project site in the interim.
+
+## 6. Confidence Summary
+
+| Finding | Confidence |
+|---|---|
+| K.S.A. 60-31a02 (UAS-inclusive stalking/harassment/surveillance definition) | High — verified directly against the official Kansas Office of the Revisor of Statutes website |
+| K.A.R. 115-8-13 (KDWP lands/waters — general aircraft rule, construed by KDWP to bar drones) | Moderate — regulation text verified directly; drone-inclusive construction rests on current KDWP guidance, not rule text |
+| K.S.A. 32-1003 (hunting-from-aircraft restriction, construed by KDWP to bar drone hunting/scouting/recovery) | Moderate — statute verified directly; drone-inclusive construction rests on current KDWP guidance, not statutory text |
+| K.S.A. 75-3740h / 75-3740i (state/local government drone-procurement restriction) | High — verified directly against the official Kansas Office of the Revisor of Statutes website and the Secretary of State's official 2025 Session Laws publication |
+| KDOT "UAS Beyond" program and UAS Privacy Policy | Moderate — program page verified directly; underlying privacy-policy PDF not independently opened in full |
+| K.S.A. 74-7003(t) (professional surveying framework, naming photogrammetry) | Low — general framework verified directly, but no UAS-specific Board guidance located |
+| Executive orders / AG opinions / court decisions / correctional-facility restriction / preemption (negative findings) | Moderate (each individually reviewed and confirmed absent) to Low (negative research findings, not a comprehensive negative-search confirmation) |
+| Legislative-history finding: HB 2293 "died," SB 271 (2024) vetoed and veto sustained, restriction re-enacted via Sub. for SB 9 (2025) | High — independently confirmed via the official Kansas Legislature bill tracker, the Secretary of State's official veto message and Session Laws publication, and LegiScan's roll-call mirror of the official record |
+
+*This document is objective legal/regulatory summary; Practical Interpretation content is pending Phase 2 (see process note above) and, once added, is not legal advice. Consult Kansas counsel for project-specific compliance determinations. Local ordinances and tribal UAS considerations are out of scope for this phase per current research instructions.*
