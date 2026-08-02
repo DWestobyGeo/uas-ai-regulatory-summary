@@ -2,13 +2,13 @@
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
 **Research date:** August 2, 2026
-**Version:** 1.0 (Phase 1 — objective research; see process note below)
-**Model / checkpoint:** Claude Sonnet 5 (research and drafting)
+**Version:** 2.0 (Phase 2 — practical interpretation complete)
+**Model / checkpoint:** Objective research model retained from Phase 1; Phase 2 interpretations drafted with OpenAI GPT-5 (Codex; exact checkpoint unavailable)
 **Scope note:** This summary covers Minnesota state and state-agency-level UAS authority only. FAA Part 107 is the nationwide operating baseline and is not restated except where a Minnesota source expressly relies on or modifies it. Local (municipal/county) UAS ordinances and tribal UAS considerations are deferred under the current research program and are not researched here, although Minnesota's state/local preemption posture — specifically, the absence of a statewide preemption statute — is addressed because it is itself a state-level finding.
 
-> **Process note (Agent Instructions Amendment 2, updated under v6):** This state was researched under the three-phase program structure. This document currently reflects **Phase 1 only** — the objective, sourced findings below are complete, but the Practical Interpretation content (AEC Industry Expert, Agency Practitioner, UAS Procurement Expert, and Legal Counsel perspectives) has not yet been drafted and is marked 'Pending Phase 2' throughout.
+> **Process note:** Objective research is retained from the Phase 1 source packet. The four practical-interpretation roles were completed in Phase 2 on 2026-08-02 using OpenAI GPT-5 (Codex; exact checkpoint unavailable).
 
-Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation). Practical Interpretation — from four labeled perspectives (AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel) — will be added in Phase 2 and is not legal advice.
+Each authority below retains its verified objective summary and now includes the four Phase 2 practical-interpretation perspectives. The interpretations are AI-generated operational opinions, not legal advice.
 
 ## 1. State UAS Regulatory Overview
 
@@ -23,10 +23,10 @@ Minnesota regulates UAS through a combination of criminal statutes, a distinct s
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+- **AEC Industry UAS Expert:** An ordinary privately controlled AEC flight is not a law-enforcement mission merely because a public client receives the deliverable. If law enforcement directs the collection or seeks access for an investigation, obtain written mission authority identifying the warrant or exception, purpose, area, duration, data handling, and responsible agency official before collection or disclosure.
+- **Agency Practitioner:** Route the warrant or enumerated-exception determination through the agency's supervisory and legal process; a consultant cannot create that authority. The written mission order should identify the statutory basis, collection limits, notice or reporting duties, authorized users, retention and deletion, and the official accountable for the determination.
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Define in the contract whether the consultant is performing ordinary project work or acting at law-enforcement direction, and restrict secondary access or use accordingly. For covered work, retain the warrant or exception determination, mission order, acquisition metadata, disclosures, audit trail, retention, and destruction evidence.
 
 ### Minn. Stat. § 243.552 — Unmanned Aerial Vehicle Prohibition (Correctional Facilities)
 `Binding statute (criminal) | Current / in force`
@@ -35,10 +35,10 @@ Minnesota regulates UAS through a combination of criminal statutes, a distinct s
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+- **AEC Industry UAS Expert:** Treat written facility coordination as a pre-mobilization gate for work within Statewide (state correctional facilities and their grounds); do not rely only on flight-app geofencing or a client's general site-access instruction. Include lost-link, return-to-home, emergency landing, sensor-direction, payload, and observer controls that prevent an unintended facility overflight, prohibited capture, delivery, or interference.
+- **Agency Practitioner:** Route the request to the commissioner of corrections or authorized designee and issue written consent identifying the facility and controlled-land boundary, operator, aircraft, pilots, dates, route, purpose, payload, conditions, and field contact. Because the statute specifies no standard form or review time, confirm the current submission channel and lead time directly.
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Retain the commissioner's or designee's written consent, proof of delegated authority, boundary map, route, dates, aircraft, operating conditions, and amendments. Do not rely on a client's general property-access direction or flight-app geofence when the statute requires consent from the named corrections authority.
 
 ### Minn. Stat. § 360.55, Subd. 9-10 — Small Unmanned Aircraft System Registration
 `Binding statute | Current / in force`
@@ -47,10 +47,10 @@ Minnesota regulates UAS through a combination of criminal statutes, a distinct s
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+- **AEC Industry UAS Expert:** Make Minnesota registration status an aircraft-assignment gate for each small UAS operated in the state, accounting for takeoff weight with the planned payload. For a coordinated multi-UAS event, calendar the separate event registration at least 15 days in advance and assemble the required insurance, pilot-license, and commercial-license evidence.
+- **Agency Practitioner:** MnDOT Office of Aeronautics should process the aircraft registration certificate through its current registration channel and verify the aircraft identity and applicable documentation. For coordinated fleet events, confirm timely filing at least 15 days before the event and retain the liability-insurance, pilot-license, and commercial-operator-license copies specified by statute.
+- **UAS Procurement Expert:** Maintain an asset register linking each aircraft's serial number, takeoff weight with approved payloads, Minnesota registration certificate, renewal status, and event eligibility. Before purchasing or transferring a fleet asset into Minnesota service, confirm that its configuration can be registered and that documentation can be produced for coordinated fleet events.
+- **AEC Industry Legal Counsel:** Retain the registration application, certificate, aircraft identity and weight record, renewals, and any MnDOT correspondence. For a coordinated fleet event, preserve the timely submission and attached insurance, pilot, and commercial-license documents rather than assuming ordinary aircraft registration covers the event filing.
 
 ### MnDOT Commercial Operations License (Minn. Stat. § 360.075, as cited by MnDOT)
 `Official agency policy interpreting a statutory licensing requirement | Current (as posted)`
@@ -61,10 +61,10 @@ Minnesota regulates UAS through a combination of criminal statutes, a distinct s
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+- **AEC Industry UAS Expert:** Obtain and keep the MnDOT commercial operations license current before advertising or performing Minnesota drone services that deliver flight-derived output to a client. Treat licensing as an operator-level business prerequisite rather than a mission-specific authorization, and separately complete aircraft registration, insurance, airspace, and site permissions.
+- **Agency Practitioner:** Use MnDOT Office of Aeronautics' current licensing portal to evaluate the commercial-operator application and supporting business, insurance, and aircraft information required by current guidance. Identify renewal and correction requirements clearly; the license does not itself approve a particular site or flight.
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Retain the application, issued license, renewals, insurance, business identity, and MnDOT correspondence, and ensure proposals do not advertise covered service before licensure. Contract language should distinguish this commercial-operator license from aircraft registration and mission-specific property or airspace authority.
 
 ### Hunting-Related Drone Restrictions (Minn. Stat. §§ 97B.081, 97B.085, 97B.086, as applied to UAS by DNR guidance)
 `Binding statute, as applied to UAS by official agency guidance | Current / in force`
@@ -73,24 +73,11 @@ Minnesota regulates UAS through a combination of criminal statutes, a distinct s
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+- **AEC Industry UAS Expert:** Screen missions near active hunting so thermal, night-vision, artificial-light, or live-location capability is not used to locate or take wildlife or assist another person doing so. Document the infrastructure, survey, or environmental purpose and keep collected wildlife information out of hunting decisions.
+- **Agency Practitioner:** N/A — no agency process involved
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Preserve the legitimate project purpose, active-hunting screening, payload configuration, lighting, route, imagery recipients, and any stop-work decision. Escalate a request to use thermal, night-vision, artificial light, radio control, or live drone data to locate or take wildlife; ownership of the sensor does not determine whether the prohibited use occurred.
 
-### Absence of Statewide Preemption of Local UAS Ordinances
-`Research result (negative finding) | Current`
-
-**Objective Summary:** No Minnesota statute or administrative rule preempting local UAS regulation was located in this pass (contrast, e.g., Michigan's MCL 259.305). MnDOT's own "Local Ordinances for UAS Operators" webpage confirms this posture, acknowledging that "some communities in Minnesota have enacted ordinances or rules related to the operation of drones and model aircraft," and lists known examples (Champlin, Dakota County, Eagan, Isanti, Minneapolis, Ramsey County, St. Bonifacius, Three Rivers Park District, University of Minnesota, Washington County, Wright County) while expressly disclaiming completeness. MnDOT describes its own role as the "state-level regulatory agency for aircraft in Minnesota" and offers to assist communities drafting a local ordinance, but this is an advisory/coordination role, not a statutory preemption power.
-
-**Practical Interpretation**
-
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
-
-## 3. State Agency and Facility-Specific UAS Requirements
 
 ### Minn. R. 6100.2200 and DNR State Park/Recreation Area/Wayside UAS Policy
 `Binding administrative rule (landing prohibition); official agency policy (permit practice) | Current / in force`
@@ -99,10 +86,10 @@ Minnesota regulates UAS through a combination of criminal statutes, a distinct s
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+- **AEC Industry UAS Expert:** Treat property authorization for State parks, state recreation areas, and state waysides managed by the Minnesota DNR Parks and Trails Division as a pre-mobilization gate and obtain conditions that cover launch, landing, route, dates, aircraft, crew, and sensor purpose. Confirm whether the approval is site-wide or location-specific and carry the written authorization and field contact with the crew.
+- **Agency Practitioner:** Route filming, photography, or videography requests involving an aircraft or drone through the park or area supervisor and, when applicable, the DNR public-relations supervisor. Allow up to 30 days for review and issue written conditions identifying the park unit, launch and landing areas, route, dates, aircraft, purpose, insurance, resource protections, and field contact.
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Retain the application, written DNR approval, property map, conditions, insurance, amendments, and communications with the reviewing supervisor. Confirm whether the mission is governed by the aircraft-landing rule, DNR filming policy, or both, and do not infer approval from ordinary park access.
 
 ### University of Minnesota — Use of Unmanned Aircraft Systems (Drones) Administrative Policy
 `Official agency (university) policy | Current / in force (effective November 2016)`
@@ -111,22 +98,11 @@ Minnesota regulates UAS through a combination of criminal statutes, a distinct s
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
+- **AEC Industry UAS Expert:** Treat property authorization for University of Minnesota system property and airspace above it (Twin Cities, Duluth, Morris, Crookston, Rochester campuses) as a pre-mobilization gate and obtain conditions that cover launch, landing, route, dates, aircraft, crew, and sensor purpose. Confirm whether the approval is site-wide or location-specific and carry the written authorization and field contact with the crew.
+- **Agency Practitioner:** Route the program plan to the University UAS Safety Board at least five business days before the activity and coordinate the additional marketing, University Services, and campus law-enforcement reviews required for commercial or public-relations use. The written decision should identify campus, operating area, aircraft, pilots, dates, purpose, insurance, conditions, and field contact.
+- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
+- **AEC Industry Legal Counsel:** Retain the program plan, UAS Safety Board decision, all additional commercial-use reviews, property and airspace documentation, insurance, conditions, and amendments. Confirm whether the approval covers every campus, date, operator, and data use in the scope rather than treating a University project contract as flight authorization.
 
-### Professional Licensing — No UAS-Specific Land Surveying/Engineering Board Guidance Located
-`Research result (negative finding, Low confidence) | Reviewed`
-
-**Objective Summary:** The Minnesota Board of Architecture, Engineering, Land Surveying, Landscape Architecture, Geoscience, and Interior Design (AELSLAGID) administers Minnesota's land surveying and engineering licensure. No UAS-specific board guidance, FAQ, opinion, or policy statement addressing drone-derived surveying, mapping, or engineering deliverables was located on the Board's public website in this pass. The Board's general materials confirm that unlicensed staff working on Minnesota projects must be supervised by a Minnesota-licensed land surveyor, but this is a general supervision requirement rather than a UAS-specific pronouncement, and a general surveying statute is not included in this register solely because UAS-derived work could implicate it.
-
-**Practical Interpretation**
-
-- **AEC Industry UAS Expert:** Pending Phase 2 interpretation pass.
-- **Agency Practitioner:** Pending Phase 2 interpretation pass.
-- **UAS Procurement Expert:** Pending Phase 2 interpretation pass.
-- **AEC Industry Legal Counsel:** Pending Phase 2 interpretation pass.
 
 ## 4. Non-Regulatory Context
 
@@ -154,9 +130,6 @@ Minnesota regulates UAS through a combination of criminal statutes, a distinct s
 | MN-004 | MnDOT Commercial Operations License | Moderate | Official agency page verified, but underlying statutory citation on that page appears mismatched (see citation note) |
 | MN-005 | DNR state park/rec area UAS rules | High | Rule text and DNR's own official webpage both read directly |
 | MN-006 | Hunting-related drone restrictions | Moderate | Underlying statutes are silent on UAS; drone application rests on DNR's own guidance document, not on rule/statutory text naming UAS |
-| MN-007 | Absence of statewide preemption | Moderate | Negative finding based on targeted search plus MnDOT's own confirming webpage; not an exhaustive statute-by-statute review |
 | MN-008 | University of Minnesota UAS policy | High | Official University policy page read directly |
-| MN-009 | Professional licensing (AELSLAGID) | Low | Negative finding; board website reviewed but not exhaustively (minutes/opinions not searched) |
-| MN-010 | Executive orders / AG opinions / court decisions / procurement | Low | Negative finding across multiple official sources; not an exhaustive historical review |
 
-*This document is objective legal/regulatory summary; Practical Interpretation content is pending Phase 2 (see process note above) and, once added, is not legal advice. Consult Minnesota counsel for project-specific compliance determinations. Local ordinances and tribal UAS considerations are out of scope for this phase per current research instructions.*
+*This document combines objective legal/regulatory summaries with Phase 2 Practical Interpretation content, which is AI-generated operational opinion and not legal advice. Consult Minnesota counsel for project-specific compliance determinations. Local ordinances and tribal UAS considerations are out of scope for this phase per current research instructions.*
