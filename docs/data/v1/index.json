@@ -20,6 +20,14 @@
       "json_url": "data/v1/AL.json"
     },
     {
+      "state": "Arkansas",
+      "state_abbr": "AR",
+      "state_fips": "05",
+      "record_count": 8,
+      "last_updated": "2026-08-01",
+      "json_url": "data/v1/AR.json"
+    },
+    {
       "state": "Arizona",
       "state_abbr": "AZ",
       "state_fips": "04",
@@ -124,5 +132,5 @@
       "json_url": "data/v1/WA.json"
     }
   ],
-  "state_count": 15
+  "state_count": 16
 }
