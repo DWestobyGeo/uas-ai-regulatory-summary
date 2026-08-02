@@ -220,6 +220,14 @@
       "json_url": "data/v1/NC.json"
     },
     {
+      "state": "North Dakota",
+      "state_abbr": "ND",
+      "state_fips": "38",
+      "record_count": 14,
+      "last_updated": "2026-08-02",
+      "json_url": "data/v1/ND.json"
+    },
+    {
       "state": "Nebraska",
       "state_abbr": "NE",
       "state_fips": "31",
@@ -396,5 +404,5 @@
       "json_url": "data/v1/WY.json"
     }
   ],
-  "state_count": 49
+  "state_count": 50
 }
