@@ -148,6 +148,14 @@
       "json_url": "data/v1/LA.json"
     },
     {
+      "state": "Massachusetts",
+      "state_abbr": "MA",
+      "state_fips": "25",
+      "record_count": 6,
+      "last_updated": "2026-08-02",
+      "json_url": "data/v1/MA.json"
+    },
+    {
       "state": "Maryland",
       "state_abbr": "MD",
       "state_fips": "24",
@@ -220,5 +228,5 @@
       "json_url": "data/v1/WA.json"
     }
   ],
-  "state_count": 27
+  "state_count": 28
 }
