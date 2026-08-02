@@ -92,6 +92,14 @@
       "json_url": "data/v1/HI.json"
     },
     {
+      "state": "Iowa",
+      "state_abbr": "IA",
+      "state_fips": "19",
+      "record_count": 7,
+      "last_updated": "2026-08-02",
+      "json_url": "data/v1/IA.json"
+    },
+    {
       "state": "Idaho",
       "state_abbr": "ID",
       "state_fips": "16",
@@ -172,5 +180,5 @@
       "json_url": "data/v1/WA.json"
     }
   ],
-  "state_count": 21
+  "state_count": 22
 }
