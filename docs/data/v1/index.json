@@ -52,6 +52,14 @@
       "json_url": "data/v1/MO.json"
     },
     {
+      "state": "North Carolina",
+      "state_abbr": "NC",
+      "state_fips": "37",
+      "record_count": 12,
+      "last_updated": "2026-08-01",
+      "json_url": "data/v1/NC.json"
+    },
+    {
       "state": "New York",
       "state_abbr": "NY",
       "state_fips": "36",
@@ -92,5 +100,5 @@
       "json_url": "data/v1/WA.json"
     }
   ],
-  "state_count": 11
+  "state_count": 12
 }
