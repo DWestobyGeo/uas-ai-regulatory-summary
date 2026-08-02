@@ -10,6 +10,8 @@
 
 **Amendment 2 — August 1, 2026:** Introduces five specialized research/drafting roles (Section 1.1); restructures the multi-state program into three phases — Phase 1 (objective research, all states), Phase 2 (batched practical-interpretation pass, all states), Phase 3 (QA and fact-drift review, all states, including a retrofit of interpretation content produced before this amendment) — with token-optimization rules (Section 5.1–5.2); adds a third practical-interpretation field, `practical_interpretation_agency_practitioner` (Section 7); and flags 14 pre-Amendment-2 states (Section 5.3) whose interpretation content is provisional pending Phase 3.
 
+**Amendment 3 — August 1, 2026:** Adds a required `Model / checkpoint` line to the printable summary's metadata block (Section 8), identifying the AI model (and version/checkpoint, if available) used to produce the document's research and drafting. Applies to all states researched from this point forward; earlier states are not retrofitted solely for this purpose.
+
 ---
 
 ## 1. Role and Desired Outcome
@@ -200,6 +202,14 @@ The source register contains only authoritative sources per Section 6. Non-regul
 ## 8. Printable State Summary
 
 Create one concise, human-readable Markdown report designed for printing or PDF conversion. Target approximately two pages, excluding the source register. Prioritize material restrictions and requirements over exhaustive narrative. If necessary, exceed two pages rather than omit a material verified authority.
+
+Begin every printable summary with a metadata block directly under the title:
+
+- **Prepared for:** — the intended audience (AEC UAS program management).
+- **Research date:** — the date the research pass was conducted.
+- **Version:** — document version and phase (e.g., "1.0 (Phase 1 — objective research; see process note below)").
+- **Model / checkpoint (Amendment 3):** — the AI model, and version/checkpoint if available, used to produce the research and drafting (e.g., "Claude Sonnet 5"). If the exact checkpoint/build isn't available, list what is known (model name/family) rather than omitting the line.
+- **Scope note:** — what the summary does and does not cover (FAA Part 107 baseline, state/state-agency level only, local-ordinance/preemption posture, etc.).
 
 Use this structure:
 

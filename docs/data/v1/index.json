@@ -100,6 +100,14 @@
       "json_url": "data/v1/ID.json"
     },
     {
+      "state": "Illinois",
+      "state_abbr": "IL",
+      "state_fips": "17",
+      "record_count": 10,
+      "last_updated": "2026-08-01",
+      "json_url": "data/v1/IL.json"
+    },
+    {
       "state": "Missouri",
       "state_abbr": "MO",
       "state_fips": "29",
@@ -156,5 +164,5 @@
       "json_url": "data/v1/WA.json"
     }
   ],
-  "state_count": 19
+  "state_count": 20
 }
