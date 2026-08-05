@@ -7,7 +7,7 @@ This directory is the authoritative home for individual agent operating instruct
 | Role | Primary responsibility | Governs |
 |---|---|---|
 | [Research Expert](research-expert.md) | Source discovery, verification, objective analysis, and source-register metadata | Objective fields, research checklist, objective summary, Non-Regulatory Context |
-| [AEC Industry UAS Expert](aec-industry-uas-expert.md) | Commercial AEC flight-program and field interpretation | `practical_interpretation_aec_expert` |
+| [AEC Industry UAS Expert](aec-industry-uas-expert.md) | Multidisciplinary AEC/environmental consulting flight-program and field interpretation (civil, water/wastewater, environmental, ecological/wildlife, survey) | `practical_interpretation_aec_expert` |
 | [Agency Practitioner](agency-practitioner.md) | Agency application, permit, registration, and approval-process interpretation | `practical_interpretation_agency_practitioner` |
 | [UAS Procurement Expert](uas-procurement-expert.md) | Aircraft, payload, software, cybersecurity, sourcing, and fleet interpretation | `practical_interpretation_uas_procurement_expert` |
 | [AEC Industry Legal Counsel](aec-industry-legal-counsel.md) | Legal-risk, contract, documentation, liability, and escalation interpretation | `practical_interpretation_legal_counsel` |
