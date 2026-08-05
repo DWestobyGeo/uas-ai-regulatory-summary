@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Agent Run Telemetry Record",
+  "description": "One record per substantive research, interpretation, or QA agent run. See runs/README.md.",
+  "type": "object",
+  "required": [
+    "run_id", "state", "state_abbr", "phase",
+    "model_provider", "model_id", "agent_instructions_version",
+    "input_tokens", "output_tokens", "retries", "latency_ms",
+    "started_at", "completed_at"
+  ],
+  "properties": {
+    "run_id": { "type": "string", "description": "{utc_timestamp}_{state_abbr}_{phase}_{role_or_stage}" },
+    "state": { "type": "string" },
+    "state_abbr": { "type": "string" },
+    "phase": { "type": "string", "enum": ["phase1_research", "phase2_interpretation", "phase3_qa", "retrofit"] },
+    "role": { "type": ["string", "null"], "description": "role_id from agents/roles, or null for non-role-scoped runs" },
+    "record_ids": { "type": ["array", "null"], "items": { "type": "string" } },
+    "model_provider": { "type": "string" },
+    "model_id": { "type": "string" },
+    "agent_instructions_version": { "type": "string" },
+    "role_version": { "type": ["string", "null"] },
+    "prompt_template_version": { "type": ["string", "null"] },
+    "input_tokens": { "type": "integer" },
+    "cached_input_tokens": { "type": ["integer", "null"] },
+    "output_tokens": { "type": "integer" },
+    "reasoning_tokens": { "type": ["integer", "null"] },
+    "cost_usd": { "type": ["number", "null"] },
+    "retries": { "type": "integer" },
+    "latency_ms": { "type": "integer" },
+    "tool_calls": { "type": ["integer", "null"] },
+    "sources_opened": { "type": ["integer", "null"] },
+    "objective_packet_hash": { "type": ["string", "null"] },
+    "interpretation_input_hash": { "type": ["string", "null"] },
+    "started_at": { "type": "string", "format": "date-time" },
+    "completed_at": { "type": "string", "format": "date-time" }
+  }
+}
