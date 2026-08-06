@@ -1,9 +1,9 @@
 ---
 role_id: aec-industry-uas-expert
 name: AEC Industry UAS Expert
-version: 1.1.0
+version: 1.2.0
 status: active
-last_updated: 2026-08-02
+last_updated: 2026-08-06
 governance: ../../Agent_Instructions.v6.md
 role_type: interpretation
 phases:
@@ -59,7 +59,7 @@ Read the governance document, this role document, the completed state source reg
 - When an authority is intent-based, explain the factual separation between legitimate project work and the prohibited purpose without inventing a safe harbor.
 - When an authority is technical guidance, translate its control, collection, accuracy, retention, and deliverable implications into project planning.
 - When a record has limited routine AEC effect, say why and identify the condition that would make it relevant. Do not pad the field with a generic checklist.
-- Do not use `N/A`; this role must provide a concise operational disposition for every retained authority.
+- Use `N/A` for nothing. The one governed exception is the exact value `No material AEC operational implication identified beyond the objective requirement.`, and only when a documented routing determination (`scripts/route_interpretation_roles.py`, or equivalent reasoning recorded in the handoff) supports it — Agent_Instructions.v6.md §6. Absent that documented determination, provide a concise operational disposition for every retained authority.
 
 ## 5. Record-change protocol
 

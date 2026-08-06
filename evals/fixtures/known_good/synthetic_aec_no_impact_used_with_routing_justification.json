@@ -1,0 +1,26 @@
+{
+  "name": "synthetic_aec_no_impact_used_with_routing_justification",
+  "source": "synthetic contrast case — modeled on WA-010 (a debunked/never-enacted claim with no operative requirement)",
+  "rule": "check_aec_legal_no_impact_undocumented",
+  "expect": "clean",
+  "row": {
+    "record_id": "ZZ-001",
+    "state": "Zzyzx", "state_abbr": "ZZ", "state_fips": "00",
+    "jurisdiction_name": "Zzyzx", "jurisdiction_type": "State", "geographic_scope": "Statewide",
+    "issuing_authority": "Zzyzx State Legislature",
+    "source_title": "Test fixture (debunked claim)", "citation": "N/A", "source_type": "Repealed, expired, or superseded authority (never enacted)",
+    "effective_date": "N/A", "revision_date": "N/A", "status": "Not law - stalled in committee, never enacted",
+    "binding_level": "N/A", "uas_topic": "Myth-busting: drone labeling requirement widely repeated but never enacted",
+    "regulated_party": "N/A", "regulated_activity": "N/A - widely repeated misinformation",
+    "requirement_type": "N/A - widely repeated misinformation",
+    "permit_or_approval_required": "N/A", "public_agency_only": "No",
+    "commercial_operator_relevance": "Low", "aec_relevance": "Low",
+    "summary": "A bill that would have required drone labeling and landowner consent stalled in committee and was never enacted; it is addressed here only to correct a widely repeated secondary-source claim.",
+    "practical_interpretation_aec_expert": "No material AEC operational implication identified beyond the objective requirement.",
+    "practical_interpretation_agency_practitioner": "N/A — no agency process involved",
+    "practical_interpretation_uas_procurement_expert": "N/A — no procurement or equipment-selection implication identified",
+    "practical_interpretation_legal_counsel": "No separate legal-risk implication identified beyond compliance with the stated authority.",
+    "source_url": "https://example.gov/test", "date_accessed": "2026-08-02",
+    "confidence_level": "High", "verification_status": "Verified directly.", "notes": ""
+  }
+}

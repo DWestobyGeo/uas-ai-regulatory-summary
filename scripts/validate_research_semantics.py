@@ -37,6 +37,8 @@ import sys
 import yaml
 from pathlib import Path
 
+import route_interpretation_roles as rir
+
 ROOT = Path(__file__).resolve().parents[1]
 STATES_DIR = ROOT / "States"
 WORKFLOW_PATH = ROOT / ".github" / "workflows" / "site-quality.yml"
@@ -80,6 +82,8 @@ PUBLIC_AGENCY_HEDGE = re.compile(
 )
 GOVERNED_AGENCY_NA = "N/A — no agency process involved"
 GOVERNED_PROCUREMENT_NA = "N/A — no procurement or equipment-selection implication identified"
+GOVERNED_AEC_NO_IMPACT = "No material AEC operational implication identified beyond the objective requirement."
+GOVERNED_LEGAL_NO_IMPACT = "No separate legal-risk implication identified beyond compliance with the stated authority."
 
 
 # --------------------------------------------------------------------------------------
@@ -251,6 +255,37 @@ def check_pending_after_cutoff(row: dict, today_year: int) -> list[str]:
     return []
 
 
+def check_aec_legal_no_impact_undocumented(row: dict) -> list[str]:
+    """Rule (Workstream 5): an AEC/legal governed no-impact value must be routing-justified.
+
+    Agent_Instructions.v6.md \xa76 authorizes the AEC and legal no-material-impact values only
+    when a documented routing determination supports them. This cross-checks any use of those
+    exact governed strings against scripts/route_interpretation_roles.py -- if the deterministic
+    router thinks the record IS materially relevant to that role, using the no-impact value
+    without overriding that in the record's notes is exactly the "dodge substantive interpretation"
+    failure mode the plan's Workstream 5 acceptance criteria warn against.
+    """
+    aec = (row.get("practical_interpretation_aec_expert") or "").strip()
+    legal = (row.get("practical_interpretation_legal_counsel") or "").strip()
+    if aec != GOVERNED_AEC_NO_IMPACT and legal != GOVERNED_LEGAL_NO_IMPACT:
+        return []
+    routed = rir.route_record(row)
+    findings = []
+    if aec == GOVERNED_AEC_NO_IMPACT and routed["aec_relevant"]:
+        findings.append(
+            f"{row.get('record_id')}: practical_interpretation_aec_expert uses the governed "
+            "no-impact value, but scripts/route_interpretation_roles.py finds no reason to treat "
+            "this record as AEC-irrelevant -- confirm this is routing-justified, not a dodge."
+        )
+    if legal == GOVERNED_LEGAL_NO_IMPACT and routed["legal_analysis_relevant"]:
+        findings.append(
+            f"{row.get('record_id')}: practical_interpretation_legal_counsel uses the governed "
+            "no-impact value, but scripts/route_interpretation_roles.py finds no reason to treat "
+            "this record as legally inert -- confirm this is routing-justified, not a dodge."
+        )
+    return findings
+
+
 PER_RECORD_RULES = [
     check_negative_finding_in_register,
     check_general_statute_scope_gate,
@@ -261,6 +296,7 @@ PER_RECORD_RULES = [
     check_low_confidence_mandatory_language,
     check_public_agency_only_misapplied,
     check_nonstandard_na_routing,
+    check_aec_legal_no_impact_undocumented,
 ]
 
 

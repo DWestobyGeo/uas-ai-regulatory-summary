@@ -24,6 +24,11 @@ EXPECTED = [
 ROLE_FIELDS = EXPECTED[24:28]
 AGENCY_NA = "N/A — no agency process involved"
 PROCUREMENT_NA = "N/A — no procurement or equipment-selection implication identified"
+# Governed as of Agent_Instructions.v6.md 6.4.0 (Workstream 5) -- usable only when a documented
+# routing determination supports them (scripts/route_interpretation_roles.py). Expected to be
+# rare; see the AEC/legal role docs.
+AEC_NO_IMPACT = "No material AEC operational implication identified beyond the objective requirement."
+LEGAL_NO_IMPACT = "No separate legal-risk implication identified beyond compliance with the stated authority."
 PENDING_VALUES = {"PENDING — Phase 2", "Pending Phase 2 interpretation pass"}
 errors: list[str] = []
 warnings: list[str] = []
@@ -67,8 +72,14 @@ for path in REGISTER_FILES:
             errors.append(f"{rid}: nonstandard agency N/A: {agency}")
         if procurement.startswith("N/A") and procurement != PROCUREMENT_NA:
             errors.append(f"{rid}: nonstandard procurement N/A: {procurement}")
-        if aec.startswith("N/A") or legal.startswith("N/A"):
-            errors.append(f"{rid}: unsupported N/A in AEC/legal role")
+        if aec.startswith("N/A"):
+            errors.append(f"{rid}: unsupported N/A in AEC role (governed value is {AEC_NO_IMPACT!r}, not a bare N/A)")
+        elif aec.lower().startswith("no material") and aec != AEC_NO_IMPACT:
+            errors.append(f"{rid}: nonstandard AEC no-impact value: {aec}")
+        if legal.startswith("N/A"):
+            errors.append(f"{rid}: unsupported N/A in legal role (governed value is {LEGAL_NO_IMPACT!r}, not a bare N/A)")
+        elif legal.lower().startswith("no separate legal-risk") and legal != LEGAL_NO_IMPACT:
+            errors.append(f"{rid}: nonstandard legal no-impact value: {legal}")
         source_type = row.get("source_type", "")
         if re.search(r"Discovery lead|not found|^N/A$", source_type, re.I):
             warnings.append(f"legacy non-authority row {rid}: {row.get('source_title', '')}")

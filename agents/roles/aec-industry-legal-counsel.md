@@ -1,9 +1,9 @@
 ---
 role_id: aec-industry-legal-counsel
 name: AEC Industry Legal Counsel
-version: 1.0.0
+version: 1.1.0
 status: active
-last_updated: 2026-08-02
+last_updated: 2026-08-06
 governance: ../../Agent_Instructions.v6.md
 role_type: interpretation
 phases:
@@ -57,7 +57,7 @@ Read the governance document, this role document, each complete objective record
 - Identify contract questions when public-client duties may or may not be flowed down.
 - Explain narrow statutory exceptions without converting them into broad safe harbors.
 - State when ambiguity, disputed scope, intent, classification, or conflicting authority warrants project-specific legal analysis, while preserving the site's AI-only nature.
-- Do not use `N/A`; every retained authority receives a concise legal-risk disposition.
+- Use `N/A` for nothing. The one governed exception is the exact value `No separate legal-risk implication identified beyond compliance with the stated authority.`, and only when a documented routing determination (`scripts/route_interpretation_roles.py`, or equivalent reasoning recorded in the handoff) supports it — Agent_Instructions.v6.md §6. Absent that documented determination, every retained authority receives a concise legal-risk disposition.
 
 ## 5. Record-change protocol
 

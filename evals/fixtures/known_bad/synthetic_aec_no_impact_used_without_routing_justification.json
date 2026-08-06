@@ -1,0 +1,26 @@
+{
+  "name": "synthetic_aec_no_impact_used_without_routing_justification",
+  "source": "synthetic — tests the Workstream 5 governance requirement that the new AEC no-impact value is used only when scripts/route_interpretation_roles.py agrees the record is AEC-irrelevant",
+  "rule": "check_aec_legal_no_impact_undocumented",
+  "expect": "flag",
+  "row": {
+    "record_id": "ZZ-000",
+    "state": "Zzyzx", "state_abbr": "ZZ", "state_fips": "00",
+    "jurisdiction_name": "Zzyzx", "jurisdiction_type": "State", "geographic_scope": "Statewide",
+    "issuing_authority": "Zzyzx Department of Transportation",
+    "source_title": "Test fixture", "citation": "Zz. Stat. § 1", "source_type": "Binding law or regulation",
+    "effective_date": "2026-01-01", "revision_date": "2026-01-01", "status": "Current / in force",
+    "binding_level": "Binding", "uas_topic": "State park drone launch/landing permit",
+    "regulated_party": "Any operator", "regulated_activity": "Launching or landing a UAS in a state park",
+    "requirement_type": "Permit required",
+    "permit_or_approval_required": "Yes — Director-issued event permit required before launch or landing",
+    "public_agency_only": "No", "commercial_operator_relevance": "High", "aec_relevance": "High",
+    "summary": "A permit is required before any UAS launch or landing in a state park.",
+    "practical_interpretation_aec_expert": "No material AEC operational implication identified beyond the objective requirement.",
+    "practical_interpretation_agency_practitioner": "Use the current permit application to request a launch/landing window before mobilizing.",
+    "practical_interpretation_uas_procurement_expert": "N/A — no procurement or equipment-selection implication identified",
+    "practical_interpretation_legal_counsel": "Confirm the permit is in hand before authorizing any park mission.",
+    "source_url": "https://example.gov/test", "date_accessed": "2026-08-02",
+    "confidence_level": "High", "verification_status": "Verified directly.", "notes": ""
+  }
+}

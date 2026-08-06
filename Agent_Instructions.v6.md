@@ -4,7 +4,7 @@
 
 **Status:** Active. Research or revision begins only when assigned.
 
-**Governance version:** 6.3.0 — August 6, 2026
+**Governance version:** 6.4.0 — August 6, 2026
 
 **Compatibility note:** The filename remains `Agent_Instructions.v6.md` so existing state provenance, links, and automation continue to work. Role-specific operating instructions now live in [`agents/roles/`](agents/roles/).
 
@@ -157,12 +157,26 @@ After the objective packet is complete, the four interpretation roles each perfo
 
 Each interpretation is normally one to three sentences. A longer opinion is allowed when a material ambiguity, multi-step process, phased requirement, or competing operational consideration cannot be responsibly explained within that norm. Length alone never substitutes for substance.
 
-Only these exact N/A dispositions are governed:
+Only these exact no-material-impact dispositions are governed:
 
 - Agency Practitioner: `N/A — no agency process involved`
 - UAS Procurement Expert: `N/A — no procurement or equipment-selection implication identified`
+- AEC Industry UAS Expert: `No material AEC operational implication identified beyond the objective requirement.`
+- AEC Industry Legal Counsel: `No separate legal-risk implication identified beyond compliance with the stated authority.`
 
-The AEC and legal roles provide a substantive disposition for every retained record.
+The AEC and legal governed values are new as of governance 6.4.0 (Workstream 5 of
+`planning/AI_RESEARCH_QUALITY_AND_EFFICIENCY_IMPROVEMENT_PLAN.md`) and are expected to be rare:
+this product exists specifically to give AEC operators field-relevant and legal-risk
+interpretation, so most retained records will have a substantive AEC and legal disposition even
+when the agency or procurement disposition is governed N/A. A role may use its governed
+no-material-impact value only when a documented routing determination
+(`scripts/route_interpretation_roles.py`, or equivalent reasoning recorded in the handoff)
+supports it — never merely to avoid drafting a substantive interpretation. QA treats an AEC or
+legal no-material-impact value used without a documented reason as a defect, the same way an
+invented process is a defect.
+
+The AEC and legal roles provide a substantive disposition for every retained record where routing
+determined they are materially relevant.
 
 ### Phase 3 — QA and Retrofit
 
@@ -278,7 +292,7 @@ Before completing assigned work, run the applicable checks and confirm:
 - status, applicability, dates, citations, confidence, and source type are accurate;
 - state-agency rules are not presented as private requirements;
 - interpretations are substantive, role-specific, and source-grounded;
-- exact N/A values are used only when appropriate;
+- exact no-material-impact values (agency, procurement, and — where a routing determination supports it — AEC and legal) are used only when appropriate;
 - record IDs and the 33-field schema remain valid;
 - summary, register, generated JSON, and downloadable mirrors agree;
 - role/model provenance is recorded without guessing;
@@ -290,6 +304,7 @@ Before completing assigned work, run the applicable checks and confirm:
 
 ## 13. Revision history
 
+- **6.4.0 — August 6, 2026:** Added two governed no-material-impact dispositions for the AEC Industry UAS Expert and AEC Industry Legal Counsel roles (Workstream 5 of `planning/AI_RESEARCH_QUALITY_AND_EFFICIENCY_IMPROVEMENT_PLAN.md`), usable only when a documented routing determination supports them; added `scripts/route_interpretation_roles.py` as the deterministic routing reference implementation. Scoped to the five Phase B pilot states for now and does not retroactively rewrite any already-published interpretation field.
 - **6.3.0 — August 6, 2026:** Added the piloted per-state research manifest (`States/RESEARCH_MANIFEST_SCHEMA.md`, `XX_UAS_Research_Manifest.yaml`) for the five Phase B pilot states, and two new deterministic validators (`scripts/validate_research_manifests.py`, `scripts/validate_research_semantics.py`) plus the already-written but previously unwired `scripts/validate_phase2.py` to the required CI checks and quality gates; scoped to `evals/pilot_states.md` only, and does not expand the 33-field source-register schema or begin a nationwide retrofit.
 - **6.2.0 — August 2, 2026:** Added the State UAS Regulatory Burden Analyst and a gated Phase 4 for comparative state-level assessment under a separate versioned methodology; preserved the 33-field authority schema and prohibited partial provisional work from being presented as a national ranking.
 - **6.1.0 — August 2, 2026:** Converted the former mixed governance/role document into high-level governance; established individual versioned role documents and common role metadata; formalized field ownership, role-version provenance, and record-change documentation; retained the state/state-agency scope and AI-only product boundary; and clarified acceptable use of normalized legal publishers.
