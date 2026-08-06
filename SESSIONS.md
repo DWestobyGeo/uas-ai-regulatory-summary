@@ -22,6 +22,53 @@ scratch.
 
 ## Log (newest first)
 
+### 2026-08-06 — Workstream 9 trial retrofit: Missouri (queue rank #1), pushed
+
+**Status:** Complete and pushed (`f6ecdc2`), on top of the retrofit-infrastructure commit
+(`fbf2f59`) and the Agency Practitioner prompt-improvement commit (`234f11d`). Authorized by the
+user as an explicit single-state trial ("One state now, as a trial") to evaluate retrofit
+quality/pace before committing to more of the 45-state queue.
+
+**What this proved:** real, live-sourced legal research is possible from this environment --
+`WebSearch`/`mcp__workspace__web_fetch` (the outer Cowork tool layer) reach real government and
+legal sources even though this repo's sandboxed shell (`mcp__workspace__bash`) cannot (confirmed
+blocked by an egress allowlist in Phase D, Workstream 8). All Missouri sourcing this pass used
+primary state sources directly where possible (revisor.mo.gov, modot.org, mostateparks.com,
+mdc.mo.gov) and house.mo.gov-sourced bill tracking (via LegiScan) for bill status.
+
+**What changed:** see the commit message on `f6ecdc2` for full detail per record. Highlights:
+resolved a concern the *original* research pass had explicitly flagged (a possible site-update
+lag on RSMo 577.800's 2026 amendment) by directly re-pulling the current codified text; found and
+added several provisions the original summary had missed entirely (a no-altitude-threshold
+critical-infrastructure-boundary prohibition, a railroad-employee exemption, a mandatory
+warning-sign requirement, and the actual three-bill merged citation); corrected a citation error
+on RSMo 217.850 (wrong enacting bill number); and honestly flagged one genuinely unresolved item
+(a reported peace-officer counter-UAS mitigation authority whose specific codified section could
+not be pinned down in this pass) rather than guessing at a citation. Missouri now has a research
+manifest and checklist for the first time (`current_method_in_progress`, not `complete`, given
+the one open item) and dropped from queue rank #1 to #2 once the "legacy state" trigger no longer
+applied -- while correctly staying Tier 1 given its remaining genuine low-confidence/pending/
+registration-permit records.
+
+**Not done this pass:** Missouri was not converted to the Workstream 7 authored/generated split
+(`MO_UAS_Regulatory_Summary.md` was manually synced to the updated register instead) -- its
+non-enacted-bill records (MO-003/004) use a heading style the generator doesn't yet support, and
+MO-001's now-longer, more-precise citation would produce an unwieldy generated heading under the
+existing `citation_and_title` style. Left as a scoped follow-up rather than forced through.
+
+**Next task:** waiting on the user's decision on pace for the remaining ~44 states in
+`planning/national_retrofit_queue.md` (queue ranks #2 onward, next up: TX, PA, AR, IL...). Two
+other items are queued but explicitly deferred by the user, not yet started:
+- A prompt-engineering pass to expand the set of practical SME interpretation "blurbs" beyond the
+  current four roles (selectively surfaced, not all shown for every record), with the
+  web-ux-ui-editor role proposing layout options first, before another role designs the
+  implementation backward from that.
+- A new "News Aggregator" role/prompt template, scoped to the specific record's regulatory topic,
+  prioritizing in-state news first and clearly flagging out-of-state coverage, filtered to
+  closely-matched stories only.
+
+---
+
 ### 2026-08-06 — Agency Practitioner role prompt improved (1.0.0 -> 1.1.0)
 
 **Status:** Complete and pushed (`234f11d`). User-requested, outside the Workstream 7/8 task
