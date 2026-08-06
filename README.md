@@ -4,6 +4,10 @@ A state-by-state reference on **commercial UAS (drone) regulation** relevant to 
 
 **⚠️ This is AI-compiled research, not legal advice.** See [`docs/disclaimer.html`](docs/disclaimer.html) (or the "Disclaimer" link on the live site) before using anything in this repository. Every claim is sourced and confidence-rated, but has not been reviewed by an attorney.
 
+**Working on this repo as an AI agent?** Read [`SESSIONS.md`](SESSIONS.md) first -- it is
+the session ledger and handoff point for this repo, which is actively edited by more than
+one independent AI session.
+
 ## Live site
 
 **https://dwestobygeo.github.io/uas-ai-regulatory-summary/**
