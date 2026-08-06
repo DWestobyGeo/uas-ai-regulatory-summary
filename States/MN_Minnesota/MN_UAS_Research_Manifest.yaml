@@ -1,0 +1,87 @@
+# State Research Manifest — Workstream 2 (research-quality improvement plan, Phase B pilot)
+# Schema: States/RESEARCH_MANIFEST_SCHEMA.md
+# Owner: Research Expert (agents/roles/research-expert.md)
+# Validated by: scripts/validate_research_manifests.py
+
+state: Minnesota
+state_abbr: MN
+method_version: 1.0.0
+research_status: current_method_in_progress
+legacy_retrofit_status: not_applicable
+last_full_research_date: '2026-08-02'
+last_currency_check: '2026-08-02'
+source_cutoff_date: '2026-08-02'
+coverage:
+  state_statutes_and_amendments:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - MN-001
+    - MN-002
+    - MN-003
+    - MN-006
+  administrative_rules:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - MN-005
+    - MN-008
+  executive_orders:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    note: 'Summary overview: ''No Minnesota-specific ... executive order ... was located in this research
+      pass.'''
+  court_decisions_and_ag_opinions:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    note: 'Summary overview: ''No Minnesota-specific ... attorney general opinion, or state appellate
+      court decision was located.'''
+  aviation_and_transportation_agencies:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - MN-003
+    - MN-004
+    note: MN-004 (MnDOT Commercial Operations License) carries a flagged citation discrepancy (Minn. Stat.
+      §360.075 cited by MnDOT is a penalties section, not a licensing section); tracked in evals/known_bad/mn-004-citation-drift.md.
+  parks_public_lands_and_natural_resources:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - MN-005
+    - MN-006
+  corrections_public_safety_and_critical_infrastructure:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - MN-002
+  privacy_surveillance_trespass_and_interference:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - MN-001
+  procurement_equipment_and_cybersecurity:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    note: 'Summary overview: ''No Minnesota-specific UAS procurement, manufacturer, or country-of-origin
+      restriction ... was located.'''
+  professional_licensing_board_material:
+    status: unresolved_verification_required
+    unresolved: true
+    note: No professional-licensing-board (surveying/engineering) UAS material was searched or documented
+      in this pass; unlike Oklahoma, Minnesota has no narrative research checklist recording a category-by-category
+      sweep. Genuinely open, not a negative finding.
+  state_preemption:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    note: Summary overview documents the absence of a statewide preemption statute; MnDOT maintains a
+      running list of known local ordinances.
+record_count: 7
+unresolved_count: 1
+low_confidence_record_count: 0
+primary_source_percentage: 100
+known_issues:
+- professional_licensing_board_material category has never been swept for this state (see coverage note)
+  — blocks current_method_complete under this manifest schema's rule that every category must be resolved.
+- MN-004 citation discrepancy (Minn. Stat. §360.075 cited by MnDOT does not itself establish the license)
+  — see evals/known_bad/mn-004-citation-drift.md.

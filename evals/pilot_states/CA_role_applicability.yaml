@@ -1,0 +1,130 @@
+state: California
+state_abbr: CA
+method_note: AEC and legal-analysis relevance is always true under current governance (Agent_Instructions.v6.md
+  §6 authorizes a governed N/A only for the agency and procurement roles; Workstream 5's proposed AEC/legal no-material-impact
+  values are not yet authorized and are NOT applied here). agency_process_relevant / procurement_relevant are false
+  exactly where the register already uses the governed N/A string for that role -- this file is a deterministic
+  restatement of the live register, not new interpretation, and exists so a future role-applicability regression
+  (a record silently gaining or losing a governed N/A) is machine-detectable via evals/run_fixture_checks.py.
+records:
+- record_id: CA-001
+  uas_topic: UAS privacy — civil invasion-of-privacy tort
+  aec_relevant: true
+  agency_process_relevant: false
+  procurement_relevant: false
+  legal_analysis_relevant: true
+  reasons:
+    agency_process_relevant: 'Governed N/A — no agency process involved (permit_or_approval_required: ''No'').'
+    procurement_relevant: Governed N/A — no procurement or equipment-selection implication identified.
+- record_id: CA-002
+  uas_topic: UAS interference with emergency responders
+  aec_relevant: true
+  agency_process_relevant: false
+  procurement_relevant: false
+  legal_analysis_relevant: true
+  reasons:
+    agency_process_relevant: 'Governed N/A — no agency process involved (permit_or_approval_required: ''No'').'
+    procurement_relevant: Governed N/A — no procurement or equipment-selection implication identified.
+- record_id: CA-003
+  uas_topic: 'Public-entity civil immunity re: UAS interference with emergency services'
+  aec_relevant: true
+  agency_process_relevant: false
+  procurement_relevant: false
+  legal_analysis_relevant: true
+  reasons:
+    agency_process_relevant: 'Governed N/A — no agency process involved (permit_or_approval_required: ''No'').'
+    procurement_relevant: Governed N/A — no procurement or equipment-selection implication identified.
+- record_id: CA-004
+  uas_topic: Corrections-facility UAS restriction
+  aec_relevant: true
+  agency_process_relevant: true
+  procurement_relevant: false
+  legal_analysis_relevant: true
+  reasons:
+    procurement_relevant: Governed N/A — no procurement or equipment-selection implication identified.
+- record_id: CA-005
+  uas_topic: Wildlife-related UAS restriction
+  aec_relevant: true
+  agency_process_relevant: false
+  procurement_relevant: false
+  legal_analysis_relevant: true
+  reasons:
+    agency_process_relevant: 'Governed N/A — no agency process involved (permit_or_approval_required: ''No'').'
+    procurement_relevant: Governed N/A — no procurement or equipment-selection implication identified.
+- record_id: CA-006
+  uas_topic: Wildlife-area UAS restriction
+  aec_relevant: true
+  agency_process_relevant: true
+  procurement_relevant: false
+  legal_analysis_relevant: true
+  reasons:
+    procurement_relevant: Governed N/A — no procurement or equipment-selection implication identified.
+- record_id: CA-007
+  uas_topic: State park UAS restriction
+  aec_relevant: true
+  agency_process_relevant: false
+  procurement_relevant: false
+  legal_analysis_relevant: true
+  reasons:
+    agency_process_relevant: 'Governed N/A — no agency process involved (permit_or_approval_required: ''No'').'
+    procurement_relevant: Governed N/A — no procurement or equipment-selection implication identified.
+- record_id: CA-008
+  uas_topic: UAS restriction / permit requirement in state park units
+  aec_relevant: true
+  agency_process_relevant: true
+  procurement_relevant: false
+  legal_analysis_relevant: true
+  reasons:
+    procurement_relevant: Governed N/A — no procurement or equipment-selection implication identified.
+- record_id: CA-009
+  uas_topic: UAS operation within Caltrans right-of-way
+  aec_relevant: true
+  agency_process_relevant: true
+  procurement_relevant: false
+  legal_analysis_relevant: true
+  reasons:
+    procurement_relevant: Governed N/A — no procurement or equipment-selection implication identified.
+- record_id: CA-010
+  uas_topic: General professional-practice definition
+  aec_relevant: true
+  agency_process_relevant: false
+  procurement_relevant: false
+  legal_analysis_relevant: true
+  reasons:
+    agency_process_relevant: 'Governed N/A — no agency process involved (permit_or_approval_required: ''No'').'
+    procurement_relevant: Governed N/A — no procurement or equipment-selection implication identified.
+- record_id: CA-011
+  uas_topic: General professional licensing competency requirement
+  aec_relevant: true
+  agency_process_relevant: false
+  procurement_relevant: false
+  legal_analysis_relevant: true
+  reasons:
+    agency_process_relevant: 'Governed N/A — no agency process involved (permit_or_approval_required: ''No'').'
+    procurement_relevant: Governed N/A — no procurement or equipment-selection implication identified.
+- record_id: CA-012
+  uas_topic: Proposed civil-penalty enhancement for UAS interference with emergency/wildfire response
+  aec_relevant: true
+  agency_process_relevant: false
+  procurement_relevant: false
+  legal_analysis_relevant: true
+  reasons:
+    agency_process_relevant: 'Governed N/A — no agency process involved (permit_or_approval_required: ''No'').'
+    procurement_relevant: Governed N/A — no procurement or equipment-selection implication identified.
+- record_id: CA-013
+  uas_topic: State/local regulatory boundary for UAS
+  aec_relevant: true
+  agency_process_relevant: false
+  procurement_relevant: false
+  legal_analysis_relevant: true
+  reasons:
+    agency_process_relevant: 'Governed N/A — no agency process involved (permit_or_approval_required: ''No'').'
+    procurement_relevant: Governed N/A — no procurement or equipment-selection implication identified.
+- record_id: CA-014
+  uas_topic: Proposed UAS manufacturer procurement restriction
+  aec_relevant: true
+  agency_process_relevant: false
+  procurement_relevant: true
+  legal_analysis_relevant: true
+  reasons:
+    agency_process_relevant: 'Governed N/A — no agency process involved (permit_or_approval_required: ''No'').'

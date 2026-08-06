@@ -1,0 +1,99 @@
+# State Research Manifest — Workstream 2 (research-quality improvement plan, Phase B pilot)
+# Schema: States/RESEARCH_MANIFEST_SCHEMA.md
+# Owner: Research Expert (agents/roles/research-expert.md)
+# Validated by: scripts/validate_research_manifests.py
+
+state: California
+state_abbr: CA
+method_version: 1.0.0
+research_status: legacy_needs_retrofit
+legacy_retrofit_status: retrofit_not_started
+last_full_research_date: '2026-08-01'
+last_currency_check: '2026-08-02'
+source_cutoff_date: '2026-08-01'
+coverage:
+  state_statutes_and_amendments:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - CA-001
+    - CA-002
+    - CA-004
+    - CA-005
+  administrative_rules:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - CA-006
+    - CA-007
+  executive_orders:
+    status: unresolved_verification_required
+    unresolved: true
+    note: No record and no documented negative-review sweep for this category in this legacy packet.
+  court_decisions_and_ag_opinions:
+    status: unresolved_verification_required
+    unresolved: true
+    note: Same gap as executive_orders.
+  aviation_and_transportation_agencies:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - CA-009
+  parks_public_lands_and_natural_resources:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - CA-006
+    - CA-007
+    - CA-008
+  corrections_public_safety_and_critical_infrastructure:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - CA-002
+    - CA-003
+    - CA-004
+    - CA-012
+  privacy_surveillance_trespass_and_interference:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - CA-001
+  procurement_equipment_and_cybersecurity:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids:
+    - CA-014
+    note: SB 99 (2023-2024) proposed a public-agency procurement restriction but died in committee; no
+      enacted CA-specific procurement/manufacturer restriction currently exists.
+  professional_licensing_board_material:
+    status: unresolved_verification_required
+    unresolved: true
+    record_ids:
+    - CA-010
+    - CA-011
+    note: CA-010 and CA-011 are general land-surveying/engineering competency statutes with no confirmed
+      direct-UAS provision ('no standalone BPELSG guidance document ... specifically addressing UAS' for
+      CA-011) — the same scope-gate risk pattern as WA-007. See evals/known_bad/scope-gate-general-licensing-statute.md.
+  state_preemption:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids:
+    - CA-013
+    note: Underlying finding (no CA statute preempting local UAS ordinances) is legitimate and matches
+      the summary's Section 4 discussion, but it is stored as register record CA-013 rather than in a
+      checklist — the same negative-finding-in-register pattern as WA-008. See evals/known_bad/negative-finding-in-register.md.
+record_count: 14
+unresolved_count: 3
+low_confidence_record_count: 3
+primary_source_percentage: 79
+known_issues:
+- CA-013 is a negative preemption finding stored as a register record instead of in a checklist (same
+  pattern as WA-008 — reproduced across two legacy states, evidence this is a systemic legacy-schema issue
+  rather than a one-off).
+- CA-010 and CA-011 are general professional-licensing statutes retained without a confirmed direct-UAS
+  basis — scope-gate risk, same pattern as WA-007.
+- CA-012 (AB 1749, wildfire-suppression interference) is a pending bill as of the source's Aug 1, 2026
+  cutoff; recheck status against the current legislative session before treating it as settled.
+- No narrative XX_UAS_Research_Checklist.md exists for this state; category coverage above was reconstructed
+  from the register and summary for this manifest and should be re-verified during retrofit.

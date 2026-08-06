@@ -1,0 +1,95 @@
+# State Research Manifest — Workstream 2 (research-quality improvement plan, Phase B pilot)
+# Schema: States/RESEARCH_MANIFEST_SCHEMA.md
+# Owner: Research Expert (agents/roles/research-expert.md)
+# Validated by: scripts/validate_research_manifests.py
+
+state: Washington
+state_abbr: WA
+method_version: 1.0.0
+research_status: legacy_needs_retrofit
+legacy_retrofit_status: retrofit_not_started
+last_full_research_date: '2026-08-01'
+last_currency_check: '2026-08-02'
+source_cutoff_date: '2026-08-01'
+coverage:
+  state_statutes_and_amendments:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - WA-001
+    - WA-005
+    - WA-006
+  administrative_rules:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - WA-002
+    - WA-003
+  executive_orders:
+    status: unresolved_verification_required
+    unresolved: true
+    note: No executive-order record and no documented negative-review sweep for this category in this
+      legacy packet (predates the narrative-checklist convention). Genuinely unknown, not a negative finding.
+  court_decisions_and_ag_opinions:
+    status: unresolved_verification_required
+    unresolved: true
+    note: 'Same gap as executive_orders: no record and no documented sweep.'
+  aviation_and_transportation_agencies:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - WA-001
+    - WA-002
+  parks_public_lands_and_natural_resources:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - WA-003
+    - WA-006
+  corrections_public_safety_and_critical_infrastructure:
+    status: unresolved_verification_required
+    unresolved: true
+    record_ids:
+    - WA-004
+    note: WA-004 itself carries status 'UNCERTAIN - verify current codification' and Low confidence; the
+      category cannot be marked resolved while its only record is unverified. See evals/known_bad/wa-004-uncertain-codification.md.
+  privacy_surveillance_trespass_and_interference:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - WA-005
+  procurement_equipment_and_cybersecurity:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids:
+    - WA-008
+    note: Underlying finding (no WA-specific procurement/manufacturer restriction) is legitimate, but
+      it is stored as register record WA-008 rather than in a checklist — the negative-finding-in-register
+      pattern flagged by scripts/validate_research_semantics.py. See evals/known_bad/negative-finding-in-register.md.
+  professional_licensing_board_material:
+    status: unresolved_verification_required
+    unresolved: true
+    record_ids:
+    - WA-007
+    note: WA-007 is a general land-surveyor licensing statute with no confirmed direct-UAS provision or
+      official UAS-specific application (Low confidence, 'general framework confirmed, no standalone UAS-specific
+      board guidance document located') — a scope-gate risk pattern, not a confirmed applicable source.
+      See evals/known_bad/scope-gate-general-licensing-statute.md.
+  state_preemption:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    note: 'Summary overview: ''State law does not broadly preempt local UAS ordinances.'''
+record_count: 9
+unresolved_count: 4
+low_confidence_record_count: 3
+primary_source_percentage: 67
+known_issues:
+- WA-004 (corrections/critical-infrastructure) is Low confidence with an unverified codification status.
+- WA-007 (professional licensing) is a general statute retained despite no confirmed direct-UAS basis
+  — scope-gate risk.
+- WA-008 is a negative procurement finding stored as a register record instead of in a checklist.
+- WA-010 documents a stalled/never-enacted bill correctly (contrast case, not a defect) — useful known-good
+  fixture alongside the above.
+- No narrative XX_UAS_Research_Checklist.md exists for this state, unlike Oklahoma; category coverage
+  above was reconstructed from the register and summary for this manifest and should be re-verified during
+  retrofit, not treated as a substitute for an actual re-review.

@@ -1,0 +1,89 @@
+# State Research Manifest — Workstream 2 (research-quality improvement plan, Phase B pilot)
+# Schema: States/RESEARCH_MANIFEST_SCHEMA.md
+# Owner: Research Expert (agents/roles/research-expert.md)
+# Validated by: scripts/validate_research_manifests.py
+
+state: Florida
+state_abbr: FL
+method_version: 1.0.0
+research_status: legacy_needs_retrofit
+legacy_retrofit_status: retrofit_not_started
+last_full_research_date: '2026-08-01'
+last_currency_check: '2026-08-02'
+source_cutoff_date: '2026-08-01'
+coverage:
+  state_statutes_and_amendments:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - FL-001
+    - FL-002
+  administrative_rules:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - FL-004
+  executive_orders:
+    status: unresolved_verification_required
+    unresolved: true
+    note: No record and no documented negative-review sweep for this category in this legacy packet.
+  court_decisions_and_ag_opinions:
+    status: unresolved_verification_required
+    unresolved: true
+    note: Same gap as executive_orders.
+  aviation_and_transportation_agencies:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - FL-004
+  parks_public_lands_and_natural_resources:
+    status: unresolved_verification_required
+    unresolved: true
+    record_ids:
+    - FL-005
+    - FL-006
+    note: FL-006 (FWC hunting-related drone guidance) is resolved, but FL-005 (state park launch/landing
+      policy) is status 'Unconfirmed - category reviewed, no primary source located' with Low confidence
+      and multiple Unknown fields; the category cannot be marked resolved while a material sub-topic is
+      unconfirmed.
+  corrections_public_safety_and_critical_infrastructure:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - FL-007
+  privacy_surveillance_trespass_and_interference:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - FL-002
+  procurement_equipment_and_cybersecurity:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - FL-003
+  professional_licensing_board_material:
+    status: unresolved_verification_required
+    unresolved: true
+    record_ids:
+    - FL-008
+    note: FL-008 is a general surveyor/mapper licensing statute with 'no UAS-specific board rule located'
+      and Low confidence — the same scope-gate risk pattern as WA-007 and CA-010/CA-011. See evals/known_bad/scope-gate-general-licensing-statute.md.
+  state_preemption:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - FL-001
+    note: 'Summary overview: the UAS Act ''preempts most local UAS-specific ordinances'' — the preemption
+      finding is a materially different, procurement/preemption-pattern result from WA, CA, and MN''s
+      no-preemption findings and is the reason this state was selected as the fifth pilot.'
+record_count: 8
+unresolved_count: 4
+low_confidence_record_count: 2
+primary_source_percentage: 62
+known_issues:
+- FL-005 (state park drone policy) is unconfirmed with multiple Unknown fields (permit_or_approval_required,
+  requirement_type) rather than a resolved or explicitly negative finding.
+- FL-008 is a general professional-licensing statute retained without a confirmed direct-UAS basis — scope-gate
+  risk, same pattern as WA-007 and CA-010/CA-011 (now reproduced across three of the five pilot states).
+- No narrative XX_UAS_Research_Checklist.md exists for this state; category coverage above was reconstructed
+  from the register and summary for this manifest and should be re-verified during retrofit.

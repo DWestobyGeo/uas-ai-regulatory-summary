@@ -4,7 +4,7 @@
 
 **Status:** Active. Research or revision begins only when assigned.
 
-**Governance version:** 6.2.0 — August 2, 2026
+**Governance version:** 6.3.0 — August 6, 2026
 
 **Compatibility note:** The filename remains `Agent_Instructions.v6.md` so existing state provenance, links, and automation continue to work. Role-specific operating instructions now live in [`agents/roles/`](agents/roles/).
 
@@ -106,10 +106,17 @@ For each state, the authoritative research files live under `States/XX_State_Nam
 XX_UAS_Research_Checklist.md
 XX_UAS_Source_Register.csv
 XX_UAS_Regulatory_Summary.md
+XX_UAS_Research_Manifest.yaml    # piloted for the five states in evals/pilot_states.md; see States/RESEARCH_MANIFEST_SCHEMA.md
 Sources/                         # optional, only when useful and permitted
 ```
 
 The source register is the structured research source of truth. The printable summary must agree with it.
+
+Where a state has a research manifest, it makes the state's `XX_UAS_Research_Checklist.md`-level
+completeness machine-readable per state and category, per `States/RESEARCH_MANIFEST_SCHEMA.md`.
+The manifest supplements, and does not replace, the checklist and does not expand the 33-field
+source-register schema below. It is owned by the Research Expert and validated by
+`scripts/validate_research_manifests.py`.
 
 Versioned comparative measurement rules live under [`methodologies/`](methodologies/), separately from role instructions. Comparative rating sources and calculated national outputs will live under `comparisons/`; they do not replace or modify the state source registers.
 
@@ -277,11 +284,13 @@ Before completing assigned work, run the applicable checks and confirm:
 - role/model provenance is recorded without guessing;
 - no company-specific language, human-review workflow, or flight-clearance claim was introduced;
 - `python build_data.py` was run after source changes;
-- `python scripts/validate_phase2.py` and `python scripts/validate_site.py` pass when applicable; and
+- `python scripts/validate_phase2.py` and `python scripts/validate_site.py` pass when applicable;
+- for a pilot state (`evals/pilot_states.md`), `python scripts/validate_research_manifests.py` and `python scripts/validate_research_semantics.py` pass, and any new record-level finding is either resolved or explicitly acknowledged in that state's research manifest; and
 - remaining warnings or unresolved issues are reported rather than hidden.
 
 ## 13. Revision history
 
+- **6.3.0 — August 6, 2026:** Added the piloted per-state research manifest (`States/RESEARCH_MANIFEST_SCHEMA.md`, `XX_UAS_Research_Manifest.yaml`) for the five Phase B pilot states, and two new deterministic validators (`scripts/validate_research_manifests.py`, `scripts/validate_research_semantics.py`) plus the already-written but previously unwired `scripts/validate_phase2.py` to the required CI checks and quality gates; scoped to `evals/pilot_states.md` only, and does not expand the 33-field source-register schema or begin a nationwide retrofit.
 - **6.2.0 — August 2, 2026:** Added the State UAS Regulatory Burden Analyst and a gated Phase 4 for comparative state-level assessment under a separate versioned methodology; preserved the 33-field authority schema and prohibited partial provisional work from being presented as a national ranking.
 - **6.1.0 — August 2, 2026:** Converted the former mixed governance/role document into high-level governance; established individual versioned role documents and common role metadata; formalized field ownership, role-version provenance, and record-change documentation; retained the state/state-agency scope and AI-only product boundary; and clarified acceptable use of normalized legal publishers.
 - **6.0 — August 2, 2026:** Added the procurement role, 33-field schema, Phase 2 authorization, one-to-three-sentence norm with justified exceptions, model provenance, and substantive QA applicability checks; consolidated prior amendments.

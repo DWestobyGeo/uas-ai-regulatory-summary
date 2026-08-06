@@ -1,0 +1,85 @@
+state: Washington
+state_abbr: WA
+method_note: AEC and legal-analysis relevance is always true under current governance (Agent_Instructions.v6.md
+  §6 authorizes a governed N/A only for the agency and procurement roles; Workstream 5's proposed AEC/legal no-material-impact
+  values are not yet authorized and are NOT applied here). agency_process_relevant / procurement_relevant are false
+  exactly where the register already uses the governed N/A string for that role -- this file is a deterministic
+  restatement of the live register, not new interpretation, and exists so a future role-applicability regression
+  (a record silently gaining or losing a governed N/A) is machine-detectable via evals/run_fixture_checks.py.
+records:
+- record_id: WA-001
+  uas_topic: State UAS registration
+  aec_relevant: true
+  agency_process_relevant: true
+  procurement_relevant: false
+  legal_analysis_relevant: true
+  reasons:
+    procurement_relevant: Governed N/A — no procurement or equipment-selection implication identified.
+- record_id: WA-002
+  uas_topic: Registration exemptions/process
+  aec_relevant: true
+  agency_process_relevant: true
+  procurement_relevant: false
+  legal_analysis_relevant: true
+  reasons:
+    procurement_relevant: Governed N/A — no procurement or equipment-selection implication identified.
+- record_id: WA-003
+  uas_topic: State park UAS launch/landing
+  aec_relevant: true
+  agency_process_relevant: true
+  procurement_relevant: false
+  legal_analysis_relevant: true
+  reasons:
+    procurement_relevant: Governed N/A — no procurement or equipment-selection implication identified.
+- record_id: WA-004
+  uas_topic: Corrections facility restriction
+  aec_relevant: true
+  agency_process_relevant: false
+  procurement_relevant: false
+  legal_analysis_relevant: true
+  reasons:
+    agency_process_relevant: 'Governed N/A — no agency process involved (permit_or_approval_required: ''DOC authorization
+      (as drafted)'').'
+    procurement_relevant: Governed N/A — no procurement or equipment-selection implication identified.
+- record_id: WA-005
+  uas_topic: General privacy law with direct UAS application
+  aec_relevant: true
+  agency_process_relevant: false
+  procurement_relevant: false
+  legal_analysis_relevant: true
+  reasons:
+    agency_process_relevant: 'Governed N/A — no agency process involved (permit_or_approval_required: ''No'').'
+    procurement_relevant: Governed N/A — no procurement or equipment-selection implication identified.
+- record_id: WA-006
+  uas_topic: Wildlife harassment; hunting
+  aec_relevant: true
+  agency_process_relevant: true
+  procurement_relevant: false
+  legal_analysis_relevant: true
+  reasons:
+    procurement_relevant: Governed N/A — no procurement or equipment-selection implication identified.
+- record_id: WA-007
+  uas_topic: Professional licensing for UAS-derived survey/photogrammetry products
+  aec_relevant: true
+  agency_process_relevant: true
+  procurement_relevant: false
+  legal_analysis_relevant: true
+  reasons:
+    procurement_relevant: Governed N/A — no procurement or equipment-selection implication identified.
+- record_id: WA-008
+  uas_topic: Government UAS procurement restriction
+  aec_relevant: true
+  agency_process_relevant: false
+  procurement_relevant: true
+  legal_analysis_relevant: true
+  reasons:
+    agency_process_relevant: 'Governed N/A — no agency process involved (permit_or_approval_required: ''N/A'').'
+- record_id: WA-010
+  uas_topic: 'Myth-busting: drone labeling and landowner-consent-before-overflight claims'
+  aec_relevant: true
+  agency_process_relevant: false
+  procurement_relevant: false
+  legal_analysis_relevant: true
+  reasons:
+    agency_process_relevant: 'Governed N/A — no agency process involved (permit_or_approval_required: ''N/A'').'
+    procurement_relevant: Governed N/A — no procurement or equipment-selection implication identified.

@@ -1,0 +1,83 @@
+state: Florida
+state_abbr: FL
+method_note: AEC and legal-analysis relevance is always true under current governance (Agent_Instructions.v6.md
+  §6 authorizes a governed N/A only for the agency and procurement roles; Workstream 5's proposed AEC/legal no-material-impact
+  values are not yet authorized and are NOT applied here). agency_process_relevant / procurement_relevant are false
+  exactly where the register already uses the governed N/A string for that role -- this file is a deterministic
+  restatement of the live register, not new interpretation, and exists so a future role-applicability regression
+  (a record silently gaining or losing a governed N/A) is machine-detectable via evals/run_fixture_checks.py.
+records:
+- record_id: FL-001
+  uas_topic: Critical infrastructure; schools; agricultural lands; private property/state hunting lands; state preemption
+  aec_relevant: true
+  agency_process_relevant: false
+  procurement_relevant: false
+  legal_analysis_relevant: true
+  reasons:
+    agency_process_relevant: 'Governed N/A — no agency process involved (permit_or_approval_required: ''No (exemption
+      is FAA Part 107 compliance + commercial purpose, not a separate state permit)'').'
+    procurement_relevant: Governed N/A — no procurement or equipment-selection implication identified.
+- record_id: FL-002
+  uas_topic: Privacy/surveillance restriction; law-enforcement warrant requirement; AEC-relevant exemptions; governmental
+    agency drone security/procurement standards
+  aec_relevant: true
+  agency_process_relevant: false
+  procurement_relevant: true
+  legal_analysis_relevant: true
+  reasons:
+    agency_process_relevant: 'Governed N/A — no agency process involved (permit_or_approval_required: ''No permit
+      for private operators relying on an exemption; search warrant required for law enforcement outside listed
+      exceptions'').'
+- record_id: FL-003
+  uas_topic: Government UAS procurement/equipment restriction
+  aec_relevant: true
+  agency_process_relevant: false
+  procurement_relevant: true
+  legal_analysis_relevant: true
+  reasons:
+    agency_process_relevant: 'Governed N/A — no agency process involved (permit_or_approval_required: ''No permit;
+      agency must acquire from DMS-approved manufacturer list'').'
+- record_id: FL-004
+  uas_topic: General UAS regulatory overview
+  aec_relevant: true
+  agency_process_relevant: false
+  procurement_relevant: false
+  legal_analysis_relevant: true
+  reasons:
+    agency_process_relevant: 'Governed N/A — no agency process involved (permit_or_approval_required: ''No'').'
+    procurement_relevant: Governed N/A — no procurement or equipment-selection implication identified.
+- record_id: FL-005
+  uas_topic: State park UAS launch/landing
+  aec_relevant: true
+  agency_process_relevant: false
+  procurement_relevant: false
+  legal_analysis_relevant: true
+  reasons:
+    agency_process_relevant: 'Governed N/A — no agency process involved (permit_or_approval_required: ''Unknown'').'
+    procurement_relevant: Governed N/A — no procurement or equipment-selection implication identified.
+- record_id: FL-006
+  uas_topic: Wildlife harassment; hunting; state wildlife management lands
+  aec_relevant: true
+  agency_process_relevant: false
+  procurement_relevant: false
+  legal_analysis_relevant: true
+  reasons:
+    agency_process_relevant: 'Governed N/A — no agency process involved (permit_or_approval_required: ''No'').'
+    procurement_relevant: Governed N/A — no procurement or equipment-selection implication identified.
+- record_id: FL-007
+  uas_topic: Corrections facility restriction
+  aec_relevant: true
+  agency_process_relevant: false
+  procurement_relevant: false
+  legal_analysis_relevant: true
+  reasons:
+    agency_process_relevant: 'Governed N/A — no agency process involved (permit_or_approval_required: ''No'').'
+    procurement_relevant: Governed N/A — no procurement or equipment-selection implication identified.
+- record_id: FL-008
+  uas_topic: Professional licensing for UAS-derived mapping/photogrammetry/LiDAR products
+  aec_relevant: true
+  agency_process_relevant: true
+  procurement_relevant: false
+  legal_analysis_relevant: true
+  reasons:
+    procurement_relevant: Governed N/A — no procurement or equipment-selection implication identified.

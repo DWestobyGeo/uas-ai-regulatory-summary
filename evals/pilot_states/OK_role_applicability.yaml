@@ -1,0 +1,35 @@
+state: Oklahoma
+state_abbr: OK
+method_note: AEC and legal-analysis relevance is always true under current governance (Agent_Instructions.v6.md
+  §6 authorizes a governed N/A only for the agency and procurement roles; Workstream 5's proposed AEC/legal no-material-impact
+  values are not yet authorized and are NOT applied here). agency_process_relevant / procurement_relevant are false
+  exactly where the register already uses the governed N/A string for that role -- this file is a deterministic
+  restatement of the live register, not new interpretation, and exists so a future role-applicability regression
+  (a record silently gaining or losing a governed N/A) is machine-detectable via evals/run_fixture_checks.py.
+records:
+- record_id: OK-001
+  uas_topic: Critical infrastructure; overflight; contact; interference; consent; penalties
+  aec_relevant: true
+  agency_process_relevant: true
+  procurement_relevant: false
+  legal_analysis_relevant: true
+  reasons:
+    procurement_relevant: Governed N/A — no procurement or equipment-selection implication identified.
+- record_id: OK-002
+  uas_topic: Privacy; surveillance; eavesdropping; private property; landing
+  aec_relevant: true
+  agency_process_relevant: false
+  procurement_relevant: false
+  legal_analysis_relevant: true
+  reasons:
+    agency_process_relevant: 'Governed N/A — no agency process involved (permit_or_approval_required: ''Owner or
+      lessee consent is required for intentional landing; lawful authorization may otherwise apply'').'
+    procurement_relevant: Governed N/A — no procurement or equipment-selection implication identified.
+- record_id: OK-003
+  uas_topic: State parks; takeoff and landing; aircraft use; event permits
+  aec_relevant: true
+  agency_process_relevant: true
+  procurement_relevant: false
+  legal_analysis_relevant: true
+  reasons:
+    procurement_relevant: Governed N/A — no procurement or equipment-selection implication identified.

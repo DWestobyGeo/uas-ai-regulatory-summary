@@ -7,6 +7,8 @@ on:
       - "States/**"
       - "agents/**"
       - "methodologies/**"
+      - "evals/**"
+      - "runs/**"
       - "Agent_Instructions.v6.md"
       - "scripts/**"
       - "build_data.py"
@@ -18,6 +20,8 @@ on:
       - "States/**"
       - "agents/**"
       - "methodologies/**"
+      - "evals/**"
+      - "runs/**"
       - "Agent_Instructions.v6.md"
       - "scripts/**"
       - "build_data.py"
@@ -39,11 +43,26 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install Python dependencies
+        run: pip install pyyaml
+
       - name: Validate agent-role governance
         run: python scripts/validate_roles.py
 
       - name: Validate comparative methodologies
         run: python scripts/validate_methodologies.py
+
+      - name: Validate nationwide Phase 2 completion
+        run: python scripts/validate_phase2.py
+
+      - name: Validate state research manifests (pilot states)
+        run: python scripts/validate_research_manifests.py
+
+      - name: Validate research semantics
+        run: python scripts/validate_research_semantics.py
+
+      - name: Run eval fixture checks
+        run: python evals/run_fixture_checks.py
 
       - name: Validate shared design and state data
         run: python scripts/validate_site.py

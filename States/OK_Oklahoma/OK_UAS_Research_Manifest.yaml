@@ -1,0 +1,77 @@
+# State Research Manifest — Workstream 2 (research-quality improvement plan, Phase B pilot)
+# Schema: States/RESEARCH_MANIFEST_SCHEMA.md
+# Owner: Research Expert (agents/roles/research-expert.md)
+# Validated by: scripts/validate_research_manifests.py
+
+state: Oklahoma
+state_abbr: OK
+method_version: 1.0.0
+research_status: current_method_complete
+legacy_retrofit_status: not_applicable
+last_full_research_date: '2026-08-02'
+last_currency_check: '2026-08-02'
+source_cutoff_date: '2026-08-02'
+coverage:
+  state_statutes_and_amendments:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - OK-001
+    - OK-002
+    note: Titles 3 and 21 and the completed 2026 session reviewed; proposed bills that did not enact excluded.
+      See OK_UAS_Research_Checklist.md item 1.
+  administrative_rules:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - OK-003
+    note: State Parks aircraft/permit rules included; a Dept. of Agriculture depredation rule was reviewed
+      and excluded as immaterial to commercial AEC work.
+  executive_orders:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    note: Governor's Dec. 2024 counter-UAS procurement direction reviewed; creates no private operator
+      rule.
+  court_decisions_and_ag_opinions:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    note: No controlling decision or formal AG opinion applying §§3-322 or 21-1743 to ordinary commercial
+      AEC operations located.
+  aviation_and_transportation_agencies:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    note: Dept. of Aerospace and Aeronautics is the statutory UAS/AAM clearinghouse but publishes no separate
+      general commercial flight permit.
+  parks_public_lands_and_natural_resources:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - OK-003
+  corrections_public_safety_and_critical_infrastructure:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - OK-001
+  privacy_surveillance_trespass_and_interference:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - OK-002
+  procurement_equipment_and_cybersecurity:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    note: S.B. 488 foreign-drone purchase restriction proposed but did not enact.
+  professional_licensing_board_material:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    note: General airborne photogrammetry standards contain no direct UAS provision; excluded under the
+      scope gate.
+  state_preemption:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    note: No current Oklahoma statute expressly preempting local UAS rules located.
+record_count: 3
+unresolved_count: 0
+low_confidence_record_count: 0
+primary_source_percentage: 100
+known_issues: []

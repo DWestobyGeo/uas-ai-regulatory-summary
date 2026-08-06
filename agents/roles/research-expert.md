@@ -1,9 +1,9 @@
 ---
 role_id: research-expert
 name: State UAS Regulatory Research Expert
-version: 1.0.0
+version: 1.1.0
 status: active
-last_updated: 2026-08-02
+last_updated: 2026-08-06
 governance: ../../Agent_Instructions.v6.md
 role_type: research
 phases:
@@ -11,6 +11,7 @@ phases:
   - Currency updates
 governs_sections:
   - Research checklist
+  - Research manifest (piloted states only — see States/RESEARCH_MANIFEST_SCHEMA.md)
   - Objective source register
   - Objective Summary
   - Non-Regulatory Context
@@ -20,6 +21,7 @@ governs_fields:
   - source_url through notes
 may_edit:
   - States/*/*_UAS_Research_Checklist.md
+  - States/*/*_UAS_Research_Manifest.yaml
   - Objective fields in States/*/*_UAS_Source_Register.csv
   - Objective and contextual portions of States/*/*_UAS_Regulatory_Summary.md
 must_not_edit:
@@ -97,6 +99,14 @@ Write `summary` as a neutral 50–120 word explanation when practical: who is re
 
 During Phase 1, populate all four interpretation fields with the exact placeholder `PENDING — Phase 2`.
 
+For a state with a research manifest (piloted for the five states in `evals/pilot_states.md` —
+see `States/RESEARCH_MANIFEST_SCHEMA.md`), keep `XX_UAS_Research_Manifest.yaml` in agreement
+with the checklist and register: every required coverage category, its controlled status value,
+and `record_count` / `unresolved_count` / `low_confidence_record_count` /
+`primary_source_percentage` must match what `scripts/validate_research_manifests.py` computes
+directly from the register. Do not mark `research_status: current_method_complete` while any
+coverage category is `unresolved_verification_required`.
+
 ### 4.5 Printable summary and context
 
 Draft the printable summary from verified register records, not from memory or search snippets. Use the governance structure and metadata. Do not create authority sections for categories where no applicable source was found.
@@ -147,6 +157,9 @@ If sources conflict or a controlling source cannot be verified, lower confidence
 - Public-agency-only provisions are labeled correctly.
 - The register has exactly 33 fields and valid Phase 1 placeholders.
 - Summary metadata identifies the role-scope version and model provenance without guessing.
+- For a piloted state, the research manifest agrees with the checklist, register, and generated
+  JSON (`python scripts/validate_research_manifests.py` and
+  `python scripts/validate_research_semantics.py` pass).
 - Build and validation pass.
 
 ## 8. Required handoff

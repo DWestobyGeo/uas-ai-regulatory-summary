@@ -75,6 +75,13 @@ build_data.py               ← regenerates docs/data/v1/*.json from the source 
 scripts/validate_site.py    ← shared-style and state-data quality gate
 scripts/validate_roles.py   ← role metadata, ownership, and governance-link quality gate
 scripts/validate_methodologies.py ← methodology ownership, weights, version, and preflight quality gate
+scripts/validate_phase2.py  ← nationwide Phase 2 (interpretation) completion quality gate
+scripts/validate_research_manifests.py  ← research-manifest schema/controlled-value quality gate (piloted states — see evals/pilot_states.md)
+scripts/validate_research_semantics.py  ← deterministic semantic checks (negative findings in the register, scope-gate risk, citation-discrepancy confidence, etc.)
+planning/AI_RESEARCH_QUALITY_AND_EFFICIENCY_IMPROVEMENT_PLAN.md ← research-quality/efficiency improvement roadmap (tracked by issue #1)
+evals/                       ← layered agent-evaluation fixtures, rubrics, and pilot-state benchmark packets for that plan
+runs/                        ← run-telemetry convention and schema for research/interpretation/QA agent runs
+States/RESEARCH_MANIFEST_SCHEMA.md ← schema and controlled values for the piloted per-state research manifest
 ```
 
 ## Adding a new state
