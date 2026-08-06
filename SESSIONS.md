@@ -22,6 +22,65 @@ scratch.
 
 ## Log (newest first)
 
+### 2026-08-06 — Phase C (Workstreams 5-6) complete and pushed
+
+**Status:** Complete and pushed in two commits (`2db3547` Workstream 5, `20aba12` Workstream 6),
+both confirmed green in CI (`Site quality` #51 and #52, "Status Success"). Same fresh-clone
+caveat as the entry below applies. This was authorized explicitly by the user after the Phase B
+push landed, with an explicit instruction to push at logical milestones rather than holding
+everything for one final push (session-continuity risk) — that's why this landed as two commits
+instead of one.
+
+**What landed:**
+
+- **Workstream 5 (routing):** `Agent_Instructions.v6.md` → 6.4.0, authorizing two new governed
+  no-material-impact values for the AEC Industry UAS Expert and AEC Industry Legal Counsel roles
+  (previously only agency/procurement had one), gated on "a documented routing determination"
+  (§6, §12). `scripts/route_interpretation_roles.py` is that determination: a deterministic
+  router that decides `aec_relevant` / `agency_process_relevant` / `procurement_relevant` /
+  `legal_analysis_relevant` from objective fields only, with a reason for every `false`. Run
+  `--calibrate` to see it graded against the real governed-N/A decisions already in the five
+  pilot states (the only ground truth that exists): 98% agreement on
+  `agency_process_relevant`, 100% on `procurement_relevant`, one documented and expected
+  disagreement (WA-004 — its own status is unverified, which a keyword rule can't detect; see the
+  script's module docstring, which is worth reading before trusting its output on a new state).
+  `validate_phase2.py` and a new `validate_research_semantics.py` rule
+  (`check_aec_legal_no_impact_undocumented`) enforce that the two new values are only used when
+  the router agrees. **Important:** none of the five pilot states' already-published
+  `practical_interpretation_*` fields were rewritten — the router describes what it recommends
+  going forward, not a retroactive edit. Re-judging already-published interpretive text is Phase 2
+  drafting work, not a tooling change, and doing it without real record-level analysis would risk
+  bad content.
+- **Workstream 6 (compact packets/prompts):** `scripts/build_evidence_packet.py` builds a
+  17-field evidence packet per record (vs. the 33-field row), each with an
+  `objective_packet_hash`. `agents/prompt_templates/` documents stable-prefix (governance + role
+  doc + task-frame) / dynamic-suffix (one packet) assembly; `scripts/assemble_prompt.py --measure`
+  reports the size difference — 75-91% smaller than a naive full-row/all-roles/no-reuse baseline
+  across the five pilot states, growing with record count as expected from prefix amortization.
+  **Read the honesty section in
+  `evals/results/20260806_workstream6_prompt_size_baseline.md` before citing that number** — it's
+  a character-count structural proxy, not live-metered tokens or dollar cost, since no real API
+  calls happened and `runs/` telemetry is still schema-only (Workstream 0). Also new:
+  `runs/objective_packet_hashes/{WA,OK,CA,MN,FL}.json`, a skip-regeneration snapshot;
+  `--check-regeneration` was verified to correctly report all 41 pilot-state records unchanged
+  immediately after snapshotting, but that only proves the hash mechanism is stable — it hasn't
+  yet been exercised against a real content change.
+
+**Deliberately not done:** Phase D (Workstreams 7-8: register as the single publication source
+of truth for generated Markdown; currency metadata correction) — not started, was not in scope
+for this session's authorization. Workstream 9 (national retrofit) — still untouched. The
+`aec_relevant` / `legal_analysis_relevant` router output has no ground truth to calibrate against
+yet (unlike agency/procurement) since no real record has used the new governed values; treat its
+"defaults true, false only for informational/debunked/negative-finding records" heuristic as a
+reasonable starting point, not a validated one, until it's actually used and checked.
+
+**Next task:** Ask the user before starting Phase D or anything else substantive — this session's
+authorization was specifically "Phase C, proceed," not a blanket authorization for the rest of
+the plan. If picking this up cold, the plan's own `Proposed implementation phases` section still
+shows Phase D (Workstreams 7-8) as the next step in sequence.
+
+---
+
 ### 2026-08-06 — Phase B (Workstreams 2-4, pilot states) complete; awaiting push authorization
 
 **Status:** Completed the Phase B work described in the entry directly below, on a fresh clone
