@@ -383,15 +383,15 @@
       "commercial_operator_relevance": "Low (recreational hunting bill, not a commercial-operator authority)",
       "aec_relevance": "Low -- informational only; watch for enactment affecting PA-004",
       "summary": "Introduced by Sen. Jarrett Coleman (R-Bucks/Lehigh) in the 2025-2026 session, S.B. 303 would amend the Pennsylvania Game and Wildlife Code to create a narrow exception permitting the use of a small unmanned aircraft (under 55 lbs) to locate and assist in the recovery of lawfully wounded or downed game, addressing a gap that has resulted in citations against hunters using drones for this purpose under the Game Commission's current interpretation (see PA-004). As of this research pass, the bill has not passed either chamber and is not current law -- PA-004's prohibition remains the operative rule.",
-      "practical_interpretation_aec_expert": "N/A -- recreational hunting legislation, not an AEC commercial-operator authority.",
-      "practical_interpretation_agency_practitioner": "N/A -- no agency process; the bill has not been enacted.",
-      "practical_interpretation_uas_procurement_expert": "N/A -- no procurement or equipment-selection implication identified.",
+      "practical_interpretation_aec_expert": "No material AEC operational implication identified beyond the objective requirement.",
+      "practical_interpretation_agency_practitioner": "N/A — no agency process involved",
+      "practical_interpretation_uas_procurement_expert": "N/A — no procurement or equipment-selection implication identified",
       "practical_interpretation_legal_counsel": "Do not advise a client that drone-assisted game recovery is or will soon be legal in Pennsylvania on the strength of this bill -- it is pending, not enacted, and PA-004's prohibition (see that record) remains the current rule. Monitor for enactment in a future legislative session.",
       "source_url": "https://www.palegis.us/legislation/bills/2025/sb303",
       "date_accessed": "2026-08-06",
       "confidence_level": "Moderate",
       "verification_status": "Bill's existence, sponsor, and substance confirmed via multiple concurring 2024-2026 outdoor-press sources (govtech.com, lancasterfarming.com, wesa.fm) describing S.B. 303 and its predecessor bill; current pending (not-enacted) status corroborated by the same sources as of this pass. The official palegis.us bill-tracking page did not return readable content to this session's fetch tool (likely JavaScript-rendered) and was not independently re-confirmed as the primary source -- recommend a direct legislative-tracking check before citing the bill's exact current procedural status to a client.",
-      "notes": "Added 2026-08-06 as a Workstream 9 finding; watch for enactment in a future session, which would require revisiting PA-004."
+      "notes": "Added 2026-08-06 as a Workstream 9 finding; watch for enactment in a future session, which would require revisiting PA-004. This is recreational hunting legislation, not an AEC commercial-operator authority; the bill is pending and has not been enacted, so there is no agency process to route yet."
     }
   ],
   "source_files": {
