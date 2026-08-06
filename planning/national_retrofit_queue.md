@@ -34,9 +34,10 @@ open question in that state is resolved -- check `research_status` and
 | OK (Oklahoma) | Phase B pilot | current_method_complete | 0 | 2026-08-02 |
 | WA (Washington) | Phase B pilot | legacy_needs_retrofit | 4 | 2026-08-02 |
 | MO (Missouri) | Workstream 9 retrofit | current_method_in_progress | 1 | 2026-08-06 |
+| PA (Pennsylvania) | Workstream 9 retrofit | current_method_in_progress | 0 | 2026-08-06 |
 | TX (Texas) | Workstream 9 retrofit | current_method_in_progress | 0 | 2026-08-06 |
 
-**7 of 50 states** have a manifest as of this generation. Everything else
+**8 of 50 states** have a manifest as of this generation. Everything else
 below is the queue for states that do not yet.
 
 ## Tier definitions
@@ -60,11 +61,11 @@ the same tier with close scores are, for practical purposes, equally urgent.
 | Rank | State | Tier | Risk score | Records | Manifest? | Checklist? | Why |
 |---|---|---|---|---|---|---|---|
 | 1 | MO (Missouri) | 1 | 17 | 11 | yes | yes, unresolved | 3 low-confidence record(s); 2 proposed/pending/failed/superseded record(s); 2 criminal/felony-restriction record(s); 6 registration/licensing/permit/procurement record(s); 2 secondary-source-controlling record(s); 11 authorities (>= 10); no record mentions state preemption of local ordinances |
-| 2 | PA (Pennsylvania) | 1 | 17 | 10 | no | no | legacy state (no manifest, no checklist); 3 low-confidence record(s); 1 criminal/felony-restriction record(s); 5 registration/licensing/permit/procurement record(s); 4 secondary-source-controlling record(s); 10 authorities (>= 10) |
-| 3 | AR (Arkansas) | 1 | 16 | 8 | no | no | legacy state (no manifest, no checklist); 3 low-confidence record(s); 4 criminal/felony-restriction record(s); 4 registration/licensing/permit/procurement record(s); 2 secondary-source-controlling record(s) |
-| 4 | IL (Illinois) | 1 | 16 | 10 | no | no | legacy state (no manifest, no checklist); 2 low-confidence record(s); 2 proposed/pending/failed/superseded record(s); 1 criminal/felony-restriction record(s); 5 registration/licensing/permit/procurement record(s); 1 secondary-source-controlling record(s); 10 authorities (>= 10); 3 public-agency/procurement record(s) |
-| 5 | LA (Louisiana) | 1 | 16 | 8 | no | no | legacy state (no manifest, no checklist); 1 low-confidence record(s); 2 proposed/pending/failed/superseded record(s); 1 criminal/felony-restriction record(s); 7 registration/licensing/permit/procurement record(s); 2 secondary-source-controlling record(s) |
-| 6 | NC (North Carolina) | 1 | 16 | 12 | no | no | legacy state (no manifest, no checklist); 1 low-confidence record(s); 1 proposed/pending/failed/superseded record(s); 6 criminal/felony-restriction record(s); 3 registration/licensing/permit/procurement record(s); 1 secondary-source-controlling record(s); 12 authorities (>= 10) |
+| 2 | AR (Arkansas) | 1 | 16 | 8 | no | no | legacy state (no manifest, no checklist); 3 low-confidence record(s); 4 criminal/felony-restriction record(s); 4 registration/licensing/permit/procurement record(s); 2 secondary-source-controlling record(s) |
+| 3 | IL (Illinois) | 1 | 16 | 10 | no | no | legacy state (no manifest, no checklist); 2 low-confidence record(s); 2 proposed/pending/failed/superseded record(s); 1 criminal/felony-restriction record(s); 5 registration/licensing/permit/procurement record(s); 1 secondary-source-controlling record(s); 10 authorities (>= 10); 3 public-agency/procurement record(s) |
+| 4 | LA (Louisiana) | 1 | 16 | 8 | no | no | legacy state (no manifest, no checklist); 1 low-confidence record(s); 2 proposed/pending/failed/superseded record(s); 1 criminal/felony-restriction record(s); 7 registration/licensing/permit/procurement record(s); 2 secondary-source-controlling record(s) |
+| 5 | NC (North Carolina) | 1 | 16 | 12 | no | no | legacy state (no manifest, no checklist); 1 low-confidence record(s); 1 proposed/pending/failed/superseded record(s); 6 criminal/felony-restriction record(s); 3 registration/licensing/permit/procurement record(s); 1 secondary-source-controlling record(s); 12 authorities (>= 10) |
+| 6 | PA (Pennsylvania) | 1 | 16 | 11 | yes | yes | 3 low-confidence record(s); 1 proposed/pending/failed/superseded record(s); 1 criminal/felony-restriction record(s); 6 registration/licensing/permit/procurement record(s); 4 secondary-source-controlling record(s); 11 authorities (>= 10) |
 | 7 | CO (Colorado) | 1 | 15 | 10 | no | no | legacy state (no manifest, no checklist); 2 low-confidence record(s); 1 proposed/pending/failed/superseded record(s); 2 criminal/felony-restriction record(s); 4 registration/licensing/permit/procurement record(s); 2 secondary-source-controlling record(s); 10 authorities (>= 10) |
 | 8 | HI (Hawaii) | 1 | 15 | 7 | no | no | legacy state (no manifest, no checklist); 3 low-confidence record(s); 3 criminal/felony-restriction record(s); 4 registration/licensing/permit/procurement record(s); 2 secondary-source-controlling record(s) |
 | 9 | IN (Indiana) | 1 | 15 | 10 | no | no | legacy state (no manifest, no checklist); 1 low-confidence record(s); 4 criminal/felony-restriction record(s); 4 registration/licensing/permit/procurement record(s); 1 secondary-source-controlling record(s); 10 authorities (>= 10); 3 public-agency/procurement record(s) |

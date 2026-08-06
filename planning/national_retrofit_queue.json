@@ -62,6 +62,15 @@
       "unresolved_count": 1
     },
     {
+      "state_abbr": "PA",
+      "state": "Pennsylvania",
+      "is_pilot": false,
+      "research_status": "current_method_in_progress",
+      "legacy_retrofit_status": "retrofit_in_progress",
+      "last_currency_check": "2026-08-06",
+      "unresolved_count": 0
+    },
+    {
       "state_abbr": "TX",
       "state": "Texas",
       "is_pilot": false,
@@ -91,26 +100,6 @@
       "tier2_triggers": [
         "11 authorities (>= 10)",
         "no record mentions state preemption of local ordinances"
-      ]
-    },
-    {
-      "state_abbr": "PA",
-      "state": "Pennsylvania",
-      "tier": 1,
-      "risk_score": 17,
-      "record_count": 10,
-      "has_manifest": false,
-      "has_checklist": false,
-      "checklist_unresolved": false,
-      "tier1_triggers": [
-        "legacy state (no manifest, no checklist)",
-        "3 low-confidence record(s)",
-        "1 criminal/felony-restriction record(s)",
-        "5 registration/licensing/permit/procurement record(s)",
-        "4 secondary-source-controlling record(s)"
-      ],
-      "tier2_triggers": [
-        "10 authorities (>= 10)"
       ]
     },
     {
@@ -191,6 +180,26 @@
       ],
       "tier2_triggers": [
         "12 authorities (>= 10)"
+      ]
+    },
+    {
+      "state_abbr": "PA",
+      "state": "Pennsylvania",
+      "tier": 1,
+      "risk_score": 16,
+      "record_count": 11,
+      "has_manifest": true,
+      "has_checklist": true,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "3 low-confidence record(s)",
+        "1 proposed/pending/failed/superseded record(s)",
+        "1 criminal/felony-restriction record(s)",
+        "6 registration/licensing/permit/procurement record(s)",
+        "4 secondary-source-controlling record(s)"
+      ],
+      "tier2_triggers": [
+        "11 authorities (>= 10)"
       ]
     },
     {

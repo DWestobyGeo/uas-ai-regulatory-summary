@@ -1,0 +1,119 @@
+# State Research Manifest -- Workstream 9 (national retrofit, per planning/national_retrofit_queue.md)
+# Schema: States/RESEARCH_MANIFEST_SCHEMA.md
+# Owner: Research Expert (agents/roles/research-expert.md)
+# Validated by: scripts/validate_research_manifests.py
+
+state: Pennsylvania
+state_abbr: PA
+method_version: 1.0.0
+research_status: current_method_in_progress
+legacy_retrofit_status: retrofit_in_progress
+last_full_research_date: '2026-08-01'
+last_currency_check: '2026-08-06'
+source_cutoff_date: '2026-08-06'
+coverage:
+  state_statutes_and_amendments:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - PA-001
+    - PA-002
+    note: 18 Pa.C.S. Section 3505 and 53 Pa.C.S. Section 305 re-confirmed 2026-08-06 against Justia's
+      current codification; both unamended since the 2018 Act 78 enactment.
+  administrative_rules:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - PA-004
+    - PA-005
+    - PA-006
+    - PA-007
+    note: Game Commission (34 Pa.C.S. Section 2308 / 58 Pa. Code Ch. 141) and DCNR State Park rules
+      re-confirmed. DCNR State Forest drone policy citation corrected and substantially enhanced via
+      DCNR's own official policy PDF. PA-007 licensing-board citation sharpened with the 49 Pa. Code
+      Chapter 37 cross-reference.
+  executive_orders:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids:
+    - PA-010
+    note: Re-searched 2026-08-06; no UAS-specific executive order located.
+  court_decisions_and_ag_opinions:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids:
+    - PA-010
+    note: Re-searched 2026-08-06; no controlling appellate decision or formal AG opinion located.
+  aviation_and_transportation_agencies:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - PA-003
+    note: PennDOT's UAS registration page re-confirmed 2026-08-06; functions only as a pointer to the
+      federal FAA DroneZone system.
+  parks_public_lands_and_natural_resources:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - PA-004
+    - PA-005
+    - PA-006
+    - PA-011
+    note: DCNR State Park and State Forest rules re-confirmed/enhanced (see administrative_rules).
+      PA Game Commission restriction re-confirmed; a pending 2025-2026 session bill (S.B. 303) that
+      would create a licensed recovery exception was found and added as PA-011.
+  corrections_public_safety_and_critical_infrastructure:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - PA-001
+    - PA-008
+    note: Section 3505's contraband-delivery felony tier and PEMA's emergency-interference messaging
+      re-confirmed; no change.
+  privacy_surveillance_trespass_and_interference:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - PA-001
+    note: Section 3505's private-place/surveillance and bodily-injury-fear provisions re-confirmed,
+      including the aerial-data-collection exception (subsection (e)).
+  procurement_equipment_and_cybersecurity:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids:
+    - PA-009
+    note: Re-searched 2026-08-06; no Pennsylvania-specific state procurement/manufacturer restriction
+      statute or executive order located.
+  professional_licensing_board_material:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - PA-007
+    note: 63 P.S. Sections 148-158.2 and implementing regulations at 49 Pa. Code Chapter 37 confirmed;
+      no standalone UAS-specific Board guidance located. Exact current competency-clause section
+      number not independently pulled in this pass (see checklist).
+  state_preemption:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - PA-002
+    note: 53 Pa.C.S. Section 305 (state preemption) re-confirmed; no change.
+record_count: 11
+unresolved_count: 0
+low_confidence_record_count: 3
+primary_source_percentage: 55
+known_issues:
+  - >-
+    49 Pa. Code Chapter 37's exact current competency-clause section number was not independently
+    pulled from pacodeandbulletin.gov or pacode.com in this pass -- both sites did not return
+    readable content to this session's fetch tool. PA-007 currently cites the chapter as a whole.
+    See PA_UAS_Research_Checklist.md, "Open verification items," item 1.
+  - >-
+    S.B. 303's (PA-011) exact current procedural status was corroborated via concurring outdoor-press
+    sources rather than independently re-pulled from the official palegis.us bill-tracking page,
+    which did not return readable content to this session's fetch tool. See
+    PA_UAS_Research_Checklist.md, "Open verification items," item 2.
+next_currency_review: '2026-09-05'
+recheck_triggers:
+  - record_id: PA-011
+    reason: "status is event-triggered/pending ('Proposed or pending authority | Introduced 2025 session; not enacted as of Aug. 6, 2026')"

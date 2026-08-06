@@ -1,7 +1,7 @@
 # Pennsylvania — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 1, 2026 | **Version:** 2.1 (Phase 2 — subjective-scope audit complete August 2, 2026)
+**Research date:** August 1, 2026; Workstream 9 retrofit August 6, 2026 | **Version:** 2.2 (Workstream 9 retrofit — corrected/enhanced DCNR State Forest and PA-007 licensing-board citations, added pending S.B. 303 record; re-confirmed all other records)
 **Model / checkpoint:** Objective research and Phase 2 model/checkpoint were not recorded in this legacy state packet.
 **Interpretation scope:** Agent Instructions v6 (August 2, 2026)
 **Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent_Instructions.md v3), this summary covers Pennsylvania **state and state-agency** UAS authorities only — local (municipal/county) ordinances and tribal rules are deferred to a later phase and are not included here. Full citations and metadata are in `PA_UAS_Source_Register.csv`.
@@ -14,7 +14,7 @@ Each authority below is presented as an **Objective Summary** (binding text/cita
 
 ## 1. State UAS Regulatory Overview
 
-Pennsylvania regulates UAS chiefly through a single 2018 enactment (Act 78), which created a targeted criminal statute (18 Pa.C.S. §3505) and a broad state preemption of local UAS-operation ordinances (53 Pa.C.S. §305). There is no separate Pennsylvania state UAS registration beyond the federal FAA requirement. State agencies diverge sharply on land-access policy: the Department of Conservation and Natural Resources defaults to prohibiting drones in state parks (with six designated exceptions) while generally permitting them in state forests — a distinction worth building directly into project-siting decisions.
+Pennsylvania regulates UAS chiefly through a single 2018 enactment (Act 78), which created a targeted criminal statute (18 Pa.C.S. §3505) and a broad state preemption of local UAS-operation ordinances (53 Pa.C.S. §305). There is no separate Pennsylvania state UAS registration beyond the federal FAA requirement. State agencies diverge sharply on land-access policy: the Department of Conservation and Natural Resources defaults to prohibiting drones in state parks (with six designated exceptions) while generally permitting them in state forests subject to specific operational conditions and, for commercial work, a required Commercial Activities Agreement — a distinction worth building directly into project-siting decisions. A pending 2025-2026 session bill (S.B. 303) would create a drone-assisted game-recovery exception to the Game Commission's current prohibition, but has not been enacted.
 
 ## 2. Statewide UAS Laws and Regulations
 
@@ -64,6 +64,17 @@ Pennsylvania regulates UAS chiefly through a single 2018 enactment (Act 78), whi
 - **Agency Practitioner:** Not applicable — no agency process.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Document flight purpose (survey/mapping, not wildlife-related) for any AEC work on State Game Lands, and monitor SB 303's status, since a recovery exception would not by itself broaden this statute's application to commercial survey work.
+### Senate Bill 303 (2025-2026 session) — proposed drone-assisted game recovery exception — did not pass
+*Proposed or pending authority | Introduced 2025 session; not enacted as of Aug. 6, 2026*
+
+**Objective Summary:** Introduced by Sen. Jarrett Coleman (R-Bucks/Lehigh), S.B. 303 would amend the Game and Wildlife Code to create a narrow exception permitting the use of a small unmanned aircraft (under 55 lbs) to locate and assist in the recovery of lawfully wounded or downed game. As of this research pass, the bill has not passed either chamber and is not current law — the Game Commission's existing prohibition (previous section) remains the operative rule.
+
+**Practical Interpretation**
+
+- **AEC Industry UAS Expert:** Not applicable — recreational hunting legislation, not an AEC commercial-operator authority.
+- **Agency Practitioner:** Not applicable — no agency process; the bill has not been enacted.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** Do not advise a client that drone-assisted game recovery is or will soon be legal in Pennsylvania on the strength of this bill — it is pending, not enacted. Monitor for enactment in a future legislative session.
 ### Parks and Public Lands — PA Department of Conservation and Natural Resources (DCNR), State Parks
 *Binding administrative regulation*
 
@@ -76,16 +87,16 @@ Pennsylvania regulates UAS chiefly through a single 2018 enactment (Act 78), whi
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Retain the special activities agreement in the project file before any state park flight outside the six designated sites; do not treat the existence of designated sites elsewhere in the system as authorization for a different park.
 ### Forestry and Natural Resources — PA Department of Conservation and Natural Resources (DCNR), State Forests
-*Binding administrative regulation*
+*Official agency policy | citation and detail corrected 2026-08-06 against DCNR's own policy PDF*
 
-**Objective Summary:** Unlike the state park default prohibition, DCNR's state forest rule generally allows drone operation on Pennsylvania's 2.2 million acres of state forest land across 20 forest districts, including Michaux, Rothrock, Tioga, Susquehannock, and Sproul state forests.
+**Objective Summary:** Unlike the state park default prohibition, DCNR's state forest drone policy generally allows UAS operation on Pennsylvania's 2.2 million acres of state forest land across 20 forest districts, subject to specific operational conditions set out in DCNR's own published policy: fly below 400 ft AGL; no launch, landing, or operation in designated Natural and Wild Areas or other posted-closed areas; no flight within an active FAA Temporary Flight Restriction; do not fly over or within 100 meters (328 ft) of wildlife; maintain visual line of sight; stay at least 5 miles from an airport or backcountry airstrip; and a maximum aircraft weight of 55 lbs. Commercial operation requires contacting the local forest district office first and obtaining a written Commercial Activities Agreement (CAA), with a remote pilot certificate and registered aircraft available on request.
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** State forest land is a comparatively easier launch/land environment than state parks for timber, environmental-monitoring, or corridor-survey work — but confirm current district-level conditions directly with DCNR before mobilizing, since "generally permitted" can still carry site-specific conditions (e.g., during active timber harvest or wildfire operations).
-- **Agency Practitioner:** Not applicable — no agency process.
+- **AEC Industry UAS Expert:** State forest land is a comparatively easier launch/land environment than state parks for timber, environmental-monitoring, or corridor-survey work, but treat the Commercial Activities Agreement (CAA) requirement as a real precondition, not a formality — contact the specific forest district office before mobilizing, keep the flight under 400 ft AGL and 5 miles from any airport, and route around designated Natural and Wild Areas and any active TFR (e.g., a nearby wildfire).
+- **Agency Practitioner:** Contact the specific forest district office for the property before scheduling any commercial UAS work; request the current Commercial Activities Agreement (CAA) form, lead time, and any district-specific conditions, and have remote pilot certification and aircraft registration on hand.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
-- **AEC Industry Legal Counsel:** Even where operation is generally permitted, document any DCNR district contact or confirmation obtained before a specific state-forest flight, since "generally permitted" is not the same as an unconditional right.
+- **AEC Industry Legal Counsel:** Retain the executed Commercial Activities Agreement (CAA) in the project file for any commercial state-forest UAS work; the policy's operational conditions (Natural/Wild Area avoidance, TFR compliance, 100-meter wildlife buffer, 5-mile airport buffer, 55 lb weight limit) are DCNR's own stated terms, not merely aspirational guidance.
 ### Professional Licensing — PA State Registration Board for Professional Engineers, Land Surveyors and Geologists
 *Binding general licensing statute | No UAS-specific board guidance located*
 
@@ -123,13 +134,14 @@ Pennsylvania regulates UAS chiefly through a single 2018 enactment (Act 78), whi
 
 | Finding | Confidence |
 |---|---|
-| 18 Pa.C.S. §3505 unlawful use of unmanned aircraft | High — verified via direct statutory text |
-| 53 Pa.C.S. §305 state preemption | High — verified via Act 78 summary and secondary legal sources |
-| No separate PA state UAS registration | High — verified directly from PennDOT's own page |
-| PA Game Commission drone/wildlife restriction | Moderate — citation and enforcement practice confirmed via secondary sources |
-| DCNR State Parks default prohibition | High — verified via DCNR's own published rule page |
-| DCNR State Forests general permission | Moderate — confirmed via secondary summary, not fully re-parsed from primary page |
-| PA licensing board UAS-specific guidance | Low — none located beyond general competency statute |
+| 18 Pa.C.S. §3505 unlawful use of unmanned aircraft | High — verified via direct statutory text; re-confirmed 2026-08-06 |
+| 53 Pa.C.S. §305 state preemption | High — verified via Act 78 summary and secondary legal sources; re-confirmed 2026-08-06 |
+| No separate PA state UAS registration | High — verified directly from PennDOT's own page; re-confirmed 2026-08-06 |
+| PA Game Commission drone/wildlife restriction | Moderate — citation and enforcement practice corroborated via multiple concurring press sources; re-confirmed 2026-08-06 |
+| S.B. 303 pending game-recovery exception | Moderate — bill existence/substance/pending status corroborated via multiple press sources; official palegis.us tracking page not independently re-pulled |
+| DCNR State Parks default prohibition | High — verified via DCNR's own published rule page; re-confirmed 2026-08-06 |
+| DCNR State Forests operational policy | High — citation corrected 2026-08-06 and substantially enhanced via DCNR's own official policy PDF (elibrary.dcnr.pa.gov) |
+| PA licensing board UAS-specific guidance | Low — none located beyond general competency statute; implementing-regulation cross-reference (49 Pa. Code Ch. 37) added 2026-08-06 |
 | PEMA emergency-interference messaging | Moderate — confirmed via press coverage and PA.gov page; not a codified rule |
 | No PA-specific procurement/manufacturer restriction | Low — absence of a finding, not a confirmed negative |
 | Executive orders / court decisions / AG opinions | Low — none located; absence is not confirmation none exists |

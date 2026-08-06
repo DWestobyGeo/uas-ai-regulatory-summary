@@ -28,6 +28,56 @@ scratch.
 
 ## Log (newest first)
 
+### 2026-08-06 — Workstream 9 retrofit: Pennsylvania (queue rank #2)
+
+**Status:** Complete locally, about to be committed and pushed. Third of the "3 more states"
+the user authorized (Texas, Pennsylvania, Arkansas).
+
+**What changed:** All 10 original Pennsylvania records re-verified; one new record added
+(PA-011). Two real corrections/enhancements, not just re-confirmation:
+
+- **PA-006 (DCNR State Forest drone policy):** the previous citation was a generic "DCNR State
+  Forest Rules and Regulations" pointing at a now-broken dcnr.pa.gov URL (the agency migrated to
+  the pa.gov domain). Independently located DCNR's own official policy PDF
+  ("Operations of Unmanned Aircraft Systems (UAS) on State Forest Lands",
+  elibrary.dcnr.pa.gov) and pulled its full text directly. This resolved an apparent conflict in
+  AI-search-summarized secondary sources over whether state forests share state parks' default-ban
+  policy (they do not -- forests are generally open) and added a real, previously-missing
+  requirement: commercial UAS operation on state forest land requires prior contact with the local
+  forest district office and a written Commercial Activities Agreement (CAA), plus specific
+  operational limits (400 ft AGL, no flight in Natural/Wild Areas, no flight in an active TFR, a
+  100-meter wildlife buffer, a 5-mile airport buffer, 55 lb weight cap). Confidence raised
+  Moderate -> High.
+- **PA-007 (licensing board competency rule):** sharpened the citation with the implementing
+  regulation's actual chapter (49 Pa. Code Chapter 37, State Registration Board for Professional
+  Engineers, Land Surveyors and Geologists) instead of a vague "Board practice rules" reference.
+  The exact current section number within Chapter 37 could not be pulled -- both
+  pacodeandbulletin.gov and pacode.com returned no readable content to this session's fetch tool
+  (apparently JavaScript-rendered) -- so this is a sharpened citation, not a fully pinned one; see
+  the checklist's open items.
+- **PA-011 (new record):** found and added a pending 2025-2026 session bill (S.B. 303) that would
+  create a licensed exception for drone-assisted recovery of downed/wounded game -- directly
+  relevant to PA-004's existing prohibition. Follows the register's own established "Proposed or
+  pending authority" convention (matching Missouri's and other states' pattern for this kind of
+  record) rather than inventing a new one.
+- PA-001, PA-002, PA-003, PA-004, PA-005, PA-008, PA-009, PA-010 re-confirmed with no substantive
+  change beyond refreshed access dates and light corroborating detail (e.g. PA-005's special-
+  activities-agreement lead time/insurance/Part-107 detail).
+
+Pennsylvania now has a research manifest and checklist for the first time
+(`current_method_in_progress`, `unresolved_count: 0`, `low_confidence_record_count: 3` -- unchanged
+count, but PA-007's citation is now sharper even though still Low) and dropped off the retrofit
+queue.
+
+**Not yet done / open items:** the exact 49 Pa. Code Chapter 37 competency-clause section number,
+and S.B. 303's exact current procedural status against the official palegis.us tracking page --
+both blocked by sites that didn't return readable content to this session's tools; see
+`PA_UAS_Research_Checklist.md`.
+
+**Next:** Arkansas (queue rank #2 after Pennsylvania drops off), the last of the "3 more" states.
+All validators, eval fixture checks, and the URL-health fixture check pass locally as of this
+entry.
+
 ### 2026-08-06 — web-ux-ui-editor: sticky TOC fix + not-current-law flag, verified live (UI v1.1.1)
 
 **Status:** Complete, pushed (`dd0f133`..`dc94cc5`, four small commits), and verified against
