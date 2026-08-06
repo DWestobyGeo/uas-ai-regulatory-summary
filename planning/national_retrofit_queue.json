@@ -8,28 +8,6 @@
   ],
   "queue": [
     {
-      "state_abbr": "MO",
-      "state": "Missouri",
-      "tier": 1,
-      "risk_score": 19,
-      "record_count": 11,
-      "has_manifest": false,
-      "has_checklist": false,
-      "checklist_unresolved": false,
-      "tier1_triggers": [
-        "legacy state (no manifest, no checklist)",
-        "3 low-confidence record(s)",
-        "2 proposed/pending/failed/superseded record(s)",
-        "1 criminal/felony-restriction record(s)",
-        "6 registration/licensing/permit/procurement record(s)",
-        "2 secondary-source-controlling record(s)"
-      ],
-      "tier2_triggers": [
-        "11 authorities (>= 10)",
-        "no record mentions state preemption of local ordinances"
-      ]
-    },
-    {
       "state_abbr": "TX",
       "state": "Texas",
       "tier": 1,
@@ -46,6 +24,27 @@
       ],
       "tier2_triggers": [
         "13 authorities (>= 10)"
+      ]
+    },
+    {
+      "state_abbr": "MO",
+      "state": "Missouri",
+      "tier": 1,
+      "risk_score": 17,
+      "record_count": 11,
+      "has_manifest": true,
+      "has_checklist": true,
+      "checklist_unresolved": true,
+      "tier1_triggers": [
+        "3 low-confidence record(s)",
+        "2 proposed/pending/failed/superseded record(s)",
+        "2 criminal/felony-restriction record(s)",
+        "6 registration/licensing/permit/procurement record(s)",
+        "2 secondary-source-controlling record(s)"
+      ],
+      "tier2_triggers": [
+        "11 authorities (>= 10)",
+        "no record mentions state preemption of local ordinances"
       ]
     },
     {

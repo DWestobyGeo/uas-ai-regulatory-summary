@@ -1,0 +1,111 @@
+# State Research Manifest — Workstream 9 (national retrofit, per planning/national_retrofit_queue.md)
+# Schema: States/RESEARCH_MANIFEST_SCHEMA.md
+# Owner: Research Expert (agents/roles/research-expert.md)
+# Validated by: scripts/validate_research_manifests.py
+
+state: Missouri
+state_abbr: MO
+method_version: 1.0.0
+research_status: current_method_in_progress
+legacy_retrofit_status: retrofit_in_progress
+last_full_research_date: '2026-08-01'
+last_currency_check: '2026-08-06'
+source_cutoff_date: '2026-08-06'
+coverage:
+  state_statutes_and_amendments:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - MO-001
+    - MO-002
+    note: RSMo 577.800 and 217.850 re-verified directly against the Revisor of Statutes on 2026-08-06;
+      577.800's 2026 merged amendment (H.B. 2637 & 3155 merged with S.B. 1421) confirmed reflected in
+      the current codified text.
+  administrative_rules:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - MO-008
+    - MO-009
+    note: 3 CSR 10-7.410 (Wildlife Code) and 20 CSR 2030-20 (APELSLA Mapping Survey Standards) reviewed.
+  executive_orders:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids:
+    - MO-010
+    note: Re-searched 2026-08-06; no UAS-specific executive order located.
+  court_decisions_and_ag_opinions:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids:
+    - MO-011
+    note: Re-searched 2026-08-06; no controlling decision or formal AG opinion located.
+  aviation_and_transportation_agencies:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - MO-005
+    - MO-006
+    note: MoDOT UAV Program and FHWA-funding foreign-drone notice re-confirmed directly from modot.org.
+  parks_public_lands_and_natural_resources:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - MO-007
+    - MO-008
+    note: DNR State Parks and MDC conservation-area guidance re-confirmed directly from primary agency pages.
+  corrections_public_safety_and_critical_infrastructure:
+    status: unresolved_verification_required
+    unresolved: true
+    record_ids:
+    - MO-001
+    - MO-002
+    note: RSMo 217.850 and 577.800/569.086 re-verified and current. Unresolved -- multiple 2026 press
+      sources report the same June 2026 public-safety act also authorizes certified peace officers to
+      take mitigation measures against a drone posing an imminent public-safety threat or involved in
+      criminal activity; the specific codified section was not independently located in this pass. See
+      MO_UAS_Research_Checklist.md, "Open verification items," item 1.
+  privacy_surveillance_trespass_and_interference:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - MO-003
+    note: "\"Preserving Freedom from Unwarranted Surveillance Act\" (myth-busting record) -- never enacted,\
+      \ re-confirmed 2026-08-06, no 2026 reintroduction found."
+  procurement_equipment_and_cybersecurity:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - MO-004
+    - MO-006
+    note: HB 210 (2025) died in committee, re-confirmed, no 2026 reintroduction found. Federal ASDA/OMB
+      M-26-02 foreign-manufacturer restriction (MO-006) remains current.
+  professional_licensing_board_material:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids:
+    - MO-009
+    note: Re-searched 2026-08-06; no standalone UAS-specific APELSLA guidance located.
+  state_preemption:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    note: No Missouri statute expressly preempting local UAS ordinances located in this or the original pass.
+record_count: 11
+unresolved_count: 1
+low_confidence_record_count: 3
+primary_source_percentage: 64
+known_issues:
+  - >-
+    Certified-peace-officer counter-UAS mitigation authority, reported by multiple 2026 press sources
+    (Jefferson City News-Tribune, KCTV5, KTTN, Missouri Independent) as part of the same June 2026
+    public-safety act that amended RSMo 577.800, was not independently located to a specific codified
+    RSMo section in this retrofit pass. The governor's own HB 2637 bill-summary page confirms 94 new
+    public-safety sections were enacted but does not enumerate them individually. Flagged as the
+    single highest-priority open item for a follow-up pass; not guessed at or fabricated. See
+    MO_UAS_Research_Checklist.md, "Open verification items," item 1.
+next_currency_review: '2026-09-05'
+recheck_triggers:
+  - record_id: MO-003
+    reason: "status is event-triggered/pending ('Not law - reintroduced multiple sessions (2013, later sessions, 2025) without passing')"
+  - record_id: MO-004
+    reason: "status is event-triggered/pending ('Dead - introduced 1/8/2025, died 5/16/2025; not enacted')"
