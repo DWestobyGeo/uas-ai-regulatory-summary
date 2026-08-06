@@ -22,6 +22,38 @@ scratch.
 
 ## Log (newest first)
 
+### 2026-08-06 — Agency Practitioner role prompt improved (1.0.0 -> 1.1.0)
+
+**Status:** Complete and pushed (`234f11d`). User-requested, outside the Workstream 7/8 task
+list, done before Workstream 9 per explicit instruction ("go ahead with 36 first, then 9").
+
+**What landed:** `agents/roles/agency-practitioner.md` gets a new Section 4a ("Sourcing real
+process detail"). The role previously defaulted to generic "confirm requirements with the
+agency" language whenever the base evidence packet didn't spell out a process's mechanics. Now,
+before falling back to that: (1) prefer agency-published operational guidance beyond the bare
+statute/rule citation, attributed explicitly as official with a named URL; (2) if none exists,
+first-hand practitioner accounts from an appropriate venue (a UAS/industry/agency-specific
+subreddit, forum, professional group, podcast, video, trade/local news) are acceptable,
+attributed explicitly and kept visually distinct from official guidance -- never blended into
+one unattributed sentence; (3) if neither is found, say so briefly rather than silently defaulting
+to generic advice as if it were a complete answer -- but the role is never forced to fabricate a
+source or account to avoid saying so. None of this lets community-sourced detail override an
+objective field or convert a governed `N/A` disposition into a process where none exists in law.
+`agents/prompt_templates/agency-practitioner.task.md` carries the same instructions into the
+assembled prompt. **No already-published `practical_interpretation_agency_practitioner` text was
+rewritten** -- this is a prompt-design change only, same boundary applied to every other
+retroactive-interpretation-change question in this project. No governance-document version bump
+(role-scoped, Agent_Instructions.v6.md §9 already delegates full operating rules to role docs).
+
+**Next task:** Workstream 9 (national retrofit), authorized by the user immediately after this.
+See the plan doc's own Tier 1/2/3 risk-based sequencing (`planning/AI_RESEARCH_QUALITY_AND_EFFICIENCY_IMPROVEMENT_PLAN.md`,
+"Workstream 9") before starting -- this is the largest-scope work authorized so far in this
+project (45 non-pilot states vs. 5 pilot states for everything up to this point) and needs its
+own scoping/plan before touching any state, consistent with how every other phase in this
+project started with an explicit scoping step.
+
+---
+
 ### 2026-08-06 — Phase D, Workstream 8 (currency metadata) complete; Phase D closed out
 
 **Status:** Complete and pushed as `b35d3dc`. Same fresh-clone/PAT caveats as prior entries apply.
