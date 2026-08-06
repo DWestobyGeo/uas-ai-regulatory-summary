@@ -28,6 +28,52 @@ scratch.
 
 ## Log (newest first)
 
+### 2026-08-06 — web-ux-ui-editor: sticky TOC fix + not-current-law flag, verified live (UI v1.1.1)
+
+**Status:** Complete, pushed (`dd0f133`..`dc94cc5`, four small commits), and verified against
+the live GitHub Pages deployment via the Claude-in-Chrome browser tools (not just locally).
+User-requested: (1) make the table of contents float with scroll and bold the current section,
+(2) give records that are not current law an obvious visual differentiator (designer's choice
+on styling).
+
+**What was actually wrong:** the TOC's active-section tracking (IntersectionObserver +
+`aria-current` + bold `.active` style) was already fully implemented and, once verified in a
+clean browser tab, works correctly. The real bug was that the TOC never stayed visible while
+scrolling at all -- `.reading-layout { align-items: start }` shrank the `.page-toc` grid item
+to its own content height instead of stretching it to the row's full height, leaving the inner
+`position: sticky` element with no room in its parent to hold in place; it just scrolled away
+with the page. Confirmed via `getBoundingClientRect()` on the live site before the fix (viewport
+top went to -2794px on scroll, i.e. behaving as static) and after (stayed pinned). Fixed by
+removing the `align-items: start` override.
+
+**Not-current-law flag:** reuses the existing `--critical`/`--critical-soft` tokens (previously
+scoped to the AI-disclaimer banner only) plus a mandatory visible "Not current law" text badge
+(never color alone, per the role's own Section 8). Detection reads the register's own
+already-established conventions -- headings ending "-- not current law" / "-- did not pass", or
+subtitle lines starting "Proposed or pending authority" / "Repealed, expired, or superseded
+authority" -- so this is a presentation-layer read of a classification the research process
+already wrote, not a new editorial judgment.
+
+**Bugs found and fixed along the way:**
+1. A duplicated badge on headings whose title already said "not current law" (fixed in
+   `e9b46b6`, folded the phrase into the heading's accessible name and generated ID twice).
+2. GitHub Pages/browser caching served the pre-fix `app.js` under the *same* `?v=1.1.0` URL
+   after commit 1 -- the fix in commit 2 was invisible live until the version was bumped to
+   1.1.1 to force a fresh fetch (`dc94cc5`). Lesson: any JS/CSS fix needs its own version bump,
+   not just a code change, or GitHub Pages' CDN can serve stale assets under an unchanged URL.
+
+Live-verified via Claude-in-Chrome on the deployed Missouri and Texas pages (chosen because MO
+has real not-current-law records to check). One browser tab got into a bad state mid-session
+(stuck on `Script injection timed out` for every action after some dangling test-observer/
+scroll-animation debugging) -- opening a fresh tab resolved it; that was a tooling artifact,
+not a site bug, and is noted here only so a future session doesn't chase it as a regression.
+
+Updated `docs/DESIGN_SYSTEM.md` (documents the sticky-in-grid gotcha and the new flag pattern)
+and `docs/ui-release.json` (provenance, ui_version 1.1.1). All validators, fixture checks, and
+`validate_site.py` pass locally.
+
+**Next:** back to Workstream 9 -- Pennsylvania (queue rank #2), then Arkansas (#3).
+
 ### 2026-08-06 — Workstream 9 retrofit: Texas (queue rank #1), plus a currency-review cadence bug fix
 
 **Status:** Complete locally, about to be committed and pushed on top of the Missouri retrofit
