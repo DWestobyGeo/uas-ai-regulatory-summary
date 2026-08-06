@@ -14,6 +14,11 @@ persisted here; it runs in CI on every relevant push/PR and its pass/fail output
 captured in CI logs. This directory is for the layers that require a human or a separate model
 pass and produce a result worth keeping independent of any one CI run.
 
+This directory also holds one-off dated measurement reports that don't fit `runs/` (per-run
+telemetry) or a fixture (pass/fail check) -- e.g. the Workstream 6 prompt-size baseline.
+
 ## Status
 
-Empty as of 2026-08-06 (Phase B). No Layer B/C/D pass has been run yet under this convention.
+- `20260806_workstream6_prompt_size_baseline.md` — Workstream 6 (Phase C) prompt-size structural
+  comparison and skip-regeneration check across the five pilot states.
+- No Layer B/C/D pass has been run yet under this convention.

@@ -1,0 +1,12 @@
+{
+  "state_abbr": "MN",
+  "hashes": {
+    "MN-001": "b039c821fd1da1e2eada772a3675baf1333cd803fe3f8c8231efec26720bc4bf",
+    "MN-002": "ba8f7c283430d32fbb7d45be0302d90dd0a8e3b4cc2658be15232ec62885a059",
+    "MN-003": "8dc43ef2257cb041bb666d171dce3a8c6dcf191a736aab2b4e6b1e785da36136",
+    "MN-004": "b60fdae99d4bcc940aac37732ed78667142354e5dfad764df6e135a93e2d5fb0",
+    "MN-005": "9db84970d8a256073afd1ec51aa1ecb2bfcbdbecec9a5997033c55c30ad84623",
+    "MN-006": "903a1ee584581625276e1e684a16e4148f8efa744b74b2d3edf42a81aac28d6d",
+    "MN-008": "00b50088ecce6e966edb5496e09522bd558d160be68afc7a3b900bebc0809179"
+  }
+}
