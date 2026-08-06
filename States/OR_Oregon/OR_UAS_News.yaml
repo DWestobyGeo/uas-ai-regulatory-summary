@@ -1,0 +1,35 @@
+state: Oregon
+state_abbr: OR
+role_id: news-aggregator
+role_version: 1.0.0
+generated_at: '2026-08-06'
+items:
+  - record_id: OR-002
+    headline: "Flat Fire aerial tactics questioned"
+    url: https://www.nuggetnews.com/story/2026/01/14/news/flat-fire-aerial-tactics-questioned/38599.html
+    source_name: The Nugget Newspaper (Sisters, Oregon)
+    publish_date: '2026-01-14'
+    jurisdiction_match: in_state
+    out_of_state_name: null
+    relevance_note: >-
+      Local reporting, built from the Oregon Department of Forestry's own minute-by-minute
+      incident log, that a recreational drone spotted at 5:01 p.m. over the August 21, 2025
+      Flat Fire near Sisters forced ODF to hold all responding aircraft and clear the fire-scene
+      airspace for roughly 26 minutes during the critical initial-attack window -- exactly the
+      drone interference with an active wildfire-suppression effort that ORS 837.374 (OR-002)
+      penalizes.
+    date_accessed: '2026-08-06'
+  - record_id: OR-004
+    headline: "After Uproar, Oregon Finally Rewrites Drone Laws — Here's What Pilots Need to Know"
+    url: https://dronexl.co/2025/10/18/after-uproar-oregon-rewrites-drone-laws/
+    source_name: DroneXL
+    publish_date: '2025-10-18'
+    jurisdiction_match: in_state
+    out_of_state_name: null
+    relevance_note: >-
+      Reports on the Oregon Parks and Recreation Department's Rule Advisory Committee review of
+      the draft "Drone Operation Areas" rule for state parks and the ocean shore -- the same
+      rulemaking process that produced the OAR 736-010-0040(13) UAS Operation Areas rule OR-004
+      addresses, describing the designated-zone concept, the campground/overnight-facility ban,
+      and the emergency-use carve-out that all appear in the rule as finally adopted.
+    date_accessed: '2026-08-06'

@@ -76,7 +76,20 @@
       "date_accessed": "2026-08-06",
       "confidence_level": "High",
       "verification_status": "Full current statutory text verified directly against the Oregon Legislature's official ORS Chapter 837 page, and the enrolled 2025 Oregon Laws chapter 604 (SB 1125) PDF verified directly against oregonlegislature.gov, in this retrofit pass. This corrects a materially outdated conclusion in the prior research pass, which tracked HB 3426's failure but missed SB 1125's passage of substantively the same change.",
-      "notes": "IMPORTANT CORRECTION (2026-08-06 retrofit): the prior record's 'not current law' conclusion for this penalty restructuring was incorrect -- a different bill (SB 1125) achieved the same substantive result and is now in force. This is a reminder that a 'died in committee' finding for one bill number does not establish that the underlying policy change failed; always check the current codified statute's own amendment history (the bracketed chapter/session-law citations at the end of the ORS section) before concluding a proposed change did not become law."
+      "notes": "IMPORTANT CORRECTION (2026-08-06 retrofit): the prior record's 'not current law' conclusion for this penalty restructuring was incorrect -- a different bill (SB 1125) achieved the same substantive result and is now in force. This is a reminder that a 'died in committee' finding for one bill number does not establish that the underlying policy change failed; always check the current codified statute's own amendment history (the bracketed chapter/session-law citations at the end of the ORS section) before concluding a proposed change did not become law.",
+      "news": [
+        {
+          "record_id": "OR-002",
+          "headline": "Flat Fire aerial tactics questioned",
+          "url": "https://www.nuggetnews.com/story/2026/01/14/news/flat-fire-aerial-tactics-questioned/38599.html",
+          "source_name": "The Nugget Newspaper (Sisters, Oregon)",
+          "publish_date": "2026-01-14",
+          "jurisdiction_match": "in_state",
+          "out_of_state_name": null,
+          "relevance_note": "Local reporting, built from the Oregon Department of Forestry's own minute-by-minute incident log, that a recreational drone spotted at 5:01 p.m. over the August 21, 2025 Flat Fire near Sisters forced ODF to hold all responding aircraft and clear the fire-scene airspace for roughly 26 minutes during the critical initial-attack window -- exactly the drone interference with an active wildfire-suppression effort that ORS 837.374 (OR-002) penalizes.",
+          "date_accessed": "2026-08-06"
+        }
+      ]
     },
     {
       "record_id": "OR-003",
@@ -146,7 +159,20 @@
       "date_accessed": "2026-08-06",
       "confidence_level": "High",
       "verification_status": "Full current rule text verified directly against the Secretary of State's Permanent Administrative Order PRD 4-2026 filing (OAR 736-010-0040) and OPRD's own state-parks.oregon.gov drone-operations page in this retrofit pass; corrects the prior record's adoption date and adds the OAR citation, which the prior pass did not have.",
-      "notes": "Rule newly effective 2026-05-01; the designated-area list opened its first ~19 sites 2026-08-08 (two days after this retrofit's research date) and is actively expanding -- re-check both the current Operation Area list and the permit requirement (which applies to all commercial/research use regardless of area designation) before each project."
+      "notes": "Rule newly effective 2026-05-01; the designated-area list opened its first ~19 sites 2026-08-08 (two days after this retrofit's research date) and is actively expanding -- re-check both the current Operation Area list and the permit requirement (which applies to all commercial/research use regardless of area designation) before each project.",
+      "news": [
+        {
+          "record_id": "OR-004",
+          "headline": "After Uproar, Oregon Finally Rewrites Drone Laws — Here's What Pilots Need to Know",
+          "url": "https://dronexl.co/2025/10/18/after-uproar-oregon-rewrites-drone-laws/",
+          "source_name": "DroneXL",
+          "publish_date": "2025-10-18",
+          "jurisdiction_match": "in_state",
+          "out_of_state_name": null,
+          "relevance_note": "Reports on the Oregon Parks and Recreation Department's Rule Advisory Committee review of the draft \"Drone Operation Areas\" rule for state parks and the ocean shore -- the same rulemaking process that produced the OAR 736-010-0040(13) UAS Operation Areas rule OR-004 addresses, describing the designated-zone concept, the campground/overnight-facility ban, and the emergency-use carve-out that all appear in the rule as finally adopted.",
+          "date_accessed": "2026-08-06"
+        }
+      ]
     },
     {
       "record_id": "OR-005",
