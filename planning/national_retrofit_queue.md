@@ -14,8 +14,29 @@ does not perform that research -- it only scores and orders it so the highest-ri
 happens first and the order is auditable, per the plan's own acceptance criteria
 ("Retrofit order is risk-based and documented").
 
-Pilot states (CA, FL, MN, OK, WA) are excluded -- already
-`current_method_complete` via Phase B and not part of this queue.
+Pilot states (CA, FL, MN, OK, WA) are excluded from the queue below -- see
+the progress ledger immediately below for their status instead.
+
+## Retrofit progress so far
+
+**Read this section first if you are a new session picking this up.** Generated from
+every `States/*/*_UAS_Research_Manifest.yaml` that currently exists -- not a hand-kept
+list, so it cannot drift out of sync the way a prose note can. A state appears here once
+it has a manifest at all (`current_method_in_progress` or better); it does not mean every
+open question in that state is resolved -- check `research_status` and
+`unresolved_count` per row, and that state's own checklist for specifics.
+
+| State | Pilot (Phase B) or Workstream 9 retrofit | research_status | unresolved_count | last_currency_check |
+|---|---|---|---|---|
+| CA (California) | Phase B pilot | legacy_needs_retrofit | 3 | 2026-08-02 |
+| FL (Florida) | Phase B pilot | legacy_needs_retrofit | 4 | 2026-08-02 |
+| MN (Minnesota) | Phase B pilot | current_method_in_progress | 1 | 2026-08-02 |
+| OK (Oklahoma) | Phase B pilot | current_method_complete | 0 | 2026-08-02 |
+| WA (Washington) | Phase B pilot | legacy_needs_retrofit | 4 | 2026-08-02 |
+| MO (Missouri) | Workstream 9 retrofit | current_method_in_progress | 1 | 2026-08-06 |
+
+**6 of 50 states** have a manifest as of this generation. Everything else
+below is the queue for states that do not yet.
 
 ## Tier definitions
 

@@ -50,9 +50,16 @@ import json
 import re
 from pathlib import Path
 
+try:
+    import yaml
+except ImportError:
+    yaml = None
+
 ROOT = Path(__file__).resolve().parents[1]
 STATES_DIR = ROOT / "States"
 PILOT_STATES_DOC = ROOT / "evals" / "pilot_states.md"
+
+PROGRESS_SECTION_PLACEHOLDER = "\x00PROGRESS_SECTION\x00"
 
 HIGH_RECORD_COUNT = 10
 PROCUREMENT_OR_PUBLIC_AGENCY_THRESHOLD = 2
@@ -212,6 +219,65 @@ def compute_all() -> list[dict]:
     return results
 
 
+def load_progress(pilot_abbrs: set[str]) -> list[dict]:
+    """States (pilot or not) that have a research manifest at all -- i.e., have been touched by
+    the current-method process, whether via Phase B piloting or a Workstream 9 retrofit. This is
+    the authoritative, mechanically-derived answer to "which states are done / in progress" for a
+    fresh session picking up this repo cold: don't rely on prose handoff notes alone (SESSIONS.md
+    entries can get buried once multiple sessions have logged since), read this instead, or just
+    `ls States/*/*_UAS_Research_Manifest.yaml`.
+    """
+    if yaml is None:
+        return []
+    progress = []
+    for manifest_path in sorted(STATES_DIR.glob("*/*_UAS_Research_Manifest.yaml")):
+        try:
+            manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8")) or {}
+        except yaml.YAMLError:
+            continue
+        abbr = str(manifest.get("state_abbr", manifest_path.parent.name.split("_", 1)[0]))
+        progress.append({
+            "state_abbr": abbr,
+            "state": manifest.get("state", manifest_path.parent.name.split("_", 1)[-1]),
+            "is_pilot": abbr in pilot_abbrs,
+            "research_status": manifest.get("research_status", "unknown"),
+            "legacy_retrofit_status": manifest.get("legacy_retrofit_status", "unknown"),
+            "last_currency_check": manifest.get("last_currency_check", "unknown"),
+            "unresolved_count": manifest.get("unresolved_count", "?"),
+        })
+    progress.sort(key=lambda p: (str(p["last_currency_check"]), p["state_abbr"]))
+    return progress
+
+
+def render_progress_section(progress: list[dict]) -> str:
+    lines = [
+        "## Retrofit progress so far",
+        "",
+        "**Read this section first if you are a new session picking this up.** Generated from",
+        "every `States/*/*_UAS_Research_Manifest.yaml` that currently exists -- not a hand-kept",
+        "list, so it cannot drift out of sync the way a prose note can. A state appears here once",
+        "it has a manifest at all (`current_method_in_progress` or better); it does not mean every",
+        "open question in that state is resolved -- check `research_status` and",
+        "`unresolved_count` per row, and that state's own checklist for specifics.",
+        "",
+        "| State | Pilot (Phase B) or Workstream 9 retrofit | research_status | unresolved_count | last_currency_check |",
+        "|---|---|---|---|---|",
+    ]
+    for p in progress:
+        origin = "Phase B pilot" if p["is_pilot"] else "Workstream 9 retrofit"
+        lines.append(
+            f"| {p['state_abbr']} ({p['state']}) | {origin} | {p['research_status']} | "
+            f"{p['unresolved_count']} | {p['last_currency_check']} |"
+        )
+    lines += [
+        "",
+        f"**{len(progress)} of 50 states** have a manifest as of this generation. Everything else",
+        "below is the queue for states that do not yet.",
+        "",
+    ]
+    return "\n".join(lines)
+
+
 def render_markdown(results: list[dict], pilot_abbrs: set[str]) -> str:
     lines = [
         "# National retrofit queue (Workstream 9)",
@@ -230,9 +296,10 @@ def render_markdown(results: list[dict], pilot_abbrs: set[str]) -> str:
         "happens first and the order is auditable, per the plan's own acceptance criteria",
         "(\"Retrofit order is risk-based and documented\").",
         "",
-        f"Pilot states ({', '.join(sorted(pilot_abbrs))}) are excluded -- already",
-        "`current_method_complete` via Phase B and not part of this queue.",
+        f"Pilot states ({', '.join(sorted(pilot_abbrs))}) are excluded from the queue below -- see",
+        "the progress ledger immediately below for their status instead.",
         "",
+        PROGRESS_SECTION_PLACEHOLDER,
         "## Tier definitions",
         "",
         "| Tier | Meaning |",
@@ -294,14 +361,15 @@ def main() -> int:
 
     pilot_abbrs = get_pilot_state_abbrs()
     results = compute_all()
-    md = render_markdown(results, pilot_abbrs)
+    progress = load_progress(pilot_abbrs)
+    md = render_markdown(results, pilot_abbrs).replace(PROGRESS_SECTION_PLACEHOLDER, render_progress_section(progress))
 
     if args.print_only:
         print(md)
         return 0
 
     args.out_md.write_text(md, encoding="utf-8")
-    args.out_json.write_text(json.dumps({"pilot_states_excluded": sorted(pilot_abbrs), "queue": results}, indent=2), encoding="utf-8")
+    args.out_json.write_text(json.dumps({"pilot_states_excluded": sorted(pilot_abbrs), "progress": progress, "queue": results}, indent=2), encoding="utf-8")
     print(f"wrote {args.out_md.relative_to(ROOT)} and {args.out_json.relative_to(ROOT)} ({len(results)} states)")
     return 0
 

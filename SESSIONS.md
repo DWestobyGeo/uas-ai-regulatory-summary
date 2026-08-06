@@ -17,6 +17,12 @@ scratch.
 4. Add a new entry at the top of the log when you start, and update it (or add a follow-up
    entry) when you stop, even mid-task. Note what's in flight so the next session — human
    or AI — doesn't duplicate or clobber it.
+5. **If you're picking up Workstream 9 (national retrofit) specifically:** don't rely on
+   prose entries below to figure out which states are done — read the "Retrofit progress
+   so far" table at the top of `planning/national_retrofit_queue.md` (or re-run
+   `python3 scripts/compute_retrofit_risk.py` to regenerate it first). It's generated
+   directly from which states have a `States/XX_.../XX_UAS_Research_Manifest.yaml`, so it
+   can't drift out of sync with reality the way a hand-kept list could.
 
 ---
 
