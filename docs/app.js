@@ -2,7 +2,7 @@
   "use strict";
 
   var INDEX_URL = "data/v1/index.json";
-  var UI_VERSION = "1.0.0";
+  var UI_VERSION = "1.1.0";
 
   var select = document.getElementById("state-select");
   var emptyState = document.getElementById("empty-state");
@@ -167,6 +167,42 @@
     });
   }
 
+  // These are the register's own established conventions for flagging an authority
+  // that is not currently enacted/binding law (see e.g. States/MO_Missouri and
+  // States/WA_Washington's "Repealed, expired, or superseded authority (never
+  // enacted)" and "Proposed or pending authority (died in committee)" subtitles, and
+  // headings ending "-- not current law" / "-- did not pass"). This reads content the
+  // research process already wrote; it does not add a new editorial judgment.
+  var NOT_CURRENT_LAW_SUBTITLE_PREFIXES = [
+    "proposed or pending authority",
+    "repealed, expired, or superseded authority"
+  ];
+  var NOT_CURRENT_LAW_TITLE_MARKERS = [
+    "not current law",
+    "did not pass"
+  ];
+
+  function isNotCurrentLawCard(heading, subtitleText) {
+    var title = (heading.textContent || "").toLowerCase();
+    if (NOT_CURRENT_LAW_TITLE_MARKERS.some(function (m) { return title.indexOf(m) !== -1; })) return true;
+    var subtitle = (subtitleText || "").trim().toLowerCase();
+    return NOT_CURRENT_LAW_SUBTITLE_PREFIXES.some(function (m) { return subtitle.indexOf(m) === 0; });
+  }
+
+  function flagNotCurrentLaw(card, heading) {
+    var subtitleEl = card.querySelector("p > em:only-child, p > em:first-child");
+    var subtitleText = subtitleEl ? subtitleEl.textContent : "";
+    if (!isNotCurrentLawCard(heading, subtitleText)) return;
+    card.classList.add("not-current-law");
+    heading.classList.add("not-current-law");
+    if (!heading.querySelector(".not-current-law-flag")) {
+      var flag = document.createElement("span");
+      flag.className = "not-current-law-flag";
+      flag.textContent = "Not current law";
+      heading.appendChild(flag);
+    }
+  }
+
   function wrapAuthorityCards() {
     var headings = Array.prototype.slice.call(summaryPanel.querySelectorAll("h3"));
     headings.forEach(function (heading) {
@@ -183,6 +219,7 @@
         card.appendChild(node);
         node = next;
       }
+      flagNotCurrentLaw(card, heading);
     });
   }
 
@@ -243,7 +280,15 @@
       item.className = heading.tagName === "H3" ? "toc-level-3" : "toc-level-2";
       var link = document.createElement("a");
       link.href = "#" + heading.id;
-      link.textContent = heading.textContent;
+      var isFlagged = heading.classList.contains("not-current-law");
+      link.textContent = heading.textContent.replace(/[\s\u2014-]*\(?(not current law|did not pass)\)?\s*$/i, "");
+      if (isFlagged) {
+        link.classList.add("not-current-law");
+        var tocFlag = document.createElement("span");
+        tocFlag.className = "toc-status-flag";
+        tocFlag.textContent = "Not current law";
+        link.appendChild(tocFlag);
+      }
       item.appendChild(link);
       list.appendChild(item);
     });

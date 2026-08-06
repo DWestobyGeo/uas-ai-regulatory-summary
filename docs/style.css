@@ -1,6 +1,6 @@
 /*
  * State UAS Regulatory Summaries design system
- * UI version: 1.0.0
+ * UI version: 1.1.0
  * Component and maintenance guidance: DESIGN_SYSTEM.md
  */
 
@@ -356,12 +356,47 @@ code {
 .reading-layout {
   display: grid;
   grid-template-columns: var(--toc-width) minmax(0, 1fr);
-  align-items: start;
+  /* Intentionally default (stretch), not "start": the sticky TOC below needs its
+     grid-item parent (.page-toc) to span the full row height, or position: sticky
+     has no room to hold and the TOC simply scrolls away with the page. */
   gap: clamp(1.25rem, 3vw, 2.5rem);
 }
 
 .page-toc { min-width: 0; }
 .page-toc details { position: sticky; top: 6.5rem; max-height: calc(100vh - 8rem); overflow: auto; }
+
+/* Not-current-law authority flag (proposed/pending, repealed/expired/superseded,
+   died-in-committee, myth-busting records). Applied by app.js to authority headings
+   whose Section 2 subtitle line or heading text matches the register's own
+   established "Proposed or pending authority" / "Repealed, expired, or superseded
+   authority" / "not current law" / "did not pass" conventions -- this is a read of
+   content the research process already wrote, not a new editorial judgment. */
+.authority-card.not-current-law > h3 { color: var(--critical); }
+.not-current-law-flag {
+  display: inline-block;
+  margin-left: 0.5em;
+  padding: 0.1em 0.55em;
+  border: 1px solid var(--critical);
+  border-radius: var(--radius-sm);
+  background: var(--critical-soft);
+  color: var(--critical);
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.toc-list a.not-current-law { color: var(--critical); font-weight: 760; }
+.toc-list .toc-status-flag {
+  display: inline-block;
+  margin-left: 0.35em;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--critical);
+}
 .page-toc summary {
   padding: 0 0 var(--space-3);
   color: var(--ink-strong);

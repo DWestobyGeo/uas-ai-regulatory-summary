@@ -75,7 +75,7 @@ All reusable values live in `:root` in `docs/style.css`.
 | `--line*` | Borders and dividers |
 | `--accent*` | Links, focus context, state navigation, and active TOC state |
 | `--teal`, `--sand`, `--violet` | Restrained role and content distinctions |
-| `--critical*` | AI/not-legal-advice limitation only |
+| `--critical*` | AI/not-legal-advice limitation, and the not-current-law authority flag (see Authority cards) |
 | `--focus` | High-visibility keyboard focus |
 
 Confidence colors are deliberately blue, violet, and muted rose rather than traffic-light colors. Confidence remains text-labeled and is never approval.
@@ -114,7 +114,14 @@ Uses a high-contrast header card for the state name, last update, source count, 
 
 ### Reading layout
 
-- Desktop: sticky TOC rail plus main reading column.
+- Desktop: sticky TOC rail plus main reading column. The `.reading-layout` grid must use
+  the default `align-items: stretch` (do not set `align-items: start`) -- the sticky TOC
+  is `position: sticky` on its *own* element (`.page-toc details`), but that only has room
+  to hold in place if its grid-item parent (`.page-toc`) stretches to the full row height.
+  `start` alignment shrinks the parent to the TOC's own content height, silently breaking
+  the stick with no visible error -- it simply scrolls away with the page.
+- The current section is tracked with an `IntersectionObserver` and marked both with a
+  bold `.active` style and `aria-current="location"` on the corresponding TOC link.
 - Tablet/mobile: one column with an “On this page” disclosure.
 - The TOC is generated from rendered `h2` and `h3` headings and always includes the Source Register.
 - Heading IDs are deterministic and duplicate-safe.
@@ -137,6 +144,19 @@ Each `h3` authority and its following content is wrapped by the renderer into on
 - AEC Industry Legal Counsel: violet
 
 These colors distinguish roles only. The surrounding UI must continue to identify them as AI perspectives.
+
+#### Not-current-law flag
+
+An authority whose subtitle line or heading already declares it is not enacted -- using
+the register's own established conventions ("Proposed or pending authority", "Repealed,
+expired, or superseded authority", a heading ending "-- not current law" or "-- did not
+pass") -- is flagged in both the authority card heading and its table-of-contents entry
+with the `--critical` color plus a visible "Not current law" text badge. This reads a
+classification the research process already wrote into the content; it is not a new
+editorial judgment, and it does not use color alone (Section 8). It is a distinct concept
+from flight-legality traffic-light styling, which remains prohibited (Section 6.7): this
+flag describes the status of the *cited authority itself* (was it ever enacted?), not
+whether any activity is permitted.
 
 ### Source register
 
