@@ -22,6 +22,102 @@ scratch.
 
 ## Log (newest first)
 
+### 2026-08-06 — Phase D, Workstream 7 (register-as-publication-source) complete and pushed
+
+**Status:** Complete and pushed in three commits (`8868b05` authored/generated split for OK/MN/CA/FL,
+`2afe00c` rebuild of docs/data/v1 for those four states, `a4b7de0` drift-detection CI gate + banner
+fix + legal-counsel boilerplate finding). Same fresh-clone/PAT caveats as prior entries apply.
+Authorized by the user via "Please continue with phase d" after Phase C landed; user also confirmed
+mid-workstream that they wanted milestone pushes to continue, and separately asked to see the effect
+live on the site, which is what `2afe00c` was for.
+
+**What landed:**
+
+- **The authored/generated split.** `scripts/generate_summary.py` regenerates the authority
+  sections of a state's printable `XX_UAS_Regulatory_Summary.md` (headings, type/status line,
+  Objective Summary, and the four Practical Interpretation bullets) verbatim from
+  `XX_UAS_Source_Register.csv`, so the CSV register is now the actual publication source of truth
+  instead of a hand-maintained parallel copy that can silently drift from it. Each converted state
+  gets a new `XX_UAS_Summary_Authored.md` holding the narrative/authored sections (header block,
+  Overview, Non-Regulatory Context, Unresolved Operational Questions, Confidence Summary) plus
+  `<!-- GENERATED_SECTION heading="..." records="ID1,ID2,..." heading_style="..." -->` markers.
+  `--write` regenerates; `--check` diffs without writing (drift = exit 1).
+- **Scope of conversion, deliberately uneven across the five pilot states:**
+  - **OK:** fully converted (proof of concept first, before touching the other four). Diffing the
+    generator's first output against the previously published file surfaced exactly one real
+    content difference — OK-002's summary wording — confirming the register was already
+    authoritative and the old Markdown had drifted.
+  - **MN:** fully converted, one generated section (7 records).
+  - **CA, FL:** only "Statewide UAS Laws and Regulations" converted. Each state's "State Agency UAS
+    Requirements" section uses non-derivable custom heading labels (e.g. FL's
+    "### Procurement — Florida Department of Management Services") with no field that reconstructs
+    them, so those sections are left authored/untouched rather than forcing a scheme onto them.
+  - **WA: not converted.** Its headers are inconsistent/custom throughout both sections with no
+    salvageable pattern — left as legacy hand-maintained content for a future cleanup pass.
+  - Regenerating MN/CA/FL surfaced substantially more register-vs-published drift than OK did
+    (reworded Objective Summary/interpretation text, updated type/status formatting, one added
+    record detail on a CA immunity statute). All of it traces to fields already present in the
+    committed CSV register — the generator performs template substitution only and introduces no
+    new interpretive content, so publishing it brings the printed files in line with data that was
+    already authoritative per governance Sec 5.1, rather than rewriting interpretive judgments.
+  - `docs/data/v1/{OK,MN,CA,FL}.json` were rebuilt and committed (not reverted like the routine
+    mtime-only `build_data.py` diff — these four had real `summary_markdown` content changes) so
+    the live printable view actually reflects the fix. The structured "compare four perspectives"
+    view was already sourced live from the CSV register and unaffected by this workstream.
+- **`scripts/validate_generated_summary.py` (new, wired into `site-quality.yml`).** Regenerates
+  every state with an authored template and fails CI if the committed
+  `XX_UAS_Regulatory_Summary.md` disagrees with the generator's output against the current
+  register + template — catches both hand-edits to a generated section and CSV edits that forgot
+  a regenerate. States without an authored template (WA) are skipped, not flagged.
+- **Banner fix (user-reported mid-session):** the "Generated content notice" was originally a
+  visible Markdown blockquote injected into the published summary — it showed up on the live site
+  addressed to a general reader, referencing internal script/file names, redundant with and
+  tonally inconsistent against the site's existing AI-research disclaimer banner/footer. Changed
+  to an HTML comment (marked.js passes raw HTML through; browsers don't display comments), so it's
+  invisible on the live site but still visible to anyone reading the raw `.md` source or editing
+  the file.
+- **`check_duplicate_interpretations` (in `validate_research_semantics.py`) now also scans
+  `practical_interpretation_legal_counsel`**, not just the AEC-expert field. This surfaces a real
+  finding: **Oklahoma's `practical_interpretation_legal_counsel` is an identical boilerplate
+  template across OK-001, OK-002, and OK-003**, differing only in the substituted citation —
+  including OK-002, a pure privacy/consent statute with no application/approval process at all,
+  where the template still instructs retaining "the current application, all attachments, written
+  approval, conditions, amendments, and closeout records" and to escalate if "the approving
+  official ... is unclear." This is exactly the boilerplate-risk failure mode OK was selected to
+  pilot (`evals/pilot_states.md`). **Not corrected here** — rewriting OK's already-published
+  interpretive text would be retroactive interpretation authorship, out of scope for a
+  tooling/detection change (same boundary established for the AEC/legal no-impact work in Phase
+  C). Documented in `States/OK_Oklahoma/OK_UAS_Research_Manifest.yaml`'s `known_issues`, and
+  surfaces as `ACKNOWLEDGED` (visible, non-blocking) rather than `ERROR` in validator output,
+  since OK's records are already covered in its manifest. Left for a future dedicated
+  legal-counsel-role research pass on OK.
+
+**Next task — start here:** Workstream 8 (currency/URL-health), not yet started:
+- Extend the research manifest schema with currency fields (next-review date, cadence, recheck
+  triggers).
+- Stop using filesystem mtime for `docs/data/v1/*.json`'s `last_updated` — it's populated from
+  the build script's run time, not actual research currency, and gets rewritten on every
+  `build_data.py` run regardless of content change (confirmed reproducible; this is why every
+  build-sanity-check in this project's history ends with `git checkout -- docs/data/v1/` unless
+  content genuinely changed, as it did this workstream for OK/MN/CA/FL).
+- A URL-health checker script — **cannot be tested live from this sandbox**: its shell has an
+  egress allowlist that returns `403`/`blocked-by-allowlist` for arbitrary government source
+  domains (confirmed against `www.oklegislature.gov`). Build it to run correctly in an
+  environment with real network access (e.g., a GitHub Actions job), but do **not** wire it into
+  the required `site-quality.yml` gate — external-site flakiness shouldn't fail the whole build.
+  Make it a separate, optional/manual script or a non-blocking scheduled workflow.
+- Test, commit, push as milestone 3 of Phase D, following the same per-workstream push
+  discipline used throughout Phase C/D.
+
+Also outstanding, lower priority: consider whether `check_duplicate_interpretations`'s
+manifest-acknowledgment mechanism (any record_id appearing anywhere in a pilot state's
+`coverage.*.record_ids` counts as "acknowledged," regardless of finding type) is too coarse —
+it means a fully-researched pilot state effectively pre-acknowledges any future finding on its
+records. Not changed in this workstream since it's pre-existing, established behavior from
+Workstream 3, but worth a second look before leaning on it for a genuinely new finding category.
+
+---
+
 ### 2026-08-06 — Phase C (Workstreams 5-6) complete and pushed
 
 **Status:** Complete and pushed in two commits (`2db3547` Workstream 5, `20aba12` Workstream 6),
