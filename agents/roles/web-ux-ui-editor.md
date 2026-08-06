@@ -1,9 +1,9 @@
 ---
 role_id: web-ux-ui-editor
 name: Web UX/UI and Editorial Agent
-version: 1.1.0
+version: 1.2.0
 status: active
-last_updated: 2026-08-02
+last_updated: 2026-08-06
 governance: ../../Agent_Instructions.v6.md
 role_type: presentation
 phases:
@@ -193,6 +193,7 @@ Create a clickable table of contents from the rendered state summary.
 - Do not change the wording, order, scope, or legal meaning of the four perspectives.
 - Avoid four strongly colored panels competing for attention. Use restrained labels, borders, icons, or background tints.
 - Do not label any AI perspective as if an actual attorney, agency official, procurement officer, or licensed professional reviewed it. Preserve the repository’s chosen role labels where they come from source data, while ensuring surrounding UI identifies them as AI perspectives.
+- **Exception -- Related News is not a fifth AI perspective.** A record may carry an optional, separately-sourced `news` array (populated by the `news-aggregator` role into a per-state `*_UAS_News.yaml` file, merged in by `build_data.py`). Render it as a structurally distinct element (not a fifth colored perspective panel), and, unlike the four fixed perspectives, omit it entirely from a record that has no genuinely on-topic, verified news rather than showing an empty or "Not applicable" placeholder. Do not extend this hide-when-empty treatment to the four governed AI perspectives themselves. See `docs/DESIGN_SYSTEM.md`, "Related news," for the full contract.
 
 ### 6.9 Uncertainty and status
 

@@ -2,7 +2,7 @@
 
 **UI version:** 1.0.0
 
-**Agent scope:** `web-ux-ui-editor` v1.1.0
+**Agent scope:** `web-ux-ui-editor` v1.2.0
 
 **Applies to:** the public GitHub Pages site under `docs/`
 
@@ -76,6 +76,7 @@ All reusable values live in `:root` in `docs/style.css`.
 | `--accent*` | Links, focus context, state navigation, and active TOC state |
 | `--teal`, `--sand`, `--violet` | Restrained role and content distinctions |
 | `--critical*` | AI/not-legal-advice limitation, and the not-current-law authority flag (see Authority cards) |
+| `--news`, `--surface-news` | The conditional "Related news" element (see Authority cards) -- deliberately distinct from `--teal`/`--sand`/`--violet`/`--accent`, which are reserved for the four AI-perspective roles |
 | `--focus` | High-visibility keyboard focus |
 
 Confidence colors are deliberately blue, violet, and muted rose rather than traffic-light colors. Confidence remains text-labeled and is never approval.
@@ -144,6 +145,39 @@ Each `h3` authority and its following content is wrapped by the renderer into on
 - AEC Industry Legal Counsel: violet
 
 These colors distinguish roles only. The surrounding UI must continue to identify them as AI perspectives.
+
+#### Related news (conditional fifth element)
+
+A source-register record may carry an optional `news` array, populated by the
+`news-aggregator` role (`agents/roles/news-aggregator.md`) into a per-state, opt-in
+`States/XX_StateName/XX_UAS_News.yaml` file and merged onto matching `record_id`s by
+`build_data.py`. This is deliberately **not** a fifth AI-perspective panel:
+
+- It is structurally distinct from the four fixed AI-perspective panels (dashed
+  left border, a document-icon kicker, and an explicit "informational only, not a
+  legal source" disclaimer line) rather than merely a fifth accent color, so the
+  difference in kind -- aggregated news items, not an AI interpretive opinion --
+  does not depend on color alone.
+- Unlike the four fixed perspectives, which governance (Section 6.8) requires to
+  always render even as "Not applicable," a record with no genuinely on-topic,
+  verified news simply has no `news` array and the section is omitted entirely.
+  This is the intentional "revolving cast, hide what has nothing useful" exception
+  the four fixed roles do not get -- news is either found or it is not, and an
+  empty "no news found" placeholder on the large majority of records that will
+  never have any would be noise, not signal.
+- Each item shows an explicit **in-state / out-of-state** badge (text label plus a
+  solid-vs-dashed border distinction, not color alone) so a reader never mistakes
+  another state's news for this state's own. Out-of-state items name the state.
+- Each item's `relevance_note` must tie the story specifically to the record's own
+  regulatory subject matter -- the role's governing instructions require precision
+  over recall (an on-topic story from a related-but-different regulation, e.g. a
+  hunting-and-drones story attached to a critical-infrastructure record, must never
+  be attached) and require it be omitted rather than force a loose match.
+- Rendered only in the Source Register accordion for the matching `record_id` in
+  this iteration; the freeform narrative "Statewide"/"State Agency" sections are
+  authored/generated Markdown without a structured per-record attachment point, so
+  the news element does not yet appear there. A future pass could extend this once
+  every state's narrative reliably carries an unambiguous authority-to-record link.
 
 #### Not-current-law flag
 

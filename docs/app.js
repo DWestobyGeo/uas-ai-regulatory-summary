@@ -2,7 +2,7 @@
   "use strict";
 
   var INDEX_URL = "data/v1/index.json";
-  var UI_VERSION = "1.1.1";
+  var UI_VERSION = "1.2.0";
 
   var select = document.getElementById("state-select");
   var emptyState = document.getElementById("empty-state");
@@ -475,6 +475,46 @@
     return '<div class="perspective-panel ' + className + '"><h5>' + escapeHtml(label) + '</h5><p>' + escapeHtml(value || "Not provided") + "</p></div>";
   }
 
+  // Related News: a conditional fifth element, populated by the news-aggregator role
+  // (see agents/roles/news-aggregator.md) into an optional per-state
+  // *_UAS_News.yaml file, merged onto matching records by build_data.py. Unlike the
+  // four fixed AI-perspective panels above -- which the corpus's governance requires
+  // to always render, even as "Not applicable" -- a record with no genuinely
+  // on-topic, verified news simply has no `news` array, and this section is omitted
+  // entirely rather than shown empty. See DESIGN_SYSTEM.md, "Related news."
+  function newsItemPanel(item) {
+    if (!item) return "";
+    var isInState = item.jurisdiction_match === "in_state";
+    var badgeClass = isInState ? "news-badge-in-state" : "news-badge-out-of-state";
+    var badgeText = isInState
+      ? "In-state"
+      : "Out of state" + (item.out_of_state_name ? " (" + escapeHtml(item.out_of_state_name) + ")" : "");
+    var headline = item.url
+      ? '<a href="' + escapeHtml(item.url) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(item.headline || "Untitled item") + "</a>"
+      : escapeHtml(item.headline || "Untitled item");
+    var metaBits = [item.source_name, item.publish_date].filter(Boolean).map(escapeHtml).join(" · ");
+    return (
+      '<article class="news-item">' +
+        '<div class="news-item-header">' +
+          '<span class="news-badge ' + badgeClass + '">' + badgeText + "</span>" +
+          headline +
+        "</div>" +
+        (metaBits ? '<div class="news-item-meta">' + metaBits + "</div>" : "") +
+        (item.relevance_note ? '<p class="news-item-note">' + escapeHtml(item.relevance_note) + "</p>" : "") +
+      "</article>"
+    );
+  }
+
+  function newsBlock(record) {
+    var items = Array.isArray(record.news) ? record.news : [];
+    if (!items.length) return "";
+    return (
+      '<section class="reg-block news-block"><h4>Related News</h4>' +
+      '<p class="news-disclaimer">Informational only, not a legal source or evidence of current legal status. Independently verify before relying on any item below.</p>' +
+      '<div class="news-list">' + items.map(newsItemPanel).join("") + "</div></section>"
+    );
+  }
+
   function buildCard(record, index) {
     var card = document.createElement("article");
     card.className = "reg-card";
@@ -515,6 +555,7 @@
         perspectivePanel("UAS Procurement Expert", record.practical_interpretation_uas_procurement_expert, "perspective-procurement") +
         perspectivePanel("AEC Industry Legal Counsel", record.practical_interpretation_legal_counsel, "perspective-legal") +
       "</div></section>" +
+      newsBlock(record) +
       (record.notes ? '<section class="reg-block notes-block"><h4>Research Notes</h4><p>' + escapeHtml(record.notes) + "</p></section>" : "") +
       '<footer class="reg-footer">' +
         (record.source_url ? '<a href="' + escapeHtml(record.source_url) + '" target="_blank" rel="noopener noreferrer">Open cited source <span aria-hidden="true">↗</span></a>' : '<span class="source-missing">Source URL not provided</span>') +
@@ -547,12 +588,15 @@
     if (relevance && levelClass(record.aec_relevance) !== relevance) return false;
     if (!query) return true;
 
+    var newsText = Array.isArray(record.news)
+      ? record.news.map(function (item) { return [item.headline, item.relevance_note].filter(Boolean).join(" "); }).join(" ")
+      : "";
     var haystack = [
       record.source_title, record.citation, record.uas_topic, record.summary,
       record.issuing_authority, record.regulated_party, record.regulated_activity,
       record.practical_interpretation_aec_expert, record.practical_interpretation_agency_practitioner,
       record.practical_interpretation_uas_procurement_expert, record.practical_interpretation_legal_counsel,
-      record.record_id, record.notes
+      record.record_id, record.notes, newsText
     ].join(" ").toLowerCase();
     return haystack.indexOf(query.toLowerCase()) !== -1;
   }

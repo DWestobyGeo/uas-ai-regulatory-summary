@@ -56,6 +56,62 @@ def get_last_updated(script_dir, csv_path, state_dir):
     return datetime.date.fromtimestamp(mtime).isoformat()
 
 
+def load_news(state_dir, folder_name):
+    """Workstream: news-aggregator role support (see agents/roles/news-aggregator.md).
+
+    Reads an optional, purely additive `*_UAS_News.yaml` file and returns a dict of
+    record_id -> list of news-item dicts, to be merged onto matching source-register
+    records by the caller. This intentionally does NOT touch the 33-field CSV schema
+    or scripts/validate_phase2.py's EXPECTED column list -- the news file is a
+    separate, optional artifact, and a state with no news file (the overwhelming
+    majority, by design -- most authorities will never have genuinely on-topic,
+    verified news) simply contributes no `news` key to any of its records.
+
+    Each item is expected to provide: record_id, headline, url, source_name,
+    publish_date, jurisdiction_match ("in_state" or "out_of_state"),
+    out_of_state_name (only when jurisdiction_match == "out_of_state"),
+    relevance_note, and date_accessed. Malformed items (missing record_id,
+    headline, or an invalid jurisdiction_match) are skipped with a warning rather
+    than silently guessed at or included -- precision over recall, per the role's
+    own governing instructions.
+    """
+    news_by_id = {}
+    if yaml is None:
+        return news_by_id
+    news_files = glob.glob(os.path.join(state_dir, "*_UAS_News.yaml"))
+    if not news_files:
+        return news_by_id
+    try:
+        with open(news_files[0], encoding="utf-8") as nf:
+            doc = yaml.safe_load(nf) or {}
+    except (OSError, yaml.YAMLError) as exc:
+        print(f"WARN ({folder_name}): could not parse {news_files[0]}: {exc}")
+        return news_by_id
+
+    for item in doc.get("items", []) or []:
+        record_id = (item.get("record_id") or "").strip()
+        headline = (item.get("headline") or "").strip()
+        jurisdiction_match = (item.get("jurisdiction_match") or "").strip()
+        if not record_id or not headline:
+            print(f"WARN ({folder_name}): skipping news item missing record_id or headline: {item!r}")
+            continue
+        if jurisdiction_match not in ("in_state", "out_of_state"):
+            print(f"WARN ({folder_name}): skipping news item {record_id!r} with invalid jurisdiction_match {jurisdiction_match!r}")
+            continue
+        news_by_id.setdefault(record_id, []).append({
+            "record_id": record_id,
+            "headline": headline,
+            "url": item.get("url"),
+            "source_name": item.get("source_name"),
+            "publish_date": item.get("publish_date"),
+            "jurisdiction_match": jurisdiction_match,
+            "out_of_state_name": item.get("out_of_state_name"),
+            "relevance_note": item.get("relevance_note"),
+            "date_accessed": item.get("date_accessed"),
+        })
+    return news_by_id
+
+
 def get_research_status(state_dir):
     """Workstream 9 (retrofit visibility): report a state's research_status per the controlled
     vocabulary in States/RESEARCH_MANIFEST_SCHEMA.md, so the live site can visibly distinguish a
@@ -117,6 +173,15 @@ for sd in state_dirs:
     last_updated = get_last_updated(SCRIPT_DIR, csv_path, sd)
     research_status = get_research_status(sd)
 
+    news_by_id = load_news(sd, folder_name)
+    news_record_count = 0
+    if news_by_id:
+        for rec in records:
+            matched = news_by_id.get(rec.get("record_id", ""))
+            if matched:
+                rec["news"] = matched
+                news_record_count += len(matched)
+
     state_obj = {
         "schema_version": "1.1",
         "state": name,
@@ -153,7 +218,7 @@ for sd in state_dirs:
         "json_url": f"data/v1/{abbr}.json"
     })
 
-    print("Built:", abbr, name, "records:", len(records))
+    print("Built:", abbr, name, "records:", len(records), (f"news items: {news_record_count}" if news_record_count else ""))
 
 index["states"].sort(key=lambda s: s["state_abbr"])
 index["state_count"] = len(index["states"])
