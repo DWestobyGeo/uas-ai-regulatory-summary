@@ -53,6 +53,15 @@
       "unresolved_count": 4
     },
     {
+      "state_abbr": "AR",
+      "state": "Arkansas",
+      "is_pilot": false,
+      "research_status": "current_method_in_progress",
+      "legacy_retrofit_status": "retrofit_in_progress",
+      "last_currency_check": "2026-08-05",
+      "unresolved_count": 1
+    },
+    {
       "state_abbr": "MO",
       "state": "Missouri",
       "is_pilot": false,
@@ -101,24 +110,6 @@
         "11 authorities (>= 10)",
         "no record mentions state preemption of local ordinances"
       ]
-    },
-    {
-      "state_abbr": "AR",
-      "state": "Arkansas",
-      "tier": 1,
-      "risk_score": 16,
-      "record_count": 8,
-      "has_manifest": false,
-      "has_checklist": false,
-      "checklist_unresolved": false,
-      "tier1_triggers": [
-        "legacy state (no manifest, no checklist)",
-        "3 low-confidence record(s)",
-        "4 criminal/felony-restriction record(s)",
-        "4 registration/licensing/permit/procurement record(s)",
-        "2 secondary-source-controlling record(s)"
-      ],
-      "tier2_triggers": []
     },
     {
       "state_abbr": "IL",
@@ -318,6 +309,25 @@
       ],
       "tier2_triggers": [
         "15 authorities (>= 10)"
+      ]
+    },
+    {
+      "state_abbr": "AR",
+      "state": "Arkansas",
+      "tier": 1,
+      "risk_score": 14,
+      "record_count": 11,
+      "has_manifest": true,
+      "has_checklist": true,
+      "checklist_unresolved": true,
+      "tier1_triggers": [
+        "2 low-confidence record(s)",
+        "5 criminal/felony-restriction record(s)",
+        "4 registration/licensing/permit/procurement record(s)",
+        "2 secondary-source-controlling record(s)"
+      ],
+      "tier2_triggers": [
+        "11 authorities (>= 10)"
       ]
     },
     {

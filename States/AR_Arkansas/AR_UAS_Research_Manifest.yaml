@@ -1,0 +1,135 @@
+# State Research Manifest -- Workstream 9 (national retrofit, per planning/national_retrofit_queue.md)
+# Schema: States/RESEARCH_MANIFEST_SCHEMA.md
+# Owner: Research Expert (agents/roles/research-expert.md)
+# Validated by: scripts/validate_research_manifests.py
+
+state: Arkansas
+state_abbr: AR
+method_version: 1.0.0
+research_status: current_method_in_progress
+legacy_retrofit_status: retrofit_in_progress
+last_full_research_date: '2026-08-01'
+last_currency_check: '2026-08-05'
+source_cutoff_date: '2026-08-05'
+coverage:
+  state_statutes_and_amendments:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - AR-001
+    - AR-002
+    - AR-003
+    - AR-004
+    - AR-005
+    - AR-009
+    - AR-010
+    - AR-011
+    note: Act 2025-597 (the "Arkansas Privacy Act," HB1148, eff. 2025-08-05) was found in this pass --
+      a previously unrecorded legislative event that substantially amended Section 5-60-103 (AR-001)
+      and added three wholly new authorities (AR-009, AR-010, AR-011). AR-005's citation and
+      effective date were corrected (Act 2023, No. 35, eff. 2023-08-01). AR-002/003/004
+      re-confirmed unaffected.
+  administrative_rules:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - AR-008
+    note: Board of Licensure for Professional Engineers and Professional Surveyors' Rules of
+      Professional Conduct, Article 20 Section B(1), verified directly against a current-rules
+      mirror, correcting a prior citation to a superseded "Rule 415" numbering that could not be
+      independently re-located.
+  executive_orders:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids:
+    - AR-008
+    note: Re-searched 2026-08-05; no Arkansas executive order specifically addressing UAS regulation
+      located.
+  court_decisions_and_ag_opinions:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids:
+    - AR-008
+    note: Re-searched 2026-08-05; no Arkansas Attorney General opinion or controlling court decision
+      directly addressing UAS regulation located.
+  aviation_and_transportation_agencies:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids:
+    - AR-008
+    note: Re-searched 2026-08-05; no separate Arkansas DOT/aeronautics-office UAS program or policy
+      distinct from FAA requirements located. Act 2025-597 did not create one either -- its ArDOT
+      references (Section 5-60-103(c)(4), Section 27-118-101(b)(21)) are consent/safe-harbor
+      exceptions, not a standalone DOT UAS program.
+  parks_public_lands_and_natural_resources:
+    status: unresolved_verification_required
+    unresolved: true
+    record_ids:
+    - AR-006
+    note: Arkansas State Parks' reported Special Use Permit requirement remains uncorroborated
+      against a primary source despite a renewed direct-fetch attempt against
+      arkansasstateparks.com in this pass; treated honestly as unresolved rather than folded into
+      a found/not-found bucket.
+  corrections_public_safety_and_critical_infrastructure:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - AR-001
+    - AR-002
+    - AR-009
+    note: Critical-infrastructure offense (Section 5-60-103(a)-(d)) and both its civil-liability
+      companions (Section 16-118-111, and the new Section 16-118-119) re-confirmed/added.
+  privacy_surveillance_trespass_and_interference:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - AR-001
+    - AR-003
+    - AR-004
+    - AR-005
+    - AR-009
+    - AR-010
+    - AR-011
+    note: Act 2025-597's new images offense, possession/disclosure offense, civil action, and
+      statewide lawful-use safe harbor substantially expanded this category; voyeurism statutes
+      and the sex-offender UAS restriction re-confirmed/corrected.
+  procurement_equipment_and_cybersecurity:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids:
+    - AR-008
+    note: Re-searched 2026-08-05; no Arkansas-specific state UAS procurement restriction located.
+      Section 27-118-101(c) expressly excludes UAS manufacture, assembly, distribution, or sale
+      from its scope, confirming Act 2025-597 did not add an equipment-commerce provision either.
+  professional_licensing_board_material:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - AR-008
+    note: See administrative_rules.
+  state_preemption:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids:
+    - AR-007
+    note: Re-confirmed 2026-08-05, including a specific check that Act 2025-597 did not add a
+      preemption provision.
+record_count: 11
+unresolved_count: 1
+low_confidence_record_count: 2
+primary_source_percentage: 82
+known_issues:
+  - >-
+    Section 5-60-103's UAS-definition COA-exclusion clause, as enrolled in Act 2025-597, contains
+    apparently uncorrected drafting language ("certificate of authorization issued by the operated
+    by a person for a commercial purpose..."); should be rechecked against the official codified
+    text once available. See AR_UAS_Research_Checklist.md, "Open verification items."
+  - >-
+    Arkansas State Parks' reported UAS Special Use Permit requirement (AR-006) remains unconfirmed
+    against a primary source despite a renewed direct-fetch attempt in this pass.
+  - >-
+    Section 27-118-101(b)(20)'s reference to "a surveyor within the Department of Transformation
+    and Shared Services" (AR-011) was not independently cross-verified against that department's
+    current organization in this pass.
+next_currency_review: '2026-09-04'
+recheck_triggers: []

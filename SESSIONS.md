@@ -28,6 +28,74 @@ scratch.
 
 ## Log (newest first)
 
+### 2026-08-05 — Workstream 9 retrofit: Arkansas (queue rank #2, final of "3 more" states)
+
+**Status:** Complete, committed and pushed. Third and final of the "3 more" states this session
+was authorized to retrofit (Texas, Pennsylvania, Arkansas).
+
+**Headline finding:** Located and incorporated **Act 2025-597 (the "Arkansas Privacy Act," HB1148,
+approved 2025-04-14, effective 2025-08-05)** -- a previously unrecorded 2025-session enactment that
+substantially amended and retitled Arkansas's core UAS statute and added three wholly new
+authorities. This is exactly the kind of substantive gap the retrofit process exists to catch, not
+just a citation cleanup pass. Verified directly against the official enrolled Act 597 PDF at
+arkleg.state.ar.us (not a secondary drone-law compilation), cross-checked against the Arkansas
+Legislature's own bill-status page to confirm passage, approval date, and lack of an emergency
+clause (hence the ~91-day-after-sine-die effective date of 2025-08-05, corroborated by ArDOT's own
+"new laws in effect August 5" notice).
+
+**What changed:**
+- **AR-001 (Ark. Code Ann. Section 5-60-103, major rewrite):** the critical-infrastructure offense
+  was preserved but its definition expanded (natural gas lines/facilities/storage added) and a new
+  ArDOT/public-works consent exception added. A wholly new "images" offense was created (subsections
+  (e)-(f)): purposely capturing an image of a person or private property for surveillance purposes,
+  Class C misdemeanor, with an image-destruction defense and a defense tied to the new AR-011 safe
+  harbor. Flagged, rather than silently corrected, an apparent drafting anomaly in the enrolled
+  Act's COA-exclusion clause that reads as an uncorrected amendment-stacking artifact.
+- **AR-009 (new):** Ark. Code Ann. Section 16-118-119, a second civil action (distinct from AR-002's
+  pre-existing critical-infrastructure-only remedy) giving a property owner/tenant statutory damages
+  ($5,000-$10,000 per episode) plus injunctive relief and mandatory attorney's fees for a violation
+  of the new images offense.
+- **AR-010 (new):** Ark. Code Ann. Section 5-60-126, a new possession/disclosure/distribution offense
+  for images captured in violation of the images offense, with each image a separate offense.
+- **AR-011 (new, most AEC-relevant):** Ark. Code Ann. Section 27-118-101, a new 25-category statewide
+  lawful-use safe harbor. Subdivision (b)(23) expressly names **Arkansas-licensed engineers and
+  surveyors performing mapping, land-surveying, or infrastructure-supporting GIS work** as a lawful
+  use -- a direct, named statutory safe harbor for core AEC drone survey work that did not exist
+  before this Act.
+- **AR-005 (Ark. Code Ann. Section 5-14-138, sex-offender UAS restriction):** re-verified directly
+  against Justia; citation corrected to include the enacting Act (2023, No. 35, Section 2, eff.
+  2023-08-01), confidence raised Moderate -> High.
+- **AR-008 (professional licensing competency rule):** the prior "Rule 415" citation could not be
+  independently re-located in the Board's current rules text. Traced the substantively identical
+  competency clause to Article 20, Section B(1) of the Board's current Rules of Professional
+  Conduct (codified at 235.01.20 Ark. Code R. Section 004) via a Cornell LII mirror, and corrected
+  the citation; confidence raised Low -> Moderate.
+- **AR-002/003/004:** re-confirmed unaffected by Act 2025-597.
+- **AR-006 (Arkansas State Parks permit) and AR-007 (no preemption statute):** re-attempted primary-
+  source verification; both remain honest research gaps (AR-006 marked `unresolved_verification_
+  required` in the manifest rather than folded into a found/not-found bucket) rather than guessed
+  at or silently dropped.
+
+Manifest: `current_method_in_progress`, `record_count: 11`, `unresolved_count: 1` (AR-006),
+`low_confidence_record_count: 2` (AR-006, AR-007), `primary_source_percentage: 82`,
+`next_currency_review: 2026-09-04`. Arkansas drops off the legacy retrofit queue; **9 of 50 states**
+now have a manifest.
+
+**Not yet done / open items:** the enrolled Act's COA-exclusion drafting anomaly should be rechecked
+against the official codified text once published; Arkansas State Parks' reported permit policy
+remains unconfirmed against a primary source; Section 27-118-101(b)(20)'s "Department of
+Transformation and Shared Services" surveyor reference was not independently cross-verified. See
+`AR_UAS_Research_Checklist.md`, "Open verification items."
+
+All validators (`validate_phase2.py`, `validate_research_manifests.py` [manifests_found=9,
+errors=0], `validate_research_semantics.py`, `validate_generated_summary.py`, `validate_roles.py`,
+`validate_methodologies.py`, `validate_site.py`) and the eval fixture checks (fixture_checks 18/18,
+role_applicability_checks 41/41, url_health_fixture_checks 4/4) pass locally as of this entry.
+
+**Next:** this completes the "3 more states" batch (Texas, Pennsylvania, Arkansas) authorized this
+session, alongside the earlier Missouri trial run and the two UI-UX fixes (floating/bolded TOC,
+red "not current law" flag). Report back to the user for direction on further retrofit pacing.
+
 ### 2026-08-06 — Workstream 9 retrofit: Pennsylvania (queue rank #2)
 
 **Status:** Complete locally, about to be committed and pushed. Third of the "3 more states"
