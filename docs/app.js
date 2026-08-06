@@ -182,20 +182,31 @@
     "did not pass"
   ];
 
-  function isNotCurrentLawCard(heading, subtitleText) {
+  function titleAlreadyDeclaresNotCurrent(heading) {
     var title = (heading.textContent || "").toLowerCase();
-    if (NOT_CURRENT_LAW_TITLE_MARKERS.some(function (m) { return title.indexOf(m) !== -1; })) return true;
+    return NOT_CURRENT_LAW_TITLE_MARKERS.some(function (m) { return title.indexOf(m) !== -1; });
+  }
+
+  function subtitleDeclaresNotCurrent(subtitleText) {
     var subtitle = (subtitleText || "").trim().toLowerCase();
     return NOT_CURRENT_LAW_SUBTITLE_PREFIXES.some(function (m) { return subtitle.indexOf(m) === 0; });
   }
 
   function flagNotCurrentLaw(card, heading) {
+    // Checked separately (not merged into one boolean) because the two cases need
+    // different treatment below: when the heading's own wording already says "not
+    // current law" / "did not pass", that text is the flag -- appending another
+    // "Not current law" badge would duplicate it in the heading's accessible name and
+    // in the generated heading ID (assignHeadingIds() runs after this, from
+    // heading.textContent). Only add the separate badge when the title doesn't already
+    // say it.
+    var titleAlreadySays = titleAlreadyDeclaresNotCurrent(heading);
     var subtitleEl = card.querySelector("p > em:only-child, p > em:first-child");
-    var subtitleText = subtitleEl ? subtitleEl.textContent : "";
-    if (!isNotCurrentLawCard(heading, subtitleText)) return;
+    var subtitleSays = subtitleDeclaresNotCurrent(subtitleEl ? subtitleEl.textContent : "");
+    if (!titleAlreadySays && !subtitleSays) return;
     card.classList.add("not-current-law");
     heading.classList.add("not-current-law");
-    if (!heading.querySelector(".not-current-law-flag")) {
+    if (!titleAlreadySays && !heading.querySelector(".not-current-law-flag")) {
       var flag = document.createElement("span");
       flag.className = "not-current-law-flag";
       flag.textContent = "Not current law";
