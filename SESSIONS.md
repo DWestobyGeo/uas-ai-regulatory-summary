@@ -22,6 +22,86 @@ scratch.
 
 ## Log (newest first)
 
+### 2026-08-06 — Phase D, Workstream 8 (currency metadata) complete; Phase D closed out
+
+**Status:** Complete and pushed as `b35d3dc`. Same fresh-clone/PAT caveats as prior entries apply.
+This closes out Phase D (Workstreams 7-8) in full -- everything the "Please continue with phase
+d" authorization covered is now landed and pushed.
+
+**What landed:**
+
+- **`build_data.py` no longer uses filesystem mtime for `last_updated`.** A fresh checkout resets
+  every file's mtime regardless of whether content changed, so every rebuild was touching every
+  state's `last_updated` -- confirmed reproducible since Phase B, previously worked around by
+  discarding the resulting diff (`git checkout -- docs/data/v1/`) after every sanity-check build.
+  Now prefers a pilot state's manifest `last_currency_check` (an explicit, verified date), then
+  the date of the most recent git commit that actually changed the source register CSV (stable
+  across checkouts), and only falls back to mtime if this isn't a git checkout at all. Verified:
+  two consecutive `build_data.py` runs with zero content changes now produce zero diff.
+- **`scripts/compute_currency_review.py` (new).** Classifies every pilot-state register record
+  into a review-cadence bucket (event-triggered/pending, low-confidence, negative finding,
+  procurement, registration/licensing/permit, stable statute) per the plan's Workstream 8
+  cadence table, using fields the register already has -- no CSV schema expansion, per the
+  manifest schema's own non-goals. Computes a state-level `next_currency_review` (soonest due
+  date) and `recheck_triggers` (records needing an event-triggered recheck rather than a purely
+  calendar one). Run `--write` for all five pilot states; found real, correct triggers: OK-001's
+  not-yet-effective penalty amendment, WA-004's uncertain codification, WA-010's stalled bill,
+  CA-012's pending bill, CA-014's died-in-committee bill.
+- **`validate_research_manifests.py`** now requires both fields: `next_currency_review` must be
+  on/after `last_currency_check` (error if not) and warns (non-blocking) if it's already in the
+  past; `recheck_triggers` entries are validated against the register.
+- **`scripts/check_source_urls.py` (new).** Checks register `source_url` reachability, with an
+  explicit module-docstring disclaimer that reachability is not proof of legal currency and
+  unreachability is not proof of change -- a narrow, low-cost "worth a human glance" signal only.
+  **Not wired into the required `site-quality.yml` gate** -- a flaky or allowlist-blocked
+  external government site must never fail a PR. Could not be exercised against real government
+  URLs from this sandbox (confirmed 403/blocked-by-allowlist against oklegislature.gov); instead
+  verified against a local mock server (`evals/fixtures/url_health/mock_server.py`) covering all
+  four response cases the checker needs to classify correctly (200, 404, HEAD-unsupported-falls-
+  back-to-GET, connection-refused), wrapped in `evals/run_url_health_fixture_check.py` --
+  localhost-only, so this fixture check IS wired into the required CI gate (it needs no real
+  internet access, unlike the checker it's testing).
+  `.github/workflows/url-health-check.yml` runs the real checker weekly plus on manual dispatch,
+  uploads a JSON artifact, `continue-on-error`, never blocks a merge.
+
+**Also landed this session, outside the original Workstream 7/8 task list (both user-reported
+mid-session):**
+- The "Generated content notice" banner (Workstream 7's authored/generated split) was a visible
+  Markdown blockquote on the live site, addressed to a general reader but referencing internal
+  script/file names -- changed to an HTML comment (invisible on the live site via marked.js,
+  still visible in the raw `.md` source).
+- `check_duplicate_interpretations` now also scans `practical_interpretation_legal_counsel`
+  (previously only the AEC-expert field), surfacing that Oklahoma's legal-counsel interpretation
+  is an identical boilerplate template across all 3 OK records including one with no
+  application/approval process at all -- documented in OK's manifest `known_issues`, not
+  rewritten (out of scope for a detection change; see that entry below for detail).
+
+**Next task:** Nothing further authorized yet. Two things are queued but explicitly deferred by
+the user rather than started:
+- A prompt-engineering pass on the Agency Practitioner role (`agents/roles/`,
+  `agents/prompt_templates/agency-practitioner.task.md`): stop giving generic "get agency
+  permission" advice: when specific agency-sourced guidance related to the law/regulation is
+  found, include it and attribute it as direct-from-source with the URL. First-hand community
+  sources (relevant subreddits, Facebook groups, podcasts, YouTube) are also acceptable if
+  reported as such and appropriately filtered -- don't compile the actual source list now, just
+  make the option available in the prompt. The role must not be forced to fabricate this
+  information if no appropriate source exists; it should report that none was found. Do not
+  start this without the user's go-ahead.
+- Do **not** start Workstream 9 (national retrofit) or touch the Compliance Burden Index without
+  explicit authorization -- both remain gated on Phase B/D landing first per the plan's own
+  Definition of Done, and Phase D just landed; that doesn't imply authorization to proceed to
+  Workstream 9 on its own.
+
+**Access/environment notes, reconfirmed this session:** same as prior entries (bash-only repo
+file access from this sandbox's `/tmp/...` clone; PAT redaction discipline; `git fetch` +
+`git rebase origin/main` before every push, every time; sandbox network egress is an allowlist
+that blocks arbitrary external domains, confirmed again this session against
+oklegislature.gov -- assume any script that needs real internet access cannot be tested live
+here and must be verified against a local mock instead, as done for
+`scripts/check_source_urls.py`).
+
+---
+
 ### 2026-08-06 — Phase D, Workstream 7 (register-as-publication-source) complete and pushed
 
 **Status:** Complete and pushed in three commits (`8868b05` authored/generated split for OK/MN/CA/FL,
