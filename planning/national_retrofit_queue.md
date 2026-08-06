@@ -35,10 +35,11 @@ open question in that state is resolved -- check `research_status` and
 | WA (Washington) | Phase B pilot | legacy_needs_retrofit | 4 | 2026-08-02 |
 | AR (Arkansas) | Workstream 9 retrofit | current_method_in_progress | 1 | 2026-08-05 |
 | MO (Missouri) | Workstream 9 retrofit | current_method_in_progress | 1 | 2026-08-06 |
+| OR (Oregon) | Workstream 9 retrofit | current_method_in_progress | 0 | 2026-08-06 |
 | PA (Pennsylvania) | Workstream 9 retrofit | current_method_in_progress | 0 | 2026-08-06 |
 | TX (Texas) | Workstream 9 retrofit | current_method_in_progress | 0 | 2026-08-06 |
 
-**9 of 50 states** have a manifest as of this generation. Everything else
+**10 of 50 states** have a manifest as of this generation. Everything else
 below is the queue for states that do not yet.
 
 ## Tier definitions
@@ -87,14 +88,14 @@ the same tier with close scores are, for practical purposes, equally urgent.
 | 24 | AK (Alaska) | 1 | 12 | 8 | no | no | legacy state (no manifest, no checklist); 3 low-confidence record(s); 4 registration/licensing/permit/procurement record(s); 2 secondary-source-controlling record(s) |
 | 25 | AL (Alabama) | 1 | 12 | 8 | no | no | legacy state (no manifest, no checklist); 3 low-confidence record(s); 2 criminal/felony-restriction record(s); 2 registration/licensing/permit/procurement record(s); 2 secondary-source-controlling record(s) |
 | 26 | GA (Georgia) | 1 | 12 | 7 | no | no | legacy state (no manifest, no checklist); 2 low-confidence record(s); 2 criminal/felony-restriction record(s); 5 registration/licensing/permit/procurement record(s) |
-| 27 | OR (Oregon) | 1 | 12 | 6 | no | no | legacy state (no manifest, no checklist); 1 low-confidence record(s); 1 criminal/felony-restriction record(s); 5 registration/licensing/permit/procurement record(s); 2 secondary-source-controlling record(s) |
-| 28 | SC (South Carolina) | 1 | 12 | 9 | no | yes | 4 proposed/pending/failed/superseded record(s); 4 criminal/felony-restriction record(s); 4 registration/licensing/permit/procurement record(s) |
-| 29 | VA (Virginia) | 1 | 12 | 14 | no | yes | 6 criminal/felony-restriction record(s); 5 registration/licensing/permit/procurement record(s); 14 authorities (>= 10) |
-| 30 | CT (Connecticut) | 1 | 11 | 8 | no | no | legacy state (no manifest, no checklist); 2 low-confidence record(s); 1 criminal/felony-restriction record(s); 4 registration/licensing/permit/procurement record(s); 1 secondary-source-controlling record(s) |
-| 31 | DE (Delaware) | 1 | 11 | 5 | no | no | legacy state (no manifest, no checklist); 2 low-confidence record(s); 2 criminal/felony-restriction record(s); 3 registration/licensing/permit/procurement record(s); 1 secondary-source-controlling record(s) |
-| 32 | IA (Iowa) | 1 | 11 | 7 | no | no | legacy state (no manifest, no checklist); 1 low-confidence record(s); 2 criminal/felony-restriction record(s); 3 registration/licensing/permit/procurement record(s); 1 secondary-source-controlling record(s); 3 public-agency/procurement record(s) |
-| 33 | ME (Maine) | 1 | 11 | 8 | no | no | legacy state (no manifest, no checklist); 1 low-confidence record(s); 5 registration/licensing/permit/procurement record(s); 1 secondary-source-controlling record(s); 3 public-agency/procurement record(s) |
-| 34 | NV (Nevada) | 1 | 11 | 12 | no | yes | 3 criminal/felony-restriction record(s); 6 registration/licensing/permit/procurement record(s); 12 authorities (>= 10); no record mentions state preemption of local ordinances |
+| 27 | SC (South Carolina) | 1 | 12 | 9 | no | yes | 4 proposed/pending/failed/superseded record(s); 4 criminal/felony-restriction record(s); 4 registration/licensing/permit/procurement record(s) |
+| 28 | VA (Virginia) | 1 | 12 | 14 | no | yes | 6 criminal/felony-restriction record(s); 5 registration/licensing/permit/procurement record(s); 14 authorities (>= 10) |
+| 29 | CT (Connecticut) | 1 | 11 | 8 | no | no | legacy state (no manifest, no checklist); 2 low-confidence record(s); 1 criminal/felony-restriction record(s); 4 registration/licensing/permit/procurement record(s); 1 secondary-source-controlling record(s) |
+| 30 | DE (Delaware) | 1 | 11 | 5 | no | no | legacy state (no manifest, no checklist); 2 low-confidence record(s); 2 criminal/felony-restriction record(s); 3 registration/licensing/permit/procurement record(s); 1 secondary-source-controlling record(s) |
+| 31 | IA (Iowa) | 1 | 11 | 7 | no | no | legacy state (no manifest, no checklist); 1 low-confidence record(s); 2 criminal/felony-restriction record(s); 3 registration/licensing/permit/procurement record(s); 1 secondary-source-controlling record(s); 3 public-agency/procurement record(s) |
+| 32 | ME (Maine) | 1 | 11 | 8 | no | no | legacy state (no manifest, no checklist); 1 low-confidence record(s); 5 registration/licensing/permit/procurement record(s); 1 secondary-source-controlling record(s); 3 public-agency/procurement record(s) |
+| 33 | NV (Nevada) | 1 | 11 | 12 | no | yes | 3 criminal/felony-restriction record(s); 6 registration/licensing/permit/procurement record(s); 12 authorities (>= 10); no record mentions state preemption of local ordinances |
+| 34 | OR (Oregon) | 1 | 11 | 7 | yes | yes | 1 low-confidence record(s); 2 criminal/felony-restriction record(s); 6 registration/licensing/permit/procurement record(s); 2 secondary-source-controlling record(s) |
 | 35 | TN (Tennessee) | 1 | 11 | 13 | no | yes | 5 criminal/felony-restriction record(s); 3 registration/licensing/permit/procurement record(s); 13 authorities (>= 10); no record mentions state preemption of local ordinances; 3 public-agency/procurement record(s) |
 | 36 | MT (Montana) | 1 | 10 | 7 | no | no | legacy state (no manifest, no checklist); 2 proposed/pending/failed/superseded record(s); 1 criminal/felony-restriction record(s); 4 registration/licensing/permit/procurement record(s) |
 | 37 | MS (Mississippi) | 1 | 8 | 7 | no | no | legacy state (no manifest, no checklist); 1 criminal/felony-restriction record(s); 4 registration/licensing/permit/procurement record(s) |

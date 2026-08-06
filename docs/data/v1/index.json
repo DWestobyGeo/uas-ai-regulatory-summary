@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-08-05",
+  "generated_at": "2026-08-06",
   "disclaimer": "AI-compiled regulatory research. Not legal advice. See /DISCLAIMER for full terms.",
   "states": [
     {
@@ -295,8 +295,8 @@
       "state": "Oregon",
       "state_abbr": "OR",
       "state_fips": "41",
-      "record_count": 6,
-      "last_updated": "2026-08-02",
+      "record_count": 7,
+      "last_updated": "2026-08-06",
       "json_url": "data/v1/OR.json"
     },
     {

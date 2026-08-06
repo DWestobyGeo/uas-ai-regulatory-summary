@@ -1,0 +1,121 @@
+# State Research Manifest -- Workstream 9 (national retrofit, per planning/national_retrofit_queue.md)
+# Schema: States/RESEARCH_MANIFEST_SCHEMA.md
+# Owner: Research Expert (agents/roles/research-expert.md)
+# Validated by: scripts/validate_research_manifests.py
+
+state: Oregon
+state_abbr: OR
+method_version: 1.0.0
+research_status: current_method_in_progress
+legacy_retrofit_status: retrofit_in_progress
+last_full_research_date: '2026-08-01'
+last_currency_check: '2026-08-06'
+source_cutoff_date: '2026-08-06'
+coverage:
+  state_statutes_and_amendments:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - OR-001
+    - OR-002
+    - OR-007
+    note: ORS Chapter 837 re-verified directly. Corrected a materially outdated conclusion in
+      OR-002 -- SB 1125 (2025 Oregon Laws c.604), effective 2026-01-01, was found to have enacted
+      substantively the change the prior pass had marked as failed (via HB 3426, which did die,
+      but SB 1125 is a separate bill that passed). Added a new record (OR-007) for ORS
+      837.375/837.380 civil remedies, in the same subchapter as previously-recorded authorities
+      but not previously captured.
+  administrative_rules:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - OR-003
+    - OR-004
+    note: OAR 738-080-0045 reconfirmed. OAR 736-010-0040(13) (OPRD UAS Operation Areas rule)
+      citation and adoption date corrected against the Secretary of State's Permanent
+      Administrative Order PRD 4-2026 filing (agency-approved 2026-04-22, filed 2026-04-30, not
+      "adopted 2025" as previously recorded); added the subsection (14)(j) permit-required-even-
+      inside-designated-areas nuance.
+  executive_orders:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids: []
+    note: Re-searched 2026-08-06; no Oregon executive order specific to UAS located.
+  court_decisions_and_ag_opinions:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids:
+    - OR-007
+    note: Re-searched 2026-08-06; no controlling Oregon appellate decision or formal Attorney
+      General opinion located. ORS 837.380(6)'s AG nuisance/trespass action authority confirmed
+      to exist (captured in OR-007) but no instance of its use located.
+  aviation_and_transportation_agencies:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - OR-003
+    note: Oregon Department of Aviation's public-body registration rule reconfirmed directly,
+      including current fee schedule.
+  parks_public_lands_and_natural_resources:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - OR-004
+    note: See administrative_rules. Current initial ~19-site UAS Operation Area list (effective
+      2026-08-08) confirmed directly from OPRD's own stateparks.oregon.gov page.
+  corrections_public_safety_and_critical_infrastructure:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - OR-001
+    - OR-002
+    note: ORS 837.372's full 14-category critical-infrastructure facility list and 9-category
+      exception list captured in full detail for the first time. ORS 837.374's SB 1125 amendment
+      corrected (see state_statutes_and_amendments).
+  privacy_surveillance_trespass_and_interference:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - OR-001
+    - OR-002
+    - OR-007
+    note: ORS 837.370's tiered penalty structure fully captured for the first time. New civil-
+      remedy record (OR-007) added -- directly relevant to repeat-overflight AEC survey work.
+  procurement_equipment_and_cybersecurity:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids:
+    - OR-006
+    note: Re-searched 2026-08-06; no Oregon-specific state UAS procurement/manufacturer
+      restriction statute or executive order located. The federal FCC Covered List restriction
+      underlying the previously-reported Oregon public-safety fleet impact took effect
+      2025-12-22 and is now itself in force.
+  professional_licensing_board_material:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - OR-005
+    note: OSBEELS brochure verified directly against the primary PDF (previously only a secondary
+      mirror); confidence upgraded Moderate -> High.
+  state_preemption:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - OR-001
+    note: ORS 837.385 (state preemption) and ORS 837.387 (local park-ordinance carve-out, with its
+      required utility/emergency/affirmative-defense provisions) re-confirmed directly.
+record_count: 7
+unresolved_count: 0
+low_confidence_record_count: 1
+primary_source_percentage: 71
+known_issues:
+  - >-
+    "Oregon House Bill 4066," cited in OSBEELS's own brochure resource list as the source of the
+    state's UAS definition, was not independently cross-checked against the codified ORS 837.300
+    definition in this pass. See OR_UAS_Research_Checklist.md, "Open verification items."
+  - >-
+    OPRD's UAS Operation Areas list was actively expanding as of this retrofit's research date
+    (initial ~19 sites opening 2026-08-08, two days after this pass); re-check the current list
+    before any specific project.
+next_currency_review: '2026-09-05'
+recheck_triggers: []

@@ -28,6 +28,73 @@ scratch.
 
 ## Log (newest first)
 
+### 2026-08-06 — Workstream 9 retrofit: Oregon (user-requested, out of queue order)
+
+**Status:** Complete, committed and pushed. User explicitly asked for Oregon next rather than
+following the risk-queue order (Illinois was next by rank); Oregon was a legacy state (queue rank
+27, no manifest/checklist) with an already fairly current CSV (dated 2026-08-01).
+
+**Headline findings -- two real corrections, not just citation cleanup:**
+- **OR-002 correction:** the prior record tracked House Bill 3426 (a 2025-session bill that would
+  have elevated UAS interference-with-wildfire-suppression/law-enforcement/emergency-response
+  penalties to a standalone Class B misdemeanor/Class C felony tier), noted it died at sine die on
+  2025-06-27, and concluded the change was "not current law." **That conclusion was incorrect.** A
+  separate 2025-session bill, Senate Bill 1125 (enacted as 2025 Oregon Laws chapter 604, approved
+  by the Governor 2025-07-24, effective 2026-01-01), independently enacted substantively the same
+  restructuring. Verified directly against the enrolled chapter 604 PDF at oregonlegislature.gov.
+  This is a reminder that a "died in committee" finding for one bill number doesn't establish the
+  underlying policy failed -- always check the current codified statute's own bracketed amendment
+  history before concluding a proposed change did not become law.
+- **OR-004 correction:** the prior record cited OPRD's new state-park/ocean-shore UAS rule only as
+  "OPRD administrative rule (adopted 2025, effective May 1, 2026)," with no OAR number. Traced the
+  actual rule to OAR 736-010-0040(13) via the Secretary of State's Permanent Administrative Order
+  PRD 4-2026 filing: agency-approved 2026-04-22, filed 2026-04-30 -- not "adopted 2025" as
+  previously recorded (2025 activity was the rulemaking/comment process, not final adoption).
+  Added a materially important nuance the prior summary missed: subsection (14)(j) requires a
+  special use permit for commercial/research UAS use anywhere on OPRD property, **including inside
+  a designated UAS Operation Area** -- only recreational use is permit-free within a designated
+  area.
+
+**New record added:**
+- **OR-007 (new):** ORS 837.375 (civil liability for interfering with another's UAS, $5,000
+  statutory minimum plus attorney fees) and ORS 837.380 (property owner's civil action, treble
+  damages plus injunction, against a UAS operator who overflies after an objection) -- both sit in
+  the same statutory subchapter as the previously-recorded critical-infrastructure/private-property
+  authorities but were never captured as a register entry, despite direct relevance to repeat-
+  overflight AEC survey work (corridor, pipeline, multi-parcel projects).
+
+**Other enhancements:**
+- **OR-001:** expanded from a paraphrased summary to the full 14-category critical-infrastructure
+  facility list, the full 9-category exception list, the 837.370 tiered-penalty structure, and the
+  837.387 required local-park-ordinance carve-outs -- all verified directly against the Oregon
+  Legislature's official ORS Chapter 837 page.
+- **OR-005 (OSBEELS brochure):** confidence upgraded Moderate -> High after fetching and verifying
+  the primary PDF directly (previously only confirmed via a secondary mirror); added the five-item
+  "potential areas of infraction" list and the specific licensure-exam requirements (NCEES
+  Fundamentals of Land Surveying + CSBSR Photogrammetry).
+- **OR-003, OR-006:** reconfirmed, no substantive change.
+
+**Also fixed in this session (found while re-running the full validator suite):** two latent
+`validate_phase2.py` errors in AR-011 and PA-011 (added in this session's earlier Arkansas and
+Pennsylvania retrofits) where N/A-role fields didn't match the validator's exact governed strings --
+missed at the time because the error-count summary line scrolled past a truncated terminal view.
+Fixed in a separate preceding commit; validate_phase2.py now reports errors=0 (was errors=4). This
+is a reminder to always grep for the summary "errors=" line explicitly rather than relying on a
+truncated tail.
+
+Manifest: `current_method_in_progress`, `record_count: 7`, `unresolved_count: 0`,
+`low_confidence_record_count: 1` (OR-006, an honest negative finding), `primary_source_percentage:
+71`, `next_currency_review: 2026-09-05`. Oregon drops off the legacy retrofit queue; **10 of 50
+states** now have a manifest.
+
+All validators (`validate_phase2.py` [errors=0], `validate_research_manifests.py`
+[manifests_found=10, errors=0], `validate_research_semantics.py`, `validate_generated_summary.py`,
+`validate_roles.py`, `validate_methodologies.py`, `validate_site.py`) and the eval fixture checks
+(fixture_checks 18/18, role_applicability_checks 41/41, url_health_fixture_checks 4/4) pass locally
+as of this entry.
+
+**Next:** awaiting user direction on which state(s) to retrofit next.
+
 ### 2026-08-05 — Workstream 9 retrofit: Arkansas (queue rank #2, final of "3 more" states)
 
 **Status:** Complete, committed and pushed. Third and final of the "3 more" states this session
