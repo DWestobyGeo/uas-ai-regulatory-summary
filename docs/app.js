@@ -2,7 +2,7 @@
   "use strict";
 
   var INDEX_URL = "data/v1/index.json";
-  var UI_VERSION = "1.1.0";
+  var UI_VERSION = "1.1.1";
 
   var select = document.getElementById("state-select");
   var emptyState = document.getElementById("empty-state");

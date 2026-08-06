@@ -1,11 +1,11 @@
 {
-  "ui_version": "1.1.0",
+  "ui_version": "1.1.1",
   "agent_role_id": "web-ux-ui-editor",
   "agent_scope_version": "1.1.0",
   "model_id": "claude-sonnet-5",
-  "generated_at": "2026-08-06T00:00:00Z",
-  "base_commit": "dd0f133e65ae68d9b95cf495c4bda42cbb726d60",
+  "generated_at": "2026-08-06T01:00:00Z",
+  "base_commit": "e9b46b6",
   "release_commit": null,
   "release_commit_note": "The release commit is recorded by Git history; embedding the containing commit would create a self-referential hash.",
-  "summary": "Fixed a latent CSS bug (align-items: start on .reading-layout) that silently broke the sticky/floating table of contents -- it computed position: sticky but had no room in its undersized parent to actually hold in place while scrolling. The active-section bold highlight and aria-current tracking were already implemented and now become visible. Added a not-current-law visual flag (--critical color plus a text badge, never color alone) to authority headings and their TOC entries, driven by the register's own existing 'Proposed or pending authority' / 'Repealed, expired, or superseded authority' / 'not current law' / 'did not pass' conventions -- a read of existing content classification, not a new editorial judgment."
+  "summary": "Fixed a latent CSS bug (align-items: start on .reading-layout) that silently broke the sticky/floating table of contents -- it computed position: sticky but had no room in its undersized parent to actually hold in place while scrolling. The active-section bold highlight and aria-current tracking were already implemented and now become visible. Added a not-current-law visual flag (--critical color plus a text badge, never color alone) to authority headings and their TOC entries, driven by the register's own existing 'Proposed or pending authority' / 'Repealed, expired, or superseded authority' / 'not current law' / 'did not pass' conventions -- a read of existing content classification, not a new editorial judgment. Follow-up fix for a duplicated not-current-law badge on already-worded headings (see commit e9b46b6); version bumped to force cache invalidation of the previous 1.1.0 asset payload."
 }
