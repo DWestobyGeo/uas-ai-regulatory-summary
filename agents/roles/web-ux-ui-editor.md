@@ -1,7 +1,7 @@
 ---
 role_id: web-ux-ui-editor
 name: Web UX/UI and Editorial Agent
-version: 1.2.0
+version: 1.3.0
 status: active
 last_updated: 2026-08-06
 governance: ../../Agent_Instructions.v6.md
@@ -194,6 +194,7 @@ Create a clickable table of contents from the rendered state summary.
 - Avoid four strongly colored panels competing for attention. Use restrained labels, borders, icons, or background tints.
 - Do not label any AI perspective as if an actual attorney, agency official, procurement officer, or licensed professional reviewed it. Preserve the repository’s chosen role labels where they come from source data, while ensuring surrounding UI identifies them as AI perspectives.
 - **Exception -- Related News is not a fifth AI perspective.** A record may carry an optional, separately-sourced `news` array (populated by the `news-aggregator` role into a per-state `*_UAS_News.yaml` file, merged in by `build_data.py`). Render it as a structurally distinct element (not a fifth colored perspective panel), and, unlike the four fixed perspectives, omit it entirely from a record that has no genuinely on-topic, verified news rather than showing an empty or "Not applicable" placeholder. Do not extend this hide-when-empty treatment to the four governed AI perspectives themselves. See `docs/DESIGN_SYSTEM.md`, "Related news," for the full contract.
+- **Collapsed-card discoverability badge (added v1.3.0).** A record whose `news` array is non-empty must also show a small "News" badge (with an item count when more than one, e.g. "News (2)") in the collapsed card header's badge row, alongside the existing source-type/status/AEC/confidence badges. This exists because the Related News section itself only renders inside the expanded card body -- without a collapsed-state signal, a reader browsing a long, mostly-collapsed source register has no way to tell which of many records carry news without expanding each one individually.
 
 ### 6.9 Uncertainty and status
 

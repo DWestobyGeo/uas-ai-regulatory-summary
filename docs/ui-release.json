@@ -1,11 +1,11 @@
 {
-  "ui_version": "1.2.0",
+  "ui_version": "1.3.0",
   "agent_role_id": "web-ux-ui-editor",
-  "agent_scope_version": "1.2.0",
+  "agent_scope_version": "1.3.0",
   "model_id": "claude-sonnet-5",
-  "generated_at": "2026-08-06T20:00:00Z",
-  "base_commit": "4348860",
+  "generated_at": "2026-08-06T21:30:00Z",
+  "base_commit": "62a62ab",
   "release_commit": null,
   "release_commit_note": "The release commit is recorded by Git history; embedding the containing commit would create a self-referential hash.",
-  "summary": "Added a new, conditional fifth element to the practical-interpretation section: \"Related News,\" populated by a new news-aggregator role into an optional, purely additive per-state XX_UAS_News.yaml file (no change to the 33-field source-register CSV schema). Structurally distinct from the four fixed AI-perspective panels (dashed left border, document-icon kicker, explicit informational-only disclaimer) rather than a fifth accent color, so the difference in kind does not rely on color alone. Unlike the four fixed perspectives -- which governance requires to always render, even as \"Not applicable\" -- a record with no genuinely on-topic, verified news simply omits the section entirely; this is the deliberate 'hide what has nothing useful' exception the user requested. Each news item carries an explicit in-state/out-of-state badge (text label plus solid-vs-dashed border, not color alone) and a relevance_note tying the story to that specific record's specific subject matter, per the new role's precision-over-recall governing instructions. Rendered in the Source Register accordion only in this iteration; not yet attached to the freeform narrative sections. agents/roles/web-ux-ui-editor.md bumped to 1.2.0 to document this governed exception."
+  "summary": "Added a collapsed-card discoverability badge for Related News: any source-register record whose optional `news` array (populated by the news-aggregator role) is non-empty now shows a small \"News\" badge (with an item count when more than one) in its collapsed card header, alongside the existing source-type/status/AEC/confidence badges. Fixes a discoverability gap in the v1.2.0 Related News feature: the news block itself only renders inside the expanded card body, so a reader browsing a mostly-collapsed source register had no way to tell which records carried news without expanding every card individually. No change to the news block's own structure, position (still after the four AI-perspective panels, before Research Notes), or hide-when-empty behavior. agents/roles/web-ux-ui-editor.md bumped to 1.3.0 to document the new badge requirement."
 }

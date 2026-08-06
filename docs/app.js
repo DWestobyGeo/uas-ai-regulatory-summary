@@ -2,7 +2,7 @@
   "use strict";
 
   var INDEX_URL = "data/v1/index.json";
-  var UI_VERSION = "1.2.0";
+  var UI_VERSION = "1.3.0";
 
   var select = document.getElementById("state-select");
   var emptyState = document.getElementById("empty-state");
@@ -94,6 +94,13 @@
   function plainBadge(value) {
     if (!value) return "";
     return '<span class="badge plain">' + escapeHtml(value) + "</span>";
+  }
+
+  function newsFlagBadge(record) {
+    var items = Array.isArray(record.news) ? record.news : [];
+    if (!items.length) return "";
+    var label = "News" + (items.length > 1 ? " (" + items.length + ")" : "");
+    return '<span class="badge news-flag" title="This record has related news -- expand to view">' + escapeHtml(label) + "</span>";
   }
 
   function getQueryParam(name) {
@@ -531,7 +538,7 @@
     header.innerHTML =
       '<span class="reg-id">' + escapeHtml(record.record_id || "") + "</span>" +
       '<span class="reg-title-block"><span class="reg-title">' + escapeHtml(record.source_title || "Untitled source") + '</span><span class="reg-citation">' + escapeHtml(record.citation || "Citation not provided") + "</span></span>" +
-      '<span class="reg-badges">' + plainBadge(record.source_type) + plainBadge(record.status) + badgeFor(record.aec_relevance, "aec") + badgeFor(record.confidence_level, "conf") + "</span>" +
+      '<span class="reg-badges">' + plainBadge(record.source_type) + plainBadge(record.status) + badgeFor(record.aec_relevance, "aec") + badgeFor(record.confidence_level, "conf") + newsFlagBadge(record) + "</span>" +
       '<span class="reg-chevron" aria-hidden="true"></span>';
 
     var body = document.createElement("div");
