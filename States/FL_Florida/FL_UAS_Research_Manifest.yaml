@@ -87,3 +87,5 @@ known_issues:
   risk, same pattern as WA-007 and CA-010/CA-011 (now reproduced across three of the five pilot states).
 - No narrative XX_UAS_Research_Checklist.md exists for this state; category coverage above was reconstructed
   from the register and summary for this manifest and should be re-verified during retrofit.
+next_currency_review: '2026-09-01'
+recheck_triggers: []

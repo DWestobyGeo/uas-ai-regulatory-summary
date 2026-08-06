@@ -69,3 +69,6 @@ jobs:
 
       - name: Validate generated summaries match register + authored templates
         run: python scripts/validate_generated_summary.py
+
+      - name: Run URL-health checker request-logic fixture check (localhost only, no real internet)
+        run: python evals/run_url_health_fixture_check.py

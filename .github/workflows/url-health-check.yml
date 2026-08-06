@@ -1,0 +1,41 @@
+name: URL health check (informational, non-blocking)
+
+# Deliberately separate from site-quality.yml and NOT a required status check. This checks
+# whether register source_url values are still reachable -- a narrow, low-cost signal, not proof
+# that a law changed (unreachable) or that it's still current (reachable). See
+# scripts/check_source_urls.py's module docstring for the full rationale. A flaky or temporarily
+# blocked external government site must never fail a PR or block a merge, so this workflow only
+# runs on a schedule and on manual dispatch, uploads its findings as an artifact for a human to
+# glance at, and never fails the job even when it finds broken links (`continue-on-error` on the
+# check step, and the script itself defaults `--fail-on-broken` off).
+
+on:
+  schedule:
+    - cron: "0 13 * * 1" # weekly, Monday 13:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  check-urls:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check source_url reachability across all states
+        continue-on-error: true
+        run: python scripts/check_source_urls.py --out url-health-report.json
+
+      - name: Upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: url-health-report
+          path: url-health-report.json
+          retention-days: 90

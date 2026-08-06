@@ -95,6 +95,10 @@ unresolved_count: 0
 low_confidence_record_count: 0
 primary_source_percentage: 100
 known_issues: []          # optional; short pointers to eval fixtures / notes.md items
+next_currency_review: '2026-09-01'
+recheck_triggers:
+  - record_id: OK-001
+    reason: "status is event-triggered/pending (...)"
 ```
 
 `unresolved_count` and `low_confidence_record_count` must match what `validate_research_manifests.py`
@@ -103,6 +107,36 @@ computes directly from the state's `XX_UAS_Source_Register.csv` (a `confidence_l
 rule list. `primary_source_percentage` is the share of register rows whose `source_type` denotes a
 primary/official source (statute, regulation, or official agency policy) rather than a secondary,
 proposed, repealed, or discovery-lead source type.
+
+### Currency-review fields (`next_currency_review`, `recheck_triggers`)
+
+Workstream 8. Computed by `scripts/compute_currency_review.py --state XX --write` from the
+register + `last_currency_check` — not hand-authored, so it stays consistent with the register
+without a second data-entry pass. Suggested review cadence, applied per record and rolled up to
+the state-level `next_currency_review` (the *soonest* due date across all of that state's
+records):
+
+| Record type | Review cadence |
+|---|---|
+| Future-effective or pending (status reads as not-yet-effective/pending/stalled/died/uncertain) | Event-triggered plus monthly |
+| Low-confidence (`confidence_level: Low`) | Until resolved (treated as monthly) |
+| Negative finding (status reads as reviewed/no applicable source located) | Annual, and after the next legislative session |
+| Procurement/manufacturer/cybersecurity | Quarterly |
+| Registration, licensing, permits | Semiannual |
+| Everything else (stable codified statute) | Annual |
+
+A record matching more than one row uses the shortest (most conservative) cadence.
+`recheck_triggers` separately lists every record whose recheck is event-triggered rather than
+purely calendar-based (a pending bill enacting/failing, a not-yet-effective amendment's effective
+date arriving) — `{record_id, reason}` pairs, so these don't get silently absorbed into the date
+math. `validate_research_manifests.py` requires both fields, requires `next_currency_review` to
+be on or after `last_currency_check`, validates every `recheck_triggers[].record_id` against the
+register, and warns (non-blocking) if `next_currency_review` has already passed.
+
+This is separate from, and not a substitute for, checking whether a record's `source_url` is
+still reachable — see `scripts/check_source_urls.py`. URL availability is not proof a law is
+still current, and URL unavailability is not proof it changed; the two checks are deliberately
+independent.
 
 ## Non-goals
 

@@ -93,3 +93,9 @@ known_issues:
 - No narrative XX_UAS_Research_Checklist.md exists for this state, unlike Oklahoma; category coverage
   above was reconstructed from the register and summary for this manifest and should be re-verified during
   retrofit, not treated as a substitute for an actual re-review.
+next_currency_review: '2026-09-01'
+recheck_triggers:
+  - record_id: WA-004
+    reason: "status is event-triggered/pending ('UNCERTAIN - verify current codification directly before relying on this')"
+  - record_id: WA-010
+    reason: "status is event-triggered/pending ('Not law - stalled in House Technology & Economic Development Committee, never enacted')"

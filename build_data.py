@@ -1,4 +1,9 @@
-import csv, json, glob, os, shutil, datetime
+import csv, json, glob, os, shutil, datetime, subprocess
+
+try:
+    import yaml
+except ImportError:
+    yaml = None
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 SRC_ROOT = os.path.join(SCRIPT_DIR, "States")
@@ -10,6 +15,46 @@ os.makedirs(DATA_DIR, exist_ok=True)
 os.makedirs(SOURCES_DIR, exist_ok=True)
 
 state_dirs = sorted([d for d in glob.glob(os.path.join(SRC_ROOT, "*")) if os.path.isdir(d)])
+
+def get_last_updated(script_dir, csv_path, state_dir):
+    """Return the most defensible "last updated" date for a state's data.
+
+    Preference order:
+      1. The state's research manifest's `last_currency_check` (Workstream 2), if present --
+         this is an explicit, human/agent-verified "we confirmed this is still current" date,
+         not a filesystem artifact.
+      2. The date of the most recent git commit that actually changed the source register CSV
+         -- stable across a fresh clone/checkout (unlike filesystem mtime, which is reset by
+         checkout regardless of whether content changed).
+      3. Filesystem mtime, only as a last resort if this isn't a git checkout at all (e.g. a
+         zip download) or git is unavailable.
+    """
+    if yaml is not None:
+        manifest_files = glob.glob(os.path.join(state_dir, "*_UAS_Research_Manifest.yaml"))
+        if manifest_files:
+            try:
+                with open(manifest_files[0], encoding="utf-8") as mf:
+                    manifest = yaml.safe_load(mf) or {}
+                check_date = manifest.get("last_currency_check")
+                if check_date:
+                    return str(check_date)
+            except (OSError, yaml.YAMLError):
+                pass
+
+    try:
+        result = subprocess.run(
+            ["git", "log", "-1", "--format=%ad", "--date=short", "--", csv_path],
+            cwd=script_dir, capture_output=True, text=True, timeout=10,
+        )
+        date_str = result.stdout.strip()
+        if result.returncode == 0 and date_str:
+            return date_str
+    except (OSError, subprocess.SubprocessError):
+        pass
+
+    mtime = os.path.getmtime(csv_path)
+    return datetime.date.fromtimestamp(mtime).isoformat()
+
 
 index = {
     "schema_version": "1.1",
@@ -43,8 +88,7 @@ for sd in state_dirs:
     with open(md_path, encoding="utf-8") as f:
         summary_md = f.read()
 
-    mtime = os.path.getmtime(csv_path)
-    last_updated = datetime.date.fromtimestamp(mtime).isoformat()
+    last_updated = get_last_updated(SCRIPT_DIR, csv_path, sd)
 
     state_obj = {
         "schema_version": "1.1",

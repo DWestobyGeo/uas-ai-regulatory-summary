@@ -85,3 +85,7 @@ known_issues:
     this field in Phase D, Workstream 7 follow-up). Not corrected here: rewriting OK's published
     interpretive text is out of scope for a tooling/detection change and would be retroactive
     interpretation authorship. Left for a future dedicated legal-counsel-role research pass on OK.
+next_currency_review: '2026-09-01'
+recheck_triggers:
+  - record_id: OK-001
+    reason: "status is event-triggered/pending ('Current / in force; enacted penalty amendment not yet effective')"

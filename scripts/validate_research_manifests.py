@@ -10,6 +10,7 @@ does exist, pilot or not, must pass this validator.
 from __future__ import annotations
 
 import csv
+import datetime
 import re
 import sys
 from pathlib import Path
@@ -25,6 +26,7 @@ REQUIRED_TOP_KEYS = [
     "last_full_research_date", "last_currency_check", "source_cutoff_date", "coverage",
     "record_count", "unresolved_count", "low_confidence_record_count",
     "primary_source_percentage", "known_issues",
+    "next_currency_review", "recheck_triggers",
 ]
 
 RESEARCH_STATUS_VALUES = {
@@ -197,6 +199,33 @@ def main() -> int:
 
         if not isinstance(data.get("known_issues"), list):
             errors.append(f"{rel}: known_issues must be a list (may be empty)")
+
+        # Workstream 8: currency-review fields (scripts/compute_currency_review.py computes these
+        # from the register + last_currency_check; not hand-authored).
+        next_review = data.get("next_currency_review")
+        if not isinstance(next_review, str) or not DATE_RE.match(next_review):
+            errors.append(f"{rel}: next_currency_review must be an explicit YYYY-MM-DD date, got {next_review!r}")
+        else:
+            last_check = data.get("last_currency_check")
+            if isinstance(last_check, str) and DATE_RE.match(last_check) and next_review < last_check:
+                errors.append(f"{rel}: next_currency_review ({next_review}) is before last_currency_check ({last_check})")
+            today = datetime.date.today().isoformat()
+            if next_review < today:
+                warnings.append(
+                    f"{rel}: next_currency_review ({next_review}) is in the past -- overdue for a currency "
+                    f"recheck (run scripts/compute_currency_review.py --state {state_dir_abbr} --write after "
+                    "reverifying, to reset it)"
+                )
+
+        recheck_triggers = data.get("recheck_triggers")
+        if not isinstance(recheck_triggers, list):
+            errors.append(f"{rel}: recheck_triggers must be a list (may be empty)")
+        else:
+            for i, trig in enumerate(recheck_triggers):
+                if not isinstance(trig, dict) or "record_id" not in trig or "reason" not in trig:
+                    errors.append(f"{rel}: recheck_triggers[{i}] must be a mapping with record_id and reason")
+                elif rows and str(trig["record_id"]) not in {row.get("record_id", "") for row in rows}:
+                    errors.append(f"{rel}: recheck_triggers[{i}].record_id {trig['record_id']!r} not present in the register")
 
     if pilot_abbrs:
         missing_pilot_manifests = pilot_abbrs - found_abbrs

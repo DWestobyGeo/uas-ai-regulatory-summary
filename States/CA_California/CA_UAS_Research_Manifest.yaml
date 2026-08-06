@@ -97,3 +97,9 @@ known_issues:
   cutoff; recheck status against the current legislative session before treating it as settled.
 - No narrative XX_UAS_Research_Checklist.md exists for this state; category coverage above was reconstructed
   from the register and summary for this manifest and should be re-verified during retrofit.
+next_currency_review: '2026-09-01'
+recheck_triggers:
+  - record_id: CA-012
+    reason: "status is event-triggered/pending ('Pending (not enacted as of Aug. 1 2026)')"
+  - record_id: CA-014
+    reason: "status is event-triggered/pending ('Died in Assembly committee — not enacted')"
