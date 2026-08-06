@@ -21,6 +21,7 @@ ACTIVE_ROLE_FILES = {
     "state-uas-regulatory-burden-analyst.md",
     "editorial-qa-reviewer.md",
     "web-ux-ui-editor.md",
+    "news-aggregator.md",
 }
 REQUIRED_KEYS = [
     "role_id",

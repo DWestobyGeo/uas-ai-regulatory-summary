@@ -91,6 +91,7 @@ Every active role has a versioned operating document with common ownership and c
 | State UAS Regulatory Burden Analyst | Cross-state, scenario-based compliance-burden assessment and calibration | [`agents/roles/state-uas-regulatory-burden-analyst.md`](agents/roles/state-uas-regulatory-burden-analyst.md) |
 | Editorial and QA Reviewer | Independent review, issue ownership, schema and publication consistency | [`agents/roles/editorial-qa-reviewer.md`](agents/roles/editorial-qa-reviewer.md) |
 | Web UX/UI and Editorial Agent | Static-site presentation, navigation, hyperlinks, accessibility, and print behavior | [`agents/roles/web-ux-ui-editor.md`](agents/roles/web-ux-ui-editor.md) |
+| News Aggregator | Per-record, topic-matched news discovery for the optional Related News element (in-state prioritized, out-of-state clearly flagged) | [`agents/roles/news-aggregator.md`](agents/roles/news-aggregator.md) |
 
 The role directory and reusable metadata template are documented in [`agents/roles/README.md`](agents/roles/README.md).
 

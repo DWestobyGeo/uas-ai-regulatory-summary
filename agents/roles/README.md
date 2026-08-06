@@ -14,6 +14,7 @@ This directory is the authoritative home for individual agent operating instruct
 | [State UAS Regulatory Burden Analyst](state-uas-regulatory-burden-analyst.md) | Cross-state, scenario-based compliance-burden measurement and calibration | Comparative assessment artifacts; no source-register field |
 | [Editorial and QA Reviewer](editorial-qa-reviewer.md) | Independent consistency, fact-drift, schema, and publication-artifact QA | Review only; corrections must be attributed to the owning role |
 | [Web UX/UI and Editorial Agent](web-ux-ui-editor.md) | Static-site presentation, navigation, accessibility, links, and print behavior | `docs/` presentation layer and UI provenance |
+| [News Aggregator](news-aggregator.md) | Per-record, topic-matched news discovery (in-state prioritized, out-of-state clearly flagged) | Optional `States/*/*_UAS_News.yaml`; no source-register field |
 
 ## Required role-document template
 
