@@ -667,6 +667,8 @@ code {
 .badge.high { color: #164c65; background: #e3f1f6; border-color: #b8d5e0; }
 .badge.moderate { color: #5d4a75; background: var(--surface-violet); border-color: #d5cce2; }
 .badge.low { color: #6a5154; background: #f5eff0; border-color: #decfd1; }
+.badge.legacy { color: #7a5a1f; background: #faf3e4; border-color: #e4d3ae; }
+.badge.current-method { color: #1f6b4a; background: #e7f5ee; border-color: #bfe0cf; }
 
 .reg-card-body { padding: 1.1rem; border-top: 1px solid var(--line); }
 .reg-meta-grid { margin: 0 0 var(--space-5); display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; overflow: hidden; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius-sm); }

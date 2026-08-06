@@ -1,0 +1,833 @@
+{
+  "pilot_states_excluded": [
+    "CA",
+    "FL",
+    "MN",
+    "OK",
+    "WA"
+  ],
+  "queue": [
+    {
+      "state_abbr": "MO",
+      "state": "Missouri",
+      "tier": 1,
+      "risk_score": 19,
+      "record_count": 11,
+      "has_manifest": false,
+      "has_checklist": false,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "legacy state (no manifest, no checklist)",
+        "3 low-confidence record(s)",
+        "2 proposed/pending/failed/superseded record(s)",
+        "1 criminal/felony-restriction record(s)",
+        "6 registration/licensing/permit/procurement record(s)",
+        "2 secondary-source-controlling record(s)"
+      ],
+      "tier2_triggers": [
+        "11 authorities (>= 10)",
+        "no record mentions state preemption of local ordinances"
+      ]
+    },
+    {
+      "state_abbr": "TX",
+      "state": "Texas",
+      "tier": 1,
+      "risk_score": 18,
+      "record_count": 13,
+      "has_manifest": false,
+      "has_checklist": false,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "legacy state (no manifest, no checklist)",
+        "2 low-confidence record(s)",
+        "6 criminal/felony-restriction record(s)",
+        "6 registration/licensing/permit/procurement record(s)"
+      ],
+      "tier2_triggers": [
+        "13 authorities (>= 10)"
+      ]
+    },
+    {
+      "state_abbr": "PA",
+      "state": "Pennsylvania",
+      "tier": 1,
+      "risk_score": 17,
+      "record_count": 10,
+      "has_manifest": false,
+      "has_checklist": false,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "legacy state (no manifest, no checklist)",
+        "3 low-confidence record(s)",
+        "1 criminal/felony-restriction record(s)",
+        "5 registration/licensing/permit/procurement record(s)",
+        "4 secondary-source-controlling record(s)"
+      ],
+      "tier2_triggers": [
+        "10 authorities (>= 10)"
+      ]
+    },
+    {
+      "state_abbr": "AR",
+      "state": "Arkansas",
+      "tier": 1,
+      "risk_score": 16,
+      "record_count": 8,
+      "has_manifest": false,
+      "has_checklist": false,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "legacy state (no manifest, no checklist)",
+        "3 low-confidence record(s)",
+        "4 criminal/felony-restriction record(s)",
+        "4 registration/licensing/permit/procurement record(s)",
+        "2 secondary-source-controlling record(s)"
+      ],
+      "tier2_triggers": []
+    },
+    {
+      "state_abbr": "IL",
+      "state": "Illinois",
+      "tier": 1,
+      "risk_score": 16,
+      "record_count": 10,
+      "has_manifest": false,
+      "has_checklist": false,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "legacy state (no manifest, no checklist)",
+        "2 low-confidence record(s)",
+        "2 proposed/pending/failed/superseded record(s)",
+        "1 criminal/felony-restriction record(s)",
+        "5 registration/licensing/permit/procurement record(s)",
+        "1 secondary-source-controlling record(s)"
+      ],
+      "tier2_triggers": [
+        "10 authorities (>= 10)",
+        "3 public-agency/procurement record(s)"
+      ]
+    },
+    {
+      "state_abbr": "LA",
+      "state": "Louisiana",
+      "tier": 1,
+      "risk_score": 16,
+      "record_count": 8,
+      "has_manifest": false,
+      "has_checklist": false,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "legacy state (no manifest, no checklist)",
+        "1 low-confidence record(s)",
+        "2 proposed/pending/failed/superseded record(s)",
+        "1 criminal/felony-restriction record(s)",
+        "7 registration/licensing/permit/procurement record(s)",
+        "2 secondary-source-controlling record(s)"
+      ],
+      "tier2_triggers": []
+    },
+    {
+      "state_abbr": "NC",
+      "state": "North Carolina",
+      "tier": 1,
+      "risk_score": 16,
+      "record_count": 12,
+      "has_manifest": false,
+      "has_checklist": false,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "legacy state (no manifest, no checklist)",
+        "1 low-confidence record(s)",
+        "1 proposed/pending/failed/superseded record(s)",
+        "6 criminal/felony-restriction record(s)",
+        "3 registration/licensing/permit/procurement record(s)",
+        "1 secondary-source-controlling record(s)"
+      ],
+      "tier2_triggers": [
+        "12 authorities (>= 10)"
+      ]
+    },
+    {
+      "state_abbr": "CO",
+      "state": "Colorado",
+      "tier": 1,
+      "risk_score": 15,
+      "record_count": 10,
+      "has_manifest": false,
+      "has_checklist": false,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "legacy state (no manifest, no checklist)",
+        "2 low-confidence record(s)",
+        "1 proposed/pending/failed/superseded record(s)",
+        "2 criminal/felony-restriction record(s)",
+        "4 registration/licensing/permit/procurement record(s)",
+        "2 secondary-source-controlling record(s)"
+      ],
+      "tier2_triggers": [
+        "10 authorities (>= 10)"
+      ]
+    },
+    {
+      "state_abbr": "HI",
+      "state": "Hawaii",
+      "tier": 1,
+      "risk_score": 15,
+      "record_count": 7,
+      "has_manifest": false,
+      "has_checklist": false,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "legacy state (no manifest, no checklist)",
+        "3 low-confidence record(s)",
+        "3 criminal/felony-restriction record(s)",
+        "4 registration/licensing/permit/procurement record(s)",
+        "2 secondary-source-controlling record(s)"
+      ],
+      "tier2_triggers": []
+    },
+    {
+      "state_abbr": "IN",
+      "state": "Indiana",
+      "tier": 1,
+      "risk_score": 15,
+      "record_count": 10,
+      "has_manifest": false,
+      "has_checklist": false,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "legacy state (no manifest, no checklist)",
+        "1 low-confidence record(s)",
+        "4 criminal/felony-restriction record(s)",
+        "4 registration/licensing/permit/procurement record(s)",
+        "1 secondary-source-controlling record(s)"
+      ],
+      "tier2_triggers": [
+        "10 authorities (>= 10)",
+        "3 public-agency/procurement record(s)"
+      ]
+    },
+    {
+      "state_abbr": "MI",
+      "state": "Michigan",
+      "tier": 1,
+      "risk_score": 15,
+      "record_count": 10,
+      "has_manifest": false,
+      "has_checklist": false,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "legacy state (no manifest, no checklist)",
+        "1 low-confidence record(s)",
+        "1 proposed/pending/failed/superseded record(s)",
+        "3 criminal/felony-restriction record(s)",
+        "5 registration/licensing/permit/procurement record(s)",
+        "1 secondary-source-controlling record(s)"
+      ],
+      "tier2_triggers": [
+        "10 authorities (>= 10)"
+      ]
+    },
+    {
+      "state_abbr": "NY",
+      "state": "New York",
+      "tier": 1,
+      "risk_score": 15,
+      "record_count": 8,
+      "has_manifest": false,
+      "has_checklist": false,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "legacy state (no manifest, no checklist)",
+        "2 low-confidence record(s)",
+        "3 proposed/pending/failed/superseded record(s)",
+        "2 criminal/felony-restriction record(s)",
+        "4 registration/licensing/permit/procurement record(s)",
+        "1 secondary-source-controlling record(s)"
+      ],
+      "tier2_triggers": []
+    },
+    {
+      "state_abbr": "UT",
+      "state": "Utah",
+      "tier": 1,
+      "risk_score": 15,
+      "record_count": 15,
+      "has_manifest": false,
+      "has_checklist": true,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "1 proposed/pending/failed/superseded record(s)",
+        "6 criminal/felony-restriction record(s)",
+        "7 registration/licensing/permit/procurement record(s)"
+      ],
+      "tier2_triggers": [
+        "15 authorities (>= 10)"
+      ]
+    },
+    {
+      "state_abbr": "AZ",
+      "state": "Arizona",
+      "tier": 1,
+      "risk_score": 14,
+      "record_count": 9,
+      "has_manifest": false,
+      "has_checklist": false,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "legacy state (no manifest, no checklist)",
+        "3 low-confidence record(s)",
+        "3 criminal/felony-restriction record(s)",
+        "3 registration/licensing/permit/procurement record(s)",
+        "2 secondary-source-controlling record(s)"
+      ],
+      "tier2_triggers": []
+    },
+    {
+      "state_abbr": "ID",
+      "state": "Idaho",
+      "tier": 1,
+      "risk_score": 14,
+      "record_count": 8,
+      "has_manifest": false,
+      "has_checklist": false,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "legacy state (no manifest, no checklist)",
+        "3 low-confidence record(s)",
+        "1 criminal/felony-restriction record(s)",
+        "4 registration/licensing/permit/procurement record(s)",
+        "2 secondary-source-controlling record(s)"
+      ],
+      "tier2_triggers": [
+        "no record mentions state preemption of local ordinances"
+      ]
+    },
+    {
+      "state_abbr": "KS",
+      "state": "Kansas",
+      "tier": 1,
+      "risk_score": 14,
+      "record_count": 7,
+      "has_manifest": false,
+      "has_checklist": false,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "legacy state (no manifest, no checklist)",
+        "1 low-confidence record(s)",
+        "2 criminal/felony-restriction record(s)",
+        "5 registration/licensing/permit/procurement record(s)",
+        "2 secondary-source-controlling record(s)"
+      ],
+      "tier2_triggers": [
+        "3 public-agency/procurement record(s)"
+      ]
+    },
+    {
+      "state_abbr": "KY",
+      "state": "Kentucky",
+      "tier": 1,
+      "risk_score": 14,
+      "record_count": 9,
+      "has_manifest": false,
+      "has_checklist": false,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "legacy state (no manifest, no checklist)",
+        "1 low-confidence record(s)",
+        "2 criminal/felony-restriction record(s)",
+        "6 registration/licensing/permit/procurement record(s)",
+        "2 secondary-source-controlling record(s)"
+      ],
+      "tier2_triggers": []
+    },
+    {
+      "state_abbr": "NH",
+      "state": "New Hampshire",
+      "tier": 1,
+      "risk_score": 14,
+      "record_count": 15,
+      "has_manifest": false,
+      "has_checklist": true,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "6 criminal/felony-restriction record(s)",
+        "6 registration/licensing/permit/procurement record(s)"
+      ],
+      "tier2_triggers": [
+        "15 authorities (>= 10)",
+        "no record mentions state preemption of local ordinances"
+      ]
+    },
+    {
+      "state_abbr": "SD",
+      "state": "South Dakota",
+      "tier": 1,
+      "risk_score": 14,
+      "record_count": 13,
+      "has_manifest": false,
+      "has_checklist": true,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "7 criminal/felony-restriction record(s)",
+        "6 registration/licensing/permit/procurement record(s)"
+      ],
+      "tier2_triggers": [
+        "13 authorities (>= 10)"
+      ]
+    },
+    {
+      "state_abbr": "MA",
+      "state": "Massachusetts",
+      "tier": 1,
+      "risk_score": 13,
+      "record_count": 6,
+      "has_manifest": false,
+      "has_checklist": false,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "legacy state (no manifest, no checklist)",
+        "1 low-confidence record(s)",
+        "2 proposed/pending/failed/superseded record(s)",
+        "5 registration/licensing/permit/procurement record(s)",
+        "2 secondary-source-controlling record(s)"
+      ],
+      "tier2_triggers": []
+    },
+    {
+      "state_abbr": "MD",
+      "state": "Maryland",
+      "tier": 1,
+      "risk_score": 13,
+      "record_count": 7,
+      "has_manifest": false,
+      "has_checklist": false,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "legacy state (no manifest, no checklist)",
+        "1 low-confidence record(s)",
+        "1 proposed/pending/failed/superseded record(s)",
+        "2 criminal/felony-restriction record(s)",
+        "4 registration/licensing/permit/procurement record(s)",
+        "2 secondary-source-controlling record(s)"
+      ],
+      "tier2_triggers": []
+    },
+    {
+      "state_abbr": "NE",
+      "state": "Nebraska",
+      "tier": 1,
+      "risk_score": 13,
+      "record_count": 7,
+      "has_manifest": false,
+      "has_checklist": false,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "legacy state (no manifest, no checklist)",
+        "3 criminal/felony-restriction record(s)",
+        "5 registration/licensing/permit/procurement record(s)"
+      ],
+      "tier2_triggers": [
+        "no record mentions state preemption of local ordinances",
+        "3 public-agency/procurement record(s)"
+      ]
+    },
+    {
+      "state_abbr": "WY",
+      "state": "Wyoming",
+      "tier": 1,
+      "risk_score": 13,
+      "record_count": 9,
+      "has_manifest": false,
+      "has_checklist": true,
+      "checklist_unresolved": true,
+      "tier1_triggers": [
+        "legacy state (no manifest, checklist has an unresolved/TBD marker)",
+        "4 criminal/felony-restriction record(s)",
+        "3 registration/licensing/permit/procurement record(s)",
+        "2 secondary-source-controlling record(s)"
+      ],
+      "tier2_triggers": [
+        "no record mentions state preemption of local ordinances"
+      ]
+    },
+    {
+      "state_abbr": "AK",
+      "state": "Alaska",
+      "tier": 1,
+      "risk_score": 12,
+      "record_count": 8,
+      "has_manifest": false,
+      "has_checklist": false,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "legacy state (no manifest, no checklist)",
+        "3 low-confidence record(s)",
+        "4 registration/licensing/permit/procurement record(s)",
+        "2 secondary-source-controlling record(s)"
+      ],
+      "tier2_triggers": []
+    },
+    {
+      "state_abbr": "AL",
+      "state": "Alabama",
+      "tier": 1,
+      "risk_score": 12,
+      "record_count": 8,
+      "has_manifest": false,
+      "has_checklist": false,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "legacy state (no manifest, no checklist)",
+        "3 low-confidence record(s)",
+        "2 criminal/felony-restriction record(s)",
+        "2 registration/licensing/permit/procurement record(s)",
+        "2 secondary-source-controlling record(s)"
+      ],
+      "tier2_triggers": []
+    },
+    {
+      "state_abbr": "GA",
+      "state": "Georgia",
+      "tier": 1,
+      "risk_score": 12,
+      "record_count": 7,
+      "has_manifest": false,
+      "has_checklist": false,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "legacy state (no manifest, no checklist)",
+        "2 low-confidence record(s)",
+        "2 criminal/felony-restriction record(s)",
+        "5 registration/licensing/permit/procurement record(s)"
+      ],
+      "tier2_triggers": []
+    },
+    {
+      "state_abbr": "OR",
+      "state": "Oregon",
+      "tier": 1,
+      "risk_score": 12,
+      "record_count": 6,
+      "has_manifest": false,
+      "has_checklist": false,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "legacy state (no manifest, no checklist)",
+        "1 low-confidence record(s)",
+        "1 criminal/felony-restriction record(s)",
+        "5 registration/licensing/permit/procurement record(s)",
+        "2 secondary-source-controlling record(s)"
+      ],
+      "tier2_triggers": []
+    },
+    {
+      "state_abbr": "SC",
+      "state": "South Carolina",
+      "tier": 1,
+      "risk_score": 12,
+      "record_count": 9,
+      "has_manifest": false,
+      "has_checklist": true,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "4 proposed/pending/failed/superseded record(s)",
+        "4 criminal/felony-restriction record(s)",
+        "4 registration/licensing/permit/procurement record(s)"
+      ],
+      "tier2_triggers": []
+    },
+    {
+      "state_abbr": "VA",
+      "state": "Virginia",
+      "tier": 1,
+      "risk_score": 12,
+      "record_count": 14,
+      "has_manifest": false,
+      "has_checklist": true,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "6 criminal/felony-restriction record(s)",
+        "5 registration/licensing/permit/procurement record(s)"
+      ],
+      "tier2_triggers": [
+        "14 authorities (>= 10)"
+      ]
+    },
+    {
+      "state_abbr": "CT",
+      "state": "Connecticut",
+      "tier": 1,
+      "risk_score": 11,
+      "record_count": 8,
+      "has_manifest": false,
+      "has_checklist": false,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "legacy state (no manifest, no checklist)",
+        "2 low-confidence record(s)",
+        "1 criminal/felony-restriction record(s)",
+        "4 registration/licensing/permit/procurement record(s)",
+        "1 secondary-source-controlling record(s)"
+      ],
+      "tier2_triggers": []
+    },
+    {
+      "state_abbr": "DE",
+      "state": "Delaware",
+      "tier": 1,
+      "risk_score": 11,
+      "record_count": 5,
+      "has_manifest": false,
+      "has_checklist": false,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "legacy state (no manifest, no checklist)",
+        "2 low-confidence record(s)",
+        "2 criminal/felony-restriction record(s)",
+        "3 registration/licensing/permit/procurement record(s)",
+        "1 secondary-source-controlling record(s)"
+      ],
+      "tier2_triggers": []
+    },
+    {
+      "state_abbr": "IA",
+      "state": "Iowa",
+      "tier": 1,
+      "risk_score": 11,
+      "record_count": 7,
+      "has_manifest": false,
+      "has_checklist": false,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "legacy state (no manifest, no checklist)",
+        "1 low-confidence record(s)",
+        "2 criminal/felony-restriction record(s)",
+        "3 registration/licensing/permit/procurement record(s)",
+        "1 secondary-source-controlling record(s)"
+      ],
+      "tier2_triggers": [
+        "3 public-agency/procurement record(s)"
+      ]
+    },
+    {
+      "state_abbr": "ME",
+      "state": "Maine",
+      "tier": 1,
+      "risk_score": 11,
+      "record_count": 8,
+      "has_manifest": false,
+      "has_checklist": false,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "legacy state (no manifest, no checklist)",
+        "1 low-confidence record(s)",
+        "5 registration/licensing/permit/procurement record(s)",
+        "1 secondary-source-controlling record(s)"
+      ],
+      "tier2_triggers": [
+        "3 public-agency/procurement record(s)"
+      ]
+    },
+    {
+      "state_abbr": "NV",
+      "state": "Nevada",
+      "tier": 1,
+      "risk_score": 11,
+      "record_count": 12,
+      "has_manifest": false,
+      "has_checklist": true,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "3 criminal/felony-restriction record(s)",
+        "6 registration/licensing/permit/procurement record(s)"
+      ],
+      "tier2_triggers": [
+        "12 authorities (>= 10)",
+        "no record mentions state preemption of local ordinances"
+      ]
+    },
+    {
+      "state_abbr": "TN",
+      "state": "Tennessee",
+      "tier": 1,
+      "risk_score": 11,
+      "record_count": 13,
+      "has_manifest": false,
+      "has_checklist": true,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "5 criminal/felony-restriction record(s)",
+        "3 registration/licensing/permit/procurement record(s)"
+      ],
+      "tier2_triggers": [
+        "13 authorities (>= 10)",
+        "no record mentions state preemption of local ordinances",
+        "3 public-agency/procurement record(s)"
+      ]
+    },
+    {
+      "state_abbr": "MT",
+      "state": "Montana",
+      "tier": 1,
+      "risk_score": 10,
+      "record_count": 7,
+      "has_manifest": false,
+      "has_checklist": false,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "legacy state (no manifest, no checklist)",
+        "2 proposed/pending/failed/superseded record(s)",
+        "1 criminal/felony-restriction record(s)",
+        "4 registration/licensing/permit/procurement record(s)"
+      ],
+      "tier2_triggers": []
+    },
+    {
+      "state_abbr": "MS",
+      "state": "Mississippi",
+      "tier": 1,
+      "risk_score": 8,
+      "record_count": 7,
+      "has_manifest": false,
+      "has_checklist": false,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "legacy state (no manifest, no checklist)",
+        "1 criminal/felony-restriction record(s)",
+        "4 registration/licensing/permit/procurement record(s)"
+      ],
+      "tier2_triggers": []
+    },
+    {
+      "state_abbr": "ND",
+      "state": "North Dakota",
+      "tier": 1,
+      "risk_score": 8,
+      "record_count": 14,
+      "has_manifest": false,
+      "has_checklist": true,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "2 criminal/felony-restriction record(s)",
+        "3 registration/licensing/permit/procurement record(s)"
+      ],
+      "tier2_triggers": [
+        "14 authorities (>= 10)",
+        "no record mentions state preemption of local ordinances",
+        "3 public-agency/procurement record(s)"
+      ]
+    },
+    {
+      "state_abbr": "OH",
+      "state": "Ohio",
+      "tier": 1,
+      "risk_score": 8,
+      "record_count": 17,
+      "has_manifest": false,
+      "has_checklist": true,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "1 criminal/felony-restriction record(s)",
+        "6 registration/licensing/permit/procurement record(s)"
+      ],
+      "tier2_triggers": [
+        "17 authorities (>= 10)"
+      ]
+    },
+    {
+      "state_abbr": "NJ",
+      "state": "New Jersey",
+      "tier": 1,
+      "risk_score": 7,
+      "record_count": 9,
+      "has_manifest": false,
+      "has_checklist": true,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "7 registration/licensing/permit/procurement record(s)"
+      ],
+      "tier2_triggers": []
+    },
+    {
+      "state_abbr": "WV",
+      "state": "West Virginia",
+      "tier": 1,
+      "risk_score": 7,
+      "record_count": 9,
+      "has_manifest": false,
+      "has_checklist": true,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "3 criminal/felony-restriction record(s)",
+        "4 registration/licensing/permit/procurement record(s)"
+      ],
+      "tier2_triggers": []
+    },
+    {
+      "state_abbr": "VT",
+      "state": "Vermont",
+      "tier": 1,
+      "risk_score": 5,
+      "record_count": 9,
+      "has_manifest": false,
+      "has_checklist": true,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "4 registration/licensing/permit/procurement record(s)"
+      ],
+      "tier2_triggers": [
+        "no record mentions state preemption of local ordinances"
+      ]
+    },
+    {
+      "state_abbr": "WI",
+      "state": "Wisconsin",
+      "tier": 1,
+      "risk_score": 5,
+      "record_count": 14,
+      "has_manifest": false,
+      "has_checklist": true,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "2 criminal/felony-restriction record(s)",
+        "2 registration/licensing/permit/procurement record(s)"
+      ],
+      "tier2_triggers": [
+        "14 authorities (>= 10)"
+      ]
+    },
+    {
+      "state_abbr": "RI",
+      "state": "Rhode Island",
+      "tier": 1,
+      "risk_score": 4,
+      "record_count": 4,
+      "has_manifest": false,
+      "has_checklist": true,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "1 criminal/felony-restriction record(s)",
+        "3 registration/licensing/permit/procurement record(s)"
+      ],
+      "tier2_triggers": []
+    },
+    {
+      "state_abbr": "NM",
+      "state": "New Mexico",
+      "tier": 1,
+      "risk_score": 3,
+      "record_count": 5,
+      "has_manifest": false,
+      "has_checklist": true,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "2 registration/licensing/permit/procurement record(s)"
+      ],
+      "tier2_triggers": [
+        "no record mentions state preemption of local ordinances"
+      ]
+    }
+  ]
+}

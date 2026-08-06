@@ -419,8 +419,8 @@ Provide each role only the necessary record-level input:
 
 ## Tasks
 
-- [ ] Generate a retrofit-risk score.
-- [ ] Publish a transparent retrofit queue.
+- [x] Generate a retrofit-risk score. (`scripts/compute_retrofit_risk.py`)
+- [x] Publish a transparent retrofit queue. (`planning/national_retrofit_queue.md`, regenerate after any register/checklist change)
 - [ ] Process one state per substantive research commit.
 - [ ] Preserve stable record IDs when the same authority remains.
 - [ ] Re-run dependent interpretations only when objective meaning changes.

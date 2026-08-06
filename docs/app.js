@@ -10,6 +10,7 @@
   var titleEl = document.getElementById("state-title");
   var updatedEl = document.getElementById("state-updated");
   var recordCountEl = document.getElementById("state-record-count");
+  var researchStatusEl = document.getElementById("state-research-status");
   var schemaEl = document.getElementById("state-schema");
   var summaryPanel = document.getElementById("summary-panel");
   var tocNav = document.getElementById("toc-nav");
@@ -57,6 +58,22 @@
     window.setTimeout(function () {
       pageStatus.textContent = message;
     }, 20);
+  }
+
+  var RESEARCH_STATUS_LABELS = {
+    current_method_complete: "Current method (complete)",
+    current_method_in_progress: "Current method (in progress)",
+    legacy_needs_retrofit: "Legacy — not yet retrofitted",
+    legacy_retrofit_in_progress: "Legacy retrofit in progress",
+    legacy_retrofit_complete: "Retrofit complete"
+  };
+
+  function researchStatusBadge(status) {
+    var label = RESEARCH_STATUS_LABELS[status] || "Not recorded";
+    var cls = (status && status.indexOf("current_method") === 0) || status === "legacy_retrofit_complete"
+      ? "current-method"
+      : "legacy";
+    return '<span class="badge ' + cls + '" title="See the Research method note in the disclaimer for what this means.">' + escapeHtml(label) + "</span>";
   }
 
   function levelClass(value) {
@@ -360,6 +377,7 @@
 
     titleEl.textContent = data.state + " (" + data.state_abbr + ")";
     updatedEl.textContent = data.last_updated || "Not provided";
+    researchStatusEl.innerHTML = researchStatusBadge(data.research_status);
     recordCountEl.textContent = data.record_count + " source record" + (data.record_count === 1 ? "" : "s");
     schemaEl.textContent = "v" + data.schema_version;
     document.title = data.state + " UAS Regulatory Summary — AEC Reference";

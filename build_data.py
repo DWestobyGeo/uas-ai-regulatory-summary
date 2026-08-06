@@ -56,6 +56,32 @@ def get_last_updated(script_dir, csv_path, state_dir):
     return datetime.date.fromtimestamp(mtime).isoformat()
 
 
+def get_research_status(state_dir):
+    """Workstream 9 (retrofit visibility): report a state's research_status per the controlled
+    vocabulary in States/RESEARCH_MANIFEST_SCHEMA.md, so the live site can visibly distinguish a
+    "current method" (Phase B pilot) state from a "legacy, not yet retrofitted" one -- a Definition
+    of Done acceptance criterion ("legacy and current-method status is visible").
+
+    A state with a research manifest reports whatever research_status the manifest declares.
+    A state without one has not been through the current-method process at all yet (manifests
+    are piloted for five states only as of this writing -- see evals/pilot_states.md), so it is
+    reported as legacy_needs_retrofit -- not an error, just the honest state of the nationwide
+    rollout. See planning/national_retrofit_queue.md for the risk-ordered plan to work through it.
+    """
+    if yaml is not None:
+        manifest_files = glob.glob(os.path.join(state_dir, "*_UAS_Research_Manifest.yaml"))
+        if manifest_files:
+            try:
+                with open(manifest_files[0], encoding="utf-8") as mf:
+                    manifest = yaml.safe_load(mf) or {}
+                status = manifest.get("research_status")
+                if status:
+                    return str(status)
+            except (OSError, yaml.YAMLError):
+                pass
+    return "legacy_needs_retrofit"
+
+
 index = {
     "schema_version": "1.1",
     "generated_at": datetime.date.today().isoformat(),
@@ -89,6 +115,7 @@ for sd in state_dirs:
         summary_md = f.read()
 
     last_updated = get_last_updated(SCRIPT_DIR, csv_path, sd)
+    research_status = get_research_status(sd)
 
     state_obj = {
         "schema_version": "1.1",
@@ -96,6 +123,7 @@ for sd in state_dirs:
         "state_abbr": abbr,
         "state_fips": fips,
         "last_updated": last_updated,
+        "research_status": research_status,
         "record_count": len(records),
         "summary_markdown": summary_md,
         "records": records,
