@@ -1,0 +1,124 @@
+# State Research Manifest -- Workstream 9 (national retrofit, per planning/national_retrofit_queue.md)
+# Schema: States/RESEARCH_MANIFEST_SCHEMA.md
+# Owner: Research Expert (agents/roles/research-expert.md)
+# Validated by: scripts/validate_research_manifests.py
+
+state: Texas
+state_abbr: TX
+method_version: 1.0.0
+research_status: current_method_in_progress
+legacy_retrofit_status: retrofit_in_progress
+last_full_research_date: '2026-08-01'
+last_currency_check: '2026-08-06'
+source_cutoff_date: '2026-08-06'
+coverage:
+  state_statutes_and_amendments:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - TX-001
+    - TX-002
+    - TX-003
+    - TX-004
+    - TX-005
+    - TX-006
+    - TX-007
+    note: Gov't Code Chapter 423 and Penal Code Sections 38.115/42.15 re-confirmed 2026-08-06; Section
+      42.15's Sept. 1, 2025 spaceport amendment fully verified via the official Senate Research Center
+      bill analysis, resolving a felony-vs-misdemeanor conflict between two secondary sources.
+  administrative_rules:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - TX-009
+    - TX-010
+    - TX-013
+    note: 31 TAC Sections 65.151-65.152 re-confirmed. Corrected the state-park drone rule citation
+      (previously 31 TAC Section 59.134, which contains no drone provision) to the director's general
+      Section 59.132(a) restriction authority plus TPWD's own Park Rules page. Corrected the TBPELS
+      competency-rule citation from a stale Chapter 663 reference to current 22 TAC Sections 137.59/138.59.
+  executive_orders:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - TX-012
+    note: Gubernatorial Prohibited Technologies directives re-confirmed directly against DIR's official
+      webpage and the Governor's Jan. 26, 2026 press release.
+  court_decisions_and_ag_opinions:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - TX-008
+    note: "National Press Photographers Ass'n v. McCraw, 90 F.4th 770 (5th Cir. 2023) re-confirmed; no\
+      \ subsequent disposition of remanded as-applied claims located."
+  aviation_and_transportation_agencies:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - TX-011
+    note: TxDOT UAS Services page re-confirmed 2026-08-06; now also documents FAA Remote ID compliance
+      and DIR Prohibited Technology List cross-checking as pre-flight requirements.
+  parks_public_lands_and_natural_resources:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - TX-009
+    - TX-010
+    note: TPWD's own Park Rules and Drones/UAVs FAQ pages re-confirmed directly. San Angelo and Lake
+      Whitney State Parks as additional RC-zones could not be corroborated from a primary source in this
+      pass -- see TX_UAS_Research_Checklist.md, "Open verification items," item 1.
+  corrections_public_safety_and_critical_infrastructure:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - TX-003
+    - TX-006
+    note: Gov't Code Section 423.0045 (critical infrastructure) and Penal Code Section 38.115
+      (correctional/detention facility) re-confirmed; no change from original pass.
+  privacy_surveillance_trespass_and_interference:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - TX-002
+    - TX-008
+    note: Gov't Code Section 423.003 (surveillance-image offense) and its McCraw litigation history
+      re-confirmed; no change.
+  procurement_equipment_and_cybersecurity:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - TX-012
+    note: Prohibited Technologies List re-confirmed and enhanced with specific drone/LiDAR-manufacturer
+      names (DJI, Autel, RoboSense, Wuhan Geosun) directly from DIR's official page.
+  professional_licensing_board_material:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - TX-013
+    note: TBPELS competency-rule citation corrected 2026-08-06 (see administrative_rules note); no
+      standalone UAS-specific TBPELS guidance located.
+  state_preemption:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - TX-005
+    note: Gov't Code Section 423.009 (state preemption of local UAS ordinances) re-confirmed; no change.
+record_count: 13
+unresolved_count: 0
+low_confidence_record_count: 0
+primary_source_percentage: 92
+known_issues:
+  - >-
+    Prior public reporting naming San Angelo State Park and Lake Whitney State Park as additional
+    designated RC-aircraft/UAS zones (beyond Martin Dies, Jr. State Park) was not corroborated by
+    TPWD's own current Park Rules page during this retrofit pass. Not removed from the record, but
+    flagged as unconfirmed pending direct TPWD confirmation. See TX_UAS_Research_Checklist.md, "Open
+    verification items," item 1.
+  - >-
+    The official Texas Secretary of State Texas Administrative Code portal (texas-sos.appianportalsgov.com)
+    migrated to a JavaScript-rendered platform during this pass and could not be fetched directly;
+    TX-010 and TX-013's corrected citations rely on Cornell Law School's Legal Information Institute
+    and Justia's Texas Administrative Code mirrors instead of the state's own primary database. See
+    TX_UAS_Research_Checklist.md, "Open verification items," item 2.
+next_currency_review: '2027-02-02'
+recheck_triggers: []

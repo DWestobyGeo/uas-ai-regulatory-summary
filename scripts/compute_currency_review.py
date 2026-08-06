@@ -141,7 +141,7 @@ def compute(state_dir: Path) -> dict:
 
     per_record = []
     triggers = []
-    min_days = min(CADENCE_DAYS.values())
+    min_days = None
     for row in rows:
         bucket, reason = classify_record(row)
         days = CADENCE_DAYS[bucket]
@@ -153,7 +153,7 @@ def compute(state_dir: Path) -> dict:
             "due": due.isoformat(),
             "reason": reason,
         })
-        min_days = min(min_days, days)
+        min_days = days if min_days is None else min(min_days, days)
         if bucket == "event_triggered_or_pending":
             triggers.append({"record_id": row.get("record_id", ""), "reason": reason})
 

@@ -60,28 +60,18 @@
       "legacy_retrofit_status": "retrofit_in_progress",
       "last_currency_check": "2026-08-06",
       "unresolved_count": 1
-    }
-  ],
-  "queue": [
+    },
     {
       "state_abbr": "TX",
       "state": "Texas",
-      "tier": 1,
-      "risk_score": 18,
-      "record_count": 13,
-      "has_manifest": false,
-      "has_checklist": false,
-      "checklist_unresolved": false,
-      "tier1_triggers": [
-        "legacy state (no manifest, no checklist)",
-        "2 low-confidence record(s)",
-        "6 criminal/felony-restriction record(s)",
-        "6 registration/licensing/permit/procurement record(s)"
-      ],
-      "tier2_triggers": [
-        "13 authorities (>= 10)"
-      ]
-    },
+      "is_pilot": false,
+      "research_status": "current_method_in_progress",
+      "legacy_retrofit_status": "retrofit_in_progress",
+      "last_currency_check": "2026-08-06",
+      "unresolved_count": 0
+    }
+  ],
+  "queue": [
     {
       "state_abbr": "MO",
       "state": "Missouri",
@@ -422,6 +412,23 @@
       "risk_score": 14,
       "record_count": 13,
       "has_manifest": false,
+      "has_checklist": true,
+      "checklist_unresolved": false,
+      "tier1_triggers": [
+        "7 criminal/felony-restriction record(s)",
+        "6 registration/licensing/permit/procurement record(s)"
+      ],
+      "tier2_triggers": [
+        "13 authorities (>= 10)"
+      ]
+    },
+    {
+      "state_abbr": "TX",
+      "state": "Texas",
+      "tier": 1,
+      "risk_score": 14,
+      "record_count": 13,
+      "has_manifest": true,
       "has_checklist": true,
       "checklist_unresolved": false,
       "tier1_triggers": [

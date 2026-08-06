@@ -28,6 +28,61 @@ scratch.
 
 ## Log (newest first)
 
+### 2026-08-06 — Workstream 9 retrofit: Texas (queue rank #1), plus a currency-review cadence bug fix
+
+**Status:** Complete locally, about to be committed and pushed on top of the Missouri retrofit
+commit. Second of the "3 more states" the user authorized after the Missouri trial.
+
+**What changed:** All 13 Texas records re-verified against current primary sources. Two real
+citation corrections were found and fixed, not just re-confirmed:
+
+- **TX-010 (state park drone rule):** the previously-cited "31 TAC Section 59.134" was pulled in
+  full (plus the rest of Subchapter F, Sections 59.131-59.136) and contains **no drone/UAS
+  provision whatsoever**. The actual policy is TPWD agency policy exercised under the director's
+  general Section 59.132(a) restriction authority (TPWD's own Park Rules page is now the cited
+  source), and the penalty for violating Sections 59.132-59.134 is a **Class C misdemeanor**
+  (Section 59.136) -- not the Class A misdemeanor/$4,000 fine the prior secondary source
+  (legalclarity.org) claimed. Confidence raised Low -> Moderate.
+- **TX-013 (TBPELS competency rule):** the previously-cited "Chapter 663 (Surveyors)" is stale --
+  TBPELS's 2019 board merger (H.B. 1523, 86th Leg.) consolidated it into Chapter 138. Corrected to
+  the current 22 TAC Section 137.59 (engineers) / Section 138.59 (surveyors). Confidence raised
+  Low -> Moderate.
+- **TX-007 (Penal Code Section 42.15):** the Sept. 1, 2025 spaceport amendment (S.B. 1197) is now
+  independently confirmed via the official Texas Senate Research Center bill analysis, resolving a
+  real conflict between two secondary sources over whether the spaceport provision was a felony
+  (it isn't -- Class B misdemeanor, Class A on repeat, same as the existing airport/military tiers).
+  Confidence raised Moderate -> High.
+- TX-009, TX-011, TX-012 re-confirmed and enhanced with specifics (exact codified UAV carve-out
+  text, FAA Remote ID/DIR-list cross-references, named drone/LiDAR manufacturers on the Feb. 2026
+  Prohibited Technologies list). TX-001 through TX-006 and TX-008 re-confirmed with no substantive
+  change.
+
+Texas now has a research manifest and checklist for the first time
+(`current_method_in_progress`, `unresolved_count: 0`, `low_confidence_record_count: 0` -- an
+improvement from 2 low-confidence records before this pass) and dropped off the retrofit queue.
+
+**Bug found and fixed while doing this:** `scripts/compute_currency_review.py` had a latent bug --
+`min_days` was initialized to `min(CADENCE_DAYS.values())` (always 30) instead of being derived
+from the records actually present, so **every** state's `next_currency_review` came out to
+`last_currency_check + 30 days` regardless of actual record content, silently defeating the
+differentiated-cadence design. Fixed to derive the minimum only from buckets records actually
+matched, and re-ran `--write` for all 7 states with existing manifests. Six of seven states'
+computed values were unchanged by coincidence (they do have a genuine 30-day-cadence record); only
+Minnesota's changed (`2026-09-01` -> `2027-01-29`, since MN has no actual 30-day-cadence record).
+Texas's own first computed value (`2027-02-02`, driven by its two registration/licensing/permit
+records) would have been silently wrong as `2026-09-05` without this fix.
+
+**Not yet done / open items:** TX-010's "San Angelo/Lake Whitney additional RC-zone" claim (from
+the original pass) could not be corroborated against TPWD's current Park Rules page and is flagged
+unconfirmed, not removed. The official Secretary of State Texas Administrative Code portal
+(texas-sos.appianportalsgov.com) migrated to a JavaScript-rendered platform mid-pass and could not
+be fetched by this session's tools; TX-010 and TX-013's corrected citations rely on Cornell LII and
+Justia mirrors instead. See `TX_UAS_Research_Checklist.md`'s "Open verification items" for both.
+
+**Next:** Pennsylvania (queue rank #2 after Missouri/Texas both dropped off), then Arkansas (rank
+#3), per the user's "continue with 3 more" instruction and `planning/national_retrofit_queue.md`'s
+order. All validators and eval fixture checks pass locally as of this entry.
+
 ### 2026-08-06 — Workstream 9 trial retrofit: Missouri (queue rank #1), pushed
 
 **Status:** Complete and pushed (`f6ecdc2`), on top of the retrofit-infrastructure commit

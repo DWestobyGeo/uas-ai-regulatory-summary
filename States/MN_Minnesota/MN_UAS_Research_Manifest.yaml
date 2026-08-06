@@ -85,5 +85,5 @@ known_issues:
   — blocks current_method_complete under this manifest schema's rule that every category must be resolved.
 - MN-004 citation discrepancy (Minn. Stat. §360.075 cited by MnDOT does not itself establish the license)
   — see evals/known_bad/mn-004-citation-drift.md.
-next_currency_review: '2026-09-01'
+next_currency_review: '2027-01-29'
 recheck_triggers: []
