@@ -9,7 +9,7 @@
 
 > **Process note:** Objective research is retained from the Phase 1 source packet. The four practical-interpretation roles were completed in Phase 2 on 2026-08-02 using OpenAI GPT-5 (Codex; exact checkpoint unavailable).
 
-> **Generated content notice:** The authority sections below (headings, type/status line, Objective Summary, and the four Practical Interpretation bullets for each record) are generated verbatim from `OK_UAS_Source_Register.csv` by `scripts/generate_summary.py`. Do not hand-edit them here -- edit the register and regenerate. The overview, unresolved-questions, and any other narrative sections are authored directly in `OK_UAS_Summary_Authored.md`.
+<!-- Generated content notice: the authority sections below (headings, type/status line, Objective Summary, and the four Practical Interpretation bullets for each record) are generated verbatim from OK_UAS_Source_Register.csv by scripts/generate_summary.py. Do not hand-edit them here -- edit the register and regenerate. The overview, unresolved-questions, and any other narrative sections are authored directly in OK_UAS_Summary_Authored.md. -->
 
 ## 1. State UAS Regulatory Overview
 

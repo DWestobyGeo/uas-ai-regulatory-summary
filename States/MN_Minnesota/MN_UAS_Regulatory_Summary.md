@@ -11,7 +11,7 @@
 
 Each authority below retains its verified objective summary and now includes the four Phase 2 practical-interpretation perspectives. The interpretations are AI-generated operational opinions, not legal advice.
 
-> **Generated content notice:** The authority sections below (headings, type/status line, Objective Summary, and the four Practical Interpretation bullets for each record) are generated verbatim from `MN_UAS_Source_Register.csv` by `scripts/generate_summary.py`. Do not hand-edit them here -- edit the register and regenerate. The overview, unresolved-questions, and any other narrative sections are authored directly in `MN_UAS_Summary_Authored.md`.
+<!-- Generated content notice: the authority sections below (headings, type/status line, Objective Summary, and the four Practical Interpretation bullets for each record) are generated verbatim from MN_UAS_Source_Register.csv by scripts/generate_summary.py. Do not hand-edit them here -- edit the register and regenerate. The overview, unresolved-questions, and any other narrative sections are authored directly in MN_UAS_Summary_Authored.md. -->
 
 ## 1. State UAS Regulatory Overview
 

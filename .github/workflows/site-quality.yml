@@ -66,3 +66,6 @@ jobs:
 
       - name: Validate shared design and state data
         run: python scripts/validate_site.py
+
+      - name: Validate generated summaries match register + authored templates
+        run: python scripts/validate_generated_summary.py

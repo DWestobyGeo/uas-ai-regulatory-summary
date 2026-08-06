@@ -300,21 +300,41 @@ PER_RECORD_RULES = [
 ]
 
 
+DUPLICATE_INTERPRETATION_FIELDS = (
+    "practical_interpretation_aec_expert",
+    "practical_interpretation_legal_counsel",
+)
+
+
 def check_duplicate_interpretations(rows: list[dict], threshold: float = 0.55) -> list[str]:
-    """Rule: flag near-duplicate interpretation text reused across unrelated records."""
+    """Rule: flag near-duplicate interpretation text reused across unrelated records.
+
+    Scans both the AEC-expert and legal-counsel interpretation fields. Originally scanned only
+    practical_interpretation_aec_expert; extended (Workstream 7 follow-up) after finding that
+    Oklahoma's practical_interpretation_legal_counsel is an identical boilerplate template
+    across all 3 OK records -- differing only in the substituted citation -- including OK-002,
+    which is a pure privacy/consent statute with no application/approval process at all, yet the
+    template still tells the reader to "retain the current application, all attachments,
+    written approval, conditions, amendments, and closeout records" and to escalate if "the
+    approving official ... is unclear." This is exactly the boilerplate-risk failure mode OK was
+    selected to pilot (see evals/pilot_states.md). Per governance, this is a detection change,
+    not a rewrite: the finding is surfaced here for visibility and manifest acknowledgment: it
+    does not rewrite OK's already-published interpretive text, which would be retroactive
+    interpretation authorship and out of scope for this validator.
+    """
     findings = []
-    field = "practical_interpretation_aec_expert"
-    for a, b in itertools.combinations(rows, 2):
-        ta, tb = a.get(field, ""), b.get(field, "")
-        if not ta or not tb or len(ta) < 40 or len(tb) < 40:
-            continue
-        ratio = difflib.SequenceMatcher(None, ta, tb).ratio()
-        if ratio >= threshold:
-            findings.append(
-                f"{a.get('record_id')}/{b.get('record_id')}: {field} is {ratio:.0%} similar across two "
-                "records with different uas_topic values — possible templated boilerplate rather than "
-                "record-specific interpretation."
-            )
+    for field in DUPLICATE_INTERPRETATION_FIELDS:
+        for a, b in itertools.combinations(rows, 2):
+            ta, tb = a.get(field, ""), b.get(field, "")
+            if not ta or not tb or len(ta) < 40 or len(tb) < 40:
+                continue
+            ratio = difflib.SequenceMatcher(None, ta, tb).ratio()
+            if ratio >= threshold:
+                findings.append(
+                    f"{a.get('record_id')}/{b.get('record_id')}: {field} is {ratio:.0%} similar across two "
+                    "records with different uas_topic values — possible templated boilerplate rather than "
+                    "record-specific interpretation."
+                )
     return findings
 
 

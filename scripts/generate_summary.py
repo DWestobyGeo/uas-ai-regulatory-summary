@@ -56,12 +56,17 @@ MARKER_PATTERN = re.compile(
     r'<!--\s*GENERATED_SECTION\s+heading="([^"]+)"\s+records="([^"]*)"\s+heading_style="([^"]+)"\s*-->'
 )
 
+# An HTML comment, not a visible Markdown blockquote: this is a note for someone editing the
+# .md file directly (in an editor or on GitHub), not something a site visitor needs to see --
+# the site already carries its own AI-research disclaimer banner and footer. marked.js (the
+# renderer used in docs/app.js) passes raw HTML through and browsers don't display comments, so
+# this stays invisible on the live site while remaining visible in the raw file/source view.
 GENERATED_WARNING = (
-    "> **Generated content notice:** The authority sections below (headings, type/status line, "
+    "<!-- Generated content notice: the authority sections below (headings, type/status line, "
     "Objective Summary, and the four Practical Interpretation bullets for each record) are "
-    "generated verbatim from `{csv_name}` by `scripts/generate_summary.py`. Do not hand-edit "
-    "them here -- edit the register and regenerate. The overview, unresolved-questions, and any "
-    "other narrative sections are authored directly in `{authored_name}`."
+    "generated verbatim from {csv_name} by scripts/generate_summary.py. Do not hand-edit them "
+    "here -- edit the register and regenerate. The overview, unresolved-questions, and any "
+    "other narrative sections are authored directly in {authored_name}. -->"
 )
 
 ROLE_LABELS = [

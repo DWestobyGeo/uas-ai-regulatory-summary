@@ -74,4 +74,14 @@ record_count: 3
 unresolved_count: 0
 low_confidence_record_count: 0
 primary_source_percentage: 100
-known_issues: []
+known_issues:
+  - >-
+    Oklahoma's practical_interpretation_legal_counsel field is an identical boilerplate template
+    across OK-001, OK-002, and OK-003, differing only in the substituted citation -- including
+    OK-002, a pure privacy/consent statute with no application/approval process, where the
+    template still instructs retaining the current application, all attachments, written
+    approval, conditions, amendments, and closeout records. Flagged by
+    scripts/validate_research_semantics.py::check_duplicate_interpretations (extended to scan
+    this field in Phase D, Workstream 7 follow-up). Not corrected here: rewriting OK's published
+    interpretive text is out of scope for a tooling/detection change and would be retroactive
+    interpretation authorship. Left for a future dedicated legal-counsel-role research pass on OK.
