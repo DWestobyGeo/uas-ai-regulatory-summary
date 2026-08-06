@@ -12,37 +12,11 @@ Each authority below is presented as an **Objective Summary** (binding text/cita
 
 ---
 
-> **Generated content notice:** The authority sections below (headings, type/status line, Objective Summary, and the four Practical Interpretation bullets for each record) are generated verbatim from `FL_UAS_Source_Register.csv` by `scripts/generate_summary.py`. Do not hand-edit them here -- edit the register and regenerate. The overview, unresolved-questions, and any other narrative sections are authored directly in `FL_UAS_Summary_Authored.md`.
-
 ## 1. State UAS Regulatory Overview
 
 Florida regulates commercial UAS primarily through two statutes — the Unmanned Aircraft Systems Act (§330.41) and the Freedom from Unwarranted Surveillance Act (§934.50) — both substantially amended for 2025. The state vests UAS regulatory authority centrally and preempts most local UAS-specific ordinances, while local governments retain authority over takeoff/landing on their own property and generally applicable nuisance/park rules. Penalties for critical-infrastructure and school violations were sharply increased in the 2025 legislative session. Multiple commercial/FAA-compliance carve-outs support routine AEC operations, but the elevated penalties make documentation discipline important.
 
-## 2. Statewide UAS Laws and Regulations
-
-### Fla. Stat. § 330.41 — Unmanned Aircraft Systems Act
-*Binding law or regulation | Current / in force*
-
-**Objective Summary:** Prohibits knowingly/willfully operating a drone over, or allowing contact/interference with, an expanded list of 20 'critical infrastructure facilities' (power, water/wastewater, chemical, seaports, airports, correctional facilities, dams, military installations, etc.) unless the operation is commercial and FAA-authorized (330.41(4)) - 3rd-degree felony if violated. Separately bans overflight/contact with pre-K-12 schools at all times (330.41(5)); bans operation on classified agricultural land without owner consent (330.41(6), new 2025); and bans drone contact with private property/state wildlife management lands/shooting ranges made with intent to harass (330.41(7), new 2025). Vests UAS regulatory authority in the state and preempts most local UAS-specific ordinances (330.41(3)), while preserving local nuisance/harassment ordinances and takeoff/landing authority over locally owned property.
-
-**Practical Interpretation**
-
-- **AEC Industry UAS Expert:** Build the commercial/FAA-authorization basis into your flight-planning checklist for any job near critical infrastructure, and treat pre-K-12 campuses as a hard no-fly without prior written coordination - there's no construction-project carve-out. Flag any site on classified agricultural land for owner-consent documentation before tasking a crew, and keep standard standoff/no-loiter practices near residences and wildlife-management land regardless of intent.
-- **Agency Practitioner:** N/A — no agency process involved
-- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
-- **AEC Industry Legal Counsel:** The felony-level penalty for critical-infrastructure violations means flight authorization documentation (FAA certificate, commercial purpose, client contract) should be retained in the project file as an affirmative defense record, not just a courtesy. For school-adjacent construction/renovation work, obtain written principal or district consent in advance; verbal coordination is not adequate given the criminal exposure. The 2025 agricultural-lands and harassment-based property provisions are new and largely untested - build consent documentation into standard operating procedure rather than relying on interpretation of 'intent to harass.'
-
-### Fla. Stat. § 934.50 — Searches and seizure using a drone (Freedom from Unwarranted Surveillance Act)
-*Binding law or regulation | Current / in force*
-
-**Objective Summary:** (3)(a)-(b): bars law enforcement from using a drone to gather evidence without a warrant/exception, and bars any person/agency from using an imaging-equipped drone to surveil private property/persons in violation of a reasonable expectation of privacy without written consent. (4): lists 18 exemptions including (i) property-appraiser ad valorem assessment, (j) utility operations/maintenance/inspection/routing/environmental monitoring, (k) aerial mapping in FAA compliance, (n) communications-service-provider facility work, (g) state/political-subdivision disaster-damage assessment and vegetation/wildlife management on public land, (o) FWC/Florida Forest Service invasive-species and wildfire work. (7): DMS-administered approved-manufacturer list; governmental agencies were required to discontinue non-approved-manufacturer drones by Jan. 1, 2023.
-
-**Practical Interpretation**
-
-- **AEC Industry UAS Expert:** Aerial mapping, corridor survey, and utility-inspection flights fall squarely within the (4)(k) and (4)(j) exemptions - tag each flight log with the exemption relied on so it's easy to pull for a client or regulator later. For property-appraiser or public-works contract work, confirm the client agency's own drone equipment (if you're flying theirs) is on the DMS-approved-manufacturer list before you show up with a non-approved airframe.
-- **Agency Practitioner:** N/A — no agency process involved
-- **UAS Procurement Expert:** Before pricing public work involving client-owned or contract-furnished UAS, request the agency's current equipment, insurance, data, and support requirements. Do not assume an internal acquisition policy governs firm-owned aircraft unless the contract incorporates it.
-- **AEC Industry Legal Counsel:** Because the privacy prohibition in (3)(b) carries civil remedies including punitive damages and attorney's fees for the prevailing party, standard operating procedure should require every commercial flight over or near private property to be tied in writing to a specific (4) exemption - not just a general belief that the work is 'mapping.' For any contract with a Florida public agency, confirm in the scope of work whether the agency's own DMS approved-manufacturer requirement is being imposed as a flow-down contract term, since it can affect equipment procurement lead time.
+<!-- GENERATED_SECTION heading="2. Statewide UAS Laws and Regulations" records="FL-001,FL-002" heading_style="citation_and_title" -->
 
 ## 3. State Agency UAS Requirements
 

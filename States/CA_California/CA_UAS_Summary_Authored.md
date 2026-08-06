@@ -12,85 +12,11 @@ Each authority below is presented as an **Objective Summary** (binding text/cita
 
 ---
 
-> **Generated content notice:** The authority sections below (headings, type/status line, Objective Summary, and the four Practical Interpretation bullets for each record) are generated verbatim from `CA_UAS_Source_Register.csv` by `scripts/generate_summary.py`. Do not hand-edit them here -- edit the register and regenerate. The overview, unresolved-questions, and any other narrative sections are authored directly in `CA_UAS_Summary_Authored.md`.
-
 ## 1. State UAS Regulatory Overview
 
 California regulates UAS through a set of targeted statutes rather than one comprehensive UAS code: a civil privacy tort extended to drones (Civil Code § 1708.8), a criminal emergency-scene-interference statute expressly covering remote drone operators (Penal Code § 402), a corrections-facility restriction (Penal Code § 4577), wildlife-harassment and hunting-related prohibitions (14 CCR §§ 251, 251.1, 550), and a civil-immunity provision protecting public entities from liability for damaging an interfering drone (Government Code §§ 853–853.5). State agencies with significant AEC-relevant UAS programs include Caltrans (which requires a separate encroachment permit for any UAS activity within State Highway System right-of-way) and California State Parks (which requires permits for commercial, research, and public-agency UAS use and bans motorized equipment, including UAS, in designated wilderness/natural/cultural preserves). California has no enacted statute restricting UAS by manufacturer/country of origin, and — in contrast to Texas — has no state-law preemption of local UAS ordinances, meaning the municipal/county layer (out of scope this phase) carries more independent weight here.
 
-## 2. Statewide UAS Laws and Regulations
-
-### Cal. Civ. Code § 1708.8 — Physical and Constructive Invasion of Privacy (drone-inclusive)
-*Binding law or regulation | Current / in force*
-
-**Objective Summary:** Civil Code § 1708.8 creates civil liability for (a) 'physical invasion of privacy' — knowingly entering the land or airspace above another's land without permission, or otherwise trespassing, to capture an image/recording of a person engaging in private, personal, or familial activity in an offensive manner — and (b) 'constructive invasion of privacy' — using any device, including a drone, to attempt such a capture in an offensive manner where the capture could not have been achieved without a trespass but for use of the device, regardless of physical trespass. Liability is up to 3x general/special damages plus possible punitive damages and disgorgement of commercial proceeds; a separate civil fine of $5,000-$50,000 applies for a commercial-purpose violation. Subdivision (g) exempts law-enforcement and governmental-agency personnel acting within the course of an authorized investigation supported by articulable suspicion. 'Private, personal, and familial activity' is defined in subdivision (l), generally requiring a reasonable expectation of privacy.
-
-**Practical Interpretation**
-
-- **AEC Industry UAS Expert:** Even without physically trespassing, capturing offensive/private imagery via drone that could only have been obtained through trespass but for the device can trigger 'constructive invasion of privacy' liability — plan flight paths and camera framing on AEC projects to avoid capturing identifiable people engaged in private activity on adjoining residential parcels.
-- **Agency Practitioner:** N/A — no agency process involved
-- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
-- **AEC Industry Legal Counsel:** This is a civil tort with treble damages, punitive damages, and a $5,000-$50,000 statutory civil fine exposure — document the professional purpose of any flight capturing imagery near residential property, and consider blurring/redaction workflows for incidentally captured individuals on adjoining private property.
-
-### Cal. Penal Code § 402 — Remaining at Scene of Emergency to Impede Personnel (drone-inclusive)
-*Binding law or regulation | Current / in force*
-
-**Objective Summary:** It is a misdemeanor to go to or stop at the scene of an emergency to view the activities of emergency personnel and thereby impede those personnel, unless viewing the scene is part of the person's job duties. Subdivision (a)(2), added in 2016, expressly extends the section to 'a person, regardless of his or her location, who operates or uses an unmanned aerial vehicle, remote piloted aircraft, or drone that is at the scene of an emergency' — meaning the remote pilot need not be physically present at the scene to be liable. 'Emergency' is broadly defined to include fires, explosions, crashes, flooding, windstorm damage, railroad/traffic accidents, powerplant accidents, and toxic/biological spills.
-
-**Practical Interpretation**
-
-- **AEC Industry UAS Expert:** Treat active fire, crash, or disaster scenes as an automatic no-fly for any AEC UAS mission (e.g., post-event damage/infrastructure documentation) until coordinating directly with incident command — CAL FIRE and other agencies actively enforce this provision and a remote pilot can be liable even when not physically on scene.
-- **Agency Practitioner:** N/A — no agency process involved
-- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
-- **AEC Industry Legal Counsel:** Document incident-command coordination and any professional/job-duty basis for flying near an active emergency before tasking a crew; the person's-job-duties exception is narrow and does not automatically cover general infrastructure-damage assessment work absent an agency request or authorization.
-
-### Cal. Gov't Code §§ 853-853.5 (Ch. 4.5, Unmanned Aircraft) — Unmanned Aircraft — Public Entity/Employee Immunity for Damage to Interfering Drones
-*Binding law or regulation | Current / in force*
-
-**Objective Summary:** A local public entity or public employee is not liable for damage to a UAS caused while providing (and the UAS was interfering with) emergency medical/ambulance services (including air ambulance), firefighting or firefighting-related services (including air services), or search-and-rescue services (including air search-and-rescue). Section 853.1 states this immunity supplements other existing immunities for emergency personnel/vehicles under California law; Section 853.5 defines 'unmanned aircraft' and 'unmanned aircraft system.'
-
-**Practical Interpretation**
-
-- **AEC Industry UAS Expert:** There is no state-law recourse against a public agency (or its personnel) if your firm's UAS is damaged, disabled, or brought down while interfering with an active emergency medical, firefighting, or search-and-rescue operation — treat this as an additional, independent reason (beyond Penal Code Section 402) to maintain a strict no-fly posture near active emergency operations.
-- **Agency Practitioner:** N/A — no agency process involved
-- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
-- **AEC Industry Legal Counsel:** Advise clients and insurers that equipment losses arising from interference with covered emergency services are unlikely to be recoverable from the responding public entity given this immunity; document any pre-coordinated, authorized flight near an emergency operation to distinguish it from an interfering, uncoordinated one.
-
-### Cal. Penal Code § 4577 — Unauthorized Operation of Unmanned Aircraft System Over Prison, Jail, or Juvenile Facility
-*Binding law or regulation | Current / in force*
-
-**Objective Summary:** A person who knowingly and intentionally operates a UAS on or above the grounds of a state prison, county jail, or juvenile hall/camp/ranch is guilty of an infraction punishable by a $500 fine. Exempt: a person employed by the prison/jail/juvenile facility operating within the scope of employment, or a person with prior permission from CDCR (state prisons), the county sheriff (jails), or the county department operating the facility (juvenile facilities).
-
-**Practical Interpretation**
-
-- **AEC Industry UAS Expert:** Identify any state prison, county jail, or juvenile detention facility near a project site during pre-flight planning; obtain prior written permission from CDCR, the county sheriff, or the operating county department before flying on or above facility grounds for AEC work (e.g., infrastructure inspection, corridor mapping).
-- **Agency Practitioner:** Contact the protected facility's owner, operator, administrator, commander, or other official identified by the authority before mobilization and ask whether the proposed AEC mission qualifies for written approval or an employment/contractor exception. Provide the site, purpose, dates, flight area, crew and aircraft details the facility requests, and retain the signed authorization and security conditions; do not assume ordinary site access or a client work order is sufficient.
-- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
-- **AEC Industry Legal Counsel:** This is a low-level infraction (not a misdemeanor/felony), but document the prior-permission exemption relied upon for any flight over or above a covered facility's grounds given the facility-security sensitivity involved.
-
-### 14 Cal. Code Regs. §§ 251 and 251.1 — Prohibition on Using Aircraft (Including Drones) to Pursue or Harass Wildlife
-*Binding administrative regulation | Current / in force*
-
-**Objective Summary:** 14 CCR Section 251 prohibits pursuing, driving, herding, or taking any bird or mammal from a motor-driven air vehicle, and separately bars using any motorized, hot-air, or unpowered aircraft or other flight-capable device (including an earth-orbiting imaging device) to locate or assist in locating big-game mammals from 48 hours before through 48 hours after any big-game season. 14 CCR Section 251.1 separately prohibits harassing (defined as an intentional act disrupting an animal's normal behavior patterns, including breeding, feeding, or sheltering) any game or nongame bird, mammal, or furbearing mammal by drone or otherwise.
-
-**Practical Interpretation**
-
-- **AEC Industry UAS Expert:** Plan environmental-monitoring, habitat-mapping, or resource-inventory UAS flights to avoid disrupting normal wildlife behavior (breeding, feeding, sheltering) and avoid any use that could be read as locating big-game animals near a hunting season window.
-- **Agency Practitioner:** N/A — no agency process involved
-- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
-- **AEC Industry Legal Counsel:** Document the survey/mapping purpose of any UAS flight over wildlife habitat to distinguish it from a 'harassment' or wildlife-location use; the 'harassment' standard is judgment-based, so build a conservative altitude/standoff buffer into standard operating procedure near known wildlife concentrations.
-
-### AB 1749 (Cal. 2025-2026 Reg. Sess.) — proposed Civil Code § 1708.83 — AB 1749 (2025-2026) — Interfering with Wildfire Suppression and Emergency Responses with Drone
-*Proposed or pending authority | Pending (not enacted as of Aug. 1 2026)*
-
-**Objective Summary:** AB 1749 would add a new Civil Code section creating a dedicated civil penalty of up to $75,000 per violation for operating a UAS at an emergency scene in a way that impedes response personnel, with civil enforcement authority held by the Attorney General, a county counsel, or a city attorney. As of the most recent tracked action (mid-June 2026), the bill remained pending in Senate policy committees and had not been enacted into law. The bill as tracked includes an exemption for pilots holding an FAA Part 107 operational waiver.
-
-**Practical Interpretation**
-
-- **AEC Industry UAS Expert:** This is not yet law — do not treat the $75,000 civil-penalty figure as current exposure, but track this bill given the existing criminal exposure under Penal Code Section 402 for the same conduct, and note the reported FAA Part 107 operational-waiver exemption as a potential future compliance pathway if the bill is enacted.
-- **Agency Practitioner:** N/A — no agency process involved
-- **UAS Procurement Expert:** N/A — no procurement or equipment-selection implication identified
-- **AEC Industry Legal Counsel:** Monitor AB 1749's status through the remainder of the 2025-2026 session; if enacted, the civil-penalty and AG/city-attorney enforcement structure would materially increase the exposure for any UAS operation near an active wildfire or emergency scene beyond the existing Penal Code Section 402 misdemeanor.
+<!-- GENERATED_SECTION heading="2. Statewide UAS Laws and Regulations" records="CA-001,CA-002,CA-003,CA-004,CA-005,CA-012" heading_style="citation_and_title" -->
 
 ## 3. State Agency UAS Requirements
 

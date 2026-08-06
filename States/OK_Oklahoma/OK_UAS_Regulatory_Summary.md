@@ -9,6 +9,8 @@
 
 > **Process note:** Objective research is retained from the Phase 1 source packet. The four practical-interpretation roles were completed in Phase 2 on 2026-08-02 using OpenAI GPT-5 (Codex; exact checkpoint unavailable).
 
+> **Generated content notice:** The authority sections below (headings, type/status line, Objective Summary, and the four Practical Interpretation bullets for each record) are generated verbatim from `OK_UAS_Source_Register.csv` by `scripts/generate_summary.py`. Do not hand-edit them here -- edit the register and regenerate. The overview, unresolved-questions, and any other narrative sections are authored directly in `OK_UAS_Summary_Authored.md`.
+
 ## 1. State UAS Regulatory Overview
 
 Oklahoma focuses its operator-facing UAS rules on critical infrastructure, intentional surveillance and private-property activity, and State Parks. The critical-infrastructure statute contains several routes relevant to AEC consultants, including work under contract with a facility or government, prior written consent, and commercial operation authorized by the FAA over the airspace; a criminal-liability amendment becomes effective November 1, 2026. The privacy statute is intent-based but preserves only a narrow incidental-capture exception for bona fide business work. State-park takeoff and landing require a Director-issued Event Permit.
@@ -30,7 +32,7 @@ Oklahoma focuses its operator-facing UAS rules on critical infrastructure, inten
 ### OK-002 — Unlawful use of drones for surveillance, recording, or unauthorized landing
 *Binding statute or regulation | Current / in force*
 
-**Objective Summary:** Section 1743 makes it a misdemeanor to use a UAS or drone, except as authorized by law, to enter private property or airspace below 400 feet with intent to eavesdrop or surveil; install or use an unauthorized observing or recording device on private property; intentionally photograph, record, or observe a person where that person reasonably expects privacy; or intentionally land on another person’s private land or water without owner or lessee consent. The privacy-observation prohibition does not cover unintentional or incidental capture during a bona fide business or government purpose, and the landing prohibition excepts safety or emergency landings needed to avoid collision.
+**Objective Summary:** Section 1743 makes it a misdemeanor to use a UAS or drone, except as authorized by law, to enter private property or airspace below 400 feet with intent to eavesdrop or surveil; install or use an unauthorized observing or recording device on private property; intentionally photograph, record, or observe a person where that person reasonably expects privacy; or intentionally land on private land or water belonging to another person without owner or lessee consent. The privacy-observation prohibition does not cover unintentional or incidental capture during a bona fide business or government purpose, and the landing prohibition excepts safety or emergency landings needed to avoid collision.
 
 **Practical Interpretation**
 
