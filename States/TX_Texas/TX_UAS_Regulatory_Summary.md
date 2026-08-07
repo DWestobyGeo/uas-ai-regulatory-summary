@@ -74,6 +74,7 @@ Texas regulates UAS primarily through the "Texas Privacy Act" (Government Code C
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** A local ordinance purporting to independently regulate UAS operation outside the three statutory exceptions is void by operation of state law, but confirm this on a project-specific basis and don't assume it displaces facility-level access, trespass, or generally applicable safety rules.
 ### Tex. Penal Code § 38.115 — Operation of Unmanned Aircraft over Correctional Facility or Detention Facility
+<span class="news-anchor" data-record-id="TX-006" hidden></span>
 *Binding law | Current, enacted 2023*
 
 **Objective Summary:** Prohibits intentionally/knowingly operating a UAS at or below 400 ft AGL over a "correctional facility" (TDCJ facilities, municipal/county jails, federal BOP facilities, or secure juvenile facilities) or "detention facility" (an ICE-contracted immigration detention facility), allowing contact, or interfering with/disturbing operations. Exemptions include government entities and contractors, persons with the facility's prior written consent, and law enforcement and contractors — there is **no** general commercial-operator/FAA-compliance exemption comparable to §§ 423.0045–.0046. Class B misdemeanor, enhanced to Class A on a prior conviction, or a state jail felony if used to introduce contraband.
@@ -96,6 +97,7 @@ Texas regulates UAS primarily through the "Texas Privacy Act" (Government Code C
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Both the pre-2025 text and the 2025 spaceport amendment are now independently verified against official sources. The penalty for any violation, including the spaceport provision, is a Class B misdemeanor (Class A on a prior conviction) — not a felony; do not rely on secondary sources characterizing the spaceport provision as a state-jail felony.
 ### *National Press Photographers Ass'n v. McCraw*, 90 F.4th 770 (5th Cir. 2023)
+<span class="news-anchor" data-record-id="TX-008" hidden></span>
 *Court decision | Current — facial challenge rejected*
 
 **Objective Summary:** The Fifth Circuit reversed a district-court ruling that had enjoined several Chapter 423 provisions, holding that plaintiffs' facial First Amendment challenge to the surveillance-image, critical-infrastructure, sports-venue, and correctional-facility provisions failed, and remanded with instructions to enter judgment for the state defendants. The court also affirmed dismissal of a related federal field-preemption claim. The panel did not foreclose future as-applied First Amendment challenges.
@@ -142,6 +144,7 @@ Texas regulates UAS primarily through the "Texas Privacy Act" (Government Code C
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Confirm in the scope of work whether the Manual's standards are incorporated as binding contract requirements, and retain the completed PRA and insurance documentation in the project file.
 ### Procurement / Cybersecurity — Prohibited Technologies List (Office of the Governor / Texas Cyber Command)
+<span class="news-anchor" data-record-id="TX-012" hidden></span>
 *Official agency policy (executive-branch directive) — state-agency and state-device scope*
 
 **Objective Summary:** Pursuant to gubernatorial directives (originating December 2022, updated January 26, 2026, now administered by the Texas Cyber Command), the Department of Information Resources publishes a Prohibited Technologies list barring specified hardware/manufacturers from state-owned devices and networks. As of the February 4, 2026 published update (independently re-confirmed 2026-08-06 directly from DIR's website), the hardware list explicitly includes SZ DJI Technology Company, Autel Robotics, RoboSense Technology Co. Ltd. (LiDAR), and Wuhan Geosun Navigation Technology Co. Ltd. (LiDAR) — all UAS or UAS-payload manufacturers. An agency head may approve narrow exceptions for law-enforcement or legitimate-use purposes, with notice to the Governor's office and DIR. This is separate from Government Code Chapter 620 (which addresses social-media "Covered Applications," not UAS hardware).

@@ -181,6 +181,23 @@ for sd in state_dirs:
             if matched:
                 rec["news"] = matched
                 news_record_count += len(matched)
+                # The narrative markdown (summary_markdown, below) is the section most
+                # readers actually scroll through; the Source Register accordion is a
+                # secondary, click-to-expand technical view. A record with news must have
+                # a `<span class="news-anchor" data-record-id="...">` placed immediately
+                # after its `### heading` in the state's XX_UAS_Regulatory_Summary.md, or
+                # the news will only ever be reachable from the accordion -- this is the
+                # exact defect reported by the user on 2026-08-06. Warn loudly rather than
+                # silently shipping a record whose news is invisible in the main narrative.
+                anchor_marker = f'data-record-id="{rec.get("record_id", "")}"'
+                if anchor_marker not in summary_md:
+                    print(
+                        f"  WARNING: {abbr} {rec.get('record_id')} has news but no "
+                        f"news-anchor found in {os.path.basename(md_path)} -- it will "
+                        f"only be visible in the Source Register, not inline in the "
+                        f"narrative. Add <span class=\"news-anchor\" {anchor_marker} "
+                        f"hidden></span> immediately after its ### heading."
+                    )
 
     state_obj = {
         "schema_version": "1.1",

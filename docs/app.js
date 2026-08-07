@@ -2,7 +2,7 @@
   "use strict";
 
   var INDEX_URL = "data/v1/index.json";
-  var UI_VERSION = "1.3.0";
+  var UI_VERSION = "1.4.0";
 
   var select = document.getElementById("state-select");
   var emptyState = document.getElementById("empty-state");
@@ -274,6 +274,51 @@
     }
   }
 
+  // Places the same Related News block used in the Source Register directly
+  // inline in the main narrative, right after each authority's Practical
+  // Interpretation list -- the part of the page most readers actually scroll
+  // through -- rather than only inside the collapsed Source Register accordion.
+  // Depends on a `<span class="news-anchor" data-record-id="XX-000" hidden>`
+  // marker placed immediately after the relevant `### heading` in the state's
+  // XX_UAS_Regulatory_Summary.md source file (see news-aggregator.md and
+  // web-ux-ui-editor.md for the authoring contract). A record with news but no
+  // matching anchor in the narrative is a defect in the markdown source, not a
+  // silent no-op -- it is reported to the console so it gets fixed.
+  function injectNewsIntoNarrative(data) {
+    var records = Array.isArray(data.records) ? data.records : [];
+    var recordsById = {};
+    records.forEach(function (r) { recordsById[r.record_id] = r; });
+
+    var seenRecordIds = {};
+    Array.prototype.forEach.call(summaryPanel.querySelectorAll(".news-anchor[data-record-id]"), function (anchor) {
+      var recordId = anchor.getAttribute("data-record-id");
+      seenRecordIds[recordId] = true;
+      var record = recordsById[recordId];
+      if (!record || !Array.isArray(record.news) || !record.news.length) return;
+
+      var card = anchor.closest(".authority-card");
+      var host = card || anchor.parentNode;
+      var afterEl = host.querySelector(".perspectives-list") || anchor;
+      var block = newsBlock(record);
+      if (!block) return;
+      var wrapper = document.createElement("div");
+      wrapper.innerHTML = block;
+      afterEl.parentNode.insertBefore(wrapper.firstElementChild, afterEl.nextSibling);
+    });
+
+    records.forEach(function (record) {
+      if (Array.isArray(record.news) && record.news.length && !seenRecordIds[record.record_id]) {
+        console.warn(
+          "[news] " + record.record_id + " has " + record.news.length +
+          " news item(s) but no matching news-anchor was found in this state's narrative markdown -- " +
+          "it will only be visible in the Source Register, not inline. Add " +
+          '<span class="news-anchor" data-record-id="' + record.record_id + '" hidden></span> ' +
+          "immediately after its ### heading in the XX_UAS_Regulatory_Summary.md source file."
+        );
+      }
+    });
+  }
+
   function enhanceSummary() {
     var renderedTitle = summaryPanel.querySelector("h1");
     if (renderedTitle) {
@@ -459,6 +504,7 @@
     }
 
     enhanceSummary();
+    injectNewsIntoNarrative(data);
     buildTableOfContents();
     setupSectionObserver();
     syncTocDisclosure();

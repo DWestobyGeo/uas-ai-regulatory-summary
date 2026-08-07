@@ -1,8 +1,8 @@
 # State UAS Research Site Design System
 
-**UI version:** 1.3.0
+**UI version:** 1.4.0
 
-**Agent scope:** `web-ux-ui-editor` v1.3.0
+**Agent scope:** `web-ux-ui-editor` v1.4.0
 
 **Applies to:** the public GitHub Pages site under `docs/`
 
