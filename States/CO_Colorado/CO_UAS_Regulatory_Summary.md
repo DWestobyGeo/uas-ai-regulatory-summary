@@ -1,8 +1,8 @@
 # Colorado — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 1, 2026 | **Version:** 2.1 (Phase 2 — subjective-scope audit complete August 2, 2026)
-**Model / checkpoint:** Objective research and Phase 2 model/checkpoint were not recorded in this legacy state packet.
+**Research date:** August 1, 2026 | **Version:** 2.2 (Workstream 9 retrofit — August 7, 2026)
+**Model / checkpoint:** Objective research and Phase 2 model/checkpoint were not recorded in this legacy state packet. Retrofit pass performed with claude-sonnet-5.
 **Interpretation scope:** Agent Instructions v6 (August 2, 2026)
 **Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v6), this summary covers Colorado **state and state-agency** UAS authorities only — local (municipal/county) ordinances and tribal rules are deferred to a later phase and are not included here. Colorado has **not** enacted a state preemption statute for local UAS ordinances (see Section 4), and secondary sources document an unusually dense and varied patchwork of municipal and county rules (Denver, Boulder, Colorado Springs, mountain resort communities, and more) — a project-specific municipal check will be necessary before this state-level picture can be treated as complete for any specific Colorado site. Full citations and metadata are in `CO_UAS_Source_Register.csv`.
 
@@ -17,6 +17,7 @@ Colorado has not enacted a comprehensive, standalone UAS act. Instead, it regula
 ## 2. Statewide UAS Laws and Regulations
 
 ### Colo. Rev. Stat. § 18-8-104 — Obstructing a Peace Officer, Firefighter, EMS Provider, Rescue Specialist, or Volunteer (drone-specific provision)
+<span class="news-anchor" data-record-id="CO-001" hidden></span>
 *Binding law | Current, amended by HB 18-1314 (2018) and SB 21-271 (2021)*
 
 **Objective Summary:** Defines "obstacle" to include an unmanned aircraft system. A person commits the offense (class 2 misdemeanor) by using or threatening to use a UAS as an obstacle to knowingly obstruct, impair, or hinder a peace officer, firefighter, EMS provider, rescue specialist, or volunteer acting under color of official authority. A statutory exception applies if the UAS operator obtains permission from the coordinating entity, continues to communicate with it during the operation, and immediately complies with its instructions.
@@ -51,21 +52,21 @@ Colorado has not enacted a comprehensive, standalone UAS act. Instead, it regula
 - **AEC Industry Legal Counsel:** This is a civil-liability statute distinct from FAA compliance and the criminal statutes above; the exact contours of "interference" sufficient to support a claim were not independently verified against Colorado case law in this pass.
 ## 3. State Agency and Land-Management UAS Requirements
 
-### Parks — Colorado Parks and Wildlife (CPW) Commission (State Park / Outdoor Recreation Land UAS Restriction)
-*Binding administrative regulation | Current, with a citation discrepancy flagged below*
+### Parks — Colorado Parks and Wildlife (CPW) Commission (Manned-Aircraft Prohibition; No Verifiable UAS-Specific Subsection)
+*Binding administrative regulation | Current for the confirmed manned-aircraft provision; a widely-cited UAS-specific citation could not be verified*
 
-**Objective Summary:** CPW's own published Chapter P-1 regulation (2 CCR 405-1, Regulation #100.b.15) prohibits landing or taking off with any "aircraft" on Parks and Outdoor Recreation Lands absent specific authorization; the text obtained defines "aircraft" as manned-flight equipment. Multiple current secondary sources separately describe a UAS-specific prohibition (cited as "Regulation #100-c.24," effective January 1, 2018) on launching, landing, or operating drones on all CPW-administered state parks, state wildlife areas, and state trust lands, with exceptions only for designated model-aircraft fields at Cherry Creek and Chatfield State Parks. The UAS-specific subsection was not located in the regulation text independently obtained in this research pass.
+**Objective Summary:** CPW's complete Chapter P-1 regulation (2 CCR 405-1, effective May 1, 2017, remaining in force until repealed, amended, or superseded) was fetched and read in full directly from cpw.state.co.us in this retrofit pass — not just the single subsection reviewed originally. It prohibits landing or taking off with any "aircraft" on Parks and Outdoor Recreation Lands absent specific authorization or an emergency (#100.b.15); "aircraft" is expressly defined as manned-flight equipment (airplanes, helicopters, gliders, balloons, hang gliders, parachutes, etc.) and does not on its face include UAS. A UAS-specific prohibition — repeated across numerous secondary drone-law compilation sites (dronelaws.us, flyusi.org, pilotinstitute.com, uavcoach.com, dronesgator.com, propelrc.com) as "Regulation #100-c.24," effective January 1, 2018 — could not be located anywhere in CPW's own published text in this pass, and the cited subsection format does not match Chapter P-1's actual lettering scheme (subsection "c" does not exist under #100 at all). None of the secondary sources repeating this citation point to a primary CPW document. This project treats an unsourced citation repeated verbatim across many mutually-reinforcing secondary sites, with no primary document ever cited by any of them, as a red flag for citation-chain drift or fabrication rather than a verified rule.
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Treat all CPW-administered state parks, state wildlife areas, and state trust lands as off-limits for UAS launch/landing/operation absent specific CPW authorization, consistent with the well-corroborated secondary-source description, even though the exact current subsection citation could not be independently confirmed.
+- **AEC Industry UAS Expert:** Continue to treat CPW-administered state parks, state wildlife areas, and state trust lands as effectively off-limits for UAS as a conservative operating posture, but do not cite "Regulation #100-c.24" to a client as a verified provision — it could not be confirmed against CPW's own text in two independent research passes. CPW may still act against UAS operators under general trespass or unauthorized-use theories even without a UAS-specific aircraft subsection.
 - **Agency Practitioner:** Not applicable — no agency process.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
-- **AEC Industry Legal Counsel:** Flag this citation discrepancy for the client — confirm the current, complete text of CPW Regulation #100 directly with CPW's Office of the Regulations Manager before relying on this record for a specific project.
-### Wildlife — CPW Prohibition on Using UAS to Aid Hunting or Wildlife Scouting
-*Binding administrative regulation | Effective January 1, 2018*
+- **AEC Industry Legal Counsel:** Advise that the frequently-cited "CPW Regulation #100-c.24" cannot currently be verified as an existing provision based on a direct, full read of CPW's own published Chapter P-1 text; recommend written confirmation from CPW's Office of the Regulations Manager before either relying on or discounting a UAS-specific state-park prohibition for a specific project.
+### Wildlife — CPW Prohibition on Using UAS to Aid Hunting or Wildlife Scouting (2 CCR 406-0, Art. IV, #004(C))
+*Binding administrative regulation | Effective January 1, 2018; full current text confirmed directly in this retrofit*
 
-**Objective Summary:** Prohibits using a UAS or other remotely guided device to search for, scout, or detect wildlife as an aid to hunting or the taking of wildlife, applicable to pre-hunt scouting as well as active hunting. Separately prohibits using a drone to harass wildlife. Reported penalties range from $70 (small game) up to $125,000 for trophy species under Colorado's "Samson Law" framework.
+**Objective Summary:** The current text of 2 CCR 406-0, Article IV, #004(C) was fetched and read directly from the Colorado Secretary of State's CCR database in this retrofit pass, confirming the exact operative text: "It shall be unlawful to use a drone to look for, scout, or detect wildlife as an aid in the hunting or taking of wildlife," with "drone" defined to include any unmanned or remotely guided flight contrivance (also called a UAV or UAVS). This applies to pre-hunt scouting as well as active hunting. Separately, using a drone to harass wildlife remains unlawful. Reported penalties range from $70 (small game) up to $125,000 for trophy species under Colorado's "Samson Law" framework (not independently re-verified against a primary penalty schedule in this pass).
 
 **Practical Interpretation**
 
@@ -85,9 +86,9 @@ Colorado has not enacted a comprehensive, standalone UAS act. Instead, it regula
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Confirm whether a specific state or local government contract incorporates CoE protocols as binding contract terms.
 ### Professional Licensing — DORA State Board of Licensure for Architects, Professional Engineers and Professional Land Surveyors
-*Binding general regulation | No Colorado-specific UAS guidance located*
+*Binding general regulation | No Colorado-specific UAS guidance located, now confirmed across two independent research passes*
 
-**Objective Summary:** Colorado's licensing framework (Title 12, Article 120, C.R.S.) requires PE/PLS licensees to practice only in fields in which they are, by education and/or experience, competent and proficient. No standalone Colorado-specific board guidance addressing UAS-derived photogrammetry, LiDAR, or mapping products was located. A frequently-cited secondary source describing a "Rule 415" UAS competency standard was found to actually reference California's licensing framework, not Colorado's.
+**Objective Summary:** Colorado's licensing framework (Title 12, Article 120, C.R.S., re-confirmed directly against Justia's current codification in this pass) requires PE/PLS licensees to practice only in fields in which they are, by education and/or experience, competent and proficient. No standalone Colorado-specific board guidance addressing UAS-derived photogrammetry, LiDAR, or mapping products was located — a fresh, independent search (including the 3 CCR 720 rule series) was re-run in this retrofit pass and again found none. A frequently-cited secondary source describing a "Rule 415" UAS competency standard was found to actually reference California's licensing framework, not Colorado's.
 
 **Practical Interpretation**
 
@@ -131,11 +132,12 @@ Colorado has not enacted a comprehensive, standalone UAS act. Instead, it regula
 - **AEC Industry Legal Counsel:** Monitor for reintroduction in a future session; if a similar bill passes, revisit the local-ordinance research category since the compliance landscape would change materially.
 ## 6. Unresolved Operational Questions
 
-- **CPW state park UAS regulation citation:** The exact current citation for CPW's UAS-specific state-park prohibition (reported by secondary sources as "Regulation #100-c.24") could not be located in the Chapter P-1 (2 CCR 405-1) text independently obtained in this pass, which defines "aircraft" as manned-flight equipment only. Direct confirmation with CPW's Office of the Regulations Manager is recommended before relying on this record for a specific project.
-- **§ 41-1-107 full text:** Cited via a secondary source; the complete current statutory text was not independently re-pulled and read in this pass.
-- **CPW wildlife regulation (2 CCR 406-0) full text:** Cited via a secondary source and corroborated in substance by the Legislative Council Staff issue brief; the complete current regulation text was not independently re-pulled.
-- **State-agency UAS procurement policy:** No Colorado-specific state-agency drone procurement restriction or foreign-hardware ban (comparable to Texas's Prohibited Technologies List) was located; federal FAR restrictions on covered foreign entities (e.g., DJI, Autel) apply independently to federally funded work.
+- **CPW state park UAS regulation citation:** RESOLVED IN THIS RETROFIT PASS to the extent verifiable: the full current Chapter P-1 (2 CCR 405-1) text was fetched and read directly, confirming no UAS-specific subsection exists in CPW's own published document and that the widely-cited "Regulation #100-c.24" cannot be traced to any primary source. Direct written confirmation with CPW's Office of the Regulations Manager is still recommended before a specific client engagement turns on this point.
+- **§ 41-1-107 full text:** RESOLVED IN THIS RETROFIT PASS — full current statutory text fetched and read directly against Justia's codification, confirming the register's description.
+- **CPW wildlife regulation (2 CCR 406-0) full text:** RESOLVED IN THIS RETROFIT PASS — full current rule text (Article IV, #004(C)) fetched and read directly against the Colorado Secretary of State's official CCR database.
+- **State-agency UAS procurement policy:** No Colorado-specific state-agency drone procurement restriction or foreign-hardware ban (comparable to Texas's Prohibited Technologies List) was located; federal FAR restrictions on covered foreign entities (e.g., DJI, Autel) apply independently to federally funded work. Not independently re-searched in this pass.
 - **Local ordinances:** Out of scope for this phase, but flagged as materially significant and unusually dense — see Section 4.
+- **Critical-infrastructure/correctional-facility and state-preemption negative findings:** Moved to `CO_UAS_Research_Checklist.md` in this retrofit pass per the project's negative-finding-in-register governance principle (`Agent_Instructions.v6.md` §5.2); no longer separate register rows (previously CO-006 and CO-007).
 
 ## 7. Confidence Summary
 
@@ -143,13 +145,13 @@ Colorado has not enacted a comprehensive, standalone UAS act. Instead, it regula
 |---|---|
 | CRS § 18-8-104 (drone obstruction of public safety operations) | High — verified directly against Justia's codification |
 | CRS § 18-7-801 (criminal invasion of privacy) | High — verified directly against Justia's codification |
-| CRS § 41-1-107 (landowner airspace rights / civil trespass) | Moderate — secondary source only; full text not independently re-pulled |
-| CPW state park UAS restriction (2 CCR 405-1) | Moderate — official regulation text obtained but citation discrepancy with secondary sources unresolved |
-| CPW wildlife-scouting UAS restriction (2 CCR 406-0) | Moderate — secondary source, corroborated by Legislative Council Staff issue brief |
-| No enacted critical-infrastructure/correctional-facility statute | Moderate — negative finding corroborated across official issue brief and bill-history searches |
-| No state preemption of local ordinances | Low — negative finding; municipal-ordinance survey based on secondary source |
+| CRS § 41-1-107 (landowner airspace rights / civil trespass) | High — full current text fetched and read directly against Justia's codification in this retrofit |
+| CPW manned-aircraft state-park prohibition (2 CCR 405-1, #100.b.15) confirmed; UAS-specific "#100-c.24" citation unverifiable | Moderate — full regulation text read directly; the secondary-source UAS-specific citation could not be traced to any primary document |
+| CPW wildlife-scouting UAS restriction (2 CCR 406-0, Art. IV, #004(C)) | High — full current rule text fetched and read directly against the Colorado Secretary of State's CCR database |
+| No enacted critical-infrastructure/correctional-facility statute | Moderate — negative finding corroborated across official issue brief and bill-history searches; now in checklist |
+| No state preemption of local ordinances | Low — negative finding; municipal-ordinance survey based on secondary source; now in checklist |
 | SB26-024 (postponed indefinitely) | High — verified directly against the Colorado General Assembly's official bill-tracking page |
 | Center of Excellence UAS program (§ 24-33.5-1228) | High — verified directly against Legislative Council Staff issue brief |
-| General professional-licensing competency framework | Low — no Colorado-specific UAS guidance located; commonly-cited "Rule 415" language traced to California |
+| General professional-licensing competency framework | Moderate — framework re-confirmed directly; no Colorado-specific UAS guidance located across two independent search passes |
 
 *This document is objective legal/regulatory summary plus labeled practical interpretation. It is not legal advice; consult Colorado counsel for project-specific compliance determinations. Local ordinances — which are unusually significant in Colorado — and tribal UAS considerations are out of scope for this phase per current research instructions.*

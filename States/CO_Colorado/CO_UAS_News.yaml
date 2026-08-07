@@ -1,0 +1,24 @@
+state: Colorado
+state_abbr: CO
+role_id: news-aggregator
+role_version: 1.0.0
+generated_at: '2026-08-07'
+items:
+  - record_id: CO-001
+    headline: "Officials warn of unauthorized drone flights over 'Aspen Acres' fire"
+    url: https://krdo.com/aspen-acres-fire/2026/07/17/pueblo-county-drone-fire-warning/
+    source_name: KRDO NewsChannel 13 (Colorado Springs, CO)
+    publish_date: '2026-07-17'
+    jurisdiction_match: in_state
+    out_of_state_name: null
+    relevance_note: >-
+      Directly on-topic for CO-001's prohibition on using a UAS as an obstacle to obstruct, impair, or
+      hinder emergency-response operations: a drone pilot in southern Colorado is facing federal
+      charges for allegedly flying inside the temporary flight restriction (TFR) over the Aspen Acres
+      wildfire in Pueblo County, forcing firefighting aircraft to ground until the airspace was
+      cleared; the pilot reportedly posted video of the flight on social media. While the federal TFR
+      charge itself arises under FAA authority rather than CRS § 18-8-104 directly, this is the exact
+      real-world conduct -- an unauthorized drone interfering with active wildfire suppression --
+      that CO-001's state-law obstruction offense independently targets when a Colorado peace
+      officer, firefighter, or incident-command entity is obstructed, impaired, or hindered.
+    date_accessed: '2026-08-07'

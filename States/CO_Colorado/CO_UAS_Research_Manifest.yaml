@@ -1,0 +1,138 @@
+# State Research Manifest -- Workstream 9 (national retrofit, per planning/national_retrofit_queue.md)
+# Schema: States/RESEARCH_MANIFEST_SCHEMA.md
+# Owner: Research Expert (agents/roles/research-expert.md)
+# Validated by: scripts/validate_research_manifests.py
+
+state: Colorado
+state_abbr: CO
+method_version: 1.0.0
+research_status: current_method_in_progress
+legacy_retrofit_status: retrofit_in_progress
+last_full_research_date: '2026-08-01'
+last_currency_check: '2026-08-07'
+source_cutoff_date: '2026-08-07'
+coverage:
+  state_statutes_and_amendments:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - CO-001
+    - CO-002
+    - CO-003
+    note: >-
+      CO-001 (obstruction) and CO-002 (privacy) re-confirmed directly against Justia's codification,
+      unchanged from the prior pass. CO-003 (landowner airspace rights / civil trespass) upgraded in
+      this retrofit pass: full current text of Colo. Rev. Stat. section 41-1-107 fetched and read
+      directly against Justia, replacing a secondary-source-only citation. Confidence Moderate ->
+      High.
+  administrative_rules:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - CO-004
+    - CO-005
+    - CO-010
+    note: >-
+      RESOLVED (major citation finding) IN THIS RETROFIT PASS for CO-004. CO-004's full Chapter P-1
+      (2 CCR 405-1) text was fetched and read directly from cpw.state.co.us; the widely-recirculated
+      "Regulation number 100-c.24" UAS-specific citation used by numerous secondary drone-law sites
+      could not be traced to any primary CPW document and does not match the regulation's own
+      subsection-lettering scheme -- treated as an unverifiable citation. CO-005's full current text
+      (2 CCR 406-0, Art. IV, section 004(C)) was fetched and read directly against the Colorado
+      Secretary of State's CCR database, confirming the exact operative text and citation. Confidence
+      Moderate -> High for CO-005; CO-004 held at Moderate given the unresolved citation question.
+      CO-010 (DORA general competency framework) re-confirmed directly against Justia; a fresh
+      independent search (including the 3 CCR 720 series) again found no Colorado-specific UAS
+      guidance -- confidence Low -> Moderate given the negative finding is now corroborated across
+      two independent passes.
+  executive_orders:
+    status: not_applicable
+    unresolved: false
+    record_ids: []
+    note: No standalone executive-order category finding was made in the original research pass;
+      not separately re-searched in this retrofit.
+  court_decisions_and_ag_opinions:
+    status: not_applicable
+    unresolved: false
+    record_ids: []
+    note: No Colorado court decision or AG opinion addressing UAS operation was located in the
+      original pass; not separately re-searched in this retrofit beyond the news-aggregator pass.
+  aviation_and_transportation_agencies:
+    status: not_applicable
+    unresolved: false
+    record_ids: []
+    note: No standalone state DOT/aviation-agency UAS record exists for CO; the state's public-safety
+      UAS program is covered under corrections_public_safety_and_critical_infrastructure below.
+  parks_public_lands_and_natural_resources:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - CO-004
+    - CO-005
+    note: See administrative_rules above.
+  corrections_public_safety_and_critical_infrastructure:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - CO-009
+    note: >-
+      CO-009 (Center of Excellence for Advanced Technology Aerial Firefighting, section
+      24-33.5-1228) unchanged, already High confidence and directly verified against the Legislative
+      Council Staff issue brief. The negative-finding record for a critical-infrastructure/
+      correctional-facility-specific UAS offense (previously register record CO-006, whose own
+      source_type field said "not included in the final source register") was moved to the checklist
+      in this retrofit per Agent_Instructions.v6.md Section 5.2; no enacted statute was located,
+      corroborated via the Legislative Council Staff's October 2024 issue brief and bill-history
+      searches. A genuine, current in-state news finding (Aspen Acres Fire wildfire-TFR drone
+      charges) was located in the Section 4.7 pass and anchored to CO-001.
+  privacy_surveillance_trespass_and_interference:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - CO-002
+    - CO-003
+    note: See state_statutes_and_amendments above.
+  procurement_equipment_and_cybersecurity:
+    status: not_applicable
+    unresolved: false
+    record_ids: []
+    note: No Colorado-specific state-agency UAS procurement restriction or foreign-hardware ban was
+      located in the original pass; not re-searched as a distinct category in this retrofit.
+  professional_licensing_board_material:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids:
+    - CO-010
+    note: See administrative_rules above -- same record covers both categories.
+  state_preemption:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - CO-008
+    note: >-
+      CO-008 (SB26-024) bill status re-confirmed directly against the Colorado General Assembly's
+      official bill-tracking page (leg.colorado.gov) in this pass -- "Postponed Indefinitely," status
+      "Lost." No correction needed. The negative-finding record for a general state preemption
+      statute (previously register record CO-007, same self-contradictory source_type language as
+      CO-006) was moved to the checklist in this retrofit per Agent_Instructions.v6.md Section 5.2;
+      no such statute was located.
+record_count: 8
+unresolved_count: 0
+low_confidence_record_count: 0
+primary_source_percentage: 88
+known_issues:
+  - >-
+    CO-004's underlying question -- whether a UAS-specific CPW state-park/outdoor-recreation-lands
+    prohibition currently exists in Colorado's Code of Regulations under any citation -- could not be
+    fully resolved from public sources alone; only CPW's own Office of the Regulations Manager can
+    authoritatively confirm or deny this.
+  - >-
+    CO-006 and CO-007's underlying negative-finding research (no enacted critical-infrastructure/
+    correctional-facility statute; no state preemption statute) was not re-run as a comprehensive
+    negative search against the full Colorado Revised Statutes in this pass -- both remain research
+    results, not exhaustive negative findings.
+  - >-
+    Local municipal/county UAS ordinances (Denver, Boulder, Colorado Springs, mountain resort
+    communities, etc.) remain out of scope for this phase.
+next_currency_review: '2026-09-07'
+recheck_triggers: []
