@@ -1,0 +1,21 @@
+state: Illinois
+state_abbr: IL
+role_id: news-aggregator
+role_version: 1.0.0
+generated_at: '2026-08-07'
+items:
+  - record_id: IL-001
+    headline: "Oak Brook police launch 1st fully autonomous drone in state; some concerned over privacy rights"
+    url: https://abc7chicago.com/post/oak-brook-police-department-launches-fully-autonomous-drone-first-responder-concerned-privacy-rights/17539659/
+    source_name: ABC7 Chicago (WLS-TV)
+    publish_date: '2025-08-15'
+    jurisdiction_match: in_state
+    out_of_state_name: null
+    relevance_note: >-
+      Oak Brook PD's Flock Safety drone-as-first-responder program is dispatched off
+      scanner traffic and PSAP calls -- directly operationalizing the paragraph (9)
+      PSAP-dispatch exception in 725 ILCS 167 Section 15 that IL-001 documents, and the
+      story's privacy-rights discussion (EFF's comments on retention and oversight)
+      illustrates the real-world tension the Act's retention/disclosure/reporting
+      provisions (Sections 20, 25, 35) are meant to address.
+    date_accessed: '2026-08-07'

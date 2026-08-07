@@ -1,0 +1,134 @@
+# State Research Manifest -- Workstream 9 (national retrofit, per planning/national_retrofit_queue.md)
+# Schema: States/RESEARCH_MANIFEST_SCHEMA.md
+# Owner: Research Expert (agents/roles/research-expert.md)
+# Validated by: scripts/validate_research_manifests.py
+
+state: Illinois
+state_abbr: IL
+method_version: 1.0.0
+research_status: current_method_in_progress
+legacy_retrofit_status: retrofit_in_progress
+last_full_research_date: '2026-08-01'
+last_currency_check: '2026-08-07'
+source_cutoff_date: '2026-08-07'
+coverage:
+  state_statutes_and_amendments:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - IL-001
+    - IL-002
+    - IL-003
+    note: 725 ILCS 167 (Freedom from Drone Surveillance Act), 620 ILCS 5/42.1 (state
+      preemption), and 520 ILCS 5/2.33(i) (Wildlife Code) all re-fetched directly against
+      ILGA's own codification and confirmed to match the existing register text exactly.
+      Corrected IL-001's and IL-002's practical-interpretation fields, which carried
+      generic or wrongly copy-pasted content (IL-002's AEC-expert field had IL-003's
+      wildlife-harassment text pasted into it).
+  administrative_rules:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - IL-004
+    - IL-005
+    note: 71 Ill. Adm. Code 2005.65 (Capitol Complex) and 17 Ill. Adm. Code 110.160(i)
+      (IDNR land) re-confirmed directly against Cornell LII's and Justia's current
+      codification mirrors. Corrected templated interpretation fields for both records.
+  executive_orders:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids: []
+    note: RESOLVED IN THIS RETROFIT PASS. Re-searched 2026-08-06; no Illinois executive
+      order specific to UAS located. Previously stored as part of a combined negative-finding
+      register record (IL-010); moved to the checklist per Agent_Instructions.v6.md
+      Section 5.2 and the corresponding scripts/validate_research_semantics.py finding
+      (check_negative_finding_in_register).
+  court_decisions_and_ag_opinions:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids: []
+    note: RESOLVED IN THIS RETROFIT PASS. Re-searched 2026-08-06; no controlling Illinois
+      appellate decision or formal Attorney General opinion applying a UAS-specific
+      statute located. Previously part of register record IL-010; moved to the checklist
+      for the same reason as executive_orders above.
+  aviation_and_transportation_agencies:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - IL-006
+    note: IDOT Division of Aeronautics UAS program page and March 18, 2026 FASC-prohibited-manufacturer
+      memo re-confirmed directly against idot.illinois.gov. Corrected the record's
+      templated interpretation fields (equipment/compliance restriction, not a landing
+      permit).
+  parks_public_lands_and_natural_resources:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - IL-003
+    - IL-005
+    note: See state_statutes_and_amendments and administrative_rules above.
+  corrections_public_safety_and_critical_infrastructure:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - IL-008
+    note: No current enacted Illinois statute restricting UAS near correctional facilities
+      or critical infrastructure was located. SB 3930 / HB 5275 (Drone Safety and
+      Interference Prevention Act) would create such offenses; re-confirmed not enacted
+      via ILGA's own bill-status pages 2026-08-06 (last actions 3/27/2026 and 4/17/2026
+      respectively). The 2026 spring session adjourned sine die June 1, 2026 without
+      further action on either bill.
+  privacy_surveillance_trespass_and_interference:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - IL-001
+    note: 725 ILCS 167 re-confirmed; law-enforcement-only, not a general private-party
+      privacy statute.
+  procurement_equipment_and_cybersecurity:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - IL-006
+    - IL-007
+    note: IDOT's federal-nexus FASC restriction (IL-006) re-confirmed current. SB 2364
+      (Unmanned Aerial Systems Security Act, IL-007) re-confirmed not enacted via ILGA's
+      bill-status page 2026-08-06 -- last action still 2/7/2025, no movement in over
+      a year.
+  professional_licensing_board_material:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - IL-009
+    note: RESOLVED IN THIS RETROFIT PASS. 225 ILCS 330/5 (general land-surveyor licensing
+      statute and photogrammetric-methods exception) re-fetched directly from ILGA
+      2026-08-06 and confirmed to match the register exactly. A fresh targeted search
+      again found no standalone IDFPR/Illinois Land Surveyors Licensing Board UAS-specific
+      guidance. Confidence upgraded Low -> Moderate on the strength of the direct
+      re-verification; the underlying general-statute record remains in the register
+      (not a scope-gate removal) because it is itself a real, current, binding licensing
+      requirement directly relevant to AEC UAS-derived deliverables -- the negative
+      finding is only about supplementary board guidance, which is noted but does not
+      by itself disqualify the record.
+  state_preemption:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - IL-002
+    note: 620 ILCS 5/42.1 re-confirmed; state preemption is not absolute (Chicago carve-out,
+      (b-5) local-recreational-land exception).
+record_count: 9
+unresolved_count: 0
+low_confidence_record_count: 0
+primary_source_percentage: 78
+known_issues:
+  - >-
+    SB 2364 and SB 3930/HB 5275 remain pending in the 104th General Assembly; monitor
+    the fall 2026 veto session (Oct. 14-16 and Oct. 28-30) and future sessions for
+    movement.
+  - >-
+    If Illinois' Board of Registration for Professional Engineers and Land Surveyors
+    ever publishes standalone UAS-specific guidance, it should be added to the register
+    as a new record.
+next_currency_review: '2026-09-07'
+recheck_triggers: []

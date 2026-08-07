@@ -1,8 +1,8 @@
 # Illinois — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 1, 2026 | **Version:** 2.1 (Phase 2 — subjective-scope audit complete August 2, 2026)
-**Model / checkpoint:** Claude Sonnet 5 (research and drafting)
+**Research date:** August 1, 2026 | **Version:** 2.2 (Workstream 9 retrofit — August 7, 2026)
+**Model / checkpoint:** Objective research and Phase 2 model/checkpoint were not recorded in this legacy state packet; Workstream 9 retrofit research conducted August 7, 2026 (claude-sonnet-5).
 **Interpretation scope:** Agent Instructions v6 (August 2, 2026)
 **Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v6, Amendment 2), this summary covers Illinois **state and state-agency** UAS authorities only — local ordinances are largely, but not entirely, foreclosed: 620 ILCS 5/42.1 makes UAS regulation an exclusive state power and bars local ordinances, but (i) it carves out any municipality of more than 1,000,000 inhabitants (currently only Chicago, which has its own drone ordinance, not researched here), and (ii) a separate subsection preserves any local government's right to adopt "reasonable rules" governing UAS use of airspace above its own parks/recreation/conservation land. Full citations and metadata are in `IL_UAS_Source_Register.csv`.
 
@@ -17,6 +17,7 @@ Illinois regulates UAS primarily through a small set of targeted statutes rather
 ## 2. Statewide UAS Laws and Regulations
 
 ### Freedom from Drone Surveillance Act — 725 ILCS 167
+<span class="news-anchor" data-record-id="IL-001" hidden></span>
 *Binding law | Current, originally P.A. 98-569 (2014), substantially amended by P.A. 103-101 (eff. 6-16-23)*
 
 **Objective Summary:** Prohibits a "law enforcement agency" from using a drone to gather information except under 10 enumerated exceptions in Section 15 (e.g., a Section 108-3 search warrant; exigent circumstances/imminent harm; disaster or public-health emergency; missing-person search and rescue; crime-scene/traffic-crash photography; infrastructure inspection at a local government's request; public-relations demonstration with no data collection; PSAP-dispatched emergency response; and monitoring a "routed event" or "special event" with advance public notice). Sections 17–18 separately bar onboard facial recognition and equipping a law-enforcement drone with any weapon. Section 20 requires destruction of gathered information within 30 days (24 hours for event-monitoring use), Section 25 restricts disclosure, Section 30 creates a presumption of inadmissibility for information gathered in violation of the Act, Section 35 requires annual public reporting to the Illinois Criminal Justice Information Authority, and Section 45 gives the Attorney General pattern-and-practice investigation and injunctive authority, including a 6–12 month drone-use forfeiture remedy.
@@ -34,10 +35,10 @@ Illinois regulates UAS primarily through a small set of targeted statutes rather
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Plan environmental and mapping flights to avoid conduct that could be characterized as locating, pursuing, disturbing, or harassing wildlife. Coordinate mission timing and stand-off distances with the land manager when project work overlaps sensitive habitat or hunting activity.
+- **AEC Industry UAS Expert:** Do not assume every Illinois municipality is fully preempted from regulating UAS. Chicago is expressly exempt from the preemption and has its own drone ordinance, and any local government may adopt "reasonable rules" under subsection (b-5) for UAS use of airspace above its own recreational or conservation property. Confirm the specific project site's local rules before assuming state preemption alone controls.
 - **Agency Practitioner:** Not applicable — no agency process.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
-- **AEC Industry Legal Counsel:** Document the applicability analysis and any exception relied upon in the project file. Align the scope, client representations, and operator procedures with the verified authority, and seek state counsel if material facts fall outside its clear terms.
+- **AEC Industry Legal Counsel:** Advise clients that Illinois' UAS preemption is not absolute: the Chicago carve-out and the (b-5) local-recreational-land exception both survive it. Where a project sites in Chicago or on local park/conservation land, confirm the applicable local ordinance or rule directly rather than relying on the general state-preemption rule.
 ### Wildlife Code — Prohibition on Using Unmanned Aircraft to Take, Pursue, or Harass Wildlife — 520 ILCS 5/2.33(i)
 *Binding law | Current, provision most recently reflected in P.A. 103-154 (eff. 6-30-23)*
 
@@ -63,7 +64,7 @@ Illinois regulates UAS primarily through a small set of targeted statutes rather
 ### Drone Safety and Interference Prevention Act — SB 3930 / HB 5275 (proposed — not enacted)
 *Proposed or pending authority | HB 5275 through House Judiciary-Criminal Committee and to Second Reading, then re-referred to Rules 4/17/2026 after a floor amendment; SB 3930 in Senate committee process, last action 3/27/2026*
 
-**Objective Summary:** Would create three new offenses — unlawful imaging of an emergency-response activity, unlawful operation over a critical infrastructure facility, and unlawful operation over a correctional institution or facility — and would bar any private person or entity from equipping a drone with a firearm, weaponized laser, kinetic-impact projectile, chemical agent/irritant, or other lethal/non-lethal weapon. Provides for law-enforcement seizure and court-supervised forfeiture of a violating drone, with notice/hearing protections and civil immunity for good-faith enforcement. As introduced, proposes a January 1, 2027 effective date, contingent on passage. **Neither bill has passed a full chamber and neither is current law.**
+**Objective Summary:** Would create three new offenses — unlawful imaging of an emergency-response activity, unlawful operation over a critical infrastructure facility, and unlawful operation over a correctional institution or facility — and would bar any private person or entity from equipping a drone with a firearm, weaponized laser, kinetic-impact projectile, chemical agent/irritant, or other lethal/non-lethal weapon. Provides for law-enforcement seizure and court-supervised forfeiture of a violating drone, with notice/hearing protections and civil immunity for good-faith enforcement. As introduced, proposes a January 1, 2027 effective date, contingent on passage. **Neither bill has passed a full chamber and neither is current law.** The Illinois General Assembly adjourned its 2026 spring session sine die on June 1, 2026, without further action on either bill; both remain technically alive in the 104th General Assembly (which runs through January 2027) but stalled. The Assembly reconvenes for a fall veto session (Oct. 14–16 and Oct. 28–30, 2026), though veto session is not the normal venue for advancing non-vetoed legislation.
 
 **Practical Interpretation**
 
@@ -117,17 +118,6 @@ Illinois regulates UAS primarily through a small set of targeted statutes rather
 - **Agency Practitioner:** Before relying on an unlicensed or exempt delivery path, give Illinois Department of Financial and Professional Regulation (IDFPR) / Illinois Land Surveyors Licensing Board a written description of the proposed UAS-derived product, its stated accuracy, and whether it will establish or certify boundaries, elevations, or authoritative locations. Ask the board to confirm the applicable license, responsible-charge, certification, or exemption path and retain the response with the project quality plan; the research packet does not establish a UAS-specific turnaround time.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Describe this source as guidance or policy, not a generally binding statute. Check whether the client or property owner incorporates it contractually, preserve the version relied upon, and escalate conflicts with controlling authority.
-### Executive Orders, AG Opinions, Court Decisions, and Procurement
-*Categories reviewed — none dispositive located*
-
-**Objective Summary:** No Illinois gubernatorial executive order specifically and solely addressing UAS regulation was located. No formal Illinois Attorney General opinion construing a UAS-specific statute was located; the Attorney General's office has published non-regulatory guidance to law enforcement agencies on drone usage under 725 ILCS 167 and holds pattern-and-practice investigation/injunctive authority under that Act's Section 45, but this is law-enforcement-directed agency guidance, not a formal opinion, and is not separately regulatory of private AEC operators. No Illinois appellate court decision directly construing 725 ILCS 167, 620 ILCS 5/42.1, or 520 ILCS 5/2.33(i) was located. No general statewide state-agency UAS procurement or approved-manufacturer statute currently in force was located beyond the IDOT-specific federal-nexus policy above and the not-yet-enacted SB 2364.
-
-**Practical Interpretation**
-
-- **AEC Industry UAS Expert:** Treat this record as a research flag, not an operator requirement. Do not change field procedures unless a current controlling source confirms the issue; route any project-specific uncertainty to the identified agency or counsel.
-- **Agency Practitioner:** Not applicable — no agency process.
-- **UAS Procurement Expert:** No current state equipment restriction is established by this research result. Do not treat that absence as permanent; check current solicitation terms, client policies, and independently applicable federal restrictions before committing a fleet to the work.
-- **AEC Industry Legal Counsel:** Do not present this negative or unresolved research result as a legal conclusion. Preserve the research limitation, verify current authority for the specific project, and escalate only if the issue could materially affect scope, access, or liability.
 ## 4. Non-Regulatory Context
 
 *The items below are drawn from news and secondary reporting, not primary legal authority. They are provided for situational awareness only and are not part of the verified source register.*
@@ -142,9 +132,10 @@ Illinois regulates UAS primarily through a small set of targeted statutes rather
 - **620 ILCS 5/42.1(b-5) local park/recreation-land rules:** Any Illinois park district, forest preserve district, or municipality could have adopted its own "reasonable rules" for UAS use over its own recreational/conservation land under this subsection; no statewide inventory of such local rules was compiled in this pass — confirm directly with the relevant local land-managing agency before assuming state preemption fully controls a specific site.
 - **17 Ill. Adm. Code 110.160(i) "aircraft" scope:** This IDNR park-land rule does not use a UAS-specific term; its application to drones rests on IDNR site practice and general inference, not on rule text naming drones — confirm directly with IDNR's Office of Land Management before relying on this citation.
 - **IDOT FASC-prohibited-manufacturer restriction:** Described by IDOT as in place "indefinitely" with no resolution timeline; AEC firms with pending or planned IDOT-funded UAS work should confirm current status and permitted airframes directly with the Division of Aeronautics before mobilizing equipment, as this is a fast-moving, currently unresolved policy.
-- **SB 2364 and SB 3930/HB 5275 (pending legislation):** Neither the procurement/country-of-origin bill nor the critical-infrastructure/correctional-facility bill has been enacted; both should be monitored for advancement in the current or a future General Assembly session, since either would materially change the regulatory landscape for AEC UAS work in Illinois if passed.
-- **225 ILCS 330/5 photogrammetric-methods exception:** Whether a specific UAS-derived deliverable falls inside or outside licensed land-surveying practice is fact-specific (accuracy achieved, operator certification) and was not resolved against current IDFPR/Board guidance in this pass.
+- **SB 2364 and SB 3930/HB 5275 (pending legislation):** Neither the procurement/country-of-origin bill nor the critical-infrastructure/correctional-facility bill has been enacted; the 2026 spring session adjourned sine die on June 1, 2026 without further action on either. Both should be monitored for advancement in a future session, since either would materially change the regulatory landscape for AEC UAS work in Illinois if passed.
+- **225 ILCS 330/5 photogrammetric-methods exception:** Whether a specific UAS-derived deliverable falls inside or outside licensed land-surveying practice is fact-specific (accuracy achieved, operator certification) and remains unresolved against current IDFPR/Board guidance — re-searched 2026-08-06, no standalone board guidance located.
 - **Local ordinances (Chicago and elsewhere):** Chicago's own drone ordinance (available under the 620 ILCS 5/42.1(b) population exception) and any local 42.1(b-5) rules are out of scope for this Phase 1, state-level pass.
+- **Executive orders, AG opinions, court decisions, and general procurement statute:** Reviewed 2026-08-06 with no dispositive UAS-specific source located in any of these categories; this negative finding is tracked in `IL_UAS_Research_Checklist.md` rather than the source register, per project convention for negative findings.
 
 ## 6. Confidence Summary
 
@@ -158,7 +149,6 @@ Illinois regulates UAS primarily through a small set of targeted statutes rather
 | IDOT Division of Aeronautics UAS program and FASC-manufacturer restriction | High — verified directly against IDOT's own webpage and memo |
 | SB 2364 (Unmanned Aerial Systems Security Act) | High confidence that it is **not current law**, verified against ILGA's own bill-status page |
 | SB 3930 / HB 5275 (Drone Safety and Interference Prevention Act) | High confidence that neither is **current law**, verified against ILGA's own bill-status pages |
-| 225 ILCS 330/5 (professional land surveyor licensing framework) | Low — general framework citation, no UAS-specific guidance located |
-| Executive orders / AG opinions / court decisions / general procurement statute | Low — negative research finding, not a comprehensive search |
+| 225 ILCS 330/5 (professional land surveyor licensing framework) | Moderate — statute text directly re-verified 2026-08-07; no UAS-specific board guidance located after a fresh targeted search |
 
 *This document combines objective legal/regulatory summaries with Phase 2 Practical Interpretation content, which is AI-generated operational opinion and not legal advice. Consult Illinois counsel for project-specific compliance determinations. Local ordinances and tribal UAS considerations are out of scope for this phase per current research instructions.*
