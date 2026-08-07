@@ -1,7 +1,7 @@
 # North Carolina — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 1, 2026 | **Version:** 2.1 (Phase 2 — subjective-scope audit complete August 2, 2026)
+**Research date:** August 1, 2026 | **Version:** 2.2 (Workstream 9 retrofit — August 7, 2026)
 **Model / checkpoint:** Objective research and Phase 2 model/checkpoint were not recorded in this legacy state packet.
 **Interpretation scope:** Agent Instructions v6 (August 2, 2026)
 **Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v6), this summary covers North Carolina **state and state-agency** UAS authorities only — local (municipal/county) ordinances and tribal rules are deferred to a later phase. North Carolina is neither a broad-preemption state (like Texas or Arizona) nor a fully open state (like Colorado or New York): local governments have a narrow, property-based authority to regulate UAS launch/recovery from land they own (Section 4 below), which somewhat narrows — but does not eliminate — the significance of that deferral. Full citations and metadata are in `NC_UAS_Source_Register.csv`.
@@ -39,6 +39,7 @@ North Carolina has one of the most extensively codified state UAS regulatory fra
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** This is the primary hook for North Carolina's narrower, property-based local ordinance authority — distinguish it from a broad local police-power grant for clients.
 ### N.C. Gen. Stat. § 15A-300.3 — UAS Near a Confinement or Correctional Facility Prohibited
+<span class="news-anchor" data-record-id="NC-003" hidden></span>
 *Binding law | Current, effective December 1, 2017*
 
 **Objective Summary:** Prohibits UAS operation within 500 ft horizontal / 250 ft vertical of a local confinement facility or State/federal correctional facility. Exceptions include written facility consent, law enforcement, and a detailed commercial/public-utility exception (150 ft horizontal/vertical buffer, 24-hour notice, qualifying business purpose, FAA and Chapter 63 Article 10 compliance, no unescorted entry). Penalties range from a Class I misdemeanor up to a Class H felony (weapon delivery) or Class I felony (contraband delivery).
@@ -95,17 +96,17 @@ North Carolina has one of the most extensively codified state UAS regulatory fra
 - **Agency Practitioner:** Start with the site manager or permitting office for North Carolina Division of Parks and Recreation before scheduling fieldwork, because property-specific conditions may control the route and timing. Request the current form, lead time, fee, insurance and FAA-document checklist, and site restrictions, then keep the signed approval and conditions in the mission file.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Retain the permit in the project file; confirm current procedure and any park-specific variations directly with the Division.
-### Professional Licensing — NC Board of Examiners for Engineers and Surveyors
-*Binding general regulation | No UAS-specific board guidance located*
+### Professional Licensing — Unlicensed-Surveying Enforcement Against Drone Mapping/Photogrammetry Operators
+*Binding law and binding federal appellate precedent | Current — the Fourth Circuit's ruling became final April 20, 2026*
 
-**Objective Summary:** North Carolina's licensing framework (Chapter 89C) requires PE/PLS licensees to practice only within their demonstrated competency. No standalone UAS-specific board guidance was located.
+**Objective Summary:** This record was materially expanded in the August 2026 retrofit. North Carolina's licensing framework (Chapter 89C) requires PE/PLS licensees to practice only within their competency — but the real, currently binding risk is NCBELS's active enforcement pattern, not a mere gap in guidance. Since 2018, NCBELS has issued cease-and-desist letters to at least a half-dozen drone companies for practicing land surveying without a license. In the best-documented case, the Board formally warned Michael Jones (360 Virtual Drone Services LLC, Goldsboro) that his orthomosaic mapping, thermal imaging, and geospatial-metadata photography constituted unlicensed surveying — regardless of whether he claimed to establish legal boundaries. Jones sued on First Amendment grounds; the Fourth Circuit ruled for NCBELS on May 20, 2024 (*360 Virtual Drone Services LLC v. Ritter*, 102 F.4th 263), applying a "loosened" First Amendment standard to occupational speech and upholding the Board's authority to restrict non-licensees' communication of maps and 3D digital models. The U.S. Supreme Court denied certiorari on April 20, 2026, making the ruling final. Per NCBELS's stated enforcement position, providing a client with aerial photography containing geospatial metadata or coordinate/distance data, an orthomosaic map, a 3D digital model from photogrammetry, an elevation/topographic product, or rough distance/volume measurements from processed aerial imagery all risk unlicensed-practice enforcement absent a PE/PLS license.
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Route UAS-derived photogrammetry/LiDAR products through a North Carolina-licensed PE or PLS under the existing general competency framework.
+- **AEC Industry UAS Expert:** Treat any UAS-derived deliverable containing geospatial metadata, coordinates, distances, elevations, volumes, or an orthomosaic/3D model as presumptively within NCBELS's asserted licensing scope. Route such deliverables through a licensed North Carolina PE or PLS regardless of whether the product purports to establish legal boundaries — a disclaimer does not avoid the licensing requirement under NCBELS's enforcement position.
 - **Agency Practitioner:** Not applicable — no agency process.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
-- **AEC Industry Legal Counsel:** Document licensed-professional review given the absence of North Carolina-specific UAS guidance.
+- **AEC Industry Legal Counsel:** Advise clients this is an active, currently enforced, and now judicially settled risk, not a hypothetical gap. Confirm licensure status before a non-licensed operator delivers any mapping/photogrammetry product with the characteristics NCBELS has targeted; a First Amendment defense is foreclosed in this Circuit following the final Fourth Circuit ruling.
 ## 4. State/Local Regulatory Boundary
 
 **Objective Summary:** North Carolina occupies a middle position: § 15A-300.2(b) gives local governments narrow authority to regulate UAS launch/recovery from property they own (city/county parks, facilities), but does not grant a broad power to regulate UAS operation generally within their jurisdiction. Municipal examples located include Raleigh's and Wake Forest's park-specific UAS guidelines.
@@ -121,7 +122,7 @@ North Carolina has one of the most extensively codified state UAS regulatory fra
 - **Chapter 63, Article 10 cross-reference:** § 15A-300.3(b)(3)(d)'s commercial correctional-facility exception requires compliance with "Chapter 63, Article 10," which was substantially repealed effective Dec. 1, 2024 — confirm with NCDOT's Division of Aviation how this condition now operates.
 - **Local ordinances:** Out of scope for this phase; North Carolina's narrow property-based local authority (Section 4) still warrants a project-specific check for locally owned land.
 - **Jockey's Ridge State Park:** Secondary sources note a historically separate operator-permit arrangement for this park's unique dune-launch activity; not independently verified in this pass.
-- **Professional licensing citation:** Chapter 89C framework cited from general knowledge rather than independently re-verified against current Board rules (21 NCAC 56) in this pass.
+- **Professional licensing enforcement scope:** NCBELS's exact current published enforcement/guidance position (21 NCAC 56) for specific deliverable characteristics (e.g., where the line falls between a simple aerial photograph and a metadata-tagged "mapping" product) was not independently re-verified section-by-section in this pass — confirm directly with the Board or NC counsel for a specific engagement.
 
 ## 6. Confidence Summary
 
@@ -135,6 +136,6 @@ North Carolina has one of the most extensively codified state UAS regulatory fra
 | Repeal of §§ 63-95/63-96 (permit/test) | High — verified directly against NCDOT's own current webpage, corroborated by industry news |
 | 07 NCAC 13B .1204 (state park UAS prohibition) | High — verified directly against the NC Office of Administrative Hearings' official NCAC database |
 | Narrow local-authority characterization | Moderate — research result, not a comprehensive local-ordinance survey |
-| Professional licensing competency framework | Low — general citation, not independently re-verified against current Board rules |
+| NCBELS unlicensed-surveying enforcement (Chapter 89C + *360 Virtual Drone Services LLC v. Ritter*) | High — enforcement pattern and Fourth Circuit ruling verified directly via the Institute for Justice's case page (counsel of record) and cross-checked against Justia's reproduction of the published opinion (102 F.4th 263) |
 
 *This document is objective legal/regulatory summary plus labeled practical interpretation. It is not legal advice; consult North Carolina counsel for project-specific compliance determinations. Local ordinances and tribal UAS considerations are out of scope for this phase per current research instructions.*

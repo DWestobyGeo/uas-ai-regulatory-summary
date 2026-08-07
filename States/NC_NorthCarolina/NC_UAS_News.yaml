@@ -1,0 +1,21 @@
+state: North Carolina
+state_abbr: NC
+role_id: news-aggregator
+role_version: 1.0.0
+generated_at: '2026-08-07'
+items:
+  - record_id: NC-003
+    headline: "Drones carrying contraband into NC prisons on the rise, officials say"
+    url: https://www.wect.com/2026/08/03/drones-carrying-contraband-into-nc-prisons-rise-officials-say/
+    source_name: WECT News (Wilmington, NC — Gray Media)
+    publish_date: '2026-08-03'
+    jurisdiction_match: in_state
+    out_of_state_name: null
+    relevance_note: >-
+      Directly on-topic for NC-003's confinement/correctional-facility UAS prohibition: reports
+      NC Department of Adult Correction Secretary Leslie Dismukes confirming rising drone-borne
+      contraband deliveries statewide, a June 2026 Columbus County arrest of four people tied to a
+      drone drug-delivery plot at Columbus Correctional Institution, and NCDAC's active work with
+      the FAA on drone-mitigation rules for state prisons -- the exact enforcement gap (no
+      counter-drone authority yet) and regulated activity NC-003 addresses.
+    date_accessed: '2026-08-07'

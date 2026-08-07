@@ -1,0 +1,109 @@
+# State Research Manifest -- Workstream 9 (national retrofit, per planning/national_retrofit_queue.md)
+# Schema: States/RESEARCH_MANIFEST_SCHEMA.md
+# Owner: Research Expert (agents/roles/research-expert.md)
+# Validated by: scripts/validate_research_manifests.py
+
+state: North Carolina
+state_abbr: NC
+method_version: 1.0.0
+research_status: current_method_in_progress
+legacy_retrofit_status: retrofit_in_progress
+last_full_research_date: '2026-08-01'
+last_currency_check: '2026-08-07'
+source_cutoff_date: '2026-08-07'
+coverage:
+  state_statutes_and_amendments:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - NC-001
+    - NC-004
+    note: G.S. 15A-300.1 and G.S. 15A-300.4 re-fetched directly against ncleg.gov and confirmed
+      to match the register exactly.
+  administrative_rules:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - NC-010
+    note: 07 NCAC 13B .1204 confidence unchanged; no currency concern identified in this pass.
+  executive_orders:
+    status: not_applicable
+    unresolved: false
+    record_ids: []
+    note: No standalone executive-order category finding was made in the original research pass;
+      not separately re-searched in this retrofit.
+  court_decisions_and_ag_opinions:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - NC-012
+    note: >-
+      RESOLVED (material expansion) IN THIS RETROFIT PASS. NC-012 previously understated
+      NCBELS's active enforcement pattern against drone mapping/photogrammetry operators. Verified
+      directly -- 360 Virtual Drone Services LLC v. Ritter, 102 F.4th 263 (4th Cir. 2024), cert.
+      denied 2026-04-20, now final. Confidence upgraded Low -> High.
+  aviation_and_transportation_agencies:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - NC-002
+    note: NCDOT Division of Aviation's official laws-and-regulations page re-confirmed directly,
+      corroborating citation numbering across NC-002, NC-003, NC-005, NC-006, NC-007, NC-008.
+  parks_public_lands_and_natural_resources:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - NC-004
+    - NC-008
+    - NC-010
+    note: See state_statutes_and_amendments and administrative_rules above.
+  corrections_public_safety_and_critical_infrastructure:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - NC-003
+    note: Unchanged; corroborated by a current, genuine in-state news finding (drone-borne prison
+      contraband) in the Section 4.7 news-aggregator pass.
+  privacy_surveillance_trespass_and_interference:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - NC-001
+    note: See state_statutes_and_amendments above.
+  procurement_equipment_and_cybersecurity:
+    status: not_applicable
+    unresolved: false
+    record_ids: []
+    note: No register record or category finding exists for this category; not identified as a
+      gap requiring a new record in this pass.
+  professional_licensing_board_material:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - NC-012
+    note: See court_decisions_and_ag_opinions above -- same record covers both categories.
+  state_preemption:
+    status: applicable_source_found
+    unresolved: false
+    record_ids: []
+    note: RESOLVED IN THIS RETROFIT PASS. The narrow-local-authority finding (previously register
+      record NC-011, whose own source_type field said "not included in the final source register")
+      was moved to the checklist per Agent_Instructions.v6.md Section 5.2. The underlying finding
+      remains as general contextual discussion in the narrative's Section 4, which is not itself a
+      register record requiring a coverage record_id here.
+record_count: 11
+unresolved_count: 0
+low_confidence_record_count: 0
+primary_source_percentage: 100
+known_issues:
+  - >-
+    NCBELS's exact current published enforcement/guidance position (21 NCAC 56) for specific
+    deliverable characteristics was not independently re-verified section-by-section -- the
+    360 Virtual Drone Services v. Ritter litigation record describes the Board's asserted scope,
+    not the Board's own rule text directly.
+  - >-
+    G.S. 15A-300.3(b)(3)(d)'s commercial correctional-facility exception cross-references
+    Chapter 63, Article 10, which was substantially repealed effective 2024-12-01 (NC-009);
+    confirm with NCDOT how this condition now operates.
+next_currency_review: '2026-09-07'
+recheck_triggers: []
