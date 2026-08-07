@@ -1,0 +1,22 @@
+state: Michigan
+state_abbr: MI
+role_id: news-aggregator
+role_version: 1.0.0
+generated_at: '2026-08-07'
+items:
+  - record_id: MI-010
+    headline: "Michigan House Passes 2 Of 15 SHIELD Drone Bills, Both Aimed At Chinese-Made Aircraft Procurement"
+    url: https://dronexl.co/2026/05/14/michigan-house-passes-2-of-15-shield-drone-bills/
+    source_name: DroneXL
+    publish_date: '2026-05-14'
+    jurisdiction_match: in_state
+    out_of_state_name: null
+    relevance_note: >-
+      Directly on-topic primary event reporting for MI-010: reports the Michigan House's May 14, 2026
+      passage of HB 5329 (Rep. Josh Schriver) and HB 5331 (Rep. Jennifer Conlin), both barring
+      public-entity or state-fund UAS purchases containing software from manufacturers on federal
+      "concern" lists (NDAA Section 1260H, the Chinese Military-Industrial Complex Sanctions List, or
+      the Commerce Department's Entity List), while the remaining 13 bills of the broader 15-bill
+      "SHIELD Michigan" package had not advanced to a House floor vote as of this report. A fresh
+      currency check on August 7, 2026 found no report of Senate passage of either bill.
+    date_accessed: '2026-08-07'

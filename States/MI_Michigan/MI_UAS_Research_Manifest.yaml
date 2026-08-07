@@ -1,0 +1,157 @@
+# State Research Manifest -- Workstream 9 (national retrofit, per planning/national_retrofit_queue.md)
+# Schema: States/RESEARCH_MANIFEST_SCHEMA.md
+# Owner: Research Expert (agents/roles/research-expert.md)
+# Validated by: scripts/validate_research_manifests.py
+
+state: Michigan
+state_abbr: MI
+method_version: 1.0.0
+research_status: current_method_in_progress
+legacy_retrofit_status: retrofit_in_progress
+last_full_research_date: '2026-08-02'
+last_currency_check: '2026-08-07'
+source_cutoff_date: '2026-08-07'
+coverage:
+  state_statutes_and_amendments:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - MI-001
+    - MI-002
+    - MI-003
+    - MI-004
+    - MI-005
+    note: >-
+      MI-001 through MI-005 re-confirmed against current primary text. MI-001's and MI-004's
+      practical_interpretation_aec_expert fields previously contained mismatched wildlife-harassment
+      template content (apparently copy-pasted from a different topic) and have been rewritten to
+      address the actual conduct each statute targets. MI-002's field previously said "Build Michigan
+      Legislature approval into pre-mobilization planning" -- corrected to reference confirming which
+      of MCL 259.307's four exceptions applies.
+  administrative_rules:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - MI-006
+    note: >-
+      DNR Land Use Orders of the Director (state parks/recreation areas, boating access sites/harbors,
+      state forest campgrounds) re-confirmed via DNR's own official FAQ page and two of three sibling
+      order provisions fetched directly. Order 5.1's own primary chapter text was not independently
+      located in this pass -- flagged as an open item, unchanged from the original pass.
+  executive_orders:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids: []
+    note: >-
+      No Michigan gubernatorial executive order directly and dispositively addressing UAS regulation
+      was located. Previously combined into MI-010's negative-finding portion; moved to the checklist
+      in this retrofit pass per Agent_Instructions.v6.md Section 5.2, since the prior combined record's
+      own source_type field said "not included in the final source register."
+  court_decisions_and_ag_opinions:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - MI-008
+    note: >-
+      Michigan Coalition of Drone Operators, Inc v Regents of Univ of Mich (Mich Ct Claims, Dec. 26,
+      2025) re-confirmed against the full opinion fetched directly from the official Michigan Courts
+      website. Its practical_interpretation_aec_expert field previously contained a mismatched bullet
+      about minimizing data capture (duplicated from MI-002) -- rewritten to address the actual holding
+      (each Michigan public university maintains its own independent drone ordinance/waiver process).
+      No Michigan Attorney General opinion directly construing a Michigan UAS-specific statute was
+      located; that negative finding, previously combined into MI-010, was moved to the checklist.
+  aviation_and_transportation_agencies:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - MI-007
+    note: >-
+      MDOT Design Advisory DA 2026-04 (American Security Drone Act procurement restriction)
+      re-confirmed via the full advisory fetched directly from michigan.gov/mdot; unchanged from the
+      original pass. No internal MDOT Office of Aeronautics UAS operations policy distinct from this
+      Design Division advisory was located.
+  parks_public_lands_and_natural_resources:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - MI-005
+    - MI-006
+    note: See state_statutes_and_amendments and administrative_rules above.
+  corrections_public_safety_and_critical_infrastructure:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - MI-003
+    note: MCL 259.321 (interference with law enforcement, emergency, and corrections personnel)
+      re-confirmed; unchanged from the original pass.
+  privacy_surveillance_trespass_and_interference:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - MI-002
+    - MI-004
+    note: See state_statutes_and_amendments above.
+  procurement_equipment_and_cybersecurity:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - MI-007
+    - MI-010
+    note: >-
+      RESOLVED (repurposed) IN THIS RETROFIT PASS. MI-010 was rewritten from a self-contradictory
+      combined negative-finding/pending-legislation row into a properly typed "Proposed or pending
+      authority" record documenting House Bills 5329 and 5331 (the "SHIELD Michigan" public-entity and
+      state-fund foreign-manufacturer UAS procurement restriction), which passed the Michigan House on
+      May 14, 2026 and remained pending in the Senate as of a fresh currency check performed
+      August 7, 2026. The general negative finding (no enacted state-agency procurement restriction
+      beyond MI-007) was moved to the checklist. This mirrors the pending-bill convention already
+      established for Colorado's CO-008 (SB26-024).
+  professional_licensing_board_material:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - MI-009
+    note: MCL 339.2001(f) ("practice of professional surveying" definition) re-confirmed directly; no
+      UAS-specific Board of Professional Surveyors guidance located, unchanged from the original pass.
+      Confidence held at Low.
+  state_preemption:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - MI-001
+    - MI-008
+    note: >-
+      RESOLVED IN THIS RETROFIT PASS. The negative-finding categories previously combined into MI-010
+      (no general state-agency procurement restriction beyond MI-007, no local-preemption gap beyond
+      the university carve-out already covered by MI-001/MI-008) were moved to the checklist per
+      Agent_Instructions.v6.md Section 5.2, since the prior combined record's own source_type field
+      said "not included in the final source register." MCL 259.305's political-subdivision preemption
+      and its public-university carve-out (MI-008) remain fully covered as affirmative register
+      records.
+record_count: 10
+unresolved_count: 0
+low_confidence_record_count: 1
+primary_source_percentage: 80
+known_issues:
+  - >-
+    Order 5.1's own primary Land Use Order chapter text (state parks/recreation areas UAS
+    restrictions) was verified through DNR's official FAQ page and two of three materially identical
+    sibling order provisions, but not independently located as a standalone primary document in this
+    pass.
+  - >-
+    No internal MDOT Office of Aeronautics UAS operations policy, distinct from the Design Division's
+    DA 2026-04 procurement advisory, was located. MDOT's forthcoming Consultant Advisory on direct and
+    indirect UAS cost treatment (referenced in DA 2026-04) had not been identified or reviewed as of
+    this pass.
+  - >-
+    No Board of Professional Surveyors rule or guidance specifically addressing UAS-derived
+    photogrammetric or LiDAR survey products was located; MI-009 remains Low confidence.
+  - >-
+    HB 5329 and HB 5331's Senate status and the remaining 13 SHIELD-package bills' House-floor status
+    were reconfirmed only via secondary reporting and a general web search on August 7, 2026, not
+    against each bill's own official legislature.mi.gov page.
+  - >-
+    Whether the Michigan Court of Claims decision in Michigan Coalition of Drone Operators has been or
+    will be appealed was not confirmed in this pass.
+next_currency_review: '2026-09-07'
+recheck_triggers: []
