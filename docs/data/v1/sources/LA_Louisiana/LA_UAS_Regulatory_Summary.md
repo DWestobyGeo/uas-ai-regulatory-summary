@@ -6,9 +6,7 @@
 **Interpretation scope:** Agent Instructions v6 (August 2, 2026)
 **Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v6, Amendment 2), this summary covers Louisiana **state and state-agency** UAS authorities only — municipal and parish ordinances are deferred. **Louisiana affirmatively preempts local UAS regulation by statute (La. R.S. 2:2):** the state has exclusive jurisdiction to regulate UAS, and state law supersedes any political-subdivision rule, regulation, code, or ordinance regulating UAS, subject to federal airspace sovereignty. This is a materially different posture than states with no preemption statute (e.g., Kentucky), though a local government may still set generally applicable rules of conduct for its own publicly owned property. Full citations and metadata are in `LA_UAS_Source_Register.csv`.
 
-> **Process note (Agent Instructions Amendment 5, August 2, 2026):** Phase 2 practical interpretation and the completed-state subjective-scope audit are complete for the authorities presented below. The four labeled perspectives normally use one to three sentences, but may run longer when relevant and needed; they are operational and risk-management interpretations of the verified research packet, do not add legal requirements, and are not legal advice.
-
-Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.
+> **Status:** A first pass of source collection, objective summaries, and practical interpretation is complete for this state. Ongoing work is expanding source coverage and improving quality review and processing efficiency across the project.
 
 ---
 

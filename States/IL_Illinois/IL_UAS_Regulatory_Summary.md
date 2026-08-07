@@ -6,9 +6,7 @@
 **Interpretation scope:** Agent Instructions v6 (August 2, 2026)
 **Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v6, Amendment 2), this summary covers Illinois **state and state-agency** UAS authorities only — local ordinances are largely, but not entirely, foreclosed: 620 ILCS 5/42.1 makes UAS regulation an exclusive state power and bars local ordinances, but (i) it carves out any municipality of more than 1,000,000 inhabitants (currently only Chicago, which has its own drone ordinance, not researched here), and (ii) a separate subsection preserves any local government's right to adopt "reasonable rules" governing UAS use of airspace above its own parks/recreation/conservation land. Full citations and metadata are in `IL_UAS_Source_Register.csv`.
 
-> **Process note (Agent Instructions Amendment 5, August 2, 2026):** Phase 2 practical interpretation and the completed-state subjective-scope audit are complete for the authorities presented below. The four labeled perspectives normally use one to three sentences, but may run longer when relevant and needed; they are operational and risk-management interpretations of the verified research packet, do not add legal requirements, and are not legal advice.
-
-Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.
+> **Status:** A first pass of source collection, objective summaries, and practical interpretation is complete for this state. Ongoing work is expanding source coverage and improving quality review and processing efficiency across the project.
 
 ---
 

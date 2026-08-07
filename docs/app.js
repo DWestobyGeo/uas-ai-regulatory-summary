@@ -2,7 +2,7 @@
   "use strict";
 
   var INDEX_URL = "data/v1/index.json";
-  var UI_VERSION = "1.4.0";
+  var UI_VERSION = "1.5.0";
 
   var select = document.getElementById("state-select");
   var emptyState = document.getElementById("empty-state");
@@ -12,6 +12,7 @@
   var recordCountEl = document.getElementById("state-record-count");
   var researchStatusEl = document.getElementById("state-research-status");
   var schemaEl = document.getElementById("state-schema");
+  var newsCountEl = document.getElementById("state-news-count");
   var summaryPanel = document.getElementById("summary-panel");
   var tocNav = document.getElementById("toc-nav");
   var tocDisclosure = document.getElementById("toc-disclosure");
@@ -319,6 +320,62 @@
     });
   }
 
+  // Turns the dense "Prepared for: ... | Research date: ... | Version: ..."
+  // intro line (originally one unbroken paragraph in the source markdown) into a
+  // readable label/value box. Runs on every state, driven only by the fixed set
+  // of bold labels the research template always uses -- no per-state markdown
+  // edits required. See docs/DESIGN_SYSTEM.md, "Document meta box."
+  var DOC_META_LABELS = ["Prepared for", "Research date", "Version", "Model / checkpoint", "Interpretation scope", "Scope note"];
+
+  function buildDocMetaBox() {
+    var labelSet = {};
+    DOC_META_LABELS.forEach(function (l) { labelSet[l.toLowerCase()] = true; });
+
+    var strongs = summaryPanel.querySelectorAll("strong");
+    var firstLabelStrong = null;
+    for (var i = 0; i < strongs.length; i++) {
+      var text = strongs[i].textContent.trim().replace(/:$/, "");
+      if (labelSet[text.toLowerCase()]) { firstLabelStrong = strongs[i]; break; }
+    }
+    if (!firstLabelStrong) return;
+    var paragraph = firstLabelStrong.closest("p");
+    if (!paragraph) return;
+
+    var rows = [];
+    var current = null;
+    Array.prototype.forEach.call(Array.prototype.slice.call(paragraph.childNodes), function (node) {
+      if (node.nodeType === 1 && node.tagName === "STRONG") {
+        var label = node.textContent.trim().replace(/:$/, "");
+        if (labelSet[label.toLowerCase()]) {
+          current = { label: label, nodes: [] };
+          rows.push(current);
+          return;
+        }
+      }
+      if (current) current.nodes.push(node);
+    });
+    if (!rows.length) return;
+
+    var box = document.createElement("div");
+    box.className = "doc-meta-box";
+    rows.forEach(function (row) {
+      var rowEl = document.createElement("div");
+      rowEl.className = "doc-meta-row";
+      var labelEl = document.createElement("span");
+      labelEl.className = "doc-meta-label";
+      labelEl.textContent = row.label;
+      var valueEl = document.createElement("span");
+      valueEl.className = "doc-meta-value";
+      row.nodes.forEach(function (n) { valueEl.appendChild(n); });
+      valueEl.innerHTML = valueEl.innerHTML.replace(/^[\s|]+/, "").replace(/[\s|]+$/, "");
+      rowEl.appendChild(labelEl);
+      rowEl.appendChild(valueEl);
+      box.appendChild(rowEl);
+    });
+
+    paragraph.parentNode.replaceChild(box, paragraph);
+  }
+
   function enhanceSummary() {
     var renderedTitle = summaryPanel.querySelector("h1");
     if (renderedTitle) {
@@ -328,6 +385,7 @@
       renderedTitle.parentNode.replaceChild(titleLabel, renderedTitle);
     }
     classifySummaryContent();
+    buildDocMetaBox();
     wrapAuthorityCards();
     wrapMajorSections();
     assignHeadingIds();
@@ -488,6 +546,10 @@
     researchStatusEl.innerHTML = researchStatusBadge(data.research_status);
     recordCountEl.textContent = data.record_count + " source record" + (data.record_count === 1 ? "" : "s");
     schemaEl.textContent = "v" + data.schema_version;
+    var newsTotal = (Array.isArray(data.records) ? data.records : []).reduce(function (sum, r) {
+      return sum + (Array.isArray(r.news) ? r.news.length : 0);
+    }, 0);
+    newsCountEl.textContent = newsTotal ? (newsTotal + " stor" + (newsTotal === 1 ? "y" : "ies")) : "None yet";
     document.title = data.state + " UAS Regulatory Summary — AEC Reference";
 
     if (window.marked) {

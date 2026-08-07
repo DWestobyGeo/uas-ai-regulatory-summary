@@ -6,9 +6,7 @@
 **Interpretation scope:** Agent Instructions v6 (August 2, 2026)
 **Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent_Instructions.md v3), this summary covers Pennsylvania **state and state-agency** UAS authorities only — local (municipal/county) ordinances and tribal rules are deferred to a later phase and are not included here. Full citations and metadata are in `PA_UAS_Source_Register.csv`.
 
-Each authority below is presented as an **Objective Summary** (binding text/citation, no interpretation) followed by **Practical Interpretation** from four labeled perspectives: AEC Industry UAS Expert, Agency Practitioner, UAS Procurement Expert, and AEC Industry Legal Counsel. Practical interpretation is not legal advice.
-
-> **Process note (Agent Instructions Amendment 5, August 2, 2026):** Phase 2 practical interpretation and the completed-state subjective-scope audit are complete for the authorities presented below. The four labeled perspectives normally use one to three sentences, but may run longer when relevant and needed; they are operational and risk-management interpretations of the verified research packet, do not add legal requirements, and are not legal advice.
+> **Status:** A first pass of source collection, objective summaries, and practical interpretation is complete for this state. Ongoing work is expanding source coverage and improving quality review and processing efficiency across the project.
 
 ---
 

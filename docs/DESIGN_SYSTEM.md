@@ -1,8 +1,8 @@
 # State UAS Research Site Design System
 
-**UI version:** 1.4.0
+**UI version:** 1.5.0
 
-**Agent scope:** `web-ux-ui-editor` v1.4.0
+**Agent scope:** `web-ux-ui-editor` v1.5.0
 
 **Applies to:** the public GitHub Pages site under `docs/`
 
@@ -111,7 +111,7 @@ Reports the current number of included state summaries and the maintenance-first
 
 ### State overview
 
-Uses a high-contrast header card for the state name, last update, source count, schema version, and AI-research status.
+Uses a high-contrast header card for the state name, last update, source count, related-news item count, schema version, and AI-research status.
 
 ### Reading layout
 
@@ -130,6 +130,20 @@ Uses a high-contrast header card for the state name, last update, source count, 
 ### Summary introduction
 
 Contains document metadata, scope notes, process notes, and the full in-content AI research notice. The state Markdown title is visually presented as a document label rather than a second page-level `h1`.
+
+#### Document meta box (corrected v1.5.0)
+
+Every state's source markdown opens with a fixed run of bold-labeled fields on
+consecutive lines with no blank line between them ("Prepared for:", "Research
+date:", "Version:", "Model / checkpoint:", "Interpretation scope:", "Scope
+note:") -- by plain Markdown rules these collapse into a single dense
+paragraph with no visual breaks. `docs/app.js`'s `buildDocMetaBox()` runs on
+every state automatically (driven only by the fixed label set, not per-state
+markup) and replaces that paragraph with a `.doc-meta-box` label/value list,
+one row per field, so it reads as a short document header rather than a wall
+of text. Do not solve this by editing the 50 state Markdown files directly --
+the label set is a template convention shared by all of them, so the fix
+belongs in the shared renderer.
 
 ### Major summary sections
 
