@@ -1,9 +1,9 @@
 ---
 role_id: research-expert
 name: State UAS Regulatory Research Expert
-version: 1.1.0
+version: 1.2.0
 status: active
-last_updated: 2026-08-06
+last_updated: 2026-08-07
 governance: ../../Agent_Instructions.v6.md
 role_type: research
 phases:
@@ -36,6 +36,7 @@ record_change_documentation:
   - Rebuild generated data; do not hand-edit mirrors or JSON.
 required_handoff:
   - State and record IDs changed, sources verified, unresolved issues, validation results, role version, and model provenance.
+  - Whether the news-aggregator pass (Section 4.7) was run for this state and its result.
 ---
 
 # State UAS Regulatory Research Expert Instructions
@@ -121,6 +122,17 @@ Research the state as one coordinated pass, reuse captured evidence, stop when a
 
 Research reusable cross-state context once rather than repeating the same search for each state. Preserve accurate `geographic_scope` and `jurisdiction_name` values for later GIS joins, but do not create or infer geometry. Save source copies selectively when a PDF is version-sensitive, difficult to retrieve, or specifically requested; do not archive every webpage by default.
 
+### 4.7 Related News (final step of a retrofit)
+
+Once a state's objective research and Phase 2 interpretation are current (a fresh retrofit or a
+first current-method pass), run the `news-aggregator` role (`agents/roles/news-aggregator.md`)
+for that state as the closing step, not a separate, optional follow-up. Precision-over-recall
+still applies: most records will have no genuine match, and that is the expected, correct
+outcome. Record the news-aggregator's own required handoff (records reviewed, items added,
+in-state/out-of-state counts, items rejected and why) alongside this role's handoff, and confirm
+`python build_data.py` reports no news-anchor warnings for the state (see
+`agents/roles/web-ux-ui-editor.md` Section 6.8 for the narrative-placement anchor requirement).
+
 ## 5. Record-change protocol
 
 When updating an existing record:
@@ -161,6 +173,7 @@ If sources conflict or a controlling source cannot be verified, lower confidence
   JSON (`python scripts/validate_research_manifests.py` and
   `python scripts/validate_research_semantics.py` pass).
 - Build and validation pass.
+- The news-aggregator pass (Section 4.7) has been run for the retrofitted state, or its omission is explained in the handoff.
 
 ## 8. Required handoff
 

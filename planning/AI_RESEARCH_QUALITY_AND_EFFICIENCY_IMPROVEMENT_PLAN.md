@@ -424,6 +424,10 @@ Provide each role only the necessary record-level input:
 - [ ] Process one state per substantive research commit.
 - [ ] Preserve stable record IDs when the same authority remains.
 - [ ] Re-run dependent interpretations only when objective meaning changes.
+- [x] Run the news-aggregator role (`agents/roles/news-aggregator.md`) as the closing step of
+      each state's retrofit, per `agents/roles/research-expert.md` Section 4.7 (added
+      2026-08-07 after the News feature launch; states retrofitted before that date should pick
+      it up on their next currency pass rather than require a separate dedicated pass).
 
 ## Acceptance criteria
 
