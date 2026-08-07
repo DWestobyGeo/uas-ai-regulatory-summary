@@ -1,8 +1,8 @@
 # New York — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 1, 2026 | **Version:** 2.1 (Phase 2 — subjective-scope audit complete August 2, 2026)
-**Model / checkpoint:** Objective research and Phase 2 model/checkpoint were not recorded in this legacy state packet.
+**Research date:** August 1, 2026 | **Version:** 2.2 (Workstream 9 retrofit — August 7, 2026)
+**Model / checkpoint:** Objective research and Phase 2 model/checkpoint were not recorded in this legacy state packet. Retrofit pass performed with claude-sonnet-5.
 **Interpretation scope:** Agent Instructions v6 (August 2, 2026)
 **Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v6), this summary covers New York **state and state-agency** UAS authorities only — local (municipal/county) ordinances and tribal rules are deferred to a later phase and are not included here. Unlike Texas or Florida, New York has **not** enacted a state preemption statute for local UAS ordinances (see Section 4), and New York City in particular maintains an extensive independent permit regime — a project-specific municipal check will be necessary before this state-level picture can be treated as complete for any specific New York site. Full citations and metadata are in `NY_UAS_Source_Register.csv`.
 
@@ -86,6 +86,8 @@ New York's UAS regulatory landscape changed materially on May 28, 2026, with the
 - **AEC Industry Legal Counsel:** Document licensed-professional review and QA/QC of UAS-derived deliverables given the absence of UAS-specific board guidance; consider a direct inquiry to the Office of the Professions for novel UAS-derived-product certification questions.
 ## 4. State Preemption of Local Ordinances
 
+*This section reflects a research result (no statute located), not an affirmative source record; per this project's negative-finding governance principle (`Agent_Instructions.v6.md` §5.2), it is retained here as narrative context rather than as a `NY_UAS_Source_Register.csv` row.*
+
 **Objective Summary:** No New York statute broadly preempting local UAS regulation was located during this research pass, in contrast to Texas (Gov't Code § 423.009) and similar to California. New York City independently regulates UAS takeoff/landing through NYC Administrative Code § 10-126(c) and a permit system (38 RCNY § 24) administered jointly by the NYPD and NYC DOT, and other municipalities (e.g., the Village of Cooperstown) have adopted their own local drone ordinances.
 
 **Practical Interpretation**
@@ -109,6 +111,7 @@ New York's UAS regulatory landscape changed materially on May 28, 2026, with the
 - **AEC Industry Legal Counsel:** Do not represent to a client that a standalone New York correctional-facility drone statute with a 1,000-ft or 500-ft buffer exists independent of Penal Law Article 280; rely on Article 280 for current and forthcoming correctional-facility UAS restrictions in New York.
 ## 6. Unresolved Operational Questions
 
+- **Retrofit-pass tool limitation (added August 7, 2026):** A planned direct re-fetch of the NY Senate bill page, the NY Department of State eRules database, and a news-aggregator search were not completed in this retrofit pass due to a web-fetch tool-availability interruption. All items below are therefore carried forward from the original pass rather than newly re-confirmed; a follow-up currency and news-aggregator pass is recommended.
 - **Article 280 / Executive Law § 236 final chapter number:** This summary is based on the passed bill text (S.9005-B, Part D); the final signed chapter-law number was not independently cross-checked against the NY Session Laws, and no amendment activity between passage and the ~Aug. 26, 2026 effective date was confirmed absent.
 - **New York State Blue List content:** The Executive Law § 236(5) vendor registry had not yet been published as of the research date; its actual vendor/equipment content should be re-checked once the law takes effect.
 - **Statewide DOT/aviation-office UAS program:** Research located NYC-specific DOT/NYPD UAS material but did not confirm whether NYSDOT maintains a separate statewide UAS operations program comparable to TxDOT's UAS Manual; this remains an open question for a future research pass.

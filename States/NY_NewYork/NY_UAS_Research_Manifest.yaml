@@ -1,0 +1,155 @@
+# State Research Manifest -- Workstream 9 (national retrofit, per planning/national_retrofit_queue.md)
+# Schema: States/RESEARCH_MANIFEST_SCHEMA.md
+# Owner: Research Expert (agents/roles/research-expert.md)
+# Validated by: scripts/validate_research_manifests.py
+
+state: New York
+state_abbr: NY
+method_version: 1.0.0
+research_status: current_method_in_progress
+legacy_retrofit_status: retrofit_in_progress
+last_full_research_date: '2026-08-01'
+last_currency_check: '2026-08-07'
+source_cutoff_date: '2026-08-07'
+coverage:
+  state_statutes_and_amendments:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - NY-001
+    - NY-002
+    note: >-
+      Penal Law Article 280 (drone offenses) and Executive Law Section 236 (Blue List
+      procurement/counter-drone authority) re-reviewed against the original pass's directly-fetched
+      S.9005-B bill text. This retrofit's own attempt to re-fetch the NY Senate bill page and confirm
+      the final signed chapter-law number, the New York State Blue List's publication status, and any
+      amendment activity ahead of the law's ~August 26, 2026 effective date was not completed in this
+      pass due to a web-fetch tool-availability interruption; the open items already flagged in the
+      original pass's Section 6 (Unresolved Operational Questions) remain open and are carried forward
+      to known_issues below rather than newly discovered.
+  administrative_rules:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - NY-003
+    - NY-004
+    - NY-005
+    - NY-007
+    note: >-
+      OPRHP state-park UAS permit rules (NY-003), DEC Wilderness/Primitive/Canoe UAS restrictions
+      (NY-004), DEC wildlife-harassment rule (NY-005), and the general professional-practice competency
+      rule (NY-007) re-reviewed; all four remain sourced through secondary industry-compliance
+      summaries rather than a direct pull of the underlying NYCRR text, consistent with the original
+      pass's own confidence findings (Moderate for NY-003/004/005, Low for NY-007). A planned direct
+      pull of the NY Department of State eRules database was not completed in this pass due to a
+      web-fetch tool-availability interruption.
+  executive_orders:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids: []
+    note: No New York gubernatorial executive order directly and dispositively addressing UAS
+      regulation was located; unchanged from the original pass.
+  court_decisions_and_ag_opinions:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids: []
+    note: No New York court decision or Attorney General opinion directly addressing UAS regulation was
+      located; unchanged from the original pass, which itself flagged this as a possible genuine gap
+      rather than a search limitation.
+  aviation_and_transportation_agencies:
+    status: not_applicable
+    unresolved: false
+    record_ids: []
+    note: Research located NYC-specific DOT/NYPD UAS material (out of scope as a local ordinance) but
+      did not confirm whether NYSDOT maintains a separate statewide UAS operations program comparable
+      to TxDOT's UAS Manual; not independently re-searched in this retrofit pass, unchanged open
+      question from the original pass.
+  parks_public_lands_and_natural_resources:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - NY-003
+    - NY-004
+    - NY-005
+    note: See administrative_rules above.
+  corrections_public_safety_and_critical_infrastructure:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - NY-001
+    - NY-008
+    note: >-
+      NY-001's 500-ft "prohibited space" definition independently covers correctional facilities. NY-008
+      (the superseded standalone correctional-facility bill lineage, S.2125/S.1380/S.2660/S.694-A) is
+      retained as its own properly-typed "Proposed or pending authority" record documenting that this
+      subject matter was ultimately addressed through Article 280 rather than a standalone act --
+      already correctly typed in the original pass, requiring no repurposing in this retrofit.
+  privacy_surveillance_trespass_and_interference:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - NY-001
+    note: See state_statutes_and_amendments above.
+  procurement_equipment_and_cybersecurity:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - NY-002
+    note: >-
+      Executive Law Section 236(5)'s "New York State Blue List" vendor registry had not yet been
+      published as of the original research date; its publication status was not independently
+      re-checked in this pass due to a web-fetch tool-availability interruption. Remains open.
+  professional_licensing_board_material:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - NY-007
+    note: General competency-in-practice rule (8 NYCRR Part 29, "Rule 415" in industry commentary); no
+      UAS-specific Board of Professional Engineers/Land Surveyors guidance located, unchanged from the
+      original pass. Confidence held at Low given the generic secondary-source citation.
+  state_preemption:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids: []
+    note: >-
+      RESOLVED IN THIS RETROFIT PASS. NY-006, a negative-finding record on statewide UAS preemption
+      whose own source_type field said "Discovery lead -- not final authority and not included in the
+      final source register," was removed from the register per Agent_Instructions.v6.md Section 5.2 and
+      moved to the checklist, consistent with the same self-contradictory source_type pattern already
+      corrected in IL-010, LA-008, NC-011, CO-006/CO-007, HI-005, IN-010, and Michigan's prior MI-010 in
+      earlier Workstream 9 retrofits. The underlying finding (no statewide UAS-ordinance preemption
+      statute; New York City independently maintains an extensive permit-based UAS regime under NYC
+      Admin. Code Section 10-126(c) and 38 RCNY Section 24) is retained as general contextual discussion
+      in the narrative's Section 4, which is not itself a register record.
+record_count: 7
+unresolved_count: 0
+low_confidence_record_count: 1
+primary_source_percentage: 86
+known_issues:
+  - >-
+    Penal Law Article 280 / Executive Law Section 236's final signed chapter-law number was not
+    independently cross-checked against the NY Session Laws in either the original pass or this
+    retrofit pass; both passes relied on the passed S.9005-B bill text. Re-verify before the law's
+    ~August 26, 2026 effective date.
+  - >-
+    The New York State Blue List vendor registry (Executive Law Section 236(5)) had not been published
+    as of this pass's research date; re-check once the law takes effect.
+  - >-
+    NY-003, NY-004, NY-005, and NY-007 remain sourced through secondary industry-compliance summaries;
+    a direct pull of the underlying NYCRR text via the NY Department of State's eRules database was
+    planned for this retrofit pass but not completed due to a web-fetch tool-availability interruption.
+    This is a carried-forward open item, not a new finding.
+  - >-
+    Whether NYSDOT maintains a statewide UAS operations program (as distinct from NYC-specific
+    DOT/NYPD material) was not confirmed in either the original pass or this retrofit pass.
+  - >-
+    No New York court decision or Attorney General opinion directly addressing UAS regulation was
+    located; this may reflect a genuine gap rather than a search limitation.
+next_currency_review: '2026-09-06'
+recheck_triggers:
+  - record_id: NY-001
+    reason: "status is event-triggered/pending ('Enacted, not yet effective as of research date')"
+  - record_id: NY-002
+    reason: "status is event-triggered/pending ('Enacted, not yet effective as of research date')"
+  - record_id: NY-008
+    reason: "status is event-triggered/pending ('Not enacted as standalone legislation; overlapping subject matter enacted via Penal Law art. 280 (NY-001) effective ~Aug. 2026')"
