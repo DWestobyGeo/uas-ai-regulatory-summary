@@ -1,0 +1,20 @@
+state: Louisiana
+state_abbr: LA
+role_id: news-aggregator
+role_version: 1.0.0
+generated_at: '2026-08-07'
+items:
+  - record_id: LA-001
+    headline: "Louisiana Becomes First State to Authorize Local Law Enforcement to Neutralize Dangerous Drones"
+    url: https://gov.louisiana.gov/news/4865
+    source_name: Office of Governor Jeff Landry (official state press release)
+    publish_date: '2025-06-18'
+    jurisdiction_match: in_state
+    out_of_state_name: null
+    relevance_note: >-
+      This is the Governor's own announcement of the HB 261 ("We Will Act" Act) signing that
+      created Subsection G of La. R.S. 14:337 -- the law-enforcement drone mitigation-measures
+      authority LA-001 documents -- describing it as the first grant of direct drone-neutralization
+      authority to non-federal law enforcement nationally and confirming the same penalty structure
+      (fines, jail time, mandatory forfeiture) recorded in the register.
+    date_accessed: '2026-08-07'

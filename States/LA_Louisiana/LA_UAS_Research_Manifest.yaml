@@ -1,0 +1,124 @@
+# State Research Manifest -- Workstream 9 (national retrofit, per planning/national_retrofit_queue.md)
+# Schema: States/RESEARCH_MANIFEST_SCHEMA.md
+# Owner: Research Expert (agents/roles/research-expert.md)
+# Validated by: scripts/validate_research_manifests.py
+
+state: Louisiana
+state_abbr: LA
+method_version: 1.0.0
+research_status: current_method_in_progress
+legacy_retrofit_status: retrofit_in_progress
+last_full_research_date: '2026-08-02'
+last_currency_check: '2026-08-07'
+source_cutoff_date: '2026-08-07'
+coverage:
+  state_statutes_and_amendments:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - LA-001
+    - LA-002
+    note: La. R.S. 14:337 and La. R.S. 2:2 re-fetched directly against legis.la.gov/Justia and
+      confirmed to match the register exactly. Corrected both records' interpretation fields,
+      which had a generic "build Legislature approval" template wrongly implying a permitting
+      process for what are criminal-prohibition and preemption provisions.
+  administrative_rules:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - LA-003
+    - LA-004
+    note: RESOLVED (material reversal) IN THIS RETROFIT PASS. LAC 76:III.113 re-confirmed
+      unchanged. LAC 76:XIX.111(D)(14) (wounded-game drone recovery) was reversed by an LWFC
+      Notice of Intent (Feb. 5, 2026) and confirmed finalized in LDWF's official 2026-2027
+      Hunting Regulations (published July 2026) -- drone recovery of a mortally wounded deer or
+      bear is now permitted, subject to conditions. Confidence held at Moderate because the exact
+      final codified paragraph text was not independently fetched and quoted (source PDF could
+      not be parsed as text).
+  executive_orders:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids: []
+    note: RESOLVED IN THIS RETROFIT PASS. Re-searched 2026-08-07; no Louisiana executive order
+      specifically addressing UAS located. Previously part of a combined negative-finding
+      register record (LA-008); moved to the checklist per Agent_Instructions.v6.md Section 5.2
+      and the corresponding scripts/validate_research_semantics.py finding
+      (check_negative_finding_in_register).
+  court_decisions_and_ag_opinions:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids: []
+    note: RESOLVED IN THIS RETROFIT PASS. Re-searched 2026-08-07; no controlling Louisiana
+      appellate decision or formal Attorney General opinion applying a UAS-specific statute
+      located. Previously part of LA-008; moved to the checklist for the same reason as
+      executive_orders above.
+  aviation_and_transportation_agencies:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - LA-006
+    note: DOTD Office of Multimodal Commerce Aviation Division UAS page re-confirmed directly
+      against dotd.la.gov.
+  parks_public_lands_and_natural_resources:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - LA-003
+    - LA-004
+    - LA-005
+    note: See administrative_rules above; LA-005 (Office of State Parks field memo) confidence
+      held at existing Moderate level -- PDF could not be re-parsed as text in this pass.
+  corrections_public_safety_and_critical_infrastructure:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - LA-001
+    note: La. R.S. 14:337 re-confirmed, including the 2025 law-enforcement mitigation-measures
+      authority (Subsection G).
+  privacy_surveillance_trespass_and_interference:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - LA-001
+    note: See corrections_public_safety_and_critical_infrastructure above; no separate general
+      privacy/voyeurism UAS statute located.
+  procurement_equipment_and_cybersecurity:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids: []
+    note: RESOLVED IN THIS RETROFIT PASS. Re-searched 2026-08-07; no enacted Louisiana
+      state-agency UAS procurement/country-of-origin restriction located. 2024 HB 915
+      re-confirmed died in House committee, never enacted. Previously part of LA-008; moved to
+      the checklist for the same reason as executive_orders above.
+  professional_licensing_board_material:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - LA-007
+    note: La. R.S. 37:682 re-fetched directly and confirmed to match the register exactly. No
+      standalone LAPELS UAS-specific guidance located after a fresh search.
+  state_preemption:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - LA-002
+    note: La. R.S. 2:2 re-confirmed.
+record_count: 7
+unresolved_count: 0
+low_confidence_record_count: 0
+primary_source_percentage: 86
+known_issues:
+  - >-
+    LAC 76:XIX.111(D)(14)'s exact final codified 2026-2027 text was not independently fetched
+    and quoted -- this retrofit relied on LDWF's own regulations-pamphlet summary and commission
+    meeting record. Confirm directly with LDWF or the Louisiana Register before relying on it
+    for a specific engagement.
+  - >-
+    Louisiana Office of State Parks Drone/UAV Policy (LA-005, 2018 Field Memo) PDF could not be
+    parsed as text in this pass; confidence held at Moderate pending a successful direct
+    re-fetch.
+  - >-
+    If LAPELS ever publishes standalone UAS-specific guidance, it should be added to the
+    register as a new record.
+next_currency_review: '2026-09-07'
+recheck_triggers: []
