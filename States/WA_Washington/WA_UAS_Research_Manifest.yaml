@@ -1,4 +1,4 @@
-# State Research Manifest — Workstream 2 (research-quality improvement plan, Phase B pilot)
+# State Research Manifest -- Workstream 9 (national retrofit, per planning/national_retrofit_queue.md)
 # Schema: States/RESEARCH_MANIFEST_SCHEMA.md
 # Owner: Research Expert (agents/roles/research-expert.md)
 # Validated by: scripts/validate_research_manifests.py
@@ -6,11 +6,11 @@
 state: Washington
 state_abbr: WA
 method_version: 1.0.0
-research_status: legacy_needs_retrofit
-legacy_retrofit_status: retrofit_not_started
+research_status: current_method_in_progress
+legacy_retrofit_status: retrofit_in_progress
 last_full_research_date: '2026-08-01'
-last_currency_check: '2026-08-02'
-source_cutoff_date: '2026-08-01'
+last_currency_check: '2026-08-07'
+source_cutoff_date: '2026-08-07'
 coverage:
   state_statutes_and_amendments:
     status: applicable_source_found
@@ -18,84 +18,103 @@ coverage:
     record_ids:
     - WA-001
     - WA-005
-    - WA-006
+    note: RCW 47.68.250 re-verified directly. Corrected WA-001's agency-practitioner
+      interpretation, which had incorrectly described the Legislature as an administering
+      office (see WA-002 for the actual WSDOT process). RCW 9A.44.115 re-confirmed unaffected.
   administrative_rules:
     status: applicable_source_found
     unresolved: false
     record_ids:
     - WA-002
     - WA-003
+    - WA-006
+    - WA-011
+    note: WAC 352-32-130 and WAC 220-413-070 re-confirmed. New record WA-011 added for Ch.
+      200-250 WAC (state capitol campus UAS prohibition), verified directly against the
+      Legislature's official WAC page -- not previously captured in this register.
   executive_orders:
-    status: unresolved_verification_required
-    unresolved: true
-    note: No executive-order record and no documented negative-review sweep for this category in this
-      legacy packet (predates the narrative-checklist convention). Genuinely unknown, not a negative finding.
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids: []
+    note: Re-searched 2026-08-07; no Washington executive order specific to UAS located.
   court_decisions_and_ag_opinions:
-    status: unresolved_verification_required
-    unresolved: true
-    note: 'Same gap as executive_orders: no record and no documented sweep.'
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids: []
+    note: Re-searched 2026-08-07; no controlling Washington appellate decision or formal
+      Attorney General opinion applying a UAS-specific statute located.
   aviation_and_transportation_agencies:
     status: applicable_source_found
     unresolved: false
     record_ids:
-    - WA-001
     - WA-002
+    note: WSDOT Aviation Division's registration/exemption program re-confirmed directly.
   parks_public_lands_and_natural_resources:
     status: applicable_source_found
     unresolved: false
     record_ids:
     - WA-003
     - WA-006
+    - WA-011
+    note: See administrative_rules; WA-011 (capitol campus) is grounds-based public land distinct
+      from WA-003's state-park permit regime.
   corrections_public_safety_and_critical_infrastructure:
-    status: unresolved_verification_required
-    unresolved: true
+    status: applicable_source_found
+    unresolved: false
     record_ids:
     - WA-004
-    note: WA-004 itself carries status 'UNCERTAIN - verify current codification' and Low confidence; the
-      category cannot be marked resolved while its only record is unverified. See evals/known_bad/wa-004-uncertain-codification.md.
+    note: RESOLVED IN THIS RETROFIT PASS. WA-004 (2016 SB 6437) verified directly against the
+      Legislature's own bill-history page -- Senate Rules "X-filed" the bill 2016-02-25, never
+      received a House reading, never enacted. Confidence upgraded Low -> High; retained as an
+      explicit myth-busting record given felony-level stakes. This closes the prior pass's
+      high-priority open verification item.
   privacy_surveillance_trespass_and_interference:
     status: applicable_source_found
     unresolved: false
     record_ids:
     - WA-005
+    note: RCW 9A.44.115 re-confirmed; general voyeurism statute, not UAS-specific but the
+      operative privacy-law risk for aerial photography in Washington.
   procurement_equipment_and_cybersecurity:
     status: reviewed_no_applicable_source
     unresolved: false
-    record_ids:
-    - WA-008
-    note: Underlying finding (no WA-specific procurement/manufacturer restriction) is legitimate, but
-      it is stored as register record WA-008 rather than in a checklist — the negative-finding-in-register
-      pattern flagged by scripts/validate_research_semantics.py. See evals/known_bad/negative-finding-in-register.md.
+    record_ids: []
+    note: RESOLVED IN THIS RETROFIT PASS. Re-searched 2026-08-07; no Washington-specific state
+      procurement/manufacturer restriction statute or executive order located. This finding was
+      previously stored as register record WA-008; moved to the checklist per Agent_Instructions.v6.md
+      Section 5.2 and the corresponding scripts/validate_research_semantics.py finding
+      (check_negative_finding_in_register). WA-008 removed from the source register.
   professional_licensing_board_material:
-    status: unresolved_verification_required
-    unresolved: true
-    record_ids:
-    - WA-007
-    note: WA-007 is a general land-surveyor licensing statute with no confirmed direct-UAS provision or
-      official UAS-specific application (Low confidence, 'general framework confirmed, no standalone UAS-specific
-      board guidance document located') — a scope-gate risk pattern, not a confirmed applicable source.
-      See evals/known_bad/scope-gate-general-licensing-statute.md.
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids: []
+    note: RESOLVED IN THIS RETROFIT PASS. Ch. 18.43 RCW (general land-surveyor/engineer licensing
+      statute) confirmed to exist, but no standalone Board-issued UAS-specific guidance document
+      was located despite multiple targeted searches; a secondary-source "Rule 415" citation could
+      not be verified against WA's actual WAC numbering and appears to be a cross-state citation
+      error. This general statute was previously retained as register record WA-007 despite no
+      confirmed direct-UAS provision -- a scope-gate risk under Agent_Instructions.v6.md Section
+      3.2 and the corresponding scripts/validate_research_semantics.py finding
+      (check_general_statute_scope_gate). WA-007 removed from the source register; the underlying
+      fact (general licensing requirement exists, no UAS-specific board guidance) is preserved in
+      the checklist.
   state_preemption:
     status: reviewed_no_applicable_source
     unresolved: false
-    note: 'Summary overview: ''State law does not broadly preempt local UAS ordinances.'''
-record_count: 9
-unresolved_count: 4
-low_confidence_record_count: 3
-primary_source_percentage: 67
+    record_ids: []
+    note: Re-searched 2026-08-07; no comprehensive statewide UAS-preemption statute located. State
+      law does not broadly preempt local UAS ordinances in Washington (unaffected from prior pass).
+record_count: 8
+unresolved_count: 0
+low_confidence_record_count: 0
+primary_source_percentage: 75
 known_issues:
-- WA-004 (corrections/critical-infrastructure) is Low confidence with an unverified codification status.
-- WA-007 (professional licensing) is a general statute retained despite no confirmed direct-UAS basis
-  — scope-gate risk.
-- WA-008 is a negative procurement finding stored as a register record instead of in a checklist.
-- WA-010 documents a stalled/never-enacted bill correctly (contrast case, not a defect) — useful known-good
-  fixture alongside the above.
-- No narrative XX_UAS_Research_Checklist.md exists for this state, unlike Oklahoma; category coverage
-  above was reconstructed from the register and summary for this manifest and should be re-verified during
-  retrofit, not treated as a substitute for an actual re-review.
-next_currency_review: '2026-09-01'
-recheck_triggers:
-  - record_id: WA-004
-    reason: "status is event-triggered/pending ('UNCERTAIN - verify current codification directly before relying on this')"
-  - record_id: WA-010
-    reason: "status is event-triggered/pending ('Not law - stalled in House Technology & Economic Development Committee, never enacted')"
+  - >-
+    Washington's Office of Privacy and Data Protection has issued non-binding UAS
+    policy-development guidelines aimed at legislators/policymakers, not directly operator-facing;
+    not retained as a register record in this pass but worth re-checking if its scope changes.
+  - >-
+    If BRPELS ever publishes standalone UAS-specific guidance, WA-007-equivalent content should be
+    re-added to the register as a new record at that time.
+next_currency_review: '2026-09-07'
+recheck_triggers: []

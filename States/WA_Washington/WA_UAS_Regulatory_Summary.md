@@ -1,10 +1,10 @@
 # Washington — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 1, 2026 | **Version:** 2.1 (Phase 2 — subjective-scope audit complete August 2, 2026)
-**Model / checkpoint:** Objective research and Phase 2 model/checkpoint were not recorded in this legacy state packet.
+**Research date:** August 1, 2026; Workstream 9 retrofit August 7, 2026 | **Version:** 2.2 (Workstream 9 retrofit — August 7, 2026)
+**Model / checkpoint:** Objective research and Phase 2 model/checkpoint were not recorded in this legacy state packet; Workstream 9 retrofit research conducted August 7, 2026 (claude-sonnet-5).
 **Interpretation scope:** Agent Instructions v6 (August 2, 2026)
-**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent_Instructions.md v3), this summary covers Washington **state and state-agency** UAS authorities only — local (municipal/county) ordinances and tribal rules are deferred to a later phase and are not included here. Full citations and metadata are in `WA_UAS_Source_Register.csv`.
+**Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v6), this summary covers Washington **state and state-agency** UAS authorities only — local (municipal/county) ordinances and tribal rules are deferred to a later phase and are not included here. Full citations and metadata are in `WA_UAS_Source_Register.csv`.
 
 > **Status:** A first pass of source collection, objective summaries, and practical interpretation is complete for this state. Ongoing work is expanding source coverage and improving quality review and processing efficiency across the project.
 
@@ -12,7 +12,7 @@
 
 ## 1. State UAS Regulatory Overview
 
-Washington requires mandatory, fee-based state UAS registration (RCW 47.68.250) layered on top of FAA registration — a firm-wide compliance item to build into equipment onboarding. State law does not broadly preempt local UAS ordinances; local-ordinance research is deferred to a later phase per current research instructions and is not covered in this document. A general criminal voyeurism statute and a wildlife-harassment administrative rule fill some of the role that a dedicated UAS privacy statute would otherwise play. A widely repeated piece of third-party misinformation about a state drone-labeling/consent law is addressed explicitly below because it appears across many secondary sources and could otherwise be mistakenly relied upon.
+Washington requires mandatory, fee-based state UAS registration (RCW 47.68.250) layered on top of FAA registration — a firm-wide compliance item to build into equipment onboarding. State law does not broadly preempt local UAS ordinances; local-ordinance research is deferred to a later phase per current research instructions and is not covered in this document. A general criminal voyeurism statute and a wildlife-harassment administrative rule fill some of the role that a dedicated UAS privacy statute would otherwise play. A widely repeated piece of third-party misinformation about a state drone-labeling/consent law is addressed explicitly below because it appears across many secondary sources and could otherwise be mistakenly relied upon. This Workstream 9 retrofit pass resolved a previously open, felony-stakes verification item (2016 Senate Bill 6437's correctional-facility provision was never enacted), added a previously-uncaptured, currently-binding rule closing the entire state capitol campus to UAS launch/landing, and removed two register entries — a general professional-licensing statute with no confirmed UAS-specific application, and a procurement negative finding — that belonged in this checklist rather than the source register.
 
 ## 2. Statewide UAS Laws and Regulations
 
@@ -24,7 +24,7 @@ Washington requires mandatory, fee-based state UAS registration (RCW 47.68.250) 
 **Practical Interpretation**
 
 - **AEC Industry UAS Expert:** Add WSDOT registration and its January renewal to the standard equipment-onboarding and annual-compliance checklist for every drone that will fly in Washington — it's easy to miss because it sits outside the FAA registration workflow most crews already know.
-- **Agency Practitioner:** Use Washington State Legislature's current registration or exemption channel before the aircraft is placed on a covered mission. Confirm which aircraft and operator details, fees, renewal dates, and exemption evidence apply to this operation, and retain the registration or written exemption determination with the fleet record.
+- **Agency Practitioner:** This RCW establishes the registration requirement but is not itself an administering office; the Washington State Legislature does not run a registration or exemption channel. Use WSDOT Aviation Division's actual registration/exemption process (see below) before placing an aircraft on a covered mission, and retain the registration or written exemption determination with the fleet record.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Registration lapses are a straightforward compliance gap to catch in an internal audit; require proof of current WSDOT registration before dispatching any airframe on a Washington job, the same way you'd confirm current insurance and FAA Part 107 currency.
 ### RCW 9A.44.115 — Voyeurism
@@ -73,6 +73,17 @@ Washington requires mandatory, fee-based state UAS registration (RCW 47.68.250) 
 - **Agency Practitioner:** Start with the site manager or permitting office for Washington State Parks and Recreation Commission before scheduling fieldwork, because property-specific conditions may control the route and timing. Request the current form, lead time, fee, insurance and FAA-document checklist, and site restrictions, then keep the signed approval and conditions in the mission file.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Submit the permit application with enough buffer to absorb SEPA review delays, and retain the approved permit in the project file; do not rely on the extenuating-circumstances waiver as a planning assumption.
+### Capitol Campus — Washington Department of Enterprise Services
+*Binding administrative regulation*
+
+**Objective Summary:** Ch. 200-250 WAC closes the entire Washington state capitol campus — the Legislative Building, Temple of Justice, Governor's Mansion, 15 state agency office buildings, monuments and memorials, Capitol Lake, and several parks — to launching, landing, or operating any UAS, except for four narrow exclusions: emergency law enforcement/fire response; other health-and-human-safety emergency response; national defense activities; and campus care-and-custody activities with the Department of Enterprise Services director's prior written approval. There is no general-purpose commercial-use permit pathway. Violators face a fine or criminal charges; DES coordinates enforcement with the Washington State Patrol and FAA.
+
+**Practical Interpretation**
+
+- **AEC Industry UAS Expert:** Treat the capitol campus as a no-fly zone for launch/landing on any project scope, absent one of the four narrow exclusions — there is no standard commercial-work permit pathway here, unlike the state parks rule above. If a project genuinely requires capitol-campus work, budget significant lead time to seek the director's written approval under the maintenance/custody exclusion and expect it to be evaluated case-by-case, not routinely granted.
+- **Agency Practitioner:** Contact the Washington Department of Enterprise Services before any capitol-campus-adjacent flight, even for what seems like a minor or brief operation — the prohibition applies to the entire campus boundary, not just building airspace, and covers recreational and commercial use identically. Do not assume a state-agency client relationship on campus creates an exception.
+- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
+- **AEC Industry Legal Counsel:** This is a strict-liability-style site prohibition, not a permit-and-comply regime like the state parks rule — confirm project scope excludes capitol campus grounds during proposal review, since there is no routine approval path for ordinary commercial AEC work here, and unauthorized operation carries criminal exposure, not just a civil fine.
 ### Fish and Wildlife — Washington Fish and Wildlife Commission
 *Binding administrative regulation*
 
@@ -84,50 +95,29 @@ Washington requires mandatory, fee-based state UAS registration (RCW 47.68.250) 
 - **Agency Practitioner:** If the work is actually part of an agency-directed wildlife-conflict response, contact the Washington Department of Fish and Wildlife before mobilization and ask for the applicable authorization and operating conditions. Ordinary environmental monitoring or mapping does not become authorized wildlife pursuit or harassment merely because it serves a professional purpose, so retain the agency direction and mission limits.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Document flight altitude and purpose for survey work near known wildlife concentrations; the hunting-day restriction is not directly relevant to commercial survey operations but is worth a one-line mention in field-crew orientation.
-### Corrections — 2016 Senate Bill 6437 (status uncertain)
-*Proposed or pending authority — enactment not independently confirmed*
+### Corrections — 2016 Senate Bill 6437, never enacted
+*Repealed, expired, or superseded authority (never enacted)*
 
-**Objective Summary:** SB 6437 (2016), as introduced, would add a new RCW 72.09 section requiring DOC to acquire/utilize drone detection and deterrence technology, and a new RCW 9A.76 section making it a Class C felony to knowingly operate a drone over or within 1,000 ft of a correctional facility perimeter without DOC authorization. The bill was reported out of the Senate Law & Justice Committee as a substitute bill in 2016; whether it was ultimately enacted and its current codified RCW section were not independently confirmed in this research pass.
+**Objective Summary:** As introduced, 2016 Senate Bill 6437 (1st Substitute) would have added a new RCW 72.09 section directing the Department of Corrections to acquire drone detection/deterrence technology, and a new RCW 9A.76 section making it an unranked Class C felony to knowingly operate a drone over or within 1,000 ft of a correctional facility perimeter without DOC authorization. The Senate Law & Justice Committee reported a substitute bill do-pass on February 5, 2016, but the Senate Rules Committee "X-filed" the bill on February 25, 2016 (removed it from further consideration); it never received a House reading and was not enacted. No successor bill was identified. There is currently no Washington statute specifically criminalizing drone operation near a correctional facility.
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Until this is confirmed one way or the other, plan any flight near a Washington correctional facility as if the 1,000 ft/felony rule is in force — the operational cost of extra standoff distance is trivial compared to the cost of guessing wrong on a felony statute.
+- **AEC Industry UAS Expert:** No Washington-specific standoff distance or felony exposure attaches to correctional-facility overflight under this particular (never-enacted) provision. General common-sense coordination with facility staff before flying near a Washington prison is still good practice, but do not plan around a specific 1,000-ft/felony rule — it was never enacted.
 - **Agency Practitioner:** Not applicable — no agency process.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
-- **AEC Industry Legal Counsel:** This is a high-priority open item: before authorizing any flight near a WA correctional facility, independently confirm at app.leg.wa.gov whether this bill or a successor was codified, and get the current section number and standoff distance in writing. Do not rely on this entry as a final answer.
-### Professional Licensing — Washington State Board of Registration for Professional Engineers and Land Surveyors
-*Binding general licensing statute | No UAS-specific board rule located*
-
-**Objective Summary:** Ch. 18.43 RCW requires official survey products to be prepared/certified by a licensed Professional Land Surveyor. Industry secondary sources indicate producing certain UAS-derived outputs without a certified photogrammetrist or licensed land surveyor is "against the law" under this framework, though no standalone Board-issued UAS-specific guidance document was located.
-
-**Practical Interpretation**
-
-- **AEC Industry UAS Expert:** Route drone-derived photogrammetry/LiDAR products through a WA-licensed PLS or certified photogrammetrist for sign-off before delivery, the same as any other official survey product — treat the absence of a UAS-specific brochure as a gap to ask the Board about directly, not as evidence the requirement doesn't apply.
-- **Agency Practitioner:** Before relying on an unlicensed or exempt delivery path, give Washington State Board of Registration for Professional Engineers and Land Surveyors a written description of the proposed UAS-derived product, its stated accuracy, and whether it will establish or certify boundaries, elevations, or authoritative locations. Ask the board to confirm the applicable license, responsible-charge, certification, or exemption path and retain the response with the project quality plan; the research packet does not establish a UAS-specific turnaround time.
-- **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
-- **AEC Industry Legal Counsel:** Absent published UAS-specific guidance, apply the general Ch. 18.43 RCW licensure requirement and document PLS/photogrammetrist review in the deliverable QA/QC record; consider requesting a written interpretation from the Board for novel certification questions.
-### Procurement / Equipment Restrictions
-*Category reviewed — no state-specific restriction located*
-
-**Objective Summary:** No Washington state law or executive order specifically restricting government purchase/use of drones by manufacturer or country of origin was located. Washington public-safety agencies are subject to the federal FCC "Covered List" restrictions on new foreign-made drones/components, which is a federal action.
-
-**Practical Interpretation**
-
-- **AEC Industry UAS Expert:** No state-level equipment restriction currently constrains fleet choice for private commercial work in Washington.
-- **Agency Practitioner:** Not applicable — no agency process.
-- **UAS Procurement Expert:** No current state equipment restriction is established by this research result. Do not treat that absence as permanent; check current solicitation terms, client policies, and independently applicable federal restrictions before committing a fleet to the work.
-- **AEC Industry Legal Counsel:** No state compliance obligation to build into private contracts; note the federal covered-list overlay if contracting with a Washington public-safety agency.
+- **AEC Industry Legal Counsel:** Correct this specific point if a client-facing compliance document or training material asserts a Washington drone-correctional-facility felony statute — it does not exist. If a project genuinely requires flight near a Washington DOC facility, coordinate directly with facility administration as a matter of operational courtesy and safety, not because of this statute, and separately confirm whether general trespass or obstruction law could apply to the specific conduct planned.
 ## 4. Confidence Summary
 
 | Finding | Confidence |
 |---|---|
 | RCW 47.68.250 state UAS registration | High — verified directly against current statute text |
+| Ch. 200-250 WAC capitol campus UAS prohibition | High — verified directly against current WAC text (new in this retrofit pass) |
 | WAC 352-32-130 state park permit rule | High — verified directly |
 | WAC 220-413-070 wildlife-harassment rule | High — verified directly against current WAC text |
 | RCW 9A.44.115 voyeurism (general privacy risk) | High — verified directly |
 | RCW 47.68.380 myth-busting (no labeling/consent law) | High — verified directly against primary text and bill history |
-| SB 6437 corrections-facility felony provision | Low — bill text and committee passage confirmed; final enactment/current codification NOT independently verified |
-| No WA-specific procurement/manufacturer restriction | Low — absence of a finding, not a confirmed negative |
-| WA licensing-board UAS-specific guidance | Low — general statute confirmed; no standalone board guidance document located |
+| SB 6437 corrections-facility provision — never enacted | High — verified directly against the Legislature's own bill-history page (upgraded from Low in this retrofit pass) |
+| No WA-specific procurement/manufacturer restriction | Reviewed, no register record — see Research Checklist row 9 |
+| No standalone WA licensing-board UAS-specific guidance | Reviewed, no register record — see Research Checklist row 10 |
 
 *This document is objective legal/regulatory summary plus labeled practical interpretation. It is not legal advice; consult Washington counsel for project-specific compliance determinations. Local and tribal UAS considerations are out of scope for this phase per current research instructions.*
