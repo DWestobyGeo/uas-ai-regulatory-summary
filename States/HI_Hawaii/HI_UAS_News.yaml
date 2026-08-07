@@ -1,0 +1,25 @@
+state: Hawaii
+state_abbr: HI
+role_id: news-aggregator
+role_version: 1.0.0
+generated_at: '2026-08-07'
+items:
+  - record_id: HI-007
+    headline: "Illegal hunting report at West Oahu ranch leads to first arrest under 'Duke's Law'"
+    url: https://www.hawaiinewsnow.com/2026/07/31/oahus-first-felony-arrest-under-dukes-law-follows-illegal-hunting-report-west-oahu-ranch/
+    source_name: Hawaii News Now (Gray Media, Honolulu, HI)
+    publish_date: '2026-07-31'
+    jurisdiction_match: in_state
+    out_of_state_name: null
+    relevance_note: >-
+      Relevant context for HI-007's DLNR/DOCARE unmanned aircraft systems program: reports the first
+      felony arrest under Hawaii's "Duke's Law" (Act 235, 2025) for illegal hunting on private ranch
+      land, and discloses that the Hawaii Department of Law Enforcement (DLE) has expanded its
+      enforcement fleet with drones equipped with cameras, thermal imaging, and loudspeakers to
+      locate illegal hunters -- DLNR responded jointly with DLE to this specific incident. DLE is a
+      separate state agency from DLNR/DOCARE and this is not the same program authorized by Haw. Rev.
+      Stat. section 199-9, but it is directly relevant evidence that Hawaii state agencies are
+      actively and currently expanding UAS-based enforcement capability in the same
+      conservation/natural-resource enforcement space section 199-9 addresses, using materially
+      similar equipment.
+    date_accessed: '2026-08-07'

@@ -1,8 +1,8 @@
 # Hawaii — Commercial UAS Regulatory Summary
 
 **Prepared for:** AEC (surveying, mapping, construction, inspection) UAS program management
-**Research date:** August 1, 2026 | **Version:** 2.1 (Phase 2 — subjective-scope audit complete August 2, 2026)
-**Model / checkpoint:** Objective research and Phase 2 model/checkpoint were not recorded in this legacy state packet.
+**Research date:** August 1, 2026 | **Version:** 2.2 (Workstream 9 retrofit — August 7, 2026)
+**Model / checkpoint:** Objective research and Phase 2 model/checkpoint were not recorded in this legacy state packet. Retrofit pass performed with claude-sonnet-5.
 **Interpretation scope:** Agent Instructions v6 (August 2, 2026)
 **Scope note:** Federal FAA Part 107 is the baseline for all commercial sUAS operations nationwide and is not restated here. Per current research-phase scope (Agent Instructions v6, Amendment 2), this summary covers Hawaii **state and state-agency** UAS authorities only. Hawaii has **not** enacted a statewide UAS preemption statute, so each of the four counties (Honolulu, Maui, Hawaii, Kauai) is free to regulate UAS takeoff/landing on county-owned property — those county ordinances are deferred to a later phase but are flagged below (HI-005) as a materially higher-than-usual local-law research priority for this state. Full citations and metadata are in `HI_UAS_Source_Register.csv`.
 
@@ -23,7 +23,7 @@ Hawaii regulates UAS primarily through its criminal code: a 2023 trespass/harass
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Plan environmental and mapping flights to avoid conduct that could be characterized as locating, pursuing, disturbing, or harassing wildlife. Coordinate mission timing and stand-off distances with the land manager when project work overlaps sensitive habitat or hunting activity.
+- **AEC Industry UAS Expert:** Do not fly within 50 ft of a dwelling across a property line for any purpose once the property owner or occupant has given actual notice to desist — the statute's "for any other reason at all" clause means continued proximity flights after notice are a likely violation even for routine survey/inspection work, regardless of harassment intent. Obtain documented consent before any low-altitude work near occupied dwellings outside the project boundary, and confirm the flight does not implicate current FAA special security instructions or security-sensitive airspace restrictions.
 - **Agency Practitioner:** Not applicable — no agency process.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Treat the cited authority as a documented compliance gate where applicable. Preserve the facts supporting any exception or consent theory, allocate client and operator responsibilities clearly, and seek state counsel when project facts approach ambiguous or penal language.
@@ -63,20 +63,20 @@ Hawaii regulates UAS primarily through its criminal code: a 2023 trespass/harass
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Make the required approval and compliance with its conditions a documented mobilization gate. Allocate responsibility for applications and schedule impacts in the contract, and obtain counsel if the project's facts do not fit the stated authorization pathway.
 ### No State Preemption of Local UAS Ordinances; County Ordinance Patchwork
-*Research result — no enacted statewide preemption statute located*
+*Research result — moved to `HI_UAS_Research_Checklist.md` in this retrofit; general context retained here*
 
-**Objective Summary:** Hawaii has not enacted a comprehensive statewide UAS-preemption statute. Secondary sources describe each of Hawaii's four counties (City and County of Honolulu, and Maui, Hawaii, and Kauai counties) as free to regulate UAS takeoff/landing on county-owned property (though not airspace, which remains federally regulated), with county drone ordinances commonly targeting beach and park access.
+**Objective Summary:** Hawaii has not enacted a comprehensive statewide UAS-preemption statute. This finding was previously a standalone register record (HI-005); it has been relocated to the checklist in this retrofit pass per the project's negative-finding-in-register governance principle (`Agent_Instructions.v6.md` §5.2), since the record's own `source_type` field read "not included in the final source register." The underlying research conclusion is unchanged and remains materially important for this state: secondary sources describe each of Hawaii's four counties (City and County of Honolulu, and Maui, Hawaii, and Kauai counties) as free to regulate UAS takeoff/landing on county-owned property (though not airspace, which remains federally regulated), with county drone ordinances commonly targeting beach and park access — precisely the areas of greatest interest for AEC coastal/site work in Hawaii.
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Treat this record as a research flag, not an operator requirement. Do not change field procedures unless a current controlling source confirms the issue; route any project-specific uncertainty to the identified agency or counsel.
+- **AEC Industry UAS Expert:** Continue to treat Hawaii's county-ordinance risk as materially higher than most other states given the absence of any statewide preemption; a project-specific county ordinance check remains necessary before finalizing site-specific flight plans.
 - **Agency Practitioner:** Not applicable — no agency process.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
-- **AEC Industry Legal Counsel:** Do not present this negative or unresolved research result as a legal conclusion. Preserve the research limitation, verify current authority for the specific project, and escalate only if the issue could materially affect scope, access, or liability.
+- **AEC Industry Legal Counsel:** Do not present this as a legal conclusion. Verify current county-level authority for the specific project site, particularly given Hawaii's unusually decentralized UAS-ordinance landscape compared to most states researched to date.
 ### Professional Licensing — Board of Registration for Professional Engineers, Architects, Surveyors and Landscape Architects
-*Binding general regulation | No UAS-specific board guidance located*
+*Binding general regulation | No UAS-specific board guidance located, now confirmed across two independent research passes*
 
-**Objective Summary:** Hawaii's licensing framework (Haw. Rev. Stat. Ch. 464) requires PE/surveyor licensees to practice only within their demonstrated competency. No standalone UAS-specific board guidance was located.
+**Objective Summary:** Hawaii's licensing framework (Haw. Rev. Stat. Ch. 464, cited in this retrofit pass directly against DCCA's own published chapter text) requires PE/surveyor licensees to practice only within their demonstrated competency. A fresh, independent search for EASLA Board UAS-specific or drone-photogrammetry guidance (including current EASLA FAQs and Hawaii Administrative Rules Title 16, Chapter 115) was re-run in this pass and again found none.
 
 **Practical Interpretation**
 
@@ -84,38 +84,39 @@ Hawaii regulates UAS primarily through its criminal code: a 2023 trespass/harass
 - **Agency Practitioner:** Not applicable — no agency process.
 - **UAS Procurement Expert:** Not applicable — no procurement or equipment-selection implication identified.
 - **AEC Industry Legal Counsel:** Describe this source as guidance or policy, not a generally binding statute. Check whether the client or property owner incorporates it contractually, preserve the version relied upon, and escalate conflicts with controlling authority.
-### Executive Orders, AG Opinions, Court Decisions, Procurement, and DOCARE UAS Program
-*Categories reviewed — mixed result*
+### DLNR Unmanned Aircraft Systems Program (DOCARE) and Covered-Foreign-Entity UAS Procurement Restriction
+<span class="news-anchor" data-record-id="HI-007" hidden></span>
+*Binding law / official agency policy | RESOLVED (major finding) in this retrofit pass*
 
-**Objective Summary:** No Hawaii executive order, Attorney General opinion, appellate court decision, or state-agency UAS procurement restriction specifically addressing UAS was located. Separately, Haw. Rev. Stat. § 199-9 appears to establish an "unmanned aircraft systems program" for DLNR's Division of Conservation and Resources Enforcement (DOCARE), suggesting DOCARE operates its own UAS program for conservation/enforcement purposes; its full text was not independently confirmed in this pass.
+**Objective Summary:** Haw. Rev. Stat. § 199-9 required DLNR to establish an unmanned aircraft systems program, compliant with applicable federal and state law, to assist its Division of Conservation and Resources Enforcement (DOCARE) in carrying out conservation and resources enforcement duties, with the program required to be established by June 30, 2025. DOCARE officers may use UAS to monitor, investigate, and obtain evidence of natural- and cultural-resource violations. DLNR must maintain detailed UAS-use records and submit an annual legislative report (first due no later than January 1, 2026). Separately — and previously unverified in the original research pass — the statute prohibits DLNR from purchasing, operating, or otherwise acquiring or using UAS manufactured or assembled by a "covered foreign entity" (the same category targeted by the federal American Security Drone Act and comparable state procurement bans), and bars state funds, including contract, grant, or cooperative-agreement funds, from being used by DLNR in connection with such UAS, subject to a narrow case-by-case waiver by the chairperson of the Board of Land and Natural Resources for counter-UAS activities, criminal investigative purposes, or exigent circumstances. This fills a category — state-agency UAS procurement/foreign-hardware restriction — that has been absent in most other states retrofitted to date. This record replaces a prior combined negative-finding entry that had flagged section 199-9 as an unverified lead; the negative-finding categories within that entry (no Hawaii executive order, AG opinion, or appellate court decision specifically addressing UAS regulation was located) have been moved to the checklist per `Agent_Instructions.v6.md` §5.2.
 
 **Practical Interpretation**
 
-- **AEC Industry UAS Expert:** Treat this record as a research flag, not an operator requirement. Do not change field procedures unless a current controlling source confirms the issue; route any project-specific uncertainty to the identified agency or counsel.
-- **Agency Practitioner:** Not applicable — no agency process.
-- **UAS Procurement Expert:** No current state equipment restriction is established by this research result. Do not treat that absence as permanent; check current solicitation terms, client policies, and independently applicable federal restrictions before committing a fleet to the work.
-- **AEC Industry Legal Counsel:** Do not present this negative or unresolved research result as a legal conclusion. Preserve the research limitation, verify current authority for the specific project, and escalate only if the issue could materially affect scope, access, or liability.
+- **AEC Industry UAS Expert:** This program governs DOCARE's own enforcement UAS use rather than private commercial operators directly, but AEC firms performing conservation-area mapping, habitat assessment, or resource-inventory work for or adjacent to DLNR should expect DOCARE UAS activity in the same areas and coordinate mission timing accordingly. If contracted to supply or operate UAS on DLNR's behalf, confirm the equipment is not manufactured or assembled by a covered foreign entity before proposing a fleet.
+- **Agency Practitioner:** Any DLNR contract, grant, or cooperative agreement involving UAS equipment or services should confirm compliance with the covered-foreign-entity procurement restriction before funds are committed; the chairperson's waiver is available only for counter-UAS activities, criminal investigative purposes, or exigent circumstances, not as a general cost-saving measure.
+- **UAS Procurement Expert:** Screen any UAS platform proposed for DLNR/DOCARE work against the federal covered-foreign-entity list before quoting a fleet — treat this as a hard procurement gate, the same way as the federal American Security Drone Act restriction and comparable state-level bans (e.g., Texas's Prohibited Technologies List).
+- **AEC Industry Legal Counsel:** Confirm current DLNR/DOCARE UAS-program policy and the annual legislative report directly with DLNR before advising a client on the program's current operational scope; the underlying statute is binding but day-to-day implementation is set by DLNR policy.
 ## 4. Non-Regulatory Context
 
-No enforcement-action, incident, or not-yet-enacted-legislation news items met the Section 9 inclusion bar for Hawaii during this Phase 1 pass; this section is omitted per the "omit when nothing material was found" rule.
+A Section 4.7 news-aggregator pass (required closing step of this retrofit) located one genuine, current in-state news item: Hawaii News Now's July 31, 2026 report on the first felony arrest under "Duke's Law" (Act 235, 2025), which also disclosed that the Hawaii Department of Law Enforcement (DLE) — a separate state agency from DLNR/DOCARE, though it responded jointly with DLNR to this incident — has expanded its own enforcement efforts with a new fleet of drones equipped with cameras, thermal imaging, and loudspeakers to locate illegal hunters on private land. This is not the same DOCARE program authorized by § 199-9 above, but it is directly relevant context: it confirms that Hawaii state agencies are actively and currently expanding UAS-based enforcement capability in exactly the conservation/natural-resource enforcement space § 199-9 addresses, using materially similar equipment (thermal imaging) to what DOCARE's program is designed to support. See `HI_UAS_News.yaml` for the full citation.
 
 ## 5. Unresolved Operational Questions
 
-- **§ 711-1122 Remote ID/anti-collision lighting felony exposure:** This second-degree (Class B felony) provision ties routine equipment malfunctions (Remote ID or anti-collision lighting failure) to felony exposure in a way most other states treat as a lesser offense — confirm the full statutory text and any available defenses before advising a client.
+- **§§ 711-1121–1123 full codified text:** A direct, full-text fetch was attempted again in this retrofit pass against both capitol.hawaii.gov and Justia and again returned no retrievable content in two independent research passes. Confirm the full statutory text (e.g., via a Hawaii Legislative Reference Bureau session-law PDF for Act 161) before advising a client on the precise elements of the Remote ID/anti-collision-lighting felony exposure and any available defenses.
 - **§ 13-146-9 current amendment status:** The verified rule text dates to a 1999/2002 compilation cycle; a more recent amendment was not independently ruled out. Confirm the current version, and DLNR's current special-use-permit process and lead time, directly with the Division of State Parks before relying on this summary for a specific project.
 - **County ordinances:** Out of scope for this phase, but flagged as a higher-than-usual priority for Hawaii given the absence of any statewide preemption — confirm Honolulu, Maui, Hawaii, and Kauai county ordinances separately for any specific project site.
-- **Haw. Rev. Stat. § 199-9 (DOCARE UAS program):** Full text not independently fetched in this pass; revisit to confirm whether it imposes any requirement relevant to private AEC operators, as distinct from authorizing DOCARE's own enforcement UAS use.
+- **§ 199-9 full codified text:** RESOLVED (substantially) IN THIS RETROFIT PASS via corroborated search-mediated readings of Justia's codification, but a direct full-page fetch was not successful; a follow-up direct read is recommended before relying on exact statutory wording for a client-facing opinion.
 
 ## 6. Confidence Summary
 
 | Finding | Confidence |
 |---|---|
 | § 711-1114 (trespass with a UAS) | High — verified directly against Justia's codification |
-| §§ 711-1121–1123 (graduated UAS misuse felony framework) | Moderate — corroborated by multiple secondary legal-summary sources; full codified text not independently fetched and read verbatim |
-| §§ 711-1111, 711-1110.9 (privacy) | High — substance corroborated by a secondary source and the official Hawaii Legislature HRS citation; full text not independently fetched verbatim |
+| §§ 711-1121–1123 (graduated UAS misuse felony framework) | Moderate — corroborated by multiple independent secondary legal-summary sources across two research passes; full codified text still not independently fetched and read verbatim |
+| §§ 711-1111, 711-1110.9 (privacy) | High — § 711-1111's full current text fetched and read directly against Justia's codification in this retrofit; § 711-1110.9 corroborated via 711-1111's own cross-reference and commentary |
 | § 13-146-9 (state park aircraft restriction) | High — verified directly against DLNR's own published rule compilation; corrects a widespread secondary-source citation error (§ 13-146-35) |
-| No statewide UAS preemption statute | Low — negative finding based on secondary drone-law compilation sources, not a comprehensive statutory search |
-| Professional licensing competency framework | Low — general citation, not independently re-verified against current board rules |
-| No EO/AG-opinion/court-decision/procurement source located; § 199-9 DOCARE program flagged | Low — negative finding plus one unverified statute reference |
+| No statewide UAS preemption statute | Low — negative finding based on secondary drone-law compilation sources, not a comprehensive statutory search; now in checklist |
+| Professional licensing competency framework | Moderate — general framework citation corroborated against DCCA's own published text; no UAS-specific guidance located across two independent search passes |
+| § 199-9 (DLNR/DOCARE UAS program and covered-foreign-entity procurement restriction) | Moderate — substance corroborated via multiple independent search-mediated readings of Justia's codification; a direct full-page fetch was unsuccessful in two passes |
 
 *This document combines objective legal/regulatory summaries with Phase 2 Practical Interpretation content, which is AI-generated operational opinion and not legal advice. Consult Hawaii counsel for project-specific compliance determinations. County ordinances and tribal UAS considerations are out of scope for this phase per current research instructions.*

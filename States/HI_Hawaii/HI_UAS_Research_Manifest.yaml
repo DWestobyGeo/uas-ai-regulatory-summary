@@ -1,0 +1,146 @@
+# State Research Manifest -- Workstream 9 (national retrofit, per planning/national_retrofit_queue.md)
+# Schema: States/RESEARCH_MANIFEST_SCHEMA.md
+# Owner: Research Expert (agents/roles/research-expert.md)
+# Validated by: scripts/validate_research_manifests.py
+
+state: Hawaii
+state_abbr: HI
+method_version: 1.0.0
+research_status: current_method_in_progress
+legacy_retrofit_status: retrofit_in_progress
+last_full_research_date: '2026-08-01'
+last_currency_check: '2026-08-07'
+source_cutoff_date: '2026-08-07'
+coverage:
+  state_statutes_and_amendments:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - HI-001
+    - HI-002
+    - HI-003
+    note: >-
+      HI-001 (section 711-1114 trespass/harassment) re-confirmed directly against Justia; a
+      mismatched wildlife-harassment interpretation field (apparently copy-pasted from a different
+      topic) was corrected to address the actual property-line/dwelling-proximity conduct this
+      statute targets. HI-002 (sections 711-1121 through 711-1123, Act 161) re-corroborated via
+      multiple independent secondary sources; a direct full-text fetch again returned no retrievable
+      content in this pass, as in the original pass -- confidence held at Moderate. HI-003 (sections
+      711-1111, 711-1110.9) upgraded: section 711-1111's full current text fetched and read directly
+      against Justia's codification in this pass.
+  administrative_rules:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - HI-004
+    note: Unchanged; already High confidence and directly verified against DLNR's own published rule
+      compilation in the original pass. Not independently re-fetched in this pass given no flag or
+      currency concern was identified.
+  executive_orders:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids: []
+    note: No Hawaii gubernatorial executive order specifically and solely addressing UAS regulation
+      was located; not independently re-searched in this retrofit pass beyond the original finding.
+  court_decisions_and_ag_opinions:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids: []
+    note: No Hawaii Attorney General opinion or appellate court decision directly construing a Hawaii
+      UAS statute was located; not independently re-searched in this retrofit pass beyond the
+      original finding.
+  aviation_and_transportation_agencies:
+    status: not_applicable
+    unresolved: false
+    record_ids: []
+    note: No standalone state DOT/aviation-agency UAS record exists for HI; not identified as a gap
+      in this pass.
+  parks_public_lands_and_natural_resources:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - HI-004
+    - HI-007
+    note: See administrative_rules above and corrections_public_safety_and_critical_infrastructure
+      below for HI-007.
+  corrections_public_safety_and_critical_infrastructure:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - HI-007
+    note: >-
+      RESOLVED (major finding) IN THIS RETROFIT PASS. HI-007 was substantially rewritten from a
+      discovery-lead negative-finding row into an affirmative register record: Haw. Rev. Stat.
+      section 199-9 requires DLNR to operate a DOCARE unmanned aircraft systems program (established
+      by June 30, 2025) for conservation/cultural-resource enforcement, with annual legislative
+      reporting, and separately prohibits DLNR from purchasing, operating, or funding UAS
+      manufactured or assembled by a "covered foreign entity" absent a narrow chairperson waiver.
+      Corroborated via multiple independent search-mediated readings of Justia's codification; a
+      direct full-page fetch was unsuccessful in this pass, so confidence is held at Moderate. A
+      genuine, current in-state news finding (Hawaii DLE's expanded drone-based hunting/trespass
+      enforcement fleet) was located in the Section 4.7 pass and anchored to HI-007 with an
+      agency-distinction caveat.
+  privacy_surveillance_trespass_and_interference:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - HI-001
+    - HI-003
+    note: See state_statutes_and_amendments above.
+  procurement_equipment_and_cybersecurity:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - HI-007
+    note: >-
+      RESOLVED (major finding) IN THIS RETROFIT PASS. Unlike most other states retrofitted to date,
+      where this category is not_applicable, Hawaii has an affirmative state-agency UAS procurement
+      restriction (the covered-foreign-entity ban in section 199-9) -- see
+      corrections_public_safety_and_critical_infrastructure above for the same record.
+  professional_licensing_board_material:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids:
+    - HI-006
+    note: >-
+      General Ch. 464 competency framework citation corroborated against DCCA's own published
+      chapter text (replacing a citation based on general knowledge). A fresh, independent search
+      (including current EASLA FAQs and HAR Title 16, Ch. 115) again found no Hawaii-specific
+      UAS/photogrammetry board guidance -- confidence Low -> Moderate, consistent with the
+      IL-009/LA-007/CO-010 pattern.
+  state_preemption:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids: []
+    note: >-
+      RESOLVED IN THIS RETROFIT PASS. The negative-finding record for a comprehensive statewide UAS
+      preemption statute (previously register record HI-005, whose own source_type field said "not
+      included in the final source register") was moved to the checklist per
+      Agent_Instructions.v6.md Section 5.2. No such statute was located; this remains one of
+      relatively few states researched so far without any statewide UAS preemption, leaving each of
+      Hawaii's four counties free to regulate UAS on county-owned property -- flagged as a materially
+      higher-than-usual local-ordinance research priority for this state.
+record_count: 6
+unresolved_count: 0
+low_confidence_record_count: 0
+primary_source_percentage: 100
+known_issues:
+  - >-
+    A direct, full-text fetch of Haw. Rev. Stat. sections 711-1121 through 711-1123 (Act 161) has
+    now failed against both capitol.hawaii.gov and Justia in two independent research passes;
+    recommend a Hawaii Legislative Reference Bureau session-law PDF or manual retrieval before a
+    client-facing opinion turns on the precise statutory elements.
+  - >-
+    A direct, full-text fetch of Haw. Rev. Stat. section 199-9 (DOCARE UAS program) was also
+    unsuccessful in this pass despite consistent search-mediated corroboration of its substance;
+    recommend a follow-up direct read before relying on exact statutory wording for a client-facing
+    opinion.
+  - >-
+    Haw. Admin. R. section 13-146-9's verified text dates to a 1999/2002 compilation cycle; a more
+    recent amendment was not independently ruled out.
+  - >-
+    County ordinances (Honolulu, Maui, Hawaii, and Kauai counties) remain out of scope for this
+    phase and are a materially higher-than-usual priority for Hawaii given the absence of any
+    statewide preemption.
+next_currency_review: '2026-09-07'
+recheck_triggers: []
