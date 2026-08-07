@@ -1,0 +1,25 @@
+state: Indiana
+state_abbr: IN
+role_id: news-aggregator
+role_version: 1.0.0
+generated_at: '2026-08-07'
+items:
+  - record_id: IN-003
+    headline: "Rural Hoosiers lean on the law to fight drones"
+    url: https://indianacapitalchronicle.com/2026/04/27/rural-hoosiers-lean-on-the-law-to-fight-drones/
+    source_name: Indiana Capital Chronicle (States Newsroom)
+    publish_date: '2026-04-27'
+    jurisdiction_match: in_state
+    out_of_state_name: null
+    relevance_note: >-
+      Directly on-topic for IN-003's remote aerial harassment statute and its 2026 expansion to
+      livestock, crops, and farm operations: reports the specific incidents and testimony that drove
+      the amendment, including an Adams County cluster of eight-plus drones near poultry barns amid
+      avian-flu fears (with Indiana Department of Homeland Security and FBI/FAA involvement), a Jay
+      County farmer's testimony before the legislature, and a Shelbyville-area resident's account of a
+      drone hovering 50-60 feet from her home. Also reports the sentencing outcome (60 days
+      probation, a one-year hunting/fishing license revocation, and a pretrial-diversion agreement for
+      a co-defendant) in Indiana's first prosecution under the separate UAV-aided-hunting statute
+      (IC 14-22-6-16, IN-006) -- that prosecution itself is already folded into IN-006's own objective
+      content and is not treated as a second, redundant news item here.
+    date_accessed: '2026-08-07'

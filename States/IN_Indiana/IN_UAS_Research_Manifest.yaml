@@ -1,0 +1,147 @@
+# State Research Manifest -- Workstream 9 (national retrofit, per planning/national_retrofit_queue.md)
+# Schema: States/RESEARCH_MANIFEST_SCHEMA.md
+# Owner: Research Expert (agents/roles/research-expert.md)
+# Validated by: scripts/validate_research_manifests.py
+
+state: Indiana
+state_abbr: IN
+method_version: 1.0.0
+research_status: current_method_in_progress
+legacy_retrofit_status: retrofit_in_progress
+last_full_research_date: '2026-08-01'
+last_currency_check: '2026-08-07'
+source_cutoff_date: '2026-08-07'
+coverage:
+  state_statutes_and_amendments:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - IN-001
+    - IN-002
+    - IN-003
+    - IN-004
+    - IN-005
+    - IN-006
+    - IN-008
+    note: >-
+      IN-001 through IN-006 and IN-008 re-confirmed/re-verified. IN-002 and IN-003's
+      practical_interpretation_aec_expert fields previously contained mismatched wildlife-harassment
+      content (apparently copy-pasted from a different topic) and were rewritten. IN-004's field
+      said "Build Indiana General Assembly approval into pre-mobilization planning" -- corrected to
+      reference the facility head's authorization, the statute's actual mechanism. IN-003's July 2026
+      amendment currency flag was rechecked and remains open (still not in a primary codification
+      mirror as of this pass).
+  administrative_rules:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - IN-007
+    note: >-
+      RESOLVED (major finding) IN THIS RETROFIT PASS. IN-007's citation/discrepancy flag is resolved:
+      DNR's own official State Form 56490 guidance, fetched directly, confirms four specific drone
+      exception categories (journalists, university researchers, documentary filmmakers, tourism
+      agencies), more precise and complete than the three-category description on secondary
+      aggregator sites. Confidence Moderate -> High.
+  executive_orders:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - IN-010
+    note: >-
+      RESOLVED (repurposed) IN THIS RETROFIT PASS. IN-010 now covers only EO 25-73 as an affirmative
+      source; negative-finding categories previously combined into this row were moved to the
+      checklist. A search for the task force's July 31, 2026 strategic plan did not locate a
+      published version as of this pass.
+  court_decisions_and_ag_opinions:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids: []
+    note: No Indiana Attorney General opinion or appellate/Supreme Court decision directly construing
+      an Indiana UAS-specific statute was located; not independently re-searched in this retrofit
+      pass beyond the original finding.
+  aviation_and_transportation_agencies:
+    status: not_applicable
+    unresolved: false
+    record_ids: []
+    note: INDOT's Division of Aeronautics/Land and Aerial Survey Office maintains an internal UAS
+      program but no operator-facing permit or manufacturer restriction was located; not identified
+      as a gap requiring a standalone record.
+  parks_public_lands_and_natural_resources:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - IN-006
+    - IN-007
+    note: See state_statutes_and_amendments and administrative_rules above.
+  corrections_public_safety_and_critical_infrastructure:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - IN-004
+    - IN-005
+    - IN-008
+    note: >-
+      IN-008's federal-law trigger condition has been satisfied since the original pass (DOJ/DHS
+      SAFER SKIES Act interim final rule, Federal Register July 6, 2026, effective July 1, 2026);
+      direct confirmation of the Governor's required Indiana Register notice publication was not
+      located in this pass.
+  privacy_surveillance_trespass_and_interference:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - IN-001
+    - IN-002
+    - IN-003
+    note: See state_statutes_and_amendments above.
+  procurement_equipment_and_cybersecurity:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - IN-008
+    note: IN-008's requirement that counter-UAS systems appear on the federal C-UAS Technology List
+      is Indiana's state-agency UAS procurement restriction in this category; unchanged from the
+      original pass.
+  professional_licensing_board_material:
+    status: applicable_source_found
+    unresolved: false
+    record_ids:
+    - IN-009
+    note: >-
+      RESOLVED (major finding) IN THIS RETROFIT PASS. IN-009 substantially expanded: full current
+      text of IC 25-21.5-1-7 subsections (a) through (f) fetched and read directly against Justia,
+      locating subsection (e)'s previously unflagged requirement that photogrammetric/remote-sensing
+      survey work be performed only under the supervision of a professional surveyor or a nationally
+      certified photogrammetrist -- directly applicable to UAS-derived photogrammetric products.
+      Confidence Low -> High.
+  state_preemption:
+    status: reviewed_no_applicable_source
+    unresolved: false
+    record_ids: []
+    note: >-
+      RESOLVED IN THIS RETROFIT PASS. The negative-finding categories previously combined into IN-010
+      (no AG opinion, no court decision, no general procurement restriction beyond IN-008, no local
+      preemption statute) were moved to the checklist per Agent_Instructions.v6.md Section 5.2, since
+      the prior combined record's own source_type field said "not included in the final source
+      register." No statewide preemption statute was located; Fort Wayne and Carmel each maintain
+      their own drone ordinances.
+record_count: 10
+unresolved_count: 0
+low_confidence_record_count: 0
+primary_source_percentage: 100
+known_issues:
+  - >-
+    IC 35-45-10-6's July 1, 2026 livestock/crops/farm-operations amendment still does not appear in
+    Justia's or FindLaw's Indiana Code mirrors as of this pass's research date, more than five weeks
+    post-effective-date across two independent research passes.
+  - >-
+    IC 10-22's gubernatorial Indiana Register notice publication was not independently located in
+    this pass, even though the federal-law half of the counter-UAS operative trigger has been
+    satisfied.
+  - >-
+    Whether a specific UAS-derived deliverable satisfies IC 25-21.5-1-7(e)'s certified-photogrammetrist
+    supervision requirement is fact-specific and was not resolved for any particular deliverable type.
+  - >-
+    The Indiana Initiative for Drone Dominance Task Force's strategic plan (statutory deadline
+    July 31, 2026) had not been located as a published document as of this pass's research date.
+next_currency_review: '2026-09-07'
+recheck_triggers: []
