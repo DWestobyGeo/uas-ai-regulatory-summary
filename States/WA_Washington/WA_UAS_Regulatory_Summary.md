@@ -17,6 +17,7 @@ Washington requires mandatory, fee-based state UAS registration (RCW 47.68.250) 
 ## 2. Statewide UAS Laws and Regulations
 
 ### RCW 47.68.250 — Registration of aircraft
+<span class="news-anchor" data-record-id="WA-001" hidden></span>
 *Binding law | Mandatory since April 1, 2022*
 
 **Objective Summary:** Every aircraft, including commercial unpiloted aircraft systems, must be registered with WSDOT for each calendar year operated or based in Washington. $15/drone/year, renews annually in January, in addition to FAA registration. A later-effective version of the statute is queued for January 1, 2027.

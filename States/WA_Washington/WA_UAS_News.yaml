@@ -1,0 +1,30 @@
+state: Washington
+state_abbr: WA
+role_id: news-aggregator
+role_version: 1.0.0
+generated_at: '2026-09-06'
+items:
+  - record_id: WA-001
+    headline: "Washington Commercial Drone Fees Jump 10x to $150 After Jet Tax Repeal"
+    url: https://dronexl.co/2026/08/25/washington-commercial-drone-fee-150-jet-tax-repeal/
+    source_name: DroneXL
+    publish_date: '2026-08-25'
+    jurisdiction_match: in_state
+    out_of_state_name: null
+    relevance_note: >-
+      Reports that Washington's annual commercial-drone cost will rise from $15 to
+      $150 per aircraft on January 1, 2027, matching WA-001's state registration
+      requirement and its queued later-effective statutory version.
+    date_accessed: '2026-09-06'
+  - record_id: WA-001
+    headline: "Washington Jacks Up Commercial Drone Fees 10x, DJI Still Dominates at FCC Labs"
+    url: https://dronexl.co/2026/08/28/washington-drone-fees-dji-survey-fcc-labs-sifly/
+    source_name: DroneXL
+    publish_date: '2026-08-28'
+    jurisdiction_match: in_state
+    out_of_state_name: null
+    relevance_note: >-
+      Follow-up reporting on the same Washington commercial-drone registration
+      increase, including the $150 annual amount taking effect January 1, 2027,
+      directly illustrating the upcoming change to WA-001's registration cost.
+    date_accessed: '2026-09-06'
